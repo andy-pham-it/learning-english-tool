@@ -1,0 +1,632 @@
+[
+  {
+    "id": "it_vocab_01",
+    "word": "Agile methodology",
+    "phonetic": "/ˈædʒaɪl ˌmɛθəˈdɒlədʒi/",
+    "meaning": "Phương pháp Agile",
+    "example": "Our team adopted the Agile methodology to improve project flexibility and responsiveness to changes.",
+    "exampleTranslation": "Nhóm của chúng tôi đã áp dụng phương pháp Agile để cải thiện tính linh hoạt của dự án và khả năng ứng phó với các thay đổi.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_02",
+    "word": "Deployment",
+    "phonetic": "/dɪˈplɔɪmənt/",
+    "meaning": "Triển khai",
+    "example": "The successful deployment of the new software update was celebrated by the development team.",
+    "exampleTranslation": "Việc triển khai thành công bản cập nhật phần mềm mới đã được nhóm phát triển chúc mừng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_03",
+    "word": "Debugging",
+    "phonetic": "/diːˈbʌɡɪŋ/",
+    "meaning": "Gỡ lỗi (Debugging)",
+    "example": "After hours of debugging, the programmer finally found the cause of the system crash.",
+    "exampleTranslation": "Sau nhiều giờ gỡ lỗi, lập trình viên cuối cùng đã tìm ra nguyên nhân gây sập hệ thống.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_04",
+    "word": "API (Application Programming Interface)",
+    "phonetic": "/ˌeɪ piː ˈaɪ/",
+    "meaning": "Giao diện lập trình ứng dụng (API)",
+    "example": "We used a third-party API to integrate payment processing into our e-commerce platform.",
+    "exampleTranslation": "Chúng tôi đã sử dụng một API của bên thứ ba để tích hợp xử lý thanh toán vào nền tảng thương mại điện tử của mình.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_05",
+    "word": "Cloud computing",
+    "phonetic": "/klaʊd kəmˈpjuːtɪŋ/",
+    "meaning": "Điện toán đám mây",
+    "example": "Cloud computing offers scalable resources and reduces the need for expensive on-premise hardware.",
+    "exampleTranslation": "Điện toán đám mây cung cấp các tài nguyên có thể mở rộng và giảm bớt nhu cầu về phần cứng đắt tiền tại chỗ.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_06",
+    "word": "Cybersecurity",
+    "phonetic": "/ˌsaɪbərsɪˈkjʊrəti/",
+    "meaning": "An ninh mạng",
+    "example": "Investing in robust cybersecurity measures is crucial to protect sensitive company data.",
+    "exampleTranslation": "Đầu tư vào các biện pháp an ninh mạng mạnh mẽ là rất quan trọng để bảo vệ dữ liệu nhạy cảm của công ty.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_07",
+    "word": "Data breach",
+    "phonetic": "/ˈdeɪtə briːtʃ/",
+    "meaning": "Rò rỉ dữ liệu",
+    "example": "The company faced a major crisis after a data breach exposed customer information.",
+    "exampleTranslation": "Công ty đã đối mặt với một cuộc khủng hoảng lớn sau khi một vụ rò rỉ dữ liệu làm lộ thông tin khách hàng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_08",
+    "word": "Algorithm",
+    "phonetic": "/ˈælɡərɪðəm/",
+    "meaning": "Thuật toán",
+    "example": "The search engine uses a complex algorithm to rank websites based on relevance.",
+    "exampleTranslation": "Công cụ tìm kiếm sử dụng một thuật toán phức tạp để xếp hạng các trang web dựa trên mức độ liên quan.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_09",
+    "word": "Frontend",
+    "phonetic": "/ˈfrʌntˌɛnd/",
+    "meaning": "Phía máy khách (Frontend)",
+    "example": "The frontend developer is responsible for creating the interactive user interface of the web application.",
+    "exampleTranslation": "Nhà phát triển frontend chịu trách nhiệm tạo ra giao diện người dùng tương tác của ứng dụng web.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_10",
+    "word": "Backend",
+    "phonetic": "/ˈbækˌɛnd/",
+    "meaning": "Phía máy chủ (Backend)",
+    "example": "Our backend team manages the servers, databases, and application logic that power the website.",
+    "exampleTranslation": "Nhóm backend của chúng tôi quản lý máy chủ, cơ sở dữ liệu và logic ứng dụng vận hành trang web.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_11",
+    "word": "Version control",
+    "phonetic": "/ˈvɜːrʒn kənˈtroʊl/",
+    "meaning": "Kiểm soát phiên bản",
+    "example": "Using version control software like Git helps our developers track changes and collaborate effectively.",
+    "exampleTranslation": "Sử dụng phần mềm kiểm soát phiên bản như Git giúp các nhà phát triển của chúng tôi theo dõi các thay đổi và cộng tác hiệu quả.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_12",
+    "word": "Framework",
+    "phonetic": "/ˈfreɪmwɜːrk/",
+    "meaning": "Khung làm việc (Framework)",
+    "example": "We chose the React framework for building our new single-page application due to its efficiency.",
+    "exampleTranslation": "Chúng tôi đã chọn framework React để xây dựng ứng dụng trang đơn mới vì hiệu quả của nó.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_13",
+    "word": "User interface (UI)",
+    "phonetic": "/ˈjuːzər ˈɪntərfeɪs/",
+    "meaning": "Giao diện người dùng (UI)",
+    "example": "A well-designed user interface is intuitive and easy for customers to navigate.",
+    "exampleTranslation": "Một giao diện người dùng được thiết kế tốt sẽ trực quan và khách hàng dễ dàng điều hướng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_14",
+    "word": "User experience (UX)",
+    "phonetic": "/ˈjuːzər ɪkˈspɪəriəns/",
+    "meaning": "Trải nghiệm người dùng (UX)",
+    "example": "Improving the user experience is key to retaining customers and increasing product engagement.",
+    "exampleTranslation": "Cải thiện trải nghiệm người dùng là chìa khóa để giữ chân khách hàng và tăng cường mức độ tương tác với sản phẩm.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_15",
+    "word": "Database",
+    "phonetic": "/ˈdeɪtəbeɪs/",
+    "meaning": "Cơ sở dữ liệu",
+    "example": "All customer information is stored securely in our central database.",
+    "exampleTranslation": "Tất cả thông tin khách hàng được lưu trữ an toàn trong cơ sở dữ liệu trung tâm của chúng tôi.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_16",
+    "word": "Scalability",
+    "phonetic": "/ˌskeɪləˈbɪləti/",
+    "meaning": "Khả năng mở rộng",
+    "example": "The new architecture provides better scalability to handle a growing number of users.",
+    "exampleTranslation": "Kiến trúc mới cung cấp khả năng mở rộng tốt hơn để xử lý số lượng người dùng ngày càng tăng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_17",
+    "word": "Bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning": "Băng thông",
+    "example": "Heavy video streaming can consume a lot of bandwidth, leading to slower internet speeds for others.",
+    "exampleTranslation": "Truyền phát video nặng có thể tiêu tốn nhiều băng thông, dẫn đến tốc độ internet chậm hơn cho những người khác.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_18",
+    "word": "Encryption",
+    "phonetic": "/ɪnˈkrɪpʃn/",
+    "meaning": "Mã hóa",
+    "example": "Encryption is vital for protecting sensitive data transmitted over the internet from unauthorized access.",
+    "exampleTranslation": "Mã hóa là yếu tố sống còn để bảo vệ dữ liệu nhạy cảm được truyền qua internet khỏi sự truy cập trái phép.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_19",
+    "word": "Firewall",
+    "phonetic": "/ˈfaɪərwɔːl/",
+    "meaning": "Tường lửa",
+    "example": "The company's network is protected by a robust firewall to prevent external attacks.",
+    "exampleTranslation": "Mạng của công ty được bảo vệ bởi một tường lửa mạnh mẽ để ngăn chặn các cuộc tấn công bên ngoài.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_20",
+    "word": "Virtual machine (VM)",
+    "phonetic": "/ˈvɜːrtʃuəl məˈʃiːn/",
+    "meaning": "Máy ảo (VM)",
+    "example": "Developers often use virtual machines to test software in different operating system environments without needing separate physical hardware.",
+    "exampleTranslation": "Các nhà phát triển thường sử dụng máy ảo để kiểm thử phần mềm trong các môi trường hệ điều hành khác nhau mà không cần phần cứng vật lý riêng biệt.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_001",
+    "word": "Repository",
+    "phonetic": "/rɪˈpɒzɪtəri/",
+    "meaning": "Kho lưu trữ (Repository)",
+    "example": "All developers commit their code changes to a central Git repository.",
+    "exampleTranslation": "Tất cả các nhà phát triển đều commit những thay đổi mã nguồn của họ vào một kho lưu trữ Git trung tâm.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_002",
+    "word": "Containerization",
+    "phonetic": "/kənˌteɪnəraɪˈzeɪʃən/",
+    "meaning": "Công nghệ Container hóa",
+    "example": "Containerization helps ensure that software runs reliably across different computing environments.",
+    "exampleTranslation": "Công nghệ container hóa giúp đảm bảo rằng phần mềm chạy ổn định trên các môi trường tính toán khác nhau.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_003",
+    "word": "Microservices",
+    "phonetic": "/ˌmaɪkroʊˈsɜːrvɪsɪz/",
+    "meaning": "Kiến trúc Microservices",
+    "example": "Our new application uses a microservices architecture for better modularity and independent scaling.",
+    "exampleTranslation": "Ứng dụng mới của chúng tôi sử dụng kiến trúc microservices để có tính mô-đun tốt hơn và khả năng mở rộng độc lập.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_004",
+    "word": "Monolithic",
+    "phonetic": "/ˌmɒnəˈlɪθɪk/",
+    "meaning": "Kiến trúc Nguyên khối (Monolithic)",
+    "example": "The legacy system was monolithic, making it difficult to update individual components without affecting the whole.",
+    "exampleTranslation": "Hệ thống cũ được xây dựng theo kiến trúc nguyên khối, khiến việc cập nhật các thành phần riêng lẻ trở nên khó khăn mà không ảnh hưởng đến toàn bộ.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_005",
+    "word": "DevOps",
+    "phonetic": "/ˈdɛvˌɒps/",
+    "meaning": "Văn hóa DevOps",
+    "example": "Adopting DevOps practices significantly reduced our software release cycle time.",
+    "exampleTranslation": "Áp dụng các thực hành DevOps đã giảm đáng kể thời gian chu kỳ phát hành phần mềm của chúng tôi.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_006",
+    "word": "Automation",
+    "phonetic": "/ˌɔːtəˈmeɪʃən/",
+    "meaning": "Tự động hóa",
+    "example": "We implemented automation scripts to streamline our testing and deployment processes.",
+    "exampleTranslation": "Chúng tôi đã triển khai các kịch bản tự động hóa để tinh gọn quy trình kiểm thử và triển khai.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_007",
+    "word": "Integration",
+    "phonetic": "/ˌɪntɪˈɡreɪʃən/",
+    "meaning": "Tích hợp",
+    "example": "The successful integration of the new module with existing systems was crucial for project completion.",
+    "exampleTranslation": "Việc tích hợp thành công mô-đun mới với các hệ thống hiện có là vô cùng quan trọng để hoàn thành dự án.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_008",
+    "word": "Migration",
+    "phonetic": "/maɪˈɡreɪʃən/",
+    "meaning": "Di chuyển (Migration)",
+    "example": "The data migration to the new server will occur over the weekend to minimize downtime.",
+    "exampleTranslation": "Quá trình di chuyển dữ liệu sang máy chủ mới sẽ diễn ra vào cuối tuần để giảm thiểu thời gian ngừng hoạt động.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_009",
+    "word": "Load balancing",
+    "phonetic": "/loʊd ˈbælənsɪŋ/",
+    "meaning": "Cân bằng tải",
+    "example": "Load balancing distributes incoming network traffic across multiple servers to prevent overload.",
+    "exampleTranslation": "Cân bằng tải phân phối lưu lượng mạng đến qua nhiều máy chủ để tránh tình trạng quá tải.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_010",
+    "word": "Redundancy",
+    "phonetic": "/rɪˈdʌndənsi/",
+    "meaning": "Tính dự phòng (Redundancy)",
+    "example": "We built redundancy into the system to ensure continuous operation even if one server fails.",
+    "exampleTranslation": "Chúng tôi đã xây dựng tính dự phòng vào hệ thống để đảm bảo hoạt động liên tục ngay cả khi một máy chủ gặp sự cố.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_011",
+    "word": "Latency",
+    "phonetic": "/ˈleɪtənsi/",
+    "meaning": "Độ trễ (Latency)",
+    "example": "High network latency can severely impact the performance of real-time applications.",
+    "exampleTranslation": "Độ trễ mạng cao có thể tác động nghiêm trọng đến hiệu suất của các ứng dụng thời gian thực.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_012",
+    "word": "Throughput",
+    "phonetic": "/ˈθruːpʊt/",
+    "meaning": "Thông lượng (Throughput)",
+    "example": "We need to improve the system's throughput to handle a larger volume of transactions per second.",
+    "exampleTranslation": "Chúng ta cần cải thiện thông lượng của hệ thống để xử lý khối lượng giao dịch lớn hơn mỗi giây.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_013",
+    "word": "Protocol",
+    "phonetic": "/ˈproʊtəkɒl/",
+    "meaning": "Giao thức",
+    "example": "HTTP is the main protocol used for transmitting data over the World Wide Web.",
+    "exampleTranslation": "HTTP là giao thức chính được sử dụng để truyền dữ liệu trên World Wide Web.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_014",
+    "word": "Authentication",
+    "phonetic": "/ɔːˌθɛntɪˈkeɪʃən/",
+    "meaning": "Xác thực (Authentication)",
+    "example": "Two-factor authentication adds an extra layer of security to user accounts.",
+    "exampleTranslation": "Xác thực hai yếu tố thêm một lớp bảo mật bổ sung cho tài khoản người dùng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_015",
+    "word": "Authorization",
+    "phonetic": "/ˌɔːθəraɪˈzeɪʃən/",
+    "meaning": "Ủy quyền (Authorization)",
+    "example": "After authentication, the system checks the user's authorization to access specific resources.",
+    "exampleTranslation": "Sau khi xác thực, hệ thống sẽ kiểm tra ủy quyền của người dùng để truy cập các tài nguyên cụ thể.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_016",
+    "word": "Malware",
+    "phonetic": "/ˈmælwɛər/",
+    "meaning": "Phần mềm độc hại (Malware)",
+    "example": "Our antivirus software detected and removed a new strain of malware from the network.",
+    "exampleTranslation": "Phần mềm diệt virus của chúng tôi đã phát hiện và loại bỏ một chủng phần mềm độc hại mới khỏi mạng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_017",
+    "word": "Phishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "meaning": "Tấn công giả mạo (Phishing)",
+    "example": "Employees received training on how to identify and report phishing attempts.",
+    "exampleTranslation": "Nhân viên đã được đào tạo về cách nhận diện và báo cáo các nỗ lực tấn công giả mạo.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_018",
+    "word": "Exploit",
+    "phonetic": "/ɪkˈsplɔɪt/",
+    "meaning": "Khai thác lỗ hổng",
+    "example": "Hackers attempted to exploit a newly discovered vulnerability in the operating system.",
+    "exampleTranslation": "Các hacker đã cố gắng khai thác một lỗ hổng mới được phát hiện trong hệ điều hành.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_019",
+    "word": "Patch",
+    "phonetic": "/pætʃ/",
+    "meaning": "Bản vá (Patch)",
+    "example": "The security team released an urgent patch to fix the critical bug in the server software.",
+    "exampleTranslation": "Nhóm bảo mật đã phát hành một bản vá khẩn cấp để sửa lỗi nghiêm trọng trong phần mềm máy chủ.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_020",
+    "word": "Legacy system",
+    "phonetic": "/ˈlɛɡəsi ˈsɪstəm/",
+    "meaning": "Hệ thống kế thừa / Hệ thống cũ",
+    "example": "Maintaining the legacy system is becoming increasingly expensive and inefficient.",
+    "exampleTranslation": "Việc bảo trì hệ thống cũ đang ngày càng trở nên đắt đỏ và không hiệu quả.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_021",
+    "word": "Refactoring",
+    "phonetic": "/ˌriːˈfæktərɪŋ/",
+    "meaning": "Tái cấu trúc mã nguồn (Refactoring)",
+    "example": "We initiated a refactoring effort to improve the readability and maintainability of the codebase.",
+    "exampleTranslation": "Chúng tôi đã bắt đầu nỗ lực tái cấu trúc để cải thiện khả năng đọc và bảo trì của mã nguồn.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_022",
+    "word": "Module",
+    "phonetic": "/ˈmɒdjuːl/",
+    "meaning": "Mô-đun",
+    "example": "Each module of the software performs a specific function and can be developed independently.",
+    "exampleTranslation": "Mỗi mô-đun của phần mềm thực hiện một chức năng cụ thể và có thể được phát triển độc lập.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_023",
+    "word": "Syntax",
+    "phonetic": "/ˈsɪntæks/",
+    "meaning": "Cú pháp",
+    "example": "A common mistake for beginners is incorrect syntax, which causes compilation errors.",
+    "exampleTranslation": "Một lỗi phổ biến đối với những người mới bắt đầu là cú pháp sai, gây ra các lỗi biên dịch.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_024",
+    "word": "Compiler",
+    "phonetic": "/kəmˈpaɪlər/",
+    "meaning": "Trình biên dịch (Compiler)",
+    "example": "The compiler translates the source code into machine-executable instructions.",
+    "exampleTranslation": "Trình biên dịch chuyển đổi mã nguồn thành các hướng dẫn mà máy tính có thể thực thi.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_025",
+    "word": "Interpreter",
+    "phonetic": "/ɪnˈtɜːrprɪtər/",
+    "meaning": "Trình thông dịch (Interpreter)",
+    "example": "Python uses an interpreter to execute code line by line without prior compilation.",
+    "exampleTranslation": "Python sử dụng một trình thông dịch để thực thi mã theo từng dòng mà không cần biên dịch trước.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_026",
+    "word": "Runtime",
+    "phonetic": "/ˈrʌnˌtaɪm/",
+    "meaning": "Thời gian chạy (Runtime)",
+    "example": "The application encountered a runtime error, causing it to crash unexpectedly.",
+    "exampleTranslation": "Ứng dụng đã gặp lỗi trong thời gian chạy, khiến nó bị sập bất ngờ.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_027",
+    "word": "Stylesheet",
+    "phonetic": "/ˈstaɪlˌʃiːt/",
+    "meaning": "Tệp phong cách (Stylesheet)",
+    "example": "The web designer updated the stylesheet to change the visual appearance of the website.",
+    "exampleTranslation": "Nhà thiết kế web đã cập nhật stylesheet để thay đổi diện mạo trực quan của trang web.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_028",
+    "word": "Markup language",
+    "phonetic": "/ˈmɑːrkʌp ˈlæŋɡwɪdʒ/",
+    "meaning": "Ngôn ngữ đánh dấu",
+    "example": "HTML is a standard markup language used for creating web pages.",
+    "exampleTranslation": "HTML là ngôn ngữ đánh dấu tiêu chuẩn được sử dụng để tạo các trang web.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_029",
+    "word": "Query",
+    "phonetic": "/ˈkwɪəri/",
+    "meaning": "Truy vấn (Query)",
+    "example": "The database administrator wrote a complex SQL query to retrieve specific customer data.",
+    "exampleTranslation": "Quản trị viên cơ sở dữ liệu đã viết một truy vấn SQL phức tạp để lấy dữ liệu khách hàng cụ thể.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_030",
+    "word": "Schema",
+    "phonetic": "/ˈskiːmə/",
+    "meaning": "Lược đồ (Schema)",
+    "example": "We had to modify the database schema to accommodate the new data fields.",
+    "exampleTranslation": "Chúng tôi phải sửa đổi lược đồ cơ sở dữ liệu để phù hợp với các trường dữ liệu mới.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_031",
+    "word": "Normalization",
+    "phonetic": "/ˌnɔːrməlaɪˈzeɪʃən/",
+    "meaning": "Chuẩn hóa (Normalization)",
+    "example": "Database normalization helps reduce data redundancy and improve data integrity.",
+    "exampleTranslation": "Chuẩn hóa cơ sở dữ liệu giúp giảm bớt sự dư thừa dữ liệu và cải thiện tính toàn vẹn của dữ liệu.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_032",
+    "word": "Indexing",
+    "phonetic": "/ˈɪndɛksɪŋ/",
+    "meaning": "Đánh chỉ mục (Indexing)",
+    "example": "Proper indexing can significantly speed up query performance in large databases.",
+    "exampleTranslation": "Đánh chỉ mục đúng cách có thể tăng tốc đáng kể hiệu suất truy vấn trong các cơ sở dữ liệu lớn.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_033",
+    "word": "Caching",
+    "phonetic": "/ˈkæʃɪŋ/",
+    "meaning": "Lưu bộ nhớ đệm (Caching)",
+    "example": "We implemented caching to store frequently accessed data and reduce load times.",
+    "exampleTranslation": "Chúng tôi đã triển khai kỹ thuật lưu bộ nhớ đệm để lưu trữ dữ liệu thường xuyên truy cập và giảm thời gian tải.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_034",
+    "word": "Logging",
+    "phonetic": "/ˈlɒɡɪŋ/",
+    "meaning": "Ghi nhật ký (Logging)",
+    "example": "System logging provides valuable insights for troubleshooting and security auditing.",
+    "exampleTranslation": "Ghi nhật ký hệ thống cung cấp những thông tin giá trị cho việc khắc phục sự cố và kiểm tra bảo mật.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_035",
+    "word": "Monitoring",
+    "phonetic": "/ˈmɒnɪtərɪŋ/",
+    "meaning": "Giám sát (Monitoring)",
+    "example": "Continuous monitoring of server performance helps us detect issues before they impact users.",
+    "exampleTranslation": "Giám sát liên tục hiệu suất máy chủ giúp chúng tôi phát hiện các vấn đề trước khi chúng ảnh hưởng đến người dùng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_036",
+    "word": "Telemetry",
+    "phonetic": "/təˈlɛmɪtri/",
+    "meaning": "Dữ liệu đo từ xa",
+    "example": "The software collects anonymous telemetry data to understand user behavior and improve features.",
+    "exampleTranslation": "Phần mềm thu thập dữ liệu đo từ xa ẩn danh để hiểu hành vi người dùng và cải thiện các tính năng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_037",
+    "word": "Pipeline",
+    "phonetic": "/ˈpaɪpˌlaɪn/",
+    "meaning": "Đường ống xử lý (Pipeline)",
+    "example": "Our CI/CD pipeline automates the build, test, and deployment stages of the software.",
+    "exampleTranslation": "Đường ống CI/CD của chúng tôi tự động hóa các giai đoạn xây dựng, kiểm thử và triển khai phần mềm.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_038",
+    "word": "Orchestration",
+    "phonetic": "/ˌɔːrkɪˈstreɪʃən/",
+    "meaning": "Điều phối (Orchestration)",
+    "example": "Kubernetes provides powerful orchestration capabilities for managing containerized applications.",
+    "exampleTranslation": "Kubernetes cung cấp khả năng điều phối mạnh mẽ để quản lý các ứng dụng đã được container hóa.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_039",
+    "word": "Provisioning",
+    "phonetic": "/prəˈvɪʒənɪŋ/",
+    "meaning": "Cấp phát tài nguyên (Provisioning)",
+    "example": "Automated provisioning allows us to quickly set up new servers and services on demand.",
+    "exampleTranslation": "Cấp phát tự động cho phép chúng ta nhanh chóng thiết lập máy chủ và dịch vụ mới theo yêu cầu.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_040",
+    "word": "Virtualization",
+    "phonetic": "/ˌvɜːrtʃuəlaɪˈzeɪʃən/",
+    "meaning": "Ảo hóa (Virtualization)",
+    "example": "Server virtualization enables running multiple operating systems on a single physical machine.",
+    "exampleTranslation": "Ảo hóa máy chủ cho phép chạy nhiều hệ điều hành trên một máy vật lý duy nhất.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_041",
+    "word": "Hypervisor",
+    "phonetic": "/ˈhaɪpərvˌaɪzər/",
+    "meaning": "Trình quản lý máy ảo (Hypervisor)",
+    "example": "A hypervisor is essential for creating and managing virtual machines on a host server.",
+    "exampleTranslation": "Một hypervisor là thiết yếu để tạo và quản lý các máy ảo trên một máy chủ host.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_042",
+    "word": "Networking",
+    "phonetic": "/ˈnɛtwɜːrkɪŋ/",
+    "meaning": "Mạng máy tính (Networking)",
+    "example": "He specialized in networking, configuring routers and switches for large corporate environments.",
+    "exampleTranslation": "Anh ấy chuyên về mảng mạng, cấu hình các bộ định tuyến và bộ chuyển mạch cho các môi trường doanh nghiệp lớn.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_043",
+    "word": "Subnet",
+    "phonetic": "/ˈsʌbnɛt/",
+    "meaning": "Mạng con (Subnet)",
+    "example": "Dividing the network into subnets helps improve security and manageability.",
+    "exampleTranslation": "Việc chia mạng thành các mạng con giúp cải thiện tính bảo mật và khả năng quản lý.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_044",
+    "word": "Router",
+    "phonetic": "/ˈruːtər/",
+    "meaning": "Bộ định tuyến (Router)",
+    "example": "The router connects our internal network to the internet and directs traffic.",
+    "exampleTranslation": "Bộ định tuyến kết nối mạng nội bộ của chúng ta với internet và điều hướng lưu lượng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_045",
+    "word": "Switch",
+    "phonetic": "/swɪtʃ/",
+    "meaning": "Bộ chuyển mạch (Switch)",
+    "example": "A network switch allows multiple devices to connect and communicate within a local area network.",
+    "exampleTranslation": "Một bộ chuyển mạch mạng cho phép nhiều thiết bị kết nối và giao tiếp trong một mạng nội bộ.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_046",
+    "word": "DNS (Domain Name System)",
+    "phonetic": "/ˌdiː ɛn ˈɛs/",
+    "meaning": "Hệ thống tên miền (DNS)",
+    "example": "The DNS server translates human-readable domain names into IP addresses.",
+    "exampleTranslation": "Máy chủ DNS chuyển dịch các tên miền dễ đọc đối với con người thành các địa chỉ IP.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_047",
+    "word": "IP address",
+    "phonetic": "/ˌaɪ ˈpiː ˈædrɛs/",
+    "meaning": "Địa chỉ IP",
+    "example": "Every device connected to a network needs a unique IP address to communicate.",
+    "exampleTranslation": "Mỗi thiết bị kết nối với mạng cần có một địa chỉ IP duy nhất để giao tiếp.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_048",
+    "word": "VPN (Virtual Private Network)",
+    "phonetic": "/ˌviː piː ˈɛn/",
+    "meaning": "Mạng riêng ảo (VPN)",
+    "example": "Employees use a VPN to securely access the company's internal network from remote locations.",
+    "exampleTranslation": "Nhân viên sử dụng VPN để truy cập an toàn vào mạng nội bộ của công ty từ các địa điểm từ xa.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_049",
+    "word": "Proxy server",
+    "phonetic": "/ˈprɒksi ˈsɜːrvər/",
+    "meaning": "Máy chủ Proxy",
+    "example": "A proxy server can be used to filter web content or hide a user's IP address.",
+    "exampleTranslation": "Một máy chủ proxy có thể được sử dụng để lọc nội dung web hoặc ẩn địa chỉ IP của người dùng.",
+    "category": "IT"
+  },
+  {
+    "id": "it_vocab_050",
+    "word": "Endpoint",
+    "phonetic": "/ˈɛndˌpɔɪnt/",
+    "meaning": "Điểm cuối (Endpoint)",
+    "example": "Securing all network endpoints, such as laptops and mobile devices, is critical for corporate security.",
+    "exampleTranslation": "Bảo vệ tất cả các điểm cuối mạng, như laptop và thiết bị di động, là rất quan trọng đối với an ninh doanh nghiệp.",
+    "category": "IT"
+  }
+]

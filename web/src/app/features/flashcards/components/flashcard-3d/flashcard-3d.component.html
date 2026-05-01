@@ -1,0 +1,35 @@
+<div class="flip-container w-full h-96 cursor-pointer" (click)="flipCard()">
+  <div class="flip-inner" [class.is-flipped]="isFlipped">
+    
+    <!-- Front: English Word -->
+    <div class="flip-front rounded-3xl bg-white shadow-lg border border-slate-100 flex flex-col justify-center items-center p-8">
+      <h2 class="text-3xl font-bold text-slate-800 mb-4">{{ displayData?.english }}</h2>
+      <p class="text-sm font-medium text-slate-400">Chạm để lật & nghe chuẩn B2</p>
+    </div>
+
+    <!-- Back: Meaning and Example -->
+    <div class="flip-back rounded-3xl bg-blue-50 shadow-lg border border-blue-100 flex flex-col justify-center items-center p-8 transition-all duration-300"
+         [class.blur-lg]="isBlurring" 
+         [class.opacity-0]="isBlurring" 
+         [class.pointer-events-none]="isBlurring">
+      <h2 class="text-2xl font-bold text-blue-900 mb-2">{{ displayData?.vietnamese }}</h2>
+      <div class="w-12 h-1 bg-blue-200 rounded-full mb-6"></div>
+      
+      <p class="text-slate-600 italic text-center text-lg leading-relaxed mb-4">
+        "{{ displayData?.example }}"
+      </p>
+      
+      <p *ngIf="displayData?.exampleTranslation" class="text-blue-400 text-center text-sm font-medium border-t border-blue-100 pt-3 px-4">
+        {{ displayData?.exampleTranslation }}
+      </p>
+      
+      <!-- Grade buttons -->
+      <div class="absolute bottom-6 flex gap-3 w-full justify-center px-6">
+        <button (click)="gradeCard(0, $event)" class="flex-1 bg-red-100 hover:bg-red-200 text-red-700 py-3 rounded-xl font-semibold transition-colors active:scale-95 text-sm">Quên</button>
+        <button (click)="gradeCard(3, $event)" class="flex-1 bg-orange-100 hover:bg-orange-200 text-orange-700 py-3 rounded-xl font-semibold transition-colors active:scale-95 text-sm">Khó</button>
+        <button (click)="gradeCard(5, $event)" class="flex-1 bg-green-100 hover:bg-green-200 text-green-700 py-3 rounded-xl font-semibold transition-colors active:scale-95 text-sm">Nhớ</button>
+      </div>
+    </div>
+    
+  </div>
+</div>

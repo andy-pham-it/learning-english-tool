@@ -1,0 +1,452 @@
+[
+  {
+    "id": "1",
+    "word": "Software",
+    "phonetic": "/ˈsɒftweə(r)/",
+    "meaning": "Phần mềm",
+    "example": "We need to update the operating system software on all company computers.",
+    "exampleTranslation": "Chúng ta nên cập nhật phần mềm hệ điều hành trên tất cả máy tính của công ty.",
+    "category": "IT"
+  },
+  {
+    "id": "2",
+    "word": "Hardware",
+    "phonetic": "/ˈhɑːdweə(r)/",
+    "meaning": "Phần cứng",
+    "example": "The new server hardware will significantly improve performance.",
+    "exampleTranslation": "Phần cứng máy chủ mới sẽ cải thiện đáng kể hiệu suất.",
+    "category": "IT"
+  },
+  {
+    "id": "3",
+    "word": "Network",
+    "phonetic": "/ˈnetwɜːk/",
+    "meaning": "Mạng",
+    "example": "Our office network went down yesterday, causing a lot of disruption.",
+    "exampleTranslation": "Mạng văn phòng của chúng ta bị sập hôm qua, gây ra nhiều sự gián đoạn.",
+    "category": "IT"
+  },
+  {
+    "id": "4",
+    "word": "Server",
+    "phonetic": "/ˈsɜːvə(r)/",
+    "meaning": "Máy chủ",
+    "example": "The web server hosts all the company's online applications.",
+    "exampleTranslation": "Máy chủ web lưu trữ tất cả các ứng dụng trực tuyến của công ty.",
+    "category": "IT"
+  },
+  {
+    "id": "5",
+    "word": "Database",
+    "phonetic": "/ˈdeɪtəbeɪs/",
+    "meaning": "Cơ sở dữ liệu",
+    "example": "We store all customer information in a secure database.",
+    "exampleTranslation": "Chúng tôi lưu trữ tất cả thông tin khách hàng trong một cơ sở dữ liệu bảo mật.",
+    "category": "IT"
+  },
+  {
+    "id": "6",
+    "word": "Website",
+    "phonetic": "/ˈwebsaɪt/",
+    "meaning": "Trang web",
+    "example": "The company website needs a complete redesign to attract more visitors.",
+    "exampleTranslation": "Trang web của công ty cần được thiết kế lại hoàn toàn để thu hút thêm khách tham quan.",
+    "category": "IT"
+  },
+  {
+    "id": "7",
+    "word": "Application (App)",
+    "phonetic": "/ˌæplɪˈkeɪʃn/",
+    "meaning": "Ứng dụng",
+    "example": "There's a new mobile application for tracking project progress.",
+    "exampleTranslation": "Có một ứng dụng di động mới để theo dõi tiến độ dự án.",
+    "category": "IT"
+  },
+  {
+    "id": "8",
+    "word": "Program",
+    "phonetic": "/ˈprəʊɡræm/",
+    "meaning": "Chương trình",
+    "example": "Learning to write a basic program is essential for a software developer.",
+    "exampleTranslation": "Học cách viết một chương trình cơ bản là điều cần thiết đối với một nhà phát triển phần mềm.",
+    "category": "IT"
+  },
+  {
+    "id": "9",
+    "word": "Code",
+    "phonetic": "/kəʊd/",
+    "meaning": "Mã lệnh",
+    "example": "The developer wrote clean and efficient code for the new module.",
+    "exampleTranslation": "Nhà phát triển đã viết mã lệnh sạch và hiệu quả cho mô-đun mới.",
+    "category": "IT"
+  },
+  {
+    "id": "10",
+    "word": "Develop",
+    "phonetic": "/dɪˈveləp/",
+    "meaning": "Phát triển",
+    "example": "Our team is working to develop a new feature for the software.",
+    "exampleTranslation": "Nhóm của chúng tôi đang làm việc để phát triển một tính năng mới cho phần mềm.",
+    "category": "IT"
+  },
+  {
+    "id": "11",
+    "word": "Test",
+    "phonetic": "/test/",
+    "meaning": "Kiểm thử",
+    "example": "Before launching, we need to thoroughly test the new system for bugs.",
+    "exampleTranslation": "Trước khi ra mắt, chúng ta cần kiểm thử kỹ lưỡng hệ thống mới để tìm lỗi.",
+    "category": "IT"
+  },
+  {
+    "id": "12",
+    "word": "Deploy",
+    "phonetic": "/dɪˈplɔɪ/",
+    "meaning": "Triển khai",
+    "example": "The updated application will be deployed to the production environment tonight.",
+    "exampleTranslation": "Ứng dụng đã cập nhật sẽ được triển khai lên môi trường production vào tối nay.",
+    "category": "IT"
+  },
+  {
+    "id": "13",
+    "word": "Update",
+    "phonetic": "/ʌpˈdeɪt/",
+    "meaning": "Cập nhật",
+    "example": "Always install the latest security updates to protect your computer.",
+    "exampleTranslation": "Luôn luôn cài đặt các bản cập nhật bảo mật mới nhất để bảo vệ máy tính của bạn.",
+    "category": "IT"
+  },
+  {
+    "id": "14",
+    "word": "Install",
+    "phonetic": "/ɪnˈstɔːl/",
+    "meaning": "Cài đặt",
+    "example": "Could you please install this new anti-virus software on my laptop?",
+    "exampleTranslation": "Bạn có thể vui lòng cài đặt phần mềm diệt virus mới này vào laptop của tôi không?",
+    "category": "IT"
+  },
+  {
+    "id": "15",
+    "word": "User",
+    "phonetic": "/ˈjuːzə(r)/",
+    "meaning": "Người dùng",
+    "example": "We need to collect feedback from the end-users to improve the interface.",
+    "exampleTranslation": "Chúng ta cần thu thập phản hồi từ người dùng cuối để cải thiện giao diện.",
+    "category": "IT"
+  },
+  {
+    "id": "16",
+    "word": "Client",
+    "phonetic": "/ˈklaɪənt/",
+    "meaning": "Máy khách (Client)",
+    "example": "The client application connects to the central server to retrieve data.",
+    "exampleTranslation": "Ứng dụng phía máy khách kết nối với máy chủ trung tâm để lấy dữ liệu.",
+    "category": "IT"
+  },
+  {
+    "id": "17",
+    "word": "System",
+    "phonetic": "/ˈsɪstəm/",
+    "meaning": "Hệ thống",
+    "example": "The IT team is responsible for maintaining the entire company's IT system.",
+    "exampleTranslation": "Nhóm IT chịu trách nhiệm bảo trì toàn bộ hệ thống IT của công ty.",
+    "category": "IT"
+  },
+  {
+    "id": "18",
+    "word": "Security",
+    "phonetic": "/sɪˈkjʊərəti/",
+    "meaning": "Bảo mật",
+    "example": "Cybersecurity is a major concern for all companies handling sensitive data.",
+    "exampleTranslation": "An ninh mạng là mối quan tâm lớn đối với tất cả các công ty xử lý dữ liệu nhạy cảm.",
+    "category": "IT"
+  },
+  {
+    "id": "19",
+    "word": "Data",
+    "phonetic": "/ˈdeɪtə/",
+    "meaning": "Dữ liệu",
+    "example": "We need to analyze the sales data from last quarter to identify trends.",
+    "exampleTranslation": "Chúng ta cần phân tích dữ liệu bán hàng từ quý trước để xác định các xu hướng.",
+    "category": "IT"
+  },
+  {
+    "id": "20",
+    "word": "Cloud",
+    "phonetic": "/klaʊd/",
+    "meaning": "Điện toán đám mây",
+    "example": "Many companies are moving their data storage to the cloud for better scalability.",
+    "exampleTranslation": "Nhiều công ty đang chuyển việc lưu trữ dữ liệu lên đám mây để có khả năng mở rộng tốt hơn.",
+    "category": "IT"
+  },
+  {
+    "id": "21",
+    "word": "Monitor",
+    "phonetic": "/ˈmɒnɪtə(r)/",
+    "meaning": "Giám sát",
+    "example": "We use special tools to monitor the server's performance in real-time.",
+    "exampleTranslation": "Chúng tôi sử dụng các công cụ đặc biệt để giám sát hiệu suất của máy chủ trong thời gian thực.",
+    "category": "IT"
+  },
+  {
+    "id": "22",
+    "word": "Troubleshoot",
+    "phonetic": "/ˈtrʌblʃuːt/",
+    "meaning": "Khắc phục sự cố",
+    "example": "I spent an hour trying to troubleshoot the network connection issue.",
+    "exampleTranslation": "Tôi đã mất một giờ đồng hồ để cố gắng khắc phục sự cố kết nối mạng.",
+    "category": "IT"
+  },
+  {
+    "id": "23",
+    "word": "Backup",
+    "phonetic": "/ˈbækʌp/",
+    "meaning": "Sao lưu",
+    "example": "It's crucial to perform regular backups of all important files.",
+    "exampleTranslation": "Việc thực hiện sao lưu thường xuyên tất cả các tệp quan trọng là rất quan trọng.",
+    "category": "IT"
+  },
+  {
+    "id": "24",
+    "word": "Restore",
+    "phonetic": "/rɪˈstɔː(r)/",
+    "meaning": "Khôi phục",
+    "example": "After the crash, we managed to restore all the lost data from the backup.",
+    "exampleTranslation": "Sau sự cố, chúng tôi đã khôi phục được tất cả dữ liệu bị mất từ bản sao lưu.",
+    "category": "IT"
+  },
+  {
+    "id": "25",
+    "word": "Interface",
+    "phonetic": "/ˈɪntəfeɪs/",
+    "meaning": "Giao diện",
+    "example": "The new user interface is much more intuitive and easy to use.",
+    "exampleTranslation": "Giao diện người dùng mới trực quan và dễ sử dụng hơn nhiều.",
+    "category": "IT"
+  },
+  {
+    "id": "26",
+    "word": "Feature",
+    "phonetic": "/ˈfiːtʃə(r)/",
+    "meaning": "Tính năng",
+    "example": "This new software has a useful feature for automating repetitive tasks.",
+    "exampleTranslation": "Phần mềm mới này có một tính năng hữu ích để tự động hóa các tác vụ lặp đi lặp lại.",
+    "category": "IT"
+  },
+  {
+    "id": "27",
+    "word": "Bug",
+    "phonetic": "/bʌɡ/",
+    "meaning": "Lỗi (phần mềm)",
+    "example": "There's a critical bug in the latest release that needs fixing urgently.",
+    "exampleTranslation": "Có một lỗi nghiêm trọng trong bản phát hành mới nhất cần được sửa gấp.",
+    "category": "IT"
+  },
+  {
+    "id": "28",
+    "word": "Fix",
+    "phonetic": "/fɪks/",
+    "meaning": "Sửa lỗi",
+    "example": "The developers are working hard to fix the reported bug.",
+    "exampleTranslation": "Các nhà phát triển đang nỗ lực làm việc để sửa lỗi đã được báo cáo.",
+    "category": "IT"
+  },
+  {
+    "id": "29",
+    "word": "Project",
+    "phonetic": "/ˈprɒdʒekt/",
+    "meaning": "Dự án",
+    "example": "We are currently working on a big software development project.",
+    "exampleTranslation": "Chúng tôi hiện đang làm việc trong một dự án phát triển phần mềm lớn.",
+    "category": "IT"
+  },
+  {
+    "id": "30",
+    "word": "Deadline",
+    "phonetic": "/ˈdedlaɪn/",
+    "meaning": "Hạn chót",
+    "example": "We have a strict deadline to complete this project by the end of the month.",
+    "exampleTranslation": "Chúng tôi có thời hạn nghiêm ngặt để hoàn thành dự án này vào cuối tháng.",
+    "category": "IT"
+  },
+  {
+    "id": "31",
+    "word": "Meeting",
+    "phonetic": "/ˈmiːtɪŋ/",
+    "meaning": "Cuộc họp",
+    "example": "Let's schedule a meeting to discuss the project requirements.",
+    "exampleTranslation": "Hãy sắp xếp một cuộc họp để thảo luận về các yêu cầu của dự án.",
+    "category": "IT"
+  },
+  {
+    "id": "32",
+    "word": "Team",
+    "phonetic": "/tiːm/",
+    "meaning": "Nhóm",
+    "example": "Our development team consists of five talented engineers.",
+    "exampleTranslation": "Nhóm phát triển của chúng tôi bao gồm năm kỹ sư tài năng.",
+    "category": "IT"
+  },
+  {
+    "id": "33",
+    "word": "Report",
+    "phonetic": "/rɪˈpɔːt/",
+    "meaning": "Báo cáo",
+    "example": "Please generate a report on the server's uptime for the last week.",
+    "exampleTranslation": "Vui lòng tạo một báo cáo về thời gian hoạt động của máy chủ trong tuần qua.",
+    "category": "IT"
+  },
+  {
+    "id": "34",
+    "word": "Access",
+    "phonetic": "/ˈækses/",
+    "meaning": "Truy cập",
+    "example": "You need proper credentials to access the secure company network.",
+    "exampleTranslation": "Bạn cần có thông tin đăng nhập phù hợp để truy cập mạng công ty bảo mật.",
+    "category": "IT"
+  },
+  {
+    "id": "35",
+    "word": "Login",
+    "phonetic": "/ˈlɒɡɪn/",
+    "meaning": "Đăng nhập",
+    "example": "Please enter your username and password to login to the system.",
+    "exampleTranslation": "Vui lòng nhập tên người dùng và mật khẩu của bạn để đăng nhập vào hệ thống.",
+    "category": "IT"
+  },
+  {
+    "id": "36",
+    "word": "Password",
+    "phonetic": "/ˈpɑːswɜːd/",
+    "meaning": "Mật khẩu",
+    "example": "Always choose a strong password and change it regularly.",
+    "exampleTranslation": "Luôn chọn một mật khẩu mạnh và thay đổi nó thường xuyên.",
+    "category": "IT"
+  },
+  {
+    "id": "37",
+    "word": "Upgrade",
+    "phonetic": "/ʌpˈɡreɪd/",
+    "meaning": "Nâng cấp",
+    "example": "We decided to upgrade our database system to the latest version.",
+    "exampleTranslation": "Chúng tôi quyết định nâng cấp hệ thống cơ sở dữ liệu của mình lên phiên bản mới nhất.",
+    "category": "IT"
+  },
+  {
+    "id": "38",
+    "word": "Maintenance",
+    "phonetic": "/ˈmeɪntənəns/",
+    "meaning": "Bảo trì",
+    "example": "Scheduled server maintenance will take place this weekend.",
+    "exampleTranslation": "Việc bảo trì máy chủ theo lịch trình sẽ diễn ra vào cuối tuần này.",
+    "category": "IT"
+  },
+  {
+    "id": "39",
+    "word": "Configuration",
+    "phonetic": "/kənˌfɪɡəˈreɪʃn/",
+    "meaning": "Cấu hình",
+    "example": "Check the network configuration to ensure all devices are connected correctly.",
+    "exampleTranslation": "Kiểm tra cấu hình mạng để đảm bảo tất cả các thiết bị được kết nối chính xác.",
+    "category": "IT"
+  },
+  {
+    "id": "40",
+    "word": "Parameter",
+    "phonetic": "/pəˈræmɪtə(r)/",
+    "meaning": "Tham số",
+    "example": "You can adjust the display parameters in the settings menu.",
+    "exampleTranslation": "Bạn có thể điều chỉnh các tham số hiển thị trong menu cài đặt.",
+    "category": "IT"
+  },
+  {
+    "id": "41",
+    "word": "Execute",
+    "phonetic": "/ˈeksɪkjuːt/",
+    "meaning": "Thực thi",
+    "example": "The program will execute the commands in the order they are listed.",
+    "exampleTranslation": "Chương trình sẽ thực thi các lệnh theo thứ tự chúng được liệt kê.",
+    "category": "IT"
+  },
+  {
+    "id": "42",
+    "word": "Process",
+    "phonetic": "/ˈprəʊses/",
+    "meaning": "Tiến trình",
+    "example": "The background process is consuming a lot of CPU resources.",
+    "exampleTranslation": "Tiến trình chạy ngầm đang tiêu tốn rất nhiều tài nguyên CPU.",
+    "category": "IT"
+  },
+  {
+    "id": "43",
+    "word": "Error",
+    "phonetic": "/ˈerə(r)/",
+    "meaning": "Lỗi",
+    "example": "An error occurred during data synchronization, please try again.",
+    "exampleTranslation": "Đã xảy ra lỗi trong quá trình đồng bộ hóa dữ liệu, vui lòng thử lại.",
+    "category": "IT"
+  },
+  {
+    "id": "44",
+    "word": "Solution",
+    "phonetic": "/səˈluːʃn/",
+    "meaning": "Giải pháp",
+    "example": "We are looking for an innovative solution to manage our customer relationships.",
+    "exampleTranslation": "Chúng tôi đang tìm kiếm một giải pháp sáng tạo để quản lý các mối quan hệ khách hàng.",
+    "category": "IT"
+  },
+  {
+    "id": "45",
+    "word": "Support",
+    "phonetic": "/səˈpɔːt/",
+    "meaning": "Hỗ trợ",
+    "example": "Our IT support team is available 24/7 to help with any technical issues.",
+    "exampleTranslation": "Nhóm hỗ trợ IT của chúng tôi sẵn sàng 24/7 để trợ giúp mọi vấn đề kỹ thuật.",
+    "category": "IT"
+  },
+  {
+    "id": "46",
+    "word": "Resource",
+    "phonetic": "/rɪˈzɔːs/",
+    "meaning": "Tài nguyên",
+    "example": "The new server provides more computing resources for our applications.",
+    "exampleTranslation": "Máy chủ mới cung cấp nhiều tài nguyên tính toán hơn cho các ứng dụng của chúng tôi.",
+    "category": "IT"
+  },
+  {
+    "id": "47",
+    "word": "Domain",
+    "phonetic": "/dəˈmeɪn/",
+    "meaning": "Miền / Lĩnh vực",
+    "example": "Our company purchased a new internet domain name for our marketing campaign.",
+    "exampleTranslation": "Công ty chúng tôi đã mua một tên miền internet mới cho chiến dịch marketing của mình.",
+    "category": "IT"
+  },
+  {
+    "id": "48",
+    "word": "Host",
+    "phonetic": "/həʊst/",
+    "meaning": "Máy chủ",
+    "example": "Which server will host the new e-commerce website?",
+    "exampleTranslation": "Máy chủ nào sẽ lưu trữ trang web thương mại điện tử mới?",
+    "category": "IT"
+  },
+  {
+    "id": "49",
+    "word": "Query",
+    "phonetic": "/ˈkwɪəri/",
+    "meaning": "Truy vấn",
+    "example": "The database query is taking too long to retrieve the results.",
+    "exampleTranslation": "Truy vấn cơ sở dữ liệu đang mất quá nhiều thời gian để lấy kết quả.",
+    "category": "IT"
+  },
+  {
+    "id": "50",
+    "word": "Attribute",
+    "phonetic": "/ˈætrɪbjuːt/",
+    "meaning": "Thuộc tính",
+    "example": "Each user profile has specific attributes like name, email, and role.",
+    "exampleTranslation": "Mỗi hồ sơ người dùng có các thuộc tính cụ thể như tên, email và vai trò.",
+    "category": "IT"
+  }
+]

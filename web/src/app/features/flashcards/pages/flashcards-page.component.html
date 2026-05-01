@@ -1,0 +1,43 @@
+<div class="min-h-screen bg-slate-50 flex flex-col items-center py-12 px-4">
+  
+  <div class="w-full max-w-md bg-white rounded-3xl shadow-sm border border-slate-100 p-6 mb-6 flex justify-between items-center">
+    <div>
+      <h1 class="text-xl font-bold text-slate-800">Daily Review</h1>
+      <p class="text-sm text-slate-500 font-medium">Flashcards B2</p>
+    </div>
+    <ng-container *ngIf="!isLoading && cards.length > 0">
+      <div class="bg-blue-50 text-blue-700 font-bold px-4 py-2 rounded-xl">
+        {{ currentIndex + 1 }} / {{ cards.length }}
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="w-full max-w-md relative">
+    <ng-container *ngIf="isLoading; else contentState">
+      <div class="w-full bg-white rounded-3xl shadow-sm border border-slate-100 p-12 flex justify-center items-center py-20">
+        <div class="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    </ng-container>
+
+    <ng-template #contentState>
+      <ng-container *ngIf="cards.length > 0 && !isSessionComplete; else completedState">
+        <app-flashcard-3d 
+          [data]="currentCard"
+          (onGrade)="handleGrade($event)">
+        </app-flashcard-3d>
+      </ng-container>
+
+      <ng-template #completedState>
+        <div class="w-full bg-white rounded-3xl shadow-sm border border-slate-100 p-12 text-center">
+          <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 mb-2">Tuyệt vời!</h2>
+          <p class="text-slate-500">Bạn đã hoàn thành đủ số thẻ ngày hôm nay. Hãy giữ vững chuỗi học này nhé.</p>
+        </div>
+      </ng-template>
+    </ng-template>
+  </div>
+</div>

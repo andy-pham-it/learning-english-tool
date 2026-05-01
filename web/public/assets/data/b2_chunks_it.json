@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chunk_01",
+    "english": "take into consideration",
+    "vietnamese": "cân nhắc, xem xét",
+    "example": "We need to take into consideration the system load during peak hours.",
+    "exampleTranslation": "Chúng ta cần cân nhắc đến tải của hệ thống trong những giờ cao điểm.",
+    "category": "IT software",
+    "difficulty": "B2"
+  },
+  {
+    "id": "chunk_02",
+    "english": "reach out to",
+    "vietnamese": "liên hệ với",
+    "example": "Please reach out to the DevOps team if the server goes down.",
+    "exampleTranslation": "Làm ơn hãy liên hệ với nhóm DevOps nếu máy chủ bị sập nhé.",
+    "category": "IT software",
+    "difficulty": "B2"
+  },
+  {
+    "id": "chunk_03",
+    "english": "come up with",
+    "vietnamese": "nghĩ ra (giải pháp)",
+    "example": "The backend team came up with a new caching strategy.",
+    "exampleTranslation": "Nhóm backend vừa nghĩ ra một chiến lược lưu bộ nhớ đệm mới đấy.",
+    "category": "IT software",
+    "difficulty": "B2"
+  },
+  {
+    "id": "chunk_04",
+    "english": "rule out",
+    "vietnamese": "loại trừ (khả năng)",
+    "example": "We can't rule out a memory leak as the cause of the crash.",
+    "exampleTranslation": "Chúng ta không thể loại trừ khả năng rò rỉ bộ nhớ là nguyên nhân gây sập hệ thống được.",
+    "category": "IT software",
+    "difficulty": "B2"
+  },
+  {
+    "id": "chunk_05",
+    "english": "get rid of",
+    "vietnamese": "loại bỏ",
+    "example": "It's time to get rid of this legacy codebase.",
+    "exampleTranslation": "Đã đến lúc chúng ta phải dọn dẹp đống mã nguồn cũ kỹ này rồi.",
+    "category": "IT software",
+    "difficulty": "B2"
+  }
+]

@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "ta-1",
+    "category": "Giai đoạn 1",
+    "english": "Let's start by defining the interface for our component's props to ensure type safety.",
+    "vietnamese": "Định nghĩa kiểu dữ liệu (Interfaces/Types)",
+    "code": "interface UserCardProps {\n    id: string;\n    username: string;\n    isActive?: boolean;\n}",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Định nghĩa kiểu dữ liệu (Interfaces/Types)",
+    "template": "Let's start by defining the interface [Name] our component's props to ensure type safety."
+  },
+  {
+    "id": "ta-2",
+    "category": "Giai đoạn 1",
+    "english": "I'll mock some data first so we have something to render on the screen while developing.",
+    "vietnamese": "Dữ liệu giả (Mocking)",
+    "code": "const MOCK_USERS = [{ id: '1', username: 'john_doe', isActive: true }];",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dữ liệu giả (Mocking)",
+    "template": "I'll mock some data first so we have something to render on the screen while developing."
+  },
+  {
+    "id": "ta-3",
+    "category": "Giai đoạn 1",
+    "english": "We need to import a few React hooks before we begin building the logic.",
+    "vietnamese": "Import Hooks",
+    "code": "import React, { useState, useEffect, useCallback } from 'react';",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Import Hooks",
+    "template": "We need to import a few React hooks before we begin building the logic."
+  },
+  {
+    "id": "ta-4",
+    "category": "Giai đoạn 1",
+    "english": "I'm going to scaffold out the main container wrapper for this module.",
+    "vietnamese": "Dựng khung Container",
+    "code": "export default function DashboardContainer() { return <main className=\"dashboard-layout\"></main>; }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dựng khung Container",
+    "template": "I'm going to scaffold out the main container wrapper for this module."
+  },
+  {
+    "id": "ta-5",
+    "category": "Giai đoạn 1",
+    "english": "This is getting large, let's break this down into smaller, reusable sub-components.",
+    "vietnamese": "Chia nhỏ Component",
+    "code": "// (Thought process: Extracting <Sidebar /> and <MainContent /> from Dashboard)",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chia nhỏ Component",
+    "template": "This is getting large, let's break this down into smaller, reusable sub-components."
+  },
+  {
+    "id": "ta-6",
+    "category": "Giai đoạn 1",
+    "english": "I will wrap the whole section in our global state provider.",
+    "vietnamese": "Khởi tạo Context",
+    "code": "return <ThemeProvider><App /></ThemeProvider>;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Khởi tạo Context",
+    "template": "I will wrap the whole section in our global state provider."
+  },
+  {
+    "id": "ta-7",
+    "category": "Giai đoạn 1",
+    "english": "For the layout, I'm thinking of using a CSS Grid approach here.",
+    "vietnamese": "Định hình Layout",
+    "code": ".container { display: grid; grid-template-columns: 250px 1fr; }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Định hình Layout",
+    "template": "For the layout, I'm thinking of using a CSS Grid approach here."
+  },
+  {
+    "id": "ta-8",
+    "category": "Giai đoạn 1",
+    "english": "I'll stub out this function for now and come back to implement the core logic later.",
+    "vietnamese": "Viết hàm tạm (Stubbing)",
+    "code": "const processPayment = () => { /* TODO: implement payment gateway */ };",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Viết hàm tạm (Stubbing)",
+    "template": "I'll stub out this function for now and come back to implement the core logic later."
+  },
+  {
+    "id": "ta-9",
+    "category": "Giai đoạn 2",
+    "english": "I'll initialize the local state to hold the user's input.",
+    "vietnamese": "Khai báo State cục bộ",
+    "code": "const [searchQuery, setSearchQuery] = useState('');",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Khai báo State cục bộ",
+    "template": "I'll initialize the local state to hold the user's input."
+  },
+  {
+    "id": "ta-10",
+    "category": "Giai đoạn 2",
+    "english": "We need a derived state here to calculate the total price, so we don't need another useState.",
+    "vietnamese": "Trạng thái phái sinh (Derived state)",
+    "code": "const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Trạng thái phái sinh (Derived state)",
+    "template": "We need a derived state here to calculate the total price, so we don't need another [Variable]."
+  },
+  {
+    "id": "ta-11",
+    "category": "Giai đoạn 2",
+    "english": "I'm going to pass these functions down as callbacks to the child component.",
+    "vietnamese": "Truyền Callback",
+    "code": "<ChildComponent onUpdate={handleUpdate} onDelete={handleDelete} />",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Truyền Callback",
+    "template": "I'm going to pass these functions down as callbacks to the child component."
+  },
+  {
+    "id": "ta-12",
+    "category": "Giai đoạn 2",
+    "english": "Instead of prop drilling, pulling this theme data from Context would be much cleaner.",
+    "vietnamese": "Tránh Prop Drilling",
+    "code": "const { theme } = useContext(ThemeContext);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Tránh Prop Drilling",
+    "template": "Instead of prop drilling, pulling this theme data from Context would be much cleaner."
+  },
+  {
+    "id": "ta-13",
+    "category": "Giai đoạn 2",
+    "english": "I'll use a reducer here because the state transitions are getting a bit complex.",
+    "vietnamese": "Dùng Reducer cho state phức tạp",
+    "code": "const [state, dispatch] = useReducer(formReducer, initialState);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dùng Reducer cho state phức tạp",
+    "template": "I'll use a reducer here because the state transitions are getting a bit complex."
+  },
+  {
+    "id": "ta-14",
+    "category": "Giai đoạn 2",
+    "english": "Let's destructure the payload to extract just the ID and the name.",
+    "vietnamese": "Destructuring",
+    "code": "const { id, name } = responseData;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Destructuring",
+    "template": "Let's destructure the payload to extract just the ID and the name."
+  },
+  {
+    "id": "ta-15",
+    "category": "Giai đoạn 2",
+    "english": "We have to make sure to update the array immutably here.",
+    "vietnamese": "Cập nhật Immutably",
+    "code": "setItems(prevItems => [...prevItems, newItem]);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cập nhật Immutably",
+    "template": "We have to make sure to update the array immutably here."
+  },
+  {
+    "id": "ta-16",
+    "category": "Giai đoạn 2",
+    "english": "I'm setting a default value for this prop just in case it's omitted.",
+    "vietnamese": "Giá trị mặc định (Default Props)",
+    "code": "const Avatar = ({ size = 'medium', url }) => { ... }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Giá trị mặc định (Default Props)",
+    "template": "I'm setting a default value for this prop just in case it's omitted."
+  },
+  {
+    "id": "ta-17",
+    "category": "Giai đoạn 2",
+    "english": "Let's group these related fields into a single state object.",
+    "vietnamese": "Gom nhóm State",
+    "code": "const [formData, setFormData] = useState({ username: '', password: '' });",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Gom nhóm State",
+    "template": "Let's group these related fields into a single state object."
+  },
+  {
+    "id": "ta-18",
+    "category": "Giai đoạn 2",
+    "english": "I'll use a lazy initializer for this state so it only computes on the first render.",
+    "vietnamese": "Lazy Initialization",
+    "code": "const [data, setData] = useState(() => expensiveComputation());",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Lazy Initialization",
+    "template": "I'll use a lazy initializer for this state so it only computes on the first render."
+  },
+  {
+    "id": "ta-19",
+    "category": "Giai đoạn 3",
+    "english": "I will map through this array to render a list of cards.",
+    "vietnamese": "Render danh sách",
+    "code": "{users.map(user => <UserCard key={user.id} user={user} />)}",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Render danh sách",
+    "template": "I will map through this array to render a list of cards."
+  },
+  {
+    "id": "ta-20",
+    "category": "Giai đoạn 3",
+    "english": "We can use a ternary operator here to conditionally render the loading spinner.",
+    "vietnamese": "Render có điều kiện (Ternary)",
+    "code": "return isLoading ? <Spinner /> : <Content />;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Render có điều kiện (Ternary)",
+    "template": "We can use a ternary operator here to conditionally render the loading spinner."
+  },
+  {
+    "id": "ta-21",
+    "category": "Giai đoạn 3",
+    "english": "I'm going to apply some dynamic class names based on the component's active state.",
+    "vietnamese": "Class động (Dynamic Classes)",
+    "code": "<div className={`tab-item ${isActive ? 'active' : ''}`}>",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Class động (Dynamic Classes)",
+    "template": "I'm going to apply some dynamic class names based on the component's active state."
+  },
+  {
+    "id": "ta-22",
+    "category": "Giai đoạn 3",
+    "english": "Let's use a React Fragment to avoid adding an extra, unnecessary DOM node.",
+    "vietnamese": "Dùng Fragment",
+    "code": "return (<> <h1>Title</h1> <p>Desc</p> </>);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dùng Fragment",
+    "template": "Let's use a React Fragment to avoid adding an extra, unnecessary DOM node."
+  },
+  {
+    "id": "ta-23",
+    "category": "Giai đoạn 3",
+    "english": "I'll bind the input value to our state to make it a controlled component.",
+    "vietnamese": "Controlled Component",
+    "code": "<input value={text} onChange={e => setText(e.target.value)} />",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Controlled Component",
+    "template": "I'll bind the input value to our state to make it a controlled component."
+  },
+  {
+    "id": "ta-24",
+    "category": "Giai đoạn 3",
+    "english": "We should probably add some basic aria-attributes for accessibility.",
+    "vietnamese": "Thuộc tính Accessibility",
+    "code": "<button aria-expanded={isOpen} aria-label=\"Toggle menu\">",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Thuộc tính Accessibility",
+    "template": "We should probably add some basic aria-attributes for accessibility."
+  },
+  {
+    "id": "ta-25",
+    "category": "Giai đoạn 3",
+    "english": "I'll use the logical AND operator to render this modal only if it's open.",
+    "vietnamese": "Render an toàn (Logical AND)",
+    "code": "{isOpen && <Modal />}",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Render an toàn (Logical AND)",
+    "template": "I'll use the logical AND operator to render this modal only if it's open."
+  },
+  {
+    "id": "ta-26",
+    "category": "Giai đoạn 3",
+    "english": "I'll inline a quick style here just to visualize it, then extract it to a stylesheet later.",
+    "vietnamese": "Inline Style tạm thời",
+    "code": "<div style={{ border: '1px solid red' }}>Debug container</div>",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Inline Style tạm thời",
+    "template": "I'll inline a quick style here just to visualize it, then extract it to a stylesheet later."
+  },
+  {
+    "id": "ta-27",
+    "category": "Giai đoạn 4",
+    "english": "Let's attach an onClick handler to trigger the modal submission.",
+    "vietnamese": "Gắn sự kiện Click",
+    "code": "<button onClick={handleSubmitClick}>Submit</button>",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Gắn sự kiện Click",
+    "template": "Let's attach an [Variable] handler to trigger the modal submission."
+  },
+  {
+    "id": "ta-28",
+    "category": "Giai đoạn 4",
+    "english": "I need to call preventDefault to stop the page from reloading on form submit.",
+    "vietnamese": "Chặn hành vi mặc định",
+    "code": "const onSubmit = (e) => { e.preventDefault(); /* ... */ };",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chặn hành vi mặc định",
+    "template": "I need to call [Variable] to stop the page from reloading on form submit."
+  },
+  {
+    "id": "ta-29",
+    "category": "Giai đoạn 4",
+    "english": "We should debounce this input so we don't spam the API on every keystroke.",
+    "vietnamese": "Kỹ thuật Debounce",
+    "code": "const debouncedSearch = useDebounce(searchQuery, 500);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Kỹ thuật Debounce",
+    "template": "We should debounce this input so we don't spam the API on every keystroke."
+  },
+  {
+    "id": "ta-30",
+    "category": "Giai đoạn 4",
+    "english": "I'll add an event listener for the scroll event on the window.",
+    "vietnamese": "Lắng nghe sự kiện toàn cục",
+    "code": "window.addEventListener('scroll', handleScroll);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Lắng nghe sự kiện toàn cục",
+    "template": "I'll add an event listener for the scroll event on the window."
+  },
+  {
+    "id": "ta-31",
+    "category": "Giai đoạn 4",
+    "english": "Let's bind the onChange event to update the specific field in our form state.",
+    "vietnamese": "Cập nhật state từ Input",
+    "code": "onChange={e => setFormData({...formData, [e.target.name]: e.target.value})}",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cập nhật state từ Input",
+    "template": "Let's bind the [Variable] event to update the specific field in our form state."
+  },
+  {
+    "id": "ta-32",
+    "category": "Giai đoạn 4",
+    "english": "I'm going to stop event propagation here so it doesn't trigger the parent container's click event.",
+    "vietnamese": "Chặn nổi bọt sự kiện (Propagation)",
+    "code": "const onIconClick = (e) => { e.stopPropagation(); openMenu(); };",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chặn nổi bọt sự kiện (Propagation)",
+    "template": "I'm going to stop event propagation here so it doesn't trigger the parent container's click event."
+  },
+  {
+    "id": "ta-33",
+    "category": "Giai đoạn 4",
+    "english": "We need to manually shift focus back to the input after the error is cleared.",
+    "vietnamese": "Xử lý Focus",
+    "code": "inputRef.current?.focus();",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xử lý Focus",
+    "template": "We need to manually shift focus back to the input after the error is cleared."
+  },
+  {
+    "id": "ta-34",
+    "category": "Giai đoạn 4",
+    "english": "I'll trigger the validation function right before we dispatch the API action.",
+    "vietnamese": "Validate trước khi gửi",
+    "code": "if (!isValidEmail(email)) return setError('Invalid email');",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Validate trước khi gửi",
+    "template": "I'll trigger the validation function right before we dispatch the API action."
+  },
+  {
+    "id": "ta-35",
+    "category": "Giai đoạn 5",
+    "english": "I'm going to set up a useEffect to fetch the initial data when the component mounts.",
+    "vietnamese": "Kích hoạt useEffect",
+    "code": "useEffect(() => { fetchDashboardData(); }, []);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Kích hoạt useEffect",
+    "template": "I'm going to set up a [Variable] to fetch the initial data when the component mounts."
+  },
+  {
+    "id": "ta-36",
+    "category": "Giai đoạn 5",
+    "english": "Let's make sure to include the ID in the dependency array so it refetches when the ID changes.",
+    "vietnamese": "Dependency Array",
+    "code": "useEffect(() => { fetchUser(userId); }, [userId]);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dependency Array",
+    "template": "Let's make sure to include the ID in the dependency array so it refetches when the ID changes."
+  },
+  {
+    "id": "ta-37",
+    "category": "Giai đoạn 5",
+    "english": "We need to write an async function to handle the API call smoothly.",
+    "vietnamese": "Hàm Async/Await",
+    "code": "const loadData = async () => { /* ... */ };",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Hàm Async/Await",
+    "template": "We need to write an async function to handle the API call smoothly."
+  },
+  {
+    "id": "ta-38",
+    "category": "Giai đoạn 5",
+    "english": "I'll await the response from the server before updating the UI state.",
+    "vietnamese": "Chờ phản hồi (Await)",
+    "code": "const response = await api.get('/products');\nsetProducts(response.data);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chờ phản hồi (Await)",
+    "template": "I'll await the response from the server before updating the UI state."
+  },
+  {
+    "id": "ta-39",
+    "category": "Giai đoạn 5",
+    "english": "We should implement a cleanup function to abort the fetch if the component unmounts prematurely.",
+    "vietnamese": "Cleanup function",
+    "code": "return () => abortController.abort();",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cleanup function",
+    "template": "We should implement a cleanup function to abort the fetch if the component unmounts prematurely."
+  },
+  {
+    "id": "ta-40",
+    "category": "Giai đoạn 5",
+    "english": "Let's use Promise.all to fire off both requests concurrently and save loading time.",
+    "vietnamese": "Chạy đồng thời (Promise.all)",
+    "code": "const [users, posts] = await Promise.all([fetchUsers(), fetchPosts()]);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chạy đồng thời (Promise.all)",
+    "template": "Let's use Promise.all to fire off both requests concurrently and save loading time."
+  },
+  {
+    "id": "ta-41",
+    "category": "Giai đoạn 5",
+    "english": "I'm going to poll this endpoint every 5 seconds to get real-time updates.",
+    "vietnamese": "Polling dữ liệu",
+    "code": "const interval = setInterval(fetchStatus, 5000);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Polling dữ liệu",
+    "template": "I'm going to poll this endpoint every 5 seconds to get real-time updates."
+  },
+  {
+    "id": "ta-42",
+    "category": "Giai đoạn 5",
+    "english": "Let's extract and parse the JSON data from the raw fetch response.",
+    "vietnamese": "Xử lý dạng JSON",
+    "code": "const data = await res.json();",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xử lý dạng JSON",
+    "template": "Let's extract and parse the JSON data from the raw fetch response."
+  },
+  {
+    "id": "ta-43",
+    "category": "Giai đoạn 6",
+    "english": "I'll wrap this block in a try-catch to gracefully handle any network failures.",
+    "vietnamese": "Khối Try-Catch",
+    "code": "try { await submitForm(); } catch (error) { handleError(error); }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Khối Try-Catch",
+    "template": "I'll wrap this block in a try-catch to gracefully handle any network failures."
+  },
+  {
+    "id": "ta-44",
+    "category": "Giai đoạn 6",
+    "english": "Let's check if the array is empty before trying to render the list component.",
+    "vietnamese": "Kiểm tra mảng rỗng",
+    "code": "if (items.length === 0) return <EmptyState />;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Kiểm tra mảng rỗng",
+    "template": "Let's check if the array is empty before trying to render the list component."
+  },
+  {
+    "id": "ta-45",
+    "category": "Giai đoạn 6",
+    "english": "We need a fallback UI or default source in case the image URL is broken.",
+    "vietnamese": "Fallback UI cho ảnh",
+    "code": "<img src={url} onError={(e) => e.target.src = '/default-avatar.png'} />",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Fallback UI cho ảnh",
+    "template": "We need a fallback UI or default source in case the image URL is broken."
+  },
+  {
+    "id": "ta-46",
+    "category": "Giai đoạn 6",
+    "english": "I'm adding an early return here to guard against null or undefined values.",
+    "vietnamese": "Early Return / Guard Clause",
+    "code": "if (!user || !user.permissions) return null;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Early Return / Guard Clause",
+    "template": "I'm adding an early return here to guard against null or undefined values."
+  },
+  {
+    "id": "ta-47",
+    "category": "Giai đoạn 6",
+    "english": "Let's throw a custom error if the payload doesn't match our expected schema.",
+    "vietnamese": "Ném lỗi tùy chỉnh",
+    "code": "if (typeof amount !== 'number') throw new Error('Amount must be a number');",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Ném lỗi tùy chỉnh",
+    "template": "Let's throw a custom error if the payload doesn't match our expected schema."
+  },
+  {
+    "id": "ta-48",
+    "category": "Giai đoạn 6",
+    "english": "Let's add a console warning here for debugging purposes during development.",
+    "vietnamese": "Cảnh báo Console",
+    "code": "console.warn('Component mounted without required props');",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cảnh báo Console",
+    "template": "Let's add a console warning here for debugging purposes during development."
+  },
+  {
+    "id": "ta-49",
+    "category": "Giai đoạn 6",
+    "english": "We need to handle the scenario where the user temporarily loses internet connection.",
+    "vietnamese": "Xử lý kết nối mạng (Offline)",
+    "code": "if (!navigator.onLine) showToast('You are offline');",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xử lý kết nối mạng (Offline)",
+    "template": "We need to handle the scenario where the user temporarily loses internet connection."
+  },
+  {
+    "id": "ta-50",
+    "category": "Giai đoạn 6",
+    "english": "I'll use optional chaining to safely access deeply nested object properties.",
+    "vietnamese": "Optional Chaining",
+    "code": "const zipCode = user?.address?.postalCode;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Optional Chaining",
+    "template": "I'll use optional chaining to safely access deeply nested object properties."
+  },
+  {
+    "id": "ta-51",
+    "category": "Giai đoạn 7",
+    "english": "To prevent unnecessary re-renders, I'll wrap this child component in React.memo.",
+    "vietnamese": "Chống Re-render component",
+    "code": "export default React.memo(ExpensiveChartComponent);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chống Re-render component",
+    "template": "To prevent unnecessary re-renders, I'll wrap this child component in React.memo."
+  },
+  {
+    "id": "ta-52",
+    "category": "Giai đoạn 7",
+    "english": "I'm going to use useMemo to cache this heavy filtering calculation.",
+    "vietnamese": "Cache tính toán (useMemo)",
+    "code": "const filteredData = useMemo(() => processHeavyData(rawData), [rawData]);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cache tính toán (useMemo)",
+    "template": "I'm going to use [Variable] to cache this heavy filtering calculation."
+  },
+  {
+    "id": "ta-53",
+    "category": "Giai đoạn 7",
+    "english": "Let's extract this inline function and wrap it in useCallback to maintain reference equality.",
+    "vietnamese": "Cache hàm (useCallback)",
+    "code": "const handleClick = useCallback(() => { submit(id); }, [id]);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cache hàm (useCallback)",
+    "template": "Let's extract this inline function and wrap it in [Variable] to maintain reference equality."
+  },
+  {
+    "id": "ta-54",
+    "category": "Giai đoạn 7",
+    "english": "We can lazy load this heavy module to improve the initial bundle size.",
+    "vietnamese": "Lazy Loading (Code Splitting)",
+    "code": "const HeavyEditor = lazy(() => import('./HeavyEditor'));",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Lazy Loading (Code Splitting)",
+    "template": "We can lazy load this heavy module to improve the initial bundle size."
+  },
+  {
+    "id": "ta-55",
+    "category": "Giai đoạn 7",
+    "english": "This logic is getting a bit repetitive; let's extract it into a custom hook.",
+    "vietnamese": "Tách Custom Hook",
+    "code": "const { data, isLoading, error } = useFetch('/api/users');",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Tách Custom Hook",
+    "template": "This logic is getting a bit repetitive; let's extract it into a custom hook."
+  },
+  {
+    "id": "ta-56",
+    "category": "Giai đoạn 7",
+    "english": "I'll refactor this nested if-else into an early return pattern for better readability.",
+    "vietnamese": "Refactor If-Else",
+    "code": "// Thay vì if(a) { if(b) { doSomething() } }, đổi thành:\nif (!a) return; \nif (!b) return;\ndoSomething();",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Refactor If-Else",
+    "template": "I'll refactor this nested if-else into an early return pattern for better readability."
+  },
+  {
+    "id": "ta-57",
+    "category": "Giai đoạn 7",
+    "english": "I'm noticing a potential memory leak here, we must clear the timeout on unmount.",
+    "vietnamese": "Ngăn chặn rò rỉ bộ nhớ (Memory Leak)",
+    "code": "return () => clearTimeout(timerId);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Ngăn chặn rò rỉ bộ nhớ (Memory Leak)",
+    "template": "I'm noticing a potential memory leak here, we must clear the timeout on unmount."
+  },
+  {
+    "id": "ta-58",
+    "category": "Giai đoạn 7",
+    "english": "This component is doing too much; we should split the UI from the business logic.",
+    "vietnamese": "Trách nhiệm đơn lẻ (SRP)",
+    "code": "// (Move logic to a hook, keep component purely presentational)",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Trách nhiệm đơn lẻ (SRP)",
+    "template": "This component is doing too much; we should split the UI from the business logic."
+  },
+  {
+    "id": "ta-59",
+    "category": "Giai đoạn 7",
+    "english": "I'll convert this string concatenation to a template literal for cleaner syntax.",
+    "vietnamese": "Template Literals",
+    "code": "const endpoint = `/api/v1/users/${userId}/profile`;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Template Literals",
+    "template": "I'll convert this string concatenation to a template literal for cleaner syntax."
+  },
+  {
+    "id": "ta-60",
+    "category": "Giai đoạn 7",
+    "english": "Let's abstract the API base URL into an environment variable.",
+    "vietnamese": "Biến môi trường (Env Vars)",
+    "code": "const BASE_URL = process.env.NEXT_PUBLIC_API_URL;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Biến môi trường (Env Vars)",
+    "template": "Let's abstract the API base URL into an environment variable."
+  },
+  {
+    "id": "ta-61",
+    "category": "Giai đoạn 1",
+    "english": "Before jumping into the implementation, I'd like to clarify a few assumptions.",
+    "vietnamese": "Trước khi đi vào phần triển khai, tôi muốn làm rõ một vài giả định.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Khởi đầu",
+    "template": "Before jumping into the implementation, I'd like to clarify a few assumptions."
+  },
+  {
+    "id": "ta-62",
+    "category": "Giai đoạn 1",
+    "english": "Can I assume that the input array will only contain integers?",
+    "vietnamese": "Tôi có thể giả định rằng mảng đầu vào sẽ chỉ chứa các số nguyên không?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xác nhận đầu vào",
+    "template": "Can I assume that the input array will only contain integers?"
+  },
+  {
+    "id": "ta-63",
+    "category": "Giai đoạn 1",
+    "english": "How should we handle empty inputs or null values? Should I return an empty array or throw an error?",
+    "vietnamese": "Chúng ta nên xử lý các đầu vào rỗng hoặc giá trị null như thế nào? Tôi nên trả về một mảng rỗng hay ném ra một lỗi?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Hỏi về dữ liệu rỗng",
+    "template": "How should we handle empty inputs or null values? Should I return an empty array or throw an error?"
+  },
+  {
+    "id": "ta-64",
+    "category": "Giai đoạn 1",
+    "english": "Are there any strict memory or time complexity constraints we are aiming for?",
+    "vietnamese": "Có ràng buộc nghiêm ngặt nào về bộ nhớ hoặc độ phức tạp thời gian mà chúng ta đang hướng tới không?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Ràng buộc thời gian/không gian",
+    "template": "Are there any strict memory or time complexity constraints we are aiming for?"
+  },
+  {
+    "id": "ta-65",
+    "category": "Giai đoạn 1",
+    "english": "Is it possible for the array to contain duplicate elements?",
+    "vietnamese": "Mảng có khả năng chứa các phần tử trùng lặp không?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xác nhận dữ liệu trùng lặp",
+    "template": "Is it possible for the array to contain duplicate elements?"
+  },
+  {
+    "id": "ta-66",
+    "category": "Giai đoạn 2",
+    "english": "The most naive approach that comes to mind is a brute force solution where we compare every element with each other.",
+    "vietnamese": "Cách tiếp cận ngây ngô nhất nảy ra trong đầu tôi là giải pháp brute force, nơi chúng ta so sánh mọi phần tử với nhau.",
+    "code": "// A nested loop example (O(n^2))\nfor (let i = 0; i < nums.length; i++) {\n    for (let j = i + 1; j < nums.length; j++) { ... }\n}",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Đề xuất Brute Force",
+    "template": "The most naive approach that comes to mind is a brute force solution where we compare every element with each other."
+  },
+  {
+    "id": "ta-67",
+    "category": "Giai đoạn 2",
+    "english": "While this approach works, it gives us a time complexity of O(N squared), which is not optimal for large datasets.",
+    "vietnamese": "Mặc dù cách tiếp cận này hoạt động, nó cho chúng ta độ phức tạp thời gian là O(N bình phương), điều này không tối ưu cho các tập dữ liệu lớn.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Đánh giá Brute Force",
+    "template": "While this approach works, it gives us a time complexity of O(N squared), which is not optimal for large datasets."
+  },
+  {
+    "id": "ta-68",
+    "category": "Giai đoạn 2",
+    "english": "Let's see if we can optimize this to an O(N) solution by trading some space for time.",
+    "vietnamese": "Hãy xem liệu chúng ta có thể tối ưu hóa điều này thành giải pháp O(N) bằng cách đánh đổi một chút không gian lấy thời gian hay không.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Báo hiệu việc chuyển hướng tối ưu",
+    "template": "Let's see if we can optimize this to an O(N) solution by trading some space for time."
+  },
+  {
+    "id": "ta-69",
+    "category": "Giai đoạn 3",
+    "english": "I'm thinking of using a Hash Map to store the frequencies of the elements so we get O(1) lookups.",
+    "vietnamese": "Tôi đang nghĩ đến việc sử dụng Hash Map để lưu tần suất của các phần tử nhằm có được thời gian tra cứu O(1).",
+    "code": "const map = new Map();\nif (map.has(target)) return map.get(target);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dùng Hash Map (Dictionary)",
+    "template": "I'm thinking of using a Hash Map to store the frequencies of the elements so we get O(1) lookups."
+  },
+  {
+    "id": "ta-70",
+    "category": "Giai đoạn 3",
+    "english": "Since the array is already sorted, we can utilize the two-pointer technique to solve this in a single pass.",
+    "vietnamese": "Vì mảng đã được sắp xếp, chúng ta có thể tận dụng kỹ thuật hai con trỏ để giải quyết vấn đề này trong một lần duyệt.",
+    "code": "let left = 0;\nlet right = arr.length - 1;\nwhile (left < right) { /* move pointers */ }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dùng Hai con trỏ (Two Pointers)",
+    "template": "Since the array is already sorted, we can utilize the two-pointer technique to solve this in a single pass."
+  },
+  {
+    "id": "ta-71",
+    "category": "Giai đoạn 3",
+    "english": "This looks like a classic sliding window problem because we need to find a contiguous subarray.",
+    "vietnamese": "Đây có vẻ là một bài toán cửa sổ trượt kinh điển vì chúng ta cần tìm một mảng con liên tiếp.",
+    "code": "let windowStart = 0;\nfor (let windowEnd = 0; windowEnd < arr.length; windowEnd++) { ... }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dùng Cửa sổ trượt (Sliding Window)",
+    "template": "This looks like a classic sliding window problem because we need to find a contiguous subarray."
+  },
+  {
+    "id": "ta-72",
+    "category": "Giai đoạn 3",
+    "english": "I will use Depth-First Search recursively to traverse down to the leaf nodes.",
+    "vietnamese": "Tôi sẽ sử dụng Tìm kiếm theo chiều sâu đệ quy để duyệt xuống các node lá.",
+    "code": "const dfs = (node) => {\n    if (!node) return;\n    dfs(node.left);\n    dfs(node.right);\n};",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Dùng Đệ quy / DFS",
+    "template": "I will use Depth-First Search recursively to traverse down to the leaf nodes."
+  },
+  {
+    "id": "ta-73",
+    "category": "Giai đoạn 3",
+    "english": "Because there are overlapping subproblems, we can use dynamic programming with memoization to avoid redundant calculations.",
+    "vietnamese": "Bởi vì có những bài toán con chồng chéo lên nhau, chúng ta có thể sử dụng quy hoạch động với kỹ thuật memoization để tránh các tính toán thừa.",
+    "code": "const memo = {};\nif (n in memo) return memo[n];",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Quy hoạch động (Dynamic Programming)",
+    "template": "Because there are overlapping subproblems, we can use dynamic programming with memoization to avoid redundant calculations."
+  },
+  {
+    "id": "ta-74",
+    "category": "Giai đoạn 4",
+    "english": "First, let's initialize an empty array to keep track of our result.",
+    "vietnamese": "Đầu tiên, hãy khởi tạo một mảng rỗng để theo dõi kết quả của chúng ta.",
+    "code": "const result = [];",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Khởi tạo cấu trúc dữ liệu",
+    "template": "First, let's initialize an empty array to keep track of our result."
+  },
+  {
+    "id": "ta-75",
+    "category": "Giai đoạn 4",
+    "english": "We need a base case here to prevent infinite recursion.",
+    "vietnamese": "Chúng ta cần một base case ở đây để ngăn chặn đệ quy vô hạn.",
+    "code": "if (n <= 1) return n;",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Điều kiện dừng (Base case cho đệ quy)",
+    "template": "We need a base case here to prevent infinite recursion."
+  },
+  {
+    "id": "ta-76",
+    "category": "Giai đoạn 4",
+    "english": "At each iteration, we'll calculate the current sum. If it exceeds the target, we shrink the window from the left.",
+    "vietnamese": "Tại mỗi vòng lặp, chúng ta sẽ tính tổng hiện tại. Nếu nó vượt quá mục tiêu, chúng ta thu hẹp cửa sổ từ bên trái.",
+    "code": "currentSum += arr[windowEnd];\nwhile (currentSum > target) { currentSum -= arr[windowStart]; windowStart++; }",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xử lý logic bên trong vòng lặp",
+    "template": "At each iteration, we'll calculate the current sum. If it exceeds the target, we shrink the window from the left."
+  },
+  {
+    "id": "ta-77",
+    "category": "Giai đoạn 4",
+    "english": "I will update the maximum value encountered so far using Math.max.",
+    "vietnamese": "Tôi sẽ cập nhật giá trị lớn nhất gặp phải cho đến nay bằng cách sử dụng Math.max.",
+    "code": "maxLen = Math.max(maxLen, windowEnd - windowStart + 1);",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: So sánh và cập nhật giá trị",
+    "template": "I will update the maximum value encountered so far using Math.max."
+  },
+  {
+    "id": "ta-78",
+    "category": "Giai đoạn 5",
+    "english": "Before running the code, let's trace through it with a sample input to verify the logic.",
+    "vietnamese": "Trước khi chạy code, hãy chạy thử nó bằng một đầu vào mẫu để xác minh logic.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Bắt đầu dry-run",
+    "template": "Before running the code, let's trace through it with a sample input to verify the logic."
+  },
+  {
+    "id": "ta-79",
+    "category": "Giai đoạn 5",
+    "english": "Initially, left pointer is at index 0, pointing to 2. Right pointer is at the end, pointing to 9.",
+    "vietnamese": "Ban đầu, con trỏ trái ở vị trí index 0, trỏ vào số 2. Con trỏ phải ở cuối, trỏ vào số 9.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Đọc từng bước (Tracing)",
+    "template": "Initially, left pointer is at index 0, pointing to 2. Right pointer is at the end, pointing to 9."
+  },
+  {
+    "id": "ta-80",
+    "category": "Giai đoạn 5",
+    "english": "The sum is 11, which is greater than our target 10, so we decrement the right pointer.",
+    "vietnamese": "Tổng là 11, lớn hơn mục tiêu 10 của chúng ta, vì vậy chúng ta giảm con trỏ phải đi 1.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cập nhật biến trong đầu",
+    "template": "The sum is 11, which is greater than our target 10, so we decrement the right pointer."
+  },
+  {
+    "id": "ta-81",
+    "category": "Giai đoạn 5",
+    "english": "Wait, let's double-check the boundary condition here. Should it be strictly less than, or less than or equal to?",
+    "vietnamese": "Khoan đã, hãy kiểm tra lại điều kiện biên ở đây. Nó nên là nhỏ hơn hẳn, hay nhỏ hơn hoặc bằng?",
+    "code": "// if (left <= right) vs if (left < right)",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Kiểm tra Edge Cases",
+    "template": "Wait, let's double-check the boundary condition here. Should it be strictly less than, or less than or equal to?"
+  },
+  {
+    "id": "ta-82",
+    "category": "Giai đoạn 6",
+    "english": "The overall time complexity is O(N) because we iterate through the input array strictly once.",
+    "vietnamese": "Độ phức tạp thời gian tổng thể là O(N) vì chúng ta duyệt qua mảng đầu vào đúng một lần.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Độ phức tạp thời gian (Time Complexity)",
+    "template": "The overall time complexity is O(N) because we iterate through the input array strictly once."
+  },
+  {
+    "id": "ta-83",
+    "category": "Giai đoạn 6",
+    "english": "Since we are halving the search space at each step, the time complexity drops to O(log N).",
+    "vietnamese": "Vì chúng ta đang chia đôi không gian tìm kiếm ở mỗi bước, độ phức tạp thời gian giảm xuống còn O(log N).",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Độ phức tạp Logarit",
+    "template": "Since we are halving the search space at each step, the time complexity drops to O(log N)."
+  },
+  {
+    "id": "ta-84",
+    "category": "Giai đoạn 6",
+    "english": "The space complexity is O(N) in the worst-case scenario due to the extra memory allocated for the Hash Map.",
+    "vietnamese": "Độ phức tạp không gian là O(N) trong trường hợp xấu nhất do bộ nhớ bổ sung được cấp phát cho Hash Map.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Độ phức tạp không gian (Space Complexity)",
+    "template": "The space complexity is O(N) in the worst-case scenario due to the extra memory allocated for the Hash Map."
+  },
+  {
+    "id": "ta-85",
+    "category": "Giai đoạn 6",
+    "english": "Because we are sorting the array in-place and using only a few variables, the auxiliary space complexity is O(1).",
+    "vietnamese": "Bởi vì chúng ta sắp xếp mảng tại chỗ và chỉ sử dụng một vài biến, độ phức tạp không gian phụ trợ là O(1).",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Không gian hằng số (In-place)",
+    "template": "Because we are sorting the array in-place and using only a few variables, the auxiliary space complexity is O(1)."
+  },
+  {
+    "id": "ta-86",
+    "category": "Giai đoạn 1",
+    "english": "Before we discuss the how, let's align on the why. What is the primary business metric we are trying to improve here?",
+    "vietnamese": "Trước khi bàn về cách làm, hãy thống nhất về lý do. Chỉ số kinh doanh cốt lõi mà chúng ta đang cố gắng cải thiện ở đây là gì?",
+    "code": "",
+    "context": "Khi team tranh luận về một tính năng mới (ví dụ: thêm tính năng xem Bát tự vào lịch), bạn dùng câu này để hỏi xem tính năng đó tăng lượng user mới hay tăng thời gian sử dụng app.",
+    "usage": "Used in scenarios where: Khi team tranh luận về một tính năng mới (ví dụ: thêm tính năng xem Bát tự vào lịch), bạn dùng câu này để hỏi xem tính năng đó tăng lượng user mới hay tăng thời gian sử dụng app.",
+    "template": "Before we discuss the how, let's align on the why. What is the primary business metric we are trying to improve here?"
+  },
+  {
+    "id": "ta-87",
+    "category": "Giai đoạn 1",
+    "english": "We need to put ourselves in the user's shoes. Does this feature actually solve a pain point for our target audience?",
+    "vietnamese": "Chúng ta cần đặt mình vào vị trí của người dùng. Tính năng này có thực sự giải quyết được nỗi đau của đối tượng khách hàng mục tiêu không?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xác định người dùng mục tiêu",
+    "template": "We need to put ourselves in the user's shoes. Does this feature actually solve a pain point for our target audience?"
+  },
+  {
+    "id": "ta-88",
+    "category": "Giai đoạn 1",
+    "english": "Given our current sprint bandwidth, do we have the resources to deliver this full feature, or should we aim for an MVP first?",
+    "vietnamese": "Với quỹ thời gian của sprint hiện tại, chúng ta có đủ nguồn lực để làm toàn bộ tính năng này không, hay nên hướng tới bản MVP trước?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Ràng buộc về nguồn lực/thời gian",
+    "template": "Given our current sprint bandwidth, do we have the resources to deliver this full feature, or should we aim for an MVP first?"
+  },
+  {
+    "id": "ta-89",
+    "category": "Giai đoạn 1",
+    "english": "If we prioritize this task, what other items on our roadmap will be delayed?",
+    "vietnamese": "Nếu chúng ta ưu tiên công việc này, những hạng mục nào khác trên lộ trình sẽ bị chậm lại?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Đánh giá mức độ ưu tiên",
+    "template": "If we prioritize this task, what other items on our roadmap will be delayed?"
+  },
+  {
+    "id": "ta-90",
+    "category": "Giai đoạn 2",
+    "english": "For this specific use case, a NoSQL database might be more suitable than a relational one because our data schema is highly unstructured.",
+    "vietnamese": "Đối với bài toán cụ thể này, cơ sở dữ liệu NoSQL có thể phù hợp hơn cơ sở dữ liệu quan hệ vì cấu trúc dữ liệu của chúng ta không cố định.",
+    "code": "",
+    "context": "Đang quyết định lưu trữ dữ liệu log người dùng hoặc dữ liệu lịch vạn niên phức tạp.",
+    "usage": "Used in scenarios where: Đang quyết định lưu trữ dữ liệu log người dùng hoặc dữ liệu lịch vạn niên phức tạp.",
+    "template": "For this specific use case, a NoSQL database might be more suitable than a relational one because our data schema is highly unstructured."
+  },
+  {
+    "id": "ta-91",
+    "category": "Giai đoạn 2",
+    "english": "I foresee a potential bottleneck in the database queries if the user base scales rapidly. We should consider implementing a caching layer like Redis.",
+    "vietnamese": "Tôi dự đoán một nút thắt tiềm ẩn trong các truy vấn cơ sở dữ liệu nếu lượng người dùng tăng nhanh. Chúng ta nên xem xét triển khai một lớp bộ nhớ đệm như Redis.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xử lý Nút thắt hiệu suất (Bottleneck)",
+    "template": "I foresee a potential bottleneck in the database queries if the user base scales rapidly. We should consider implementing a caching layer like Redis."
+  },
+  {
+    "id": "ta-92",
+    "category": "Giai đoạn 2",
+    "english": "We need to establish a single source of truth for user data to avoid synchronization issues across our microservices.",
+    "vietnamese": "Chúng ta cần thiết lập một nguồn dữ liệu gốc duy nhất cho thông tin người dùng để tránh các vấn đề đồng bộ hóa giữa các dịch vụ nhỏ.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Nguồn sự thật duy nhất (SSOT)",
+    "template": "We need to establish a single source of truth for user data to avoid synchronization issues across our microservices."
+  },
+  {
+    "id": "ta-93",
+    "category": "Giai đoạn 2",
+    "english": "How does the system handle concurrent updates? We might need to implement optimistic locking to prevent data overriding.",
+    "vietnamese": "Hệ thống xử lý các bản cập nhật đồng thời như thế nào? Chúng ta có thể cần áp dụng optimistic locking để tránh việc ghi đè dữ liệu.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Xử lý đồng thời (Concurrency)",
+    "template": "How does the system handle concurrent updates? We might need to implement optimistic locking to prevent data overriding."
+  },
+  {
+    "id": "ta-94",
+    "category": "Giai đoạn 3",
+    "english": "From an accessibility standpoint, we need to ensure the contrast ratio is comfortable, especially for users who might suffer from eye strain with dark interfaces.",
+    "vietnamese": "Từ góc độ khả năng tiếp cận, chúng ta cần đảm bảo độ tương phản đủ thoải mái, đặc biệt đối với những người dùng có thể bị mỏi mắt với giao diện tối màu.",
+    "code": "",
+    "context": "Quyết định chọn Light Mode làm mặc định hoặc điều chỉnh font chữ to hơn cho ứng dụng.",
+    "usage": "Used in scenarios where: Quyết định chọn Light Mode làm mặc định hoặc điều chỉnh font chữ to hơn cho ứng dụng.",
+    "template": "From an accessibility standpoint, we need to ensure the contrast ratio is comfortable, especially for users who might suffer from eye strain with dark interfaces."
+  },
+  {
+    "id": "ta-95",
+    "category": "Giai đoạn 3",
+    "english": "This current flow has too much friction. Can we reduce the number of steps required to complete the registration process?",
+    "vietnamese": "Luồng hiện tại có quá nhiều rào cản. Chúng ta có thể giảm bớt số bước cần thiết để hoàn thành quá trình đăng ký không?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Giảm ma sát (Friction)",
+    "template": "This current flow has too much friction. Can we reduce the number of steps required to complete the registration process?"
+  },
+  {
+    "id": "ta-96",
+    "category": "Giai đoạn 3",
+    "english": "Let's track the heatmap and drop-off rate on this screen before we decide to completely revamp the UI.",
+    "vietnamese": "Hãy theo dõi biểu đồ nhiệt và tỷ lệ thoát trên màn hình này trước khi chúng ta quyết định đập đi xây lại toàn bộ giao diện.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Hành vi người dùng (User behavior)",
+    "template": "Let's track the heatmap and drop-off rate on this screen before we decide to completely revamp the UI."
+  },
+  {
+    "id": "ta-97",
+    "category": "Giai đoạn 3",
+    "english": "This component doesn't feel consistent with our overall design system. Let's align it with the global UI guidelines.",
+    "vietnamese": "Component này có vẻ không nhất quán với hệ thống thiết kế tổng thể của chúng ta. Hãy điều chỉnh nó theo quy chuẩn UI chung.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Nhất quán thiết kế",
+    "template": "This component doesn't feel consistent with our overall design system. Let's align it with the global UI guidelines."
+  },
+  {
+    "id": "ta-98",
+    "category": "Giai đoạn 4",
+    "english": "There's a clear trade-off here. Going with approach A gets us to market faster, but approach B is much more scalable in the long run.",
+    "vietnamese": "Có một sự đánh đổi rõ ràng ở đây. Chọn cách tiếp cận A giúp chúng ta ra mắt nhanh hơn, nhưng cách tiếp cận B lại dễ mở rộng hơn rất nhiều về lâu dài.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Bàn về Đánh đổi (Trade-off)",
+    "template": "There's a clear trade-off here. Going with approach A gets us to market faster, but approach B is much more scalable in the long run."
+  },
+  {
+    "id": "ta-99",
+    "category": "Giai đoạn 4",
+    "english": "I'm okay with taking a shortcut to meet the deadline, but we must log this as technical debt and refactor it in the next sprint.",
+    "vietnamese": "Tôi đồng ý việc đi đường tắt để kịp tiến độ, nhưng chúng ta phải ghi nhận điều này như một khoản nợ kỹ thuật và tối ưu lại nó trong sprint tới.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Nợ kỹ thuật (Technical Debt)",
+    "template": "I'm okay with taking a shortcut to meet the deadline, but we must log this as technical debt and refactor it in the next sprint."
+  },
+  {
+    "id": "ta-100",
+    "category": "Giai đoạn 4",
+    "english": "This third-party API is a single point of failure. What is our fallback strategy if their service goes down?",
+    "vietnamese": "API của bên thứ ba này là một điểm chết duy nhất. Chiến lược dự phòng của chúng ta là gì nếu dịch vụ của họ sập?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Điểm lỗi duy nhất (SPOF)",
+    "template": "This third-party API is a single point of failure. What is our fallback strategy if their service goes down?"
+  },
+  {
+    "id": "ta-101",
+    "category": "Giai đoạn 4",
+    "english": "Using serverless functions here is convenient, but we need to monitor the billing closely as it could spike unexpectedly.",
+    "vietnamese": "Sử dụng serverless ở đây rất tiện, nhưng chúng ta cần theo dõi sát sao chi phí vì nó có thể tăng đột biến ngoài dự kiến.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Chi phí hạ tầng",
+    "template": "Using serverless functions here is convenient, but we need to monitor the billing closely as it could spike unexpectedly."
+  },
+  {
+    "id": "ta-102",
+    "category": "Giai đoạn 5",
+    "english": "Before Frontend and Backend start working in parallel, let's finalize the API contract so no one is blocked.",
+    "vietnamese": "Trước khi Frontend và Backend bắt đầu làm việc song song, hãy chốt lại cấu trúc API (contract) để không ai bị tắc nghẽn.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Thống nhất API Contract",
+    "template": "Before Frontend and Backend start working in parallel, let's finalize the API contract so no one is blocked."
+  },
+  {
+    "id": "ta-103",
+    "category": "Giai đoạn 5",
+    "english": "We should align with the QA team early to define the edge cases and acceptance criteria for this user story.",
+    "vietnamese": "Chúng ta nên phối hợp với team QA từ sớm để xác định các trường hợp ngoại lệ và tiêu chí nghiệm thu cho hạng mục này.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Quy trình Test (QA Alignment)",
+    "template": "We should align with the QA team early to define the edge cases and acceptance criteria for this user story."
+  },
+  {
+    "id": "ta-104",
+    "category": "Giai đoạn 5",
+    "english": "Since we are unfamiliar with this new AI library, I suggest we dedicate a two-day spike to research and build a proof of concept.",
+    "vietnamese": "Vì chúng ta chưa quen với thư viện AI mới này, tôi đề xuất dành ra hai ngày (spike) để nghiên cứu và xây dựng một bản chạy thử.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Đề xuất Spike/Research",
+    "template": "Since we are unfamiliar with this new AI library, I suggest we dedicate a two-day spike to research and build a proof of concept."
+  },
+  {
+    "id": "ta-105",
+    "category": "Giai đoạn 5",
+    "english": "To ensure smooth handover between remote team members, let's document the architectural decisions comprehensively in Confluence.",
+    "vietnamese": "Để đảm bảo việc bàn giao trơn tru giữa các thành viên làm việc từ xa, hãy tài liệu hóa các quyết định kiến trúc một cách toàn diện trên Confluence.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Lịch trình / Remote Work",
+    "template": "To ensure smooth handover between remote team members, let's document the architectural decisions comprehensively in Confluence."
+  },
+  {
+    "id": "ta-106",
+    "category": "Giai đoạn 6",
+    "english": "We should wrap this new calendar feature behind a feature flag so we can roll it out gradually and roll it back instantly if something breaks.",
+    "vietnamese": "Chúng ta nên bọc tính năng lịch mới này sau một feature flag để có thể tung ra từ từ và thu hồi ngay lập tức nếu có lỗi xảy ra.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Feature Flag (Cờ tính năng)",
+    "template": "We should wrap this new calendar feature behind a feature flag so we can roll it out gradually and roll it back instantly if something breaks."
+  },
+  {
+    "id": "ta-107",
+    "category": "Giai đoạn 6",
+    "english": "Instead of guessing what UI works better, let's run an A/B test on a small segment of our user base to gather empirical data.",
+    "vietnamese": "Thay vì đoán xem giao diện nào hoạt động tốt hơn, hãy chạy một bài test A/B trên một tập người dùng nhỏ để thu thập dữ liệu thực tế.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: A/B Testing",
+    "template": "Instead of guessing what UI works better, let's run an A/B test on a small segment of our user base to gather empirical data."
+  },
+  {
+    "id": "ta-108",
+    "category": "Giai đoạn 6",
+    "english": "A phased rollout strategy would mitigate the risk of overwhelming our servers on launch day.",
+    "vietnamese": "Một chiến lược ra mắt từng giai đoạn sẽ giảm thiểu rủi ro làm quá tải máy chủ của chúng ta vào ngày ra mắt.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Phased Rollout (Ra mắt từng giai đoạn)",
+    "template": "A phased rollout strategy would mitigate the risk of overwhelming our servers on launch day."
+  },
+  {
+    "id": "ta-109",
+    "category": "Giai đoạn 6",
+    "english": "Before going live, we need to ensure our monitoring dashboards are set up to alert us of any abnormal spike in error rates.",
+    "vietnamese": "Trước khi lên live, chúng ta cần đảm bảo các dashboard giám sát đã được thiết lập để cảnh báo cho chúng ta về bất kỳ sự gia tăng đột biến bất thường nào của tỷ lệ lỗi.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Monitoring & Alerting (Giám sát & Cảnh báo)",
+    "template": "Before going live, we need to ensure our monitoring dashboards are set up to alert us of any abnormal spike in error rates."
+  },
+  {
+    "id": "ta-110",
+    "category": "Giai đoạn 7",
+    "english": "We must ensure that all Personally Identifiable Information (PII) is encrypted both in transit and at rest.",
+    "vietnamese": "Chúng ta phải đảm bảo rằng tất cả Thông tin Định danh Cá nhân (PII) đều được mã hóa cả khi truyền tải lẫn khi lưu trữ.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Mã hóa dữ liệu (Data Encryption)",
+    "template": "We must ensure that all Personally Identifiable Information (PII) is encrypted both in transit and at rest."
+  },
+  {
+    "id": "ta-111",
+    "category": "Giai đoạn 7",
+    "english": "To protect our APIs from DDoS attacks or brute-force attempts, implementing strict rate limiting is non-negotiable.",
+    "vietnamese": "Để bảo vệ API của chúng ta khỏi các cuộc tấn công DDoS hoặc dò mật khẩu, việc áp dụng giới hạn tỷ lệ nghiêm ngặt là không thể thương lượng.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Rate Limiting (Giới hạn tỷ lệ)",
+    "template": "To protect our APIs from DDoS attacks or brute-force attempts, implementing strict rate limiting is non-negotiable."
+  },
+  {
+    "id": "ta-112",
+    "category": "Giai đoạn 7",
+    "english": "Let's review the authorization logic to guarantee that users cannot access resources outside of their own permissions.",
+    "vietnamese": "Hãy xem xét lại logic phân quyền để đảm bảo rằng người dùng không thể truy cập các tài nguyên nằm ngoài quyền hạn của họ.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Phân quyền (Authorization)",
+    "template": "Let's review the authorization logic to guarantee that users cannot access resources outside of their own permissions."
+  },
+  {
+    "id": "ta-113",
+    "category": "Giai đoạn 7",
+    "english": "We need to run a security scan to catch any vulnerable third-party dependencies before the final release.",
+    "vietnamese": "Chúng ta cần chạy một bản quét bảo mật để bắt bất kỳ lỗ hổng nào từ các thư viện của bên thứ ba trước bản phát hành cuối cùng.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Quét lỗ hổng (Vulnerability Scanning)",
+    "template": "We need to run a security scan to catch any vulnerable third-party dependencies before the final release."
+  },
+  {
+    "id": "ta-114",
+    "category": "Giai đoạn 8",
+    "english": "While 100% test coverage is a myth, we should at least mandate writing unit tests for all the core business logic.",
+    "vietnamese": "Dù độ phủ test 100% là điều hão huyền, chúng ta ít nhất nên bắt buộc viết unit test cho toàn bộ logic nghiệp vụ cốt lõi.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Test Coverage (Độ phủ mã kiểm thử)",
+    "template": "While 100% test coverage is a myth, we should at least mandate writing unit tests for all the core business logic."
+  },
+  {
+    "id": "ta-115",
+    "category": "Giai đoạn 8",
+    "english": "For critical user journeys like the subscription flow, we need robust End-to-End tests running in our CI/CD pipeline.",
+    "vietnamese": "Đối với các hành trình người dùng quan trọng như luồng đăng ký gói cước, chúng ta cần các bài test End-to-End vững chắc chạy trong luồng CI/CD.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: End-to-End Testing (Kiểm thử đầu cuối)",
+    "template": "For critical user journeys like the subscription flow, we need robust End-to-End tests running in our CI/CD pipeline."
+  },
+  {
+    "id": "ta-116",
+    "category": "Giai đoạn 8",
+    "english": "Have we conducted any load testing to simulate how the system behaves under peak traffic?",
+    "vietnamese": "Chúng ta đã thực hiện bất kỳ bài kiểm tra tải nào để mô phỏng cách hệ thống hoạt động dưới lượng truy cập đỉnh điểm chưa?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Load Testing (Kiểm thử tải)",
+    "template": "Have we conducted any load testing to simulate how the system behaves under peak traffic?"
+  },
+  {
+    "id": "ta-117",
+    "category": "Giai đoạn 8",
+    "english": "This refactoring is extensive; we need QA to perform a full regression test to ensure we haven't broken any existing functionalities.",
+    "vietnamese": "Đợt tối ưu code này rất rộng; chúng ta cần QA thực hiện một đợt kiểm thử hồi quy toàn diện để đảm bảo không làm hỏng bất kỳ chức năng hiện có nào.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Regression Testing (Kiểm thử hồi quy)",
+    "template": "This refactoring is extensive; we need QA to perform a full regression test to ensure we haven't broken any existing functionalities."
+  },
+  {
+    "id": "ta-118",
+    "category": "Giai đoạn 9",
+    "english": "We need to manage the client's expectations here; delivering this complex feature within the current sprint is highly unlikely.",
+    "vietnamese": "Chúng ta cần quản lý kỳ vọng của khách hàng ở đây; việc giao tính năng phức tạp này trong sprint hiện tại là điều rất khó xảy ra.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Quản lý kỳ vọng (Managing Expectations)",
+    "template": "We need to manage the client's expectations here; delivering this complex feature within the current sprint is highly unlikely."
+  },
+  {
+    "id": "ta-119",
+    "category": "Giai đoạn 9",
+    "english": "I have to push back on this scope creep. If we add this new requirement now, it will derail our entire release schedule.",
+    "vietnamese": "Tôi phải từ chối việc phình to phạm vi này. Nếu chúng ta thêm yêu cầu mới này vào lúc này, nó sẽ làm chệch hướng toàn bộ lịch trình ra mắt.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Từ chối Scope Creep",
+    "template": "I have to push back on this scope creep. If we add this new requirement now, it will derail our entire release schedule."
+  },
+  {
+    "id": "ta-120",
+    "category": "Giai đoạn 9",
+    "english": "Let's provide a high-level status update to the stakeholders, focusing on the milestones achieved and the current blockers.",
+    "vietnamese": "Hãy cung cấp một bản cập nhật tiến độ tổng quan cho các bên liên quan, tập trung vào các cột mốc đã đạt được và những rào cản hiện tại.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Cập nhật tiến độ (Status Update)",
+    "template": "Let's provide a high-level status update to the stakeholders, focusing on the milestones achieved and the current blockers."
+  },
+  {
+    "id": "ta-121",
+    "category": "Giai đoạn 9",
+    "english": "I want to make sure the engineering team and the product team are completely aligned on the long-term vision of this architecture.",
+    "vietnamese": "Tôi muốn đảm bảo rằng team kỹ thuật và team sản phẩm hoàn toàn đồng bộ về tầm nhìn dài hạn của kiến trúc này.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Đồng bộ tầm nhìn (Aligning Vision)",
+    "template": "I want to make sure the engineering team and the product team are completely aligned on the long-term vision of this architecture."
+  },
+  {
+    "id": "ta-122",
+    "category": "Giai đoạn 10",
+    "english": "This is a classic 'build versus buy' dilemma. Using a specialized third-party tool like ElevenLabs for voice generation is much more cost-effective than developing and training our own AI model from scratch.",
+    "vietnamese": "Đây là tình huống tiến thoái lưỡng nan 'tự xây hay đi mua' kinh điển. Việc sử dụng một công cụ chuyên biệt của bên thứ ba như ElevenLabs để tạo giọng nói sẽ tiết kiệm chi phí hơn nhiều so với việc tự phát triển và huấn luyện mô hình AI của riêng chúng ta từ đầu.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Mua hay Tự xây (Build vs. Buy)",
+    "template": "This is a classic 'build versus buy' dilemma. Using a specialized third-party tool like ElevenLabs for voice generation is much more cost-effective than developing and training our own AI model from scratch."
+  },
+  {
+    "id": "ta-123",
+    "category": "Giai đoạn 10",
+    "english": "We are over-provisioning our cloud instances. Let's right-size these servers to optimize our monthly infrastructure costs.",
+    "vietnamese": "Chúng ta đang cấp phát dư thừa các phiên bản cloud. Hãy điều chỉnh lại kích thước các máy chủ này để tối ưu hóa chi phí hạ tầng hàng tháng.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Tối ưu chi phí Cloud",
+    "template": "We are over-provisioning our cloud instances. Let's right-size these servers to optimize our monthly infrastructure costs."
+  },
+  {
+    "id": "ta-124",
+    "category": "Giai đoạn 10",
+    "english": "We are bottle-necked on the backend side; can we reallocate some full-stack resources to help clear the API backlog?",
+    "vietnamese": "Chúng ta đang bị nghẽn ở phía backend; liệu chúng ta có thể điều phối một số nhân sự full-stack sang để giúp giải quyết lượng công việc API đang tồn đọng không?",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Phân bổ Nguồn lực (Resource Allocation)",
+    "template": "We are bottle-necked on the backend side; can we reallocate some full-stack resources to help clear the API backlog?"
+  },
+  {
+    "id": "ta-125",
+    "category": "Giai đoạn 10",
+    "english": "Instead of reinventing the wheel, let's see if we can adapt the existing modules we built for the previous project.",
+    "vietnamese": "Thay vì phát minh lại bánh xe, hãy xem liệu chúng ta có thể tận dụng lại các module hiện có mà chúng ta đã xây cho dự án trước hay không.",
+    "code": "",
+    "context": "",
+    "usage": "Sử dụng khi bạn cần thực hiện: Tái sử dụng (Reusability)",
+    "template": "Instead of reinventing the wheel, let's see if we can adapt the existing modules we built for the previous project."
+  }
+]
