@@ -85,6 +85,7 @@ Return ONLY the raw JSON object, no markdown formatting.`;
 
     if (!response.ok) {
         const errorText = await response.text();
+        console.error('Gemini API Error (Dictionary):', errorText);
         return new Response(JSON.stringify({ error: `Gemini Error: ${response.statusText}`, detail: errorText }), {
           status: response.status,
           headers: { 'Content-Type': 'application/json' },

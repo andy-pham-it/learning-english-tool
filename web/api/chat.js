@@ -23,6 +23,13 @@ export default async function handler(req) {
     const body = await req.json();
     const { messages } = body; 
 
+    if (!messages || !Array.isArray(messages)) {
+      return new Response(JSON.stringify({ error: 'Messages array is required' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
     // System instruction passed via native Gemini 'system_instruction' param
     const systemInstruction = {
       parts: [{
@@ -56,8 +63,8 @@ Your goals:
 
     if (!response.ok) {
         const errorText = await response.text();
-        console.error('Gemini API Error:', errorText);
-        return new Response(JSON.stringify({ error: `API Error: ${response.statusText}` }), {
+        console.error('Gemini API Error (Chat):', errorText);
+        return new Response(JSON.stringify({ error: `API Error: ${response.statusText}`, detail: errorText }), {
           status: response.status,
           headers: { 'Content-Type': 'application/json' },
         });
