@@ -1,7 +1,6 @@
 
-export const config = {
-  runtime: 'edge',
-};
+export const maxDuration = 60;
+export const runtime = 'edge';
 
 export default async function handler(req) {
   if (req.method !== 'POST') {
@@ -29,7 +28,7 @@ export default async function handler(req) {
       });
     }
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemma-4-26b-a4b-it:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${apiKey}`;
 
     const prompt = `You are a professional English-Vietnamese dictionary.
 Analyze the word: "${word}"

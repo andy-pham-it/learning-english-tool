@@ -65,9 +65,9 @@ Each item must have the following structure:
     PROMPT += `\nCRITICAL INSTRUCTION: DO NOT generate any of the following words, as the user already learned them: ${existingWords.join(', ')}. Please provide completely new words.`;
   }
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${apiKey}`;
 
-  console.log(`Generating ${countToGenerate} new ${topic} (${level}) words using Gemini 2.5 Flash...`);
+  console.log(`Generating ${countToGenerate} new ${topic} (${level}) words using Gemini 3.1 Flash Lite...`);
   console.log(`Saving output to: ${outputPath}`);
   try {
     const response = await fetch(url, {
