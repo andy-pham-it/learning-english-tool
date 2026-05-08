@@ -1,8 +1,8 @@
-
 export const maxDuration = 60;
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 export default async function handler(req) {
+  console.log('--- Dictionary Request Started ---');
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method Not Allowed' }), {
       status: 405,
@@ -12,14 +12,17 @@ export default async function handler(req) {
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
+    console.error('Error: GEMINI_API_KEY is missing in environment variables.');
     return new Response(JSON.stringify({ error: 'GEMINI_API_KEY is not configured.' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
   }
+  console.log(`Using API Key: ${apiKey.substring(0, 4)}...${apiKey.substring(apiKey.length - 4)}`);
 
   try {
     const { word } = await req.json();
+    console.log(`Processing word: "${word}"`);
 
     if (!word) {
       return new Response(JSON.stringify({ error: 'Word is required' }), {
@@ -28,7 +31,8 @@ export default async function handler(req) {
       });
     }
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`;
+    console.log('Calling Gemini API...');
 
     const prompt = `You are a professional English-Vietnamese dictionary.
 Analyze the word: "${word}"
@@ -81,6 +85,8 @@ Return ONLY the raw JSON object, no markdown formatting.`;
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(geminiRequestBody)
     });
+
+    console.log(`Gemini API Response Status: ${response.status}`);
 
     if (!response.ok) {
         const errorText = await response.text();
