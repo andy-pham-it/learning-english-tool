@@ -1,4 +1,6 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { firstValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +9,9 @@ export class SpeechService {
   private synthesis = window.speechSynthesis;
   private recognition: any;
 
+  private http = inject(HttpClient);
   isListening = signal(false);
+  isGenerating = signal(false);
 
   constructor() {
     const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition;
@@ -20,11 +24,31 @@ export class SpeechService {
     }
   }
 
-  speak(text: string): Promise<void> {
+  async speak(text: string): Promise<void> {
+    // Try Gemini TTS first for premium quality
+    try {
+      this.isGenerating.set(true);
+      const response = await firstValueFrom(
+        this.http.post<{audio: string}>('/api/tts', { text })
+      );
+      
+      if (response && response.audio) {
+        const audio = new Audio(`data:audio/wav;base64,${response.audio}`);
+        await audio.play();
+        this.isGenerating.set(false);
+        return;
+      }
+    } catch (e) {
+      console.error('Gemini TTS failed, falling back to browser synthesis', e);
+    } finally {
+      this.isGenerating.set(false);
+    }
+
+    // Fallback to browser synthesis
     return new Promise((resolve) => {
       this.synthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.9; // Slightly slower for better clarity
+      utterance.rate = 0.9;
       utterance.pitch = 1;
       utterance.onend = () => resolve();
       this.synthesis.speak(utterance);

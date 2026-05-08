@@ -29,7 +29,7 @@ export default async function handler(req) {
       });
     }
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemma-3-4b-it:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemma-4-26b-a4b-it:generateContent?key=${apiKey}`;
 
     const prompt = `You are a professional English-Vietnamese dictionary.
 Analyze the word: "${word}"
