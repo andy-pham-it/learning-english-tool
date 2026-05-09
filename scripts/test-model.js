@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyDLwIla2Fr7Qk9zZj-_rXpBO1tohizgZGg';
+const apiKey = 'AIzaSyCyNweU9RC2yv9qBC3T-_9QArm7KeU8hEs';
 const word = 'serendipity';
 const model = 'gemini-flash-latest';
 

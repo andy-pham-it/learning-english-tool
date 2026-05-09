@@ -2,7 +2,6 @@ import { Component, Input, Output, EventEmitter, inject, signal } from '@angular
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { DictionaryService, DictionaryResult } from '../../../../core/services/dictionary.service';
-import { HistoryService } from '../../../../core/services/history.service';
 import { SpeechService } from '../../../../core/services/speech.service';
 
 @Component({
@@ -104,7 +103,6 @@ export class QuickDictionaryComponent {
   @Output() close = new EventEmitter<void>();
 
   private dictionaryService = inject(DictionaryService);
-  private historyService = inject(HistoryService);
   private router = inject(Router);
   protected speech = inject(SpeechService);
 
@@ -119,21 +117,18 @@ export class QuickDictionaryComponent {
     this.error.set(null);
     this.result.set(null);
 
-    this.dictionaryService.lookup(word).subscribe({
-      next: (res: any) => {
-        if (res.error) {
-          this.error.set(res.error);
-        } else {
-          this.result.set(res);
-          this.historyService.saveSearch(res.word, res);
-        }
-        this.loading.set(false);
-      },
-      error: () => {
-        this.error.set('Network error');
-        this.loading.set(false);
+    try {
+      const res = await this.dictionaryService.lookup(word);
+      if (res.error) {
+        this.error.set(res.error);
+      } else {
+        this.result.set(res);
       }
-    });
+    } catch (err) {
+      this.error.set('Network error');
+    } finally {
+      this.loading.set(false);
+    }
   }
 
   addToFlashcards() {

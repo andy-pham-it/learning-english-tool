@@ -1,0 +1,10 @@
+- `[x]` Refactor `DictionaryService` to fetch from Firestore first, then fallback to API.
+- `[x]` Update `DictionaryService` to save successful API results to Firestore.
+- `[x]` Add `getSavedWords` method to `DictionaryService`.
+- `[x]` Update `DictionaryComponent` UI to use `getSavedWords` instead of `HistoryService`.
+- `[x]` Improve UI of the saved words list in `DictionaryComponent` (Renamed to "Community Dictionary").
+- `[x]` Ensure Collocations are generated and displayed properly in `DictionaryComponent` and `api/dictionary.js`.
+- `[x]` Clean up `HistoryService`.
+- `[x]` Refactor `DictionaryComponent` to Sidebar + Main Panel layout for better word switching.
+- `[x]` Hide "+" button if the word already exists in the community dictionary.
+- `[x]` Run tests, fix lint errors, and create final report.
