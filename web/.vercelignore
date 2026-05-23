@@ -1,0 +1,7 @@
+node_modules
+.angular
+dist
+.vercel
+.vscode
+.history
+*.log

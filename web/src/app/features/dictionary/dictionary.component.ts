@@ -13,7 +13,7 @@ import { SpeechService } from '../../core/services/speech.service';
       <!-- Sidebar -->
       <aside class="w-80 flex-shrink-0 bg-white border-r border-slate-200 flex flex-col z-40">
         <!-- Sidebar Header -->
-        <div class="p-6 border-b border-slate-100 space-y-4">
+        <div class="p-4 lg:pr-14 border-b border-slate-100 space-y-4">
           <h1 class="text-xl font-black text-slate-900 flex items-center gap-2">
             <span class="w-7 h-7 bg-indigo-600 text-white rounded-lg flex items-center justify-center text-sm">D</span>
             Dictionary
@@ -25,7 +25,7 @@ import { SpeechService } from '../../core/services/speech.service';
               [(ngModel)]="searchQuery"
               (keyup.enter)="search()"
               placeholder="Quick search..."
-              class="w-full bg-slate-100 border-none rounded-xl py-3 pl-10 pr-3 text-sm text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500 transition-all shadow-inner"
+              class="w-full bg-slate-100 border-none rounded-xl py-2 pl-10 pr-3 text-sm text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500 transition-all shadow-inner"
             />
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -34,16 +34,30 @@ import { SpeechService } from '../../core/services/speech.service';
         </div>
 
         <!-- Word List -->
-        <div class="flex-1 overflow-y-auto p-3 space-y-1 no-scrollbar">
+        <div class="flex-1 overflow-y-auto p-3 lg:pr-14 space-y-1 no-scrollbar">
           <div class="px-3 mb-2 flex items-center justify-between">
             <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Community</span>
-            <button (click)="loadHistory()" class="p-1 hover:bg-slate-100 rounded-md transition-colors text-indigo-500">
-               <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-            </button>
+            <div class="flex items-center gap-1">
+              <button (click)="toggleSort()" class="p-1 hover:bg-slate-100 rounded-md transition-colors text-slate-400" [title]="'Sort: ' + sortBy()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
+                </svg>
+              </button>
+              <button (click)="loadHistory()" class="p-1 hover:bg-slate-100 rounded-md transition-colors text-indigo-500">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sort Options (Quick labels) -->
+          <div class="flex gap-1 px-3 lg:pr-14 mb-4 overflow-x-auto no-scrollbar">
+            <button (click)="sortBy.set('alpha')" [class]="sortBy() === 'alpha' ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-500'" class="text-[9px] px-2 py-1 rounded-full font-bold transition-all">A-Z</button>
+            <button (click)="sortBy.set('time')" [class]="sortBy() === 'time' ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-500'" class="text-[9px] px-2 py-1 rounded-full font-bold transition-all">Newest</button>
+            <button (click)="sortBy.set('category')" [class]="sortBy() === 'category' ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-500'" class="text-[9px] px-2 py-1 rounded-full font-bold transition-all">Category</button>
           </div>
 
           <button 
-            *ngFor="let item of history()" 
+            *ngFor="let item of sortedHistory()" 
             (click)="selectHistoryItem(item)"
             [class.bg-indigo-50]="result()?.word?.toLowerCase() === item.word?.toLowerCase()"
             [class.border-indigo-100]="result()?.word?.toLowerCase() === item.word?.toLowerCase()"
@@ -104,7 +118,7 @@ import { SpeechService } from '../../core/services/speech.service';
                        </button>
                      </div>
                    </div>
-                   <button *ngIf="!isInHistory()" (click)="addToFlashcards()" class="p-5 bg-white text-indigo-600 rounded-3xl hover:shadow-lg transition-all active:scale-95 shadow-xl shadow-indigo-900/10">
+                   <button *ngIf="!isSaved()" (click)="addToFlashcards()" class="p-5 bg-white text-indigo-600 rounded-3xl hover:shadow-lg transition-all active:scale-95 shadow-xl shadow-indigo-900/10">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
                    </button>
                  </div>
@@ -184,15 +198,45 @@ export class DictionaryComponent {
   result = signal<DictionaryResult | null>(null);
   error = signal<string | null>(null);
   history = signal<any[]>([]);
+  personalList = signal<string[]>([]);
+  sortBy = signal<'alpha' | 'time' | 'category'>('time');
 
-  isInHistory = computed(() => {
+  sortedHistory = computed(() => {
+    const list = [...this.history()];
+    const mode = this.sortBy();
+    
+    if (mode === 'alpha') {
+      return list.sort((a, b) => (a.word || '').localeCompare(b.word || ''));
+    } else if (mode === 'time') {
+      return list.sort((a, b) => {
+        const tA = a.timestamp?.seconds || 0;
+        const tB = b.timestamp?.seconds || 0;
+        return tB - tA;
+      });
+    } else if (mode === 'category') {
+      return list.sort((a, b) => {
+        const catA = a.entries?.[0]?.partOfSpeech || '';
+        const catB = b.entries?.[0]?.partOfSpeech || '';
+        return catA.localeCompare(catB);
+      });
+    }
+    return list;
+  });
+
+  isSaved = computed(() => {
     const currentWord = this.result()?.word?.toLowerCase();
     if (!currentWord) return false;
-    return this.history().some(item => item.word?.toLowerCase() === currentWord);
+    return this.personalList().includes(currentWord);
   });
 
   ngOnInit() {
     this.loadHistory();
+    this.loadPersonalList();
+  }
+
+  async loadPersonalList() {
+    const words = await this.dictionaryService.getPersonalWords();
+    this.personalList.set(words);
   }
 
   async loadHistory() {
@@ -240,8 +284,18 @@ export class DictionaryComponent {
     }
   }
 
-  addToFlashcards() {
-    console.log('Adding to flashcards:', this.result()?.word);
-    alert('Word added to your learning list!');
+  async addToFlashcards() {
+    const word = this.result()?.word;
+    if (!word) return;
+    
+    await this.dictionaryService.addToPersonal(word);
+    await this.loadPersonalList();
+    alert(`Added "${word}" to your personal learning list!`);
+  }
+
+  toggleSort() {
+    const modes: ('alpha' | 'time' | 'category')[] = ['alpha', 'time', 'category'];
+    const currentIdx = modes.indexOf(this.sortBy());
+    this.sortBy.set(modes[(currentIdx + 1) % modes.length]);
   }
 }

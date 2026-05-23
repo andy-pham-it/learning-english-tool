@@ -1,0 +1,250 @@
+[
+  {
+    "id": "pat-1",
+    "category": "Suggestions",
+    "example": "It would be better if you could review this section before we proceed.",
+    "vietnamese": "Sẽ tốt hơn nếu bạn có thể xem lại phần này trước khi chúng ta tiếp tục.",
+    "pattern": "It would be better if + subject + could + verb (base form)...",
+    "structure": "It would be better if {subject} {modal} {verb}...",
+    "variables": {
+      "subject": ["you", "we", "they", "the team", "the client"],
+      "modal": ["could", "would", "can"],
+      "verb": ["review", "check", "confirm", "update", "address"]
+    },
+    "usage": "Dùng để đưa ra gợi ý lịch sự, tránh áp đặt trong môi trường công sở.",
+    "context": "Khi bạn muốn đề xuất một hướng xử lý khác mà không muốn người nghe cảm thấy bị chỉ trích.",
+    "examples": [
+      { "en": "It would be better if we could schedule a follow-up meeting.", "vi": "Sẽ tốt hơn nếu chúng ta có thể lên lịch một cuộc họp tiếp theo." },
+      { "en": "It would be better if the report included more detailed metrics.", "vi": "Sẽ tốt hơn nếu báo cáo bao gồm nhiều chỉ số chi tiết hơn." },
+      { "en": "It would be better if you could address this issue before the deadline.", "vi": "Sẽ tốt hơn nếu bạn có thể giải quyết vấn đề này trước hạn chót." }
+    ],
+    "keywords": ["would", "better", "suggest", "should"]
+  },
+  {
+    "id": "pat-2",
+    "category": "Suggestions",
+    "example": "Have you considered using a different approach for this module?",
+    "vietnamese": "Bạn đã cân nhắc sử dụng một cách tiếp cận khác cho module này chưa?",
+    "pattern": "Have you considered + verb-ing + ...?",
+    "structure": "Have you considered {verb_ing} {object}?",
+    "variables": {
+      "verb_ing": ["using", "trying", "implementing", "exploring", "reviewing"],
+      "object": ["a different approach", "an alternative solution", "a new framework", "another method", "the latest version"]
+    },
+    "usage": "Đặt câu hỏi gợi mở, khuyến khích đồng nghiệp nghĩ theo hướng khác mà không mang tính phê phán.",
+    "context": "Khi muốn gợi ý một giải pháp thay thế mà không làm mất lòng người đang làm việc trên giải pháp hiện tại.",
+    "examples": [
+      { "en": "Have you considered using a cloud-based solution instead?", "vi": "Bạn đã cân nhắc sử dụng giải pháp đám mây thay thế chưa?" },
+      { "en": "Have you considered implementing an automated testing pipeline?", "vi": "Bạn đã cân nhắc triển khai một quy trình kiểm thử tự động chưa?" },
+      { "en": "Have you considered exploring other database options?", "vi": "Bạn đã cân nhắc khám phá các lựa chọn cơ sở dữ liệu khác chưa?" }
+    ],
+    "keywords": ["consider", "alternative", "suggest", "option"]
+  },
+  {
+    "id": "pat-3",
+    "category": "Suggestions",
+    "example": "I'd suggest we take a closer look at the performance metrics before making a decision.",
+    "vietnamese": "Tôi đề nghị chúng ta xem xét kỹ hơn các chỉ số hiệu suất trước khi đưa ra quyết định.",
+    "pattern": "I'd suggest + (that) + subject + verb (base form)...",
+    "structure": "I'd suggest {connector} {subject} {verb} {object}...",
+    "variables": {
+      "connector": ["that we", "we"],
+      "subject": ["we", "you", "the team", "everyone"],
+      "verb": ["take", "review", "consider", "discuss", "analyze"],
+      "object": ["a closer look", "the options", "the data", "the proposal", "the impact"]
+    },
+    "usage": "Đưa ra đề xuất một cách trực tiếp nhưng vẫn lịch sự, thường dùng trong họp nhóm.",
+    "context": "Khi bạn có một ý kiến muốn đóng góp và muốn được lắng nghe một cách nghiêm túc.",
+    "examples": [
+      { "en": "I'd suggest that we review the budget before proceeding.", "vi": "Tôi đề nghị chúng ta xem xét ngân sách trước khi tiếp tục." },
+      { "en": "I'd suggest we discuss this with the stakeholders first.", "vi": "Tôi đề nghị chúng ta thảo luận việc này với các bên liên quan trước." },
+      { "en": "I'd suggest you consider the long-term implications of this change.", "vi": "Tôi đề nghị bạn cân nhắc các tác động dài hạn của thay đổi này." }
+    ],
+    "keywords": ["suggest", "recommend", "propose", "advise"]
+  },
+  {
+    "id": "pat-4",
+    "category": "Clarification",
+    "example": "Could you elaborate on what you mean by 'optimizing the pipeline'?",
+    "vietnamese": "Bạn có thể giải thích rõ hơn về ý 'tối ưu hóa quy trình' không?",
+    "pattern": "Could you elaborate on + what/how/why + ...?",
+    "structure": "Could you elaborate on {question_word} {topic}?",
+    "variables": {
+      "question_word": ["what", "how", "why"],
+      "topic": ["you mean by that", "this approach works", "we should prioritize this"]
+    },
+    "usage": "Yêu cầu làm rõ thông tin một cách lịch sự, tránh hiểu lầm trong giao tiếp.",
+    "context": "Khi bạn không hoàn toàn hiểu ý đồng nghiệp và cần thêm thông tin trước khi đưa ra phản hồi.",
+    "examples": [
+      { "en": "Could you elaborate on what the main risks are?", "vi": "Bạn có thể giải thích rõ hơn về các rủi ro chính không?" },
+      { "en": "Could you elaborate on how this affects the timeline?", "vi": "Bạn có thể giải thích rõ hơn về cách việc này ảnh hưởng đến tiến độ không?" },
+      { "en": "Could you elaborate on why we chose this particular vendor?", "vi": "Bạn có thể giải thích rõ hơn về lý do chúng ta chọn nhà cung cấp này không?" }
+    ],
+    "keywords": ["clarify", "explain", "elaborate", "detail"]
+  },
+  {
+    "id": "pat-5",
+    "category": "Clarification",
+    "example": "Just to clarify, are we talking about the production environment or the staging environment?",
+    "vietnamese": "Để làm rõ, chúng ta đang nói về môi trường production hay staging?",
+    "pattern": "Just to clarify, are we talking about + noun + or + noun?",
+    "structure": "Just to clarify, are we talking about {option_a} or {option_b}?",
+    "variables": {
+      "option_a": ["the production environment", "the frontend", "the API", "the current sprint", "the new feature"],
+      "option_b": ["the staging environment", "the backend", "the database", "the next sprint", "the bug fix"]
+    },
+    "usage": "Xác nhận lại thông tin để tránh nhầm lẫn giữa hai lựa chọn.",
+    "context": "Khi có sự mơ hồ trong cuộc thảo luận và bạn cần chốt lại phạm vi đang được đề cập.",
+    "examples": [
+      { "en": "Just to clarify, are we talking about deploying this week or next week?", "vi": "Để làm rõ, chúng ta đang nói về triển khai tuần này hay tuần sau?" },
+      { "en": "Just to clarify, are we talking about fixing the bug or adding a new feature?", "vi": "Để làm rõ, chúng ta đang nói về sửa lỗi hay thêm tính năng mới?" },
+      { "en": "Just to clarify, are we talking about the mobile app or the web app?", "vi": "Để làm rõ, chúng ta đang nói về ứng dụng di động hay ứng dụng web?" }
+    ],
+    "keywords": ["clarify", "confirm", "distinguish", "specify"]
+  },
+  {
+    "id": "pat-6",
+    "category": "Agreement",
+    "example": "I completely agree with your point about improving the code review process.",
+    "vietnamese": "Tôi hoàn toàn đồng ý với quan điểm của bạn về việc cải thiện quy trình review code.",
+    "pattern": "I completely agree with + noun phrase + about + noun phrase...",
+    "structure": "I completely agree with {person} about {topic}.",
+    "variables": {
+      "person": ["your point", "your assessment", "you", "the proposal", "the feedback"],
+      "topic": ["improving the code review process", "the need for better documentation", "refactoring the legacy module", "adopting a new workflow"]
+    },
+    "usage": "Thể hiện sự đồng tình mạnh mẽ, xây dựng tinh thần đồng đội trong công việc.",
+    "context": "Khi bạn thực sự ủng hộ ý kiến của người khác và muốn khẳng định sự ủng hộ đó.",
+    "examples": [
+      { "en": "I completely agree with your assessment about the current bottlenecks.", "vi": "Tôi hoàn toàn đồng ý với đánh giá của bạn về các nút thắt hiện tại." },
+      { "en": "I completely agree with the proposal to migrate to a microservices architecture.", "vi": "Tôi hoàn toàn đồng ý với đề xuất chuyển sang kiến trúc microservices." },
+      { "en": "I completely agree with you about prioritizing technical debt reduction.", "vi": "Tôi hoàn toàn đồng ý với bạn về việc ưu tiên giảm nợ kỹ thuật." }
+    ],
+    "keywords": ["agree", "concur", "support", "second"]
+  },
+  {
+    "id": "pat-7",
+    "category": "Disagreement",
+    "example": "I see where you're coming from, but I think we should consider the long-term maintenance costs as well.",
+    "vietnamese": "Tôi hiểu quan điểm của bạn, nhưng tôi nghĩ chúng ta cũng nên cân nhắc chi phí bảo trì dài hạn.",
+    "pattern": "I see where you're coming from, but I think + subject + should + verb...",
+    "structure": "I see where you're coming from, but I think {subject} {modal} {consideration}.",
+    "variables": {
+      "subject": ["we", "you", "the team"],
+      "modal": ["should", "need to", "must", "could also"],
+      "consideration": ["consider the long-term costs", "look at the bigger picture", "weigh the pros and cons first", "get feedback from the QA team"]
+    },
+    "usage": "Bày tỏ sự không đồng tình một cách tôn trọng, bắt đầu bằng việc thừa nhận quan điểm đối phương.",
+    "context": "Khi bạn có ý kiến trái chiều nhưng muốn giữ bầu không khí tích cực và chuyên nghiệp.",
+    "examples": [
+      { "en": "I see where you're coming from, but I think we need to prioritize security over speed.", "vi": "Tôi hiểu quan điểm của bạn, nhưng tôi nghĩ chúng ta cần ưu tiên bảo mật hơn tốc độ." },
+      { "en": "I see where you're coming from, but I think we should test this more thoroughly first.", "vi": "Tôi hiểu quan điểm của bạn, nhưng tôi nghĩ chúng ta nên kiểm tra kỹ lưỡng hơn trước." },
+      { "en": "I see where you're coming from, but I think the team could also benefit from additional training.", "vi": "Tôi hiểu quan điểm của bạn, nhưng tôi nghĩ nhóm cũng có thể hưởng lợi từ việc đào tạo thêm." }
+    ],
+    "keywords": ["disagree", "however", "perspective", "consider"]
+  },
+  {
+    "id": "pat-8",
+    "category": "Status Updates",
+    "example": "As of now, I've completed the initial integration and I'm waiting for the QA sign-off.",
+    "vietnamese": "Tính đến thời điểm hiện tại, tôi đã hoàn thành tích hợp ban đầu và đang chờ phê duyệt từ QA.",
+    "pattern": "As of now, subject + have/has + past participle + and + subject + am/is/are + verb-ing...",
+    "structure": "As of now, {subject} {tense} {action_completed} and {current_status}.",
+    "variables": {
+      "subject": ["I", "we", "the team"],
+      "tense": ["have", "has"],
+      "action_completed": ["completed the initial integration", "finished the code review", "resolved the critical bugs", "deployed the latest changes"],
+      "current_status": ["waiting for QA sign-off", "preparing the documentation", "monitoring the production logs", "scheduling the next sprint"]
+    },
+    "usage": "Cập nhật tiến độ công việc một cách rõ ràng, chuyên nghiệp trong các buổi stand-up hoặc báo cáo.",
+    "context": "Khi được hỏi về tình trạng công việc trong daily stand-up hoặc status meeting.",
+    "examples": [
+      { "en": "As of now, I've finished the API documentation and I'm preparing the demo environment.", "vi": "Tính đến hiện tại, tôi đã hoàn thành tài liệu API và đang chuẩn bị môi trường demo." },
+      { "en": "As of now, we've resolved the critical bugs and we're monitoring the staging environment.", "vi": "Tính đến hiện tại, chúng tôi đã giải quyết các lỗi nghiêm trọng và đang theo dõi môi trường staging." },
+      { "en": "As of now, the team has deployed the latest changes and is waiting for user feedback.", "vi": "Tính đến hiện tại, nhóm đã triển khai các thay đổi mới nhất và đang chờ phản hồi từ người dùng." }
+    ],
+    "keywords": ["status", "progress", "current", "update"]
+  },
+  {
+    "id": "pat-9",
+    "category": "Deadlines",
+    "example": "I'm afraid I won't be able to meet the Friday deadline due to some unforeseen technical challenges.",
+    "vietnamese": "Tôi e rằng tôi sẽ không thể kịp hạn chót thứ Sáu do một số thách thức kỹ thuật không lường trước.",
+    "pattern": "I'm afraid + subject + won't be able to + verb + due to + noun phrase...",
+    "structure": "I'm afraid {subject} {negation} {action} due to {reason}.",
+    "variables": {
+      "subject": ["I", "we"],
+      "negation": ["won't be able to", "might not"],
+      "action": ["meet the deadline", "deliver on time", "complete the milestone", "finish by Friday"],
+      "reason": ["unforeseen technical challenges", "unexpected dependencies", "resource constraints", "scope changes"]
+    },
+    "usage": "Thông báo việc không kịp deadline một cách lịch sự và chuyên nghiệp, kèm lý do rõ ràng.",
+    "context": "Khi bạn nhận ra mình không thể hoàn thành đúng hạn và cần thông báo sớm cho quản lý hoặc team.",
+    "examples": [
+      { "en": "I'm afraid we won't be able to deliver on time due to unexpected dependencies from the backend team.", "vi": "Tôi e rằng chúng tôi sẽ không thể giao hàng đúng hạn do các phụ thuộc bất ngờ từ nhóm backend." },
+      { "en": "I'm afraid I might not finish by Friday due to the complexity of the new requirements.", "vi": "Tôi e rằng tôi có thể không hoàn thành kịp thứ Sáu do độ phức tạp của các yêu cầu mới." },
+      { "en": "I'm afraid we won't be able to meet the milestone due to resource constraints in the design team.", "vi": "Tôi e rằng chúng tôi sẽ không thể đạt được cột mốc do hạn chế nguồn lực ở nhóm thiết kế." }
+    ],
+    "keywords": ["deadline", "delay", "extend", "postpone"]
+  },
+  {
+    "id": "pat-10",
+    "category": "Meeting",
+    "example": "Before we wrap up, I'd like to quickly go over the action items for next week.",
+    "vietnamese": "Trước khi kết thúc, tôi muốn nhanh chóng xem lại các mục hành động cho tuần sau.",
+    "pattern": "Before we + verb, I'd like to + verb + noun phrase...",
+    "structure": "Before we {ending_action}, I'd like to {main_action} {topic}.",
+    "variables": {
+      "ending_action": ["wrap up", "move on", "adjourn", "close this session"],
+      "main_action": ["quickly go over", "summarize", "discuss", "confirm", "highlight"],
+      "topic": ["the action items", "the key decisions", "the next steps", "the deadlines", "the outstanding issues"]
+    },
+    "usage": "Dùng cuối cuộc họp để tổng kết và đảm bảo mọi người nắm rõ các bước tiếp theo.",
+    "context": "Khi cuộc họp sắp kết thúc và bạn muốn chốt lại các đầu việc quan trọng trước khi mọi người rời đi.",
+    "examples": [
+      { "en": "Before we wrap up, I'd like to summarize the key decisions we made today.", "vi": "Trước khi kết thúc, tôi muốn tóm tắt các quyết định chính chúng ta đã đưa ra hôm nay." },
+      { "en": "Before we move on, I'd like to confirm the deadlines for each deliverable.", "vi": "Trước khi tiếp tục, tôi muốn xác nhận hạn chót cho từng sản phẩm bàn giao." },
+      { "en": "Before we close this session, I'd like to highlight the outstanding issues that need attention.", "vi": "Trước khi kết thúc phiên này, tôi muốn nhấn mạnh các vấn đề còn tồn đọng cần được giải quyết." }
+    ],
+    "keywords": ["meeting", "agenda", "summary", "next-steps"]
+  },
+  {
+    "id": "pat-11",
+    "category": "Meeting",
+    "example": "Shall we circle back to this topic after everyone has had a chance to review the document?",
+    "vietnamese": "Chúng ta có nên quay lại chủ đề này sau khi mọi người đã có cơ hội xem xét tài liệu không?",
+    "pattern": "Shall we + verb phrase + after + subject + has/have + past participle + noun phrase?",
+    "structure": "Shall we {action} after {condition}?",
+    "variables": {
+      "action": ["circle back to this topic", "revisit this discussion", "table this for now", "pick this up later"],
+      "condition": ["everyone has reviewed the document", "we have more data", "the stakeholders have provided feedback", "the initial results are available"]
+    },
+    "usage": "Đề xuất tạm hoãn một chủ đề và quay lại sau, giúp cuộc họp đi đúng hướng.",
+    "context": "Khi một chủ đề đang đi vào ngõ cụt vì thiếu thông tin và bạn muốn tiếp tục sau khi có đủ dữ liệu.",
+    "examples": [
+      { "en": "Shall we circle back after we have more data from the A/B test?", "vi": "Chúng ta có nên quay lại sau khi có thêm dữ liệu từ thử nghiệm A/B không?" },
+      { "en": "Shall we table this for now and revisit it in the next sprint planning?", "vi": "Chúng ta có nên tạm gác việc này và quay lại ở buổi lập kế hoạch sprint sau không?" },
+      { "en": "Shall we pick this up later when the stakeholders have provided their feedback?", "vi": "Chúng ta có nên tiếp tục sau khi các bên liên quan đã cung cấp phản hồi không?" }
+    ],
+    "keywords": ["meeting", "postpone", "revisit", "table"]
+  },
+  {
+    "id": "pat-12",
+    "category": "Feedback",
+    "example": "One area that could use some improvement is the error handling in the user authentication flow.",
+    "vietnamese": "Một lĩnh vực có thể cần cải thiện là xử lý lỗi trong luồng xác thực người dùng.",
+    "pattern": "One area that could use some improvement is + noun phrase...",
+    "structure": "One area that could use some improvement is {area}.",
+    "variables": {
+      "area": ["the error handling", "the documentation", "the test coverage", "the performance optimization", "the UI responsiveness"]
+    },
+    "usage": "Đưa ra phản hồi mang tính xây dựng, tập trung vào vấn đề cụ thể thay vì chỉ trích cá nhân.",
+    "context": "Khi bạn cần đưa ra góp ý trong code review hoặc feedback session mà không làm mất lòng đồng nghiệp.",
+    "examples": [
+      { "en": "One area that could use some improvement is the test coverage for edge cases.", "vi": "Một lĩnh vực có thể cần cải thiện là độ phủ kiểm thử cho các trường hợp biên." },
+      { "en": "One area that could use some improvement is the documentation of the API endpoints.", "vi": "Một lĩnh vực có thể cần cải thiện là tài liệu hóa các API endpoints." },
+      { "en": "One area that could use some improvement is the performance of the search functionality.", "vi": "Một lĩnh vực có thể cần cải thiện là hiệu suất của chức năng tìm kiếm." }
+    ],
+    "keywords": ["feedback", "improvement", "review", "suggestion"]
+  }
+]

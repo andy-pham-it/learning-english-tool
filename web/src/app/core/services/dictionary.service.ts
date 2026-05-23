@@ -80,9 +80,10 @@ export class DictionaryService {
     }
   }
 
-  async getSavedWords(limitCount: number = 20): Promise<any[]> {
+  async getSavedWords(limitCount: number = 50): Promise<any[]> {
     try {
       const dictCol = collection(this.firestore, 'dictionary');
+      // We'll fetch more to allow sorting in-memory for better performance
       const q = query(dictCol, orderBy('timestamp', 'desc'), limit(limitCount));
       const snap = await getDocs(q);
       return snap.docs.map(d => d.data());
@@ -90,6 +91,32 @@ export class DictionaryService {
       console.error('[DictionaryService] Error fetching saved words:', err);
       return [];
     }
+  }
+
+  async getPersonalWords(): Promise<string[]> {
+    const user = this.auth.currentUser;
+    if (!user) return [];
+    
+    try {
+      const personalCol = collection(this.firestore, `users/${user.uid}/vocabulary`);
+      const snap = await getDocs(personalCol);
+      return snap.docs.map(d => d.id.toLowerCase());
+    } catch (err) {
+      console.error('[DictionaryService] Error fetching personal words:', err);
+      return [];
+    }
+  }
+
+  async addToPersonal(word: string): Promise<void> {
+    const user = this.auth.currentUser;
+    if (!user) return;
+
+    const normalizedWord = word.trim().toLowerCase();
+    const docRef = doc(this.firestore, `users/${user.uid}/vocabulary`, normalizedWord);
+    await setDoc(docRef, {
+      word: normalizedWord,
+      timestamp: serverTimestamp()
+    });
   }
 
   async migrateOldHistory(): Promise<void> {
