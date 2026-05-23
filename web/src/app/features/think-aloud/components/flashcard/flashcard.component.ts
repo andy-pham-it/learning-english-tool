@@ -147,6 +147,9 @@ export class FlashcardComponent {
   
   @Input({ required: true }) set card(value: ThinkAloudData) {
     this._card.set(value);
+    this.isFlipped.set(false);
+    this.lastTranscript.set('');
+    this.isCorrect.set(false);
   }
   
   get cardValue() { return this._card(); }
