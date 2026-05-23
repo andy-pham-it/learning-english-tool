@@ -60,15 +60,21 @@ import { QuickDictionaryComponent } from '../components/quick-dictionary/quick-d
           </div>
         </div>
 
-        <!-- PATTERN CARD -->
-        <div *ngIf="isPatternCategory() && currentPatternCard()" class="w-full max-w-3xl animate-fade-in">
-          <app-pattern-card [card]="currentPatternCard()!" (lookup)="onQuickLookup($event)"></app-pattern-card>
-        </div>
-
-        <!-- REGULAR FLASHCARD -->
-        <div *ngIf="!isPatternCategory() && currentPhraseCard()" class="w-full max-w-3xl animate-fade-in">
-          <app-think-aloud-card [card]="currentPhraseCard()!" (lookup)="onQuickLookup($event)"></app-think-aloud-card>
-        </div>
+        @for (_ of [true]; track currentIndex()) {
+          @if (isPatternCategory()) {
+            @if (currentPatternCard(); as card) {
+              <div class="w-full max-w-3xl animate-fade-in">
+                <app-pattern-card [card]="card" (lookup)="onQuickLookup($event)"></app-pattern-card>
+              </div>
+            }
+          } @else {
+            @if (currentPhraseCard(); as card) {
+              <div class="w-full max-w-3xl animate-fade-in">
+                <app-think-aloud-card [card]="card" (lookup)="onQuickLookup($event)"></app-think-aloud-card>
+              </div>
+            }
+          }
+        }
 
         <!-- QUICK DICTIONARY OVERLAY -->
         <app-quick-dictionary 
