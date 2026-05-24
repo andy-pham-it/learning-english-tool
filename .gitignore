@@ -17,6 +17,9 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
+#### Development scripts
+scripts/
+
 ### Windows
 # Windows thumbnail cache files
 Thumbs.db
@@ -33,6 +36,8 @@ $RECYCLE.BIN/
 ### Linux
 # Backup files
 *~
+*.swp
+*.swo
 
 # Temporary files from deleted open files
 .fuse_hidden*
@@ -89,11 +94,19 @@ build/Release
 .next
 out/
 .nuxt
+.angular/
+
+# npm config with potential auth tokens
+.npmrc
 
 # dotenv environment variable files
 .env
 .env.local
 .env.*.local
+.env.development
+.env.production
+.env.staging
+.env.test
 
 # npm cache directory
 .npm
