@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
+import { Firestore, doc, getDoc, setDoc, serverTimestamp } from '@angular/fire/firestore/lite';
 import { DictionaryResult } from './models';
 import type { HubClient } from '@the-hub/hub-client';
 
@@ -39,6 +40,7 @@ Rules:
 
 @Injectable({ providedIn: 'root' })
 export class DictionaryAiService {
+  private firestore = inject(Firestore);
   private hubClient: HubClient | null = null;
   private cache = new Map<string, { data: DictionaryResult; cachedAt: number }>();
   private readonly CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
@@ -66,14 +68,43 @@ export class DictionaryAiService {
       }
     }
 
+    // Check Firestore cache (shared with main app's dictionary/{word} collection)
+    try {
+      const normalizedWord = word.trim().toLowerCase();
+      const docRef = doc(this.firestore, 'dictionary', normalizedWord);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const firestoreData = docSnap.data() as DictionaryResult;
+        const cacheEntry = { data: firestoreData, cachedAt: Date.now() };
+        this.cache.set(word, cacheEntry);
+        if (this.hubClient) {
+          await this.hubClient.storage.set(`dictionary_cache_${word}`, cacheEntry);
+        }
+        return firestoreData;
+      }
+    } catch (err) {
+      console.error('[DictionaryAiService] Firestore read error:', err);
+    }
+
     // Call AI
     const result = await this.callAi(word);
 
-    // Cache result
+    // Cache result (in-memory + hub-client)
     const cacheEntry = { data: result, cachedAt: Date.now() };
     this.cache.set(word, cacheEntry);
     if (this.hubClient) {
       await this.hubClient.storage.set(`dictionary_cache_${word}`, cacheEntry);
+    }
+
+    // Save to Firestore (shared cache for main app)
+    if (!result.error) {
+      try {
+        const normalizedWord = word.trim().toLowerCase();
+        const docRef = doc(this.firestore, 'dictionary', normalizedWord);
+        await setDoc(docRef, { ...result, timestamp: serverTimestamp() });
+      } catch (err) {
+        console.error('[DictionaryAiService] Firestore write error:', err);
+      }
     }
 
     return result;
