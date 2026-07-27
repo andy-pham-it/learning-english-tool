@@ -1,0 +1,194 @@
+<div class="app-container">
+  <!-- Header -->
+  <header class="header">
+    <button class="sidebar-toggle" (click)="toggleSidebar()" aria-label="Toggle sidebar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+    <h1 class="title">Dictionary</h1>
+  </header>
+
+  <!-- Search bar -->
+  <div class="search-section">
+    <div class="search-wrapper">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search a word in English..."
+        [(ngModel)]="searchQuery"
+        (keyup.enter)="search()"
+        (keyup.escape)="result.set(null); error.set(null)"
+        autofocus
+      />
+      <button class="search-btn" (click)="search()" [disabled]="loading() || !searchQuery.trim()">
+        @if (loading()) {
+          <span class="spinner"></span>
+        } @else {
+          Search
+        }
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay for mobile sidebar -->
+  @if (isSidebarOpen()) {
+    <div class="overlay" (click)="toggleSidebar()"></div>
+  }
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" [class.open]="isSidebarOpen()">
+      <div class="sidebar-header">
+        <h2>History</h2>
+        <select class="sort-select" [ngModel]="sortBy()" (ngModelChange)="sortBy.set($event)">
+          <option value="time">Newest</option>
+          <option value="alpha">A-Z</option>
+        </select>
+      </div>
+
+      <div class="sidebar-list">
+        @for (word of sortedHistory(); track word) {
+          <button class="history-item" (click)="selectWord(word)">
+            {{ word }}
+          </button>
+        } @empty {
+          <p class="empty-hint">Your search history will appear here.</p>
+        }
+      </div>
+
+      @if (vocabWords().length > 0) {
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-header">
+          <h2>Vocabulary</h2>
+          <span class="badge">{{ vocabWords().length }}</span>
+        </div>
+        <div class="sidebar-list">
+          @for (word of vocabWords(); track word) {
+            <div class="vocab-item">
+              <button class="vocab-word" (click)="selectWord(word)">{{ word }}</button>
+              <button class="remove-btn" (click)="removeWord(word)" title="Remove from vocabulary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 6 6 18M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+          }
+        </div>
+      }
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <!-- Empty state -->
+      @if (!result() && !error() && !loading()) {
+        <div class="empty-state">
+          <div class="empty-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+            </svg>
+          </div>
+          <p class="empty-title">English-Vietnamese Dictionary</p>
+          <p class="empty-subtitle">Type a word and press Enter to look it up.</p>
+        </div>
+      }
+
+      <!-- Loading skeleton -->
+      @if (loading()) {
+        <div class="skeleton-card">
+          <div class="skeleton-line w-48"></div>
+          <div class="skeleton-line w-32 mt-2"></div>
+          <div class="skeleton-line w-full mt-6"></div>
+          <div class="skeleton-line w-3/4 mt-2"></div>
+        </div>
+      }
+
+      <!-- Error state -->
+      @if (error() && !loading()) {
+        <div class="error-card">
+          <p>{{ error() }}</p>
+        </div>
+      }
+
+      <!-- Result card -->
+      @if (result() && !loading()) {
+        <div class="result-card">
+          <!-- Word header -->
+          <div class="word-header">
+            <div class="word-row">
+              <h2 class="word">{{ result()!.word }}</h2>
+              @if (result()!.phonetic) {
+                <span class="phonetic">{{ result()!.phonetic }}</span>
+              }
+              <button class="tts-btn" (click)="speak(result()!.word)" title="Listen pronunciation">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 5 6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Definitions -->
+          @for (entry of result()!.entries; track $index) {
+            <div class="entry">
+              @if (entry.partOfSpeech) {
+                <div class="pos-badge">{{ entry.partOfSpeech }}</div>
+              }
+              <div class="definitions">
+                @for (def of entry.definitions; track $index) {
+                  <div class="definition">
+                    <div class="def-en">{{ def.en }}</div>
+                    <div class="def-vi">{{ def.vi }}</div>
+                    @if (def.example) {
+                      <div class="example">
+                        <span class="example-en">"{{ def.example }}"</span>
+                        @if (def.exampleVi) {
+                          <span class="example-vi">— {{ def.exampleVi }}</span>
+                        }
+                      </div>
+                    }
+                  </div>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- Collocations -->
+          @if (result()!.collocations && result()!.collocations.length > 0) {
+            <div class="collocations-section">
+              <h3 class="section-title">Collocations</h3>
+              @for (col of result()!.collocations; track $index) {
+                <div class="collocation">
+                  <div class="col-phrase">{{ col.phrase }}</div>
+                  <div class="col-meaning">{{ col.meaning }}</div>
+                  @if (col.exampleEn) {
+                    <div class="example">
+                      <span class="example-en">"{{ col.exampleEn }}"</span>
+                      @if (col.exampleVi) {
+                        <span class="example-vi">— {{ col.exampleVi }}</span>
+                      }
+                    </div>
+                  }
+                </div>
+              }
+            </div>
+          }
+
+          <!-- Action bar -->
+          <div class="action-bar">
+            <button class="action-btn save-btn" [class.saved]="isSaved()" (click)="isSaved() ? removeWord(result()!.word!) : saveWord()">
+              <svg width="18" height="18" viewBox="0 0 24 24" [attr.fill]="isSaved() ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+              </svg>
+              {{ isSaved() ? 'Saved' : 'Save to vocabulary' }}
+            </button>
+          </div>
+        </div>
+      }
+    </main>
+  </div>
+</div>
