@@ -68,6 +68,7 @@ $RECYCLE.BIN/
 ### Node
 # Dependencies
 node_modules/
+.omo/
 
 # Logs
 *.log
