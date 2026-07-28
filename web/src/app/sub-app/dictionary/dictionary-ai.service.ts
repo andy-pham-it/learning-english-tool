@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { Firestore, doc, getDoc, setDoc, serverTimestamp } from '@angular/fire/firestore/lite';
 import { DictionaryResult } from './models';
-import type { HubClient } from '@the-hub/hub-client';
+import type { HubClient } from './lib/hub-client';
 
 const SYSTEM_PROMPT = `You are a professional English-Vietnamese dictionary AI.
 Given a word or phrase, return a strict JSON object with this exact structure:

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { DictionaryAiService } from './dictionary-ai.service';
 import { DictionaryStorageService } from './dictionary-storage.service';
 import { DictionaryResult, VocabItem } from './models';
-import type { HubClient } from '@the-hub/hub-client';
+import type { HubClient } from './lib/hub-client';
 
 @Component({
   selector: 'app-dictionary-sub-app',
@@ -54,7 +54,7 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
 
   private async initHubClient() {
     try {
-      const { createHubClient } = await import('@the-hub/hub-client');
+      const { createHubClient } = await import('./lib/hub-client');
       this.hubClient = createHubClient({
         hubOrigin: window.location.origin,
       });

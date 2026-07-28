@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import type { HubClient } from '@the-hub/hub-client';
+import type { HubClient } from './lib/hub-client';
 import { VocabItem } from './models';
 
 const HISTORY_KEY = 'dictionary_history';
