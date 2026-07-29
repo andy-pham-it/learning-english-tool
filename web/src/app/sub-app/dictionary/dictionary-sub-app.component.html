@@ -61,16 +61,19 @@
         }
       </div>
 
-      @if (vocabWords().length > 0) {
-        <div class="sidebar-divider"></div>
-        <div class="sidebar-header">
-          <h2>Vocabulary</h2>
-          <span class="badge">{{ vocabWords().length }}</span>
-        </div>
-        <div class="sidebar-list">
-          @for (word of vocabWords(); track word) {
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-header">
+        <h2>Vocabulary</h2>
+        <span class="badge">{{ vocabWords().length }}</span>
+      </div>
+      <div class="sidebar-list">
+        @if (vocabWords().length > 0) {
+          @for (word of vocabWordsSorted(); track word) {
             <div class="vocab-item">
               <button class="vocab-word" (click)="selectWord(word)">{{ word }}</button>
+              @if (vocabDate(word); as date) {
+                <span class="vocab-date" title="{{ date }}">{{ date }}</span>
+              }
               <button class="remove-btn" (click)="removeWord(word)" title="Remove from vocabulary">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M18 6 6 18M6 6l12 12"/>
@@ -78,8 +81,10 @@
               </button>
             </div>
           }
-        </div>
-      }
+        } @else {
+          <p class="empty-hint">Look up a word and click <strong>Save to vocabulary</strong> to add it here.</p>
+        }
+      </div>
     </aside>
 
     <!-- Main content -->
