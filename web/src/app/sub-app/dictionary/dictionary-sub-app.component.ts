@@ -1,10 +1,9 @@
-import { Component, signal, computed, inject, OnInit, OnDestroy } from '@angular/core';
+import { Component, signal, computed, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DictionaryAiService } from './dictionary-ai.service';
 import { DictionaryStorageService } from './dictionary-storage.service';
 import { DictionaryResult, VocabItem } from './models';
-import type { HubClient } from './lib/hub-client';
 
 @Component({
   selector: 'app-dictionary-sub-app',
@@ -13,11 +12,9 @@ import type { HubClient } from './lib/hub-client';
   templateUrl: './dictionary-sub-app.component.html',
   styleUrls: ['./dictionary-sub-app.component.css'],
 })
-export class DictionarySubAppComponent implements OnInit, OnDestroy {
+export class DictionarySubAppComponent implements OnInit {
   private aiService = inject(DictionaryAiService);
   private storageService = inject(DictionaryStorageService);
-  private hubClient: HubClient | null = null;
-  private themeUnsubscribe?: () => void;
 
   searchQuery = '';
   loading = signal(false);
@@ -27,7 +24,6 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
   vocabulary = signal<Record<string, VocabItem>>({});
   isSidebarOpen = signal(false);
   sortBy = signal<'alpha' | 'time'>('time');
-  userName = signal('');
 
   sortedHistory = computed(() => {
     const list = [...this.history()];
@@ -39,6 +35,26 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
 
   vocabWords = computed(() => Object.keys(this.vocabulary()));
 
+  vocabWordsSorted = computed(() => {
+    const vocab = this.vocabulary();
+    return Object.entries(vocab)
+      .sort(([, a], [, b]) => (b.savedAt ?? 0) - (a.savedAt ?? 0))
+      .map(([word]) => word);
+  });
+
+  vocabDate(word: string): string | null {
+    const savedAt = this.vocabulary()[word.toLowerCase()]?.savedAt;
+    if (!savedAt) return null;
+    const d = new Date(savedAt);
+    const now = new Date();
+    const diffMs = now.getTime() - d.getTime();
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+    if (diffDays === 0) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays < 7) return `${diffDays}d ago`;
+    return d.toLocaleDateString('vi-VN', { day: 'numeric', month: 'short' });
+  }
+
   isSaved = computed(() => {
     const currentWord = this.result()?.word?.toLowerCase();
     return currentWord ? currentWord in this.vocabulary() : false;
@@ -47,29 +63,6 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
   async ngOnInit() {
     this.history.set(await this.storageService.getHistory());
     this.vocabulary.set(await this.storageService.getVocabulary());
-
-    void this.initHubClient();
-  }
-
-  private async initHubClient() {
-    try {
-      const { createHubClient } = await import('./lib/hub-client');
-      this.hubClient = createHubClient({ hubOrigin: window.location.origin });
-
-      const user = await this.hubClient.auth.getUserInfo();
-      this.userName.set(user.name);
-
-      this.themeUnsubscribe = this.hubClient.events.on('theme-changed', (payload: any) => {
-        document.documentElement.classList.toggle('dark', payload.theme === 'dark');
-      });
-    } catch {
-      // Hub optional — running standalone is fine
-    }
-  }
-
-  ngOnDestroy() {
-    this.themeUnsubscribe?.();
-    this.hubClient?.destroy();
   }
 
   async search() {
@@ -86,24 +79,9 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
       this.result.set(result);
       await this.storageService.addToHistory(this.searchQuery.trim());
       this.history.set(await this.storageService.getHistory());
-
-      void this.publishLookup(result);
     }
 
     this.loading.set(false);
-  }
-
-  private async publishLookup(result: DictionaryResult) {
-    if (!this.hubClient) return;
-    try {
-      await this.hubClient.storage.set('dictionary_last_lookup', {
-        word: result.word,
-        phonetic: result.phonetic,
-        timestamp: Date.now(),
-      });
-    } catch {
-      // optional publish
-    }
   }
 
   selectWord(word: string) {
