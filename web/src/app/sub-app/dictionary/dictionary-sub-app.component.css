@@ -157,21 +157,31 @@
   overflow-y: auto;
 }
 
-.history-item {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: transparent;
-  border: none;
-  color: #334155;
-  font-size: 14px;
-  padding: 8px 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.15s;
+.sort-row {
+  display: flex;
+  gap: 4px;
+  padding: 4px 10px 8px;
 }
-.history-item:hover {
-  background: #f1f5f9;
+.sort-btn {
+  flex: 1;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sort-btn:hover {
+  border-color: #c7d2fe;
+  color: #6366f1;
+}
+.sort-btn.active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
 }
 
 .empty-hint {

@@ -44,30 +44,18 @@
     <!-- Sidebar -->
     <aside class="sidebar" [class.open]="isSidebarOpen()">
       <div class="sidebar-header">
-        <h2>History</h2>
-        <select class="sort-select" [ngModel]="sortBy()" (ngModelChange)="sortBy.set($event)">
-          <option value="time">Newest</option>
-          <option value="alpha">A-Z</option>
-        </select>
-      </div>
-
-      <div class="sidebar-list">
-        @for (word of sortedHistory(); track word) {
-          <button class="history-item" (click)="selectWord(word)">
-            {{ word }}
-          </button>
-        } @empty {
-          <p class="empty-hint">Your search history will appear here.</p>
-        }
-      </div>
-
-      <div class="sidebar-divider"></div>
-      <div class="sidebar-header">
         <h2>Vocabulary</h2>
-        <span class="badge">{{ vocabWords().length }}</span>
+        <span class="badge">{{ vocabCount() }}</span>
       </div>
+
+      <div class="sort-row">
+        <button class="sort-btn" [class.active]="sortBy() === 'time'" (click)="sortBy.set('time')">Recent</button>
+        <button class="sort-btn" [class.active]="sortBy() === 'alpha-asc'" (click)="sortBy.set('alpha-asc')">A-Z</button>
+        <button class="sort-btn" [class.active]="sortBy() === 'alpha-desc'" (click)="sortBy.set('alpha-desc')">Z-A</button>
+      </div>
+
       <div class="sidebar-list">
-        @if (vocabWords().length > 0) {
+        @if (vocabCount() > 0) {
           @for (word of vocabWordsSorted(); track word) {
             <div class="vocab-item">
               <button class="vocab-word" (click)="selectWord(word)">{{ word }}</button>
@@ -82,7 +70,7 @@
             </div>
           }
         } @else {
-          <p class="empty-hint">Look up a word and click <strong>Save to vocabulary</strong> to add it here.</p>
+          <p class="empty-hint">Look up a word and it will be added to your vocabulary automatically.</p>
         }
       </div>
     </aside>

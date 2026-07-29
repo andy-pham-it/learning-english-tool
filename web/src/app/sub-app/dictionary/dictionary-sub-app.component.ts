@@ -5,6 +5,8 @@ import { DictionaryAiService } from './dictionary-ai.service';
 import { DictionaryStorageService } from './dictionary-storage.service';
 import { DictionaryResult, VocabItem } from './models';
 
+type SortMode = 'alpha-asc' | 'alpha-desc' | 'time';
+
 @Component({
   selector: 'app-dictionary-sub-app',
   standalone: true,
@@ -20,27 +22,25 @@ export class DictionarySubAppComponent implements OnInit {
   loading = signal(false);
   result = signal<DictionaryResult | null>(null);
   error = signal<string | null>(null);
-  history = signal<string[]>([]);
   vocabulary = signal<Record<string, VocabItem>>({});
   isSidebarOpen = signal(false);
-  sortBy = signal<'alpha' | 'time'>('time');
-
-  sortedHistory = computed(() => {
-    const list = [...this.history()];
-    if (this.sortBy() === 'alpha') {
-      return list.sort((a, b) => a.localeCompare(b));
-    }
-    return list;
-  });
-
-  vocabWords = computed(() => Object.keys(this.vocabulary()));
+  sortBy = signal<SortMode>('time');
 
   vocabWordsSorted = computed(() => {
     const vocab = this.vocabulary();
-    return Object.entries(vocab)
-      .sort(([, a], [, b]) => (b.savedAt ?? 0) - (a.savedAt ?? 0))
-      .map(([word]) => word);
+    const entries = Object.entries(vocab);
+    switch (this.sortBy()) {
+      case 'alpha-asc':
+        return entries.sort(([a], [b]) => a.localeCompare(b)).map(([w]) => w);
+      case 'alpha-desc':
+        return entries.sort(([a], [b]) => b.localeCompare(a)).map(([w]) => w);
+      case 'time':
+      default:
+        return entries.sort(([, a], [, b]) => (b.savedAt ?? 0) - (a.savedAt ?? 0)).map(([w]) => w);
+    }
   });
+
+  vocabCount = computed(() => Object.keys(this.vocabulary()).length);
 
   vocabDate(word: string): string | null {
     const savedAt = this.vocabulary()[word.toLowerCase()]?.savedAt;
@@ -61,7 +61,6 @@ export class DictionarySubAppComponent implements OnInit {
   });
 
   async ngOnInit() {
-    this.history.set(await this.storageService.getHistory());
     this.vocabulary.set(await this.storageService.getVocabulary());
   }
 
@@ -77,8 +76,9 @@ export class DictionarySubAppComponent implements OnInit {
       this.result.set(null);
     } else {
       this.result.set(result);
-      await this.storageService.addToHistory(this.searchQuery.trim());
-      this.history.set(await this.storageService.getHistory());
+      // Auto-save word to vocabulary on lookup
+      await this.storageService.saveWord(this.searchQuery.trim());
+      this.vocabulary.set(await this.storageService.getVocabulary());
     }
 
     this.loading.set(false);
