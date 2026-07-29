@@ -73,6 +73,19 @@
           <p class="empty-hint">Look up a word and it will be added to your vocabulary automatically.</p>
         }
       </div>
+
+      @if (migrationStatus() || !migrationRunning()) {
+        <div class="migration-bar">
+          @if (migrationStatus()) {
+            <p class="migration-text">{{ migrationStatus() }}</p>
+          }
+          @if (!migrationStatus() && !migrationRunning()) {
+            <button class="migration-btn" (click)="runMigration()" [disabled]="migrationRunning()">
+              Migrate old vocabulary
+            </button>
+          }
+        </div>
+      }
     </aside>
 
     <!-- Main content -->
