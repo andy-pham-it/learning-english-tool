@@ -1,4 +1,4 @@
-import { Component, signal, computed, OnInit, OnDestroy } from '@angular/core';
+import { Component, signal, computed, inject, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DictionaryAiService } from './dictionary-ai.service';
@@ -14,10 +14,10 @@ import type { HubClient } from './lib/hub-client';
   styleUrls: ['./dictionary-sub-app.component.css'],
 })
 export class DictionarySubAppComponent implements OnInit, OnDestroy {
-  private aiService = new DictionaryAiService();
-  private storageService = new DictionaryStorageService();
-  private themeUnsubscribe?: () => void;
+  private aiService = inject(DictionaryAiService);
+  private storageService = inject(DictionaryStorageService);
   private hubClient: HubClient | null = null;
+  private themeUnsubscribe?: () => void;
 
   searchQuery = '';
   loading = signal(false);
@@ -27,13 +27,14 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
   vocabulary = signal<Record<string, VocabItem>>({});
   isSidebarOpen = signal(false);
   sortBy = signal<'alpha' | 'time'>('time');
+  userName = signal('');
 
   sortedHistory = computed(() => {
     const list = [...this.history()];
     if (this.sortBy() === 'alpha') {
       return list.sort((a, b) => a.localeCompare(b));
     }
-    return list; // newest first (already in order)
+    return list;
   });
 
   vocabWords = computed(() => Object.keys(this.vocabulary()));
@@ -44,35 +45,31 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
   });
 
   async ngOnInit() {
-    await this.initHubClient();
-  }
+    this.history.set(await this.storageService.getHistory());
+    this.vocabulary.set(await this.storageService.getVocabulary());
 
-  ngOnDestroy() {
-    this.themeUnsubscribe?.();
-    this.hubClient?.destroy();
+    void this.initHubClient();
   }
 
   private async initHubClient() {
     try {
       const { createHubClient } = await import('./lib/hub-client');
-      this.hubClient = createHubClient({
-        hubOrigin: window.location.origin,
+      this.hubClient = createHubClient({ hubOrigin: window.location.origin });
+
+      const user = await this.hubClient.auth.getUserInfo();
+      this.userName.set(user.name);
+
+      this.themeUnsubscribe = this.hubClient.events.on('theme-changed', (payload: any) => {
+        document.documentElement.classList.toggle('dark', payload.theme === 'dark');
       });
-
-      this.aiService.setHubClient(this.hubClient);
-      this.storageService.setHubClient(this.hubClient);
-
-      // Theme sync
-      this.themeUnsubscribe = this.hubClient.events.on('theme-changed', ({ theme }: any) => {
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-      });
-
-      // Load history and vocabulary
-      this.history.set(await this.storageService.getHistory());
-      this.vocabulary.set(await this.storageService.getVocabulary());
     } catch {
-      this.error.set('Failed to connect to The Hub.');
+      // Hub optional — running standalone is fine
     }
+  }
+
+  ngOnDestroy() {
+    this.themeUnsubscribe?.();
+    this.hubClient?.destroy();
   }
 
   async search() {
@@ -89,9 +86,24 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
       this.result.set(result);
       await this.storageService.addToHistory(this.searchQuery.trim());
       this.history.set(await this.storageService.getHistory());
+
+      void this.publishLookup(result);
     }
 
     this.loading.set(false);
+  }
+
+  private async publishLookup(result: DictionaryResult) {
+    if (!this.hubClient) return;
+    try {
+      await this.hubClient.storage.set('dictionary_last_lookup', {
+        word: result.word,
+        phonetic: result.phonetic,
+        timestamp: Date.now(),
+      });
+    } catch {
+      // optional publish
+    }
   }
 
   selectWord(word: string) {

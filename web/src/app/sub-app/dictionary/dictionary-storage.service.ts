@@ -1,66 +1,85 @@
-import { Injectable } from '@angular/core';
-import type { HubClient } from './lib/hub-client';
+import { Injectable, inject } from '@angular/core';
+import { Firestore, doc, getDoc, setDoc } from '@angular/fire/firestore/lite';
 import { VocabItem } from './models';
 
-const HISTORY_KEY = 'dictionary_history';
-const VOCABULARY_KEY = 'dictionary_vocabulary';
+const FIRESTORE_DOC = 'sub_app_dictionary/data';
 const MAX_HISTORY = 100;
+const LS_HISTORY_KEY = 'dictionary_history';
+const LS_VOCAB_KEY = 'dictionary_vocabulary';
+
+interface SubAppData {
+  history: string[];
+  vocabulary: Record<string, VocabItem>;
+}
 
 @Injectable({ providedIn: 'root' })
 export class DictionaryStorageService {
-  private hubClient: HubClient | null = null;
+  private firestore = inject(Firestore);
 
-  setHubClient(client: HubClient): void {
-    this.hubClient = client;
+  private async getData(): Promise<SubAppData> {
+    try {
+      const ref = doc(this.firestore, FIRESTORE_DOC);
+      const snap = await getDoc(ref);
+      if (snap.exists()) return snap.data() as SubAppData;
+    } catch { /* fallback to localStorage */ }
+    return this.loadLocal();
   }
 
-  private requireClient(): HubClient {
-    if (!this.hubClient) throw new Error('HubClient not set');
-    return this.hubClient;
+  private async saveData(data: SubAppData): Promise<void> {
+    try {
+      const ref = doc(this.firestore, FIRESTORE_DOC);
+      await setDoc(ref, data);
+    } catch { /* Firestore write failed — save locally */ }
+    this.saveLocal(data);
   }
 
-  // --- History ---
+  private loadLocal(): SubAppData {
+    return {
+      history: JSON.parse(localStorage.getItem(LS_HISTORY_KEY) || '[]'),
+      vocabulary: JSON.parse(localStorage.getItem(LS_VOCAB_KEY) || '{}'),
+    };
+  }
+
+  private saveLocal(data: SubAppData): void {
+    try {
+      localStorage.setItem(LS_HISTORY_KEY, JSON.stringify(data.history));
+      localStorage.setItem(LS_VOCAB_KEY, JSON.stringify(data.vocabulary));
+    } catch { /* localStorage full or unavailable */ }
+  }
 
   async getHistory(): Promise<string[]> {
-    try {
-      const res = await this.requireClient().storage.get(HISTORY_KEY);
-      return (res?.value as string[]) || [];
-    } catch {
-      return [];
-    }
+    const data = await this.getData();
+    return data.history;
   }
 
   async addToHistory(word: string): Promise<void> {
-    const history = await this.getHistory();
-    const filtered = history.filter(w => w.toLowerCase() !== word.toLowerCase());
+    const data = await this.getData();
+    const filtered = data.history.filter(w => w.toLowerCase() !== word.toLowerCase());
     filtered.unshift(word);
-    await this.requireClient().storage.set(HISTORY_KEY, filtered.slice(0, MAX_HISTORY));
+    data.history = filtered.slice(0, MAX_HISTORY);
+    await this.saveData(data);
   }
 
   async clearHistory(): Promise<void> {
-    await this.requireClient().storage.set(HISTORY_KEY, []);
+    const data = await this.getData();
+    data.history = [];
+    await this.saveData(data);
   }
 
-  // --- Vocabulary ---
-
   async getVocabulary(): Promise<Record<string, VocabItem>> {
-    try {
-      const res = await this.requireClient().storage.get(VOCABULARY_KEY);
-      return (res?.value as Record<string, VocabItem>) || {};
-    } catch {
-      return {};
-    }
+    const data = await this.getData();
+    return data.vocabulary;
   }
 
   async saveWord(word: string, note = ''): Promise<void> {
-    const vocab = await this.getVocabulary();
-    vocab[word.toLowerCase()] = { note, savedAt: Date.now() };
-    await this.requireClient().storage.set(VOCABULARY_KEY, vocab);
+    const data = await this.getData();
+    data.vocabulary[word.toLowerCase()] = { note, savedAt: Date.now() };
+    await this.saveData(data);
   }
 
   async removeWord(word: string): Promise<void> {
-    const vocab = await this.getVocabulary();
-    delete vocab[word.toLowerCase()];
-    await this.requireClient().storage.set(VOCABULARY_KEY, vocab);
+    const data = await this.getData();
+    delete data.vocabulary[word.toLowerCase()];
+    await this.saveData(data);
   }
 }
