@@ -116,6 +116,7 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
         this.isHubAuth.set(true);
         this.hubMessage.set(`Connected as ${user.name}`);
         this.storageService.setAuthState(true);
+        this.storageService.getVocabulary().then(v => this.vocabulary.set(v));
       } else {
         this.isHubAuth.set(false);
         this.hubMessage.set('Vocabulary is stored locally (not synced across devices).');
