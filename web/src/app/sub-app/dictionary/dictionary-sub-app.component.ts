@@ -5,7 +5,6 @@ import { DictionaryAiService } from './dictionary-ai.service';
 import { DictionaryStorageService } from './dictionary-storage.service';
 import { DictionaryMigrationService } from './dictionary-migration.service';
 import { DictionaryResult, VocabItem } from './models';
-import type { HubClient } from './lib/hub-client';
 
 type SortMode = 'alpha-asc' | 'alpha-desc' | 'time';
 
@@ -20,8 +19,9 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
   private aiService = inject(DictionaryAiService);
   private storageService = inject(DictionaryStorageService);
   private migrationService = inject(DictionaryMigrationService);
-  private hubClient: HubClient | null = null;
-  private themeUnsubscribe?: () => void;
+  private hubOrigin: string | null = null;
+  private hubAuthTimer: ReturnType<typeof setTimeout> | null = null;
+  private _hubMessageHandler: ((event: MessageEvent) => void) | null = null;
 
   searchQuery = '';
   loading = signal(false);
@@ -69,46 +69,75 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
     return currentWord ? currentWord in this.vocabulary() : false;
   });
 
-  async ngOnInit() {
-    await this.initHubAuth();
-    this.vocabulary.set(await this.storageService.getVocabulary());
+  ngOnInit(): void {
+    this.requestHubAuth();
+    this.storageService.getVocabulary().then(v => this.vocabulary.set(v));
   }
 
-  ngOnDestroy() {
-    this.themeUnsubscribe?.();
-    this.hubClient?.destroy();
-  }
-
-  private async initHubAuth() {
-    try {
-      const { createHubClient } = await import('./lib/hub-client');
-
-      let hubOrigin: string | null = null;
-      const params = new URLSearchParams(window.location.search);
-      hubOrigin = params.get('hub');
-      if (!hubOrigin && window !== window.parent) {
-        try { hubOrigin = new URL(document.referrer).origin; } catch { /* empty */ }
-      }
-      if (!hubOrigin) {
-        this.hubMessage.set('Not connected to The Hub.');
-        return;
-      }
-
-      this.hubClient = createHubClient({ hubOrigin, timeout: 5000 });
-      const userInfo = await this.hubClient.auth.getUserInfo();
-
-      if (userInfo?.id) {
-        this.isHubAuth.set(true);
-        this.hubMessage.set(`Connected as ${userInfo.name}`);
-        this.storageService.setFirestoreEnabled(true);
-
-        this.themeUnsubscribe = this.hubClient.events.on('theme-changed', ({ theme }: any) => {
-          document.documentElement.classList.toggle('dark', theme === 'dark');
-        });
-      }
-    } catch {
-      this.hubMessage.set('Vocabulary is stored locally (not synced across devices).');
+  ngOnDestroy(): void {
+    if (this._hubMessageHandler) {
+      window.removeEventListener('message', this._hubMessageHandler);
     }
+    if (this.hubAuthTimer !== null) {
+      clearTimeout(this.hubAuthTimer);
+      this.hubAuthTimer = null;
+    }
+  }
+
+  private requestHubAuth(): void {
+    const params = new URLSearchParams(window.location.search);
+    this.hubOrigin = params.get('hub');
+    if (!this.hubOrigin && window !== window.parent) {
+      try {
+        const ref = document.referrer;
+        if (ref) this.hubOrigin = new URL(ref).origin;
+      } catch { /* empty */ }
+    }
+
+    if (!this.hubOrigin) {
+      this.isHubAuth.set(false);
+      this.hubMessage.set('Not connected to The Hub.');
+      return;
+    }
+
+    this._hubMessageHandler = (event: MessageEvent) => {
+      if (event.origin !== this.hubOrigin) return;
+      if (event.data?.type !== 'INLAYFORGEKIT_AUTH_RESPONSE') return;
+
+      if (this.hubAuthTimer !== null) {
+        clearTimeout(this.hubAuthTimer);
+        this.hubAuthTimer = null;
+      }
+      window.removeEventListener('message', this._hubMessageHandler!);
+      this._hubMessageHandler = null;
+
+      const user = event.data?.user;
+      if (user?.id) {
+        this.isHubAuth.set(true);
+        this.hubMessage.set(`Connected as ${user.name}`);
+        this.storageService.setAuthState(true);
+      } else {
+        this.isHubAuth.set(false);
+        this.hubMessage.set('Vocabulary is stored locally (not synced across devices).');
+        this.storageService.setAuthState(false);
+      }
+    };
+
+    window.addEventListener('message', this._hubMessageHandler);
+    window.parent.postMessage(
+      { type: 'INLAYFORGEKIT_AUTH_REQUEST' },
+      this.hubOrigin
+    );
+
+    this.hubAuthTimer = setTimeout(() => {
+      if (this._hubMessageHandler) {
+        window.removeEventListener('message', this._hubMessageHandler);
+        this._hubMessageHandler = null;
+      }
+      this.isHubAuth.set(false);
+      this.hubMessage.set('Vocabulary is stored locally (not synced across devices).');
+      this.storageService.setAuthState(false);
+    }, 3000);
   }
 
   async search() {

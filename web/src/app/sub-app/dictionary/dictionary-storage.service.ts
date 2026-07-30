@@ -1,4 +1,4 @@
-import { Injectable, inject, signal } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { Firestore, doc, getDoc, setDoc } from '@angular/fire/firestore/lite';
 import { VocabItem } from './models';
 
@@ -13,18 +13,14 @@ interface SubAppData {
 export class DictionaryStorageService {
   private firestore = inject(Firestore);
 
-  private useFirestore = signal(false);
+  private _isAuthenticated = false;
 
-  setFirestoreEnabled(enabled: boolean): void {
-    this.useFirestore.set(enabled);
-  }
-
-  get isFirestoreEnabled(): boolean {
-    return this.useFirestore();
+  setAuthState(authed: boolean): void {
+    this._isAuthenticated = authed;
   }
 
   async getVocabulary(): Promise<Record<string, VocabItem>> {
-    if (this.useFirestore()) {
+    if (this._isAuthenticated) {
       try {
         const ref = doc(this.firestore, FIRESTORE_DOC);
         const snap = await getDoc(ref);
@@ -39,7 +35,7 @@ export class DictionaryStorageService {
     const vocab = await this.getVocabulary();
     vocab[normalized] = { note, savedAt: Date.now() };
 
-    if (this.useFirestore()) {
+    if (this._isAuthenticated) {
       try {
         const ref = doc(this.firestore, FIRESTORE_DOC);
         await setDoc(ref, { vocabulary: vocab });
@@ -54,7 +50,7 @@ export class DictionaryStorageService {
     const vocab = await this.getVocabulary();
     delete vocab[normalized];
 
-    if (this.useFirestore()) {
+    if (this._isAuthenticated) {
       try {
         const ref = doc(this.firestore, FIRESTORE_DOC);
         await setDoc(ref, { vocabulary: vocab });
