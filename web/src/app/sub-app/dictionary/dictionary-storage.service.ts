@@ -1,4 +1,4 @@
-import { Injectable, inject } from '@angular/core';
+import { Injectable, inject, signal } from '@angular/core';
 import { Firestore, doc, getDoc, setDoc } from '@angular/fire/firestore/lite';
 import { VocabItem } from './models';
 
@@ -13,12 +13,24 @@ interface SubAppData {
 export class DictionaryStorageService {
   private firestore = inject(Firestore);
 
+  private useFirestore = signal(false);
+
+  setFirestoreEnabled(enabled: boolean): void {
+    this.useFirestore.set(enabled);
+  }
+
+  get isFirestoreEnabled(): boolean {
+    return this.useFirestore();
+  }
+
   async getVocabulary(): Promise<Record<string, VocabItem>> {
-    try {
-      const ref = doc(this.firestore, FIRESTORE_DOC);
-      const snap = await getDoc(ref);
-      if (snap.exists()) return (snap.data() as SubAppData).vocabulary || {};
-    } catch { /* fallback */ }
+    if (this.useFirestore()) {
+      try {
+        const ref = doc(this.firestore, FIRESTORE_DOC);
+        const snap = await getDoc(ref);
+        if (snap.exists()) return (snap.data() as SubAppData).vocabulary || {};
+      } catch { /* empty */ }
+    }
     return this.loadLocal();
   }
 
@@ -27,13 +39,13 @@ export class DictionaryStorageService {
     const vocab = await this.getVocabulary();
     vocab[normalized] = { note, savedAt: Date.now() };
 
-    // Save to Firestore (shared across all users)
-    try {
-      const ref = doc(this.firestore, FIRESTORE_DOC);
-      await setDoc(ref, { vocabulary: vocab });
-    } catch { /* Firestore write failed */ }
+    if (this.useFirestore()) {
+      try {
+        const ref = doc(this.firestore, FIRESTORE_DOC);
+        await setDoc(ref, { vocabulary: vocab });
+      } catch { /* Firestore write failed */ }
+    }
 
-    // Fallback: save to localStorage
     this.saveLocal(vocab);
   }
 
@@ -42,10 +54,12 @@ export class DictionaryStorageService {
     const vocab = await this.getVocabulary();
     delete vocab[normalized];
 
-    try {
-      const ref = doc(this.firestore, FIRESTORE_DOC);
-      await setDoc(ref, { vocabulary: vocab });
-    } catch { /* ignore */ }
+    if (this.useFirestore()) {
+      try {
+        const ref = doc(this.firestore, FIRESTORE_DOC);
+        await setDoc(ref, { vocabulary: vocab });
+      } catch { /* ignore */ }
+    }
 
     this.saveLocal(vocab);
   }

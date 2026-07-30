@@ -48,6 +48,16 @@
         <span class="badge">{{ vocabCount() }}</span>
       </div>
 
+      @if (!isHubAuth()) {
+        <div class="hub-status">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12a9 9 0 1 1-9-9"/>
+            <path d="M12 2v4m0 12v4m-7-9H1m22 0h-4"/>
+          </svg>
+          <span>{{ hubMessage() }}</span>
+        </div>
+      }
+
       <div class="sort-row">
         <button class="sort-btn" [class.active]="sortBy() === 'time'" (click)="sortBy.set('time')">Recent</button>
         <button class="sort-btn" [class.active]="sortBy() === 'alpha-asc'" (click)="sortBy.set('alpha-asc')">A-Z</button>

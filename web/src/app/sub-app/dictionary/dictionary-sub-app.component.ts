@@ -1,10 +1,11 @@
-import { Component, signal, computed, inject, OnInit } from '@angular/core';
+import { Component, signal, computed, inject, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DictionaryAiService } from './dictionary-ai.service';
 import { DictionaryStorageService } from './dictionary-storage.service';
 import { DictionaryMigrationService } from './dictionary-migration.service';
 import { DictionaryResult, VocabItem } from './models';
+import type { HubClient } from './lib/hub-client';
 
 type SortMode = 'alpha-asc' | 'alpha-desc' | 'time';
 
@@ -15,10 +16,12 @@ type SortMode = 'alpha-asc' | 'alpha-desc' | 'time';
   templateUrl: './dictionary-sub-app.component.html',
   styleUrls: ['./dictionary-sub-app.component.css'],
 })
-export class DictionarySubAppComponent implements OnInit {
+export class DictionarySubAppComponent implements OnInit, OnDestroy {
   private aiService = inject(DictionaryAiService);
   private storageService = inject(DictionaryStorageService);
   private migrationService = inject(DictionaryMigrationService);
+  private hubClient: HubClient | null = null;
+  private themeUnsubscribe?: () => void;
 
   searchQuery = '';
   loading = signal(false);
@@ -29,6 +32,8 @@ export class DictionarySubAppComponent implements OnInit {
   sortBy = signal<SortMode>('time');
   migrationStatus = signal<string | null>(null);
   migrationRunning = signal(false);
+  isHubAuth = signal(false);
+  hubMessage = signal('Connecting to The Hub...');
 
   vocabWordsSorted = computed(() => {
     const vocab = this.vocabulary();
@@ -65,7 +70,45 @@ export class DictionarySubAppComponent implements OnInit {
   });
 
   async ngOnInit() {
+    await this.initHubAuth();
     this.vocabulary.set(await this.storageService.getVocabulary());
+  }
+
+  ngOnDestroy() {
+    this.themeUnsubscribe?.();
+    this.hubClient?.destroy();
+  }
+
+  private async initHubAuth() {
+    try {
+      const { createHubClient } = await import('./lib/hub-client');
+
+      let hubOrigin: string | null = null;
+      const params = new URLSearchParams(window.location.search);
+      hubOrigin = params.get('hub');
+      if (!hubOrigin && window !== window.parent) {
+        try { hubOrigin = new URL(document.referrer).origin; } catch { /* empty */ }
+      }
+      if (!hubOrigin) {
+        this.hubMessage.set('Not connected to The Hub.');
+        return;
+      }
+
+      this.hubClient = createHubClient({ hubOrigin, timeout: 5000 });
+      const userInfo = await this.hubClient.auth.getUserInfo();
+
+      if (userInfo?.id) {
+        this.isHubAuth.set(true);
+        this.hubMessage.set(`Connected as ${userInfo.name}`);
+        this.storageService.setFirestoreEnabled(true);
+
+        this.themeUnsubscribe = this.hubClient.events.on('theme-changed', ({ theme }: any) => {
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        });
+      }
+    } catch {
+      this.hubMessage.set('Vocabulary is stored locally (not synced across devices).');
+    }
   }
 
   async search() {
