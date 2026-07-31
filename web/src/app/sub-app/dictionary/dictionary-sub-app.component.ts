@@ -96,9 +96,12 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
       return;
     }
 
+    // Real Hub protocol: send an RPC-style request, match the reply by requestId.
+    const requestId = crypto.randomUUID();
     this._hubMessageHandler = (event: MessageEvent) => {
       if (event.origin !== this.hubOrigin) return;
-      if (event.data?.type !== 'INLAYFORGEKIT_AUTH_RESPONSE') return;
+      const data = event.data as { requestId?: string; ok?: boolean; data?: { id?: string; name?: string; email?: string; image?: string | null } } | undefined;
+      if (!data || data.requestId !== requestId || typeof data.ok !== 'boolean') return;
 
       if (this.hubAuthTimer !== null) {
         clearTimeout(this.hubAuthTimer);
@@ -107,8 +110,8 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
       window.removeEventListener('message', this._hubMessageHandler!);
       this._hubMessageHandler = null;
 
-      const user = event.data?.user;
-      if (user?.id) {
+      const user = data.data;
+      if (data.ok && user?.id) {
         this.isHubAuth.set(true);
         this.hubMessage.set(`Connected as ${user.name}`);
         this.storageService.setAuthState(true);
@@ -122,7 +125,7 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
 
     window.addEventListener('message', this._hubMessageHandler);
     window.parent.postMessage(
-      { type: 'INLAYFORGEKIT_AUTH_REQUEST' },
+      { type: 'auth:getUserInfo', requestId, version: 1 },
       this.hubOrigin
     );
 
@@ -134,7 +137,7 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
       this.isHubAuth.set(false);
       this.hubMessage.set('Vocabulary is stored locally (not synced across devices).');
       this.storageService.setAuthState(false);
-    }, 3000);
+    }, 10000);
   }
 
   async search() {
