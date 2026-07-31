@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DictionaryAiService } from './dictionary-ai.service';
 import { DictionaryStorageService } from './dictionary-storage.service';
-import { DictionaryMigrationService } from './dictionary-migration.service';
 import { DictionaryResult, VocabItem } from './models';
 
 type SortMode = 'alpha-asc' | 'alpha-desc' | 'time';
@@ -18,7 +17,6 @@ type SortMode = 'alpha-asc' | 'alpha-desc' | 'time';
 export class DictionarySubAppComponent implements OnInit, OnDestroy {
   private aiService = inject(DictionaryAiService);
   private storageService = inject(DictionaryStorageService);
-  private migrationService = inject(DictionaryMigrationService);
   private hubOrigin: string | null = null;
   private hubAuthTimer: ReturnType<typeof setTimeout> | null = null;
   private _hubMessageHandler: ((event: MessageEvent) => void) | null = null;
@@ -30,8 +28,6 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
   vocabulary = signal<Record<string, VocabItem>>({});
   isSidebarOpen = signal(false);
   sortBy = signal<SortMode>('time');
-  migrationStatus = signal<string | null>(null);
-  migrationRunning = signal(false);
   isHubAuth = signal(false);
   hubMessage = signal('Connecting to The Hub...');
 
@@ -189,19 +185,5 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
 
   toggleSidebar() {
     this.isSidebarOpen.set(!this.isSidebarOpen());
-  }
-
-  // TEMPORARY: one-time migration from old per-user collection
-  async runMigration() {
-    this.migrationRunning.set(true);
-    this.migrationStatus.set('Running...');
-    try {
-      const result = await this.migrationService.migrateToShared();
-      this.migrationStatus.set(`Done! Migrated ${result.migrated} words (${result.skipped} duplicates skipped).`);
-      this.vocabulary.set(await this.storageService.getVocabulary());
-    } catch (err: any) {
-      this.migrationStatus.set(`Error: ${err.message}`);
-    }
-    this.migrationRunning.set(false);
   }
 }

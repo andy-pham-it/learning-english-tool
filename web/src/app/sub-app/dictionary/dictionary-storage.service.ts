@@ -1,13 +1,8 @@
 import { Injectable, inject } from '@angular/core';
-import { Firestore, doc, getDoc, setDoc } from '@angular/fire/firestore/lite';
+import { Firestore, collection, getDocs, deleteDoc, doc } from '@angular/fire/firestore/lite';
 import { VocabItem } from './models';
 
-const FIRESTORE_DOC = 'sub_app_dictionary/data';
 const LS_VOCAB_KEY = 'dictionary_vocabulary';
-
-interface SubAppData {
-  vocabulary: Record<string, VocabItem>;
-}
 
 @Injectable({ providedIn: 'root' })
 export class DictionaryStorageService {
@@ -19,45 +14,59 @@ export class DictionaryStorageService {
     this._isAuthenticated = authed;
   }
 
+  /**
+   * Vocabulary = all words in the shared `dictionary` collection
+   * (each doc is a cached definition, saved by DictionaryAiService on lookup).
+   * Falls back to localStorage when not authenticated via The Hub.
+   */
   async getVocabulary(): Promise<Record<string, VocabItem>> {
     if (this._isAuthenticated) {
       try {
-        const ref = doc(this.firestore, FIRESTORE_DOC);
-        const snap = await getDoc(ref);
-        if (snap.exists()) return (snap.data() as SubAppData).vocabulary || {};
-      } catch { /* empty */ }
+        const snap = await getDocs(collection(this.firestore, 'dictionary'));
+        const vocab: Record<string, VocabItem> = {};
+        snap.forEach((d) => {
+          const data = d.data();
+          const ts = data['timestamp'];
+          vocab[d.id] = {
+            note: '',
+            savedAt: ts ? Number(ts.toMillis()) : Date.now(),
+          };
+        });
+        return vocab;
+      } catch { /* Firestore read failed */ }
     }
     return this.loadLocal();
   }
 
   async saveWord(word: string, note = ''): Promise<void> {
     const normalized = word.trim().toLowerCase();
-    const vocab = await this.getVocabulary();
-    vocab[normalized] = { note, savedAt: Date.now() };
 
     if (this._isAuthenticated) {
-      try {
-        const ref = doc(this.firestore, FIRESTORE_DOC);
-        await setDoc(ref, { vocabulary: vocab });
-      } catch { /* Firestore write failed */ }
+      // Definition is already written to dictionary/{word} by DictionaryAiService.
+      // Nothing extra to persist — just mirror into localStorage for offline fallback.
+      const vocab = await this.getVocabulary();
+      vocab[normalized] = { note, savedAt: Date.now() };
+      this.saveLocal(vocab);
+      return;
     }
 
-    this.saveLocal(vocab);
+    const local = this.loadLocal();
+    local[normalized] = { note, savedAt: Date.now() };
+    this.saveLocal(local);
   }
 
   async removeWord(word: string): Promise<void> {
     const normalized = word.trim().toLowerCase();
-    const vocab = await this.getVocabulary();
-    delete vocab[normalized];
 
     if (this._isAuthenticated) {
       try {
-        const ref = doc(this.firestore, FIRESTORE_DOC);
-        await setDoc(ref, { vocabulary: vocab });
-      } catch { /* ignore */ }
+        await deleteDoc(doc(this.firestore, 'dictionary', normalized));
+      } catch { /* Firestore delete failed */ }
     }
 
-    this.saveLocal(vocab);
+    const local = this.loadLocal();
+    delete local[normalized];
+    this.saveLocal(local);
   }
 
   private loadLocal(): Record<string, VocabItem> {

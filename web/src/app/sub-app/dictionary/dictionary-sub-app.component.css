@@ -267,36 +267,6 @@
   color: #ef4444;
 }
 
-/* ===== Migration bar (temporary) ===== */
-.migration-bar {
-  padding: 8px 12px;
-  border-top: 1px solid #e2e8f0;
-}
-.migration-btn {
-  width: 100%;
-  background: #fef3c7;
-  border: 1px solid #fde68a;
-  color: #92400e;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-.migration-btn:hover:not(:disabled) {
-  background: #fde68a;
-}
-.migration-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-.migration-text {
-  font-size: 11px;
-  color: #64748b;
-  text-align: center;
-}
-
 /* ===== Main content ===== */
 .main-content {
   flex: 1;

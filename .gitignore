@@ -120,3 +120,6 @@ out/
 .pnp.*
 .vercel
 .env*
+
+# Firebase service account keys (SECRET)
+*firebase-adminsdk*.json
