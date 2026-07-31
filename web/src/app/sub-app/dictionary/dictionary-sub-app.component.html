@@ -23,7 +23,6 @@
         [(ngModel)]="searchQuery"
         (keyup.enter)="search()"
         (keyup.escape)="result.set(null); error.set(null)"
-        autofocus
       />
       <button class="search-btn" (click)="search()" [disabled]="loading() || !searchQuery.trim()">
         @if (loading()) {
