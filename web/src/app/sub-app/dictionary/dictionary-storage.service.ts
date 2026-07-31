@@ -12,6 +12,7 @@ export class DictionaryStorageService {
 
   setAuthState(authed: boolean): void {
     this._isAuthenticated = authed;
+    console.log('[dictionary-sub-app] storage.setAuthState(', authed, ')');
   }
 
   /**
@@ -32,10 +33,17 @@ export class DictionaryStorageService {
             savedAt: ts ? Number(ts.toMillis()) : Date.now(),
           };
         });
+        console.log('[dictionary-sub-app] Firestore read OK —', snap.size, 'words from dictionary collection');
         return vocab;
-      } catch { /* Firestore read failed */ }
+      } catch (err) {
+        console.error('[dictionary-sub-app] Firestore read FAILED:', err);
+      }
+    } else {
+      console.log('[dictionary-sub-app] not authenticated — skipping Firestore, using localStorage');
     }
-    return this.loadLocal();
+    const local = this.loadLocal();
+    console.log('[dictionary-sub-app] loaded', Object.keys(local).length, 'words from localStorage');
+    return local;
   }
 
   async saveWord(word: string, note = ''): Promise<void> {
@@ -61,7 +69,9 @@ export class DictionaryStorageService {
     if (this._isAuthenticated) {
       try {
         await deleteDoc(doc(this.firestore, 'dictionary', normalized));
-      } catch { /* Firestore delete failed */ }
+      } catch (err) {
+        console.error('[dictionary-sub-app] Firestore delete FAILED for', normalized, ':', err);
+      }
     }
 
     const local = this.loadLocal();

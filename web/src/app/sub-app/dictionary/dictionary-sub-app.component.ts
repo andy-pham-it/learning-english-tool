@@ -91,17 +91,26 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
     }
 
     if (!this.hubOrigin) {
+      console.warn('[dictionary-sub-app] No hub origin (no ?hub= param and not inside an iframe)');
       this.isHubAuth.set(false);
       this.hubMessage.set('Not connected to The Hub.');
       return;
     }
 
+    console.log('[dictionary-sub-app] hubOrigin =', this.hubOrigin);
+
     // Real Hub protocol: send an RPC-style request, match the reply by requestId.
     const requestId = crypto.randomUUID();
     this._hubMessageHandler = (event: MessageEvent) => {
       if (event.origin !== this.hubOrigin) return;
+      const raw = event.data as Record<string, unknown> | undefined;
+      if (raw && typeof raw === 'object' && 'requestId' in raw) {
+        console.log('[dictionary-sub-app] message from hub:', { origin: event.origin, type: raw['type'], requestId: raw['requestId'], ok: raw['ok'], hasData: 'data' in raw });
+      }
       const data = event.data as { requestId?: string; ok?: boolean; data?: { id?: string; name?: string; email?: string; image?: string | null } } | undefined;
       if (!data || data.requestId !== requestId || typeof data.ok !== 'boolean') return;
+
+      console.log('[dictionary-sub-app] auth response:', { ok: data.ok, data: data.data });
 
       if (this.hubAuthTimer !== null) {
         clearTimeout(this.hubAuthTimer);
@@ -124,12 +133,14 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
     };
 
     window.addEventListener('message', this._hubMessageHandler);
+    console.log('[dictionary-sub-app] posting auth:getUserInfo →', this.hubOrigin, { requestId });
     window.parent.postMessage(
       { type: 'auth:getUserInfo', requestId, version: 1 },
       this.hubOrigin
     );
 
     this.hubAuthTimer = setTimeout(() => {
+      console.warn('[dictionary-sub-app] auth:getUserInfo timed out after 10s — Hub never replied');
       if (this._hubMessageHandler) {
         window.removeEventListener('message', this._hubMessageHandler);
         this._hubMessageHandler = null;
