@@ -60,11 +60,6 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
     return d.toLocaleDateString('vi-VN', { day: 'numeric', month: 'short' });
   }
 
-  isSaved = computed(() => {
-    const currentWord = this.result()?.word?.toLowerCase();
-    return currentWord ? currentWord in this.vocabulary() : false;
-  });
-
   ngOnInit(): void {
     this.requestHubAuth();
     this.storageService.getVocabulary().then(v => this.vocabulary.set(v));
@@ -175,18 +170,6 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
     this.searchQuery = word;
     this.search();
     this.isSidebarOpen.set(false);
-  }
-
-  async saveWord() {
-    const word = this.result()?.word;
-    if (!word) return;
-    await this.storageService.saveWord(word);
-    this.vocabulary.set(await this.storageService.getVocabulary());
-  }
-
-  async removeWord(word: string) {
-    await this.storageService.removeWord(word);
-    this.vocabulary.set(await this.storageService.getVocabulary());
   }
 
   speak(text: string) {

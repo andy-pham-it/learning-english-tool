@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { Firestore, collection, getDocs, deleteDoc, doc } from '@angular/fire/firestore/lite';
+import { Firestore, collection, getDocs } from '@angular/fire/firestore/lite';
 import { VocabItem } from './models';
 
 const LS_VOCAB_KEY = 'dictionary_vocabulary';
@@ -60,22 +60,6 @@ export class DictionaryStorageService {
 
     const local = this.loadLocal();
     local[normalized] = { note, savedAt: Date.now() };
-    this.saveLocal(local);
-  }
-
-  async removeWord(word: string): Promise<void> {
-    const normalized = word.trim().toLowerCase();
-
-    if (this._isAuthenticated) {
-      try {
-        await deleteDoc(doc(this.firestore, 'dictionary', normalized));
-      } catch (err) {
-        console.error('[dictionary-sub-app] Firestore delete FAILED for', normalized, ':', err);
-      }
-    }
-
-    const local = this.loadLocal();
-    delete local[normalized];
     this.saveLocal(local);
   }
 

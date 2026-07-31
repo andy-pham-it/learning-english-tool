@@ -251,22 +251,6 @@
   margin-right: 4px;
 }
 
-.remove-btn {
-  background: transparent;
-  border: none;
-  color: #cbd5e1;
-  padding: 4px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.remove-btn:hover {
-  color: #ef4444;
-}
-
 /* ===== Main content ===== */
 .main-content {
   flex: 1;
@@ -484,41 +468,6 @@
   font-size: 14px;
   color: #475569;
   margin-bottom: 4px;
-}
-
-/* ===== Action bar ===== */
-.action-bar {
-  margin-top: 24px;
-  padding-top: 16px;
-  border-top: 1px solid #f1f5f9;
-  display: flex;
-  gap: 8px;
-}
-
-.action-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
-  color: #475569;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 10px 18px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.action-btn:hover {
-  background: #eef2ff;
-  border-color: #c7d2fe;
-  color: #4f46e5;
-}
-
-.save-btn.saved {
-  background: #f0fdf4;
-  border-color: #bbf7d0;
-  color: #16a34a;
 }
 
 /* ===== Spinner ===== */
