@@ -350,7 +350,7 @@
   font-size: 16px;
   color: #94a3b8;
   font-style: italic;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', 'Arial Unicode MS', 'Segoe UI Symbol', 'Noto Serif', serif;
 }
 
 .tts-btn {
