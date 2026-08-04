@@ -85,25 +85,42 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
       } catch { /* empty */ }
     }
 
-    if (!this.hubOrigin) {
-      console.warn('[dictionary-sub-app] No hub origin (no ?hub= param and not inside an iframe)');
+    if (!this.hubOrigin && window === window.parent) {
+      console.warn('[dictionary-sub-app] Not inside an iframe and no ?hub= param — skipping Hub auth');
       this.isHubAuth.set(false);
       this.hubMessage.set('Not connected to The Hub.');
       return;
     }
 
-    console.log('[dictionary-sub-app] hubOrigin =', this.hubOrigin);
+    // WebKit (e.g. Orion) strips document.referrer for cross-origin iframes,
+    // so the referrer fast-path above may leave hubOrigin null even when
+    // embedded. Fall back to a discovery handshake: post to the parent with
+    // targetOrigin '*', adopt the origin of the first matching reply, then
+    // pin all further traffic to it. The Hub only replies to whitelisted
+    // origins, so the reply origin is trustworthy.
+    const isDiscovery = !this.hubOrigin;
+    if (isDiscovery) {
+      console.log('[dictionary-sub-app] No ?hub= param and no referrer — starting parent-origin discovery handshake');
+    } else {
+      console.log('[dictionary-sub-app] hubOrigin =', this.hubOrigin);
+    }
 
     // Real Hub protocol: send an RPC-style request, match the reply by requestId.
     const requestId = crypto.randomUUID();
     this._hubMessageHandler = (event: MessageEvent) => {
-      if (event.origin !== this.hubOrigin) return;
       const raw = event.data as Record<string, unknown> | undefined;
       if (raw && typeof raw === 'object' && 'requestId' in raw) {
         console.log('[dictionary-sub-app] message from hub:', { origin: event.origin, type: raw['type'], requestId: raw['requestId'], ok: raw['ok'], hasData: 'data' in raw });
       }
       const data = event.data as { requestId?: string; ok?: boolean; data?: { id?: string; name?: string; email?: string; image?: string | null } } | undefined;
       if (!data || data.requestId !== requestId || typeof data.ok !== 'boolean') return;
+
+      if (isDiscovery && !this.hubOrigin) {
+        this.hubOrigin = event.origin;
+        console.log('[dictionary-sub-app] discovered hub origin from reply:', this.hubOrigin);
+      }
+
+      if (event.origin !== this.hubOrigin) return;
 
       console.log('[dictionary-sub-app] auth response:', { ok: data.ok, data: data.data });
 
@@ -128,10 +145,10 @@ export class DictionarySubAppComponent implements OnInit, OnDestroy {
     };
 
     window.addEventListener('message', this._hubMessageHandler);
-    console.log('[dictionary-sub-app] posting auth:getUserInfo →', this.hubOrigin, { requestId });
+    console.log('[dictionary-sub-app] posting auth:getUserInfo →', this.hubOrigin ?? '*', { requestId });
     window.parent.postMessage(
       { type: 'auth:getUserInfo', requestId, version: 1 },
-      this.hubOrigin
+      this.hubOrigin ?? '*'
     );
 
     this.hubAuthTimer = setTimeout(() => {
