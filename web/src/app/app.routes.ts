@@ -6,6 +6,7 @@ export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', loadComponent: () => import('./features/auth/login/login.component').then(m => m.LoginComponent) },
   { path: 'sub-app/dictionary', loadComponent: () => import('./sub-app/dictionary/dictionary-sub-app.component').then(m => m.DictionarySubAppComponent) },
+  { path: 'sub-app/phrase-lab', loadComponent: () => import('./sub-app/phrase-lab/pages/phrase-lab-page.component').then((m) => m.PhraseLabPageComponent) },
   {
     path: '',
     component: MainLayoutComponent,
