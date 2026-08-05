@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /phrase_chunks/{id} {
+      allow read: if true;
+    }
+    match /phrase_templates/{id} {
+      allow read: if true;
+    }
+    match /phrase_progress/{uid} {
+      allow read, write: if request.auth.uid == uid;
+    }
+  }
+}
