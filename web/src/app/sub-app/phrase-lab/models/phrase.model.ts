@@ -1,4 +1,4 @@
-export type Role = 'opener' | 'linker' | 'filler' | 'closer';
+export type Role = 'opener' | 'linker' | 'filler' | 'closer' | 'reaction' | 'question';
 export type Level = 'A2' | 'B1' | 'B2' | 'C1';
 
 export interface PhraseChunk {
