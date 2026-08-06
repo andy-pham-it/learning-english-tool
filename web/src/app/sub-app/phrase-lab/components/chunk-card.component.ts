@@ -8,6 +8,8 @@ const ROLE_COLOR: Record<string, string> = {
   linker: 'bg-purple-100 text-purple-700',
   filler: 'bg-orange-100 text-orange-700',
   closer: 'bg-green-100 text-green-700',
+  reaction: 'bg-rose-100 text-rose-700',
+  question: 'bg-amber-100 text-amber-700',
 };
 
 @Component({
