@@ -13,7 +13,10 @@ describe('PhraseLabPageComponent', () => {
       ['loadAll'],
       {
         chunks: signal([{ id: 'c1', domain: 'it', context: 'meeting', level: 'B2', english: 'take into consideration', vietnamese: 'v', phonetic: '/p/', role: 'linker', examples: [] }]),
-        templates: signal([{ id: 't1', domain: 'it', context: 'meeting', level: 'B2', english: 'e', vietnamese: 'v', structure: '{a}', slots: [{ name: 'a', role: null, options: ['x'] }], example: { en: 'e', vi: 'v' } }]),
+        templates: signal([
+          { id: 't1', domain: 'it', context: 'meeting', level: 'B2', english: 'e', vietnamese: 'v', structure: '{a}', slots: [{ name: 'a', role: null, options: ['x'] }], example: { en: 'e', vi: 'v' } },
+          { id: 't2', domain: 'it', context: 'email', level: 'A2', english: 'e2', vietnamese: 'v2', structure: '{b}', slots: [{ name: 'b', role: null, options: ['y'] }], example: { en: 'e2', vi: 'v2' } },
+        ]),
         domains: signal(['it']), contexts: signal(['meeting']), levels: signal(['B2']), loading: signal(false), offline: signal(false),
       } as any
     );
@@ -43,5 +46,23 @@ describe('PhraseLabPageComponent', () => {
     const c = fixture.componentInstance;
     c.setTab('analysis');
     expect(c.selectedTemplate()).not.toBeNull();
+    expect(c.selectedTemplate()!.id).toBe('t1');
+  });
+
+  it('renders the template selector with all templates', () => {
+    const c = fixture.componentInstance;
+    c.setTab('analysis');
+    fixture.detectChanges();
+    const options = fixture.nativeElement.querySelectorAll('#template-select option');
+    expect(options.length).toBe(2);
+    expect(options[1].value).toBe('t2');
+  });
+
+  it('selects a template by id from the selector', () => {
+    const c = fixture.componentInstance;
+    c.setTab('analysis');
+    c.selectTemplate('t2');
+    expect(c.selectedTemplate()!.id).toBe('t2');
+    expect(c.templateLabel(c.selectedTemplate()!)).toContain('it · email · A2');
   });
 });

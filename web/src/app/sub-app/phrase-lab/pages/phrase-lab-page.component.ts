@@ -43,6 +43,19 @@ import { SpeakPracticeComponent } from '../components/speak-practice.component';
       @if (activeTab() === 'explore') {
         <app-chunk-browser />
       } @else {
+        @if (content.templates().length > 0) {
+          <div class="mb-4 flex flex-wrap items-center gap-2 text-sm">
+            <label class="font-medium text-slate-600" for="template-select">Template:</label>
+            <select id="template-select"
+              class="max-w-full rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400"
+              [value]="selectedTemplate()?.id ?? ''"
+              (change)="selectTemplate($any($event.target).value)">
+              @for (t of content.templates(); track t.id) {
+                <option [value]="t.id">{{ templateLabel(t) }}</option>
+              }
+            </select>
+          </div>
+        }
         @if (activeTab() === 'analysis' && selectedTemplate(); as t) {
           <app-sentence-analysis [template]="t" />
         }
@@ -90,6 +103,15 @@ export class PhraseLabPageComponent implements OnInit {
     if (id !== 'explore' && !this.selectedTemplate()) {
       this.selectedTemplate.set(this.content.templates()[0] ?? null);
     }
+  }
+
+  selectTemplate(id: string): void {
+    const t = this.content.templates().find((x) => x.id === id);
+    if (t) this.selectedTemplate.set(t);
+  }
+
+  templateLabel(t: PhraseTemplate): string {
+    return `${t.domain} · ${t.context} · ${t.level} — ${t.english}`;
   }
 
   onMastered(evt: { templateId: string; chunkIds: string[]; score: number }): void {

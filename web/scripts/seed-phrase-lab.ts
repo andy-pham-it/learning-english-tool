@@ -2,7 +2,7 @@ import { cert, initializeApp } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 import { SEED_CHUNKS, SEED_TEMPLATES } from './seed-data/phrase-seed.data';
 
-const credentialPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+const credentialPath = process.env['GOOGLE_APPLICATION_CREDENTIALS'];
 if (!credentialPath) {
   console.error('Missing GOOGLE_APPLICATION_CREDENTIALS (path to service-account JSON).');
   process.exit(1);
