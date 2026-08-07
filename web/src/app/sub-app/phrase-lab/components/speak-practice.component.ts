@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, output, signal } from '@angular/core';
-import { PhraseTemplate } from '../models/phrase.model';
+import { PhraseTemplate, ReviewRating } from '../models/phrase.model';
 import { PhraseEngineService } from '../services/phrase-engine.service';
 import { PhraseContentService } from '../services/phrase-content.service';
 import { SpeechService } from '../../../core/services/speech.service';
@@ -10,9 +10,21 @@ import { SpeechService } from '../../../core/services/speech.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="rounded-2xl bg-white/70 backdrop-blur p-4 border border-slate-200 space-y-4">
-      <h3 class="font-semibold text-slate-800">Luyện nói</h3>
-      <p class="rounded-xl bg-slate-50 p-3 text-slate-800 leading-relaxed">{{ target() }}</p>
-      <div class="flex gap-2">
+      <h3 class="font-semibold text-slate-800 flex items-center justify-between">
+        <span>Luyện nói</span>
+        <button
+          (click)="toggleShadow()"
+          class="rounded-full border border-slate-200 px-3 py-1 text-xs"
+          [attr.aria-pressed]="hideText()">
+          {{ hideText() ? '👁 Hiện chữ' : '🙈 Shadowing' }}
+        </button>
+      </h3>
+      @if (hideText()) {
+        <p class="rounded-xl bg-slate-50 p-3 text-slate-400 leading-relaxed">🔇 Chữ đang ẩn — hãy nghe rồi nhắc lại thật to, sau đó bấm "Hiện chữ" để so sánh.</p>
+      } @else {
+        <p class="rounded-xl bg-slate-50 p-3 text-slate-800 leading-relaxed">{{ target() }}</p>
+      }
+      <div class="flex gap-2 flex-wrap">
         <button (click)="listenSlow()" class="rounded-xl border border-slate-200 px-4 py-2 text-sm">🐢 Nghe chậm</button>
         @if (supported) {
           <button
@@ -21,6 +33,15 @@ import { SpeechService } from '../../../core/services/speech.service';
             [class.animate-pulse]="isListening()">
             {{ isListening() ? 'Đang nghe...' : '🎤 Đọc câu này' }}
           </button>
+        }
+        <button
+          (click)="toggleRecording()"
+          class="rounded-xl border border-slate-200 px-4 py-2 text-sm"
+          [class.bg-rose-100]="recording()">
+          {{ recording() ? '⏹ Dừng ghi' : '⏺ Ghi âm' }}
+        </button>
+        @if (recordingUrl()) {
+          <button (click)="playRecording()" class="rounded-xl border border-slate-200 px-4 py-2 text-sm">▶ Nghe lại</button>
         }
       </div>
       @if (!supported) {
@@ -36,6 +57,15 @@ import { SpeechService } from '../../../core/services/speech.service';
           }
           @if (fb.score < 80) {
             <p class="text-xs text-slate-400">Gợi ý: bấm "🐢 Nghe chậm" rồi thử lại.</p>
+          }
+          <div class="flex gap-2 flex-wrap">
+            <button (click)="rate('again')" class="rounded-xl bg-red-600 px-3 py-2 text-sm text-white">Again</button>
+            <button (click)="rate('hard')" class="rounded-xl bg-amber-500 px-3 py-2 text-sm text-white">Hard</button>
+            <button (click)="rate('good')" class="rounded-xl bg-emerald-600 px-3 py-2 text-sm text-white">Good</button>
+            <button (click)="rate('easy')" class="rounded-xl bg-sky-600 px-3 py-2 text-sm text-white">Easy</button>
+          </div>
+          @if (ratedLabel()) {
+            <p class="text-xs text-slate-500">Đã chấm: {{ ratedLabel() }}</p>
           }
           <button (click)="markMastered()" class="rounded-xl bg-emerald-600 px-4 py-2 text-sm text-white">Tôi đã nói chuẩn ✓</button>
         </div>
@@ -53,7 +83,16 @@ export class SpeakPracticeComponent {
 
   readonly isListening = signal(false);
   readonly feedback = signal<{ score: number; wrongWords: string[] } | null>(null);
+  readonly hideText = signal(false);
+  readonly recording = signal(false);
+  readonly recordingUrl = signal<string | null>(null);
+  readonly ratedLabel = signal<string | null>(null);
   readonly supported = this.speech.isRecognitionSupported();
+  readonly rated = output<{ templateId: string; chunkIds: string[]; rating: ReviewRating }>();
+
+  private mediaRecorder: MediaRecorder | null = null;
+  private audioChunks: Blob[] = [];
+  private audioStream: MediaStream | null = null;
 
   private readonly baseFills = computed(() => {
     const t = this.template();
@@ -80,6 +119,55 @@ export class SpeakPracticeComponent {
 
   listenSlow(): void {
     this.speech.speak(this.target(), 'en-US');
+  }
+
+  toggleShadow(): void {
+    this.hideText.set(!this.hideText());
+  }
+
+  async toggleRecording(): Promise<void> {
+    if (this.recording()) {
+      this.mediaRecorder?.stop();
+      return;
+    }
+    try {
+      this.audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      this.mediaRecorder = new MediaRecorder(this.audioStream);
+      this.audioChunks = [];
+      this.mediaRecorder.ondataavailable = (evt) => {
+        if (evt.data.size > 0) this.audioChunks.push(evt.data);
+      };
+      this.mediaRecorder.onstop = () => {
+        const blob = new Blob(this.audioChunks, { type: 'audio/webm' });
+        this.recordingUrl.set(URL.createObjectURL(blob));
+        this.recording.set(false);
+        this.audioStream?.getTracks().forEach((t) => t.stop());
+        this.audioStream = null;
+        this.mediaRecorder = null;
+      };
+      this.mediaRecorder.start();
+      this.recording.set(true);
+    } catch {
+      this.recording.set(false);
+    }
+  }
+
+  playRecording(): void {
+    const url = this.recordingUrl();
+    if (!url) return;
+    const audio = new Audio(url);
+    void audio.play();
+  }
+
+  rate(rating: ReviewRating): void {
+    const labels: Record<ReviewRating, string> = {
+      again: 'Again — sẽ ôn lại hôm nay',
+      hard: 'Hard',
+      good: 'Good',
+      easy: 'Easy',
+    };
+    this.ratedLabel.set(labels[rating]);
+    this.rated.emit({ templateId: this.template().id, chunkIds: this.chunkIds(), rating });
   }
 
   async startListening(): Promise<void> {

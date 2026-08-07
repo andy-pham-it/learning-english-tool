@@ -46,4 +46,54 @@ describe('SpeakPracticeComponent', () => {
     expect(c.feedback()?.score).toBeGreaterThanOrEqual(80);
     expect(emitSpy).toHaveBeenCalled();
   });
+
+  it('emits rated with the chosen rating and shows a label', () => {
+    const c = fixture.componentInstance;
+    const spy = spyOn(c.rated, 'emit');
+    c.rate('easy');
+    expect(spy).toHaveBeenCalledWith(jasmine.objectContaining({ rating: 'easy', templateId: 't' }));
+    expect(c.ratedLabel()).toBe('Easy');
+  });
+
+  it('toggles shadowing mode', () => {
+    const c = fixture.componentInstance;
+    expect(c.hideText()).toBeFalse();
+    c.toggleShadow();
+    expect(c.hideText()).toBeTrue();
+    c.toggleShadow();
+    expect(c.hideText()).toBeFalse();
+  });
+
+  it('records audio locally and exposes a replay URL', async () => {
+    const c = fixture.componentInstance;
+    const stopTrack = jasmine.createSpy('stopTrack');
+    const stream = { getTracks: () => [{ stop: stopTrack }] } as any;
+    spyOn(navigator.mediaDevices, 'getUserMedia').and.resolveTo(stream);
+    const rec = new FakeMediaRecorder();
+    spyOn(window as any, 'MediaRecorder').and.returnValue(rec);
+    spyOn(URL, 'createObjectURL').and.returnValue('blob:fake-recording');
+    await c.toggleRecording();
+    expect(c.recording()).toBeTrue();
+    expect(rec.start).toHaveBeenCalled();
+    await c.toggleRecording();
+    expect(rec.stop).toHaveBeenCalled();
+    expect(c.recording()).toBeFalse();
+    expect(c.recordingUrl()).toBe('blob:fake-recording');
+    expect(stopTrack).toHaveBeenCalled();
+  });
+
+  it('stays non-recording when the mic permission is denied', async () => {
+    const c = fixture.componentInstance;
+    spyOn(navigator.mediaDevices, 'getUserMedia').and.rejectWith(new Error('denied'));
+    await c.toggleRecording();
+    expect(c.recording()).toBeFalse();
+    expect(c.recordingUrl()).toBeNull();
+  });
 });
+
+class FakeMediaRecorder {
+  ondataavailable: ((evt: { data: Blob }) => void) | null = null;
+  onstop: (() => void) | null = null;
+  readonly start = jasmine.createSpy('start');
+  readonly stop = jasmine.createSpy('stop').and.callFake(() => this.onstop?.());
+}
