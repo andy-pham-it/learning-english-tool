@@ -1,7 +1,9 @@
-import { Injectable, Signal, signal } from '@angular/core';
+import { Injectable, Optional, Signal, signal } from '@angular/core';
 import { Firestore, doc, getDoc, setDoc } from '@angular/fire/firestore/lite';
 import { HubAuthService } from '../../auth/hub-auth.service';
-import { PhraseProgress } from '../models/phrase.model';
+import { UserProfileService } from '../../../core/services/user-profile.service';
+import { PhraseChunk, PhraseProgress, ReviewRating } from '../models/phrase.model';
+import { initialReview, nextState, startOfDay } from './sm2.util';
 
 const LOCAL_KEY = 'phrase_lab_progress';
 
@@ -26,7 +28,11 @@ export class PhraseProgressService {
 
   private hubUserId: string | null = null;
 
-  constructor(private firestore: Firestore, private hubAuth: HubAuthService) {
+  constructor(
+    private firestore: Firestore,
+    private hubAuth: HubAuthService,
+    @Optional() private userProfile: UserProfileService | null,
+  ) {
     this.docFn = doc;
     this.getDocFn = getDoc;
     this.setDocFn = setDoc;
@@ -47,23 +53,33 @@ export class PhraseProgressService {
       uid: this.hubUserId ?? 'local',
       masteredChunks: {},
       masteredTemplates: {},
+      reviews: {},
       streak: { current: 0, lastDay: '' },
       totalPoints: 0,
     };
   }
 
+  private normalize(p: PhraseProgress): PhraseProgress {
+    if (!p.reviews) p.reviews = {};
+    return p;
+  }
+
   private async read(): Promise<PhraseProgress> {
     if (this.hubUserId) {
       const snap = await this.getDocFn(this.docFn(this.firestore, 'phrase_progress', this.hubUserId));
-      if (snap.exists()) return snap.data() as PhraseProgress;
-      const fresh = this.emptyProgress();
-      await this.write(fresh);
-      return fresh;
+      let p: PhraseProgress;
+      if (snap.exists()) {
+        p = this.normalize(snap.data() as PhraseProgress);
+      } else {
+        p = this.emptyProgress();
+        await this.write(p);
+      }
+      return this.mergeLocal(p);
     }
     const raw = localStorage.getItem(LOCAL_KEY);
     if (raw) {
       try {
-        return JSON.parse(raw) as PhraseProgress;
+        return this.normalize(JSON.parse(raw) as PhraseProgress);
       } catch {
         /* corrupted → fresh */
       }
@@ -77,6 +93,47 @@ export class PhraseProgressService {
     } else {
       localStorage.setItem(LOCAL_KEY, JSON.stringify(p));
     }
+  }
+
+  private async mergeLocal(cloud: PhraseProgress): Promise<PhraseProgress> {
+    const raw = localStorage.getItem(LOCAL_KEY);
+    if (!raw) return cloud;
+    let local: PhraseProgress;
+    try {
+      local = this.normalize(JSON.parse(raw) as PhraseProgress);
+    } catch {
+      localStorage.removeItem(LOCAL_KEY);
+      return cloud;
+    }
+    const merged: PhraseProgress = {
+      uid: cloud.uid,
+      masteredChunks: { ...cloud.masteredChunks },
+      masteredTemplates: { ...cloud.masteredTemplates },
+      reviews: { ...cloud.reviews },
+      streak: { ...cloud.streak },
+      totalPoints: Math.max(cloud.totalPoints, local.totalPoints),
+    };
+    for (const [id, lc] of Object.entries(local.masteredChunks)) {
+      const cc = merged.masteredChunks[id];
+      if (!cc || lc.lastPracticed > cc.lastPracticed) merged.masteredChunks[id] = lc;
+    }
+    for (const [id, lr] of Object.entries(local.reviews)) {
+      const cr = merged.reviews[id];
+      if (!cr || lr.due > cr.due) merged.reviews[id] = lr;
+    }
+    for (const [id, lt] of Object.entries(local.masteredTemplates)) {
+      const ct = merged.masteredTemplates[id];
+      merged.masteredTemplates[id] = {
+        bestSpeakScore: Math.max(ct?.bestSpeakScore ?? 0, lt.bestSpeakScore),
+        attempts: Math.max(ct?.attempts ?? 0, lt.attempts),
+      };
+    }
+    if (local.streak.current > merged.streak.current) {
+      merged.streak = { ...local.streak };
+    }
+    localStorage.removeItem(LOCAL_KEY);
+    await this.write(merged);
+    return merged;
   }
 
   async markChunkLearned(chunkId: string, speakScore = 0): Promise<void> {
@@ -107,6 +164,7 @@ export class PhraseProgressService {
     }
     if (score >= 80) {
       p.totalPoints += 10;
+      this.awardXp(10);
       const today = new Date().toISOString().slice(0, 10);
       if (p.streak.lastDay !== today) {
         const yesterday = new Date();
@@ -117,5 +175,51 @@ export class PhraseProgressService {
     }
     this.progress.set({ ...p });
     await this.write(p);
+  }
+
+  getDueChunks(allChunkIds: string[]): string[] {
+    const p = this.progress();
+    if (!p) return [];
+    const today = startOfDay(Date.now());
+    return allChunkIds.filter((id) => {
+      const r = p.reviews[id];
+      return !!r && r.due <= today;
+    });
+  }
+
+  async reviewChunk(chunkId: string, rating: ReviewRating): Promise<void> {
+    const p = this.progress() ?? this.emptyProgress();
+    const prev = p.reviews[chunkId] ?? initialReview();
+    p.reviews[chunkId] = nextState(prev, rating);
+    const chunk = p.masteredChunks[chunkId];
+    const pts = rating === 'good' || rating === 'easy' ? 5 : rating === 'hard' ? 2 : 0;
+    if (pts > 0) {
+      p.totalPoints += pts;
+      this.awardXp(pts);
+    }
+    p.masteredChunks[chunkId] = {
+      status: rating === 'again' ? 'learning' : (chunk?.status ?? 'mastered'),
+      speakScore: chunk?.speakScore ?? 0,
+      lastPracticed: Date.now(),
+    };
+    this.progress.set({ ...p });
+    await this.write(p);
+  }
+
+  getCoverage(chunks: PhraseChunk[]): Record<string, { learned: number; total: number }> {
+    const p = this.progress();
+    const out: Record<string, { learned: number; total: number }> = {};
+    for (const c of chunks) {
+      const entry = out[c.context] ?? { learned: 0, total: 0 };
+      entry.total++;
+      if (p && (p.reviews[c.id] || p.masteredChunks[c.id]?.status === 'mastered')) entry.learned++;
+      out[c.context] = entry;
+    }
+    return out;
+  }
+
+  private awardXp(amount: number): void {
+    if (!this.hubUserId || !this.userProfile) return;
+    this.userProfile.addXP(amount).catch(() => undefined);
   }
 }

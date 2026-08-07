@@ -25,10 +25,22 @@ export interface PhraseTemplate {
   example: { en: string; vi: string };
 }
 
+export type ReviewRating = 'again' | 'hard' | 'good' | 'easy';
+
+export interface ReviewState {
+  ease: number;
+  interval: number;
+  reps: number;
+  lapses: number;
+  due: number;
+}
+
 export interface PhraseProgress {
   uid: string;
   masteredChunks: Record<string, { status: 'learning' | 'mastered'; speakScore: number; lastPracticed: number }>;
   masteredTemplates: Record<string, { bestSpeakScore: number; attempts: number }>;
+  /** SM-2 scheduling state per chunk id. Absent = never scheduled (new chunk). */
+  reviews: Record<string, ReviewState>;
   streak: { current: number; lastDay: string };
   totalPoints: number;
 }
