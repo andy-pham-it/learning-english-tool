@@ -8,12 +8,14 @@ import { SentenceBuilderComponent } from '../components/sentence-builder.compone
 import { RoleCombinerComponent } from '../components/role-combiner.component';
 import { OrderArrangeComponent } from '../components/order-arrange.component';
 import { SpeakPracticeComponent } from '../components/speak-practice.component';
+import { DailySessionComponent } from '../components/daily-session.component';
+import { ConversationBuilderComponent } from '../components/conversation-builder.component';
 
 @Component({
   selector: 'app-phrase-lab-page',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [ChunkBrowserComponent, SentenceAnalysisComponent, SentenceBuilderComponent, RoleCombinerComponent, OrderArrangeComponent, SpeakPracticeComponent],
+  imports: [ChunkBrowserComponent, SentenceAnalysisComponent, SentenceBuilderComponent, RoleCombinerComponent, OrderArrangeComponent, SpeakPracticeComponent, DailySessionComponent, ConversationBuilderComponent],
   template: `
     <div class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 p-4">
       <header class="mb-4 flex items-center justify-between">
@@ -24,6 +26,14 @@ import { SpeakPracticeComponent } from '../components/speak-practice.component';
           {{ progress.authed() ? 'Đồng bộ Firestore' : 'Lưu local' }}
         </span>
       </header>
+
+      <div class="mb-3 flex flex-wrap items-center gap-2 rounded-xl bg-slate-100 px-3 py-2 text-xs text-slate-600">
+        <span class="font-semibold text-slate-700">📊 {{ coverage().learned }}/{{ coverage().total }} chunk đã học</span>
+        <div class="h-1.5 min-w-24 flex-1 overflow-hidden rounded-full bg-slate-200">
+          <div class="h-full rounded-full bg-emerald-400" [style.width.%]="coveragePct()"></div>
+        </div>
+        <span>{{ coveragePct() }}%</span>
+      </div>
 
       @if (content.offline()) {
         <div class="mb-3 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-700">Mất kết nối — đang dùng dữ liệu đã lưu.</div>
@@ -40,7 +50,11 @@ import { SpeakPracticeComponent } from '../components/speak-practice.component';
         }
       </div>
 
-      @if (activeTab() === 'explore') {
+      @if (activeTab() === 'today') {
+        <app-daily-session />
+      } @else if (activeTab() === 'conversation') {
+        <app-conversation-builder />
+      } @else if (activeTab() === 'explore') {
         <app-chunk-browser />
       } @else {
         @if (content.templates().length > 0) {
@@ -80,6 +94,8 @@ import { SpeakPracticeComponent } from '../components/speak-practice.component';
 })
 export class PhraseLabPageComponent implements OnInit {
   readonly tabs = [
+    { id: 'today', label: 'Hôm nay' },
+    { id: 'conversation', label: 'Hội thoại' },
     { id: 'explore', label: 'Khám phá' },
     { id: 'analysis', label: 'Phân tích' },
     { id: 'slot', label: 'Điền slot' },
@@ -87,11 +103,23 @@ export class PhraseLabPageComponent implements OnInit {
     { id: 'order', label: 'Xếp thứ tự' },
     { id: 'speak', label: 'Luyện nói' },
   ];
-  readonly activeTab = signal<string>('explore');
+  readonly activeTab = signal<string>('today');
   readonly selectedTemplate = signal<PhraseTemplate | null>(null);
 
   readonly content = inject(PhraseContentService);
   readonly progress = inject(PhraseProgressService);
+
+  readonly coverage = computed(() => {
+    const cov = this.progress.getCoverage(this.content.chunks());
+    const learned = Object.values(cov).reduce((s, x) => s + x.learned, 0);
+    const total = Object.values(cov).reduce((s, x) => s + x.total, 0);
+    return { learned, total };
+  });
+
+  readonly coveragePct = computed(() => {
+    const total = this.coverage().total;
+    return total === 0 ? 0 : Math.round((this.coverage().learned / total) * 100);
+  });
 
   ngOnInit(): void {
     void this.content.loadAll();
@@ -100,7 +128,7 @@ export class PhraseLabPageComponent implements OnInit {
 
   setTab(id: string): void {
     this.activeTab.set(id);
-    if (id !== 'explore' && !this.selectedTemplate()) {
+    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && !this.selectedTemplate()) {
       this.selectedTemplate.set(this.content.templates()[0] ?? null);
     }
   }
