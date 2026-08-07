@@ -81,7 +81,7 @@ const ROLE_LABEL: Record<string, string> = {
                     class="rounded-full px-2 py-0.5 text-[11px] font-medium {{ ratingChip(r) }}"
                     (click)="rate(c, r)"
                   >
-                    {{ label(r) }}
+                    {{ ratingLabel(r) }}
                   </button>
                 }
               </div>
@@ -190,6 +190,10 @@ export class ConversationBuilderComponent {
 
   label(role: Role): string {
     return ROLE_LABEL[role] ?? role;
+  }
+
+  ratingLabel(rating: ReviewRating): string {
+    return RATING_LABELS[rating] ?? rating;
   }
 
   ratingChip(r: ReviewRating): string {
