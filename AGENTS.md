@@ -4,7 +4,7 @@
 - **Frontend**: Angular 18 (Standalone Components only, no `NgModules`)
 - **Styling**: Tailwind CSS (Layout/Core), Vanilla CSS (Complex animations/3D)
 - **Backend/BaaS**: Firebase (Auth for mandatory login, Firestore for Profile/Streak/XP/Rank)
-- **Storage**: IndexedDB (Flashcards, SuperMemo-2 parameters)
+- **Storage**: IndexedDB (Flashcards, SuperMemo-2 parameters); Phrase Lab SM-2 reviews (localStorage + Firestore when authed)
 - **Deployment**: Vercel (Frontend + Serverless Functions for AI proxy)
 - **AI**: Google Gemini 1.5 Flash (via Vercel functions)
 
