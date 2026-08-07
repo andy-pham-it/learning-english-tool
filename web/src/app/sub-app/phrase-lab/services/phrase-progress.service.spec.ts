@@ -18,6 +18,7 @@ describe('PhraseProgressService', () => {
     localStorage.clear();
     hubAuth.requestUserInfo.and.returnValue(Promise.resolve(null));
     userProfile.addXP.and.returnValue(Promise.resolve());
+    userProfile.addXP.calls.reset();
     TestBed.configureTestingModule({
       providers: [
         { provide: Firestore, useValue: {} },
