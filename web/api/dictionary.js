@@ -1,39 +1,53 @@
+import { authenticate } from './lib/auth.js';
+import { checkRateLimit } from './lib/rate-limit.js';
+import { sanitizeWord } from './lib/validate.js';
+import { nodeJson } from './lib/http.js';
 
 export const maxDuration = 60;
 
 export default async function handler(req, res) {
-  console.log('--- Dictionary Request Started (Node.js Runtime) ---');
-  
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method Not Allowed' });
+    return nodeJson(res, 405, { error: 'Method Not Allowed' });
   }
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
-    console.error('Error: GEMINI_API_KEY is missing.');
-    return res.status(500).json({ error: 'GEMINI_API_KEY is not configured.' });
+    console.error('GEMINI_API_KEY is not configured.');
+    return nodeJson(res, 500, { error: 'Service is not configured.' });
   }
-  
-  console.log(`Using API Key: ${apiKey.substring(0, 4)}...${apiKey.substring(apiKey.length - 4)}`);
+
+  // 1. Authenticate
+  const user = await authenticate(req);
+  if (!user) {
+    return nodeJson(res, 401, { error: 'Unauthorized' });
+  }
+
+  // 2. Rate limit per user
+  const rate = checkRateLimit(user.uid);
+  if (!rate.allowed) {
+    return nodeJson(res, 429, {
+      error: 'Rate limit exceeded. Please try again later.',
+      retryAfterSeconds: rate.retryAfterSeconds,
+    });
+  }
 
   try {
-    const { word } = req.body;
-    console.log(`Processing word: "${word}"`);
+    const { word } = req.body || {};
 
-    if (!word) {
-      console.warn('Word is missing in request body');
-      return res.status(400).json({ error: 'Word is required' });
+    // 3. Validate / sanitize input
+    const cleanWord = sanitizeWord(word);
+    if (!cleanWord) {
+      return nodeJson(res, 400, { error: 'word must be a string of 1-100 characters' });
     }
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`;
-    console.log('Calling Gemini 3.1 Flash Lite Preview API...');
 
     const prompt = `You are a professional English-Vietnamese dictionary.
-Analyze the word: "${word}"
+Analyze the word: "${cleanWord}"
 
 You MUST return a JSON object with this EXACT structure:
 {
-  "word": "${word}",
+  "word": "${cleanWord}",
   "phonetic": "IPA pronunciation",
   "entries": [
     {
@@ -64,58 +78,46 @@ CRITICAL:
 Return ONLY the raw JSON object.`;
 
     const geminiRequestBody = {
-      contents: [{
-        role: 'user',
-        parts: [{ text: prompt }]
-      }],
-      generationConfig: {
-        temperature: 0.1,
-        maxOutputTokens: 2048,
-      }
+      contents: [{ role: 'user', parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.1, maxOutputTokens: 2048 },
     };
 
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(geminiRequestBody)
+      body: JSON.stringify(geminiRequestBody),
     });
 
     if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Gemini API Error:', errorText);
-        return res.status(response.status).json({ error: `Gemini Error: ${response.statusText}`, detail: errorText });
+      const errorText = await response.text();
+      console.error('Gemini API error (dictionary):', errorText);
+      return nodeJson(res, 502, { error: 'Upstream service error. Please try again.' });
     }
 
     const data = await response.json();
     const parts = data.candidates?.[0]?.content?.parts || [];
-    let resultText = parts.map(p => p.text).join('').trim();
-    
+    let resultText = parts.map((p) => p.text).join('').trim();
+
     if (!resultText) {
-      return res.status(500).json({ error: 'No response from AI' });
+      return nodeJson(res, 502, { error: 'Upstream service returned no data.' });
     }
 
-    console.log('Raw AI Response length:', resultText.length);
-
-    // Robust JSON extraction: Find the first '{' and the last '}'
+    // Robust JSON extraction: first '{' to last '}'
     const firstBrace = resultText.indexOf('{');
     const lastBrace = resultText.lastIndexOf('}');
-    
     if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
       resultText = resultText.substring(firstBrace, lastBrace + 1);
     }
 
     try {
       const parsed = JSON.parse(resultText);
-      console.log('Successfully generated and parsed definition');
-      return res.status(200).json(parsed);
+      return nodeJson(res, 200, parsed);
     } catch (parseError) {
-      console.error('JSON Parse Error:', parseError.message);
-      console.error('Attempted to parse:', resultText);
-      return res.status(500).json({ error: 'AI returned invalid JSON structure', detail: parseError.message });
+      console.error('Gemini returned invalid JSON (dictionary):', parseError.message);
+      return nodeJson(res, 502, { error: 'Upstream service returned an invalid response.' });
     }
-
   } catch (error) {
-    console.error('Handler error:', error);
-    return res.status(500).json({ error: 'Internal Server Error', message: error.message });
+    console.error('Handler error (dictionary):', error.message);
+    return nodeJson(res, 500, { error: 'Internal Server Error' });
   }
 }
