@@ -1,86 +1,81 @@
+import { authenticate } from './lib/auth.js';
+import { checkRateLimit } from './lib/rate-limit.js';
+import { validateTts } from './lib/validate.js';
+import { edgeJson } from './lib/http.js';
 
-export const config = {
-  runtime: 'edge',
-};
+export const config = { runtime: 'edge' };
 
 export default async function handler(req) {
   if (req.method !== 'POST') {
-    return new Response(JSON.stringify({ error: 'Method Not Allowed' }), {
-      status: 405,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return edgeJson(405, { error: 'Method Not Allowed' });
   }
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
-    return new Response(JSON.stringify({ error: 'GEMINI_API_KEY is not configured.' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
+    console.error('GEMINI_API_KEY is not configured.');
+    return edgeJson(500, { error: 'Service is not configured.' });
+  }
+
+  // 1. Authenticate
+  const user = await authenticate(req);
+  if (!user) {
+    return edgeJson(401, { error: 'Unauthorized' });
+  }
+
+  // 2. Rate limit per user
+  const rate = checkRateLimit(user.uid);
+  if (!rate.allowed) {
+    return edgeJson(429, {
+      error: 'Rate limit exceeded. Please try again later.',
+      retryAfterSeconds: rate.retryAfterSeconds,
     });
   }
 
   try {
-    const { text, voice = 'Kore' } = await req.json();
+    const body = await req.json();
 
-    if (!text) {
-      return new Response(JSON.stringify({ error: 'Text is required' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+    // 3. Validate input (text length cap + voice whitelist)
+    const validation = validateTts(body);
+    if (!validation.ok) {
+      return edgeJson(400, { error: validation.error });
     }
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`;
 
     const geminiRequestBody = {
-      contents: [{
-        parts: [{ text }]
-      }],
+      contents: [{ parts: [{ text: validation.text }] }],
       generationConfig: {
         responseModalities: ['AUDIO'],
         speechConfig: {
           voiceConfig: {
-            prebuiltVoiceConfig: {
-              voiceName: voice
-            }
-          }
-        }
-      }
+            prebuiltVoiceConfig: { voiceName: validation.voice },
+          },
+        },
+      },
     };
 
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(geminiRequestBody)
+      body: JSON.stringify(geminiRequestBody),
     });
 
     if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Gemini TTS Error:', errorText);
-        return new Response(JSON.stringify({ error: `Gemini Error: ${response.statusText}`, detail: errorText }), {
-          status: response.status,
-          headers: { 'Content-Type': 'application/json' },
-        });
+      const errorText = await response.text();
+      console.error('Gemini API error (tts):', errorText);
+      return edgeJson(502, { error: 'Upstream service error. Please try again.' });
     }
 
     const data = await response.json();
     const base64Audio = data.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
 
     if (!base64Audio) {
-      return new Response(JSON.stringify({ error: 'No audio data received from Gemini' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      return edgeJson(502, { error: 'Upstream service returned no audio.' });
     }
 
-    return new Response(JSON.stringify({ audio: base64Audio }), {
-      status: 200,
-      headers: { 'Content-Type': 'application/json' },
-    });
-
+    return edgeJson(200, { audio: base64Audio });
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Internal Server Error', message: error.message }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    console.error('Handler error (tts):', error.message);
+    return edgeJson(500, { error: 'Internal Server Error' });
   }
 }
