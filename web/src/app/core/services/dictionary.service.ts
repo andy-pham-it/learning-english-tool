@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Firestore, doc, getDoc, setDoc, collection, query, orderBy, limit, getDocs, serverTimestamp } from '@angular/fire/firestore/lite';
 import { Auth } from '@angular/fire/auth';
 import { firstValueFrom } from 'rxjs';
+import { buildAuthHeaders } from './firebase-token';
 
 export interface DictionaryEntry {
   partOfSpeech: string;
@@ -41,29 +42,34 @@ export class DictionaryService {
 
   async lookup(word: string): Promise<DictionaryResult> {
     const normalizedWord = word.trim().toLowerCase();
-    
-    // 1. Check Firestore 'dictionary' collection
-    const docRef = doc(this.firestore, 'dictionary', normalizedWord);
-    try {
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        console.log(`[DictionaryService] Cache hit for "${normalizedWord}"`);
-        return docSnap.data() as DictionaryResult;
+    const user = this.auth.currentUser;
+
+    // 1. Check user-scoped Firestore cache
+    if (user) {
+      const docRef = doc(this.firestore, `users/${user.uid}/dictionary`, normalizedWord);
+      try {
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          console.log(`[DictionaryService] Cache hit for "${normalizedWord}"`);
+          return docSnap.data() as DictionaryResult;
+        }
+      } catch (err) {
+        console.error('[DictionaryService] Error fetching from Firestore:', err);
       }
-    } catch (err) {
-      console.error('[DictionaryService] Error fetching from Firestore:', err);
     }
 
     console.log(`[DictionaryService] Cache miss for "${normalizedWord}", calling API...`);
     // 2. Not found or error, call API
     try {
+      const headers = await buildAuthHeaders(this.auth);
       const result = await firstValueFrom(
-        this.http.post<DictionaryResult>(this.apiUrl, { word: normalizedWord })
+        this.http.post<DictionaryResult>(this.apiUrl, { word: normalizedWord }, { headers })
       );
 
       // 3. Save to DB
-      if (!result.error) {
+      if (!result.error && user) {
         try {
+          const docRef = doc(this.firestore, `users/${user.uid}/dictionary`, normalizedWord);
           await setDoc(docRef, {
             ...result,
             timestamp: serverTimestamp()
@@ -81,8 +87,10 @@ export class DictionaryService {
   }
 
   async getSavedWords(limitCount: number = 50): Promise<any[]> {
+    const user = this.auth.currentUser;
+    if (!user) return [];
     try {
-      const dictCol = collection(this.firestore, 'dictionary');
+      const dictCol = collection(this.firestore, `users/${user.uid}/dictionary`);
       // We'll fetch more to allow sorting in-memory for better performance
       const q = query(dictCol, orderBy('timestamp', 'desc'), limit(limitCount));
       const snap = await getDocs(q);
@@ -136,7 +144,7 @@ export class DictionaryService {
       for (const d of snap.docs) {
         const data = d.data();
         const word = d.id;
-        const docRef = doc(this.firestore, 'dictionary', word);
+        const docRef = doc(this.firestore, `users/${user.uid}/dictionary`, word);
         
         if (data['result']) {
           await setDoc(docRef, {
@@ -148,7 +156,7 @@ export class DictionaryService {
         }
       }
       console.log(`[Migration] Successfully migrated ${count} words.`);
-      alert(`Đã chuyển đổi thành công ${count} từ cũ sang từ điển chung!`);
+      alert(`Đã chuyển đổi thành công ${count} từ cũ sang từ điển của bạn!`);
     } catch (err) {
       console.error('[Migration] Error during migration:', err);
       alert('Có lỗi xảy ra khi chuyển đổi. Vui lòng xem console.');

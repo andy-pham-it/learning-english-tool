@@ -124,3 +124,4 @@ out/
 
 # Firebase service account keys (SECRET)
 *firebase-adminsdk*.json
+learning-english-tool-sa.json

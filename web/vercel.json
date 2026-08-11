@@ -1,4 +1,5 @@
 {
+  "rootDirectory": "web",
   "buildCommand": "npm run build",
   "outputDirectory": "dist/web/browser",
   "rewrites": [
@@ -7,7 +8,7 @@
       "destination": "/api/:path*"
     },
     {
-      "source": "/((?!api/|.*\\.).*)",
+      "source": "/((?!api/|.*\.))",
       "destination": "/index.html"
     }
   ]

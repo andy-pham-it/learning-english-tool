@@ -1,6 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { Firestore, doc, getDoc, setDoc, serverTimestamp } from '@angular/fire/firestore/lite';
+import { Auth } from '@angular/fire/auth';
 import { DictionaryResult } from './models';
+import { buildAuthHeaders } from '../../core/services/firebase-token';
 
 const SYSTEM_PROMPT = `You are a professional English-Vietnamese dictionary AI.
 Given a word or phrase, return a strict JSON object with this exact structure:
@@ -40,6 +42,7 @@ Rules:
 @Injectable({ providedIn: 'root' })
 export class DictionaryAiService {
   private firestore = inject(Firestore);
+  private auth = inject(Auth);
   private cache = new Map<string, { data: DictionaryResult; cachedAt: number }>();
   private readonly CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
 
@@ -49,18 +52,21 @@ export class DictionaryAiService {
       return cached.data;
     }
 
-    // Check Firestore cache (shared with main app's dictionary/{word} collection)
-    try {
-      const normalizedWord = word.trim().toLowerCase();
-      const docRef = doc(this.firestore, 'dictionary', normalizedWord);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        const firestoreData = docSnap.data() as DictionaryResult;
-        this.cache.set(word, { data: firestoreData, cachedAt: Date.now() });
-        return firestoreData;
+    // Check Firestore cache (per-user dictionary/{word} collection)
+    const user = this.auth.currentUser;
+    if (user) {
+      try {
+        const normalizedWord = word.trim().toLowerCase();
+        const docRef = doc(this.firestore, `users/${user.uid}/dictionary`, normalizedWord);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          const firestoreData = docSnap.data() as DictionaryResult;
+          this.cache.set(word, { data: firestoreData, cachedAt: Date.now() });
+          return firestoreData;
+        }
+      } catch (err) {
+        console.error('[DictionaryAiService] Firestore read error:', err);
       }
-    } catch (err) {
-      console.error('[DictionaryAiService] Firestore read error:', err);
     }
 
     // Call Vercel API
@@ -70,10 +76,10 @@ export class DictionaryAiService {
     this.cache.set(word, { data: result, cachedAt: Date.now() });
 
     // Save to Firestore
-    if (!result.error) {
+    if (!result.error && user) {
       try {
         const normalizedWord = word.trim().toLowerCase();
-        const docRef = doc(this.firestore, 'dictionary', normalizedWord);
+        const docRef = doc(this.firestore, `users/${user.uid}/dictionary`, normalizedWord);
         await setDoc(docRef, { ...result, timestamp: serverTimestamp() });
       } catch (err) {
         console.error('[DictionaryAiService] Firestore write error:', err);
