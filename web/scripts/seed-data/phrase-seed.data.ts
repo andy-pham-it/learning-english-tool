@@ -20903,9 +20903,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are going shopping this afternoon.',
     vietnamese: 'Chiều nay chúng ta sẽ đi mua sắm.',
     phonetic: '/wiː ɑːr ˈɡoʊɪŋ ˈʃɒpɪŋ ðɪs ˌæftərˈnuːn/',
+    usage: 'Dùng khi rủ ai đó đi mua sắm hoặc thông báo kế hoạch mua sắm trong ngày.',
     role: 'opener',
     examples: [
       { en: 'We are going shopping this afternoon at the market.', vi: 'Chiều nay chúng ta sẽ đi mua sắm ở chợ.' },
+      { en: 'We are going shopping this afternoon, want to join us?', vi: 'Chiều nay chúng ta sẽ đi mua sắm, cậu muốn đi cùng không?' },
+      { en: 'We are going shopping this afternoon for some new clothes.', vi: 'Chiều nay chúng ta sẽ đi mua sắm để mua ít quần áo mới.' },
     ],
   },
   {
@@ -20916,9 +20919,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The shop is open until nine o clock.',
     vietnamese: 'Cửa hàng mở cửa đến chín giờ.',
     phonetic: '/ðə ʃɒp ɪz ˈoʊpən ənˈtɪl naɪn ə ˈklɒk/',
+    usage: 'Dùng khi nhắc đến giờ đóng cửa của cửa hàng để sắp xếp thời gian.',
     role: 'opener',
     examples: [
       { en: 'The shop is open until nine o clock, so we still have time.', vi: 'Cửa hàng mở cửa đến chín giờ, nên chúng ta vẫn còn thời gian.' },
+      { en: 'Hurry up, the shop is open until nine o clock and it is already eight.', vi: 'Nhanh lên, cửa hàng mở đến chín giờ mà giờ đã tám giờ rồi.' },
+      { en: 'The shop is open until nine o clock on weekdays only.', vi: 'Cửa hàng chỉ mở cửa đến chín giờ vào các ngày trong tuần.' },
     ],
   },
   {
@@ -20929,9 +20935,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I want to buy a new shirt.',
     vietnamese: 'Tôi muốn mua một chiếc áo sơ mi mới.',
     phonetic: '/aɪ wɒnt tuː baɪ ə nuː ʃɜːrt/',
+    usage: 'Dùng khi nói về ý định mua một món đồ cụ thể cho một dịp nào đó.',
     role: 'opener',
     examples: [
       { en: 'I want to buy a new shirt for the party.', vi: 'Tôi muốn mua một chiếc áo sơ mi mới để dự tiệc.' },
+      { en: 'I want to buy a new shirt for my interview tomorrow.', vi: 'Tôi muốn mua một chiếc áo sơ mi mới cho buổi phỏng vấn ngày mai.' },
+      { en: 'I want to buy a new shirt, but I cannot decide on the color.', vi: 'Tôi muốn mua một chiếc áo sơ mi mới nhưng chưa chọn được màu.' },
     ],
   },
   {
@@ -20942,9 +20951,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The vegetables look very fresh.',
     vietnamese: 'Rau trông rất tươi.',
     phonetic: '/ðə ˈvɛdʒtəbəlz lʊk ˈvɛri frɛʃ/',
+    usage: 'Dùng khi khen hoặc nhận xét độ tươi của rau củ ở chợ hoặc siêu thị.',
     role: 'opener',
     examples: [
       { en: 'The vegetables look very fresh at this stall.', vi: 'Rau ở quầy này trông rất tươi.' },
+      { en: 'The vegetables look very fresh, let us take some for the soup.', vi: 'Rau trông rất tươi, chúng ta lấy ít để nấu canh nhé.' },
+      { en: 'The vegetables look very fresh, I will buy a lot this time.', vi: 'Rau trông rất tươi, lần này tôi sẽ mua thật nhiều.' },
     ],
   },
   {
@@ -20955,9 +20967,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, we make a shopping list.',
     vietnamese: 'Đầu tiên, chúng ta lập danh sách mua sắm.',
     phonetic: '/fɜːrst wiː meɪk ə ˈʃɒpɪŋ lɪst/',
+    usage: 'Dùng khi bắt đầu quy trình mua sắm, gợi ý việc lập danh sách trước.',
     role: 'linker',
     examples: [
       { en: 'First, we make a shopping list so we do not forget anything.', vi: 'Đầu tiên, chúng ta lập danh sách mua sắm để không quên gì.' },
+      { en: 'First, we make a shopping list so we do not buy the same thing twice.', vi: 'Đầu tiên, chúng ta lập danh sách mua sắm để không mua trùng đồ.' },
+      { en: 'First, we make a shopping list, then we check the fridge.', vi: 'Đầu tiên, chúng ta lập danh sách mua sắm, sau đó kiểm tra tủ lạnh.' },
     ],
   },
   {
@@ -20968,9 +20983,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Then we look for the best price.',
     vietnamese: 'Sau đó chúng ta tìm giá tốt nhất.',
     phonetic: '/ðɛn wiː lʊk fɔːr ðə bɛst praɪs/',
+    usage: 'Dùng khi nói về bước so sánh giá để chọn nơi mua hợp lý.',
     role: 'linker',
     examples: [
       { en: 'Then we look for the best price in the market.', vi: 'Sau đó chúng ta tìm giá tốt nhất ở chợ.' },
+      { en: 'Then we look for the best price before making any decision.', vi: 'Sau đó chúng ta tìm giá tốt nhất trước khi quyết định.' },
+      { en: 'Then we look for the best price online and in the store.', vi: 'Sau đó chúng ta tìm giá tốt nhất cả trực tuyến lẫn tại cửa hàng.' },
     ],
   },
   {
@@ -20981,9 +20999,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, we pay at the counter.',
     vietnamese: 'Sau đó, chúng ta trả tiền ở quầy.',
     phonetic: '/ˈæftər ðæt wiː peɪ æt ðə ˈkaʊntər/',
+    usage: 'Dùng khi miêu tả bước thanh toán ở quầy thu ngân.',
     role: 'linker',
     examples: [
       { en: 'After that, we pay at the counter and leave.', vi: 'Sau đó, chúng ta trả tiền ở quầy rồi rời đi.' },
+      { en: 'After that, we pay at the counter and wait for the change.', vi: 'Sau đó, chúng ta trả tiền ở quầy và chờ tiền thừa.' },
+      { en: 'After that, we pay at the counter and take the receipt.', vi: 'Sau đó, chúng ta trả tiền ở quầy và lấy hóa đơn.' },
     ],
   },
   {
@@ -20994,9 +21015,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, we carry the bags home.',
     vietnamese: 'Tiếp theo, chúng ta xách túi về nhà.',
     phonetic: '/nɛkst wiː ˈkæri ðə bæɡz hoʊm/',
+    usage: 'Dùng khi nói về việc mang đồ mua được về nhà sau khi mua sắm.',
     role: 'linker',
     examples: [
       { en: 'Next, we carry the bags home and unpack them.', vi: 'Tiếp theo, chúng ta xách túi về nhà và mở ra.' },
+      { en: 'Next, we carry the bags home and put the food in the kitchen.', vi: 'Tiếp theo, chúng ta xách túi về nhà và để đồ ăn vào bếp.' },
+      { en: 'Next, we carry the bags home because the market is near.', vi: 'Tiếp theo, chúng ta xách túi về nhà vì chợ gần đây.' },
     ],
   },
   {
@@ -21007,9 +21031,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This shirt is a little big for me.',
     vietnamese: 'Chiếc áo này hơi rộng đối với tôi.',
     phonetic: '/ðɪs ʃɜːrt ɪz ə ˈlɪtəl bɪɡ fɔːr miː/',
+    usage: 'Dùng khi nhận xét quần áo không vừa và cần đổi size.',
     role: 'filler',
     examples: [
       { en: 'This shirt is a little big for me, I need a smaller size.', vi: 'Chiếc áo này hơi rộng đối với tôi, tôi cần size nhỏ hơn.' },
+      { en: 'This shirt is a little big for me, can I try a smaller one?', vi: 'Chiếc áo này hơi rộng đối với tôi, tôi thử size nhỏ hơn được không?' },
+      { en: 'This shirt is a little big for me, I will ask for another size.', vi: 'Chiếc áo này hơi rộng đối với tôi, tôi sẽ hỏi size khác.' },
     ],
   },
   {
@@ -21020,9 +21047,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The mangoes are very sweet today.',
     vietnamese: 'Xoài hôm nay rất ngọt.',
     phonetic: '/ðə ˈmæŋɡoʊz ɑːr ˈvɛri swiːt təˈdeɪ/',
+    usage: 'Dùng khi khen trái cây ngon và gợi ý mua thêm.',
     role: 'filler',
     examples: [
       { en: 'The mangoes are very sweet today, let us buy some.', vi: 'Xoài hôm nay rất ngọt, chúng ta mua ít đi.' },
+      { en: 'The mangoes are very sweet today, let us buy a kilo.', vi: 'Xoài hôm nay rất ngọt, chúng ta mua một ký nhé.' },
+      { en: 'The mangoes are very sweet today, the seller picked good ones.', vi: 'Xoài hôm nay rất ngọt, người bán chọn toàn quả ngon.' },
     ],
   },
   {
@@ -21033,9 +21063,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we should buy it tomorrow.',
     vietnamese: 'Có lẽ chúng ta nên mua nó vào ngày mai.',
     phonetic: '/ˈmeɪbi wiː ʃʊd baɪ ɪt təˈmɒroʊ/',
+    usage: 'Dùng khi cân nhắc hoãn việc mua sang ngày khác vì một lý do nào đó.',
     role: 'filler',
     examples: [
       { en: 'Maybe we should buy it tomorrow when there is a sale.', vi: 'Có lẽ chúng ta nên mua nó vào ngày mai khi có giảm giá.' },
+      { en: 'Maybe we should buy it tomorrow when I have more money.', vi: 'Có lẽ chúng ta nên mua nó vào ngày mai khi tôi có thêm tiền.' },
+      { en: 'Maybe we should buy it tomorrow, today the shop is too crowded.', vi: 'Có lẽ chúng ta nên mua nó vào ngày mai, hôm nay cửa hàng đông quá.' },
     ],
   },
   {
@@ -21046,9 +21079,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I forgot to bring my wallet.',
     vietnamese: 'Tôi quên mang ví rồi.',
     phonetic: '/aɪ fərˈɡɒt tuː brɪŋ maɪ ˈwɒlɪt/',
+    usage: 'Dùng khi phát hiện quên mang ví và cần quay lại lấy.',
     role: 'filler',
     examples: [
       { en: 'I forgot to bring my wallet, I will be right back.', vi: 'Tôi quên mang ví rồi, tôi quay lại ngay.' },
+      { en: 'I forgot to bring my wallet, please wait a minute.', vi: 'Tôi quên mang ví rồi, đợi tôi một lát nhé.' },
+      { en: 'I forgot to bring my wallet, I left it on the table.', vi: 'Tôi quên mang ví rồi, tôi để nó trên bàn.' },
     ],
   },
   {
@@ -21059,9 +21095,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We bought everything we needed.',
     vietnamese: 'Chúng ta đã mua mọi thứ cần thiết.',
     phonetic: '/wiː bɔːt ˈɛvriθɪŋ wiː ˈniːdɪd/',
+    usage: 'Dùng khi kết thúc buổi mua sắm, xác nhận đã mua đủ thứ.',
     role: 'closer',
     examples: [
       { en: 'We bought everything we needed, the shopping is done.', vi: 'Chúng ta đã mua mọi thứ cần thiết, việc mua sắm xong rồi.' },
+      { en: 'We bought everything we needed, so we can go now.', vi: 'Chúng ta đã mua mọi thứ cần thiết, giờ đi được rồi.' },
+      { en: 'We bought everything we needed except the milk.', vi: 'Chúng ta đã mua mọi thứ cần thiết, trừ sữa.' },
     ],
   },
   {
@@ -21072,9 +21111,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us check the receipt before we go.',
     vietnamese: 'Hãy kiểm tra hóa đơn trước khi đi.',
     phonetic: '/lɛt ʌs tʃɛk ðə rɪˈsiːt bɪˈfɔːr wiː ɡoʊ/',
+    usage: 'Dùng khi đề nghị kiểm tra lại hóa đơn trước khi rời cửa hàng.',
     role: 'closer',
     examples: [
       { en: 'Let us check the receipt before we go home.', vi: 'Hãy kiểm tra hóa đơn trước khi về nhà.' },
+      { en: 'Let us check the receipt before we go, the total seems wrong.', vi: 'Hãy kiểm tra hóa đơn trước khi đi, tổng tiền có vẻ sai.' },
+      { en: 'Let us check the receipt before we go to make sure everything is there.', vi: 'Hãy kiểm tra hóa đơn trước khi đi để chắc chắn có đủ món.' },
     ],
   },
   {
@@ -21085,9 +21127,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will come back for the shoes later.',
     vietnamese: 'Chúng ta sẽ quay lại mua giày sau.',
     phonetic: '/wiː wɪl kʌm bæk fɔːr ðə ʃuːz ˈleɪtər/',
+    usage: 'Dùng khi hẹn sẽ quay lại mua một món đồ sau.',
     role: 'closer',
     examples: [
       { en: 'We will come back for the shoes later this week.', vi: 'Chúng ta sẽ quay lại mua giày sau trong tuần này.' },
+      { en: 'We will come back for the shoes later when they have our size.', vi: 'Chúng ta sẽ quay lại mua giày sau khi cửa hàng có size của mình.' },
+      { en: 'We will come back for the shoes later if we still want them.', vi: 'Chúng ta sẽ quay lại mua giày sau nếu vẫn còn muốn.' },
     ],
   },
   {
@@ -21098,9 +21143,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us go home now, we are done.',
     vietnamese: 'Về nhà thôi, chúng ta xong rồi.',
     phonetic: '/lɛt ʌs ɡoʊ hoʊm naʊ wiː ɑːr dʌn/',
+    usage: 'Dùng khi kết thúc buổi mua sắm và đề nghị về nhà.',
     role: 'closer',
     examples: [
       { en: 'Let us go home now, we are done with the shopping.', vi: 'Về nhà thôi, chúng ta xong việc mua sắm rồi.' },
+      { en: 'Let us go home now, we are done and it is getting dark.', vi: 'Về nhà thôi, chúng ta xong rồi và trời sắp tối.' },
+      { en: 'Let us go home now, we are done with everything on the list.', vi: 'Về nhà thôi, chúng ta đã mua xong mọi thứ trong danh sách.' },
     ],
   },
   {
@@ -21111,9 +21159,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are going to the supermarket for the weekly groceries.',
     vietnamese: 'Chúng ta sẽ đến siêu thị để mua thực phẩm hàng tuần.',
     phonetic: '/wiː ɑːr ˈɡoʊɪŋ tuː ðə ˈsuːpərˌmɑːrkɪt fɔːr ðə ˈwiːkli ˈɡroʊsəriz/',
+    usage: 'Dùng khi nói về kế hoạch mua thực phẩm hàng tuần ở siêu thị.',
     role: 'opener',
     examples: [
       { en: 'We are going to the supermarket for the weekly groceries this morning.', vi: 'Chúng ta sẽ đến siêu thị để mua thực phẩm hàng tuần vào sáng nay.' },
+      { en: 'We are going to the supermarket for the weekly groceries and some cleaning products.', vi: 'Chúng ta sẽ đến siêu thị để mua thực phẩm hàng tuần và ít đồ tẩy rửa.' },
+      { en: 'We are going to the supermarket for the weekly groceries, so make a list first.', vi: 'Chúng ta sẽ đến siêu thị để mua thực phẩm hàng tuần, nên lập danh sách trước.' },
     ],
   },
   {
@@ -21124,9 +21175,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The sale starts on Friday, so we should wait.',
     vietnamese: 'Đợt giảm giá bắt đầu vào thứ Sáu, nên chúng ta nên đợi.',
     phonetic: '/ðə seɪl stɑːrts ɒn ˈfraɪdeɪ soʊ wiː ʃʊd weɪt/',
+    usage: 'Dùng khi khuyên chờ đợi để mua được giá rẻ hơn.',
     role: 'opener',
     examples: [
       { en: 'The sale starts on Friday, so we should wait before buying anything.', vi: 'Đợt giảm giá bắt đầu vào thứ Sáu, nên chúng ta nên đợi trước khi mua gì.' },
+      { en: 'The sale starts on Friday, so we should wait a couple of days.', vi: 'Đợt giảm giá bắt đầu vào thứ Sáu, nên chúng ta nên đợi vài ngày.' },
+      { en: 'The sale starts on Friday, so we should wait to save some money.', vi: 'Đợt giảm giá bắt đầu vào thứ Sáu, nên chúng ta nên đợi để tiết kiệm tiền.' },
     ],
   },
   {
@@ -21137,9 +21191,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am comparing prices between the two stores.',
     vietnamese: 'Tôi đang so sánh giá giữa hai cửa hàng.',
     phonetic: '/aɪ æm kəmˈpɛrɪŋ ˈpraɪsɪz bɪˈtwiːn ðə tuː stɔːrz/',
+    usage: 'Dùng khi đang so sánh giá giữa các cửa hàng để tìm ưu đãi tốt.',
     role: 'opener',
     examples: [
       { en: 'I am comparing prices between the two stores to find a better deal.', vi: 'Tôi đang so sánh giá giữa hai cửa hàng để tìm mức giá tốt hơn.' },
+      { en: 'I am comparing prices between the two stores before I make up my mind.', vi: 'Tôi đang so sánh giá giữa hai cửa hàng trước khi quyết định.' },
+      { en: 'I am comparing prices between the two stores and the difference is big.', vi: 'Tôi đang so sánh giá giữa hai cửa hàng và chênh lệch khá lớn.' },
     ],
   },
   {
@@ -21150,9 +21207,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The delivery will arrive tomorrow afternoon.',
     vietnamese: 'Đơn giao hàng sẽ đến vào chiều mai.',
     phonetic: '/ðə dɪˈlɪvəri wɪl əˈraɪv təˈmɒroʊ ˌæftərˈnuːn/',
+    usage: 'Dùng khi thông báo thời gian giao hàng và sắp xếp lịch nhận.',
     role: 'opener',
     examples: [
       { en: 'The delivery will arrive tomorrow afternoon, so we should be home.', vi: 'Đơn giao hàng sẽ đến vào chiều mai, nên chúng ta nên ở nhà.' },
+      { en: 'The delivery will arrive tomorrow afternoon, so we cannot leave early.', vi: 'Đơn giao hàng sẽ đến vào chiều mai, nên chúng ta không thể đi sớm.' },
+      { en: 'The delivery will arrive tomorrow afternoon unless there is a delay.', vi: 'Đơn giao hàng sẽ đến vào chiều mai, trừ khi bị trễ.' },
     ],
   },
   {
@@ -21163,9 +21223,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once we compare the quality, we can decide.',
     vietnamese: 'Khi đã so sánh chất lượng, chúng ta có thể quyết định.',
     phonetic: '/wʌns wiː kəmˈpɛr ðə ˈkwɒləti wiː kæn dɪˈsaɪd/',
+    usage: 'Dùng khi nói rằng cần so sánh chất lượng trước khi đưa ra quyết định.',
     role: 'linker',
     examples: [
       { en: 'Once we compare the quality, we can decide which brand to buy.', vi: 'Khi đã so sánh chất lượng, chúng ta có thể quyết định mua thương hiệu nào.' },
+      { en: 'Once we compare the quality, we can decide which one gives more value.', vi: 'Khi đã so sánh chất lượng, chúng ta có thể quyết định loại nào đáng tiền hơn.' },
+      { en: 'Once we compare the quality, we can decide between the two models.', vi: 'Khi đã so sánh chất lượng, chúng ta có thể quyết định giữa hai mẫu.' },
     ],
   },
   {
@@ -21176,9 +21239,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Before we pay, let us double-check the discount.',
     vietnamese: 'Trước khi trả tiền, hãy kiểm tra lại mức giảm giá.',
     phonetic: '/bɪˈfɔːr wiː peɪ lɛt ʌs ˈdʌbəl tʃɛk ðə ˈdɪskaʊnt/',
+    usage: 'Dùng khi nhắc kiểm tra lại mức giảm giá trước khi thanh toán.',
     role: 'linker',
     examples: [
       { en: 'Before we pay, let us double-check the discount on the receipt.', vi: 'Trước khi trả tiền, hãy kiểm tra lại mức giảm giá trên hóa đơn.' },
+      { en: 'Before we pay, let us double-check the discount is applied correctly.', vi: 'Trước khi trả tiền, hãy kiểm tra lại xem mức giảm giá đã áp dụng đúng chưa.' },
+      { en: 'Before we pay, let us double-check the discount with the cashier.', vi: 'Trước khi trả tiền, hãy kiểm tra lại mức giảm giá với thu ngân.' },
     ],
   },
   {
@@ -21189,9 +21255,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the fitting, we decided to take the jacket.',
     vietnamese: 'Sau khi thử đồ, chúng tôi quyết định mua chiếc áo khoác.',
     phonetic: '/ˈæftər ðə ˈfɪtɪŋ wiː dɪˈsaɪdɪd tuː teɪk ðə ˈdʒækɪt/',
+    usage: 'Dùng khi kể lại quyết định mua đồ sau khi đã thử.',
     role: 'linker',
     examples: [
       { en: 'After the fitting, we decided to take the jacket in blue.', vi: 'Sau khi thử đồ, chúng tôi quyết định mua chiếc áo khoác màu xanh.' },
+      { en: 'After the fitting, we decided to take the jacket even though it was expensive.', vi: 'Sau khi thử đồ, chúng tôi quyết định mua chiếc áo khoác dù nó đắt.' },
+      { en: 'After the fitting, we decided to take the jacket because it fits perfectly.', vi: 'Sau khi thử đồ, chúng tôi quyết định mua chiếc áo khoác vì nó vừa vặn hoàn hảo.' },
     ],
   },
   {
@@ -21202,9 +21271,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In the meantime, we can order the rest online.',
     vietnamese: 'Trong lúc đó, chúng ta có thể đặt phần còn lại trực tuyến.',
     phonetic: '/ɪn ðə ˈmiːntaɪm wiː kæn ˈɔːrdər ðə rɛst ˈɒnlaɪn/',
+    usage: 'Dùng khi đề xuất đặt hàng trực tuyến phần còn lại trong lúc chờ.',
     role: 'linker',
     examples: [
       { en: 'In the meantime, we can order the rest online and pick them up later.', vi: 'Trong lúc đó, chúng ta có thể đặt phần còn lại trực tuyến và lấy sau.' },
+      { en: 'In the meantime, we can order the rest online and have it delivered.', vi: 'Trong lúc đó, chúng ta có thể đặt phần còn lại trực tuyến và được giao tận nơi.' },
+      { en: 'In the meantime, we can order the rest online to save time.', vi: 'Trong lúc đó, chúng ta có thể đặt phần còn lại trực tuyến để tiết kiệm thời gian.' },
     ],
   },
   {
@@ -21215,9 +21287,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am not sure the quality matches the price.',
     vietnamese: 'Tôi không chắc chất lượng tương xứng với giá tiền.',
     phonetic: '/aɪ æm nɒt ʃʊr ðə ˈkwɒləti mætʃɪz ðə praɪs/',
+    usage: 'Dùng khi nghi ngờ chất lượng sản phẩm không tương xứng với giá.',
     role: 'filler',
     examples: [
       { en: 'I am not sure the quality matches the price of this phone.', vi: 'Tôi không chắc chất lượng tương xứng với giá của chiếc điện thoại này.' },
+      { en: 'I am not sure the quality matches the price, it feels too cheap.', vi: 'Tôi không chắc chất lượng tương xứng với giá tiền, nó cảm giác rẻ tiền quá.' },
+      { en: 'I am not sure the quality matches the price, let us check the reviews.', vi: 'Tôi không chắc chất lượng tương xứng với giá tiền, xem đánh giá đã.' },
     ],
   },
   {
@@ -21228,9 +21303,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The store assistant was very helpful.',
     vietnamese: 'Nhân viên cửa hàng rất nhiệt tình.',
     phonetic: '/ðə stɔːr əˈsɪstənt wʌz ˈvɛri ˈhɛlpfəl/',
+    usage: 'Dùng khi khen ngợi thái độ phục vụ của nhân viên cửa hàng.',
     role: 'filler',
     examples: [
       { en: 'The store assistant was very helpful in choosing the right size.', vi: 'Nhân viên cửa hàng rất nhiệt tình giúp chọn đúng size.' },
+      { en: 'The store assistant was very helpful and gave us a good deal.', vi: 'Nhân viên cửa hàng rất nhiệt tình và cho chúng tôi ưu đãi tốt.' },
+      { en: 'The store assistant was very helpful, so we will come back again.', vi: 'Nhân viên cửa hàng rất nhiệt tình, nên chúng tôi sẽ quay lại.' },
     ],
   },
   {
@@ -21241,9 +21319,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It might be cheaper at the weekend market.',
     vietnamese: 'Có thể rẻ hơn ở chợ cuối tuần.',
     phonetic: '/ɪt maɪt biː ˈtʃiːpər æt ðə ˈwiːkɛnd ˈmɑːrkɪt/',
+    usage: 'Dùng khi nghi ngờ giá có thể rẻ hơn ở nơi khác và đề nghị kiểm tra.',
     role: 'filler',
     examples: [
       { en: 'It might be cheaper at the weekend market, let us check there first.', vi: 'Có thể rẻ hơn ở chợ cuối tuần, mình kiểm tra đó trước.' },
+      { en: 'It might be cheaper at the weekend market, so do not buy yet.', vi: 'Có thể rẻ hơn ở chợ cuối tuần, nên đừng vội mua.' },
+      { en: 'It might be cheaper at the weekend market but the trip takes time.', vi: 'Có thể rẻ hơn ở chợ cuối tuần nhưng đi lại mất thời gian.' },
     ],
   },
   {
@@ -21254,9 +21335,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should keep the receipt in case we need to return it.',
     vietnamese: 'Chúng ta nên giữ hóa đơn phòng khi cần đổi trả.',
     phonetic: '/wiː ʃʊd kiːp ðə rɪˈsiːt ɪn keɪs wiː niːd tuː rɪˈtɜːrn ɪt/',
+    usage: 'Dùng khi nhắc giữ hóa đơn phòng khi cần đổi trả sản phẩm.',
     role: 'filler',
     examples: [
       { en: 'We should keep the receipt in case we need to return the item.', vi: 'Chúng ta nên giữ hóa đơn phòng khi cần đổi trả món hàng.' },
+      { en: 'We should keep the receipt in case we need to return it later.', vi: 'Chúng ta nên giữ hóa đơn phòng khi cần đổi trả sau này.' },
+      { en: 'We should keep the receipt in case we need to return it and get a refund.', vi: 'Chúng ta nên giữ hóa đơn phòng khi cần đổi trả và hoàn tiền.' },
     ],
   },
   {
@@ -21267,9 +21351,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We managed to stay within our budget.',
     vietnamese: 'Chúng ta đã giữ được trong ngân sách.',
     phonetic: '/wiː ˈmænɪdʒd tuː steɪ wɪðɪn aʊər ˈbʌdʒɪt/',
+    usage: 'Dùng khi kết thúc mua sắm, vui vì không chi vượt ngân sách.',
     role: 'closer',
     examples: [
       { en: 'We managed to stay within our budget despite the big discount season.', vi: 'Chúng ta đã giữ được trong ngân sách dù mùa giảm giá lớn.' },
+      { en: 'We managed to stay within our budget even after buying extra items.', vi: 'Chúng ta đã giữ được trong ngân sách dù đã mua thêm đồ.' },
+      { en: 'We managed to stay within our budget thanks to the early discounts.', vi: 'Chúng ta đã giữ được trong ngân sách nhờ mức giảm giá sớm.' },
     ],
   },
   {
@@ -21280,9 +21367,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us pack the groceries into the car.',
     vietnamese: 'Hãy xếp thực phẩm lên xe.',
     phonetic: '/lɛt ʌs pæk ðə ˈɡroʊsəriz ˈɪntuː ðə kɑːr/',
+    usage: 'Dùng khi đề nghị xếp đồ mua được lên xe sau khi mua sắm.',
     role: 'closer',
     examples: [
       { en: 'Let us pack the groceries into the car before it gets hot.', vi: 'Hãy xếp thực phẩm lên xe trước khi trời nóng.' },
+      { en: 'Let us pack the groceries into the car and head home.', vi: 'Hãy xếp thực phẩm lên xe và về nhà thôi.' },
+      { en: 'Let us pack the groceries into the car carefully so nothing breaks.', vi: 'Hãy xếp thực phẩm lên xe cẩn thận để không hỏng món nào.' },
     ],
   },
   {
@@ -21293,9 +21383,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will return the damaged item tomorrow.',
     vietnamese: 'Chúng ta sẽ đổi trả món hàng bị hỏng vào ngày mai.',
     phonetic: '/wiː wɪl rɪˈtɜːrn ðə ˈdæmɪdʒd ˈaɪtəm təˈmɒroʊ/',
+    usage: 'Dùng khi nói về kế hoạch trả lại món hàng bị lỗi.',
     role: 'closer',
     examples: [
       { en: 'We will return the damaged item tomorrow with the receipt.', vi: 'Chúng ta sẽ đổi trả món hàng bị hỏng vào ngày mai cùng hóa đơn.' },
+      { en: 'We will return the damaged item tomorrow and ask for a replacement.', vi: 'Chúng ta sẽ đổi trả món hàng bị hỏng vào ngày mai và yêu cầu đổi mới.' },
+      { en: 'We will return the damaged item tomorrow if they accept it.', vi: 'Chúng ta sẽ đổi trả món hàng bị hỏng vào ngày mai nếu họ chấp nhận.' },
     ],
   },
   {
@@ -21306,9 +21399,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'That was a successful shopping trip overall.',
     vietnamese: 'Nhìn chung, đó là một chuyến mua sắm thành công.',
     phonetic: '/ðæt wʌz ə səkˈsɛsfəl ˈʃɒpɪŋ trɪp ˌoʊvərˈɔːl/',
+    usage: 'Dùng khi tổng kết một buổi mua sắm diễn ra suôn sẻ.',
     role: 'closer',
     examples: [
       { en: 'That was a successful shopping trip overall, we found everything.', vi: 'Nhìn chung, đó là một chuyến mua sắm thành công, chúng ta đã tìm thấy mọi thứ.' },
+      { en: 'That was a successful shopping trip overall, we got everything at good prices.', vi: 'Nhìn chung, đó là một chuyến mua sắm thành công, chúng ta mua được mọi thứ giá tốt.' },
+      { en: 'That was a successful shopping trip overall, nothing was out of stock.', vi: 'Nhìn chung, đó là một chuyến mua sắm thành công, không thiếu món nào.' },
     ],
   },
   {
@@ -21319,9 +21415,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The retail strategy focuses on the customer experience.',
     vietnamese: 'Chiến lược bán lẻ tập trung vào trải nghiệm của khách hàng.',
     phonetic: '/ðə ˈriːteɪl ˈstrætədʒi ˈfoʊkəsɪz ɒn ðə ˈkʌstəmər ɪkˈspɪəriəns/',
+    usage: 'Dùng khi bàn về chiến lược bán lẻ và yếu tố trải nghiệm khách hàng.',
     role: 'opener',
     examples: [
       { en: 'The retail strategy focuses on the customer experience this season.', vi: 'Chiến lược bán lẻ tập trung vào trải nghiệm của khách hàng trong mùa này.' },
+      { en: 'The retail strategy focuses on the customer experience rather than low prices.', vi: 'Chiến lược bán lẻ tập trung vào trải nghiệm khách hàng thay vì giá rẻ.' },
+      { en: 'The retail strategy focuses on the customer experience across all channels.', vi: 'Chiến lược bán lẻ tập trung vào trải nghiệm khách hàng trên mọi kênh.' },
     ],
   },
   {
@@ -21332,9 +21431,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are doing some comparison shopping before we decide.',
     vietnamese: 'Chúng tôi đang so sánh giá trước khi quyết định.',
     phonetic: '/wiː ɑːr ˈduːɪŋ sʌm kəmˈpærɪsən ˈʃɒpɪŋ bɪˈfɔːr wiː dɪˈsaɪd/',
+    usage: 'Dùng khi nói về việc so sánh giá trước khi quyết định mua món lớn.',
     role: 'opener',
     examples: [
       { en: 'We are doing some comparison shopping before we decide on the laptop.', vi: 'Chúng tôi đang so sánh giá trước khi quyết định mua laptop.' },
+      { en: 'We are doing some comparison shopping before we decide on the laptop model.', vi: 'Chúng tôi đang so sánh giá trước khi quyết định chọn mẫu laptop.' },
+      { en: 'We are doing some comparison shopping before we decide, the options are many.', vi: 'Chúng tôi đang so sánh giá trước khi quyết định, có nhiều lựa chọn quá.' },
     ],
   },
   {
@@ -21345,9 +21447,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Consumer behavior has shifted toward online purchases.',
     vietnamese: 'Hành vi người tiêu dùng đã chuyển dịch sang mua sắm trực tuyến.',
     phonetic: '/kənˈsuːmər bɪˈheɪvjər hæz ʃɪftɪd təˈwɔːrd ˈɒnlaɪn ˈpɜːrtʃəsɪz/',
+    usage: 'Dùng khi nhận định xu hướng người tiêu dùng chuyển sang mua trực tuyến.',
     role: 'opener',
     examples: [
       { en: 'Consumer behavior has shifted toward online purchases in recent years.', vi: 'Hành vi người tiêu dùng đã chuyển dịch sang mua sắm trực tuyến trong những năm gần đây.' },
+      { en: 'Consumer behavior has shifted toward online purchases since the pandemic.', vi: 'Hành vi người tiêu dùng đã chuyển dịch sang mua sắm trực tuyến từ sau đại dịch.' },
+      { en: 'Consumer behavior has shifted toward online purchases, so stores must adapt.', vi: 'Hành vi người tiêu dùng đã chuyển dịch sang mua sắm trực tuyến, nên cửa hàng phải thích nghi.' },
     ],
   },
   {
@@ -21358,9 +21463,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The return policy is quite generous here.',
     vietnamese: 'Chính sách đổi trả ở đây khá hào phóng.',
     phonetic: '/ðə rɪˈtɜːrn ˈpɒləsi ɪz kwaɪt ˈdʒɛnərəs hɪr/',
+    usage: 'Dùng khi khen chính sách đổi trả linh hoạt của một cửa hàng.',
     role: 'opener',
     examples: [
       { en: 'The return policy is quite generous here, so we can exchange it later.', vi: 'Chính sách đổi trả ở đây khá hào phóng, nên chúng ta có thể đổi sau.' },
+      { en: 'The return policy is quite generous here, we can return it within a month.', vi: 'Chính sách đổi trả ở đây khá hào phóng, chúng ta có thể trả trong vòng một tháng.' },
+      { en: 'The return policy is quite generous here, no questions asked.', vi: 'Chính sách đổi trả ở đây khá hào phóng, không hỏi lý do gì cả.' },
     ],
   },
   {
@@ -21371,9 +21479,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Provided the warranty is valid, they will replace the item.',
     vietnamese: 'Nếu bảo hành còn hiệu lực, họ sẽ thay thế sản phẩm.',
     phonetic: '/prəˈvaɪdɪd ðə ˈwɒrənti ɪz ˈvælɪd, ðeɪ wɪl rɪˈpleɪs ði ˈaɪtəm/',
+    usage: 'Dùng khi nêu điều kiện bảo hành còn hiệu lực thì sẽ được thay thế.',
     role: 'linker',
     examples: [
       { en: 'Provided the warranty is valid, they will replace the item free of charge.', vi: 'Nếu bảo hành còn hiệu lực, họ sẽ thay thế sản phẩm miễn phí.' },
+      { en: 'Provided the warranty is valid, they will replace the item within a week.', vi: 'Nếu bảo hành còn hiệu lực, họ sẽ thay thế sản phẩm trong vòng một tuần.' },
+      { en: 'Provided the warranty is valid, they will replace the item, but not the accessories.', vi: 'Nếu bảo hành còn hiệu lực, họ sẽ thay thế sản phẩm, nhưng không thay phụ kiện.' },
     ],
   },
   {
@@ -21384,9 +21495,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Given the discount, we should buy it now.',
     vietnamese: 'Với mức giảm giá này, chúng ta nên mua ngay.',
     phonetic: '/ˈɡɪvən ðə ˈdɪskaʊnt, wiː ʃʊd baɪ ɪt naʊ/',
+    usage: 'Dùng khi tận dụng mức giảm giá để quyết định mua ngay.',
     role: 'linker',
     examples: [
       { en: 'Given the discount, we should buy it now before the sale ends.', vi: 'Với mức giảm giá này, chúng ta nên mua ngay trước khi hết hạn khuyến mãi.' },
+      { en: 'Given the discount, we should buy it now before the price goes back up.', vi: 'Với mức giảm giá này, chúng ta nên mua ngay trước khi giá tăng trở lại.' },
+      { en: 'Given the discount, we should buy it now and save a lot.', vi: 'Với mức giảm giá này, chúng ta nên mua ngay để tiết kiệm kha khá.' },
     ],
   },
   {
@@ -21397,9 +21511,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After weighing the options, we settled on the cheaper model.',
     vietnamese: 'Sau khi cân nhắc các lựa chọn, chúng tôi chốt mẫu rẻ hơn.',
     phonetic: '/ˈæftər ˈweɪɪŋ ði ˈɒpʃənz, wiː ˈsɛtəld ɒn ðə ˈtʃiːpər ˈmɒdəl/',
+    usage: 'Dùng khi kể lại việc đã cân nhắc rồi chốt một lựa chọn rẻ hơn.',
     role: 'linker',
     examples: [
       { en: 'After weighing the options, we settled on the cheaper model.', vi: 'Sau khi cân nhắc các lựa chọn, chúng tôi chốt mẫu rẻ hơn.' },
+      { en: 'After weighing the options, we settled on the cheaper model with enough features.', vi: 'Sau khi cân nhắc các lựa chọn, chúng tôi chốt mẫu rẻ hơn nhưng vẫn đủ tính năng.' },
+      { en: 'After weighing the options, we settled on the cheaper model to stay within budget.', vi: 'Sau khi cân nhắc các lựa chọn, chúng tôi chốt mẫu rẻ hơn để nằm trong ngân sách.' },
     ],
   },
   {
@@ -21410,9 +21527,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In the meantime, the delivery is scheduled for Friday.',
     vietnamese: 'Trong lúc đó, việc giao hàng dự kiến vào thứ Sáu.',
     phonetic: '/ɪn ðə ˈmiːntaɪm, ðə dɪˈlɪvəri ɪz ˈʃɛdjuːld fɔːr ˈfraɪdeɪ/',
+    usage: 'Dùng khi thông báo lịch giao hàng dự kiến trong lúc chờ đợi.',
     role: 'linker',
     examples: [
       { en: 'In the meantime, the delivery is scheduled for Friday morning.', vi: 'Trong lúc đó, việc giao hàng dự kiến vào sáng thứ Sáu.' },
+      { en: 'In the meantime, the delivery is scheduled for Friday, so we will be home.', vi: 'Trong lúc đó, việc giao hàng dự kiến vào thứ Sáu, nên chúng ta sẽ có mặt ở nhà.' },
+      { en: 'In the meantime, the delivery is scheduled for Friday morning at the latest.', vi: 'Trong lúc đó, việc giao hàng dự kiến chậm nhất là sáng thứ Sáu.' },
     ],
   },
   {
@@ -21423,9 +21543,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The quality does not quite match the price tag.',
     vietnamese: 'Chất lượng không hoàn toàn tương xứng với mức giá.',
     phonetic: '/ðə ˈkwɒləti dʌz nɒt kwaɪt mætʃ ðə praɪs tæɡ/',
+    usage: 'Dùng khi nhận xét chất lượng không xứng với giá niêm yết.',
     role: 'filler',
     examples: [
       { en: 'The quality does not quite match the price tag on this jacket.', vi: 'Chất lượng không hoàn toàn tương xứng với mức giá của chiếc áo khoác này.' },
+      { en: 'The quality does not quite match the price tag on this jacket, it feels thin.', vi: 'Chất lượng không hoàn toàn tương xứng với mức giá của chiếc áo khoác này, vải mỏng quá.' },
+      { en: 'The quality does not quite match the price tag, so we put it back.', vi: 'Chất lượng không hoàn toàn tương xứng với mức giá, nên chúng tôi để lại.' },
     ],
   },
   {
@@ -21436,9 +21559,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a considerable markup on the imported goods.',
     vietnamese: 'Có một khoản chênh lệch giá đáng kể trên hàng nhập khẩu.',
     phonetic: '/ðɛr ɪz ə kənˈsɪdərəbəl ˈmɑːrkʌp ɒn ði ɪmˈpɔːrtɪd ɡʊdz/',
+    usage: 'Dùng khi nhận xét giá hàng nhập khẩu bị đội lên đáng kể.',
     role: 'filler',
     examples: [
       { en: 'There is a considerable markup on the imported goods.', vi: 'Có một khoản chênh lệch giá đáng kể trên hàng nhập khẩu.' },
+      { en: 'There is a considerable markup on the imported goods, so local brands sell more.', vi: 'Có một khoản chênh lệch giá đáng kể trên hàng nhập khẩu, nên hàng nội địa bán chạy hơn.' },
+      { en: 'There is a considerable markup on the imported goods, be prepared for high prices.', vi: 'Có một khoản chênh lệch giá đáng kể trên hàng nhập khẩu, nên chuẩn bị tinh thần giá cao.' },
     ],
   },
   {
@@ -21449,9 +21575,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It might be worth subscribing to the loyalty program.',
     vietnamese: 'Có thể đáng để đăng ký chương trình khách hàng thân thiết.',
     phonetic: '/ɪt maɪt biː wɜːrθ səbˈskraɪbɪŋ tuː ðə ˈlɔɪəlti ˈproʊɡræm/',
+    usage: 'Dùng khi cân nhắc đăng ký chương trình khách hàng thân thiết để nhận ưu đãi.',
     role: 'filler',
     examples: [
       { en: 'It might be worth subscribing to the loyalty program for the rewards.', vi: 'Có thể đáng để đăng ký chương trình khách hàng thân thiết để nhận ưu đãi.' },
+      { en: 'It might be worth subscribing to the loyalty program since we shop here often.', vi: 'Có thể đáng để đăng ký chương trình khách hàng thân thiết vì chúng ta hay mua ở đây.' },
+      { en: 'It might be worth subscribing to the loyalty program for the birthday vouchers.', vi: 'Có thể đáng để đăng ký chương trình khách hàng thân thiết vì có phiếu ưu đãi sinh nhật.' },
     ],
   },
   {
@@ -21462,9 +21591,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We cannot overlook the shipping costs in the total.',
     vietnamese: 'Chúng ta không thể bỏ qua chi phí vận chuyển trong tổng tiền.',
     phonetic: '/wiː ˈkænɒt ˌoʊvərˈlʊk ðə ˈʃɪpɪŋ kɒsts ɪn ðə ˈtoʊtəl/',
+    usage: 'Dùng khi nhắc tính cả phí vận chuyển vào tổng chi phí.',
     role: 'filler',
     examples: [
       { en: 'We cannot overlook the shipping costs in the total.', vi: 'Chúng ta không thể bỏ qua chi phí vận chuyển trong tổng tiền.' },
+      { en: 'We cannot overlook the shipping costs in the total, they add up fast.', vi: 'Chúng ta không thể bỏ qua chi phí vận chuyển trong tổng tiền, chúng cộng dồn nhanh lắm.' },
+      { en: 'We cannot overlook the shipping costs in the total when comparing with the store.', vi: 'Chúng ta không thể bỏ qua chi phí vận chuyển trong tổng tiền khi so với giá cửa hàng.' },
     ],
   },
   {
@@ -21475,9 +21607,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have managed to negotiate a better price.',
     vietnamese: 'Chúng tôi đã thương lượng được mức giá tốt hơn.',
     phonetic: '/wiː hæv ˈmænɪdʒd tuː nɪˈɡoʊʃieɪt ə ˈbɛtər praɪs/',
+    usage: 'Dùng khi kể lại đã thương lượng được mức giá tốt hơn.',
     role: 'closer',
     examples: [
       { en: 'We have managed to negotiate a better price for the bulk order.', vi: 'Chúng tôi đã thương lượng được mức giá tốt hơn cho đơn hàng số lượng lớn.' },
+      { en: 'We have managed to negotiate a better price for the bulk order of fifty units.', vi: 'Chúng tôi đã thương lượng được mức giá tốt hơn cho đơn hàng số lượng lớn năm mươi sản phẩm.' },
+      { en: 'We have managed to negotiate a better price, so the deal is closed.', vi: 'Chúng tôi đã thương lượng được mức giá tốt hơn, nên thỏa thuận đã chốt.' },
     ],
   },
   {
@@ -21488,9 +21623,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us wrap up the purchase before the store closes.',
     vietnamese: 'Hãy chốt mua trước khi cửa hàng đóng cửa.',
     phonetic: '/lɛt ʌs ræp ʌp ðə ˈpɜːrtʃəs bɪˈfɔːr ðə stɔːr ˈkloʊzɪz/',
+    usage: 'Dùng khi giục chốt mua trước khi cửa hàng đóng cửa.',
     role: 'closer',
     examples: [
       { en: 'Let us wrap up the purchase before the store closes.', vi: 'Hãy chốt mua trước khi cửa hàng đóng cửa.' },
+      { en: 'Let us wrap up the purchase before the store closes in ten minutes.', vi: 'Hãy chốt mua trước khi cửa hàng đóng cửa trong mười phút nữa.' },
+      { en: 'Let us wrap up the purchase before the store closes so we do not have to come again.', vi: 'Hãy chốt mua trước khi cửa hàng đóng cửa để khỏi phải quay lại.' },
     ],
   },
   {
@@ -21501,9 +21639,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will arrange the return through the online portal.',
     vietnamese: 'Chúng tôi sẽ sắp xếp việc trả hàng qua cổng trực tuyến.',
     phonetic: '/wiː wɪl əˈreɪndʒ ðə rɪˈtɜːrn θruː ði ˌɒnˈlaɪn ˈpɔːrtəl/',
+    usage: 'Dùng khi nói về việc sắp xếp trả hàng qua cổng trực tuyến.',
     role: 'closer',
     examples: [
       { en: 'We will arrange the return through the online portal tomorrow.', vi: 'Chúng tôi sẽ sắp xếp việc trả hàng qua cổng trực tuyến vào ngày mai.' },
+      { en: 'We will arrange the return through the online portal and get a refund in a few days.', vi: 'Chúng tôi sẽ sắp xếp việc trả hàng qua cổng trực tuyến và nhận hoàn tiền sau vài ngày.' },
+      { en: 'We will arrange the return through the online portal instead of going to the store.', vi: 'Chúng tôi sẽ sắp xếp việc trả hàng qua cổng trực tuyến thay vì đến cửa hàng.' },
     ],
   },
   {
@@ -21514,9 +21655,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The transaction went through without any issues.',
     vietnamese: 'Giao dịch đã hoàn tất mà không gặp vấn đề gì.',
     phonetic: '/ðə trænˈzækʃən wɛnt θruː wɪˈðaʊt ˈɛni ˈɪʃuːz/',
+    usage: 'Dùng khi xác nhận giao dịch thanh toán đã hoàn tất trơn tru.',
     role: 'closer',
     examples: [
       { en: 'The transaction went through without any issues at the checkout.', vi: 'Giao dịch đã hoàn tất mà không gặp vấn đề gì tại quầy thanh toán.' },
+      { en: 'The transaction went through without any issues at the checkout, we are done.', vi: 'Giao dịch đã hoàn tất mà không gặp vấn đề gì ở quầy thanh toán, xong rồi.' },
+      { en: 'The transaction went through without any issues, the receipt is in your email.', vi: 'Giao dịch đã hoàn tất mà không gặp vấn đề gì, hóa đơn đã gửi vào email của bạn.' },
     ],
   },
   {
@@ -21527,9 +21671,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The market analysis reveals a shift in purchasing patterns.',
     vietnamese: 'Phân tích thị trường cho thấy sự thay đổi trong mô hình mua sắm.',
     phonetic: '/ðə ˈmɑːrkɪt əˈnæləsɪs rɪˈviːlz ə ʃɪft ɪn ˈpɜːrtʃəsɪŋ ˈpætərnz/',
+    usage: 'Nói về kết quả phân tích thị trường cho thấy sự thay đổi hành vi mua sắm.',
     role: 'opener',
     examples: [
       { en: 'The market analysis reveals a shift in purchasing patterns among younger consumers.', vi: 'Phân tích thị trường cho thấy sự thay đổi trong mô hình mua sắm của người tiêu dùng trẻ.' },
+      { en: 'The market analysis reveals a shift in purchasing patterns toward eco-friendly goods.', vi: 'Phân tích thị trường cho thấy sự thay đổi trong mô hình mua sắm theo hướng hàng thân thiện với môi trường.' },
+      { en: 'The market analysis reveals a shift in purchasing patterns, so we must adjust our stock.', vi: 'Phân tích thị trường cho thấy sự thay đổi trong mô hình mua sắm, nên chúng ta phải điều chỉnh kho hàng.' },
     ],
   },
   {
@@ -21540,9 +21687,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Brand loyalty is eroding as consumers seek better value.',
     vietnamese: 'Lòng trung thành với thương hiệu đang suy giảm khi người tiêu dùng tìm giá trị tốt hơn.',
     phonetic: '/brænd ˈlɔɪəlti ɪz ɪˈroʊdɪŋ æz kənˈsuːmərz siːk ˈbɛtər ˈvæljuː/',
+    usage: 'Nói về sự suy giảm lòng trung thành thương hiệu khi người tiêu dùng săn giá trị tốt hơn.',
     role: 'opener',
     examples: [
       { en: 'Brand loyalty is eroding as consumers seek better value for their money.', vi: 'Lòng trung thành với thương hiệu đang suy giảm khi người tiêu dùng tìm kiếm giá trị tốt hơn cho đồng tiền của họ.' },
+      { en: 'Brand loyalty is eroding as consumers seek better value, forcing brands to innovate.', vi: 'Lòng trung thành với thương hiệu đang suy giảm khi người tiêu dùng tìm giá trị tốt hơn, buộc các thương hiệu phải đổi mới.' },
+      { en: 'Brand loyalty is eroding as consumers seek better value and switch more often.', vi: 'Lòng trung thành với thương hiệu đang suy giảm khi người tiêu dùng tìm giá trị tốt hơn và chuyển đổi thường xuyên hơn.' },
     ],
   },
   {
@@ -21553,9 +21703,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are advocating for sustainable consumption habits.',
     vietnamese: 'Chúng tôi đang cổ vũ cho thói quen tiêu dùng bền vững.',
     phonetic: '/wiː ɑːr ˈædvəkeɪtɪŋ fɔːr səˈsteɪnəbəl kənˈsʌmpʃən ˈhæbɪts/',
+    usage: 'Nói về việc cổ vũ thói quen tiêu dùng bền vững trong cộng đồng.',
     role: 'opener',
     examples: [
       { en: 'We are advocating for sustainable consumption habits in the community.', vi: 'Chúng tôi đang cổ vũ cho thói quen tiêu dùng bền vững trong cộng đồng.' },
+      { en: 'We are advocating for sustainable consumption habits through educational campaigns.', vi: 'Chúng tôi đang cổ vũ cho thói quen tiêu dùng bền vững thông qua các chiến dịch giáo dục.' },
+      { en: 'We are advocating for sustainable consumption habits, starting with reducing plastic waste.', vi: 'Chúng tôi đang cổ vũ cho thói quen tiêu dùng bền vững, bắt đầu từ việc giảm rác thải nhựa.' },
     ],
   },
   {
@@ -21566,9 +21719,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The premium pricing model justifies the perceived quality.',
     vietnamese: 'Mô hình định giá cao cấp biện minh cho chất lượng cảm nhận được.',
     phonetic: '/ðə ˈpriːmiəm ˈpraɪsɪŋ ˈmɒdəl ˈdʒʌstɪfaɪz ðə pərˈsiːvd ˈkwɒləti/',
+    usage: 'Nói về mô hình định giá cao cấp dựa trên chất lượng cảm nhận.',
     role: 'opener',
     examples: [
       { en: 'The premium pricing model justifies the perceived quality of the product.', vi: 'Mô hình định giá cao cấp biện minh cho chất lượng cảm nhận được của sản phẩm.' },
+      { en: 'The premium pricing model justifies the perceived quality and the brand heritage.', vi: 'Mô hình định giá cao cấp biện minh cho chất lượng cảm nhận và di sản thương hiệu.' },
+      { en: 'The premium pricing model justifies the perceived quality, but not for everyone.', vi: 'Mô hình định giá cao cấp biện minh cho chất lượng cảm nhận được, nhưng không phù hợp với tất cả mọi người.' },
     ],
   },
   {
@@ -21579,9 +21735,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Having assessed the alternatives, we favor the sustainable option.',
     vietnamese: 'Sau khi đánh giá các phương án, chúng tôi ưu tiên lựa chọn bền vững.',
     phonetic: '/ˈhævɪŋ əˈsɛst ði ɒlˈtɜːrnətɪvz, wiː ˈfeɪvər ðə səˈsteɪnəbəl ˈɒpʃən/',
+    usage: 'Nói về việc sau khi đánh giá các phương án thì ưu tiên lựa chọn bền vững.',
     role: 'linker',
     examples: [
       { en: 'Having assessed the alternatives, we favor the sustainable option.', vi: 'Sau khi đánh giá các phương án, chúng tôi ưu tiên lựa chọn bền vững.' },
+      { en: 'Having assessed the alternatives, we favor the sustainable option despite the higher cost.', vi: 'Sau khi đánh giá các phương án, chúng tôi ưu tiên lựa chọn bền vững dù chi phí cao hơn.' },
+      { en: 'Having assessed the alternatives, we favor the sustainable option for the long run.', vi: 'Sau khi đánh giá các phương án, chúng tôi ưu tiên lựa chọn bền vững cho dài hạn.' },
     ],
   },
   {
@@ -21592,9 +21751,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Should the price fluctuate, we will reconsider the purchase.',
     vietnamese: 'Nếu giá cả biến động, chúng tôi sẽ cân nhắc lại việc mua.',
     phonetic: '/ʃʊd ðə praɪs ˈflʌktʃueɪt, wiː wɪl ˌriːkənˈsɪdər ðə ˈpɜːrtʃəs/',
+    usage: 'Nói về việc sẽ cân nhắc lại việc mua nếu giá biến động.',
     role: 'linker',
     examples: [
       { en: 'Should the price fluctuate, we will reconsider the purchase timing.', vi: 'Nếu giá cả biến động, chúng tôi sẽ cân nhắc lại thời điểm mua.' },
+      { en: 'Should the price fluctuate, we will reconsider the purchase and wait for a better moment.', vi: 'Nếu giá cả biến động, chúng tôi sẽ cân nhắc lại việc mua và chờ thời điểm tốt hơn.' },
+      { en: 'Should the price fluctuate, we will reconsider the purchase of the second batch.', vi: 'Nếu giá cả biến động, chúng tôi sẽ cân nhắc lại việc mua lô hàng thứ hai.' },
     ],
   },
   {
@@ -21605,9 +21767,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In light of the reviews, we adjusted our expectations.',
     vietnamese: 'Dựa trên các đánh giá, chúng tôi đã điều chỉnh kỳ vọng của mình.',
     phonetic: '/ɪn laɪt ɒv ðə rɪˈvjuːz, wiː əˈdʒʌstɪd aʊr ˌɛkspɛkˈteɪʃənz/',
+    usage: 'Nói về việc điều chỉnh kỳ vọng dựa trên các đánh giá của người dùng.',
     role: 'linker',
     examples: [
       { en: 'In light of the reviews, we adjusted our expectations of the service.', vi: 'Dựa trên các đánh giá, chúng tôi đã điều chỉnh kỳ vọng về dịch vụ.' },
+      { en: 'In light of the reviews, we adjusted our expectations of the service quality.', vi: 'Dựa trên các đánh giá, chúng tôi đã điều chỉnh kỳ vọng về chất lượng dịch vụ.' },
+      { en: 'In light of the reviews, we adjusted our expectations before placing the order.', vi: 'Dựa trên các đánh giá, chúng tôi đã điều chỉnh kỳ vọng trước khi đặt hàng.' },
     ],
   },
   {
@@ -21618,9 +21783,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subsequently, we will evaluate the total cost of ownership.',
     vietnamese: 'Sau đó, chúng tôi sẽ đánh giá tổng chi phí sở hữu.',
     phonetic: '/ˈsʌbsɪkwəntli, wiː wɪl ɪˈvæljueɪt ðə ˈtoʊtəl kɒst ɒv ˈoʊnərʃɪp/',
+    usage: 'Nói về bước tiếp theo là đánh giá tổng chi phí sở hữu trước khi cam kết.',
     role: 'linker',
     examples: [
       { en: 'Subsequently, we will evaluate the total cost of ownership before committing.', vi: 'Sau đó, chúng tôi sẽ đánh giá tổng chi phí sở hữu trước khi cam kết.' },
+      { en: 'Subsequently, we will evaluate the total cost of ownership including maintenance.', vi: 'Sau đó, chúng tôi sẽ đánh giá tổng chi phí sở hữu bao gồm cả chi phí bảo trì.' },
+      { en: 'Subsequently, we will evaluate the total cost of ownership over five years.', vi: 'Sau đó, chúng tôi sẽ đánh giá tổng chi phí sở hữu trong năm năm.' },
     ],
   },
   {
@@ -21631,9 +21799,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It goes without saying that durability outweighs the initial expense.',
     vietnamese: 'Hiển nhiên là độ bền quan trọng hơn chi phí ban đầu.',
     phonetic: '/ɪt ɡoʊz wɪˈðaʊt ˈseɪɪŋ ðæt ˌdʊrəˈbɪləti ˌaʊtˈweɪz ði ɪˈnɪʃəl ɪkˈspɛns/',
+    usage: 'Nói về việc coi độ bền là yếu tố quan trọng hơn chi phí ban đầu.',
     role: 'filler',
     examples: [
       { en: 'It goes without saying that durability outweighs the initial expense.', vi: 'Hiển nhiên là độ bền quan trọng hơn chi phí ban đầu.' },
+      { en: 'It goes without saying that durability outweighs the initial expense for industrial buyers.', vi: 'Hiển nhiên là độ bền quan trọng hơn chi phí ban đầu đối với người mua công nghiệp.' },
+      { en: 'It goes without saying that durability outweighs the initial expense in the long run.', vi: 'Hiển nhiên là độ bền quan trọng hơn chi phí ban đầu về lâu dài.' },
     ],
   },
   {
@@ -21644,9 +21815,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a subtle discrepancy between the advertised and actual quality.',
     vietnamese: 'Có một sự khác biệt tinh tế giữa chất lượng quảng cáo và thực tế.',
     phonetic: '/ðɛr ɪz ə ˈsʌtəl dɪˈskrɛpənsi bɪˈtwiːn ði ˈædvərtaɪzd ænd ˈæktʃuəl ˈkwɒləti/',
+    usage: 'Nói về sự khác biệt tinh tế giữa chất lượng quảng cáo và thực tế.',
     role: 'filler',
     examples: [
       { en: 'There is a subtle discrepancy between the advertised and actual quality.', vi: 'Có một sự khác biệt tinh tế giữa chất lượng quảng cáo và thực tế.' },
+      { en: 'There is a subtle discrepancy between the advertised and actual quality of the fabric.', vi: 'Có một sự khác biệt tinh tế giữa chất lượng quảng cáo và thực tế của loại vải này.' },
+      { en: 'There is a subtle discrepancy between the advertised and actual quality, be careful.', vi: 'Có một sự khác biệt tinh tế giữa chất lượng quảng cáo và thực tế, hãy cẩn thận.' },
     ],
   },
   {
@@ -21657,9 +21831,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'One cannot underestimate the influence of social proof.',
     vietnamese: 'Không thể đánh giá thấp ảnh hưởng của bằng chứng xã hội.',
     phonetic: '/wʌn ˈkænɒt ˌʌndərˈɛstɪmeɪt ði ˈɪnfluəns ɒv ˈsoʊʃəl pruːf/',
+    usage: 'Nói về ảnh hưởng mạnh mẽ của bằng chứng xã hội lên quyết định mua hàng.',
     role: 'filler',
     examples: [
       { en: 'One cannot underestimate the influence of social proof on buying decisions.', vi: 'Không thể đánh giá thấp ảnh hưởng của bằng chứng xã hội lên quyết định mua hàng.' },
+      { en: 'One cannot underestimate the influence of social proof on buying decisions in digital markets.', vi: 'Không thể đánh giá thấp ảnh hưởng của bằng chứng xã hội lên quyết định mua trong thị trường số.' },
+      { en: 'One cannot underestimate the influence of social proof, many buy because others do.', vi: 'Không thể đánh giá thấp ảnh hưởng của bằng chứng xã hội, nhiều người mua chỉ vì người khác mua.' },
     ],
   },
   {
@@ -21670,9 +21847,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is prudent to scrutinize the terms before signing.',
     vietnamese: 'Nên xem xét kỹ các điều khoản trước khi ký.',
     phonetic: '/ɪt ɪz ˈpruːdənt tuː ˈskruːtənaɪz ðə tɜːrmz bɪˈfɔːr ˈsaɪnɪŋ/',
+    usage: 'Nói về việc nên xem xét kỹ các điều khoản trước khi ký thỏa thuận.',
     role: 'filler',
     examples: [
       { en: 'It is prudent to scrutinize the terms before signing the agreement.', vi: 'Nên xem xét kỹ các điều khoản trước khi ký thỏa thuận.' },
+      { en: 'It is prudent to scrutinize the terms before signing the financing agreement.', vi: 'Nên xem xét kỹ các điều khoản trước khi ký thỏa thuận tài chính.' },
+      { en: 'It is prudent to scrutinize the terms before signing, especially the penalty clauses.', vi: 'Nên xem xét kỹ các điều khoản trước khi ký, đặc biệt là các điều khoản phạt.' },
     ],
   },
   {
@@ -21683,9 +21863,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The purchase has been finalized after thorough deliberation.',
     vietnamese: 'Giao dịch mua đã được chốt sau khi cân nhắc kỹ lưỡng.',
     phonetic: '/ðə ˈpɜːrtʃəs hæz biːn ˈfaɪnəlaɪzd ˈæftər ˈθʌrəʊ dɪˌlɪbəˈreɪʃən/',
+    usage: 'Nói về việc chốt giao dịch mua sau khi đã cân nhắc kỹ lưỡng.',
     role: 'closer',
     examples: [
       { en: 'The purchase has been finalized after thorough deliberation.', vi: 'Giao dịch mua đã được chốt sau khi cân nhắc kỹ lưỡng.' },
+      { en: 'The purchase has been finalized after thorough deliberation with the finance team.', vi: 'Giao dịch mua đã được chốt sau khi cân nhắc kỹ lưỡng cùng bộ phận tài chính.' },
+      { en: 'The purchase has been finalized after thorough deliberation, no further changes.', vi: 'Giao dịch mua đã được chốt sau khi cân nhắc kỹ lưỡng, không thay đổi gì thêm.' },
     ],
   },
   {
@@ -21696,9 +21879,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us consolidate the receipts for the expense report.',
     vietnamese: 'Hãy tập hợp các hóa đơn cho báo cáo chi phí.',
     phonetic: '/lɛt ʌs kənˈsɒlɪdeɪt ðə rɪˈsiːts fɔːr ði ɪkˈspɛns rɪˈpɔːrt/',
+    usage: 'Nói về việc tập hợp hóa đơn để phục vụ báo cáo chi phí.',
     role: 'closer',
     examples: [
       { en: 'Let us consolidate the receipts for the expense report.', vi: 'Hãy tập hợp các hóa đơn cho báo cáo chi phí.' },
+      { en: 'Let us consolidate the receipts for the expense report before the month ends.', vi: 'Hãy tập hợp các hóa đơn cho báo cáo chi phí trước khi kết thúc tháng.' },
+      { en: 'Let us consolidate the receipts for the expense report, including the online orders.', vi: 'Hãy tập hợp các hóa đơn cho báo cáo chi phí, bao gồm cả đơn đặt trực tuyến.' },
     ],
   },
   {
@@ -21709,9 +21895,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will initiate the refund procedure through the proper channel.',
     vietnamese: 'Chúng tôi sẽ tiến hành thủ tục hoàn tiền qua kênh chính thức.',
     phonetic: '/wiː wɪl ɪˈnɪʃieɪt ðə ˈriːfʌnd prəˈsiːdʒər θruː ðə ˈprɒpər ˈtʃænəl/',
+    usage: 'Nói về việc tiến hành thủ tục hoàn tiền qua kênh chính thức.',
     role: 'closer',
     examples: [
       { en: 'We will initiate the refund procedure through the proper channel.', vi: 'Chúng tôi sẽ tiến hành thủ tục hoàn tiền qua kênh chính thức.' },
+      { en: 'We will initiate the refund procedure through the proper channel once the goods are returned.', vi: 'Chúng tôi sẽ tiến hành thủ tục hoàn tiền qua kênh chính thức ngay khi hàng được trả lại.' },
+      { en: 'We will initiate the refund procedure through the proper channel within five working days.', vi: 'Chúng tôi sẽ tiến hành thủ tục hoàn tiền qua kênh chính thức trong vòng năm ngày làm việc.' },
     ],
   },
   {
@@ -21722,9 +21911,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The shopping experience has been nothing short of exceptional.',
     vietnamese: 'Trải nghiệm mua sắm thật sự vượt trội.',
     phonetic: '/ðə ˈʃɒpɪŋ ɪkˈspɪəriəns hæz biːn ˈnʌθɪŋ ʃɔːrt ɒv ɪkˈsɛpʃənəl/',
+    usage: 'Nói về một trải nghiệm mua sắm vượt trội, đáng khen ngợi.',
     role: 'closer',
     examples: [
       { en: 'The shopping experience has been nothing short of exceptional.', vi: 'Trải nghiệm mua sắm thật sự vượt trội.' },
+      { en: 'The shopping experience has been nothing short of exceptional, from service to delivery.', vi: 'Trải nghiệm mua sắm thật sự vượt trội, từ dịch vụ đến giao hàng.' },
+      { en: 'The shopping experience has been nothing short of exceptional, we will definitely return.', vi: 'Trải nghiệm mua sắm thật sự vượt trội, chúng tôi chắc chắn sẽ quay lại.' },
     ],
   },
 
