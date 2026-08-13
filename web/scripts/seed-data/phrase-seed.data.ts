@@ -10680,9 +10680,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have a new customer today.',
     vietnamese: 'Hôm nay chúng ta có một khách hàng mới.',
     phonetic: '/wiː hæv ə nuː ˈkʌstəmər təˈdeɪ/',
+    usage: 'Dùng khi giới thiệu về một khách hàng mới trong cuộc họp bán hàng hoặc khi trò chuyện với đồng nghiệp.',
     role: 'opener',
     examples: [
       { en: 'We have a new customer today, they want three items.', vi: 'Hôm nay chúng ta có một khách hàng mới, họ muốn ba món hàng.' },
+      { en: 'We have a new customer today, please prepare the catalog for them.', vi: 'Hôm nay chúng ta có khách hàng mới, hãy chuẩn bị catalogue cho họ.' },
+      { en: 'We have a new customer today, they came from our social media page.', vi: 'Hôm nay chúng ta có khách hàng mới, họ đến từ trang mạng xã hội của chúng ta.' },
     ],
   },
   {
@@ -10693,9 +10696,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This product is selling very well.',
     vietnamese: 'Sản phẩm này bán rất chạy.',
     phonetic: '/ðɪs ˈprɒdʌkt ɪz ˈsɛlɪŋ ˈvɛri wɛl/',
+    usage: 'Dùng khi nhận xét về mức độ tiêu thụ tốt của một sản phẩm.',
     role: 'opener',
     examples: [
       { en: 'This product is selling very well this season.', vi: 'Sản phẩm này bán rất chạy trong mùa này.' },
+      { en: 'This product is selling very well, we should order more stock.', vi: 'Sản phẩm này bán rất chạy, chúng ta nên nhập thêm hàng.' },
+      { en: 'This product is selling very well because of its low price.', vi: 'Sản phẩm này bán rất chạy vì giá của nó thấp.' },
     ],
   },
   {
@@ -10706,9 +10712,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We want to sell more this month.',
     vietnamese: 'Chúng ta muốn bán được nhiều hơn trong tháng này.',
     phonetic: '/wiː wɒnt tuː sɛl mɔːr ðɪs mʌnθ/',
+    usage: 'Dùng khi đề ra mục tiêu doanh số cho tháng hoặc thời gian cụ thể.',
     role: 'opener',
     examples: [
       { en: 'We want to sell more this month than last month.', vi: 'Chúng ta muốn bán được nhiều hơn tháng trước trong tháng này.' },
+      { en: 'We want to sell more this month, so we will open on Sunday.', vi: 'Chúng ta muốn bán được nhiều hơn trong tháng này, nên chúng ta sẽ mở cửa cả chủ nhật.' },
+      { en: 'We want to sell more this month, let us try a new display.', vi: 'Chúng ta muốn bán được nhiều hơn trong tháng này, hãy thử cách trưng bày mới.' },
     ],
   },
   {
@@ -10719,9 +10728,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The customer is ready to buy.',
     vietnamese: 'Khách hàng đã sẵn sàng mua hàng.',
     phonetic: '/ðə ˈkʌstəmər ɪz ˈrɛdi tuː baɪ/',
+    usage: 'Dùng khi nhận biết khách hàng đã sẵn sàng mua và cần chốt nhanh.',
     role: 'opener',
     examples: [
       { en: 'The customer is ready to buy if we give a discount.', vi: 'Khách hàng đã sẵn sàng mua nếu chúng ta giảm giá.' },
+      { en: 'The customer is ready to buy, please prepare the invoice now.', vi: 'Khách hàng đã sẵn sàng mua hàng, hãy chuẩn bị hóa đơn ngay.' },
+      { en: 'The customer is ready to buy, do not waste any more time.', vi: 'Khách hàng đã sẵn sàng mua hàng, đừng lãng phí thêm thời gian.' },
     ],
   },
   {
@@ -10732,9 +10744,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, we show the product to the customer.',
     vietnamese: 'Đầu tiên, chúng ta giới thiệu sản phẩm cho khách hàng.',
     phonetic: '/fɜːrst wiː ʃoʊ ðə ˈprɒdʌkt tuː ðə ˈkʌstəmər/',
+    usage: 'Dùng khi mô tả bước đầu tiên trong quy trình bán hàng.',
     role: 'linker',
     examples: [
       { en: 'First, we show the product to the customer and explain it.', vi: 'Đầu tiên, chúng ta giới thiệu sản phẩm cho khách hàng và giải thích.' },
+      { en: 'First, we show the product to the customer and let them try it.', vi: 'Đầu tiên, chúng ta giới thiệu sản phẩm cho khách hàng và để họ dùng thử.' },
+      { en: 'First, we show the product to the customer, then we answer their questions.', vi: 'Đầu tiên, chúng ta giới thiệu sản phẩm cho khách hàng, sau đó trả lời câu hỏi của họ.' },
     ],
   },
   {
@@ -10745,9 +10760,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Then we talk about the price.',
     vietnamese: 'Sau đó chúng ta nói về giá cả.',
     phonetic: '/ðɛn wiː tɔːk əˈbaʊt ðə praɪs/',
+    usage: 'Dùng khi chuyển sang bước thương lượng về giá trong quy trình bán.',
     role: 'linker',
     examples: [
       { en: 'Then we talk about the price and the payment method.', vi: 'Sau đó chúng ta nói về giá cả và phương thức thanh toán.' },
+      { en: 'Then we talk about the price and show the discount options.', vi: 'Sau đó chúng ta nói về giá cả và đưa ra các lựa chọn giảm giá.' },
+      { en: 'Then we talk about the price, but we keep the best price for the end.', vi: 'Sau đó chúng ta nói về giá cả, nhưng giữ mức giá tốt nhất cho cuối cùng.' },
     ],
   },
   {
@@ -10758,9 +10776,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, the customer asks some questions.',
     vietnamese: 'Sau đó, khách hàng hỏi vài câu.',
     phonetic: '/ˈæftər ðæt ðə ˈkʌstəmər æsks sʌm ˈkwɛstʃənz/',
+    usage: 'Dùng khi khách hàng cần làm rõ thêm thông tin trước khi quyết định.',
     role: 'linker',
     examples: [
       { en: 'After that, the customer asks some questions about delivery.', vi: 'Sau đó, khách hàng hỏi vài câu về việc giao hàng.' },
+      { en: 'After that, the customer asks some questions about the warranty.', vi: 'Sau đó, khách hàng hỏi vài câu về chế độ bảo hành.' },
+      { en: 'After that, the customer asks some questions about the return policy.', vi: 'Sau đó, khách hàng hỏi vài câu về chính sách đổi trả.' },
     ],
   },
   {
@@ -10771,9 +10792,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, we write the order.',
     vietnamese: 'Tiếp theo, chúng ta viết đơn hàng.',
     phonetic: '/nɛkst wiː raɪt ði ˈɔːrdər/',
+    usage: 'Dùng khi tiến hành lập đơn hàng sau khi đã thống nhất giá.',
     role: 'linker',
     examples: [
       { en: 'Next, we write the order and confirm the total.', vi: 'Tiếp theo, chúng ta viết đơn hàng và xác nhận tổng tiền.' },
+      { en: 'Next, we write the order and give the customer a copy.', vi: 'Tiếp theo, chúng ta viết đơn hàng và đưa khách hàng một bản sao.' },
+      { en: 'Next, we write the order carefully to avoid mistakes.', vi: 'Tiếp theo, chúng ta viết đơn hàng cẩn thận để tránh sai sót.' },
     ],
   },
   {
@@ -10784,9 +10808,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think the customer is happy with the price.',
     vietnamese: 'Tôi nghĩ khách hàng hài lòng với mức giá.',
     phonetic: '/aɪ θɪŋk ðə ˈkʌstəmər ɪz ˈhæpi wɪð ðə praɪs/',
+    usage: 'Dùng khi đưa ra nhận định về mức độ hài lòng của khách hàng về giá.',
     role: 'filler',
     examples: [
       { en: 'I think the customer is happy with the price we offered.', vi: 'Tôi nghĩ khách hàng hài lòng với mức giá chúng ta đưa ra.' },
+      { en: 'I think the customer is happy with the price, they smiled the whole time.', vi: 'Tôi nghĩ khách hàng hài lòng với mức giá, họ cười suốt cả buổi.' },
+      { en: 'I think the customer is happy with the price, they did not bargain at all.', vi: 'Tôi nghĩ khách hàng hài lòng với mức giá, họ không mặc cả chút nào.' },
     ],
   },
   {
@@ -10797,9 +10824,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The store is a little quiet today.',
     vietnamese: 'Cửa hàng hôm nay hơi vắng.',
     phonetic: '/ðə stɔːr ɪz ə ˈlɪtəl ˈkwaɪət təˈdeɪ/',
+    usage: 'Dùng khi nhận xét về tình hình vắng khách của cửa hàng.',
     role: 'filler',
     examples: [
       { en: 'The store is a little quiet today, no one came in.', vi: 'Cửa hàng hôm nay hơi vắng, không ai vào.' },
+      { en: 'The store is a little quiet today, so we closed early.', vi: 'Cửa hàng hôm nay hơi vắng, nên chúng tôi đóng cửa sớm.' },
+      { en: 'The store is a little quiet today, let us use the time to clean up.', vi: 'Cửa hàng hôm nay hơi vắng, hãy dùng thời gian để dọn dẹp.' },
     ],
   },
   {
@@ -10810,9 +10840,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we can give a small discount.',
     vietnamese: 'Có lẽ chúng ta có thể giảm giá một chút.',
     phonetic: '/ˈmeɪbi wiː kæn ɡɪv ə smɔːl ˈdɪskaʊnt/',
+    usage: 'Dùng khi đề xuất giảm giá nhằm thuyết phục khách hàng mua.',
     role: 'filler',
     examples: [
       { en: 'Maybe we can give a small discount to close the deal.', vi: 'Có lẽ chúng ta có thể giảm giá một chút để chốt giao dịch.' },
+      { en: 'Maybe we can give a small discount if they buy two items.', vi: 'Có lẽ chúng ta có thể giảm giá một chút nếu họ mua hai sản phẩm.' },
+      { en: 'Maybe we can give a small discount to make them happy.', vi: 'Có lẽ chúng ta có thể giảm giá một chút để làm họ vui.' },
     ],
   },
   {
@@ -10823,9 +10856,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The customer will come back next week.',
     vietnamese: 'Khách hàng sẽ quay lại vào tuần sau.',
     phonetic: '/ðə ˈkʌstəmər wɪl kʌm bæk nɛkst wiːk/',
+    usage: 'Dùng khi dự đoán khách hàng sẽ quay lại mua thêm.',
     role: 'filler',
     examples: [
       { en: 'The customer will come back next week to see the new items.', vi: 'Khách hàng sẽ quay lại vào tuần sau để xem hàng mới.' },
+      { en: 'The customer will come back next week to collect the order.', vi: 'Khách hàng sẽ quay lại vào tuần sau để nhận hàng.' },
+      { en: 'The customer will come back next week with their friend.', vi: 'Khách hàng sẽ quay lại vào tuần sau cùng với bạn của họ.' },
     ],
   },
   {
@@ -10836,9 +10872,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We sold everything today, well done.',
     vietnamese: 'Hôm nay chúng ta bán hết sạch, làm tốt lắm.',
     phonetic: '/wiː soʊld ˈɛvriθɪŋ təˈdeɪ wɛl dʌn/',
+    usage: 'Dùng khi khen ngợi cả đội vì đã bán hết hàng trong ngày.',
     role: 'closer',
     examples: [
       { en: 'We sold everything today, well done everyone.', vi: 'Hôm nay chúng ta bán hết sạch, làm tốt lắm mọi người.' },
+      { en: 'We sold everything today, well done, let us close the shop.', vi: 'Hôm nay chúng ta bán hết sạch, làm tốt lắm, hãy đóng cửa hàng.' },
+      { en: 'We sold everything today, well done, we can go home early.', vi: 'Hôm nay chúng ta bán hết sạch, làm tốt lắm, chúng ta có thể về sớm.' },
     ],
   },
   {
@@ -10849,9 +10888,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us call the customer tomorrow.',
     vietnamese: 'Hãy gọi cho khách hàng vào ngày mai.',
     phonetic: '/lɛt ʌs kɔːl ðə ˈkʌstəmər təˈmɒroʊ/',
+    usage: 'Dùng khi đề nghị liên hệ lại với khách hàng để xác nhận.',
     role: 'closer',
     examples: [
       { en: 'Let us call the customer tomorrow to confirm the order.', vi: 'Hãy gọi cho khách hàng vào ngày mai để xác nhận đơn hàng.' },
+      { en: 'Let us call the customer tomorrow to remind them of the payment.', vi: 'Hãy gọi cho khách hàng vào ngày mai để nhắc họ thanh toán.' },
+      { en: 'Let us call the customer tomorrow to ask about the delivery time.', vi: 'Hãy gọi cho khách hàng vào ngày mai để hỏi về thời gian giao hàng.' },
     ],
   },
   {
@@ -10862,9 +10904,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will count the money at the end of the day.',
     vietnamese: 'Chúng ta sẽ đếm tiền vào cuối ngày.',
     phonetic: '/wiː wɪl kaʊnt ðə ˈmʌni æt ði ɛnd ɒv ðə deɪ/',
+    usage: 'Dùng khi kết thúc ngày bán hàng và kiểm lại doanh thu.',
     role: 'closer',
     examples: [
       { en: 'We will count the money at the end of the day and report it.', vi: 'Chúng ta sẽ đếm tiền vào cuối ngày và báo cáo.' },
+      { en: 'We will count the money at the end of the day and put it in the safe.', vi: 'Chúng ta sẽ đếm tiền vào cuối ngày và cất vào két.' },
+      { en: 'We will count the money at the end of the day together.', vi: 'Chúng ta sẽ cùng đếm tiền vào cuối ngày.' },
     ],
   },
   {
@@ -10875,9 +10920,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It was a good day for sales.',
     vietnamese: 'Đó là một ngày bán hàng tốt.',
     phonetic: '/ɪt wʌz ə ɡʊd deɪ fɔːr seɪlz/',
+    usage: 'Dùng khi tổng kết một ngày bán hàng thành công.',
     role: 'closer',
     examples: [
       { en: 'It was a good day for sales, we made a nice profit.', vi: 'Đó là một ngày bán hàng tốt, chúng ta có lãi kha khá.' },
+      { en: 'It was a good day for sales, many customers came today.', vi: 'Đó là một ngày bán hàng tốt, hôm nay có rất nhiều khách.' },
+      { en: 'It was a good day for sales, we beat yesterday.', vi: 'Đó là một ngày bán hàng tốt, chúng ta vượt hôm qua.' },
     ],
   },
   {
@@ -10888,9 +10936,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are building a healthy sales pipeline for next quarter.',
     vietnamese: 'Chúng ta đang xây dựng một kênh bán hàng lành mạnh cho quý tới.',
     phonetic: '/wiː ɑːr ˈbɪldɪŋ ə ˈhɛlθi seɪlz ˈpaɪplaɪn fɔːr nɛkst ˈkwɔːrtər/',
+    usage: 'Dùng khi nói về việc xây dựng nguồn khách hàng tiềm năng cho quý tới.',
     role: 'opener',
     examples: [
       { en: 'We are building a healthy sales pipeline for next quarter, with many warm leads.', vi: 'Chúng ta đang xây dựng một kênh bán hàng lành mạnh cho quý tới, với nhiều khách tiềm năng ấm.' },
+      { en: 'We are building a healthy sales pipeline for next quarter, so keep adding leads.', vi: 'Chúng ta đang xây dựng một kênh bán hàng lành mạnh cho quý tới, nên cứ tiếp tục thêm khách tiềm năng.' },
+      { en: 'We are building a healthy sales pipeline for next quarter, every team must contribute.', vi: 'Chúng ta đang xây dựng một kênh bán hàng lành mạnh cho quý tới, mỗi đội phải đóng góp.' },
     ],
   },
   {
@@ -10901,9 +10952,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The deal is almost closed.',
     vietnamese: 'Thương vụ sắp được chốt rồi.',
     phonetic: '/ðə diːl ɪz ˈɔːlmoʊst kloʊzd/',
+    usage: 'Dùng khi thương vụ gần hoàn tất, chỉ còn bước ký kết cuối cùng.',
     role: 'opener',
     examples: [
       { en: 'The deal is almost closed, we just need the final signature.', vi: 'Thương vụ sắp được chốt rồi, chúng ta chỉ cần chữ ký cuối cùng.' },
+      { en: 'The deal is almost closed, we are just waiting for the finance approval.', vi: 'Thương vụ sắp được chốt rồi, chúng ta chỉ đang chờ phê duyệt của bộ phận tài chính.' },
+      { en: 'The deal is almost closed, keep in touch with the client until the end.', vi: 'Thương vụ sắp được chốt rồi, hãy giữ liên lạc với khách hàng đến phút cuối.' },
     ],
   },
   {
@@ -10914,9 +10968,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We need to reach our monthly quota.',
     vietnamese: 'Chúng ta cần đạt chỉ tiêu hàng tháng.',
     phonetic: '/wiː niːd tuː riːtʃ aʊər ˈmʌnθli ˈkwoʊtə/',
+    usage: 'Dùng khi nhắc về chỉ tiêu doanh số cần hoàn thành trong tháng.',
     role: 'opener',
     examples: [
       { en: 'We need to reach our monthly quota before the end of the month.', vi: 'Chúng ta cần đạt chỉ tiêu hàng tháng trước khi kết thúc tháng.' },
+      { en: 'We need to reach our monthly quota, so we are working this weekend.', vi: 'Chúng ta cần đạt chỉ tiêu hàng tháng, nên chúng ta sẽ làm việc cuối tuần này.' },
+      { en: 'We need to reach our monthly quota, focus on the biggest clients.', vi: 'Chúng ta cần đạt chỉ tiêu hàng tháng, hãy tập trung vào các khách hàng lớn nhất.' },
     ],
   },
   {
@@ -10927,9 +10984,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'A new lead just came in from the website.',
     vietnamese: 'Một khách hàng tiềm năng mới vừa đến từ trang web.',
     phonetic: '/ə nuː liːd dʒʌst keɪm ɪn frʌm ðə ˈwɛbsaɪt/',
+    usage: 'Dùng khi có khách hàng tiềm năng mới và cần xử lý nhanh.',
     role: 'opener',
     examples: [
       { en: 'A new lead just came in from the website, let us call them now.', vi: 'Một khách hàng tiềm năng mới vừa đến từ trang web, hãy gọi cho họ ngay.' },
+      { en: 'A new lead just came in from the website, assign it to the senior salesperson.', vi: 'Một khách hàng tiềm năng mới vừa đến từ trang web, hãy giao cho nhân viên bán hàng kỳ cựu.' },
+      { en: 'A new lead just came in from the website, check their company size first.', vi: 'Một khách hàng tiềm năng mới vừa đến từ trang web, hãy kiểm tra quy mô công ty của họ trước.' },
     ],
   },
   {
@@ -10940,9 +11000,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once the client approves the quote, we send the contract.',
     vietnamese: 'Khi khách hàng duyệt báo giá, chúng ta gửi hợp đồng.',
     phonetic: '/wʌns ðə ˈklaɪənt əˈpruːvz ðə kwoʊt wiː sɛnd ðə ˈkɒntrækt/',
+    usage: 'Dùng khi mô tả bước tiếp theo sau khi khách hàng đồng ý báo giá.',
     role: 'linker',
     examples: [
       { en: 'Once the client approves the quote, we send the contract for signing.', vi: 'Khi khách hàng duyệt báo giá, chúng ta gửi hợp đồng để ký.' },
+      { en: 'Once the client approves the quote, we send the contract and the terms sheet.', vi: 'Khi khách hàng duyệt báo giá, chúng ta gửi hợp đồng và bảng điều khoản.' },
+      { en: 'Once the client approves the quote, we send the contract to their legal team.', vi: 'Khi khách hàng duyệt báo giá, chúng ta gửi hợp đồng cho đội pháp lý của họ.' },
     ],
   },
   {
@@ -10953,9 +11016,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Before we close, let us confirm the delivery date.',
     vietnamese: 'Trước khi chốt, hãy xác nhận ngày giao hàng.',
     phonetic: '/bɪˈfɔːr wiː kloʊz lɛt ʌs kənˈfɜːrm ðə dɪˈlɪvəri deɪt/',
+    usage: 'Dùng khi muốn chốt rõ thời gian giao hàng trước khi ký kết.',
     role: 'linker',
     examples: [
       { en: 'Before we close, let us confirm the delivery date with the warehouse.', vi: 'Trước khi chốt, hãy xác nhận ngày giao hàng với kho.' },
+      { en: 'Before we close, let us confirm the delivery date with the logistics team.', vi: 'Trước khi chốt, hãy xác nhận ngày giao hàng với đội logistics.' },
+      { en: 'Before we close, let us confirm the delivery date in writing.', vi: 'Trước khi chốt, hãy xác nhận ngày giao hàng bằng văn bản.' },
     ],
   },
   {
@@ -10966,9 +11032,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the meeting, we send a summary of the offer.',
     vietnamese: 'Sau cuộc họp, chúng ta gửi tóm tắt đề nghị.',
     phonetic: '/ˈæftər ðə ˈmiːtɪŋ wiː sɛnd ə ˈsʌməri ɒv ði ˈɒfər/',
+    usage: 'Dùng khi cần gửi lại tóm tắt đề nghị sau cuộc gặp khách hàng.',
     role: 'linker',
     examples: [
       { en: 'After the meeting, we send a summary of the offer and the price list.', vi: 'Sau cuộc họp, chúng ta gửi tóm tắt đề nghị và bảng giá.' },
+      { en: 'After the meeting, we send a summary of the offer and the support package.', vi: 'Sau cuộc họp, chúng ta gửi tóm tắt đề nghị và gói hỗ trợ.' },
+      { en: 'After the meeting, we send a summary of the offer within two hours.', vi: 'Sau cuộc họp, chúng ta gửi tóm tắt đề nghị trong vòng hai giờ.' },
     ],
   },
   {
@@ -10979,9 +11048,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Based on the feedback, we adjust our proposal.',
     vietnamese: 'Dựa trên phản hồi, chúng ta điều chỉnh đề xuất.',
     phonetic: '/beɪst ɒn ðə ˈfiːdbæk wiː əˈdʒʌst aʊər prəˈpoʊzəl/',
+    usage: 'Dùng khi thay đổi đề xuất dựa trên phản hồi của khách hàng.',
     role: 'linker',
     examples: [
       { en: 'Based on the feedback, we adjust our proposal to match their budget.', vi: 'Dựa trên phản hồi, chúng ta điều chỉnh đề xuất cho khớp ngân sách của họ.' },
+      { en: 'Based on the feedback, we adjust our proposal and resend it today.', vi: 'Dựa trên phản hồi, chúng ta điều chỉnh đề xuất và gửi lại hôm nay.' },
+      { en: 'Based on the feedback, we adjust our proposal to include training.', vi: 'Dựa trên phản hồi, chúng ta điều chỉnh đề xuất để bổ sung khóa đào tạo.' },
     ],
   },
   {
@@ -10992,9 +11064,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The customer is still comparing our offer with others.',
     vietnamese: 'Khách hàng vẫn đang so sánh đề nghị của chúng ta với các bên khác.',
     phonetic: '/ðə ˈkʌstəmər ɪz stɪl kəmˈpɛrɪŋ aʊər ˈɒfər wɪð ˈʌðərz/',
+    usage: 'Dùng khi khách hàng đang cân nhắc so sánh với đối thủ.',
     role: 'filler',
     examples: [
       { en: 'The customer is still comparing our offer with others, we should wait.', vi: 'Khách hàng vẫn đang so sánh đề nghị của chúng ta với các bên khác, chúng ta nên chờ.' },
+      { en: 'The customer is still comparing our offer with others, so keep it simple.', vi: 'Khách hàng vẫn đang so sánh đề nghị của chúng ta với các bên khác, nên hãy giữ mọi thứ đơn giản.' },
+      { en: 'The customer is still comparing our offer with others, do not push too hard.', vi: 'Khách hàng vẫn đang so sánh đề nghị của chúng ta với các bên khác, đừng thúc ép quá.' },
     ],
   },
   {
@@ -11005,9 +11080,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are a little behind our target this week.',
     vietnamese: 'Chúng ta hơi chậm so với mục tiêu tuần này.',
     phonetic: '/wiː ɑːr ə ˈlɪtəl bɪˈhaɪnd aʊər ˈtɑːrɡɪt ðɪs wiːk/',
+    usage: 'Dùng khi kết quả bán hàng đang chậm hơn mục tiêu tuần.',
     role: 'filler',
     examples: [
       { en: 'We are a little behind our target this week, but we can catch up.', vi: 'Chúng ta hơi chậm so với mục tiêu tuần này, nhưng chúng ta có thể bắt kịp.' },
+      { en: 'We are a little behind our target this week, we need extra effort.', vi: 'Chúng ta hơi chậm so với mục tiêu tuần này, chúng ta cần nỗ lực thêm.' },
+      { en: 'We are a little behind our target this week, let us make more calls.', vi: 'Chúng ta hơi chậm so với mục tiêu tuần này, hãy gọi điện nhiều hơn.' },
     ],
   },
   {
@@ -11018,9 +11096,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is worth offering a free trial to win this client.',
     vietnamese: 'Đáng để tặng dùng thử miễn phí để thắng khách hàng này.',
     phonetic: '/ɪt ɪz wɜːrθ ˈɒfərɪŋ ə friː ˈtraɪəl tuː wɪn ðɪs ˈklaɪənt/',
+    usage: 'Dùng khi đề xuất ưu đãi dùng thử để giành được khách hàng quan trọng.',
     role: 'filler',
     examples: [
       { en: 'It is worth offering a free trial to win this client, they are a big name.', vi: 'Đáng để tặng dùng thử miễn phí để thắng khách hàng này, họ là một thương hiệu lớn.' },
+      { en: 'It is worth offering a free trial to win this client, they may buy a lot later.', vi: 'Đáng để tặng dùng thử miễn phí để thắng khách hàng này, sau này họ có thể mua nhiều.' },
+      { en: 'It is worth offering a free trial to win this client, it is a small cost.', vi: 'Đáng để tặng dùng thử miễn phí để thắng khách hàng này, chi phí rất nhỏ.' },
     ],
   },
   {
@@ -11031,9 +11112,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The follow-up call went better than expected.',
     vietnamese: 'Cuộc gọi tiếp nối diễn ra tốt hơn mong đợi.',
     phonetic: '/ðə ˈfɒloʊʌp kɔːl wɛnt ˈbɛtər ðæn ɪkˈspɛktɪd/',
+    usage: 'Dùng khi đánh giá kết quả cuộc gọi chăm sóc tiếp theo.',
     role: 'filler',
     examples: [
       { en: 'The follow-up call went better than expected, they are very interested.', vi: 'Cuộc gọi tiếp nối diễn ra tốt hơn mong đợi, họ rất quan tâm.' },
+      { en: 'The follow-up call went better than expected, they asked about pricing.', vi: 'Cuộc gọi tiếp nối diễn ra tốt hơn mong đợi, họ đã hỏi về giá.' },
+      { en: 'The follow-up call went better than expected, we set up a second meeting.', vi: 'Cuộc gọi tiếp nối diễn ra tốt hơn mong đợi, chúng ta đã sắp xếp buổi gặp thứ hai.' },
     ],
   },
   {
@@ -11044,9 +11128,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The deal is signed, congratulations everyone.',
     vietnamese: 'Hợp đồng đã được ký, chúc mừng mọi người.',
     phonetic: '/ðə diːl ɪz saɪnd kənˌɡrætʃəˈleɪʃənz ˈɛvriwʌn/',
+    usage: 'Dùng khi thông báo tin vui hợp đồng đã được ký.',
     role: 'closer',
     examples: [
       { en: 'The deal is signed, congratulations everyone on the great work.', vi: 'Hợp đồng đã được ký, chúc mừng mọi người vì công sức tuyệt vời.' },
+      { en: 'The deal is signed, congratulations everyone, let us celebrate tonight.', vi: 'Hợp đồng đã được ký, chúc mừng mọi người, tối nay cùng ăn mừng.' },
+      { en: 'The deal is signed, congratulations everyone, the client was very pleased.', vi: 'Hợp đồng đã được ký, chúc mừng mọi người, khách hàng rất hài lòng.' },
     ],
   },
   {
@@ -11057,9 +11144,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us plan the next steps with this client.',
     vietnamese: 'Hãy lên kế hoạch các bước tiếp theo với khách hàng này.',
     phonetic: '/lɛt ʌs plæn ðə nɛkst stɛps wɪð ðɪs ˈklaɪənt/',
+    usage: 'Dùng khi lên kế hoạch các bước làm việc tiếp theo với khách hàng mới.',
     role: 'closer',
     examples: [
       { en: 'Let us plan the next steps with this client, starting with onboarding.', vi: 'Hãy lên kế hoạch các bước tiếp theo với khách hàng này, bắt đầu với việc tiếp nhận.' },
+      { en: 'Let us plan the next steps with this client, starting with a kickoff call.', vi: 'Hãy lên kế hoạch các bước tiếp theo với khách hàng này, bắt đầu với cuộc gọi khởi động.' },
+      { en: 'Let us plan the next steps with this client and share the roadmap.', vi: 'Hãy lên kế hoạch các bước tiếp theo với khách hàng này và chia sẻ lộ trình.' },
     ],
   },
   {
@@ -11070,9 +11160,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will review the numbers in the weekly meeting.',
     vietnamese: 'Chúng ta sẽ xem lại số liệu trong cuộc họp tuần.',
     phonetic: '/wiː wɪl rɪˈvjuː ðə ˈnʌmbərz ɪn ðə ˈwiːkli ˈmiːtɪŋ/',
+    usage: 'Dùng khi đề cập việc rà soát số liệu trong cuộc họp định kỳ.',
     role: 'closer',
     examples: [
       { en: 'We will review the numbers in the weekly meeting and adjust the plan.', vi: 'Chúng ta sẽ xem lại số liệu trong cuộc họp tuần và điều chỉnh kế hoạch.' },
+      { en: 'We will review the numbers in the weekly meeting and share the report.', vi: 'Chúng ta sẽ xem lại số liệu trong cuộc họp tuần và chia sẻ báo cáo.' },
+      { en: 'We will review the numbers in the weekly meeting, prepare your notes.', vi: 'Chúng ta sẽ xem lại số liệu trong cuộc họp tuần, hãy chuẩn bị ghi chú của bạn.' },
     ],
   },
   {
@@ -11083,9 +11176,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'That is all for today, keep up the good work.',
     vietnamese: 'Hôm nay đến đây thôi, hãy tiếp tục phát huy nhé.',
     phonetic: '/ðæt ɪz ɔːl fɔːr təˈdeɪ kiːp ʌp ðə ɡʊd wɜːrk/',
+    usage: 'Dùng khi kết thúc cuộc họp động viên mọi người.',
     role: 'closer',
     examples: [
       { en: 'That is all for today, keep up the good work and see you tomorrow.', vi: 'Hôm nay đến đây thôi, hãy tiếp tục phát huy và hẹn gặp lại ngày mai.' },
+      { en: 'That is all for today, keep up the good work and take care.', vi: 'Hôm nay đến đây thôi, hãy tiếp tục phát huy và giữ sức khỏe nhé.' },
+      { en: 'That is all for today, keep up the good work, the next quarter is ours.', vi: 'Hôm nay đến đây thôi, hãy tiếp tục phát huy, quý tới là của chúng ta.' },
     ],
   },
   // ===== EXPANSION v2: Business — sales =====
@@ -11097,9 +11193,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are forecasting a strong quarter based on the current pipeline.',
     vietnamese: 'Chúng tôi dự báo một quý mạnh dựa trên pipeline hiện tại.',
     phonetic: '/wiː ɑːr ˈfɔːrkæstɪŋ ə strɔːŋ ˈkwɔːrtər beɪst ɒn ðə ˈkɜːrənt ˈpaɪplaɪn/',
+    usage: 'Dùng khi đưa ra dự báo doanh số dựa trên nguồn khách hàng hiện có.',
     role: 'opener',
     examples: [
       { en: 'We are forecasting a strong quarter based on the current pipeline.', vi: 'Chúng tôi dự báo một quý mạnh dựa trên pipeline hiện tại.' },
+      { en: 'We are forecasting a strong quarter based on the current pipeline, the numbers look healthy.', vi: 'Chúng tôi dự báo một quý mạnh dựa trên pipeline hiện tại, các con số trông rất khả quan.' },
+      { en: 'We are forecasting a strong quarter based on the current pipeline, but we must stay cautious.', vi: 'Chúng tôi dự báo một quý mạnh dựa trên pipeline hiện tại, nhưng chúng ta vẫn phải thận trọng.' },
     ],
   },
   {
@@ -11110,9 +11209,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The deal has moved into the negotiation stage.',
     vietnamese: 'Thương vụ đã chuyển sang giai đoạn đàm phán.',
     phonetic: '/ðə diːl hæz muːvd ˈɪntuː ðə nɪˌɡoʊʃiˈeɪʃən steɪdʒ/',
+    usage: 'Dùng khi thương vụ bước sang giai đoạn thương lượng giá và điều khoản.',
     role: 'opener',
     examples: [
       { en: 'The deal has moved into the negotiation stage and looks promising.', vi: 'Thương vụ đã chuyển sang giai đoạn đàm phán và có vẻ đầy hứa hẹn.' },
+      { en: 'The deal has moved into the negotiation stage, prepare the discount authority.', vi: 'Thương vụ đã chuyển sang giai đoạn đàm phán, hãy chuẩn bị quyền giảm giá.' },
+      { en: 'The deal has moved into the negotiation stage, involve the legal advisor.', vi: 'Thương vụ đã chuyển sang giai đoạn đàm phán, hãy mời cố vấn pháp lý tham gia.' },
     ],
   },
   {
@@ -11123,9 +11225,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should focus on the renewal opportunities this quarter.',
     vietnamese: 'Chúng ta nên tập trung vào cơ hội gia hạn trong quý này.',
     phonetic: '/wiː ʃʊd ˈfoʊkəs ɒn ðə rɪˈnuːəl ˌɒpərˈtuːnətiz ðɪs ˈkwɔːrtər/',
+    usage: 'Dùng khi muốn ưu tiên các cơ hội gia hạn hợp đồng trong quý.',
     role: 'opener',
     examples: [
       { en: 'We should focus on the renewal opportunities this quarter to secure revenue.', vi: 'Chúng ta nên tập trung vào cơ hội gia hạn trong quý này để chốt doanh thu.' },
+      { en: 'We should focus on the renewal opportunities this quarter to keep the base revenue.', vi: 'Chúng ta nên tập trung vào cơ hội gia hạn trong quý này để giữ doanh thu nền.' },
+      { en: 'We should focus on the renewal opportunities this quarter, the retention rate depends on them.', vi: 'Chúng ta nên tập trung vào cơ hội gia hạn trong quý này, tỷ lệ giữ chân phụ thuộc vào chúng.' },
     ],
   },
   {
@@ -11136,9 +11241,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The territory allocation needs to be revisited.',
     vietnamese: 'Việc phân bổ vùng lãnh thổ cần được xem xét lại.',
     phonetic: '/ðə ˈterɪtɔːri ˌæləˈkeɪʃən niːdz tuː biː riːˈvɪzɪtɪd/',
+    usage: 'Dùng khi bàn về việc phân chia vùng bán hàng giữa các nhân viên.',
     role: 'opener',
     examples: [
       { en: 'The territory allocation needs to be revisited for the new fiscal year.', vi: 'Việc phân bổ vùng lãnh thổ cần được xem xét lại cho năm tài chính mới.' },
+      { en: 'The territory allocation needs to be revisited, some regions are overloaded.', vi: 'Việc phân bổ vùng lãnh thổ cần được xem xét lại, một số khu vực đang quá tải.' },
+      { en: 'The territory allocation needs to be revisited after the new hire joins.', vi: 'Việc phân bổ vùng lãnh thổ cần được xem xét lại sau khi nhân viên mới vào.' },
     ],
   },
   {
@@ -11149,9 +11257,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Provided the contract is signed, we can begin onboarding.',
     vietnamese: 'Miễn là hợp đồng được ký, chúng ta có thể bắt đầu onboarding.',
     phonetic: '/prəˈvaɪdɪd ðə ˈkɒntrækt ɪz saɪnd wiː kæn bɪˈɡɪn ɒnˈbɔːrdɪŋ/',
+    usage: 'Dùng khi điều kiện tiên quyết để bắt đầu giai đoạn triển khai.',
     role: 'linker',
     examples: [
       { en: 'Provided the contract is signed, we can begin onboarding next week.', vi: 'Miễn là hợp đồng được ký, chúng ta có thể bắt đầu onboarding vào tuần tới.' },
+      { en: 'Provided the contract is signed, we can begin onboarding and send the equipment.', vi: 'Miễn là hợp đồng được ký, chúng ta có thể bắt đầu onboarding và gửi thiết bị.' },
+      { en: 'Provided the contract is signed, we can begin onboarding immediately.', vi: 'Miễn là hợp đồng được ký, chúng ta có thể bắt đầu onboarding ngay lập tức.' },
     ],
   },
   {
@@ -11162,9 +11273,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once the proposal is accepted, we issue the invoice.',
     vietnamese: 'Khi đề xuất được chấp nhận, chúng ta xuất hóa đơn.',
     phonetic: '/wʌns ðə prəˈpoʊzəl ɪz əkˈsɛptɪd wiː ˈɪʃuː ðə ˈɪnvɔɪs/',
+    usage: 'Dùng khi mô tả quy trình xuất hóa đơn sau khi đề xuất được duyệt.',
     role: 'linker',
     examples: [
       { en: 'Once the proposal is accepted, we issue the invoice within three days.', vi: 'Khi đề xuất được chấp nhận, chúng ta xuất hóa đơn trong vòng ba ngày.' },
+      { en: 'Once the proposal is accepted, we issue the invoice with the agreed terms.', vi: 'Khi đề xuất được chấp nhận, chúng ta xuất hóa đơn kèm các điều khoản đã thỏa thuận.' },
+      { en: 'Once the proposal is accepted, we issue the invoice and start the delivery process.', vi: 'Khi đề xuất được chấp nhận, chúng ta xuất hóa đơn và bắt đầu quy trình giao hàng.' },
     ],
   },
   {
@@ -11175,9 +11289,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the pilot period, we push for the full rollout.',
     vietnamese: 'Sau giai đoạn thử nghiệm, chúng ta thúc đẩy triển khai toàn bộ.',
     phonetic: '/ˈæftər ðə ˈpaɪlət ˈpɪriəd wiː pʊʃ fɔːr ðə fʊl ˈroʊlaʊt/',
+    usage: 'Dùng khi sau giai đoạn dùng thử, muốn thuyết phục khách hàng triển khai toàn bộ.',
     role: 'linker',
     examples: [
       { en: 'After the pilot period, we push for the full rollout with the client.', vi: 'Sau giai đoạn thử nghiệm, chúng ta thúc đẩy triển khai toàn bộ với khách hàng.' },
+      { en: 'After the pilot period, we push for the full rollout with a detailed timeline.', vi: 'Sau giai đoạn thử nghiệm, chúng ta thúc đẩy triển khai toàn bộ kèm lộ trình chi tiết.' },
+      { en: 'After the pilot period, we push for the full rollout and present the success case.', vi: 'Sau giai đoạn thử nghiệm, chúng ta thúc đẩy triển khai toàn bộ và trình bày case study thành công.' },
     ],
   },
   {
@@ -11188,9 +11305,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In parallel, we are preparing the upsell proposal.',
     vietnamese: 'Song song đó, chúng ta đang chuẩn bị đề xuất bán thêm.',
     phonetic: '/ɪn ˈpærəlɛl wiː ɑːr prɪˈpɛrɪŋ ði ˈʌpsɛl prəˈpoʊzəl/',
+    usage: 'Dùng khi vừa chốt một thương vụ vừa chuẩn bị đề xuất bán thêm cho khách hàng hiện hữu.',
     role: 'linker',
     examples: [
       { en: 'In parallel, we are preparing the upsell proposal for the existing account.', vi: 'Song song đó, chúng ta đang chuẩn bị đề xuất bán thêm cho tài khoản hiện có.' },
+      { en: 'In parallel, we are preparing the upsell proposal for the premium package.', vi: 'Song song đó, chúng ta đang chuẩn bị đề xuất bán thêm gói cao cấp.' },
+      { en: 'In parallel, we are preparing the upsell proposal, so gather the usage data.', vi: 'Song song đó, chúng ta đang chuẩn bị đề xuất bán thêm, nên thu thập số liệu sử dụng.' },
     ],
   },
   {
@@ -11201,9 +11321,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The win rate has improved since we changed the pricing model.',
     vietnamese: 'Tỷ lệ thắng đã cải thiện kể từ khi chúng ta thay đổi mô hình giá.',
     phonetic: '/ðə wɪn reɪt hæz ɪmˈpruːvd sɪns wiː tʃeɪndʒd ðə ˈpraɪsɪŋ ˈmɒdəl/',
+    usage: 'Dùng khi so sánh hiệu quả chốt đơn trước và sau một thay đổi.',
     role: 'filler',
     examples: [
       { en: 'The win rate has improved since we changed the pricing model.', vi: 'Tỷ lệ thắng đã cải thiện kể từ khi chúng ta thay đổi mô hình giá.' },
+      { en: 'The win rate has improved since we changed the pricing model, the data confirms it.', vi: 'Tỷ lệ thắng đã cải thiện kể từ khi chúng ta thay đổi mô hình giá, dữ liệu xác nhận điều đó.' },
+      { en: 'The win rate has improved since we changed the pricing model, keep monitoring it.', vi: 'Tỷ lệ thắng đã cải thiện kể từ khi chúng ta thay đổi mô hình giá, hãy tiếp tục theo dõi.' },
     ],
   },
   {
@@ -11214,9 +11337,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Some deals in the funnel are showing signs of stagnation.',
     vietnamese: 'Một số thương vụ trong funnel đang có dấu hiệu trì trệ.',
     phonetic: '/sʌm diːlz ɪn ðə ˈfʌnəl ɑːr ˈʃoʊɪŋ saɪnz ɒv stæɡˈneɪʃən/',
+    usage: 'Dùng khi nhận thấy một số thương vụ không tiến triển trong quy trình bán hàng.',
     role: 'filler',
     examples: [
       { en: 'Some deals in the funnel are showing signs of stagnation this month.', vi: 'Một số thương vụ trong funnel đang có dấu hiệu trì trệ trong tháng này.' },
+      { en: 'Some deals in the funnel are showing signs of stagnation, call those clients today.', vi: 'Một số thương vụ trong funnel đang có dấu hiệu trì trệ, hãy gọi cho những khách hàng đó hôm nay.' },
+      { en: 'Some deals in the funnel are showing signs of stagnation, review the last touchpoint.', vi: 'Một số thương vụ trong funnel đang có dấu hiệu trì trệ, hãy rà soát điểm chạm gần nhất.' },
     ],
   },
   {
@@ -11227,9 +11353,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The average deal size has grown significantly.',
     vietnamese: 'Quy mô thương vụ trung bình đã tăng lên đáng kể.',
     phonetic: '/ði ˈævərɪdʒ diːl saɪz hæz ɡroʊn sɪɡˈnɪfɪkəntli/',
+    usage: 'Dùng khi báo cáo xu hướng tăng của quy mô thương vụ trung bình.',
     role: 'filler',
     examples: [
       { en: 'The average deal size has grown significantly over the past two quarters.', vi: 'Quy mô thương vụ trung bình đã tăng lên đáng kể trong hai quý qua.' },
+      { en: 'The average deal size has grown significantly, thanks to the new enterprise focus.', vi: 'Quy mô thương vụ trung bình đã tăng lên đáng kể, nhờ định hướng tập trung doanh nghiệp mới.' },
+      { en: 'The average deal size has grown significantly, adjust the quota accordingly.', vi: 'Quy mô thương vụ trung bình đã tăng lên đáng kể, hãy điều chỉnh chỉ tiêu cho phù hợp.' },
     ],
   },
   {
@@ -11240,9 +11369,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are still waiting on the procurement team.',
     vietnamese: 'Chúng ta vẫn đang chờ bộ phận thu mua.',
     phonetic: '/wiː ɑːr stɪl ˈweɪtɪŋ ɒn ðə prəˈkjuːrmənt tiːm/',
+    usage: 'Dùng khi thương vụ bị chậm do chờ bộ phận khác của khách hàng quyết định.',
     role: 'filler',
     examples: [
       { en: 'We are still waiting on the procurement team to finalize the terms.', vi: 'Chúng ta vẫn đang chờ bộ phận thu mua chốt các điều khoản.' },
+      { en: 'We are still waiting on the procurement team to review the documents.', vi: 'Chúng ta vẫn đang chờ bộ phận thu mua xem xét hồ sơ.' },
+      { en: 'We are still waiting on the procurement team, send a gentle reminder.', vi: 'Chúng ta vẫn đang chờ bộ phận thu mua, hãy gửi một lời nhắc nhẹ nhàng.' },
     ],
   },
   {
@@ -11253,9 +11385,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have closed the deal and the paperwork is done.',
     vietnamese: 'Chúng ta đã chốt thương vụ và thủ tục giấy tờ đã xong.',
     phonetic: '/wiː hæv kloʊzd ðə diːl ænd ðə ˈpeɪpəwɜːrk ɪz dʌn/',
+    usage: 'Dùng khi thông báo thương vụ đã chốt và hoàn tất thủ tục giấy tờ.',
     role: 'closer',
     examples: [
       { en: 'We have closed the deal and the paperwork is done, congratulations.', vi: 'Chúng ta đã chốt thương vụ và thủ tục giấy tờ đã xong, chúc mừng.' },
+      { en: 'We have closed the deal and the paperwork is done, update the CRM system.', vi: 'Chúng ta đã chốt thương vụ và thủ tục giấy tờ đã xong, hãy cập nhật hệ thống CRM.' },
+      { en: 'We have closed the deal and the paperwork is done, archive the records.', vi: 'Chúng ta đã chốt thương vụ và thủ tục giấy tờ đã xong, hãy lưu trữ hồ sơ.' },
     ],
   },
   {
@@ -11266,9 +11401,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us schedule the handover meeting with the account manager.',
     vietnamese: 'Hãy lên lịch buổi bàn giao với quản lý tài khoản.',
     phonetic: '/lɛt ʌs ˈskɛdʒuːl ðə ˈhændoʊvər ˈmiːtɪŋ wɪð ði əˈkaʊnt ˈmænɪdʒər/',
+    usage: 'Dùng khi chuyển giao khách hàng cho quản lý tài khoản phụ trách.',
     role: 'closer',
     examples: [
       { en: 'Let us schedule the handover meeting with the account manager next week.', vi: 'Hãy lên lịch buổi bàn giao với quản lý tài khoản vào tuần tới.' },
+      { en: 'Let us schedule the handover meeting with the account manager to transfer the context.', vi: 'Hãy lên lịch buổi bàn giao với quản lý tài khoản để chuyển giao ngữ cảnh.' },
+      { en: 'Let us schedule the handover meeting with the account manager this Friday.', vi: 'Hãy lên lịch buổi bàn giao với quản lý tài khoản vào thứ sáu này.' },
     ],
   },
   {
@@ -11279,9 +11417,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will follow up on the outstanding proposals tomorrow.',
     vietnamese: 'Chúng ta sẽ theo dõi các đề xuất còn tồn đọng vào ngày mai.',
     phonetic: '/wiː wɪl ˈfɒloʊ ʌp ɒn ði aʊtˈstændɪŋ prəˈpoʊzəlz təˈmɒroʊ/',
+    usage: 'Dùng khi cần theo dõi lại các đề xuất chưa có phản hồi.',
     role: 'closer',
     examples: [
       { en: 'We will follow up on the outstanding proposals tomorrow morning.', vi: 'Chúng ta sẽ theo dõi các đề xuất còn tồn đọng vào sáng mai.' },
+      { en: 'We will follow up on the outstanding proposals tomorrow and call each client.', vi: 'Chúng ta sẽ theo dõi các đề xuất còn tồn đọng vào ngày mai và gọi từng khách hàng.' },
+      { en: 'We will follow up on the outstanding proposals tomorrow, prepare the status list.', vi: 'Chúng ta sẽ theo dõi các đề xuất còn tồn đọng vào ngày mai, hãy chuẩn bị danh sách trạng thái.' },
     ],
   },
   {
@@ -11292,9 +11433,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us wrap up the call and prepare the summary.',
     vietnamese: 'Hãy kết thúc cuộc gọi và chuẩn bị bản tóm tắt.',
     phonetic: '/lɛt ʌs ræp ʌp ðə kɔːl ænd prɪˈpɛr ðə ˈsʌməri/',
+    usage: 'Dùng khi kết thúc cuộc gọi và cần tổng hợp nội dung cho khách hàng.',
     role: 'closer',
     examples: [
       { en: 'Let us wrap up the call and prepare the summary for the client.', vi: 'Hãy kết thúc cuộc gọi và chuẩn bị bản tóm tắt cho khách hàng.' },
+      { en: 'Let us wrap up the call and prepare the summary of the agreed actions.', vi: 'Hãy kết thúc cuộc gọi và chuẩn bị bản tóm tắt các việc đã thống nhất.' },
+      { en: 'Let us wrap up the call and prepare the summary before noon.', vi: 'Hãy kết thúc cuộc gọi và chuẩn bị bản tóm tắt trước buổi trưa.' },
     ],
   },
   {
@@ -11305,9 +11449,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are devising a strategic account plan for the enterprise segment.',
     vietnamese: 'Chúng tôi đang xây dựng kế hoạch tài khoản chiến lược cho phân khúc doanh nghiệp.',
     phonetic: '/wiː ɑːr dɪˈvaɪzɪŋ ə strəˈtiːdʒɪk əˈkaʊnt plæn fɔːr ði ˈɛntərpraɪz ˈsɛɡmənt/',
+    usage: 'Dùng trong bối cảnh lập kế hoạch tiếp cận nhóm khách hàng doanh nghiệp lớn một cách có chiến lược.',
     role: 'opener',
     examples: [
       { en: 'We are devising a strategic account plan for the enterprise segment.', vi: 'Chúng tôi đang xây dựng kế hoạch tài khoản chiến lược cho phân khúc doanh nghiệp.' },
+      { en: 'We are devising a strategic account plan for the enterprise segment, covering all key stakeholders.', vi: 'Chúng tôi đang xây dựng kế hoạch tài khoản chiến lược cho phân khúc doanh nghiệp, bao phủ mọi bên liên quan chủ chốt.' },
+      { en: 'We are devising a strategic account plan for the enterprise segment, the board reviews it next week.', vi: 'Chúng tôi đang xây dựng kế hoạch tài khoản chiến lược cho phân khúc doanh nghiệp, ban điều hành sẽ duyệt vào tuần tới.' },
     ],
   },
   {
@@ -11318,9 +11465,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The enterprise sales cycle typically spans several quarters.',
     vietnamese: 'Chu kỳ bán hàng doanh nghiệp thường kéo dài nhiều quý.',
     phonetic: '/ði ˈɛntərpraɪz seɪlz ˈsaɪkəl ˈtɪpɪkəli spænz ˈsɛvərəl ˈkwɔːrtərz/',
+    usage: 'Dùng khi giải thích đặc điểm thời gian kéo dài của chu kỳ bán hàng doanh nghiệp.',
     role: 'opener',
     examples: [
       { en: 'The enterprise sales cycle typically spans several quarters and many stakeholders.', vi: 'Chu kỳ bán hàng doanh nghiệp thường kéo dài nhiều quý và nhiều bên liên quan.' },
+      { en: 'The enterprise sales cycle typically spans several quarters, so plan the resources accordingly.', vi: 'Chu kỳ bán hàng doanh nghiệp thường kéo dài nhiều quý, nên hãy lên kế hoạch nguồn lực cho phù hợp.' },
+      { en: 'The enterprise sales cycle typically spans several quarters and involves strict procurement rules.', vi: 'Chu kỳ bán hàng doanh nghiệp thường kéo dài nhiều quý và tuân theo quy trình thu mua nghiêm ngặt.' },
     ],
   },
   {
@@ -11331,9 +11481,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Revenue operations has unified our forecasting methodology.',
     vietnamese: 'Revenue operations đã thống nhất phương pháp dự báo của chúng ta.',
     phonetic: '/ˈrɛvənuː ˌɒpəˈreɪʃənz hæz ˈjuːnɪfaɪd aʊər ˌfɔːrkæstɪŋ ˌmɛθəˈdɒlədʒi/',
+    usage: 'Dùng khi nói về việc chuẩn hóa quy trình dự báo giữa các phòng ban và khu vực.',
     role: 'opener',
     examples: [
       { en: 'Revenue operations has unified our forecasting methodology across regions.', vi: 'Revenue operations đã thống nhất phương pháp dự báo của chúng ta trên các khu vực.' },
+      { en: 'Revenue operations has unified our forecasting methodology across all regions.', vi: 'Revenue operations đã thống nhất phương pháp dự báo của chúng ta trên tất cả các khu vực.' },
+      { en: 'Revenue operations has unified our forecasting methodology, so the reports are now comparable.', vi: 'Revenue operations đã thống nhất phương pháp dự báo, nên các báo cáo giờ đã có thể so sánh được.' },
     ],
   },
   {
@@ -11344,9 +11497,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are structuring a multi-year framework agreement with the client.',
     vietnamese: 'Chúng tôi đang cấu trúc một thỏa thuận khung nhiều năm với khách hàng.',
     phonetic: '/wiː ɑːr ˈstrʌktʃərɪŋ ə ˈmʌlti-jɪr ˈfreɪmwɜːrk əˈɡriːmənt wɪð ðə ˈklaɪənt/',
+    usage: 'Dùng khi thiết lập hợp đồng dài hạn nhiều năm với khách hàng lớn.',
     role: 'opener',
     examples: [
       { en: 'We are structuring a multi-year framework agreement with the client.', vi: 'Chúng tôi đang cấu trúc một thỏa thuận khung nhiều năm với khách hàng.' },
+      { en: 'We are structuring a multi-year framework agreement with the client, including volume discounts.', vi: 'Chúng tôi đang cấu trúc một thỏa thuận khung nhiều năm với khách hàng, bao gồm chiết khấu theo khối lượng.' },
+      { en: 'We are structuring a multi-year framework agreement with the client to lock in the pricing.', vi: 'Chúng tôi đang cấu trúc một thỏa thuận khung nhiều năm với khách hàng để chốt mức giá.' },
     ],
   },
   {
@@ -11357,9 +11513,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Having mapped the decision-making unit, we can tailor the narrative.',
     vietnamese: 'Sau khi xác định đơn vị ra quyết định, chúng ta có thể điều chỉnh câu chuyện cho phù hợp.',
     phonetic: '/ˈhævɪŋ mæpt ðə dɪˈsɪʒən-ˈmeɪkɪŋ ˈjuːnɪt wiː kæn ˈteɪlər ðə ˈnærətɪv/',
+    usage: 'Dùng khi đã hiểu rõ cơ cấu ra quyết định của khách hàng và muốn điều chỉnh thông điệp.',
     role: 'linker',
     examples: [
       { en: 'Having mapped the decision-making unit, we can tailor the narrative accordingly.', vi: 'Sau khi xác định đơn vị ra quyết định, chúng ta có thể điều chỉnh câu chuyện cho phù hợp.' },
+      { en: 'Having mapped the decision-making unit, we can tailor the narrative for each stakeholder.', vi: 'Sau khi xác định đơn vị ra quyết định, chúng ta có thể điều chỉnh câu chuyện cho từng bên liên quan.' },
+      { en: 'Having mapped the decision-making unit, we can tailor the narrative and the demo.', vi: 'Sau khi xác định đơn vị ra quyết định, chúng ta có thể điều chỉnh câu chuyện và phần demo.' },
     ],
   },
   {
@@ -11370,9 +11529,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subject to the legal review, we will finalize the commercial terms.',
     vietnamese: 'Tùy thuộc vào rà soát pháp lý, chúng ta sẽ chốt các điều khoản thương mại.',
     phonetic: '/ˈsʌbdʒɪkt tuː ðə ˈliːɡəl rɪˈvjuː wiː wɪl ˈfaɪnəlaɪz ðə kəˈmɜːrʃəl tɜːrmz/',
+    usage: 'Dùng khi việc chốt điều khoản còn phụ thuộc vào kết quả rà soát pháp lý.',
     role: 'linker',
     examples: [
       { en: 'Subject to the legal review, we will finalize the commercial terms next month.', vi: 'Tùy thuộc vào rà soát pháp lý, chúng ta sẽ chốt các điều khoản thương mại vào tháng tới.' },
+      { en: 'Subject to the legal review, we will finalize the commercial terms and sign the agreement.', vi: 'Tùy thuộc vào rà soát pháp lý, chúng ta sẽ chốt các điều khoản thương mại và ký thỏa thuận.' },
+      { en: 'Subject to the legal review, we will finalize the commercial terms, including the liability clauses.', vi: 'Tùy thuộc vào rà soát pháp lý, chúng ta sẽ chốt các điều khoản thương mại, bao gồm các điều khoản trách nhiệm.' },
     ],
   },
   {
@@ -11383,9 +11545,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Upon securing the executive sponsorship, we accelerate the procurement.',
     vietnamese: 'Khi có được sự bảo trợ cấp điều hành, chúng ta đẩy nhanh quá trình thu mua.',
     phonetic: '/əˈpɒn sɪˈkjʊrɪŋ ði ɪɡˈzɛkjətɪv ˈspɒnsərʃɪp wiː əkˈsɛləreɪt ðə prəˈkjuːrmənt/',
+    usage: 'Dùng khi có được sự ủng hộ cấp cao sẽ giúp đẩy nhanh tiến trình thu mua.',
     role: 'linker',
     examples: [
       { en: 'Upon securing the executive sponsorship, we accelerate the procurement process.', vi: 'Khi có được sự bảo trợ cấp điều hành, chúng ta đẩy nhanh quá trình thu mua.' },
+      { en: 'Upon securing the executive sponsorship, we accelerate the procurement and the pilot.', vi: 'Khi có được sự bảo trợ cấp điều hành, chúng ta đẩy nhanh quá trình thu mua và giai đoạn thử nghiệm.' },
+      { en: 'Upon securing the executive sponsorship, we accelerate the procurement to meet the deadline.', vi: 'Khi có được sự bảo trợ cấp điều hành, chúng ta đẩy nhanh quá trình thu mua để kịp hạn chót.' },
     ],
   },
   {
@@ -11396,9 +11561,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subsequently, we will integrate the solution into the client landscape.',
     vietnamese: 'Sau đó, chúng ta sẽ tích hợp giải pháp vào hệ thống của khách hàng.',
     phonetic: '/ˈsʌbsɪkwəntli wiː wɪl ˈɪntɪɡreɪt ðə səˈluːʃən ˈɪntuː ðə ˈklaɪənt ˈlændskeɪp/',
+    usage: 'Dùng khi mô tả bước tiếp theo sau khi chốt hợp đồng là tích hợp vào hệ thống của khách hàng.',
     role: 'linker',
     examples: [
       { en: 'Subsequently, we will integrate the solution into the client landscape.', vi: 'Sau đó, chúng ta sẽ tích hợp giải pháp vào hệ thống của khách hàng.' },
+      { en: 'Subsequently, we will integrate the solution into the client landscape with minimal disruption.', vi: 'Sau đó, chúng ta sẽ tích hợp giải pháp vào hệ thống của khách hàng với ít gián đoạn nhất.' },
+      { en: 'Subsequently, we will integrate the solution into the client landscape in two phases.', vi: 'Sau đó, chúng ta sẽ tích hợp giải pháp vào hệ thống của khách hàng theo hai giai đoạn.' },
     ],
   },
   {
@@ -11409,9 +11577,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The probability-weighted forecast suggests we exceed the target.',
     vietnamese: 'Dự báo theo trọng số xác suất cho thấy chúng ta vượt mục tiêu.',
     phonetic: '/ðə ˌprɒbəˈbɪləti-ˈweɪtɪd ˈfɔːrkæst səˈdʒɛsts wiː ɪkˈsiːd ðə ˈtɑːrɡɪt/',
+    usage: 'Dùng khi trình bày dự báo doanh số có tính đến xác suất thành công của từng thương vụ.',
     role: 'filler',
     examples: [
       { en: 'The probability-weighted forecast suggests we exceed the target by a margin.', vi: 'Dự báo theo trọng số xác suất cho thấy chúng ta vượt mục tiêu một khoảng cách.' },
+      { en: 'The probability-weighted forecast suggests we exceed the target by a comfortable margin.', vi: 'Dự báo theo trọng số xác suất cho thấy chúng ta vượt mục tiêu với biên độ khá an toàn.' },
+      { en: 'The probability-weighted forecast suggests we exceed the target, but the upside depends on two large deals.', vi: 'Dự báo theo trọng số xác suất cho thấy chúng ta vượt mục tiêu, nhưng mức tăng phụ thuộc vào hai thương vụ lớn.' },
     ],
   },
   {
@@ -11422,9 +11593,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a notable discrepancy between the pipeline value and the realized revenue.',
     vietnamese: 'Có sự chênh lệch đáng chú ý giữa giá trị pipeline và doanh thu thực hiện.',
     phonetic: '/ðɛr ɪz ə ˈnoʊtəbəl dɪˈskrɛpənsi bɪˈtwiːn ðə ˈpaɪplaɪn ˈvæljuː ænd ðə ˈriːəlaɪzd ˈrɛvənuː/',
+    usage: 'Dùng khi phát hiện sự khác biệt giữa giá trị pipeline và doanh thu thực tế cần giải thích.',
     role: 'filler',
     examples: [
       { en: 'There is a notable discrepancy between the pipeline value and the realized revenue.', vi: 'Có sự chênh lệch đáng chú ý giữa giá trị pipeline và doanh thu thực hiện.' },
+      { en: 'There is a notable discrepancy between the pipeline value and the realized revenue, investigate the gap.', vi: 'Có sự chênh lệch đáng chú ý giữa giá trị pipeline và doanh thu thực hiện, hãy điều tra khoảng cách này.' },
+      { en: 'There is a notable discrepancy between the pipeline value and the realized revenue, the forecast may be inflated.', vi: 'Có sự chênh lệch đáng chú ý giữa giá trị pipeline và doanh thu thực hiện, dự báo có thể đang bị thổi phồng.' },
     ],
   },
   {
@@ -11435,9 +11609,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The churn risk on the existing accounts warrants immediate attention.',
     vietnamese: 'Rủi ro rời bỏ ở các tài khoản hiện có cần được chú ý ngay lập tức.',
     phonetic: '/ðə tʃɜːrn rɪsk ɒn ði ɪɡˈzɪstɪŋ əˈkaʊnts ˈwɔːrənts ɪˈmiːdiət əˈtɛnʃən/',
+    usage: 'Dùng khi cảnh báo rủi ro khách hàng rời bỏ cần xử lý ngay.',
     role: 'filler',
     examples: [
       { en: 'The churn risk on the existing accounts warrants immediate attention from the team.', vi: 'Rủi ro rời bỏ ở các tài khoản hiện có cần được chú ý ngay lập tức từ nhóm.' },
+      { en: 'The churn risk on the existing accounts warrants immediate attention, review the at-risk list.', vi: 'Rủi ro rời bỏ ở các tài khoản hiện có cần được chú ý ngay lập tức, hãy rà soát danh sách rủi ro.' },
+      { en: 'The churn risk on the existing accounts warrants immediate attention, assign owners to save them.', vi: 'Rủi ro rời bỏ ở các tài khoản hiện có cần được chú ý ngay lập tức, hãy phân công người phụ trách để cứu các tài khoản này.' },
     ],
   },
   {
@@ -11448,9 +11625,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The negotiation leverage has shifted in our favor this cycle.',
     vietnamese: 'Thế đàm phán đã nghiêng về phía chúng ta trong chu kỳ này.',
     phonetic: '/ðə nɪˌɡoʊʃiˈeɪʃən ˈlɛvərɪdʒ hæz ʃɪftɪd ɪn aʊər ˈfeɪvər ðɪs ˈsaɪkəl/',
+    usage: 'Dùng khi thế mạnh đàm phán đã nghiêng về phía mình và cần tận dụng.',
     role: 'filler',
     examples: [
       { en: 'The negotiation leverage has shifted in our favor this cycle.', vi: 'Thế đàm phán đã nghiêng về phía chúng ta trong chu kỳ này.' },
+      { en: 'The negotiation leverage has shifted in our favor this cycle, so hold the price position.', vi: 'Thế đàm phán đã nghiêng về phía chúng ta trong chu kỳ này, nên hãy giữ vững lập trường về giá.' },
+      { en: 'The negotiation leverage has shifted in our favor this cycle, use it to improve the terms.', vi: 'Thế đàm phán đã nghiêng về phía chúng ta trong chu kỳ này, hãy dùng nó để cải thiện điều khoản.' },
     ],
   },
   {
@@ -11461,9 +11641,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The framework agreement has been executed by all parties.',
     vietnamese: 'Thỏa thuận khung đã được ký kết bởi tất cả các bên.',
     phonetic: '/ðə ˈfræmwɜːrk əˈɡriːmənt hæz biːn ˈɛksɪkjuːtɪd baɪ ɔːl ˈpɑːrtiz/',
+    usage: 'Dùng khi thông báo thỏa thuận khung đã được tất cả các bên ký kết.',
     role: 'closer',
     examples: [
       { en: 'The framework agreement has been executed by all parties involved.', vi: 'Thỏa thuận khung đã được ký kết bởi tất cả các bên liên quan.' },
+      { en: 'The framework agreement has been executed by all parties, the implementation can now start.', vi: 'Thỏa thuận khung đã được ký kết bởi tất cả các bên, giờ có thể bắt đầu triển khai.' },
+      { en: 'The framework agreement has been executed by all parties, update the contract repository.', vi: 'Thỏa thuận khung đã được ký kết bởi tất cả các bên, hãy cập nhật kho lưu trữ hợp đồng.' },
     ],
   },
   {
@@ -11474,9 +11657,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will transition the account to the delivery team with a formal handover.',
     vietnamese: 'Chúng ta sẽ bàn giao tài khoản cho đội triển khai với một cuộc bàn giao chính thức.',
     phonetic: '/wiː wɪl trænˈzɪʃən ði əˈkaʊnt tuː ðə dɪˈlɪvəri tiːm wɪð ə ˈfɔːrməl ˈhændoʊvər/',
+    usage: 'Dùng khi chuyển giao tài khoản từ bộ phận bán hàng sang bộ phận triển khai.',
     role: 'closer',
     examples: [
       { en: 'We will transition the account to the delivery team with a formal handover.', vi: 'Chúng ta sẽ bàn giao tài khoản cho đội triển khai với một cuộc bàn giao chính thức.' },
+      { en: 'We will transition the account to the delivery team with a formal handover document.', vi: 'Chúng ta sẽ bàn giao tài khoản cho đội triển khai với một văn bản bàn giao chính thức.' },
+      { en: 'We will transition the account to the delivery team with a formal handover this week.', vi: 'Chúng ta sẽ bàn giao tài khoản cho đội triển khai với một cuộc bàn giao chính thức trong tuần này.' },
     ],
   },
   {
@@ -11487,9 +11673,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us consolidate the quarterly learnings into the sales playbook.',
     vietnamese: 'Hãy tổng hợp các bài học quý vào playbook bán hàng.',
     phonetic: '/lɛt ʌs kənˈsɒlɪdeɪt ðə ˈkwɔːrtərli ˈlɜːrnɪŋz ˈɪntuː ðə seɪlz ˈpleɪbʊk/',
+    usage: 'Dùng khi tổng kết kinh nghiệm bán hàng của quý thành tài liệu chuẩn cho cả đội.',
     role: 'closer',
     examples: [
       { en: 'Let us consolidate the quarterly learnings into the sales playbook.', vi: 'Hãy tổng hợp các bài học quý vào playbook bán hàng.' },
+      { en: 'Let us consolidate the quarterly learnings into the sales playbook and share it widely.', vi: 'Hãy tổng hợp các bài học quý vào playbook bán hàng và chia sẻ rộng rãi.' },
+      { en: 'Let us consolidate the quarterly learnings into the sales playbook, including the win and loss analysis.', vi: 'Hãy tổng hợp các bài học quý vào playbook bán hàng, bao gồm cả phân tích thắng và thua.' },
     ],
   },
   {
@@ -11500,9 +11689,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will reconvene once the client returns with the revised terms.',
     vietnamese: 'Chúng ta sẽ họp lại khi khách hàng quay lại với các điều khoản đã sửa đổi.',
     phonetic: '/wiː wɪl ˌriːkənˈviːn wʌns ðə ˈklaɪənt rɪˈtɜːrnz wɪð ðə rɪˈvaɪzd tɜːrmz/',
+    usage: 'Dùng khi tạm hoãn cuộc họp chờ khách hàng đưa ra điều khoản điều chỉnh.',
     role: 'closer',
     examples: [
       { en: 'We will reconvene once the client returns with the revised terms.', vi: 'Chúng ta sẽ họp lại khi khách hàng quay lại với các điều khoản đã sửa đổi.' },
+      { en: 'We will reconvene once the client returns with the revised terms, then finalize the deal.', vi: 'Chúng ta sẽ họp lại khi khách hàng quay lại với các điều khoản đã sửa đổi, sau đó chốt thương vụ.' },
+      { en: 'We will reconvene once the client returns with the revised terms, keep the agenda open.', vi: 'Chúng ta sẽ họp lại khi khách hàng quay lại với các điều khoản đã sửa đổi, hãy giữ chương trình họp linh hoạt.' },
     ],
   },
 
