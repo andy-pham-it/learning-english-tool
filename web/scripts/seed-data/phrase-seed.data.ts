@@ -3380,9 +3380,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are ready to deploy the new version.',
     vietnamese: 'Chúng ta đã sẵn sàng triển khai phiên bản mới.',
     phonetic: '/wiː ɑːr ˈrɛdi tuː dɪˈplɔɪ ðə nuː ˈvɜːrʒən/',
+    usage: 'Dùng khi thông báo mọi thứ đã sẵn sàng để triển khai phiên bản mới lên môi trường.',
     role: 'opener',
     examples: [
       { en: 'We are ready to deploy the new version to the server.', vi: 'Chúng ta đã sẵn sàng triển khai phiên bản mới lên máy chủ.' },
+      { en: 'We are ready to deploy the new version after the demo.', vi: 'Chúng ta đã sẵn sàng triển khai phiên bản mới sau buổi demo.' },
+      { en: 'We are ready to deploy the new version to staging.', vi: 'Chúng ta đã sẵn sàng triển khai phiên bản mới lên staging.' },
     ],
   },
   {
@@ -3393,9 +3396,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us deploy the app now.',
     vietnamese: 'Hãy triển khai ứng dụng bây giờ.',
     phonetic: '/lɛt ʌz dɪˈplɔɪ ði æp naʊ/',
+    usage: 'Dùng khi đề xuất triển khai ứng dụng ngay bây giờ, tạo sự khẩn trương.',
     role: 'opener',
     examples: [
       { en: 'Let us deploy the app now before lunch.', vi: 'Hãy triển khai ứng dụng bây giờ trước giờ ăn trưa.' },
+      { en: 'Let us deploy the app now before the meeting.', vi: 'Hãy triển khai ứng dụng bây giờ trước cuộc họp.' },
+      { en: 'Let us deploy the app now, everything is checked.', vi: 'Hãy triển khai ứng dụng bây giờ, mọi thứ đã được kiểm tra.' },
     ],
   },
   {
@@ -3406,9 +3412,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is time to ship the build.',
     vietnamese: 'Đã đến lúc phát hành bản build.',
     phonetic: '/ɪt ɪz taɪm tuː ʃɪp ðə bɪld/',
+    usage: 'Dùng khi quyết định đã đến lúc phát hành bản build vì mọi thứ đã được kiểm thử xong.',
     role: 'opener',
     examples: [
       { en: 'It is time to ship the build, everything is tested.', vi: 'Đã đến lúc phát hành bản build, mọi thứ đã được kiểm thử.' },
+      { en: 'It is time to ship the build, the tests are green.', vi: 'Đã đến lúc phát hành bản build, các bài kiểm thử đều đạt.' },
+      { en: 'It is time to ship the build, the client is waiting.', vi: 'Đã đến lúc phát hành bản build, khách hàng đang chờ.' },
     ],
   },
   {
@@ -3419,9 +3428,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will put the app online soon.',
     vietnamese: 'Chúng ta sẽ đưa ứng dụng lên mạng sớm.',
     phonetic: '/wiː wɪl pʊt ði æp ˈɒnlaɪn suːn/',
+    usage: 'Dùng khi thông báo ứng dụng sẽ sớm được đưa lên mạng sau khi kiểm tra xong.',
     role: 'opener',
     examples: [
       { en: 'We will put the app online soon after the check.', vi: 'Chúng ta sẽ đưa ứng dụng lên mạng sớm sau khi kiểm tra.' },
+      { en: 'We will put the app online soon after the test.', vi: 'Chúng ta sẽ đưa ứng dụng lên mạng sớm sau khi kiểm thử.' },
+      { en: 'We will put the app online soon, just a few minutes.', vi: 'Chúng ta sẽ đưa ứng dụng lên mạng sớm, chỉ vài phút nữa.' },
     ],
   },
   {
@@ -3432,9 +3444,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, we build the project.',
     vietnamese: 'Đầu tiên, chúng ta build dự án.',
     phonetic: '/fɜːrst wiː bɪld ðə ˈprɒdʒɛkt/',
+    usage: 'Dùng khi mô tả bước đầu tiên trong quy trình triển khai.',
     role: 'linker',
     examples: [
       { en: 'First, we build the project on the build machine.', vi: 'Đầu tiên, chúng ta build dự án trên máy build.' },
+      { en: 'First, we build the project on the build server.', vi: 'Đầu tiên, chúng ta build dự án trên máy chủ build.' },
+      { en: 'First, we build the project and check the errors.', vi: 'Đầu tiên, chúng ta build dự án và kiểm tra lỗi.' },
     ],
   },
   {
@@ -3445,9 +3460,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Then we copy the files to the server.',
     vietnamese: 'Sau đó chúng ta sao chép các file lên máy chủ.',
     phonetic: '/ðɛn wiː ˈkɒpi ðə faɪlz tuː ðə ˈsɜːrvər/',
+    usage: 'Dùng khi mô tả bước sao chép file lên máy chủ trong quy trình triển khai.',
     role: 'linker',
     examples: [
       { en: 'Then we copy the files to the server and restart it.', vi: 'Sau đó chúng ta sao chép các file lên máy chủ và khởi động lại.' },
+      { en: 'Then we copy the files to the server and test them.', vi: 'Sau đó chúng ta sao chép các file lên máy chủ và kiểm thử.' },
+      { en: 'Then we copy the files to the server using SSH.', vi: 'Sau đó chúng ta sao chép các file lên máy chủ bằng SSH.' },
     ],
   },
   {
@@ -3458,9 +3476,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, we run the database update.',
     vietnamese: 'Tiếp theo, chúng ta chạy cập nhật cơ sở dữ liệu.',
     phonetic: '/nɛkst wiː rʌn ðə ˈdeɪtəbeɪs ˈʌpdeɪt/',
+    usage: 'Dùng khi mô tả bước chạy cập nhật cơ sở dữ liệu trong quy trình triển khai.',
     role: 'linker',
     examples: [
       { en: 'Next, we run the database update before the app starts.', vi: 'Tiếp theo, chúng ta chạy cập nhật cơ sở dữ liệu trước khi ứng dụng khởi động.' },
+      { en: 'Next, we run the database update to add the new column.', vi: 'Tiếp theo, chúng ta chạy cập nhật cơ sở dữ liệu để thêm cột mới.' },
+      { en: 'Next, we run the database update and check the result.', vi: 'Tiếp theo, chúng ta chạy cập nhật cơ sở dữ liệu và kiểm tra kết quả.' },
     ],
   },
   {
@@ -3471,9 +3492,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, we check the logs.',
     vietnamese: 'Sau đó, chúng ta kiểm tra các log.',
     phonetic: '/ˈæftər ðæt wiː tʃɛk ðə lɔːɡz/',
+    usage: 'Dùng khi mô tả bước kiểm tra log sau khi triển khai để phát hiện lỗi.',
     role: 'linker',
     examples: [
       { en: 'After that, we check the logs for any errors.', vi: 'Sau đó, chúng ta kiểm tra các log xem có lỗi gì không.' },
+      { en: 'After that, we check the logs for warnings.', vi: 'Sau đó, chúng ta kiểm tra các log để tìm cảnh báo.' },
+      { en: 'After that, we check the logs on the new server.', vi: 'Sau đó, chúng ta kiểm tra các log trên máy chủ mới.' },
     ],
   },
   {
@@ -3484,9 +3508,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I hope it works on the server.',
     vietnamese: 'Tôi hy vọng nó chạy tốt trên máy chủ.',
     phonetic: '/aɪ hoʊp ɪt wɜːrks ɒn ðə ˈsɜːrvər/',
+    usage: 'Dùng khi bày tỏ hy vọng ứng dụng chạy tốt trên máy chủ sau khi triển khai.',
     role: 'filler',
     examples: [
       { en: 'I hope it works on the server, we tested it locally.', vi: 'Tôi hy vọng nó chạy tốt trên máy chủ, chúng ta đã kiểm thử trên máy cục bộ.' },
+      { en: 'I hope it works on the server, we will see soon.', vi: 'Tôi hy vọng nó chạy tốt trên máy chủ, chúng ta sẽ sớm thấy.' },
+      { en: 'I hope it works on the server with the new config.', vi: 'Tôi hy vọng nó chạy tốt trên máy chủ với cấu hình mới.' },
     ],
   },
   {
@@ -3497,9 +3524,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Everything looks normal so far.',
     vietnamese: 'Mọi thứ trông bình thường cho đến nay.',
     phonetic: '/ˈɛvriθɪŋ lʊks ˈnɔːrməl soʊ fɑːr/',
+    usage: 'Dùng khi nhận xét rằng mọi thứ đang hoạt động bình thường sau khi triển khai.',
     role: 'filler',
     examples: [
       { en: 'Everything looks normal so far, the app is responding.', vi: 'Mọi thứ trông bình thường cho đến nay, ứng dụng đang phản hồi.' },
+      { en: 'Everything looks normal so far, no errors yet.', vi: 'Mọi thứ trông bình thường cho đến nay, chưa có lỗi.' },
+      { en: 'Everything looks normal so far, the site loads fast.', vi: 'Mọi thứ trông bình thường cho đến nay, trang web tải nhanh.' },
     ],
   },
   {
@@ -3510,9 +3540,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we need to wait a little.',
     vietnamese: 'Có lẽ chúng ta cần đợi một chút.',
     phonetic: '/ˈmeɪbi wiː niːd tuː weɪt ə ˈlɪtəl/',
+    usage: 'Dùng khi đề nghị chờ một chút, thường vì cache hoặc hệ thống cần thời gian cập nhật.',
     role: 'filler',
     examples: [
       { en: 'Maybe we need to wait a little for the cache to refresh.', vi: 'Có lẽ chúng ta cần đợi một chút để bộ nhớ đệm làm mới.' },
+      { en: 'Maybe we need to wait a little for the DNS to update.', vi: 'Có lẽ chúng ta cần đợi một chút cho DNS cập nhật.' },
+      { en: 'Maybe we need to wait a little, it will be fine.', vi: 'Có lẽ chúng ta cần đợi một chút, sẽ ổn thôi.' },
     ],
   },
   {
@@ -3523,9 +3556,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is better to test before shipping.',
     vietnamese: 'Tốt hơn là kiểm thử trước khi phát hành.',
     phonetic: '/ɪt ɪz ˈbɛtər tuː tɛst bɪˈfɔːr ˈʃɪpɪŋ/',
+    usage: 'Dùng khi khuyên nên kiểm thử trước khi phát hành để đảm bảo an toàn.',
     role: 'filler',
     examples: [
       { en: 'It is better to test before shipping, just to be safe.', vi: 'Tốt hơn là kiểm thử trước khi phát hành, để an toàn.' },
+      { en: 'It is better to test before shipping, it saves time.', vi: 'Tốt hơn là kiểm thử trước khi phát hành, nó tiết kiệm thời gian.' },
+      { en: 'It is better to test before shipping on staging.', vi: 'Tốt hơn là kiểm thử trước khi phát hành trên staging.' },
     ],
   },
   {
@@ -3536,9 +3572,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The deployment is finished, good job.',
     vietnamese: 'Việc triển khai đã xong, làm tốt lắm.',
     phonetic: '/ðə dɪˈplɔɪmənt ɪz ˈfɪnɪʃt ɡʊd dʒɒb/',
+    usage: 'Dùng để chúc mừng đội khi việc triển khai đã hoàn thành tốt đẹp.',
     role: 'closer',
     examples: [
       { en: 'The deployment is finished, good job everyone.', vi: 'Việc triển khai đã xong, cảm ơn mọi người đã làm tốt.' },
+      { en: 'The deployment is finished, good job team.', vi: 'Việc triển khai đã xong, làm tốt lắm cả nhóm.' },
+      { en: 'The deployment is finished, good job on the plan.', vi: 'Việc triển khai đã xong, làm tốt lắm với kế hoạch.' },
     ],
   },
   {
@@ -3549,9 +3588,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us tell the team it is live.',
     vietnamese: 'Hãy báo cho nhóm biết nó đã hoạt động.',
     phonetic: '/lɛt ʌs tɛl ðə tiːm ɪt ɪz laɪv/',
+    usage: 'Dùng khi muốn thông báo cho cả nhóm biết ứng dụng đã hoạt động.',
     role: 'closer',
     examples: [
       { en: 'Let us tell the team it is live now.', vi: 'Hãy báo cho nhóm biết nó đã hoạt động.' },
+      { en: 'Let us tell the team it is live and working.', vi: 'Hãy báo cho nhóm biết nó đã hoạt động và chạy tốt.' },
+      { en: 'Let us tell the team it is live in the channel.', vi: 'Hãy báo cho nhóm biết nó đã hoạt động trên kênh.' },
     ],
   },
   {
@@ -3562,9 +3604,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Please check the site quickly.',
     vietnamese: 'Vui lòng kiểm tra nhanh trang web.',
     phonetic: '/pliːz tʃɛk ðə saɪt ˈkwɪkli/',
+    usage: 'Dùng khi nhờ người khác kiểm tra nhanh trang web sau khi triển khai.',
     role: 'closer',
     examples: [
       { en: 'Please check the site quickly and tell me if it works.', vi: 'Vui lòng kiểm tra nhanh trang web và cho tôi biết nó có hoạt động không.' },
+      { en: 'Please check the site quickly and report back.', vi: 'Vui lòng kiểm tra nhanh trang web và báo lại.' },
+      { en: 'Please check the site quickly on your phone.', vi: 'Vui lòng kiểm tra nhanh trang web trên điện thoại của bạn.' },
     ],
   },
   {
@@ -3575,9 +3620,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We can stop here for today.',
     vietnamese: 'Chúng ta có thể dừng ở đây cho hôm nay.',
     phonetic: '/wiː kæn stɒp hɪr fɔːr təˈdeɪ/',
+    usage: 'Dùng khi kết thúc công việc trong ngày vì mọi thứ đã ổn định.',
     role: 'closer',
     examples: [
       { en: 'We can stop here for today, everything is fine.', vi: 'Chúng ta có thể dừng ở đây cho hôm nay, mọi thứ đều ổn.' },
+      { en: 'We can stop here for today, see you tomorrow.', vi: 'Chúng ta có thể dừng ở đây cho hôm nay, hẹn gặp lại ngày mai.' },
+      { en: 'We can stop here for today, the rest is easy.', vi: 'Chúng ta có thể dừng ở đây cho hôm nay, phần còn lại dễ thôi.' },
     ],
   },
   {
@@ -3588,9 +3636,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are about to release the latest build.',
     vietnamese: 'Chúng ta sắp phát hành bản build mới nhất.',
     phonetic: '/wiː ɑːr əˈbaʊt tuː rɪˈliːs ðə ˈleɪtɪst bɪld/',
+    usage: 'Dùng khi thông báo sắp phát hành bản build mới nhất lên môi trường production.',
     role: 'opener',
     examples: [
       { en: 'We are about to release the latest build to production.', vi: 'Chúng ta sắp phát hành bản build mới nhất lên môi trường production.' },
+      { en: 'We are about to release the latest build to the client.', vi: 'Chúng ta sắp phát hành bản build mới nhất cho khách hàng.' },
+      { en: 'We are about to release the latest build, get ready.', vi: 'Chúng ta sắp phát hành bản build mới nhất, hãy sẵn sàng.' },
     ],
   },
   {
@@ -3601,9 +3652,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The pipeline has just finished running.',
     vietnamese: 'Đường ống (pipeline) vừa mới chạy xong.',
     phonetic: '/ðə ˈpaɪplaɪn hæz dʒʌst ˈfɪnɪʃt ˈrʌnɪŋ/',
+    usage: 'Dùng khi thông báo pipeline vừa chạy xong, thường kèm kết quả.',
     role: 'opener',
     examples: [
       { en: 'The pipeline has just finished running without any failures.', vi: 'Đường ống vừa chạy xong mà không có lỗi nào.' },
+      { en: 'The pipeline has just finished running with success.', vi: 'Đường ống vừa mới chạy xong thành công.' },
+      { en: 'The pipeline has just finished running, check the output.', vi: 'Đường ống vừa mới chạy xong, hãy kiểm tra kết quả.' },
     ],
   },
   {
@@ -3614,9 +3668,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us push this build to staging first.',
     vietnamese: 'Hãy đẩy bản build này lên môi trường staging trước.',
     phonetic: '/lɛt ʌs pʊʃ ðɪs bɪld tuː ˈsteɪdʒɪŋ fɜːrst/',
+    usage: 'Dùng khi đề xuất đẩy bản build lên staging trước để kiểm tra trước khi lên production.',
     role: 'opener',
     examples: [
       { en: 'Let us push this build to staging first, then review it.', vi: 'Hãy đẩy bản build này lên staging trước, rồi xem xét sau.' },
+      { en: 'Let us push this build to staging first, it is safer.', vi: 'Hãy đẩy bản build này lên staging trước, an toàn hơn.' },
+      { en: 'Let us push this build to staging first for the demo.', vi: 'Hãy đẩy bản build này lên staging trước cho buổi demo.' },
     ],
   },
   {
@@ -3627,9 +3684,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are scheduled to go live tonight.',
     vietnamese: 'Chúng ta dự kiến lên sóng (go live) tối nay.',
     phonetic: '/wiː ɑːr ˈskɛdʒuːld tuː ɡoʊ laɪv təˈnaɪt/',
+    usage: 'Dùng khi thông báo kế hoạch lên sóng sản phẩm vào một thời điểm cụ thể.',
     role: 'opener',
     examples: [
       { en: 'We are scheduled to go live tonight at midnight.', vi: 'Chúng ta dự kiến lên sóng tối nay lúc nửa đêm.' },
+      { en: 'We are scheduled to go live tonight at 10pm.', vi: 'Chúng ta dự kiến lên sóng tối nay lúc 10 giờ.' },
+      { en: 'We are scheduled to go live tonight after the review.', vi: 'Chúng ta dự kiến lên sóng tối nay sau buổi xem xét.' },
     ],
   },
   {
@@ -3640,9 +3700,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once the tests pass, we can move on.',
     vietnamese: 'Một khi các bài kiểm thử vượt qua, chúng ta có thể tiếp tục.',
     phonetic: '/wʌns ðə tɛsts pæs wiː kæn muːv ɒn/',
+    usage: 'Dùng khi nói rằng chỉ khi kiểm thử đạt thì mới tiếp tục bước tiếp theo.',
     role: 'linker',
     examples: [
       { en: 'Once the tests pass, we can move on to the deployment step.', vi: 'Một khi các bài kiểm thử vượt qua, chúng ta có thể chuyển sang bước triển khai.' },
+      { en: 'Once the tests pass, we can move on to the release.', vi: 'Một khi các bài kiểm thử vượt qua, chúng ta có thể tiếp tục phát hành.' },
+      { en: 'Once the tests pass, we can move on and relax.', vi: 'Một khi các bài kiểm thử vượt qua, chúng ta có thể tiếp tục và thư giãn.' },
     ],
   },
   {
@@ -3653,9 +3716,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Before we go further, let us review the config.',
     vietnamese: 'Trước khi đi tiếp, hãy xem lại cấu hình.',
     phonetic: '/bɪˈfɔːr wiː ɡoʊ ˈfɜːrðər lɛt ʌs rɪˈvjuː ðə kənˈfɪɡ/',
+    usage: 'Dùng khi đề nghị kiểm tra lại cấu hình trước khi thực hiện các bước tiếp theo.',
     role: 'linker',
     examples: [
       { en: 'Before we go further, let us review the config file again.', vi: 'Trước khi đi tiếp, hãy xem lại file cấu hình lần nữa.' },
+      { en: 'Before we go further, let us review the config once more.', vi: 'Trước khi đi tiếp, hãy xem lại cấu hình một lần nữa.' },
+      { en: 'Before we go further, let us review the config for typos.', vi: 'Trước khi đi tiếp, hãy xem lại cấu hình để tìm lỗi gõ.' },
     ],
   },
   {
@@ -3666,9 +3732,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the build finishes, we upload the artifact.',
     vietnamese: 'Sau khi build xong, chúng ta tải lên artifact.',
     phonetic: '/ˈæftər ðə bɪld ˈfɪnɪʃɪz wiː ˌʌpˈloʊd ðə ˈɑːrtɪfækt/',
+    usage: 'Dùng khi mô tả bước tải artifact lên sau khi build hoàn tất.',
     role: 'linker',
     examples: [
       { en: 'After the build finishes, we upload the artifact to the registry.', vi: 'Sau khi build xong, chúng ta tải artifact lên registry.' },
+      { en: 'After the build finishes, we upload the artifact to the server.', vi: 'Sau khi build xong, chúng ta tải lên artifact lên máy chủ.' },
+      { en: 'After the build finishes, we upload the artifact and verify it.', vi: 'Sau khi build xong, chúng ta tải lên artifact và xác minh nó.' },
     ],
   },
   {
@@ -3679,9 +3748,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Now we switch the traffic to the new server.',
     vietnamese: 'Bây giờ chúng ta chuyển lưu lượng sang máy chủ mới.',
     phonetic: '/naʊ wiː swɪtʃ ðə ˈtræfɪk tuː ðə nuː ˈsɜːrvər/',
+    usage: 'Dùng khi mô tả việc chuyển lưu lượng truy cập sang máy chủ mới.',
     role: 'linker',
     examples: [
       { en: 'Now we switch the traffic to the new server gradually.', vi: 'Bây giờ chúng ta chuyển lưu lượng sang máy chủ mới một cách từ từ.' },
+      { en: 'Now we switch the traffic to the new server in steps.', vi: 'Bây giờ chúng ta chuyển lưu lượng sang máy chủ mới theo từng bước.' },
+      { en: 'Now we switch the traffic to the new server, watch the logs.', vi: 'Bây giờ chúng ta chuyển lưu lượng sang máy chủ mới, theo dõi log.' },
     ],
   },
   {
@@ -3692,9 +3764,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Rest assured, the rollback plan is ready.',
     vietnamese: 'Cứ yên tâm, kế hoạch khôi phục đã sẵn sàng.',
     phonetic: '/rɪˈstɔːrd əˈʃʊrd ðə ˈroʊlbæk plæn ɪz ˈrɛdi/',
+    usage: 'Dùng để trấn an mọi người rằng đã có kế hoạch khôi phục nếu gặp sự cố.',
     role: 'filler',
     examples: [
       { en: 'Rest assured, the rollback plan is ready if anything fails.', vi: 'Cứ yên tâm, kế hoạch khôi phục đã sẵn sàng nếu có gì đó thất bại.' },
+      { en: 'Rest assured, the rollback plan is ready for any issue.', vi: 'Cứ yên tâm, kế hoạch khôi phục đã sẵn sàng cho mọi sự cố.' },
+      { en: 'Rest assured, the rollback plan is ready and tested.', vi: 'Cứ yên tâm, kế hoạch khôi phục đã sẵn sàng và được kiểm thử.' },
     ],
   },
   {
@@ -3705,9 +3780,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think the environment variables are set.',
     vietnamese: 'Tôi nghĩ các biến môi trường đã được thiết lập.',
     phonetic: '/aɪ θɪŋk ði ɪnˈvaɪrənmənt ˈvɛriəbəlz ɑːr sɛt/',
+    usage: 'Dùng khi bày tỏ sự tin tưởng rằng các biến môi trường đã được thiết lập đúng.',
     role: 'filler',
     examples: [
       { en: 'I think the environment variables are set correctly on the server.', vi: 'Tôi nghĩ các biến môi trường đã được thiết lập đúng trên máy chủ.' },
+      { en: 'I think the environment variables are set on staging too.', vi: 'Tôi nghĩ các biến môi trường cũng đã được thiết lập trên staging.' },
+      { en: 'I think the environment variables are set, but let us check.', vi: 'Tôi nghĩ các biến môi trường đã được thiết lập, nhưng hãy kiểm tra.' },
     ],
   },
   {
@@ -3718,9 +3796,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It seems the build size has grown a lot.',
     vietnamese: 'Có vẻ kích thước build đã tăng lên khá nhiều.',
     phonetic: '/ɪt siːmz ðə bɪld saɪz hæz ɡroʊn ə lɒt/',
+    usage: 'Dùng khi nhận xét rằng kích thước build đã tăng lên đáng kể.',
     role: 'filler',
     examples: [
       { en: 'It seems the build size has grown a lot this week.', vi: 'Có vẻ kích thước build đã tăng lên khá nhiều trong tuần này.' },
+      { en: 'It seems the build size has grown a lot this month.', vi: 'Có vẻ kích thước build đã tăng lên khá nhiều tháng này.' },
+      { en: 'It seems the build size has grown a lot, we need to optimize.', vi: 'Có vẻ kích thước build đã tăng lên khá nhiều, chúng ta cần tối ưu.' },
     ],
   },
   {
@@ -3731,9 +3812,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should keep an eye on the server load.',
     vietnamese: 'Chúng ta nên theo dõi tải của máy chủ.',
     phonetic: '/wiː ʃʊd kiːp ən aɪ ɒn ðə ˈsɜːrvər loʊd/',
+    usage: 'Dùng khi nhắc mọi người chú ý theo dõi tải máy chủ sau khi triển khai.',
     role: 'filler',
     examples: [
       { en: 'We should keep an eye on the server load after going live.', vi: 'Chúng ta nên theo dõi tải của máy chủ sau khi lên sóng.' },
+      { en: 'We should keep an eye on the server load today.', vi: 'Chúng ta nên theo dõi tải của máy chủ hôm nay.' },
+      { en: 'We should keep an eye on the server load and the errors.', vi: 'Chúng ta nên theo dõi tải của máy chủ và các lỗi.' },
     ],
   },
   {
@@ -3744,9 +3828,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The release went out successfully.',
     vietnamese: 'Bản phát hành đã ra mắt thành công.',
     phonetic: '/ðə rɪˈliːs wɛnt aʊt səkˈsɛsfəli/',
+    usage: 'Dùng để thông báo thành công rằng bản phát hành đã ra mắt, thường kèm kết quả tốt.',
     role: 'closer',
     examples: [
       { en: 'The release went out successfully with zero downtime.', vi: 'Bản phát hành đã ra mắt thành công mà không có thời gian chết.' },
+      { en: 'The release went out successfully, the site is up.', vi: 'Bản phát hành đã ra mắt thành công, trang web đang hoạt động.' },
+      { en: 'The release went out successfully with no downtime.', vi: 'Bản phát hành đã ra mắt thành công không gián đoạn.' },
     ],
   },
   {
@@ -3757,9 +3844,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us monitor the metrics for a while.',
     vietnamese: 'Hãy theo dõi các chỉ số một lúc.',
     phonetic: '/lɛt ʌs ˈmɒnɪtər ðə ˈmɛtrɪks fɔːr ə waɪl/',
+    usage: 'Dùng khi đề nghị theo dõi các chỉ số một thời gian trước khi kết luận thành công.',
     role: 'closer',
     examples: [
       { en: 'Let us monitor the metrics for a while before we celebrate.', vi: 'Hãy theo dõi các chỉ số một lúc trước khi ăn mừng.' },
+      { en: 'Let us monitor the metrics for a while before the report.', vi: 'Hãy theo dõi các chỉ số một lúc trước khi báo cáo.' },
+      { en: 'Let us monitor the metrics for a while, they look fine.', vi: 'Hãy theo dõi các chỉ số một lúc, chúng trông ổn.' },
     ],
   },
   {
@@ -3770,9 +3860,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will roll back if we see any issues.',
     vietnamese: 'Chúng ta sẽ khôi phục lại nếu thấy bất kỳ vấn đề nào.',
     phonetic: '/wiː wɪl roʊl bæk ɪf wiː siː ˈɛni ˈɪʃuːz/',
+    usage: 'Dùng khi cam kết sẽ khôi phục phiên bản cũ nếu phát hiện vấn đề.',
     role: 'closer',
     examples: [
       { en: 'We will roll back if we see any issues in the next hour.', vi: 'Chúng ta sẽ khôi phục lại nếu thấy bất kỳ vấn đề nào trong giờ tới.' },
+      { en: 'We will roll back if we see any issues in the logs.', vi: 'Chúng ta sẽ khôi phục lại nếu thấy bất kỳ vấn đề nào trong log.' },
+      { en: 'We will roll back if we see any issues, do not worry.', vi: 'Chúng ta sẽ khôi phục lại nếu thấy bất kỳ vấn đề nào, đừng lo.' },
     ],
   },
   {
@@ -3783,9 +3876,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'That is everything for this deployment.',
     vietnamese: 'Đó là tất cả cho lần triển khai này.',
     phonetic: '/ðæt ɪz ˈɛvriθɪŋ fɔːr ðɪs dɪˈplɔɪmənt/',
+    usage: 'Dùng để kết thúc buổi triển khai khi mọi việc đã xong.',
     role: 'closer',
     examples: [
       { en: 'That is everything for this deployment, thanks everyone.', vi: 'Đó là tất cả cho lần triển khai này, cảm ơn mọi người.' },
+      { en: 'That is everything for this deployment, great work.', vi: 'Đó là tất cả cho lần triển khai này, làm tốt lắm.' },
+      { en: 'That is everything for this deployment, let us celebrate.', vi: 'Đó là tất cả cho lần triển khai này, hãy ăn mừng.' },
     ],
   },
   {
@@ -3796,9 +3892,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are initiating the production release window.',
     vietnamese: 'Chúng ta đang bắt đầu cửa sổ phát hành production.',
     phonetic: '/wiː ɑːr ɪˈnɪʃieɪtɪŋ ðə prəˈdʌkʃən rɪˈliːs ˈwɪndoʊ/',
+    usage: 'Dùng khi chính thức bắt đầu cửa sổ phát hành production theo kế hoạch.',
     role: 'opener',
     examples: [
       { en: 'We are initiating the production release window now.', vi: 'Chúng ta đang bắt đầu cửa sổ phát hành production ngay bây giờ.' },
+      { en: 'We are initiating the production release window at 2am.', vi: 'Chúng ta đang bắt đầu cửa sổ phát hành production lúc 2 giờ sáng.' },
+      { en: 'We are initiating the production release window now, stay focused.', vi: 'Chúng ta đang bắt đầu cửa sổ phát hành production, hãy tập trung.' },
     ],
   },
   {
@@ -3809,9 +3908,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The artifact has been promoted to the release channel.',
     vietnamese: 'Artifact đã được thăng cấp lên kênh phát hành.',
     phonetic: '/ði ˈɑːrtɪfækt hæz biːn prəˈmoʊtɪd tuː ðə rɪˈliːs ˈtʃænəl/',
+    usage: 'Dùng khi thông báo artifact đã được chuyển lên kênh phát hành sau khi QA duyệt.',
     role: 'opener',
     examples: [
       { en: 'The artifact has been promoted to the release channel after QA approval.', vi: 'Artifact đã được thăng cấp lên kênh phát hành sau khi QA phê duyệt.' },
+      { en: 'The artifact has been promoted to the release channel after testing.', vi: 'Artifact đã được thăng cấp lên kênh phát hành sau khi kiểm thử.' },
+      { en: 'The artifact has been promoted to the release channel, ready to deploy.', vi: 'Artifact đã được thăng cấp lên kênh phát hành, sẵn sàng triển khai.' },
     ],
   },
   {
@@ -3822,9 +3924,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are running a canary deployment right now.',
     vietnamese: 'Chúng ta đang chạy triển khai canary ngay bây giờ.',
     phonetic: '/wiː ɑːr ˈrʌnɪŋ ə ˈkænəri dɪˈplɔɪmənt raɪt naʊ/',
+    usage: 'Dùng khi thông báo đang chạy triển khai canary cho một phần nhỏ người dùng.',
     role: 'opener',
     examples: [
       { en: 'We are running a canary deployment to a small slice of users.', vi: 'Chúng ta đang chạy triển khai canary cho một phần nhỏ người dùng.' },
+      { en: 'We are running a canary deployment to five percent of users.', vi: 'Chúng ta đang chạy triển khai canary cho năm phần trăm người dùng.' },
+      { en: 'We are running a canary deployment, check the error rate.', vi: 'Chúng ta đang chạy triển khai canary, hãy kiểm tra tỷ lệ lỗi.' },
     ],
   },
   {
@@ -3835,9 +3940,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The staging environment is ready for the smoke test.',
     vietnamese: 'Môi trường staging đã sẵn sàng cho bài kiểm tra khói (smoke test).',
     phonetic: '/ðə ˈsteɪdʒɪŋ ɪnˈvaɪrənmənt ɪz ˈrɛdi fɔːr ðə smoʊk tɛst/',
+    usage: 'Dùng khi thông báo môi trường staging đã sẵn sàng cho bài kiểm tra khói.',
     role: 'opener',
     examples: [
       { en: 'The staging environment is ready for the smoke test.', vi: 'Môi trường staging đã sẵn sàng cho bài kiểm tra khói.' },
+      { en: 'The staging environment is ready for the smoke test now.', vi: 'Môi trường staging đã sẵn sàng cho bài kiểm tra khói ngay bây giờ.' },
+      { en: 'The staging environment is ready for the smoke test, start it.', vi: 'Môi trường staging đã sẵn sàng cho bài kiểm tra khói, hãy bắt đầu.' },
     ],
   },
   {
@@ -3848,9 +3956,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Provided the checks pass, we proceed with the rollout.',
     vietnamese: 'Nếu các kiểm tra vượt qua, chúng ta tiến hành triển khai.',
     phonetic: '/prəˈvaɪdɪd ðə tʃɛks pæs wiː prəˈsiːd wɪð ðə ˈroʊlaʊt/',
+    usage: 'Dùng khi nêu điều kiện để tiến hành triển khai: các kiểm tra phải vượt qua.',
     role: 'linker',
     examples: [
       { en: 'Provided the checks pass, we proceed with the rollout to all regions.', vi: 'Nếu các kiểm tra vượt qua, chúng ta tiến hành triển khai đến mọi khu vực.' },
+      { en: 'Provided the checks pass, we proceed with the rollout today.', vi: 'Nếu các kiểm tra vượt qua, chúng ta tiến hành triển khai hôm nay.' },
+      { en: 'Provided the checks pass, we proceed with the rollout as planned.', vi: 'Nếu các kiểm tra vượt qua, chúng ta tiến hành triển khai như kế hoạch.' },
     ],
   },
   {
@@ -3861,9 +3972,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should verify the checksum of the uploaded artifact.',
     vietnamese: 'Chúng ta nên xác minh checksum của artifact đã tải lên.',
     phonetic: '/wiː ʃʊd ˈvɛrɪfaɪ ðə ˈtʃɛksʌm ʌv ði ˌʌpˈloʊdɪd ˈɑːrtɪfækt/',
+    usage: 'Dùng khi nhắc xác minh checksum của artifact để đảm bảo file không bị hỏng.',
     role: 'linker',
     examples: [
       { en: 'We should verify the checksum of the uploaded artifact before extraction.', vi: 'Chúng ta nên xác minh checksum của artifact đã tải lên trước khi giải nén.' },
+      { en: 'We should verify the checksum of the uploaded artifact first.', vi: 'Chúng ta nên xác minh checksum của artifact đã tải lên trước.' },
+      { en: 'We should verify the checksum of the uploaded artifact to be safe.', vi: 'Chúng ta nên xác minh checksum của artifact đã tải lên để an toàn.' },
     ],
   },
   {
@@ -3874,9 +3988,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The database migration runs after the app comes up.',
     vietnamese: 'Việc di trú cơ sở dữ liệu chạy sau khi ứng dụng khởi động.',
     phonetic: '/ðə ˈdeɪtəbeɪs maɪˈɡreɪʃən rʌnz ˈæftər ði æp kʌmz ʌp/',
+    usage: 'Dùng khi giải thích thứ tự chạy di trú cơ sở dữ liệu so với khởi động ứng dụng.',
     role: 'linker',
     examples: [
       { en: 'The database migration runs after the app comes up to avoid downtime.', vi: 'Việc di trú cơ sở dữ liệu chạy sau khi ứng dụng khởi động để tránh gián đoạn.' },
+      { en: 'The database migration runs after the app comes up safely.', vi: 'Việc di trú cơ sở dữ liệu chạy sau khi ứng dụng khởi động an toàn.' },
+      { en: 'The database migration runs after the app comes up automatically.', vi: 'Việc di trú cơ sở dữ liệu chạy tự động sau khi ứng dụng khởi động.' },
     ],
   },
   {
@@ -3887,9 +4004,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'From here, we gradually shift the traffic percentage.',
     vietnamese: 'Từ đây, chúng ta dần dần chuyển tỷ lệ lưu lượng.',
     phonetic: '/frɒm hɪr wiː ˈɡrædʒuəli ʃɪft ðə ˈtræfɪk pərˈsɛntɪdʒ/',
+    usage: 'Dùng khi mô tả việc tăng dần tỷ lệ lưu lượng chuyển sang phiên bản mới.',
     role: 'linker',
     examples: [
       { en: 'From here, we gradually shift the traffic percentage to the new version.', vi: 'Từ đây, chúng ta dần dần chuyển tỷ lệ lưu lượng sang phiên bản mới.' },
+      { en: 'From here, we gradually shift the traffic percentage to fifty.', vi: 'Từ đây, chúng ta dần dần chuyển tỷ lệ lưu lượng lên năm mươi phần trăm.' },
+      { en: 'From here, we gradually shift the traffic percentage each hour.', vi: 'Từ đây, chúng ta dần dần chuyển tỷ lệ lưu lượng mỗi giờ.' },
     ],
   },
   {
@@ -3900,9 +4020,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The observability stack shows healthy metrics so far.',
     vietnamese: 'Hệ thống quan sát (observability) cho thấy các chỉ số lành mạnh cho đến nay.',
     phonetic: '/ði ɒbzɜːrvəˈbɪləti stæk ʃoʊz ˈhɛlθi ˈmɛtrɪks soʊ fɑːr/',
+    usage: 'Dùng khi báo cáo rằng hệ thống quan sát cho thấy các chỉ số tốt, chưa có bất thường.',
     role: 'filler',
     examples: [
       { en: 'The observability stack shows healthy metrics so far, no anomalies.', vi: 'Hệ thống quan sát cho thấy các chỉ số lành mạnh cho đến nay, không có bất thường.' },
+      { en: 'The observability stack shows healthy metrics so far, good signs.', vi: 'Hệ thống quan sát cho thấy các chỉ số lành mạnh cho đến nay, dấu hiệu tốt.' },
+      { en: 'The observability stack shows healthy metrics so far, keep watching.', vi: 'Hệ thống quan sát cho thấy các chỉ số lành mạnh cho đến nay, hãy tiếp tục theo dõi.' },
     ],
   },
   {
@@ -3913,9 +4036,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is worth noting the feature flag is off by default.',
     vietnamese: 'Đáng lưu ý là cờ tính năng (feature flag) mặc định tắt.',
     phonetic: '/ɪt ɪz wɜːrθ ˈnoʊtɪŋ ðə ˈfiːtʃər flæɡ ɪz ɔːf baɪ dɪˈfɔːlt/',
+    usage: 'Dùng khi nhấn mạnh rằng tính năng đang tắt mặc định qua feature flag trong bản phát hành.',
     role: 'filler',
     examples: [
       { en: 'It is worth noting the feature flag is off by default in this release.', vi: 'Đáng lưu ý là cờ tính năng mặc định tắt trong bản phát hành này.' },
+      { en: 'It is worth noting the feature flag is off by default, so no impact.', vi: 'Đáng lưu ý là cờ tính năng mặc định tắt, nên không ảnh hưởng.' },
+      { en: 'It is worth noting the feature flag is off by default in production.', vi: 'Đáng lưu ý là cờ tính năng mặc định tắt trên production.' },
     ],
   },
   {
@@ -3926,9 +4052,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We still have a few edge cases to watch out for.',
     vietnamese: 'Chúng ta vẫn còn vài trường hợp đặc biệt cần chú ý.',
     phonetic: '/wiː stɪl hæv ə fjuː ɛdʒ ˈkeɪsɪz tuː wɒtʃ aʊt fɔːr/',
+    usage: 'Dùng khi nhắc rằng vẫn còn vài trường hợp đặc biệt cần chú ý sau khi phát hành.',
     role: 'filler',
     examples: [
       { en: 'We still have a few edge cases to watch out for after the release.', vi: 'Chúng ta vẫn còn vài trường hợp đặc biệt cần chú ý sau khi phát hành.' },
+      { en: 'We still have a few edge cases to watch out for, like timeouts.', vi: 'Chúng ta vẫn còn vài trường hợp đặc biệt cần chú ý, như timeout.' },
+      { en: 'We still have a few edge cases to watch out for in the API.', vi: 'Chúng ta vẫn còn vài trường hợp đặc biệt cần chú ý trong API.' },
     ],
   },
   {
@@ -3939,9 +4068,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a slight spike in latency we are investigating.',
     vietnamese: 'Có một đợt tăng nhẹ độ trễ mà chúng ta đang điều tra.',
     phonetic: '/ðɛr ɪz ə slaɪt spaɪk ɪn ˈleɪtənsi wiː ɑːr ɪnˈvɛstɪɡeɪtɪŋ/',
+    usage: 'Dùng khi báo cáo có hiện tượng độ trễ tăng nhẹ và đang điều tra.',
     role: 'filler',
     examples: [
       { en: 'There is a slight spike in latency we are investigating right now.', vi: 'Có một đợt tăng nhẹ độ trễ mà chúng ta đang điều tra ngay lúc này.' },
+      { en: 'There is a slight spike in latency we are investigating now.', vi: 'Có một đợt tăng nhẹ độ trễ mà chúng ta đang điều tra ngay bây giờ.' },
+      { en: 'There is a slight spike in latency, check the database.', vi: 'Có một đợt tăng nhẹ độ trễ, hãy kiểm tra cơ sở dữ liệu.' },
     ],
   },
   {
@@ -3952,9 +4084,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The rollout is complete and the service is stable.',
     vietnamese: 'Việc triển khai đã hoàn tất và dịch vụ ổn định.',
     phonetic: '/ðə ˈroʊlaʊt ɪz kəmˈpliːt ənd ðə ˈsɜːrvɪs ɪz ˈsteɪbəl/',
+    usage: 'Dùng để thông báo triển khai đã hoàn tất và dịch vụ đang ổn định.',
     role: 'closer',
     examples: [
       { en: 'The rollout is complete and the service is stable across all regions.', vi: 'Việc triển khai đã hoàn tất và dịch vụ ổn định ở mọi khu vực.' },
+      { en: 'The rollout is complete and the service is stable now.', vi: 'Việc triển khai đã hoàn tất và dịch vụ đang ổn định.' },
+      { en: 'The rollout is complete and the service is stable, well done.', vi: 'Việc triển khai đã hoàn tất và dịch vụ ổn định, làm tốt lắm.' },
     ],
   },
   {
@@ -3965,9 +4100,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will keep the old version running as a fallback.',
     vietnamese: 'Chúng ta sẽ giữ phiên bản cũ chạy như một phương án dự phòng.',
     phonetic: '/wiː wɪl kiːp ði oʊld ˈvɜːrʒən ˈrʌnɪŋ æz ə ˈfɔːlbæk/',
+    usage: 'Dùng khi thông báo sẽ giữ phiên bản cũ chạy dự phòng trong một thời gian.',
     role: 'closer',
     examples: [
       { en: 'We will keep the old version running as a fallback for a few days.', vi: 'Chúng ta sẽ giữ phiên bản cũ chạy như một phương án dự phòng vài ngày.' },
+      { en: 'We will keep the old version running as a fallback for a week.', vi: 'Chúng ta sẽ giữ phiên bản cũ chạy như một phương án dự phòng trong một tuần.' },
+      { en: 'We will keep the old version running as a fallback, just in case.', vi: 'Chúng ta sẽ giữ phiên bản cũ chạy như một phương án dự phòng, phòng trường hợp.' },
     ],
   },
   {
@@ -3978,9 +4116,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us wrap up the deployment and document the steps.',
     vietnamese: 'Hãy kết thúc việc triển khai và ghi lại các bước.',
     phonetic: '/lɛt ʌs ræp ʌp ðə dɪˈplɔɪmənt ənd ˈdɒkjʊmɛnt ðə stɛps/',
+    usage: 'Dùng khi kết thúc triển khai và đề nghị ghi lại các bước cho lần sau.',
     role: 'closer',
     examples: [
       { en: 'Let us wrap up the deployment and document the steps for next time.', vi: 'Hãy kết thúc việc triển khai và ghi lại các bước cho lần sau.' },
+      { en: 'Let us wrap up the deployment and document the steps now.', vi: 'Hãy kết thúc việc triển khai và ghi lại các bước ngay bây giờ.' },
+      { en: 'Let us wrap up the deployment and document the steps for the team.', vi: 'Hãy kết thúc việc triển khai và ghi lại các bước cho cả nhóm.' },
     ],
   },
   {
@@ -3991,9 +4132,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will send out the release notes shortly.',
     vietnamese: 'Chúng ta sẽ gửi ghi chú phát hành (release notes) ngay sau đó.',
     phonetic: '/wiː wɪl sɛnd aʊt ðə rɪˈliːs noʊts ˈʃɔːrtli/',
+    usage: 'Dùng khi thông báo sẽ gửi ghi chú phát hành sau khi xác nhận dữ liệu.',
     role: 'closer',
     examples: [
       { en: 'We will send out the release notes shortly once the data is confirmed.', vi: 'Chúng ta sẽ gửi ghi chú phát hành ngay sau khi dữ liệu được xác nhận.' },
+      { en: 'We will send out the release notes shortly after the check.', vi: 'Chúng ta sẽ gửi ghi chú phát hành ngay sau khi kiểm tra.' },
+      { en: 'We will send out the release notes shortly, stay tuned.', vi: 'Chúng ta sẽ gửi ghi chú phát hành ngay sau đó, hãy theo dõi.' },
     ],
   },
   {
@@ -4004,9 +4148,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are commencing the scheduled deployment of the release candidate.',
     vietnamese: 'Chúng ta đang bắt đầu triển khai theo lịch trình bản ứng viên phát hành.',
     phonetic: '/wiː ɑːr kəˈmɛnsɪŋ ðə ˈskɛdʒuːld dɪˈplɔɪmənt ʌv ðə rɪˈliːs ˌkændɪdət/',
+    usage: 'Dùng khi chính thức bắt đầu triển khai bản ứng viên phát hành theo lịch trình.',
     role: 'opener',
     examples: [
       { en: 'We are commencing the scheduled deployment of the release candidate to production.', vi: 'Chúng ta đang bắt đầu triển khai theo lịch trình bản ứng viên phát hành lên production.' },
+      { en: 'We are commencing the scheduled deployment of the release candidate at midnight.', vi: 'Chúng ta đang bắt đầu triển khai theo lịch trình bản ứng viên phát hành lúc nửa đêm.' },
+      { en: 'We are commencing the scheduled deployment of the release candidate as agreed.', vi: 'Chúng ta đang bắt đầu triển khai theo lịch trình bản ứng viên phát hành như đã thống nhất.' },
     ],
   },
   {
@@ -4017,9 +4164,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The immutable artifact has been validated across all environments.',
     vietnamese: 'Artifact bất biến đã được xác thực trên mọi môi trường.',
     phonetic: '/ði ɪˈmjuːtəbəl ˈɑːrtɪfækt hæz biːn ˈvælɪdeɪtɪd əˈkrɒs ɔːl ɪnˈvaɪrənmənts/',
+    usage: 'Dùng khi khẳng định artifact đã được xác thực trên mọi môi trường nên có thể tin cậy.',
     role: 'opener',
     examples: [
       { en: 'The immutable artifact has been validated across all environments, so we can trust it.', vi: 'Artifact bất biến đã được xác thực trên mọi môi trường, nên chúng ta có thể tin tưởng.' },
+      { en: 'The immutable artifact has been validated across all environments, proceed.', vi: 'Artifact bất biến đã được xác thực trên mọi môi trường, hãy tiến hành.' },
+      { en: 'The immutable artifact has been validated across all environments, no issues.', vi: 'Artifact bất biến đã được xác thực trên mọi môi trường, không có vấn đề.' },
     ],
   },
   {
@@ -4030,9 +4180,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are executing a blue-green cutover with zero-downtime intent.',
     vietnamese: 'Chúng ta đang thực hiện chuyển đổi blue-green với mục tiêu không gián đoạn.',
     phonetic: '/wiː ɑːr ˈɛksɪkjuːtɪŋ ə bluː ɡriːn ˈkʌtoʊvər wɪð ˌzɪəroʊˈdaʊntaɪm ɪnˈtɛnt/',
+    usage: 'Dùng khi thông báo đang thực hiện chuyển đổi blue-green với mục tiêu không gián đoạn.',
     role: 'opener',
     examples: [
       { en: 'We are executing a blue-green cutover with zero-downtime intent tonight.', vi: 'Chúng ta đang thực hiện chuyển đổi blue-green với mục tiêu không gián đoạn tối nay.' },
+      { en: 'We are executing a blue-green cutover with zero-downtime intent tonight.', vi: 'Chúng ta đang thực hiện chuyển đổi blue-green với mục tiêu không gián đoạn tối nay.' },
+      { en: 'We are executing a blue-green cutover, switch the DNS after.', vi: 'Chúng ta đang thực hiện chuyển đổi blue-green, chuyển DNS sau đó.' },
     ],
   },
   {
@@ -4043,9 +4196,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The infrastructure as code has been reconciled with the desired state.',
     vietnamese: 'Hạ tầng dưới dạng mã (IaC) đã được đồng bộ với trạng thái mong muốn.',
     phonetic: '/ði ˈɪnfrəstrʌktʃər æz koʊd hæz biːn ˈrɛkənsaɪld wɪð ðə dɪˈzaɪərd steɪt/',
+    usage: 'Dùng khi thông báo hạ tầng dưới dạng mã đã khớp với trạng thái mong muốn trước khi chuyển đổi.',
     role: 'opener',
     examples: [
       { en: 'The infrastructure as code has been reconciled with the desired state before the cutover.', vi: 'Hạ tầng dưới dạng mã đã được đồng bộ với trạng thái mong muốn trước khi chuyển đổi.' },
+      { en: 'The infrastructure as code has been reconciled with the desired state, ready.', vi: 'Hạ tầng dưới dạng mã đã được đồng bộ với trạng thái mong muốn, sẵn sàng.' },
+      { en: 'The infrastructure as code has been reconciled with the desired state today.', vi: 'Hạ tầng dưới dạng mã đã được đồng bộ với trạng thái mong muốn hôm nay.' },
     ],
   },
   {
@@ -4056,9 +4212,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Having satisfied the release criteria, we now proceed to the next stage.',
     vietnamese: 'Sau khi đáp ứng các tiêu chí phát hành, chúng ta giờ tiến hành giai đoạn tiếp theo.',
     phonetic: '/ˈhævɪŋ ˈsætɪsfaɪd ðə rɪˈliːs kraɪˈtɪəriə wiː naʊ prəˈsiːd tuː ðə nɛkst steɪdʒ/',
+    usage: 'Dùng khi nêu rõ sau khi đáp ứng tiêu chí phát hành thì chuyển sang giai đoạn kế tiếp.',
     role: 'linker',
     examples: [
       { en: 'Having satisfied the release criteria, we now proceed to the next stage of the rollout.', vi: 'Sau khi đáp ứng các tiêu chí phát hành, chúng ta giờ tiến hành giai đoạn tiếp theo của việc triển khai.' },
+      { en: 'Having satisfied the release criteria, we now proceed to the final stage.', vi: 'Sau khi đáp ứng các tiêu chí phát hành, chúng ta giờ tiến hành giai đoạn cuối.' },
+      { en: 'Having satisfied the release criteria, we now proceed to the monitoring stage.', vi: 'Sau khi đáp ứng các tiêu chí phát hành, chúng ta giờ tiến hành giai đoạn giám sát.' },
     ],
   },
   {
@@ -4069,9 +4228,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Should the smoke tests fail, we revert to the previous revision.',
     vietnamese: 'Nếu các bài kiểm tra khói thất bại, chúng ta quay lại bản sửa đổi trước đó.',
     phonetic: '/ʃʊd ðə smoʊk tɛsts feɪl wiː rɪˈvɜːrt tuː ðə ˈpriːviəs rɪˈvɪʒən/',
+    usage: 'Dùng khi nêu quy tắc: nếu kiểm tra khói thất bại thì quay lại bản trước ngay.',
     role: 'linker',
     examples: [
       { en: 'Should the smoke tests fail, we revert to the previous revision immediately.', vi: 'Nếu các bài kiểm tra khói thất bại, chúng ta quay lại bản sửa đổi trước đó ngay lập tức.' },
+      { en: 'Should the smoke tests fail, we revert to the previous revision at once.', vi: 'Nếu các bài kiểm tra khói thất bại, chúng ta quay lại bản sửa đổi trước đó ngay lập tức.' },
+      { en: 'Should the smoke tests fail, we revert to the previous revision and analyze.', vi: 'Nếu các bài kiểm tra khói thất bại, chúng ta quay lại bản sửa đổi trước đó và phân tích.' },
     ],
   },
   {
@@ -4082,9 +4244,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The migration is idempotent and safe to re-run.',
     vietnamese: 'Quá trình di trú là idempotent và an toàn để chạy lại.',
     phonetic: '/ðə maɪˈɡreɪʃən ɪz ˌaɪdɛmˈpoʊtənt ənd seɪf tuː riː rʌn/',
+    usage: 'Dùng khi khẳng định quá trình di trú an toàn để chạy lại nhiều lần.',
     role: 'linker',
     examples: [
       { en: 'The migration is idempotent and safe to re-run if interrupted.', vi: 'Quá trình di trú là idempotent và an toàn để chạy lại nếu bị gián đoạn.' },
+      { en: 'The migration is idempotent and safe to re-run at any time.', vi: 'Quá trình di trú là idempotent và an toàn để chạy lại bất cứ lúc nào.' },
+      { en: 'The migration is idempotent and safe to re-run after a failure.', vi: 'Quá trình di trú là idempotent và an toàn để chạy lại sau lỗi.' },
     ],
   },
   {
@@ -4095,9 +4260,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subsequently, we adjust the traffic split to favor the new instance.',
     vietnamese: 'Sau đó, chúng ta điều chỉnh việc chia lưu lượng ưu tiên phiên bản mới.',
     phonetic: '/ˈsʌbsɪkwəntli wiː əˈdʒʌst ðə ˈtræfɪk splɪt tuː ˈfeɪvər ðə nuː ˈɪnstəns/',
+    usage: 'Dùng khi mô tả việc điều chỉnh tỷ lệ lưu lượng ưu tiên phiên bản mới sau đó.',
     role: 'linker',
     examples: [
       { en: 'Subsequently, we adjust the traffic split to favor the new instance gradually.', vi: 'Sau đó, chúng ta điều chỉnh việc chia lưu lượng ưu tiên phiên bản mới một cách dần dần.' },
+      { en: 'Subsequently, we adjust the traffic split to favor the new instance.', vi: 'Sau đó, chúng ta điều chỉnh việc chia lưu lượng ưu tiên phiên bản mới.' },
+      { en: 'Subsequently, we adjust the traffic split in small increments.', vi: 'Sau đó, chúng ta điều chỉnh việc chia lưu lượng theo từng bước nhỏ.' },
     ],
   },
   {
@@ -4108,9 +4276,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It goes without saying that the backup must be current.',
     vietnamese: 'Hiển nhiên là bản sao lưu phải được cập nhật.',
     phonetic: '/ɪt ɡoʊz wɪˈðaʊt ˈseɪɪŋ ðæt ðə ˈbækʌp mʌst biː ˈkɜːrənt/',
+    usage: 'Dùng khi nhấn mạnh điều hiển nhiên mà mọi người phải tuân thủ, ở đây là bản sao lưu phải mới.',
     role: 'filler',
     examples: [
       { en: 'It goes without saying that the backup must be current before any release.', vi: 'Hiển nhiên là bản sao lưu phải được cập nhật trước bất kỳ bản phát hành nào.' },
+      { en: 'It goes without saying that the backup must be current before deploying.', vi: 'Hiển nhiên là bản sao lưu phải được cập nhật trước khi triển khai.' },
+      { en: 'It goes without saying that the backup must be current, it is the rule.', vi: 'Hiển nhiên là bản sao lưu phải được cập nhật, đó là quy tắc.' },
     ],
   },
   {
@@ -4121,9 +4292,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The telemetry suggests the new build is performing within expectations.',
     vietnamese: 'Dữ liệu đo từ xa cho thấy bản build mới đang hoạt động trong kỳ vọng.',
     phonetic: '/ðə tɪˈlɛmətri səˈdʒɛsts ðə nuː bɪld ɪz pərˈfɔːrmɪŋ wɪˈðɪn ˌɛkspɛkˈteɪʃənz/',
+    usage: 'Dùng khi báo cáo rằng dữ liệu đo từ xa cho thấy bản build mới hoạt động trong kỳ vọng.',
     role: 'filler',
     examples: [
       { en: 'The telemetry suggests the new build is performing within expectations so far.', vi: 'Dữ liệu đo từ xa cho thấy bản build mới đang hoạt động trong kỳ vọng cho đến nay.' },
+      { en: 'The telemetry suggests the new build is performing within expectations.', vi: 'Dữ liệu đo từ xa cho thấy bản build mới đang hoạt động trong kỳ vọng.' },
+      { en: 'The telemetry suggests the new build is performing well so far.', vi: 'Dữ liệu đo từ xa cho thấy bản build mới đang hoạt động tốt cho đến nay.' },
     ],
   },
   {
@@ -4134,9 +4308,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We cannot discount the possibility of a delayed propagation.',
     vietnamese: 'Chúng ta không thể loại trừ khả năng lan truyền bị trễ.',
     phonetic: '/wiː ˈkænət ˈdɪskaʊnt ðə ˌpɒsəˈbɪləti ʌv ə dɪˈleɪd ˌprɒpəˈɡeɪʃən/',
+    usage: 'Dùng khi cảnh báo rằng không thể loại trừ khả năng lan truyền dữ liệu bị trễ.',
     role: 'filler',
     examples: [
       { en: 'We cannot discount the possibility of a delayed propagation across edge nodes.', vi: 'Chúng ta không thể loại trừ khả năng lan truyền bị trễ qua các node biên.' },
+      { en: 'We cannot discount the possibility of a delayed propagation, wait a bit.', vi: 'Chúng ta không thể loại trừ khả năng lan truyền bị trễ, hãy chờ một chút.' },
+      { en: 'We cannot discount the possibility of a delayed propagation across regions.', vi: 'Chúng ta không thể loại trừ khả năng lan truyền bị trễ giữa các vùng.' },
     ],
   },
   {
@@ -4147,9 +4324,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'One must be mindful of rate limits during the transition.',
     vietnamese: 'Người ta phải lưu ý đến giới hạn tốc độ trong quá trình chuyển đổi.',
     phonetic: '/wʌn mʌst biː ˈmaɪndfəl ʌv reɪt ˈlɪmɪts ˈdjʊərɪŋ ðə trænˈzɪʃən/',
+    usage: 'Dùng khi nhắc rằng cần lưu ý giới hạn tốc độ trong quá trình chuyển đổi.',
     role: 'filler',
     examples: [
       { en: 'One must be mindful of rate limits during the transition to the new API.', vi: 'Người ta phải lưu ý đến giới hạn tốc độ trong quá trình chuyển đổi sang API mới.' },
+      { en: 'One must be mindful of rate limits during the transition to the new system.', vi: 'Người ta phải lưu ý đến giới hạn tốc độ trong quá trình chuyển đổi sang hệ thống mới.' },
+      { en: 'One must be mindful of rate limits during the transition phase.', vi: 'Người ta phải lưu ý đến giới hạn tốc độ trong giai đoạn chuyển đổi.' },
     ],
   },
   {
@@ -4160,9 +4340,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The deployment has concluded with all acceptance checks passed.',
     vietnamese: 'Việc triển khai đã kết thúc với mọi kiểm tra chấp nhận vượt qua.',
     phonetic: '/ðə dɪˈplɔɪmənt hæz kənˈkluːdɪd wɪð ɔːl əkˈsɛptəns tʃɛks pæst/',
+    usage: 'Dùng để tuyên bố triển khai đã kết thúc với mọi kiểm tra chấp nhận vượt qua.',
     role: 'closer',
     examples: [
       { en: 'The deployment has concluded with all acceptance checks passed successfully.', vi: 'Việc triển khai đã kết thúc với mọi kiểm tra chấp nhận vượt qua thành công.' },
+      { en: 'The deployment has concluded with all acceptance checks passed, done.', vi: 'Việc triển khai đã kết thúc với mọi kiểm tra chấp nhận vượt qua, xong.' },
+      { en: 'The deployment has concluded with all acceptance checks passed today.', vi: 'Việc triển khai đã kết thúc với mọi kiểm tra chấp nhận vượt qua hôm nay.' },
     ],
   },
   {
@@ -4173,9 +4356,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are leaving the previous version intact for the observation period.',
     vietnamese: 'Chúng ta để nguyên phiên bản trước đó trong suốt thời gian quan sát.',
     phonetic: '/wiː ɑːr ˈliːvɪŋ ðə ˈpriːviəs ˈvɜːrʒən ɪnˈtækt fɔːr ði ˌɒbzɜːrˈveɪʃən ˈpɪəriəd/',
+    usage: 'Dùng khi thông báo giữ nguyên phiên bản trước trong thời gian quan sát.',
     role: 'closer',
     examples: [
       { en: 'We are leaving the previous version intact for the observation period of 48 hours.', vi: 'Chúng ta để nguyên phiên bản trước đó trong suốt thời gian quan sát 48 giờ.' },
+      { en: 'We are leaving the previous version intact for the observation period.', vi: 'Chúng ta để nguyên phiên bản trước đó trong suốt thời gian quan sát.' },
+      { en: 'We are leaving the previous version intact until we are confident.', vi: 'Chúng ta để nguyên phiên bản trước đó cho đến khi chắc chắn.' },
     ],
   },
   {
@@ -4186,9 +4372,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us archive the runbook and update the runbook accordingly.',
     vietnamese: 'Hãy lưu trữ runbook và cập nhật runbook cho phù hợp.',
     phonetic: '/lɛt ʌs ˈɑːrkaɪv ðə ˈrʌnbʊk ənd ʌpˈdeɪt ðə ˈrʌnbʊk əˈkɔːrdɪŋli/',
+    usage: 'Dùng khi đề nghị lưu trữ runbook và cập nhật tài liệu cho các lần phát hành sau.',
     role: 'closer',
     examples: [
       { en: 'Let us archive the runbook and update the runbook accordingly for future releases.', vi: 'Hãy lưu trữ runbook và cập nhật runbook cho phù hợp với các bản phát hành tương lai.' },
+      { en: 'Let us archive the runbook and update it for future releases.', vi: 'Hãy lưu trữ runbook và cập nhật nó cho các lần phát hành sau.' },
+      { en: 'Let us archive the runbook and update it with the lessons learned.', vi: 'Hãy lưu trữ runbook và cập nhật nó với những bài học kinh nghiệm.' },
     ],
   },
   {
@@ -4199,9 +4388,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will convene a post-mortem if the anomaly persists.',
     vietnamese: 'Chúng ta sẽ tổ chức họp rút kinh nghiệm nếu sự bất thường vẫn tiếp diễn.',
     phonetic: '/wiː wɪl kənˈviːn ə ˈpoʊstˈmɔːrtəm ɪf ði əˈnɒməli pərˈsɪsts/',
+    usage: 'Dùng khi nêu kế hoạch tổ chức họp rút kinh nghiệm nếu sự bất thường kéo dài.',
     role: 'closer',
     examples: [
       { en: 'We will convene a post-mortem if the anomaly persists beyond the window.', vi: 'Chúng ta sẽ tổ chức họp rút kinh nghiệm nếu sự bất thường vẫn tiếp diễn sau cửa sổ thời gian.' },
+      { en: 'We will convene a post-mortem if the anomaly persists beyond today.', vi: 'Chúng ta sẽ tổ chức họp rút kinh nghiệm nếu sự bất thường kéo dài quá hôm nay.' },
+      { en: 'We will convene a post-mortem if the anomaly persists, prepare notes.', vi: 'Chúng ta sẽ tổ chức họp rút kinh nghiệm nếu sự bất thường vẫn tiếp diễn, hãy chuẩn bị ghi chú.' },
     ],
   },
 
