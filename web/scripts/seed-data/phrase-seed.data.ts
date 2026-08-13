@@ -9346,9 +9346,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'our bottom line is',
     vietnamese: 'giới hạn cuối cùng của chúng tôi là',
     phonetic: '/aʊə ˈbɒtəm laɪn ɪz/',
+    usage: 'Dùng khi nêu rõ giới hạn cuối cùng mà bên mình không thể vượt qua trong đàm phán, ví dụ biên lợi nhuận tối thiểu.',
     role: 'opener',
     examples: [
       { en: 'Our bottom line is 20% margin on this contract.', vi: 'Giới hạn cuối của chúng tôi là biên 20% trên hợp đồng này.' },
+      { en: 'Our bottom line is a 15 percent margin on every order.', vi: 'Giới hạn cuối cùng của chúng tôi là biên lợi nhuận 15 phần trăm cho mỗi đơn hàng.' },
+      { en: 'We cannot go below that price, it is our bottom line.', vi: 'Chúng tôi không thể hạ xuống dưới mức giá đó, đó là giới hạn cuối cùng của chúng tôi.' },
     ],
   },
   {
@@ -9359,9 +9362,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on a tight budget',
     vietnamese: 'với ngân sách eo hẹp',
     phonetic: '/ɒn ə taɪt ˈbʌdʒɪt/',
+    usage: 'Dùng khi giải thích rằng ngân sách của bên mình có hạn, cần đối tác thấu hiểu khi thương lượng giá.',
     role: 'filler',
     examples: [
       { en: 'We are on a tight budget this quarter.', vi: 'Chúng tôi đang với ngân sách eo hẹp trong quý này.' },
+      { en: 'We are on a tight budget, so every dollar matters.', vi: 'Chúng tôi đang trong ngân sách eo hẹp, nên từng đồng đều quan trọng.' },
+      { en: 'Since we are on a tight budget, we ask for a discount.', vi: 'Vì chúng tôi đang trong ngân sách eo hẹp, chúng tôi xin được giảm giá.' },
     ],
   },
   {
@@ -9372,9 +9378,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to meet us halfway',
     vietnamese: 'nhân nhượng nửa chừng',
     phonetic: '/tə miːt ʌs hɑːfˈweɪ/',
+    usage: 'Dùng khi đề nghị đối tác nhượng bộ một phần để hai bên gặp nhau ở điểm giữa, giúp chốt thương vụ.',
     role: 'linker',
     examples: [
       { en: 'If you can meet us halfway on the timeline, we can close.', vi: 'Nếu bạn nhân nhượng nửa chừng về timeline, ta có thể chốt.' },
+      { en: 'If you can meet us halfway on the price, we can sign today.', vi: 'Nếu bạn có thể nhân nhượng nửa chừng về giá, chúng ta có thể ký hôm nay.' },
+      { en: 'Please meet us halfway on the delivery date.', vi: 'Xin hãy nhân nhượng nửa chừng về ngày giao hàng.' },
     ],
   },
   {
@@ -9385,9 +9394,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to sweeten the deal',
     vietnamese: 'làm cho thương vụ hấp dẫn hơn',
     phonetic: '/tə ˈswiːtən ðə diːl/',
+    usage: 'Dùng khi đề xuất thêm một lợi ích phụ để làm cho thương vụ trở nên hấp dẫn hơn với đối tác.',
     role: 'closer',
     examples: [
       { en: 'Adding a free year of support will sweeten the deal.', vi: 'Thêm một năm hỗ trợ miễn phí sẽ làm cho thương vụ hấp dẫn hơn.' },
+      { en: 'A longer warranty will sweeten the deal for the client.', vi: 'Bảo hành dài hơn sẽ làm cho thương vụ hấp dẫn hơn với khách hàng.' },
+      { en: 'We can add free shipping to sweeten the deal.', vi: 'Chúng tôi có thể thêm miễn phí vận chuyển để làm cho thương vụ hấp dẫn hơn.' },
     ],
   },
   {
@@ -9398,9 +9410,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to come to an agreement',
     vietnamese: 'đi đến thỏa thuận',
     phonetic: '/tə kʌm tə ən əˈɡriːmənt/',
+    usage: 'Dùng khi hai bên đã gần đạt được sự thống nhất và muốn chốt lại thỏa thuận cuối cùng.',
     role: 'closer',
     examples: [
       { en: 'I think we are ready to come to an agreement.', vi: 'Tôi nghĩ chúng ta đã sẵn sàng đi đến thỏa thuận.' },
+      { en: 'We believe we are ready to come to an agreement today.', vi: 'Chúng tôi tin rằng chúng ta đã sẵn sàng đi đến thỏa thuận hôm nay.' },
+      { en: 'Let us work together to come to an agreement this week.', vi: 'Chúng ta hãy cùng nhau đi đến thỏa thuận trong tuần này.' },
     ],
   },
   {
@@ -9411,9 +9426,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to set our terms',
     vietnamese: 'đặt điều kiện của chúng tôi',
     phonetic: '/tə set aʊə tɜːmz/',
+    usage: 'Dùng khi muốn nêu rõ điều kiện của bên mình trước khi thảo luận về giá cả hoặc chi tiết.',
     role: 'opener',
     examples: [
       { en: 'Before we talk numbers, let us set our terms clearly.', vi: 'Trước khi bàn giá, hãy đặt điều kiện của chúng tôi cho rõ.' },
+      { en: 'Let us set our terms before we discuss the price.', vi: 'Chúng ta hãy đặt điều kiện của mình trước khi bàn về giá.' },
+      { en: 'We need to set our terms clearly to avoid confusion.', vi: 'Chúng tôi cần đặt điều kiện của mình một cách rõ ràng để tránh nhầm lẫn.' },
     ],
   },
   {
@@ -9424,9 +9442,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all things considered',
     vietnamese: 'cân nhắc mọi thứ',
     phonetic: '/ɔːl θɪŋz kənˈsɪdəd/',
+    usage: 'Dùng khi đưa ra nhận xét tổng kết sau khi đã cân nhắc tất cả các yếu tố của thương vụ.',
     role: 'filler',
     examples: [
       { en: 'All things considered, the offer is quite reasonable.', vi: 'Cân nhắc mọi thứ, đề nghị này khá hợp lý.' },
+      { en: 'All things considered, the proposal is fair for both sides.', vi: 'Cân nhắc mọi thứ, đề xuất là công bằng cho cả hai bên.' },
+      { en: 'All things considered, we should accept the offer.', vi: 'Cân nhắc mọi thứ, chúng ta nên chấp nhận đề nghị.' },
     ],
   },
 
@@ -15790,9 +15811,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'the price is too high',
     vietnamese: 'giá hơi cao',
     phonetic: '/ðə praɪs ɪz tuː haɪ/',
+    usage: 'Dùng khi bày tỏ rằng mức giá đưa ra vượt quá khả năng chi trả của bên mình, mở đầu cho việc thương lượng.',
     role: 'opener',
     examples: [
       { en: 'For us, the price is too high right now.', vi: 'Với chúng tôi, giá hơi cao lúc này.' },
+      { en: 'The price is too high for our current budget.', vi: 'Giá hơi cao so với ngân sách hiện tại của chúng tôi.' },
+      { en: 'I am afraid the price is too high right now.', vi: 'Tôi e rằng giá hơi cao vào lúc này.' },
     ],
   },
   {
@@ -15803,9 +15827,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'can we talk about',
     vietnamese: 'chúng ta bàn về',
     phonetic: '/kæn wiː tɔːk əbaʊt/',
+    usage: 'Dùng khi muốn chuyển hướng cuộc đàm phán sang một chủ đề cụ thể cần thảo luận.',
     role: 'linker',
     examples: [
       { en: 'Can we talk about the payment terms?', vi: 'Chúng ta bàn về điều khoản thanh toán được không?' },
+      { en: 'Can we talk about the delivery time?', vi: 'Chúng ta bàn về thời gian giao hàng được không?' },
+      { en: 'Can we talk about the discount for a bigger order?', vi: 'Chúng ta bàn về chiết khấu cho đơn hàng lớn hơn được không?' },
     ],
   },
   {
@@ -15816,9 +15843,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'maybe',
     vietnamese: 'có lẽ',
     phonetic: '/ˈmeɪbi/',
+    usage: 'Dùng khi đưa ra một gợi ý mềm dẻo, chưa chắc chắn, để thăm dò phản ứng của đối tác.',
     role: 'filler',
     examples: [
       { en: 'Maybe we can start with a smaller order.', vi: 'Có lẽ chúng ta có thể bắt đầu với đơn hàng nhỏ hơn.' },
+      { en: 'Maybe we can reduce the quantity to lower the cost.', vi: 'Có lẽ chúng ta có thể giảm số lượng để hạ chi phí.' },
+      { en: 'Maybe we should wait until next month to decide.', vi: 'Có lẽ chúng ta nên chờ đến tháng sau để quyết định.' },
     ],
   },
   {
@@ -15829,9 +15859,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: "it's a deal",
     vietnamese: 'chốt nhé',
     phonetic: '/ɪts ə diːl/',
+    usage: 'Dùng khi hai bên đã đồng ý với nhau và muốn xác nhận chốt thương vụ.',
     role: 'closer',
     examples: [
       { en: 'OK, it is a deal — we will sign tomorrow.', vi: 'Được, chốt nhé — chúng ta sẽ ký ngày mai.' },
+      { en: 'OK, it is a deal, we will prepare the contract.', vi: 'OK, chốt nhé, chúng tôi sẽ chuẩn bị hợp đồng.' },
+      { en: 'It is a deal if you include the installation.', vi: 'Chốt nhé nếu bạn bao gồm cả phần lắp đặt.' },
     ],
   },
   {
@@ -15842,9 +15875,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to make an offer',
     vietnamese: 'đưa ra đề nghị',
     phonetic: '/tə meɪk ən ˈɒfə/',
+    usage: 'Dùng khi chủ động đưa ra một đề nghị cụ thể để mời đối tác cân nhắc.',
     role: 'opener',
     examples: [
       { en: 'Let me make an offer you can consider.', vi: 'Để tôi đưa ra một đề nghị để bạn cân nhắc.' },
+      { en: 'Let me make an offer that works for both of us.', vi: 'Để tôi đưa ra một đề nghị có lợi cho cả hai chúng ta.' },
+      { en: 'We are ready to make an offer for the whole package.', vi: 'Chúng tôi sẵn sàng đưa ra một đề nghị cho trọn gói.' },
     ],
   },
   {
@@ -15855,9 +15891,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to go down to',
     vietnamese: 'giảm xuống còn',
     phonetic: '/tə ɡəʊ daʊn tə/',
+    usage: 'Dùng khi đồng ý giảm giá xuống một mức cụ thể, thường kèm một điều kiện ràng buộc.',
     role: 'linker',
     examples: [
       { en: 'We can go down to 12% if you commit to two years.', vi: 'Chúng tôi có thể giảm xuống còn 12% nếu bạn cam kết hai năm.' },
+      { en: 'We can go down to 10 percent if you order more.', vi: 'Chúng tôi có thể giảm xuống còn 10 phần trăm nếu bạn đặt hàng nhiều hơn.' },
+      { en: 'The price can go down to fifty dollars per unit.', vi: 'Giá có thể giảm xuống còn năm mươi đô la mỗi đơn vị.' },
     ],
   },
   {
@@ -15868,9 +15907,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'a bit of a stretch',
     vietnamese: 'hơi quá sức',
     phonetic: '/ə bɪt əv ə stretʃ/',
+    usage: 'Dùng khi cho rằng một yêu cầu hoặc đề nghị vượt quá khả năng thực hiện của bên mình.',
     role: 'filler',
     examples: [
       { en: 'A 30% discount is a bit of a stretch for us.', vi: 'Giảm 30% hơi quá sức với chúng tôi.' },
+      { en: 'Meeting that deadline is a bit of a stretch for us.', vi: 'Đáp ứng thời hạn đó hơi quá sức đối với chúng tôi.' },
+      { en: 'A 50 percent discount is a bit of a stretch.', vi: 'Giảm giá 50 phần trăm là hơi quá sức.' },
     ],
   },
   {
@@ -15881,9 +15923,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to shake on it',
     vietnamese: 'bắt tay chốt',
     phonetic: '/tə ʃeɪk ɒn ɪt/',
+    usage: 'Dùng khi hai bên đã thống nhất xong và muốn chốt thỏa thuận một cách thân thiện, tượng trưng bằng cái bắt tay.',
     role: 'closer',
     examples: [
       { en: 'If that works, let us shake on it.', vi: 'Nếu điều đó ổn, chúng ta bắt tay chốt nhé.' },
+      { en: 'If the terms are clear, let us shake on it.', vi: 'Nếu các điều khoản đã rõ, chúng ta hãy bắt tay chốt.' },
+      { en: 'We agreed on everything, so let us shake on it.', vi: 'Chúng ta đã đồng ý mọi thứ, vậy hãy bắt tay chốt.' },
     ],
   },
   {
@@ -15894,9 +15939,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to lay our cards on the table',
     vietnamese: 'chơi bài ngửa',
     phonetic: '/tə leɪ aʊə kɑːdz ɒn ðə ˈteɪbəl/',
+    usage: 'Dùng khi muốn mở đầu đàm phán một cách thẳng thắn, công khai toàn bộ quan điểm và giới hạn của mình.',
     role: 'opener',
     examples: [
       { en: 'Let us lay our cards on the table before we negotiate.', vi: 'Chúng ta hãy chơi bài ngửa trước khi đàm phán.' },
+      { en: 'Let us lay our cards on the table about our budget limits.', vi: 'Chúng ta hãy chơi bài ngửa về giới hạn ngân sách của mình.' },
+      { en: 'I will lay my cards on the table: we need a quick decision.', vi: 'Tôi sẽ chơi bài ngửa: chúng tôi cần một quyết định nhanh.' },
     ],
   },
   {
@@ -15907,9 +15955,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to throw in',
     vietnamese: 'thêm vào',
     phonetic: '/tə θrəʊ ɪn/',
+    usage: 'Dùng khi đề xuất thêm một lợi ích hoặc dịch vụ phụ vào thương vụ như một điểm nhấn.',
     role: 'linker',
     examples: [
       { en: 'We can throw in free onboarding for the first year.', vi: 'Chúng tôi có thể thêm vào khóa onboarding miễn phí năm đầu.' },
+      { en: 'We can throw in two extra training sessions.', vi: 'Chúng tôi có thể thêm vào hai buổi đào tạo miễn phí.' },
+      { en: 'If you sign today, we will throw in the premium package.', vi: 'Nếu bạn ký hôm nay, chúng tôi sẽ thêm vào gói cao cấp.' },
     ],
   },
   {
@@ -15920,9 +15971,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'strictly speaking',
     vietnamese: 'nói đúng ra',
     phonetic: '/ˈstrɪktli ˈspiːkɪŋ/',
+    usage: 'Dùng khi muốn đính chính hoặc làm rõ một điểm một cách chính xác, đúng nghĩa đen của quy định.',
     role: 'filler',
     examples: [
       { en: 'Strictly speaking, the warranty does not cover this.', vi: 'Nói đúng ra, bảo hành không bao gồm trường hợp này.' },
+      { en: 'Strictly speaking, the offer expired last Friday.', vi: 'Nói đúng ra, đề nghị đã hết hạn vào thứ Sáu tuần trước.' },
+      { en: 'Strictly speaking, this cost is not included in the price.', vi: 'Nói đúng ra, chi phí này không nằm trong mức giá.' },
     ],
   },
   {
@@ -15933,9 +15987,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to reach a consensus',
     vietnamese: 'đạt đồng thuận',
     phonetic: '/tə riːtʃ kənˈsensəs/',
+    usage: 'Dùng khi hai bên đã gần thống nhất và muốn đạt được sự đồng thuận chung về các điểm còn lại.',
     role: 'closer',
     examples: [
       { en: 'I am confident we can reach a consensus today.', vi: 'Tôi tin chúng ta có thể đạt đồng thuận hôm nay.' },
+      { en: 'I am confident we can reach a consensus on the pricing.', vi: 'Tôi tin chắc chúng ta có thể đạt đồng thuận về giá cả.' },
+      { en: 'Let us keep discussing until we reach a consensus.', vi: 'Chúng ta hãy tiếp tục thảo luận cho đến khi đạt đồng thuận.' },
     ],
   },
 
@@ -15948,9 +16005,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We would like a better price.',
     vietnamese: 'Chúng tôi muốn có một mức giá tốt hơn.',
     phonetic: '/wiː wʊd laɪk ə ˈbɛtər praɪs/',
+    usage: 'Dùng khi bày tỏ mong muốn mức giá tốt hơn, thường kèm lý do như đơn hàng lớn hơn.',
     role: 'opener',
     examples: [
       { en: 'We would like a better price for a larger order.', vi: 'Chúng tôi muốn có một mức giá tốt hơn cho đơn hàng lớn hơn.' },
+      { en: 'We would like a better price for the yearly contract.', vi: 'Chúng tôi muốn có một mức giá tốt hơn cho hợp đồng hàng năm.' },
+      { en: 'We would like a better price if we order in bulk.', vi: 'Chúng tôi muốn có một mức giá tốt hơn nếu đặt hàng số lượng lớn.' },
     ],
   },
   {
@@ -15961,9 +16021,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This price is too high for us.',
     vietnamese: 'Mức giá này quá cao đối với chúng tôi.',
     phonetic: '/ðɪs praɪs ɪz tuː haɪ fɔːr ʌs/',
+    usage: 'Dùng khi phản đối mức giá hiện tại một cách lịch sự, mở đầu cho việc thương lượng.',
     role: 'opener',
     examples: [
       { en: 'This price is too high for us at the moment.', vi: 'Mức giá này quá cao đối với chúng tôi vào lúc này.' },
+      { en: 'This price is too high for us at the moment.', vi: 'Mức giá này quá cao đối với chúng tôi vào lúc này.' },
+      { en: 'This price is too high for us compared to the market.', vi: 'Mức giá này quá cao đối với chúng tôi so với thị trường.' },
     ],
   },
   {
@@ -15974,9 +16037,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Can you offer a small discount?',
     vietnamese: 'Bạn có thể giảm giá một chút không?',
     phonetic: '/kæn juː ˈɔːfər ə smɔːl ˈdɪskaʊnt/',
+    usage: 'Dùng khi đề nghị một khoản giảm giá nhỏ, thường kèm điều kiện hoặc lý do cụ thể.',
     role: 'linker',
     examples: [
       { en: 'Can you offer a small discount for an early payment?', vi: 'Bạn có thể giảm giá một chút cho việc thanh toán sớm không?' },
+      { en: 'Can you offer a small discount for the first order?', vi: 'Bạn có thể giảm giá một chút cho đơn hàng đầu tiên không?' },
+      { en: 'Can you offer a small discount if we pay in cash?', vi: 'Bạn có thể giảm giá một chút nếu chúng tôi thanh toán bằng tiền mặt không?' },
     ],
   },
   {
@@ -15987,9 +16053,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We can pay earlier if you lower the price.',
     vietnamese: 'Chúng tôi có thể thanh toán sớm hơn nếu bạn giảm giá.',
     phonetic: '/wiː kæn peɪ ˈɜːrliər ɪf juː ˈloʊər ðə praɪs/',
+    usage: 'Dùng khi đề xuất một sự đánh đổi: chấp nhận trả sớm hơn để đổi lấy mức giá thấp hơn.',
     role: 'linker',
     examples: [
       { en: 'We can pay earlier if you lower the price a little.', vi: 'Chúng tôi có thể thanh toán sớm hơn nếu bạn giảm giá một chút.' },
+      { en: 'We can pay earlier if you lower the price slightly.', vi: 'Chúng tôi có thể thanh toán sớm hơn nếu bạn giảm giá một chút.' },
+      { en: 'We can pay earlier if you give us a discount.', vi: 'Chúng tôi có thể thanh toán sớm hơn nếu bạn giảm giá cho chúng tôi.' },
     ],
   },
   {
@@ -16000,9 +16069,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'That price sounds fair.',
     vietnamese: 'Mức giá đó nghe có vẻ hợp lý.',
     phonetic: '/ðæt praɪs saʊndz fɛr/',
+    usage: 'Dùng khi bày tỏ sự đồng tình với mức giá được đề xuất, coi đó là hợp lý.',
     role: 'filler',
     examples: [
       { en: 'That price sounds fair to both of us.', vi: 'Mức giá đó nghe có vẻ hợp lý với cả hai chúng ta.' },
+      { en: 'That price sounds fair, let us move forward.', vi: 'Mức giá đó nghe có vẻ hợp lý, chúng ta hãy tiến tới.' },
+      { en: 'That price sounds fair for the quality you offer.', vi: 'Mức giá đó nghe có vẻ hợp lý với chất lượng bạn cung cấp.' },
     ],
   },
   {
@@ -16013,9 +16085,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We need to check the budget first.',
     vietnamese: 'Chúng tôi cần kiểm tra ngân sách trước.',
     phonetic: '/wiː niːd tuː tʃɛk ðə ˈbʌdʒɪt fɜːrst/',
+    usage: 'Dùng khi cần thời gian để xem xét nội bộ trước khi đưa ra quyết định trong đàm phán.',
     role: 'filler',
     examples: [
       { en: 'We need to check the budget first before we decide.', vi: 'Chúng tôi cần kiểm tra ngân sách trước khi quyết định.' },
+      { en: 'We need to check the budget first before confirming.', vi: 'Chúng tôi cần kiểm tra ngân sách trước khi xác nhận.' },
+      { en: 'We need to check the budget first, we will reply tomorrow.', vi: 'Chúng tôi cần kiểm tra ngân sách trước, chúng tôi sẽ trả lời vào ngày mai.' },
     ],
   },
   {
@@ -16026,9 +16101,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We agree on this point.',
     vietnamese: 'Chúng tôi đồng ý về điểm này.',
     phonetic: '/wiː əˈɡriː ɒn ðɪs pɔɪnt/',
+    usage: 'Dùng khi xác nhận đã đồng ý về một điểm cụ thể và muốn chuyển sang điểm tiếp theo.',
     role: 'closer',
     examples: [
       { en: 'We agree on this point, so let us move on.', vi: 'Chúng tôi đồng ý về điểm này, vậy hãy chuyển tiếp.' },
+      { en: 'We agree on this point, let us discuss the delivery.', vi: 'Chúng tôi đồng ý về điểm này, hãy bàn về giao hàng.' },
+      { en: 'We agree on this point, there is nothing more to argue.', vi: 'Chúng tôi đồng ý về điểm này, không còn gì để tranh cãi.' },
     ],
   },
   {
@@ -16039,9 +16117,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us sign the agreement.',
     vietnamese: 'Chúng ta hãy ký thỏa thuận.',
     phonetic: '/lɛt ʌs saɪn ði əˈɡriːmənt/',
+    usage: 'Dùng khi mọi thứ đã sẵn sàng và muốn tiến hành ký kết thỏa thuận.',
     role: 'closer',
     examples: [
       { en: 'Let us sign the agreement once everything is ready.', vi: 'Chúng ta hãy ký thỏa thuận khi mọi thứ đã sẵn sàng.' },
+      { en: 'Let us sign the agreement once the lawyer approves.', vi: 'Chúng ta hãy ký thỏa thuận khi luật sư chấp thuận.' },
+      { en: 'Let us sign the agreement and start the project.', vi: 'Chúng ta hãy ký thỏa thuận và bắt đầu dự án.' },
     ],
   },
   {
@@ -16052,9 +16133,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We propose a compromise on the delivery schedule.',
     vietnamese: 'Chúng tôi đề xuất một sự thỏa hiệp về lịch giao hàng.',
     phonetic: '/wiː prəˈpoʊz ə ˈkɒmprəmaɪz ɒn ðə dɪˈlɪvəri ˈʃɛdjuːl/',
+    usage: 'Dùng khi đề xuất một sự thỏa hiệp về một điểm cụ thể để cuộc đàm phán tiến triển.',
     role: 'opener',
     examples: [
       { en: 'We propose a compromise on the delivery schedule to move forward.', vi: 'Chúng tôi đề xuất một sự thỏa hiệp về lịch giao hàng để tiến triển.' },
+      { en: 'We propose a compromise on the delivery schedule to move forward.', vi: 'Chúng tôi đề xuất một sự thỏa hiệp về lịch giao hàng để tiến tới.' },
+      { en: 'A compromise on the schedule would help both parties.', vi: 'Một sự thỏa hiệp về lịch trình sẽ giúp ích cho cả hai bên.' },
     ],
   },
   {
@@ -16065,9 +16149,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Our offer stands until the end of the month.',
     vietnamese: 'Đề xuất của chúng tôi có hiệu lực đến cuối tháng.',
     phonetic: '/aʊər ˈɔːfər stændz ənˈtɪl ði ɛnd ɒv ðə mʌnθ/',
+    usage: 'Dùng khi thông báo thời hạn hiệu lực của đề xuất, tạo áp lực nhẹ để đối tác quyết định sớm.',
     role: 'opener',
     examples: [
       { en: 'Our offer stands until the end of the month, so please decide soon.', vi: 'Đề xuất của chúng tôi có hiệu lực đến cuối tháng, nên xin hãy quyết định sớm.' },
+      { en: 'Our offer stands until the end of the month, please confirm.', vi: 'Đề xuất của chúng tôi có hiệu lực đến cuối tháng, xin hãy xác nhận.' },
+      { en: 'Our offer stands until Friday, after that it changes.', vi: 'Đề xuất của chúng tôi có hiệu lực đến thứ Sáu, sau đó sẽ thay đổi.' },
     ],
   },
   {
@@ -16078,9 +16165,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Could we meet in the middle on the pricing?',
     vietnamese: 'Chúng ta có thể thỏa hiệp ở mức trung gian về giá không?',
     phonetic: '/kʊd wiː miːt ɪn ðə ˈmɪdəl ɒn ðə ˈpraɪsɪŋ/',
+    usage: 'Dùng khi đề nghị hai bên gặp nhau ở mức giá trung gian để thu hẹp khoảng cách.',
     role: 'linker',
     examples: [
       { en: 'Could we meet in the middle on the pricing to close the gap?', vi: 'Chúng ta có thể thỏa hiệp ở mức trung gian về giá để thu hẹp khoảng cách không?' },
+      { en: 'Could we meet in the middle on the pricing to close the gap?', vi: 'Chúng ta có thể thỏa hiệp ở mức trung gian về giá để thu hẹp khoảng cách không?' },
+      { en: 'Let us meet in the middle on the price, say fifteen percent.', vi: 'Chúng ta hãy thỏa hiệp ở mức trung gian, ví dụ mười lăm phần trăm.' },
     ],
   },
   {
@@ -16091,9 +16181,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us compare our positions on the terms.',
     vietnamese: 'Chúng ta hãy so sánh quan điểm của mình về các điều khoản.',
     phonetic: '/lɛt ʌs kəmˈpɛr aʊər pəˈzɪʃənz ɒn ðə tɜːrmz/',
+    usage: 'Dùng khi muốn đối chiếu quan điểm của hai bên về các điều khoản trước khi đàm phán chi tiết.',
     role: 'linker',
     examples: [
       { en: 'Let us compare our positions on the terms before we negotiate.', vi: 'Chúng ta hãy so sánh quan điểm của mình về các điều khoản trước khi đàm phán.' },
+      { en: 'Let us compare our positions on the terms before we negotiate.', vi: 'Chúng ta hãy so sánh quan điểm của mình về các điều khoản trước khi đàm phán.' },
+      { en: 'We should compare our positions on the payment terms.', vi: 'Chúng ta nên so sánh quan điểm của mình về các điều khoản thanh toán.' },
     ],
   },
   {
@@ -16104,9 +16197,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are flexible on the payment terms.',
     vietnamese: 'Chúng tôi linh hoạt về các điều khoản thanh toán.',
     phonetic: '/wiː ɑːr ˈflɛksəbəl ɒn ðə ˈpeɪmənt tɜːrmz/',
+    usage: 'Dùng khi bày tỏ sự linh hoạt của bên mình về một điều khoản, tạo thiện chí trong đàm phán.',
     role: 'filler',
     examples: [
       { en: 'We are flexible on the payment terms if the price is right.', vi: 'Chúng tôi linh hoạt về các điều khoản thanh toán nếu giá hợp lý.' },
+      { en: 'We are flexible on the payment terms if the price is right.', vi: 'Chúng tôi linh hoạt về các điều khoản thanh toán nếu giá hợp lý.' },
+      { en: 'We are flexible on the delivery date within reason.', vi: 'Chúng tôi linh hoạt về ngày giao hàng trong giới hạn hợp lý.' },
     ],
   },
   {
@@ -16117,9 +16213,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The current offer is still below our costs.',
     vietnamese: 'Đề xuất hiện tại vẫn thấp hơn chi phí của chúng tôi.',
     phonetic: '/ðə ˈkɜːrənt ˈɔːfər ɪz stɪl bɪˈloʊ aʊər kɒsts/',
+    usage: 'Dùng khi giải thích rằng mức giá đề xuất thấp hơn chi phí sản xuất của bên mình, cần điều chỉnh.',
     role: 'filler',
     examples: [
       { en: 'The current offer is still below our costs, so we need adjustments.', vi: 'Đề xuất hiện tại vẫn thấp hơn chi phí của chúng tôi, nên cần điều chỉnh.' },
+      { en: 'The current offer is still below our costs, we need adjustments.', vi: 'Đề xuất hiện tại vẫn thấp hơn chi phí của chúng tôi, chúng tôi cần điều chỉnh.' },
+      { en: 'This price is below our costs, we cannot accept it.', vi: 'Mức giá này thấp hơn chi phí của chúng tôi, chúng tôi không thể chấp nhận.' },
     ],
   },
   {
@@ -16130,9 +16229,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are close to an agreement.',
     vietnamese: 'Chúng ta gần đạt được thỏa thuận rồi.',
     phonetic: '/wiː ɑːr kloʊs tuː ən əˈɡriːmənt/',
+    usage: 'Dùng khi hai bên gần đạt được thỏa thuận và muốn hoàn tất các chi tiết còn lại.',
     role: 'closer',
     examples: [
       { en: 'We are close to an agreement, so let us finalize the details.', vi: 'Chúng ta gần đạt được thỏa thuận rồi, vậy hãy hoàn tất các chi tiết.' },
+      { en: 'We are close to an agreement, let us finalize the details.', vi: 'Chúng ta gần đạt được thỏa thuận rồi, hãy chốt các chi tiết.' },
+      { en: 'We are close to an agreement on the main points.', vi: 'Chúng ta gần đạt được thỏa thuận về các điểm chính.' },
     ],
   },
   {
@@ -16143,9 +16245,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us confirm the final details.',
     vietnamese: 'Chúng ta hãy xác nhận các chi tiết cuối cùng.',
     phonetic: '/lɛt ʌs kənˈfɜːrm ðə ˈfaɪnəl ˈdiːteɪlz/',
+    usage: 'Dùng khi muốn xác nhận các chi tiết cuối cùng trước khi tiến hành ký kết.',
     role: 'closer',
     examples: [
       { en: 'Let us confirm the final details and then proceed.', vi: 'Chúng ta hãy xác nhận các chi tiết cuối cùng rồi tiến hành.' },
+      { en: 'Let us confirm the final details and then proceed.', vi: 'Chúng ta hãy xác nhận các chi tiết cuối cùng rồi tiến hành.' },
+      { en: 'We need to confirm the final details before signing.', vi: 'Chúng ta cần xác nhận các chi tiết cuối cùng trước khi ký.' },
     ],
   },
   {
@@ -16156,9 +16261,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are prepared to make a concession on the volume.',
     vietnamese: 'Chúng tôi sẵn sàng nhượng bộ về số lượng.',
     phonetic: '/wiː ɑːr prɪˈpɛrd tuː meɪk ə kənˈsɛʃən ɒn ðə ˈvɒljuːm/',
+    usage: 'Dùng khi bày tỏ sự sẵn sàng nhượng bộ về một điểm cụ thể, ví dụ số lượng, để thúc đẩy thương vụ.',
     role: 'opener',
     examples: [
       { en: 'We are prepared to make a concession on the volume if needed.', vi: 'Chúng tôi sẵn sàng nhượng bộ về số lượng nếu cần.' },
+      { en: 'We are prepared to make a concession on the volume if needed.', vi: 'Chúng tôi sẵn sàng nhượng bộ về số lượng nếu cần.' },
+      { en: 'Making a concession on the volume would help close the deal.', vi: 'Nhượng bộ về số lượng sẽ giúp chốt thương vụ.' },
     ],
   },
   {
@@ -16169,9 +16277,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us revisit the commercial terms before we finalize.',
     vietnamese: 'Chúng ta hãy xem lại các điều khoản thương mại trước khi chốt.',
     phonetic: '/lɛt ʌs riːˈvɪzɪt ðə kəˈmɜːrʃəl tɜːrmz bɪˈfɔːr wiː ˈfaɪnəlaɪz/',
+    usage: 'Dùng khi muốn xem xét lại các điều khoản thương mại trước khi hoàn tất hợp đồng.',
     role: 'opener',
     examples: [
       { en: 'Let us revisit the commercial terms before we finalize the contract.', vi: 'Chúng ta hãy xem lại các điều khoản thương mại trước khi chốt hợp đồng.' },
+      { en: 'Let us revisit the commercial terms before we finalize the contract.', vi: 'Chúng ta hãy xem lại các điều khoản thương mại trước khi chốt hợp đồng.' },
+      { en: 'We should revisit the commercial terms given the new budget.', vi: 'Chúng ta nên xem lại các điều khoản thương mại theo ngân sách mới.' },
     ],
   },
   {
@@ -16182,9 +16293,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Would you be willing to adjust the delivery milestones?',
     vietnamese: 'Bạn có sẵn lòng điều chỉnh các mốc giao hàng không?',
     phonetic: '/wʊd juː biː ˈwɪlɪŋ tuː əˈdʒʌst ðə dɪˈlɪvəri ˈmaɪlstoʊnz/',
+    usage: 'Dùng khi đề nghị đối tác điều chỉnh các mốc giao hàng để giảm bớt áp lực.',
     role: 'linker',
     examples: [
       { en: 'Would you be willing to adjust the delivery milestones to ease the pressure?', vi: 'Bạn có sẵn lòng điều chỉnh các mốc giao hàng để giảm áp lực không?' },
+      { en: 'Would you be willing to adjust the delivery milestones to ease the pressure?', vi: 'Bạn có sẵn lòng điều chỉnh các mốc giao hàng để giảm bớt áp lực không?' },
+      { en: 'Adjusting the delivery milestones would help our planning.', vi: 'Điều chỉnh các mốc giao hàng sẽ giúp ích cho việc lên kế hoạch của chúng tôi.' },
     ],
   },
   {
@@ -16195,9 +16309,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should negotiate the warranty provisions next.',
     vietnamese: 'Tiếp theo chúng ta nên đàm phán các điều khoản bảo hành.',
     phonetic: '/wiː ʃʊd nɪˈɡoʊʃiˌeɪt ðə ˈwɔːrənti prəˈvɪʒənz nɛkst/',
+    usage: 'Dùng khi muốn chuyển sang đàm phán các điều khoản bảo hành để tránh tranh chấp về sau.',
     role: 'linker',
     examples: [
       { en: 'We should negotiate the warranty provisions next to avoid disputes.', vi: 'Tiếp theo chúng ta nên đàm phán các điều khoản bảo hành để tránh tranh chấp.' },
+      { en: 'We should negotiate the warranty provisions next to avoid disputes.', vi: 'Tiếp theo chúng ta nên đàm phán các điều khoản bảo hành để tránh tranh chấp.' },
+      { en: 'The warranty provisions need careful negotiation.', vi: 'Các điều khoản bảo hành cần được đàm phán kỹ lưỡng.' },
     ],
   },
   {
@@ -16208,9 +16325,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The margin does not leave much room for flexibility.',
     vietnamese: 'Biên lợi nhuận không còn nhiều dư địa cho sự linh hoạt.',
     phonetic: '/ðə ˈmɑːrdʒɪn dʌz nɑːt liːv mʌtʃ ruːm fɔːr ˌflɛksəˈbɪləti/',
+    usage: 'Dùng khi giải thích rằng biên lợi nhuận thấp nên không thể linh hoạt thêm về giá.',
     role: 'filler',
     examples: [
       { en: 'The margin does not leave much room for flexibility in the pricing.', vi: 'Biên lợi nhuận không còn nhiều dư địa cho sự linh hoạt về giá.' },
+      { en: 'The margin does not leave much room for flexibility in the pricing.', vi: 'Biên lợi nhuận không còn nhiều dư địa cho sự linh hoạt về giá.' },
+      { en: 'With this margin, we cannot offer more discounts.', vi: 'Với biên lợi nhuận này, chúng tôi không thể giảm giá thêm.' },
     ],
   },
   {
@@ -16221,9 +16341,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a mutual benefit in accelerating the timeline.',
     vietnamese: 'Có lợi ích chung trong việc đẩy nhanh tiến độ.',
     phonetic: '/ðɛr ɪz ə ˈmjuːtʃuəl ˈbɛnɪfɪt ɪn əkˌsɛləˈreɪtɪŋ ðə ˈtaɪmlaɪn/',
+    usage: 'Dùng khi nhấn mạnh rằng việc đẩy nhanh tiến độ mang lại lợi ích cho cả hai bên.',
     role: 'filler',
     examples: [
       { en: 'There is a mutual benefit in accelerating the timeline for both sides.', vi: 'Có lợi ích chung trong việc đẩy nhanh tiến độ cho cả hai bên.' },
+      { en: 'There is a mutual benefit in accelerating the timeline for both sides.', vi: 'Có lợi ích chung trong việc đẩy nhanh tiến độ cho cả hai bên.' },
+      { en: 'Accelerating the timeline brings a mutual benefit.', vi: 'Đẩy nhanh tiến độ mang lại lợi ích chung.' },
     ],
   },
   {
@@ -16234,9 +16357,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have a basis for a mutually acceptable arrangement.',
     vietnamese: 'Chúng ta đã có cơ sở cho một thỏa thuận chấp nhận được cho cả hai bên.',
     phonetic: '/wiː hæv ə ˈbeɪsɪs fɔːr ə ˈmjuːtʃuəli əkˈsɛptəbəl əˈreɪndʒmənt/',
+    usage: 'Dùng khi khẳng định hai bên đã có cơ sở để đạt một thỏa thuận chấp nhận được.',
     role: 'closer',
     examples: [
       { en: 'We have a basis for a mutually acceptable arrangement if we proceed.', vi: 'Chúng ta đã có cơ sở cho một thỏa thuận chấp nhận được nếu chúng ta tiến hành.' },
+      { en: 'We have a basis for a mutually acceptable arrangement if we proceed.', vi: 'Chúng ta đã có cơ sở cho một thỏa thuận chấp nhận được cho cả hai bên nếu tiến hành.' },
+      { en: 'This gives us a basis for a mutually acceptable arrangement.', vi: 'Điều này cho chúng ta cơ sở cho một thỏa thuận chấp nhận được cho cả hai bên.' },
     ],
   },
   {
@@ -16247,9 +16373,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us draft the revised terms and sign off.',
     vietnamese: 'Chúng ta hãy soạn thảo các điều khoản đã sửa đổi và chốt.',
     phonetic: '/lɛt ʌs dræft ðə rɪˈvaɪzd tɜːrmz ænd saɪn ɒf/',
+    usage: 'Dùng khi muốn soạn thảo lại các điều khoản đã thống nhất và tiến hành chốt.',
     role: 'closer',
     examples: [
       { en: 'Let us draft the revised terms and sign off by tomorrow.', vi: 'Chúng ta hãy soạn thảo các điều khoản đã sửa đổi và chốt trước ngày mai.' },
+      { en: 'Let us draft the revised terms and sign off by tomorrow.', vi: 'Chúng ta hãy soạn thảo các điều khoản đã sửa đổi và chốt trước ngày mai.' },
+      { en: 'Once we draft the revised terms, we can sign off.', vi: 'Khi chúng ta soạn xong các điều khoản đã sửa đổi, chúng ta có thể chốt.' },
     ],
   },
   {
@@ -16260,9 +16389,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are open to a phased implementation to accommodate your constraints.',
     vietnamese: 'Chúng tôi sẵn sàng triển khai theo giai đoạn để phù hợp với các ràng buộc của bạn.',
     phonetic: '/wiː ɑːr ˈoʊpən tuː ə ˈfeɪzd ˌɪmplɪmɛnˈteɪʃən tuː əˈkɒmədeɪt jʊər kənˈstreɪnts/',
+    usage: 'Dùng khi thể hiện thiện chí triển khai theo giai đoạn để phù hợp với ràng buộc của đối tác.',
     role: 'opener',
     examples: [
       { en: 'We are open to a phased implementation to accommodate your constraints.', vi: 'Chúng tôi sẵn sàng triển khai theo giai đoạn để phù hợp với các ràng buộc của bạn.' },
+      { en: 'We are open to a phased implementation to accommodate your constraints.', vi: 'Chúng tôi sẵn sàng triển khai theo giai đoạn để phù hợp với các ràng buộc của bạn.' },
+      { en: 'A phased implementation would work well for your team.', vi: 'Triển khai theo giai đoạn sẽ phù hợp với đội ngũ của bạn.' },
     ],
   },
   {
@@ -16273,9 +16405,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Our position reflects a realistic assessment of the market.',
     vietnamese: 'Lập trường của chúng tôi phản ánh sự đánh giá thực tế về thị trường.',
     phonetic: '/aʊər pəˈzɪʃən rɪˈflɛkts ə riːəˈlɪstɪk əˈsɛsmənt ɒv ðə ˈmɑːrkɪt/',
+    usage: 'Dùng khi giải thích rằng lập trường của bên mình dựa trên đánh giá thực tế về thị trường.',
     role: 'opener',
     examples: [
       { en: 'Our position reflects a realistic assessment of the current market.', vi: 'Lập trường của chúng tôi phản ánh sự đánh giá thực tế về thị trường hiện tại.' },
+      { en: 'Our position reflects a realistic assessment of the current market.', vi: 'Lập trường của chúng tôi phản ánh sự đánh giá thực tế về thị trường hiện tại.' },
+      { en: 'This position is based on a realistic assessment of demand.', vi: 'Lập trường này dựa trên sự đánh giá thực tế về nhu cầu.' },
     ],
   },
   {
@@ -16286,9 +16421,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We propose a revised framework that reconciles both sets of priorities.',
     vietnamese: 'Chúng tôi đề xuất một khung mới dung hòa các ưu tiên của cả hai bên.',
     phonetic: '/wiː prəˈpoʊz ə rɪˈvaɪzd ˈfreɪmwɜːrk ðæt ˈrɛkənsaɪlz boʊθ sɛts ɒv praɪˈɒrɪtiz/',
+    usage: 'Dùng khi đề xuất một khung thỏa thuận mới dung hòa được ưu tiên của cả hai bên.',
     role: 'linker',
     examples: [
       { en: 'We propose a revised framework that reconciles both sets of priorities.', vi: 'Chúng tôi đề xuất một khung mới dung hòa các ưu tiên của cả hai bên.' },
+      { en: 'We propose a revised framework that reconciles both sets of priorities.', vi: 'Chúng tôi đề xuất một khung mới dung hòa các ưu tiên của cả hai bên.' },
+      { en: 'This framework reconciles the priorities of both parties.', vi: 'Khung này dung hòa các ưu tiên của cả hai bên.' },
     ],
   },
   {
@@ -16299,9 +16437,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us explore alternative structures that preserve value for both parties.',
     vietnamese: 'Chúng ta hãy khám phá các cấu trúc thay thế giữ được giá trị cho cả hai bên.',
     phonetic: '/lɛt ʌs ɪkˈsplɔːr ɔːlˈtɜːrnətɪv ˈstrʌktʃərz ðæt prɪˈzɜːrv ˈvæljuː fɔːr boʊθ ˈpɑːrtiz/',
+    usage: 'Dùng khi đề xuất khám phá các phương án cấu trúc khác để cả hai bên đều giữ được giá trị.',
     role: 'linker',
     examples: [
       { en: 'Let us explore alternative structures that preserve value for both parties.', vi: 'Chúng ta hãy khám phá các cấu trúc thay thế giữ được giá trị cho cả hai bên.' },
+      { en: 'Let us explore alternative structures that preserve value for both parties.', vi: 'Chúng ta hãy khám phá các cấu trúc thay thế giữ được giá trị cho cả hai bên.' },
+      { en: 'Alternative structures could preserve value for everyone.', vi: 'Các cấu trúc thay thế có thể giữ được giá trị cho tất cả mọi người.' },
     ],
   },
   {
@@ -16312,9 +16453,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The discrepancy in valuations stems from differing assumptions.',
     vietnamese: 'Sự chênh lệch trong định giá bắt nguồn từ các giả định khác nhau.',
     phonetic: '/ðə dɪˈskrɛpənsi ɪn ˌvæljuˈeɪʃənz stɛmz frɒm ˈdɪfərɪŋ əˈsʌmpʃənz/',
+    usage: 'Dùng khi giải thích nguyên nhân của sự chênh lệch trong định giá, thường do các giả định khác nhau.',
     role: 'filler',
     examples: [
       { en: 'The discrepancy in valuations stems from differing assumptions about growth.', vi: 'Sự chênh lệch trong định giá bắt nguồn từ các giả định khác nhau về tăng trưởng.' },
+      { en: 'The discrepancy in valuations stems from differing assumptions about growth.', vi: 'Sự chênh lệch trong định giá bắt nguồn từ các giả định khác nhau về tăng trưởng.' },
+      { en: 'These assumptions explain the discrepancy in valuations.', vi: 'Những giả định này giải thích sự chênh lệch trong định giá.' },
     ],
   },
   {
@@ -16325,9 +16469,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'A balanced approach would mitigate the risks on either side.',
     vietnamese: 'Một cách tiếp cận cân bằng sẽ giảm thiểu rủi ro cho cả hai phía.',
     phonetic: '/ə ˈbælənst əˈproʊtʃ wʊd ˈmɪtɪɡeɪt ðə rɪsks ɒn ˈaɪðər saɪd/',
+    usage: 'Dùng khi đề xuất một cách tiếp cận cân bằng để giảm thiểu rủi ro cho cả hai phía.',
     role: 'filler',
     examples: [
       { en: 'A balanced approach would mitigate the risks on either side of the deal.', vi: 'Một cách tiếp cận cân bằng sẽ giảm thiểu rủi ro cho cả hai phía của thương vụ.' },
+      { en: 'A balanced approach would mitigate the risks on either side of the deal.', vi: 'Một cách tiếp cận cân bằng sẽ giảm thiểu rủi ro cho cả hai phía của thương vụ.' },
+      { en: 'We favor a balanced approach to mitigate the risks.', vi: 'Chúng tôi ủng hộ một cách tiếp cận cân bằng để giảm thiểu rủi ro.' },
     ],
   },
   {
@@ -16338,9 +16485,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are confident a constructive outcome remains achievable.',
     vietnamese: 'Chúng tôi tin tưởng một kết quả mang tính xây dựng vẫn có thể đạt được.',
     phonetic: '/wiː ɑːr ˈkɒnfɪdənt ə kənˈstrʌktɪv ˈaʊtkʌm rɪˈmeɪnz əˈtʃiːvəbəl/',
+    usage: 'Dùng khi bày tỏ sự tin tưởng rằng vẫn có thể đạt được một kết quả xây dựng, tích cực.',
     role: 'closer',
     examples: [
       { en: 'We are confident a constructive outcome remains achievable for both parties.', vi: 'Chúng tôi tin tưởng một kết quả mang tính xây dựng vẫn có thể đạt được cho cả hai bên.' },
+      { en: 'We are confident a constructive outcome remains achievable for both parties.', vi: 'Chúng tôi tin tưởng một kết quả mang tính xây dựng vẫn có thể đạt được cho cả hai bên.' },
+      { en: 'A constructive outcome is achievable with good faith.', vi: 'Một kết quả mang tính xây dựng có thể đạt được với thiện chí.' },
     ],
   },
   {
@@ -16351,9 +16501,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We look forward to formalizing this understanding in writing.',
     vietnamese: 'Chúng tôi mong chờ việc chính thức hóa thỏa thuận này bằng văn bản.',
     phonetic: '/wiː lʊk ˈfɔːrwərd tuː ˈfɔːrməlaɪzɪŋ ðɪs ˌʌndərˈstændɪŋ ɪn ˈraɪtɪŋ/',
+    usage: 'Dùng ở cuối đàm phán khi mong muốn chính thức hóa những gì đã thống nhất bằng văn bản.',
     role: 'closer',
     examples: [
       { en: 'We look forward to formalizing this understanding in writing soon.', vi: 'Chúng tôi mong chờ việc chính thức hóa thỏa thuận này bằng văn bản sớm.' },
+      { en: 'We look forward to formalizing this understanding in writing soon.', vi: 'Chúng tôi mong chờ việc chính thức hóa thỏa thuận này bằng văn bản sớm.' },
+      { en: 'Let us formalize this understanding in writing this week.', vi: 'Chúng ta hãy chính thức hóa thỏa thuận này bằng văn bản trong tuần này.' },
     ],
   },
   {
@@ -16364,9 +16517,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to open the negotiation',
     vietnamese: 'để bắt đầu cuộc đàm phán',
     phonetic: '/tə ˈəʊpən ðə nɪˌɡəʊʃiˈeɪʃən/',
+    usage: 'Dùng khi bắt đầu một cuộc đàm phán, đề xuất điểm khởi đầu cho cuộc thảo luận.',
     role: 'opener',
     examples: [
       { en: 'To open the negotiation, let us agree on the scope.', vi: 'Để bắt đầu đàm phán, chúng ta hãy thống nhất về phạm vi.' },
+      { en: 'To open the negotiation, let us agree on the scope.', vi: 'Để bắt đầu cuộc đàm phán, chúng ta hãy thống nhất về phạm vi.' },
+      { en: 'To open the negotiation, we should set a clear agenda.', vi: 'Để bắt đầu cuộc đàm phán, chúng ta nên đặt ra một chương trình rõ ràng.' },
     ],
   },
   {
@@ -16377,9 +16533,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us put the numbers on the table',
     vietnamese: 'chúng ta hãy đưa các con số ra bàn đàm phán',
     phonetic: '/let ʌs pʊt ðə ˈnʌmbəz ɒn ðə ˈteɪbl/',
+    usage: 'Dùng khi muốn đưa các con số ra bàn để hai bên so sánh và thảo luận một cách cởi mở.',
     role: 'opener',
     examples: [
       { en: 'Let us put the numbers on the table so we can compare.', vi: 'Chúng ta hãy đưa các con số ra bàn đàm phán để so sánh.' },
+      { en: 'Let us put the numbers on the table so we can compare.', vi: 'Chúng ta hãy đưa các con số ra bàn đàm phán để so sánh.' },
+      { en: 'Put the numbers on the table and we will discuss.', vi: 'Đưa các con số ra bàn đàm phán và chúng ta sẽ thảo luận.' },
     ],
   },
   {
@@ -16390,9 +16549,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would like to propose',
     vietnamese: 'chúng tôi muốn đề xuất',
     phonetic: '/wiː wʊd laɪk tə prəˈpəʊz/',
+    usage: 'Dùng khi chủ động đưa ra một đề xuất mới trong cuộc đàm phán.',
     role: 'opener',
     examples: [
       { en: 'We would like to propose a new delivery schedule.', vi: 'Chúng tôi muốn đề xuất một lịch giao hàng mới.' },
+      { en: 'We would like to propose a new delivery schedule.', vi: 'Chúng tôi muốn đề xuất một lịch giao hàng mới.' },
+      { en: 'We would like to propose a different payment plan.', vi: 'Chúng tôi muốn đề xuất một phương án thanh toán khác.' },
     ],
   },
   {
@@ -16403,9 +16565,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us talk about the price',
     vietnamese: 'chúng ta hãy nói về giá cả',
     phonetic: '/let ʌs tɔːk əˈbaʊt ðə praɪs/',
+    usage: 'Dùng khi muốn đưa vấn đề giá cả ra thảo luận trước tiên trong đàm phán.',
     role: 'opener',
     examples: [
       { en: 'Let us talk about the price before anything else.', vi: 'Chúng ta hãy nói về giá trước khi bàn đến chuyện khác.' },
+      { en: 'Let us talk about the price before anything else.', vi: 'Chúng ta hãy nói về giá cả trước khi bàn bất cứ điều gì khác.' },
+      { en: 'Let us talk about the price and the discount.', vi: 'Chúng ta hãy nói về giá cả và chiết khấu.' },
     ],
   },
   {
@@ -16416,9 +16581,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if we adjust the volume',
     vietnamese: 'nếu chúng ta điều chỉnh số lượng',
     phonetic: '/ɪf wiː əˈdʒʌst ðə ˈvɒljuːm/',
+    usage: 'Dùng khi đề xuất điều chỉnh số lượng để đạt được mức giá tốt hơn.',
     role: 'linker',
     examples: [
       { en: 'If we adjust the volume, we can lower the unit cost.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta có thể hạ giá mỗi đơn vị.' },
+      { en: 'If we adjust the volume, we can lower the unit cost.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta có thể hạ chi phí mỗi đơn vị.' },
+      { en: 'If we adjust the volume, the price will change.', vi: 'Nếu chúng ta điều chỉnh số lượng, giá sẽ thay đổi.' },
     ],
   },
   {
@@ -16429,9 +16597,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the topic of delivery',
     vietnamese: 'về chủ đề giao hàng',
     phonetic: '/ɒn ðə ˈtɒpɪk ɒv dɪˈlɪvəri/',
+    usage: 'Dùng khi chuyển hướng cuộc thảo luận sang chủ đề giao hàng.',
     role: 'linker',
     examples: [
       { en: 'On the topic of delivery, we need two more weeks.', vi: 'Về chủ đề giao hàng, chúng tôi cần thêm hai tuần.' },
+      { en: 'On the topic of delivery, we need two more weeks.', vi: 'Về chủ đề giao hàng, chúng tôi cần thêm hai tuần.' },
+      { en: 'On the topic of delivery, we can be flexible.', vi: 'Về chủ đề giao hàng, chúng tôi có thể linh hoạt.' },
     ],
   },
   {
@@ -16442,9 +16613,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a middle ground',
     vietnamese: 'như một giải pháp dung hòa',
     phonetic: '/æz ə ˈmɪdl ɡraʊnd/',
+    usage: 'Dùng khi đề xuất một giải pháp dung hòa giữa hai quan điểm khác nhau.',
     role: 'linker',
     examples: [
       { en: 'As a middle ground, we can split the shipping cost.', vi: 'Như một giải pháp dung hòa, chúng ta có thể chia đôi chi phí vận chuyển.' },
+      { en: 'As a middle ground, we can split the shipping cost.', vi: 'Như một giải pháp dung hòa, chúng ta có thể chia đôi chi phí vận chuyển.' },
+      { en: 'As a middle ground, let us agree on a longer payment period.', vi: 'Như một giải pháp dung hòa, chúng ta hãy đồng ý thời gian thanh toán dài hơn.' },
     ],
   },
   {
@@ -16455,9 +16629,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'then we move on to the terms',
     vietnamese: 'sau đó chúng ta chuyển sang các điều khoản',
     phonetic: '/ðen wiː muːv ɒn tə ðə tɜːmz/',
+    usage: 'Dùng khi chuyển sang phần tiếp theo của cuộc đàm phán, ví dụ các điều khoản.',
     role: 'linker',
     examples: [
       { en: 'Then we move on to the terms of the contract.', vi: 'Sau đó chúng ta chuyển sang các điều khoản của hợp đồng.' },
+      { en: 'Then we move on to the terms of the contract.', vi: 'Sau đó chúng ta chuyển sang các điều khoản của hợp đồng.' },
+      { en: 'Then we move on to the delivery conditions.', vi: 'Sau đó chúng ta chuyển sang các điều kiện giao hàng.' },
     ],
   },
   {
@@ -16468,9 +16645,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be quite frank',
     vietnamese: 'thành thật mà nói',
     phonetic: '/tə biː kwaɪt fræŋk/',
+    usage: 'Dùng khi muốn nói thẳng, thành thật về một vấn đề nhạy cảm trong đàm phán.',
     role: 'filler',
     examples: [
       { en: 'To be quite frank, this price is above our budget.', vi: 'Thành thật mà nói, mức giá này vượt quá ngân sách của chúng tôi.' },
+      { en: 'To be quite frank, this price is above our budget.', vi: 'Thành thật mà nói, mức giá này vượt ngân sách của chúng tôi.' },
+      { en: 'To be quite frank, we have other options.', vi: 'Thành thật mà nói, chúng tôi có những lựa chọn khác.' },
     ],
   },
   {
@@ -16481,9 +16661,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'within reason',
     vietnamese: 'trong giới hạn hợp lý',
     phonetic: '/wɪˈðɪn ˈriːzən/',
+    usage: 'Dùng khi khẳng định sự linh hoạt của bên mình nhưng vẫn trong giới hạn hợp lý.',
     role: 'filler',
     examples: [
       { en: 'Within reason, we can be flexible on the deadline.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể linh hoạt về thời hạn.' },
+      { en: 'Within reason, we can be flexible on the deadline.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể linh hoạt về thời hạn.' },
+      { en: 'Within reason, we can adjust the delivery schedule.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể điều chỉnh lịch giao hàng.' },
     ],
   },
   {
@@ -16494,9 +16677,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all else being equal',
     vietnamese: 'trong điều kiện các yếu tố khác không đổi',
     phonetic: '/ɔːl els ˈbiːɪŋ ˈiːkwəl/',
+    usage: 'Dùng khi nêu sở thích của bên mình trong điều kiện các yếu tố khác không đổi.',
     role: 'filler',
     examples: [
       { en: 'All else being equal, we prefer the longer payment plan.', vi: 'Trong điều kiện các yếu tố khác không đổi, chúng tôi thích phương án trả chậm hơn.' },
+      { en: 'All else being equal, we prefer the longer payment plan.', vi: 'Trong điều kiện các yếu tố khác không đổi, chúng tôi thích phương án thanh toán dài hạn hơn.' },
+      { en: 'All else being equal, we choose the cheaper option.', vi: 'Trong điều kiện các yếu tố khác không đổi, chúng tôi chọn phương án rẻ hơn.' },
     ],
   },
   {
@@ -16507,9 +16693,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end it comes down to cost',
     vietnamese: 'cuối cùng, tất cả đều quy về chi phí',
     phonetic: '/ɪn ði end ɪt kʌmz daʊn tə kɒst/',
+    usage: 'Dùng khi tóm tắt rằng chi phí là yếu tố quyết định cuối cùng của quyết định.',
     role: 'filler',
     examples: [
       { en: 'In the end it comes down to cost and timing.', vi: 'Cuối cùng, tất cả đều quy về chi phí và thời điểm.' },
+      { en: 'In the end it comes down to cost and timing.', vi: 'Cuối cùng, tất cả đều quy về chi phí và thời gian.' },
+      { en: 'In the end it comes down to cost for our company.', vi: 'Cuối cùng, tất cả đều quy về chi phí đối với công ty chúng tôi.' },
     ],
   },
   {
@@ -16520,9 +16709,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to close the deal',
     vietnamese: 'để chốt thỏa thuận',
     phonetic: '/tə kləʊz ðə diːl/',
+    usage: 'Dùng khi nêu điều kiện cần thiết để chốt thỏa thuận.',
     role: 'closer',
     examples: [
       { en: 'To close the deal, we need your final approval.', vi: 'Để chốt thỏa thuận, chúng tôi cần sự chấp thuận cuối cùng của bạn.' },
+      { en: 'To close the deal, we need your final approval.', vi: 'Để chốt thỏa thuận, chúng tôi cần sự phê duyệt cuối cùng của bạn.' },
+      { en: 'To close the deal, we need to agree on the price.', vi: 'Để chốt thỏa thuận, chúng ta cần đồng ý về giá cả.' },
     ],
   },
   {
@@ -16533,9 +16725,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are prepared to sign',
     vietnamese: 'chúng tôi sẵn sàng ký kết',
     phonetic: '/wiː ɑːr prɪˈpeəd tə saɪn/',
+    usage: 'Dùng khi bày tỏ sự sẵn sàng ký kết sau khi các điều kiện đã được chốt.',
     role: 'closer',
     examples: [
       { en: 'We are prepared to sign once the price is fixed.', vi: 'Chúng tôi sẵn sàng ký kết khi giá được chốt.' },
+      { en: 'We are prepared to sign once the price is fixed.', vi: 'Chúng tôi sẵn sàng ký kết khi giá được chốt.' },
+      { en: 'We are prepared to sign if the terms remain unchanged.', vi: 'Chúng tôi sẵn sàng ký kết nếu các điều khoản không thay đổi.' },
     ],
   },
   {
@@ -16546,9 +16741,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to finalize the terms',
     vietnamese: 'để hoàn tất các điều khoản',
     phonetic: '/tə ˈfaɪnəlaɪz ðə tɜːmz/',
+    usage: 'Dùng khi nêu việc cần làm để hoàn tất các điều khoản của thỏa thuận.',
     role: 'closer',
     examples: [
       { en: 'To finalize the terms, please send us the draft.', vi: 'Để hoàn tất các điều khoản, vui lòng gửi cho chúng tôi bản nháp.' },
+      { en: 'To finalize the terms, please send us the draft.', vi: 'Để hoàn tất các điều khoản, xin hãy gửi cho chúng tôi bản nháp.' },
+      { en: 'To finalize the terms, we need to review the contract.', vi: 'Để hoàn tất các điều khoản, chúng ta cần rà soát hợp đồng.' },
     ],
   },
   {
@@ -16559,9 +16757,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have reached an agreement',
     vietnamese: 'chúng ta đã đạt được một thỏa thuận',
     phonetic: '/wiː hæv riːtʃt ən əˈɡriːmənt/',
+    usage: 'Dùng khi xác nhận hai bên đã đạt được thỏa thuận về các điểm chính.',
     role: 'closer',
     examples: [
       { en: 'We have reached an agreement on the main points.', vi: 'Chúng ta đã đạt được một thỏa thuận về các điểm chính.' },
+      { en: 'We have reached an agreement on the main points.', vi: 'Chúng ta đã đạt được một thỏa thuận về các điểm chính.' },
+      { en: 'We have reached an agreement after a long discussion.', vi: 'Chúng ta đã đạt được một thỏa thuận sau cuộc thảo luận dài.' },
     ],
   },
   {
@@ -16572,9 +16773,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what is your best offer',
     vietnamese: 'mức giá tốt nhất của bạn là bao nhiêu',
     phonetic: '/wɒt ɪz jɔː best ˈɒfə/',
+    usage: 'Dùng khi hỏi trực tiếp mức giá tốt nhất mà đối tác có thể đưa ra.',
     role: 'question',
     examples: [
       { en: 'What is your best offer for the full package?', vi: 'Mức giá tốt nhất của bạn cho trọn gói là bao nhiêu?' },
+      { en: 'What is your best offer for the full package?', vi: 'Mức giá tốt nhất của bạn cho trọn gói là bao nhiêu?' },
+      { en: 'Tell me, what is your best offer for this order?', vi: 'Nói cho tôi biết, mức giá tốt nhất của bạn cho đơn hàng này là bao nhiêu?' },
     ],
   },
   {
@@ -16585,9 +16789,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'could you clarify the payment terms',
     vietnamese: 'bạn có thể làm rõ các điều khoản thanh toán không',
     phonetic: '/kʊd juː ˈklærɪfaɪ ðə ˈpeɪmənt tɜːmz/',
+    usage: 'Dùng khi cần làm rõ các điều khoản thanh toán trước khi quyết định.',
     role: 'question',
     examples: [
       { en: 'Could you clarify the payment terms for the first order?', vi: 'Bạn có thể làm rõ các điều khoản thanh toán cho đơn hàng đầu tiên không?' },
+      { en: 'Could you clarify the payment terms for the first order?', vi: 'Bạn có thể làm rõ các điều khoản thanh toán cho đơn hàng đầu tiên không?' },
+      { en: 'Could you clarify the payment terms in the contract?', vi: 'Bạn có thể làm rõ các điều khoản thanh toán trong hợp đồng không?' },
     ],
   },
   {
@@ -16598,9 +16805,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'can you match the competitor price',
     vietnamese: 'bạn có thể cân bằng mức giá của đối thủ không',
     phonetic: '/kæn juː mætʃ ðə kəmˈpetɪtə praɪs/',
+    usage: 'Dùng khi yêu cầu đối tác điều chỉnh giá cho bằng với đối thủ cạnh tranh.',
     role: 'question',
     examples: [
       { en: 'Can you match the competitor price for this volume?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho số lượng này không?' },
+      { en: 'Can you match the competitor price for this volume?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho số lượng này không?' },
+      { en: 'We ask you to match the competitor price.', vi: 'Chúng tôi yêu cầu bạn cân bằng mức giá của đối thủ.' },
     ],
   },
   {
@@ -16611,9 +16821,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to open the negotiation we need a baseline',
     vietnamese: 'để bắt đầu đàm phán, chúng ta cần một mốc cơ sở',
     phonetic: '/tə ˈəʊpən ðə nɪˌɡəʊʃiˈeɪʃən wiː niːd ə ˈbeɪslaɪn/',
+    usage: 'Dùng khi mở đầu đàm phán và cần một mốc cơ sở để bắt đầu thảo luận về giá.',
     role: 'opener',
     examples: [
       { en: 'To open the negotiation we need a baseline for pricing.', vi: 'Để bắt đầu đàm phán, chúng ta cần một mốc cơ sở về giá.' },
+      { en: 'To open the negotiation we need a baseline for pricing.', vi: 'Để bắt đầu đàm phán, chúng ta cần một mốc cơ sở cho giá cả.' },
+      { en: 'A baseline is needed to open the negotiation.', vi: 'Cần một mốc cơ sở để bắt đầu đàm phán.' },
     ],
   },
   {
@@ -16624,9 +16837,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us put the numbers on the table first',
     vietnamese: 'trước tiên hãy đưa các con số ra bàn đàm phán',
     phonetic: '/let ʌs pʊt ðə ˈnʌmbəz ɒn ðə ˈteɪbl fɜːst/',
+    usage: 'Dùng khi muốn đưa các con số ra trước khi thảo luận về các vấn đề khác.',
     role: 'opener',
     examples: [
       { en: 'Let us put the numbers on the table first before we discuss scope.', vi: 'Trước tiên hãy đưa các con số ra bàn đàm phán trước khi thảo luận về phạm vi.' },
+      { en: 'Let us put the numbers on the table first before we discuss scope.', vi: 'Trước tiên hãy đưa các con số ra bàn đàm phán trước khi bàn về phạm vi.' },
+      { en: 'Put the numbers on the table first, then we negotiate.', vi: 'Đưa các con số ra bàn trước, sau đó chúng ta đàm phán.' },
     ],
   },
   {
@@ -16637,9 +16853,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would like to propose a different structure',
     vietnamese: 'chúng tôi muốn đề xuất một cơ cấu khác',
     phonetic: '/wiː wʊd laɪk tə prəˈpəʊz ə ˈdɪfrənt ˈstrʌktʃə/',
+    usage: 'Dùng khi đề xuất một cơ cấu phí hoặc phương án khác với đề xuất ban đầu.',
     role: 'opener',
     examples: [
       { en: 'We would like to propose a different structure for the fee.', vi: 'Chúng tôi muốn đề xuất một cơ cấu phí khác.' },
+      { en: 'We would like to propose a different structure for the fee.', vi: 'Chúng tôi muốn đề xuất một cơ cấu phí khác.' },
+      { en: 'A different structure could benefit both parties.', vi: 'Một cơ cấu khác có thể mang lại lợi ích cho cả hai bên.' },
     ],
   },
   {
@@ -16650,9 +16869,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us talk about the terms first',
     vietnamese: 'chúng ta hãy nói về các điều khoản trước',
     phonetic: '/let ʌs tɔːk əˈbaʊt ðə tɜːmz fɜːst/',
+    usage: 'Dùng khi muốn bàn về các điều khoản trước khi nói đến giá, tránh hiểu lầm.',
     role: 'opener',
     examples: [
       { en: 'Let us talk about the terms first to avoid confusion.', vi: 'Chúng ta hãy nói về các điều khoản trước để tránh nhầm lẫn.' },
+      { en: 'Let us talk about the terms first to avoid confusion.', vi: 'Chúng ta hãy nói về các điều khoản trước để tránh nhầm lẫn.' },
+      { en: 'Let us talk about the terms first, then the price.', vi: 'Chúng ta hãy nói về các điều khoản trước, sau đó là giá.' },
     ],
   },
   {
@@ -16663,9 +16885,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if we adjust the volume we can improve the price',
     vietnamese: 'nếu chúng ta điều chỉnh số lượng, chúng ta có thể cải thiện giá',
     phonetic: '/ɪf wiː əˈdʒʌst ðə ˈvɒljuːm wiː kən ɪmˈpruːv ðə praɪs/',
+    usage: 'Dùng khi đề xuất điều chỉnh số lượng để đổi lấy mức giá tốt hơn.',
     role: 'linker',
     examples: [
       { en: 'If we adjust the volume we can improve the price per unit.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta có thể cải thiện giá mỗi đơn vị.' },
+      { en: 'If we adjust the volume we can improve the price per unit.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta có thể cải thiện giá mỗi đơn vị.' },
+      { en: 'If we adjust the volume, the unit price improves.', vi: 'Nếu chúng ta điều chỉnh số lượng, giá mỗi đơn vị sẽ tốt hơn.' },
     ],
   },
   {
@@ -16676,9 +16901,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the topic of delivery schedules',
     vietnamese: 'về chủ đề lịch giao hàng',
     phonetic: '/ɒn ðə ˈtɒpɪk ɒv dɪˈlɪvəri ˈʃedjuːlz/',
+    usage: 'Dùng khi chuyển hướng thảo luận sang chủ đề lịch giao hàng.',
     role: 'linker',
     examples: [
       { en: 'On the topic of delivery schedules, we can be flexible.', vi: 'Về chủ đề lịch giao hàng, chúng tôi có thể linh hoạt.' },
+      { en: 'On the topic of delivery schedules, we can be flexible.', vi: 'Về chủ đề lịch giao hàng, chúng tôi có thể linh hoạt.' },
+      { en: 'On the topic of delivery schedules, we need to agree.', vi: 'Về chủ đề lịch giao hàng, chúng ta cần thống nhất.' },
     ],
   },
   {
@@ -16689,9 +16917,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a middle ground we could share the risk',
     vietnamese: 'như một giải pháp dung hòa, chúng ta có thể chia sẻ rủi ro',
     phonetic: '/æz ə ˈmɪdl ɡraʊnd wiː kʊd ʃeə ðə rɪsk/',
+    usage: 'Dùng khi đề xuất chia sẻ rủi ro giữa hai bên như một giải pháp dung hòa.',
     role: 'linker',
     examples: [
       { en: 'As a middle ground we could share the risk of delay.', vi: 'Như một giải pháp dung hòa, chúng ta có thể chia sẻ rủi ro chậm trễ.' },
+      { en: 'As a middle ground we could share the risk of delay.', vi: 'Như một giải pháp dung hòa, chúng ta có thể chia sẻ rủi ro chậm trễ.' },
+      { en: 'As a middle ground we could share the shipping risk.', vi: 'Như một giải pháp dung hòa, chúng ta có thể chia sẻ rủi ro vận chuyển.' },
     ],
   },
   {
@@ -16702,9 +16933,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'then we move on to the payment plan',
     vietnamese: 'sau đó chúng ta chuyển sang phương án thanh toán',
     phonetic: '/ðen wiː muːv ɒn tə ðə ˈpeɪmənt plæn/',
+    usage: 'Dùng khi chuyển sang thảo luận về phương án thanh toán và bảo hành.',
     role: 'linker',
     examples: [
       { en: 'Then we move on to the payment plan and warranty.', vi: 'Sau đó chúng ta chuyển sang phương án thanh toán và bảo hành.' },
+      { en: 'Then we move on to the payment plan and warranty.', vi: 'Sau đó chúng ta chuyển sang phương án thanh toán và bảo hành.' },
+      { en: 'Then we move on to the payment plan for the project.', vi: 'Sau đó chúng ta chuyển sang phương án thanh toán cho dự án.' },
     ],
   },
   {
@@ -16715,9 +16949,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be quite frank the budget is tight',
     vietnamese: 'thành thật mà nói, ngân sách đang eo hẹp',
     phonetic: '/tə biː kwaɪt fræŋk ðə ˈbʌdʒɪt ɪz taɪt/',
+    usage: 'Dùng khi thành thật thông báo rằng ngân sách hiện đang eo hẹp.',
     role: 'filler',
     examples: [
       { en: 'To be quite frank the budget is tight this quarter.', vi: 'Thành thật mà nói, ngân sách quý này đang eo hẹp.' },
+      { en: 'To be quite frank the budget is tight this quarter.', vi: 'Thành thật mà nói, ngân sách đang eo hẹp trong quý này.' },
+      { en: 'To be quite frank the budget is tight, we need a discount.', vi: 'Thành thật mà nói, ngân sách đang eo hẹp, chúng tôi cần giảm giá.' },
     ],
   },
   {
@@ -16728,9 +16965,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'within reason we can be flexible',
     vietnamese: 'trong giới hạn hợp lý, chúng tôi có thể linh hoạt',
     phonetic: '/wɪˈðɪn ˈriːzən wiː kən biː ˈfleksəbl/',
+    usage: 'Dùng khi khẳng định có thể linh hoạt nhưng trong giới hạn hợp lý.',
     role: 'filler',
     examples: [
       { en: 'Within reason we can be flexible on the volume discount.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể linh hoạt về chiết khấu theo số lượng.' },
+      { en: 'Within reason we can be flexible on the volume discount.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể linh hoạt về chiết khấu số lượng.' },
+      { en: 'Within reason we can be flexible on the terms.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể linh hoạt về các điều khoản.' },
     ],
   },
   {
@@ -16741,9 +16981,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all else being equal we choose quality',
     vietnamese: 'trong điều kiện các yếu tố khác không đổi, chúng tôi chọn chất lượng',
     phonetic: '/ɔːl els ˈbiːɪŋ ˈiːkwəl wiː tʃuːz ˈkwɒləti/',
+    usage: 'Dùng khi nêu ưu tiên của bên mình khi các yếu tố khác tương đương nhau.',
     role: 'filler',
     examples: [
       { en: 'All else being equal we choose quality over speed.', vi: 'Trong điều kiện các yếu tố khác không đổi, chúng tôi chọn chất lượng hơn tốc độ.' },
+      { en: 'All else being equal we choose quality over speed.', vi: 'Trong điều kiện các yếu tố khác không đổi, chúng tôi chọn chất lượng hơn tốc độ.' },
+      { en: 'All else being equal we choose the trusted supplier.', vi: 'Trong điều kiện các yếu tố khác không đổi, chúng tôi chọn nhà cung cấp đáng tin cậy.' },
     ],
   },
   {
@@ -16754,9 +16997,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end it comes down to trust',
     vietnamese: 'cuối cùng, tất cả đều quy về sự tin cậy',
     phonetic: '/ɪn ði end ɪt kʌmz daʊn tə trʌst/',
+    usage: 'Dùng khi tóm tắt rằng sự tin cậy là yếu tố quyết định của mối quan hệ kinh doanh.',
     role: 'filler',
     examples: [
       { en: 'In the end it comes down to trust between partners.', vi: 'Cuối cùng, tất cả đều quy về sự tin cậy giữa các đối tác.' },
+      { en: 'In the end it comes down to trust between partners.', vi: 'Cuối cùng, tất cả đều quy về sự tin cậy giữa các đối tác.' },
+      { en: 'In the end it comes down to trust and reputation.', vi: 'Cuối cùng, tất cả đều quy về sự tin cậy và uy tín.' },
     ],
   },
   {
@@ -16767,9 +17013,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to close the deal we need a signature',
     vietnamese: 'để chốt thỏa thuận, chúng ta cần một chữ ký',
     phonetic: '/tə kləʊz ðə diːl wiː niːd ə ˈsɪɡnətʃə/',
+    usage: 'Dùng khi nêu điều kiện cần thiết để chốt thỏa thuận, ví dụ cần chữ ký.',
     role: 'closer',
     examples: [
       { en: 'To close the deal we need a signature from your director.', vi: 'Để chốt thỏa thuận, chúng ta cần chữ ký của giám đốc bạn.' },
+      { en: 'To close the deal we need a signature from your director.', vi: 'Để chốt thỏa thuận, chúng ta cần chữ ký của giám đốc bạn.' },
+      { en: 'To close the deal we need the signed contract.', vi: 'Để chốt thỏa thuận, chúng ta cần hợp đồng đã ký.' },
     ],
   },
   {
@@ -16780,9 +17029,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are prepared to sign today',
     vietnamese: 'chúng tôi sẵn sàng ký hôm nay',
     phonetic: '/wiː ɑːr prɪˈpeəd tə saɪn təˈdeɪ/',
+    usage: 'Dùng khi bày tỏ sự sẵn sàng ký ngay nếu các điều khoản giữ nguyên.',
     role: 'closer',
     examples: [
       { en: 'We are prepared to sign today if the terms stay the same.', vi: 'Chúng tôi sẵn sàng ký hôm nay nếu các điều khoản không thay đổi.' },
+      { en: 'We are prepared to sign today if the terms stay the same.', vi: 'Chúng tôi sẵn sàng ký hôm nay nếu các điều khoản giữ nguyên.' },
+      { en: 'We are prepared to sign today, the documents are ready.', vi: 'Chúng tôi sẵn sàng ký hôm nay, tài liệu đã sẵn sàng.' },
     ],
   },
   {
@@ -16793,9 +17045,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to finalize the terms send us the draft',
     vietnamese: 'để hoàn tất các điều khoản, hãy gửi cho chúng tôi bản nháp',
     phonetic: '/tə ˈfaɪnəlaɪz ðə tɜːmz send ʌs ðə drɑːft/',
+    usage: 'Dùng khi yêu cầu đối tác gửi bản nháp để hoàn tất các điều khoản.',
     role: 'closer',
     examples: [
       { en: 'To finalize the terms send us the draft by Friday.', vi: 'Để hoàn tất các điều khoản, hãy gửi cho chúng tôi bản nháp trước thứ Sáu.' },
+      { en: 'To finalize the terms send us the draft by Friday.', vi: 'Để hoàn tất các điều khoản, hãy gửi cho chúng tôi bản nháp trước thứ Sáu.' },
+      { en: 'To finalize the terms, please send us the latest draft.', vi: 'Để hoàn tất các điều khoản, xin hãy gửi cho chúng tôi bản nháp mới nhất.' },
     ],
   },
   {
@@ -16806,9 +17061,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have reached an agreement in principle',
     vietnamese: 'chúng ta đã đạt được thỏa thuận về nguyên tắc',
     phonetic: '/wiː hæv riːtʃt ən əˈɡriːmənt ɪn ˈprɪnsəpl/',
+    usage: 'Dùng khi xác nhận hai bên đã đạt thỏa thuận về nguyên tắc, chưa đi vào chi tiết.',
     role: 'closer',
     examples: [
       { en: 'We have reached an agreement in principle on the main terms.', vi: 'Chúng ta đã đạt được thỏa thuận về nguyên tắc cho các điều khoản chính.' },
+      { en: 'We have reached an agreement in principle on the main terms.', vi: 'Chúng ta đã đạt được thỏa thuận về nguyên tắc đối với các điều khoản chính.' },
+      { en: 'We have reached an agreement in principle, pending details.', vi: 'Chúng ta đã đạt được thỏa thuận về nguyên tắc, chờ các chi tiết.' },
     ],
   },
   {
@@ -16819,9 +17077,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what is your best offer for the package',
     vietnamese: 'mức giá tốt nhất của bạn cho trọn gói là bao nhiêu',
     phonetic: '/wɒt ɪz jɔː best ˈɒfə fə ðə ˈpækɪdʒ/',
+    usage: 'Dùng khi hỏi mức giá tốt nhất cho trọn gói, bao gồm các dịch vụ đi kèm.',
     role: 'question',
     examples: [
       { en: 'What is your best offer for the package including support?', vi: 'Mức giá tốt nhất của bạn cho trọn gói bao gồm hỗ trợ là bao nhiêu?' },
+      { en: 'What is your best offer for the package including support?', vi: 'Mức giá tốt nhất của bạn cho trọn gói bao gồm hỗ trợ là bao nhiêu?' },
+      { en: 'What is your best offer for the full package?', vi: 'Mức giá tốt nhất của bạn cho trọn gói là bao nhiêu?' },
     ],
   },
   {
@@ -16832,9 +17093,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'could you clarify the payment terms for the deposit',
     vietnamese: 'bạn có thể làm rõ điều khoản thanh toán cho khoản đặt cọc không',
     phonetic: '/kʊd juː ˈklærɪfaɪ ðə ˈpeɪmənt tɜːmz fə ðə dɪˈpɒzɪt/',
+    usage: 'Dùng khi cần làm rõ điều khoản thanh toán liên quan đến khoản đặt cọc.',
     role: 'question',
     examples: [
       { en: 'Could you clarify the payment terms for the deposit amount?', vi: 'Bạn có thể làm rõ điều khoản thanh toán cho số tiền đặt cọc không?' },
+      { en: 'Could you clarify the payment terms for the deposit amount?', vi: 'Bạn có thể làm rõ điều khoản thanh toán cho khoản đặt cọc không?' },
+      { en: 'Could you clarify the payment terms for the deposit?', vi: 'Bạn có thể làm rõ điều khoản thanh toán cho khoản đặt cọc không?' },
     ],
   },
   {
@@ -16845,9 +17109,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'can you match the competitor price on this item',
     vietnamese: 'bạn có thể cân bằng mức giá của đối thủ cho sản phẩm này không',
     phonetic: '/kæn juː mætʃ ðə kəmˈpetɪtə praɪs ɒn ðɪs ˈaɪtəm/',
+    usage: 'Dùng khi yêu cầu đối tác điều chỉnh giá cho bằng đối thủ cho một sản phẩm cụ thể.',
     role: 'question',
     examples: [
       { en: 'Can you match the competitor price on this item for us?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho sản phẩm này không?' },
+      { en: 'Can you match the competitor price on this item for us?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho sản phẩm này không?' },
+      { en: 'Can you match the competitor price on this item?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho sản phẩm này không?' },
     ],
   },
   {
@@ -16858,9 +17125,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to open the negotiation we propose a framework',
     vietnamese: 'để bắt đầu đàm phán, chúng tôi đề xuất một khung thảo luận',
     phonetic: '/tə ˈəʊpən ðə nɪˌɡəʊʃiˈeɪʃən wiː prəˈpəʊz ə ˈfreɪmwɜːk/',
+    usage: 'Dùng khi mở đầu đàm phán bằng việc đề xuất một khung thảo luận chung.',
     role: 'opener',
     examples: [
       { en: 'To open the negotiation we propose a framework for the pricing model.', vi: 'Để bắt đầu đàm phán, chúng tôi đề xuất một khung cho mô hình giá.' },
+      { en: 'To open the negotiation we propose a framework for the pricing model.', vi: 'Để bắt đầu đàm phán, chúng tôi đề xuất một khung thảo luận cho mô hình giá.' },
+      { en: 'We propose a framework to open the negotiation.', vi: 'Chúng tôi đề xuất một khung để bắt đầu đàm phán.' },
     ],
   },
   {
@@ -16871,9 +17141,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us put the numbers on the table and compare',
     vietnamese: 'chúng ta hãy đưa các con số ra và so sánh',
     phonetic: '/let ʌs pʊt ðə ˈnʌmbəz ɒn ðə ˈteɪbl ænd kəmˈpeə/',
+    usage: 'Dùng khi muốn đưa các con số ra và so sánh các phương án với nhau.',
     role: 'opener',
     examples: [
       { en: 'Let us put the numbers on the table and compare the two options.', vi: 'Chúng ta hãy đưa các con số ra và so sánh hai phương án.' },
+      { en: 'Let us put the numbers on the table and compare the two options.', vi: 'Chúng ta hãy đưa các con số ra và so sánh hai phương án.' },
+      { en: 'Put the numbers on the table and compare them.', vi: 'Đưa các con số ra bàn và so sánh chúng.' },
     ],
   },
   {
@@ -16884,9 +17157,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would like to propose a phased rollout',
     vietnamese: 'chúng tôi muốn đề xuất triển khai theo giai đoạn',
     phonetic: '/wiː wʊd laɪk tə prəˈpəʊz ə feɪzd ˈrəʊlaʊt/',
+    usage: 'Dùng khi đề xuất triển khai theo giai đoạn để giảm chi phí ban đầu.',
     role: 'opener',
     examples: [
       { en: 'We would like to propose a phased rollout to reduce upfront cost.', vi: 'Chúng tôi muốn đề xuất triển khai theo giai đoạn để giảm chi phí ban đầu.' },
+      { en: 'We would like to propose a phased rollout to reduce upfront cost.', vi: 'Chúng tôi muốn đề xuất triển khai theo giai đoạn để giảm chi phí ban đầu.' },
+      { en: 'A phased rollout would help manage the budget.', vi: 'Triển khai theo giai đoạn sẽ giúp quản lý ngân sách.' },
     ],
   },
   {
@@ -16897,9 +17173,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us talk about the terms in detail',
     vietnamese: 'chúng ta hãy nói về các điều khoản một cách chi tiết',
     phonetic: '/let ʌs tɔːk əˈbaʊt ðə tɜːmz ɪn ˈdiːteɪl/',
+    usage: 'Dùng khi muốn thảo luận chi tiết các điều khoản trước khi cam kết.',
     role: 'opener',
     examples: [
       { en: 'Let us talk about the terms in detail before we commit.', vi: 'Chúng ta hãy nói về các điều khoản một cách chi tiết trước khi cam kết.' },
+      { en: 'Let us talk about the terms in detail before we commit.', vi: 'Chúng ta hãy nói về các điều khoản một cách chi tiết trước khi cam kết.' },
+      { en: 'We need to talk about the terms in detail first.', vi: 'Chúng ta cần nói về các điều khoản một cách chi tiết trước.' },
     ],
   },
   {
@@ -16910,9 +17189,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if we adjust the volume we unlock a discount',
     vietnamese: 'nếu chúng ta điều chỉnh số lượng, chúng ta sẽ mở khóa chiết khấu',
     phonetic: '/ɪf wiː əˈdʒʌst ðə ˈvɒljuːm wiː ʌnˈlɒk ə ˈdɪskaʊnt/',
+    usage: 'Dùng khi đề xuất điều chỉnh số lượng để được hưởng chiết khấu cho cả đơn hàng.',
     role: 'linker',
     examples: [
       { en: 'If we adjust the volume we unlock a discount on the whole order.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta sẽ được chiết khấu cho toàn bộ đơn hàng.' },
+      { en: 'If we adjust the volume we unlock a discount on the whole order.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta sẽ mở khóa chiết khấu cho cả đơn hàng.' },
+      { en: 'Adjusting the volume unlocks a better discount.', vi: 'Điều chỉnh số lượng sẽ mở khóa chiết khấu tốt hơn.' },
     ],
   },
   {
@@ -16923,9 +17205,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the topic of delivery we have constraints',
     vietnamese: 'về chủ đề giao hàng, chúng tôi có những giới hạn',
     phonetic: '/ɒn ðə ˈtɒpɪk ɒv dɪˈlɪvəri wiː hæv kənˈstreɪnts/',
+    usage: 'Dùng khi thông báo rằng bên mình có những giới hạn về giao hàng không thể bỏ qua.',
     role: 'linker',
     examples: [
       { en: 'On the topic of delivery we have constraints we cannot ignore.', vi: 'Về chủ đề giao hàng, chúng tôi có những giới hạn không thể bỏ qua.' },
+      { en: 'On the topic of delivery we have constraints we cannot ignore.', vi: 'Về chủ đề giao hàng, chúng tôi có những giới hạn không thể bỏ qua.' },
+      { en: 'On the topic of delivery, our constraints are firm.', vi: 'Về chủ đề giao hàng, các giới hạn của chúng tôi là cố định.' },
     ],
   },
   {
@@ -16936,9 +17221,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a middle ground we offer a trade-off',
     vietnamese: 'như một giải pháp dung hòa, chúng tôi đề xuất một sự đánh đổi',
     phonetic: '/æz ə ˈmɪdl ɡraʊnd wiː ˈɒfə ə ˈtreɪd ɒf/',
+    usage: 'Dùng khi đề xuất một sự đánh đổi giữa hai điều khoản như một giải pháp dung hòa.',
     role: 'linker',
     examples: [
       { en: 'As a middle ground we offer a trade-off on the warranty period.', vi: 'Như một giải pháp dung hòa, chúng tôi đề xuất một sự đánh đổi về thời gian bảo hành.' },
+      { en: 'As a middle ground we offer a trade-off on the warranty period.', vi: 'Như một giải pháp dung hòa, chúng tôi đề xuất một sự đánh đổi về thời gian bảo hành.' },
+      { en: 'As a middle ground, we can trade off price for volume.', vi: 'Như một giải pháp dung hòa, chúng ta có thể đánh đổi giá lấy số lượng.' },
     ],
   },
   {
@@ -16949,9 +17237,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'then we move on to the fine print',
     vietnamese: 'sau đó chúng ta chuyển sang các điều khoản chi tiết',
     phonetic: '/ðen wiː muːv ɒn tə ðə faɪn prɪnt/',
+    usage: 'Dùng khi chuyển sang xem xét các điều khoản chi tiết của hợp đồng.',
     role: 'linker',
     examples: [
       { en: 'Then we move on to the fine print of the contract.', vi: 'Sau đó chúng ta chuyển sang các điều khoản chi tiết của hợp đồng.' },
+      { en: 'Then we move on to the fine print of the contract.', vi: 'Sau đó chúng ta chuyển sang các điều khoản chi tiết của hợp đồng.' },
+      { en: 'Then we move on to the fine print, please read carefully.', vi: 'Sau đó chúng ta chuyển sang các điều khoản chi tiết, xin hãy đọc kỹ.' },
     ],
   },
   {
@@ -16962,9 +17253,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be quite frank we have better offers',
     vietnamese: 'thành thật mà nói, chúng tôi có những đề xuất tốt hơn',
     phonetic: '/tə biː kwaɪt fræŋk wiː hæv ˈbetə ˈɒfəz/',
+    usage: 'Dùng khi thành thật cho biết bên mình đang có những đề xuất tốt hơn từ nơi khác, tạo áp lực đàm phán.',
     role: 'filler',
     examples: [
       { en: 'To be quite frank we have better offers from other vendors.', vi: 'Thành thật mà nói, chúng tôi có những đề xuất tốt hơn từ các nhà cung cấp khác.' },
+      { en: 'To be quite frank we have better offers from other vendors.', vi: 'Thành thật mà nói, chúng tôi có những đề xuất tốt hơn từ các nhà cung cấp khác.' },
+      { en: 'To be quite frank, we are comparing several offers.', vi: 'Thành thật mà nói, chúng tôi đang so sánh một số đề xuất.' },
     ],
   },
   {
@@ -16975,9 +17269,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'within reason we can negotiate further',
     vietnamese: 'trong giới hạn hợp lý, chúng tôi có thể thương lượng thêm',
     phonetic: '/wɪˈðɪn ˈriːzən wiː kən nɪˈɡəʊʃieɪt ˈfɜːðə/',
+    usage: 'Dùng khi khẳng định sẵn sàng thương lượng thêm trong giới hạn hợp lý.',
     role: 'filler',
     examples: [
       { en: 'Within reason we can negotiate further on the service level.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể thương lượng thêm về mức dịch vụ.' },
+      { en: 'Within reason we can negotiate further on the service level.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể thương lượng thêm về cấp độ dịch vụ.' },
+      { en: 'Within reason we can negotiate further on the price.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể thương lượng thêm về giá.' },
     ],
   },
   {
@@ -16988,9 +17285,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all else being equal the decision is easy',
     vietnamese: 'trong điều kiện các yếu tố khác không đổi, quyết định rất dễ dàng',
     phonetic: '/ɔːl els ˈbiːɪŋ ˈiːkwəl ðə dɪˈsɪʒən ɪz ˈiːzi/',
+    usage: 'Dùng khi nêu rằng quyết định trở nên dễ dàng khi các yếu tố khác tương đương.',
     role: 'filler',
     examples: [
       { en: 'All else being equal the decision is easy: take the better terms.', vi: 'Trong điều kiện các yếu tố khác không đổi, quyết định rất dễ: chọn điều khoản tốt hơn.' },
+      { en: 'All else being equal the decision is easy: take the better terms.', vi: 'Trong điều kiện các yếu tố khác không đổi, quyết định rất dễ dàng: chọn điều khoản tốt hơn.' },
+      { en: 'All else being equal, the decision is easy.', vi: 'Trong điều kiện các yếu tố khác không đổi, quyết định rất dễ dàng.' },
     ],
   },
   {
@@ -17001,9 +17301,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end it comes down to risk appetite',
     vietnamese: 'cuối cùng, tất cả đều quy về khả năng chấp nhận rủi ro',
     phonetic: '/ɪn ði end ɪt kʌmz daʊn tə rɪsk ˈæpɪtaɪt/',
+    usage: 'Dùng khi tóm tắt rằng khả năng chấp nhận rủi ro là yếu tố quyết định của thương vụ.',
     role: 'filler',
     examples: [
       { en: 'In the end it comes down to risk appetite on both sides.', vi: 'Cuối cùng, tất cả đều quy về khả năng chấp nhận rủi ro của cả hai bên.' },
+      { en: 'In the end it comes down to risk appetite on both sides.', vi: 'Cuối cùng, tất cả đều quy về khả năng chấp nhận rủi ro của cả hai bên.' },
+      { en: 'In the end it comes down to risk appetite.', vi: 'Cuối cùng, tất cả đều quy về khả năng chấp nhận rủi ro.' },
     ],
   },
   {
@@ -17014,9 +17317,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to close the deal we need alignment',
     vietnamese: 'để chốt thỏa thuận, chúng ta cần sự đồng thuận',
     phonetic: '/tə kləʊz ðə diːl wiː niːd əˈlaɪnmənt/',
+    usage: 'Dùng khi nêu điều kiện cần thiết để chốt thỏa thuận, ví dụ sự đồng thuận về giá.',
     role: 'closer',
     examples: [
       { en: 'To close the deal we need alignment on the final price.', vi: 'Để chốt thỏa thuận, chúng ta cần sự đồng thuận về mức giá cuối cùng.' },
+      { en: 'To close the deal we need alignment on the final price.', vi: 'Để chốt thỏa thuận, chúng ta cần sự đồng thuận về mức giá cuối cùng.' },
+      { en: 'To close the deal we need alignment on the terms.', vi: 'Để chốt thỏa thuận, chúng ta cần sự đồng thuận về các điều khoản.' },
     ],
   },
   {
@@ -17027,9 +17333,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are prepared to sign on these terms',
     vietnamese: 'chúng tôi sẵn sàng ký kết theo các điều khoản này',
     phonetic: '/wiː ɑːr prɪˈpeəd tə saɪn ɒn ðiːz tɜːmz/',
+    usage: 'Dùng khi bày tỏ sự sẵn sàng ký kết theo các điều khoản hiện tại, thường kèm thời hạn.',
     role: 'closer',
     examples: [
       { en: 'We are prepared to sign on these terms by the end of the week.', vi: 'Chúng tôi sẵn sàng ký kết theo các điều khoản này trước cuối tuần.' },
+      { en: 'We are prepared to sign on these terms by the end of the week.', vi: 'Chúng tôi sẵn sàng ký kết theo các điều khoản này trước cuối tuần.' },
+      { en: 'We are prepared to sign on these terms today.', vi: 'Chúng tôi sẵn sàng ký kết theo các điều khoản này hôm nay.' },
     ],
   },
   {
@@ -17040,9 +17349,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to finalize the terms we need a written confirmation',
     vietnamese: 'để hoàn tất các điều khoản, chúng ta cần xác nhận bằng văn bản',
     phonetic: '/tə ˈfaɪnəlaɪz ðə tɜːmz wiː niːd ə ˈrɪtən ˌkɒnfəˈmeɪʃən/',
+    usage: 'Dùng khi nêu rằng cần xác nhận bằng văn bản để hoàn tất các điều khoản.',
     role: 'closer',
     examples: [
       { en: 'To finalize the terms we need a written confirmation from legal.', vi: 'Để hoàn tất các điều khoản, chúng ta cần xác nhận bằng văn bản từ bộ phận pháp lý.' },
+      { en: 'To finalize the terms we need a written confirmation from legal.', vi: 'Để hoàn tất các điều khoản, chúng ta cần xác nhận bằng văn bản từ bộ phận pháp lý.' },
+      { en: 'A written confirmation is needed to finalize the terms.', vi: 'Cần một xác nhận bằng văn bản để hoàn tất các điều khoản.' },
     ],
   },
   {
@@ -17053,9 +17365,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have reached an agreement on the key issues',
     vietnamese: 'chúng ta đã đạt được thỏa thuận về các vấn đề then chốt',
     phonetic: '/wiː hæv riːtʃt ən əˈɡriːmənt ɒn ðə kiː ˈɪʃuːz/',
+    usage: 'Dùng khi xác nhận đã đạt thỏa thuận về các vấn đề then chốt, còn chờ phê duyệt.',
     role: 'closer',
     examples: [
       { en: 'We have reached an agreement on the key issues, pending approval.', vi: 'Chúng ta đã đạt được thỏa thuận về các vấn đề then chốt, chờ phê duyệt.' },
+      { en: 'We have reached an agreement on the key issues, pending approval.', vi: 'Chúng ta đã đạt được thỏa thuận về các vấn đề then chốt, đang chờ phê duyệt.' },
+      { en: 'We have reached an agreement on the key issues.', vi: 'Chúng ta đã đạt được thỏa thuận về các vấn đề then chốt.' },
     ],
   },
   {
@@ -17066,9 +17381,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what is your best offer including support',
     vietnamese: 'mức giá tốt nhất của bạn là bao nhiêu, bao gồm cả hỗ trợ',
     phonetic: '/wɒt ɪz jɔː best ˈɒfə ɪnˈkluːdɪŋ səˈpɔːt/',
+    usage: 'Dùng khi hỏi mức giá tốt nhất, yêu cầu bao gồm cả dịch vụ hỗ trợ và đào tạo.',
     role: 'question',
     examples: [
       { en: 'What is your best offer including support and training?', vi: 'Mức giá tốt nhất của bạn là bao nhiêu, bao gồm cả hỗ trợ và đào tạo?' },
+      { en: 'What is your best offer including support and training?', vi: 'Mức giá tốt nhất của bạn là bao nhiêu, bao gồm cả hỗ trợ và đào tạo?' },
+      { en: 'What is your best offer including support?', vi: 'Mức giá tốt nhất của bạn là bao nhiêu, bao gồm cả hỗ trợ?' },
     ],
   },
   {
@@ -17079,9 +17397,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'could you clarify the payment terms for late delivery',
     vietnamese: 'bạn có thể làm rõ điều khoản thanh toán khi giao trễ không',
     phonetic: '/kʊd juː ˈklærɪfaɪ ðə ˈpeɪmənt tɜːmz fə leɪt dɪˈlɪvəri/',
+    usage: 'Dùng khi cần làm rõ điều khoản thanh toán trong trường hợp giao hàng trễ.',
     role: 'question',
     examples: [
       { en: 'Could you clarify the payment terms for late delivery penalties?', vi: 'Bạn có thể làm rõ điều khoản thanh toán khi giao trễ và phạt không?' },
+      { en: 'Could you clarify the payment terms for late delivery penalties?', vi: 'Bạn có thể làm rõ điều khoản thanh toán khi giao trễ có phạt không?' },
+      { en: 'Could you clarify the payment terms for late delivery?', vi: 'Bạn có thể làm rõ điều khoản thanh toán khi giao trễ không?' },
     ],
   },
   {
@@ -17092,9 +17413,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'can you match the competitor price on the license',
     vietnamese: 'bạn có thể cân bằng mức giá của đối thủ cho bản quyền không',
     phonetic: '/kæn juː mætʃ ðə kəmˈpetɪtə praɪs ɒn ðə ˈlaɪsəns/',
+    usage: 'Dùng khi yêu cầu cân bằng giá của đối thủ cho bản quyền, thường kèm thời hạn hợp đồng.',
     role: 'question',
     examples: [
       { en: 'Can you match the competitor price on the license for a three-year term?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho bản quyền với thời hạn ba năm không?' },
+      { en: 'Can you match the competitor price on the license for a three-year term?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho bản quyền với hợp đồng ba năm không?' },
+      { en: 'Can you match the competitor price on the license?', vi: 'Bạn có thể cân bằng mức giá của đối thủ cho bản quyền không?' },
     ],
   },
   {
@@ -17105,9 +17429,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to open the negotiation we set the ground rules',
     vietnamese: 'để bắt đầu đàm phán, chúng ta cần thiết lập các nguyên tắc cơ bản',
     phonetic: '/tə ˈəʊpən ðə nɪˌɡəʊʃiˈeɪʃən wiː set ðə ɡraʊnd ruːlz/',
+    usage: 'Dùng khi mở đầu đàm phán bằng việc thiết lập các nguyên tắc cơ bản cho cuộc thảo luận.',
     role: 'opener',
     examples: [
       { en: 'To open the negotiation we set the ground rules for the discussion.', vi: 'Để bắt đầu đàm phán, chúng ta cần thiết lập các nguyên tắc cơ bản cho cuộc thảo luận.' },
+      { en: 'To open the negotiation we set the ground rules for the discussion.', vi: 'Để bắt đầu đàm phán, chúng ta cần thiết lập các nguyên tắc cơ bản cho cuộc thảo luận.' },
+      { en: 'Setting ground rules helps open the negotiation smoothly.', vi: 'Thiết lập các nguyên tắc cơ bản giúp bắt đầu đàm phán suôn sẻ.' },
     ],
   },
   {
@@ -17118,9 +17445,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us put the numbers on the table openly',
     vietnamese: 'chúng ta hãy công khai đưa các con số ra bàn đàm phán',
     phonetic: '/let ʌs pʊt ðə ˈnʌmbəz ɒn ðə ˈteɪbl ˈəʊpənli/',
+    usage: 'Dùng khi muốn công khai các con số để xây dựng lòng tin giữa hai bên.',
     role: 'opener',
     examples: [
       { en: 'Let us put the numbers on the table openly to build trust.', vi: 'Chúng ta hãy công khai đưa các con số ra bàn đàm phán để xây dựng niềm tin.' },
+      { en: 'Let us put the numbers on the table openly to build trust.', vi: 'Chúng ta hãy công khai đưa các con số ra bàn đàm phán để xây dựng lòng tin.' },
+      { en: 'Put the numbers on the table openly, we have nothing to hide.', vi: 'Công khai đưa các con số ra bàn, chúng tôi không có gì giấu diếm.' },
     ],
   },
   {
@@ -17131,9 +17461,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would like to propose a win-win arrangement',
     vietnamese: 'chúng tôi muốn đề xuất một thỏa thuận đôi bên cùng có lợi',
     phonetic: '/wiː wʊd laɪk tə prəˈpəʊz ə wɪn wɪn əˈreɪndʒmənt/',
+    usage: 'Dùng khi đề xuất một thỏa thuận đôi bên cùng có lợi, bảo vệ cả hai phía.',
     role: 'opener',
     examples: [
       { en: 'We would like to propose a win-win arrangement that protects both sides.', vi: 'Chúng tôi muốn đề xuất một thỏa thuận đôi bên cùng có lợi, bảo vệ cả hai phía.' },
+      { en: 'We would like to propose a win-win arrangement that protects both sides.', vi: 'Chúng tôi muốn đề xuất một thỏa thuận đôi bên cùng có lợi, bảo vệ cả hai phía.' },
+      { en: 'A win-win arrangement is what we are aiming for.', vi: 'Một thỏa thuận đôi bên cùng có lợi là điều chúng tôi hướng tới.' },
     ],
   },
   {
@@ -17144,9 +17477,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us talk about the terms without ambiguity',
     vietnamese: 'chúng ta hãy nói về các điều khoản một cách rõ ràng, không mơ hồ',
     phonetic: '/let ʌs tɔːk əˈbaʊt ðə tɜːmz wɪˈðaʊt ˌæmbɪˈɡjuːəti/',
+    usage: 'Dùng khi muốn thảo luận các điều khoản một cách rõ ràng, tránh mơ hồ để không có bất ngờ.',
     role: 'opener',
     examples: [
       { en: 'Let us talk about the terms without ambiguity so there are no surprises.', vi: 'Chúng ta hãy nói về các điều khoản một cách rõ ràng để không có bất ngờ.' },
+      { en: 'Let us talk about the terms without ambiguity so there are no surprises.', vi: 'Chúng ta hãy nói về các điều khoản một cách rõ ràng, không mơ hồ để không có bất ngờ.' },
+      { en: 'We prefer to talk about the terms without ambiguity.', vi: 'Chúng tôi muốn nói về các điều khoản một cách rõ ràng, không mơ hồ.' },
     ],
   },
   {
@@ -17157,9 +17493,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if we adjust the volume we can reconsider the rate',
     vietnamese: 'nếu chúng ta điều chỉnh số lượng, chúng ta có thể xem xét lại mức giá',
     phonetic: '/ɪf wiː əˈdʒʌst ðə ˈvɒljuːm wiː kən ˌriːkənˈsɪdə ðə reɪt/',
+    usage: 'Dùng khi đề xuất điều chỉnh số lượng để xem xét lại mức giá cho toàn bộ hợp đồng.',
     role: 'linker',
     examples: [
       { en: 'If we adjust the volume we can reconsider the rate for the whole contract.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta có thể xem xét lại mức giá cho toàn bộ hợp đồng.' },
+      { en: 'If we adjust the volume we can reconsider the rate for the whole contract.', vi: 'Nếu chúng ta điều chỉnh số lượng, chúng ta có thể xem xét lại mức giá cho cả hợp đồng.' },
+      { en: 'Adjusting the volume lets us reconsider the rate.', vi: 'Điều chỉnh số lượng cho phép chúng ta xem xét lại mức giá.' },
     ],
   },
   {
@@ -17170,9 +17509,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the topic of delivery we have hard deadlines',
     vietnamese: 'về chủ đề giao hàng, chúng tôi có những thời hạn cứng',
     phonetic: '/ɒn ðə ˈtɒpɪk ɒv dɪˈlɪvəri wiː hæv hɑːd ˈdedlaɪnz/',
+    usage: 'Dùng khi thông báo rằng bên mình có những thời hạn cứng gắn với sự kiện cụ thể.',
     role: 'linker',
     examples: [
       { en: 'On the topic of delivery we have hard deadlines tied to the launch.', vi: 'Về chủ đề giao hàng, chúng tôi có những thời hạn cứng gắn với buổi ra mắt.' },
+      { en: 'On the topic of delivery we have hard deadlines tied to the launch.', vi: 'Về chủ đề giao hàng, chúng tôi có những thời hạn cứng gắn với buổi ra mắt.' },
+      { en: 'On the topic of delivery, the deadlines are hard.', vi: 'Về chủ đề giao hàng, các thời hạn là cứng.' },
     ],
   },
   {
@@ -17183,9 +17525,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a middle ground we propose a compromise',
     vietnamese: 'như một giải pháp dung hòa, chúng tôi đề xuất một sự thỏa hiệp',
     phonetic: '/æz ə ˈmɪdl ɡraʊnd wiː prəˈpəʊz ə ˈkɒmprəmaɪz/',
+    usage: 'Dùng khi đề xuất một sự thỏa hiệp về một điều khoản cụ thể như điều khoản rút lui.',
     role: 'linker',
     examples: [
       { en: 'As a middle ground we propose a compromise on the exit clause.', vi: 'Như một giải pháp dung hòa, chúng tôi đề xuất một sự thỏa hiệp về điều khoản rút lui.' },
+      { en: 'As a middle ground we propose a compromise on the exit clause.', vi: 'Như một giải pháp dung hòa, chúng tôi đề xuất một sự thỏa hiệp về điều khoản rút lui.' },
+      { en: 'As a middle ground, we propose a compromise on the fee.', vi: 'Như một giải pháp dung hòa, chúng tôi đề xuất một sự thỏa hiệp về phí.' },
     ],
   },
   {
@@ -17196,9 +17541,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'then we move on to the governance of the contract',
     vietnamese: 'sau đó chúng ta chuyển sang cơ chế quản trị của hợp đồng',
     phonetic: '/ðen wiː muːv ɒn tə ðə ˈɡʌvənəns ɒv ðə ˈkɒntrækt/',
+    usage: 'Dùng khi chuyển sang thảo luận về cơ chế quản trị hợp đồng và giải quyết tranh chấp.',
     role: 'linker',
     examples: [
       { en: 'Then we move on to the governance of the contract and dispute resolution.', vi: 'Sau đó chúng ta chuyển sang cơ chế quản trị hợp đồng và giải quyết tranh chấp.' },
+      { en: 'Then we move on to the governance of the contract and dispute resolution.', vi: 'Sau đó chúng ta chuyển sang cơ chế quản trị của hợp đồng và giải quyết tranh chấp.' },
+      { en: 'Then we move on to the governance of the contract.', vi: 'Sau đó chúng ta chuyển sang cơ chế quản trị của hợp đồng.' },
     ],
   },
   {
@@ -17209,9 +17557,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be quite frank the offer is below expectations',
     vietnamese: 'thành thật mà nói, đề xuất này thấp hơn kỳ vọng',
     phonetic: '/tə biː kwaɪt fræŋk ði ˈɒfər ɪz bɪˈləʊ ˌekspekˈteɪʃənz/',
+    usage: 'Dùng khi thành thật cho biết đề xuất thấp hơn kỳ vọng của bên mình.',
     role: 'filler',
     examples: [
       { en: 'To be quite frank the offer is below expectations given the market.', vi: 'Thành thật mà nói, đề xuất này thấp hơn kỳ vọng so với thị trường.' },
+      { en: 'To be quite frank the offer is below expectations given the market.', vi: 'Thành thật mà nói, đề xuất này thấp hơn kỳ vọng so với thị trường.' },
+      { en: 'To be quite frank, the offer is below our expectations.', vi: 'Thành thật mà nói, đề xuất này thấp hơn kỳ vọng của chúng tôi.' },
     ],
   },
   {
@@ -17222,9 +17573,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'within reason we can accommodate your request',
     vietnamese: 'trong giới hạn hợp lý, chúng tôi có thể đáp ứng yêu cầu của bạn',
     phonetic: '/wɪˈðɪn ˈriːzən wiː kən əˈkɒmədeɪt jɔː rɪˈkwest/',
+    usage: 'Dùng khi khẳng định sẵn sàng đáp ứng yêu cầu của đối tác trong giới hạn hợp lý.',
     role: 'filler',
     examples: [
       { en: 'Within reason we can accommodate your request for earlier payment.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể đáp ứng yêu cầu thanh toán sớm hơn của bạn.' },
+      { en: 'Within reason we can accommodate your request for earlier payment.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể đáp ứng yêu cầu thanh toán sớm hơn của bạn.' },
+      { en: 'Within reason we can accommodate your request.', vi: 'Trong giới hạn hợp lý, chúng tôi có thể đáp ứng yêu cầu của bạn.' },
     ],
   },
   {
@@ -17235,9 +17589,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all else being equal the relationship matters',
     vietnamese: 'trong điều kiện các yếu tố khác không đổi, mối quan hệ mới quan trọng',
     phonetic: '/ɔːl els ˈbiːɪŋ ˈiːkwəl ðə rɪˈleɪʃənʃɪp ˈmætəz/',
+    usage: 'Dùng khi nêu rằng mối quan hệ quan trọng hơn biên lợi nhuận khi các yếu tố khác tương đương.',
     role: 'filler',
     examples: [
       { en: 'All else being equal the relationship matters more than the margin.', vi: 'Trong điều kiện các yếu tố khác không đổi, mối quan hệ quan trọng hơn biên lợi nhuận.' },
+      { en: 'All else being equal the relationship matters more than the margin.', vi: 'Trong điều kiện các yếu tố khác không đổi, mối quan hệ mới quan trọng hơn biên lợi nhuận.' },
+      { en: 'All else being equal, the relationship matters.', vi: 'Trong điều kiện các yếu tố khác không đổi, mối quan hệ mới quan trọng.' },
     ],
   },
   {
@@ -17248,9 +17605,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end it comes down to long-term value',
     vietnamese: 'cuối cùng, tất cả đều quy về giá trị dài hạn',
     phonetic: '/ɪn ði end ɪt kʌmz daʊn tə lɒŋ tɜːm ˈvæljuː/',
+    usage: 'Dùng khi tóm tắt rằng giá trị dài hạn quan trọng hơn tiết kiệm trước mắt.',
     role: 'filler',
     examples: [
       { en: 'In the end it comes down to long-term value rather than quick savings.', vi: 'Cuối cùng, tất cả đều quy về giá trị dài hạn thay vì tiết kiệm nhanh.' },
+      { en: 'In the end it comes down to long-term value rather than quick savings.', vi: 'Cuối cùng, tất cả đều quy về giá trị dài hạn thay vì tiết kiệm nhanh.' },
+      { en: 'In the end it comes down to long-term value.', vi: 'Cuối cùng, tất cả đều quy về giá trị dài hạn.' },
     ],
   },
   {
@@ -17261,9 +17621,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to close the deal we need mutual commitment',
     vietnamese: 'để chốt thỏa thuận, chúng ta cần sự cam kết của cả hai bên',
     phonetic: '/tə kləʊz ðə diːl wiː niːd ˈmjuːtʃuəl kəˈmɪtmənt/',
+    usage: 'Dùng khi nêu rằng cần sự cam kết của cả hai bên để chốt thỏa thuận.',
     role: 'closer',
     examples: [
       { en: 'To close the deal we need mutual commitment on the milestones.', vi: 'Để chốt thỏa thuận, chúng ta cần cam kết của cả hai bên về các cột mốc.' },
+      { en: 'To close the deal we need mutual commitment on the milestones.', vi: 'Để chốt thỏa thuận, chúng ta cần sự cam kết của cả hai bên về các mốc tiến độ.' },
+      { en: 'To close the deal we need mutual commitment.', vi: 'Để chốt thỏa thuận, chúng ta cần sự cam kết của cả hai bên.' },
     ],
   },
   {
@@ -17274,9 +17637,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are prepared to sign with minor changes',
     vietnamese: 'chúng tôi sẵn sàng ký kết với một số thay đổi nhỏ',
     phonetic: '/wiː ɑːr prɪˈpeəd tə saɪn wɪð ˈmaɪnə tʃeɪndʒɪz/',
+    usage: 'Dùng khi bày tỏ sẵn sàng ký kết với một số thay đổi nhỏ về điều khoản.',
     role: 'closer',
     examples: [
       { en: 'We are prepared to sign with minor changes to the liability clause.', vi: 'Chúng tôi sẵn sàng ký kết với một số thay đổi nhỏ ở điều khoản trách nhiệm.' },
+      { en: 'We are prepared to sign with minor changes to the liability clause.', vi: 'Chúng tôi sẵn sàng ký kết với một số thay đổi nhỏ về điều khoản trách nhiệm.' },
+      { en: 'We are prepared to sign with minor changes.', vi: 'Chúng tôi sẵn sàng ký kết với một số thay đổi nhỏ.' },
     ],
   },
   {
@@ -17287,9 +17653,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to finalize the terms we need legal review',
     vietnamese: 'để hoàn tất các điều khoản, chúng ta cần bộ phận pháp lý rà soát',
     phonetic: '/tə ˈfaɪnəlaɪz ðə tɜːmz wiː niːd ˈliːɡəl rɪˈvjuː/',
+    usage: 'Dùng khi nêu rằng cần bộ phận pháp lý rà soát bản nháp cuối trước khi hoàn tất.',
     role: 'closer',
     examples: [
       { en: 'To finalize the terms we need legal review of the final draft.', vi: 'Để hoàn tất các điều khoản, chúng ta cần bộ phận pháp lý rà soát bản nháp cuối.' },
+      { en: 'To finalize the terms we need legal review of the final draft.', vi: 'Để hoàn tất các điều khoản, chúng ta cần bộ phận pháp lý rà soát bản nháp cuối.' },
+      { en: 'A legal review is required to finalize the terms.', vi: 'Cần bộ phận pháp lý rà soát để hoàn tất các điều khoản.' },
     ],
   },
   {
@@ -17300,9 +17669,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have reached an agreement worth celebrating',
     vietnamese: 'chúng ta đã đạt được một thỏa thuận đáng để ăn mừng',
     phonetic: '/wiː hæv riːtʃt ən əˈɡriːmənt wɜːθ ˈselɪbreɪtɪŋ/',
+    usage: 'Dùng khi xác nhận đã đạt được một thỏa thuận xứng đáng sau nhiều nỗ lực.',
     role: 'closer',
     examples: [
       { en: 'We have reached an agreement worth celebrating after all the effort.', vi: 'Chúng ta đã đạt được một thỏa thuận đáng để ăn mừng sau tất cả công sức.' },
+      { en: 'We have reached an agreement worth celebrating after all the effort.', vi: 'Chúng ta đã đạt được một thỏa thuận đáng để ăn mừng sau tất cả nỗ lực.' },
+      { en: 'We have reached an agreement worth celebrating.', vi: 'Chúng ta đã đạt được một thỏa thuận đáng để ăn mừng.' },
     ],
   },
   {
@@ -17313,9 +17685,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what is your best offer on a multi-year basis',
     vietnamese: 'mức giá tốt nhất của bạn là bao nhiêu theo cơ sở nhiều năm',
     phonetic: '/wɒt ɪz jɔː best ˈɒfə ɒn ə ˈmʌlti jɪə ˈbeɪsɪs/',
+    usage: 'Dùng khi hỏi mức giá tốt nhất theo cơ sở nhiều năm, thường kèm các bậc tăng trưởng.',
     role: 'question',
     examples: [
       { en: 'What is your best offer on a multi-year basis with growth tiers?', vi: 'Mức giá tốt nhất của bạn là bao nhiêu theo cơ sở nhiều năm với các bậc tăng trưởng?' },
+      { en: 'What is your best offer on a multi-year basis with growth tiers?', vi: 'Mức giá tốt nhất của bạn là bao nhiêu theo cơ sở nhiều năm với các bậc tăng trưởng?' },
+      { en: 'What is your best offer on a multi-year basis?', vi: 'Mức giá tốt nhất của bạn là bao nhiêu theo cơ sở nhiều năm?' },
     ],
   },
   {
@@ -17326,9 +17701,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'could you clarify the payment terms under the revised scope',
     vietnamese: 'bạn có thể làm rõ điều khoản thanh toán theo phạm vi đã sửa đổi không',
     phonetic: '/kʊd juː ˈklærɪfaɪ ðə ˈpeɪmənt tɜːmz ˈʌndə ðə rɪˈvaɪzd skəʊp/',
+    usage: 'Dùng khi cần làm rõ điều khoản thanh toán theo phạm vi công việc đã được sửa đổi.',
     role: 'question',
     examples: [
       { en: 'Could you clarify the payment terms under the revised scope we just agreed on?', vi: 'Bạn có thể làm rõ điều khoản thanh toán theo phạm vi đã sửa đổi mà chúng ta vừa thống nhất không?' },
+      { en: 'Could you clarify the payment terms under the revised scope we just agreed on?', vi: 'Bạn có thể làm rõ điều khoản thanh toán theo phạm vi đã sửa đổi mà chúng ta vừa thống nhất không?' },
+      { en: 'Could you clarify the payment terms under the revised scope?', vi: 'Bạn có thể làm rõ điều khoản thanh toán theo phạm vi đã sửa đổi không?' },
     ],
   },
   {
@@ -17339,9 +17717,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'can you match the competitor price without cutting quality',
     vietnamese: 'bạn có thể cân bằng mức giá của đối thủ mà không cắt giảm chất lượng không',
     phonetic: '/kæn juː mætʃ ðə kəmˈpetɪtə praɪs wɪˈðaʊt ˈkʌtɪŋ ˈkwɒləti/',
+    usage: 'Dùng khi yêu cầu cân bằng giá của đối thủ mà không được giảm chất lượng dịch vụ cốt lõi.',
     role: 'question',
     examples: [
       { en: 'Can you match the competitor price without cutting quality on the core service?', vi: 'Bạn có thể cân bằng mức giá của đối thủ mà không cắt giảm chất lượng dịch vụ cốt lõi không?' },
+      { en: 'Can you match the competitor price without cutting quality on the core service?', vi: 'Bạn có thể cân bằng mức giá của đối thủ mà không cắt giảm chất lượng dịch vụ cốt lõi không?' },
+      { en: 'Can you match the competitor price without cutting quality?', vi: 'Bạn có thể cân bằng mức giá của đối thủ mà không cắt giảm chất lượng không?' },
     ],
   },
 
