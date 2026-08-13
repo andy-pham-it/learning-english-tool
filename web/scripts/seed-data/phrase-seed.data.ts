@@ -19875,9 +19875,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are going on a trip this weekend.',
     vietnamese: 'Cuối tuần này chúng ta đi du lịch.',
     phonetic: '/wiː ɑːr ˈɡoʊɪŋ ɒn ə trɪp ðɪs ˌwiːkˈɛnd/',
+    usage: 'Dùng khi thông báo kế hoạch đi chơi, du lịch vào cuối tuần.',
     role: 'opener',
     examples: [
       { en: 'We are going on a trip this weekend to the beach.', vi: 'Cuối tuần này chúng ta đi du lịch biển.' },
+      { en: 'We are going on a trip this weekend to the countryside.', vi: 'Cuối tuần này chúng ta đi du lịch về miền quê.' },
+      { en: 'Are we going on a trip this weekend, or staying home?', vi: 'Cuối tuần này chúng ta đi du lịch hay ở nhà vậy?' },
     ],
   },
   {
@@ -19888,9 +19891,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I bought the train tickets online.',
     vietnamese: 'Tôi đã mua vé tàu trên mạng.',
     phonetic: '/aɪ bɔːt ðə treɪn ˈtɪkɪts ˈɒnlaɪn/',
+    usage: 'Dùng khi nói về việc đã mua vé tàu qua mạng.',
     role: 'opener',
     examples: [
       { en: 'I bought the train tickets online yesterday.', vi: 'Tôi đã mua vé tàu trên mạng hôm qua.' },
+      { en: 'I bought the train tickets online and saved the QR codes.', vi: 'Tôi đã mua vé tàu trên mạng và lưu mã QR.' },
+      { en: 'I bought the train tickets online this morning.', vi: 'Sáng nay tôi đã mua vé tàu trên mạng.' },
     ],
   },
   {
@@ -19901,9 +19907,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The hotel is near the beach.',
     vietnamese: 'Khách sạn nằm gần bãi biển.',
     phonetic: '/ðə hoʊˈtɛl ɪz nɪr ðə biːtʃ/',
+    usage: 'Dùng khi mô tả vị trí thuận lợi của khách sạn.',
     role: 'opener',
     examples: [
       { en: 'The hotel is near the beach, we can walk there.', vi: 'Khách sạn nằm gần bãi biển, chúng ta có thể đi bộ tới đó.' },
+      { en: 'The hotel is near the beach, which is very convenient.', vi: 'Khách sạn nằm gần bãi biển, rất thuận tiện.' },
+      { en: 'The hotel is near the beach, so we can swim every morning.', vi: 'Khách sạn nằm gần bãi biển nên chúng ta có thể bơi mỗi sáng.' },
     ],
   },
   {
@@ -19914,9 +19923,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We need to pack our bags tonight.',
     vietnamese: 'Tối nay chúng ta cần đóng gói hành lý.',
     phonetic: '/wiː niːd tuː pæk aʊər bæɡz təˈnaɪt/',
+    usage: 'Dùng khi nhắc việc chuẩn bị hành lý trước chuyến đi.',
     role: 'opener',
     examples: [
       { en: 'We need to pack our bags tonight before the flight.', vi: 'Tối nay chúng ta cần đóng gói hành lý trước chuyến bay.' },
+      { en: 'We need to pack our bags tonight so we can leave early.', vi: 'Tối nay chúng ta cần đóng gói hành lý để sáng mai đi sớm.' },
+      { en: 'We need to pack our bags tonight, the bus leaves at six.', vi: 'Tối nay chúng ta cần đóng gói hành lý, xe buýt khởi hành lúc sáu giờ.' },
     ],
   },
   {
@@ -19927,9 +19939,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, we check in at the airport.',
     vietnamese: 'Đầu tiên, chúng ta làm thủ tục tại sân bay.',
     phonetic: '/fɜːrst wiː tʃɛk ɪn æt ði ˈɛrˌpɔːrt/',
+    usage: 'Dùng khi kể bước đầu tiên của hành trình tại sân bay.',
     role: 'linker',
     examples: [
       { en: 'First, we check in at the airport and then find the gate.', vi: 'Đầu tiên, chúng ta làm thủ tục tại sân bay rồi tìm cửa lên máy bay.' },
+      { en: 'First, we check in at the airport and get our boarding passes.', vi: 'Đầu tiên, chúng ta làm thủ tục tại sân bay và lấy thẻ lên máy bay.' },
+      { en: 'First, we check in at the airport, then we have breakfast.', vi: 'Đầu tiên, chúng ta làm thủ tục tại sân bay, sau đó ăn sáng.' },
     ],
   },
   {
@@ -19940,9 +19955,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Then we take a taxi to the hotel.',
     vietnamese: 'Sau đó chúng ta bắt taxi về khách sạn.',
     phonetic: '/ðɛn wiː teɪk ə ˈtæksi tuː ðə hoʊˈtɛl/',
+    usage: 'Dùng khi kể bước tiếp theo, di chuyển từ sân bay về khách sạn.',
     role: 'linker',
     examples: [
       { en: 'Then we take a taxi to the hotel downtown.', vi: 'Sau đó chúng ta bắt taxi về khách sạn ở trung tâm.' },
+      { en: 'Then we take a taxi to the hotel and drop off the bags.', vi: 'Sau đó chúng ta bắt taxi về khách sạn và bỏ hành lý.' },
+      { en: 'Then we take a taxi to the hotel in the city center.', vi: 'Sau đó chúng ta bắt taxi về khách sạn ở trung tâm thành phố.' },
     ],
   },
   {
@@ -19953,9 +19971,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, we visit the old town.',
     vietnamese: 'Sau đó, chúng ta tham quan khu phố cổ.',
     phonetic: '/ˈæftər ðæt wiː ˈvɪzɪt ði oʊld taʊn/',
+    usage: 'Dùng khi kể hoạt động tiếp theo của chuyến đi, tham quan điểm đến.',
     role: 'linker',
     examples: [
       { en: 'After that, we visit the old town in the afternoon.', vi: 'Sau đó, chúng ta tham quan khu phố cổ vào buổi chiều.' },
+      { en: 'After that, we visit the old town and take many photos.', vi: 'Sau đó, chúng ta tham quan khu phố cổ và chụp nhiều ảnh.' },
+      { en: 'After that, we visit the old town on foot.', vi: 'Sau đó, chúng ta tham quan khu phố cổ bằng cách đi bộ.' },
     ],
   },
   {
@@ -19966,9 +19987,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, we try the local food.',
     vietnamese: 'Tiếp theo, chúng ta thử món ăn địa phương.',
     phonetic: '/nɛkst wiː traɪ ðə ˈloʊkəl fuːd/',
+    usage: 'Dùng khi giới thiệu hoạt động thưởng thức ẩm thực địa phương.',
     role: 'linker',
     examples: [
       { en: 'Next, we try the local food at the night market.', vi: 'Tiếp theo, chúng ta thử món ăn địa phương ở chợ đêm.' },
+      { en: 'Next, we try the local food at a small restaurant.', vi: 'Tiếp theo, chúng ta thử món ăn địa phương ở một quán nhỏ.' },
+      { en: 'Next, we try the local food and some sweet desserts.', vi: 'Tiếp theo, chúng ta thử món ăn địa phương và vài món tráng miệng.' },
     ],
   },
   {
@@ -19979,9 +20003,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think we are lost.',
     vietnamese: 'Tôi nghĩ chúng ta bị lạc rồi.',
     phonetic: '/aɪ θɪŋk wiː ɑːr lɔːst/',
+    usage: 'Dùng khi nhận ra mình đi sai đường hoặc không tìm được địa điểm.',
     role: 'filler',
     examples: [
       { en: 'I think we are lost, let us ask for directions.', vi: 'Tôi nghĩ chúng ta bị lạc rồi, hãy hỏi đường.' },
+      { en: 'I think we are lost, let us check the map.', vi: 'Tôi nghĩ chúng ta bị lạc rồi, kiểm tra bản đồ đi.' },
+      { en: 'I think we are lost, this street looks familiar.', vi: 'Tôi nghĩ chúng ta bị lạc rồi, con phố này trông quen quen.' },
     ],
   },
   {
@@ -19992,9 +20019,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The weather is very nice today.',
     vietnamese: 'Hôm nay thời tiết rất đẹp.',
     phonetic: '/ðə ˈwɛðər ɪz ˈvɛri naɪs təˈdeɪ/',
+    usage: 'Dùng khi nhận xét thời tiết thuận lợi cho việc dạo chơi.',
     role: 'filler',
     examples: [
       { en: 'The weather is very nice today for walking around.', vi: 'Hôm nay thời tiết rất đẹp để đi dạo.' },
+      { en: 'The weather is very nice today, perfect for a walk.', vi: 'Hôm nay thời tiết rất đẹp, hoàn hảo để đi dạo.' },
+      { en: 'The weather is very nice today, not too hot.', vi: 'Hôm nay thời tiết rất đẹp, không quá nóng.' },
     ],
   },
   {
@@ -20005,9 +20035,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we should buy some souvenirs.',
     vietnamese: 'Có lẽ chúng ta nên mua vài món quà lưu niệm.',
     phonetic: '/ˈmeɪbi wiː ʃʊd baɪ sʌm ˌsuːvəˈnɪrz/',
+    usage: 'Dùng khi gợi ý mua quà lưu niệm cho người thân.',
     role: 'filler',
     examples: [
       { en: 'Maybe we should buy some souvenirs for the family.', vi: 'Có lẽ chúng ta nên mua vài món quà lưu niệm cho gia đình.' },
+      { en: 'Maybe we should buy some souvenirs for the kids.', vi: 'Có lẽ chúng ta nên mua vài món quà lưu niệm cho bọn trẻ.' },
+      { en: 'Maybe we should buy some souvenirs before we go home.', vi: 'Có lẽ chúng ta nên mua vài món quà lưu niệm trước khi về.' },
     ],
   },
   {
@@ -20018,9 +20051,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The trip is a little expensive.',
     vietnamese: 'Chuyến đi hơi tốn kém.',
     phonetic: '/ðə trɪp ɪz ə ˈlɪtəl ɪkˈspɛnsɪv/',
+    usage: 'Dùng khi nhận xét chi phí của chuyến đi.',
     role: 'filler',
     examples: [
       { en: 'The trip is a little expensive, but worth it.', vi: 'Chuyến đi hơi tốn kém, nhưng đáng giá.' },
+      { en: 'The trip is a little expensive, but we saved enough.', vi: 'Chuyến đi hơi tốn kém, nhưng chúng ta đã tiết kiệm đủ.' },
+      { en: 'The trip is a little expensive because of the hotel.', vi: 'Chuyến đi hơi tốn kém vì tiền khách sạn.' },
     ],
   },
   {
@@ -20031,9 +20067,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We had a wonderful time.',
     vietnamese: 'Chúng ta đã có khoảng thời gian tuyệt vời.',
     phonetic: '/wiː hæd ə ˈwʌndərfəl taɪm/',
+    usage: 'Dùng khi tổng kết cảm xúc vui vẻ sau chuyến đi.',
     role: 'closer',
     examples: [
       { en: 'We had a wonderful time on this trip.', vi: 'Chúng ta đã có khoảng thời gian tuyệt vời trong chuyến đi này.' },
+      { en: 'We had a wonderful time, thank you for planning it.', vi: 'Chúng ta đã có khoảng thời gian tuyệt vời, cảm ơn bạn đã lên kế hoạch.' },
+      { en: 'We had a wonderful time at the beach today.', vi: 'Hôm nay chúng ta đã có khoảng thời gian tuyệt vời ở bãi biển.' },
     ],
   },
   {
@@ -20044,9 +20083,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us take a photo before we leave.',
     vietnamese: 'Hãy chụp một bức ảnh trước khi rời đi.',
     phonetic: '/lɛt ʌs teɪk ə ˈfoʊtoʊ bɪˈfɔːr wiː liːv/',
+    usage: 'Dùng khi rủ chụp ảnh kỷ niệm trước khi rời khỏi một địa điểm.',
     role: 'closer',
     examples: [
       { en: 'Let us take a photo before we leave the beach.', vi: 'Hãy chụp một bức ảnh trước khi rời bãi biển.' },
+      { en: 'Let us take a photo before we leave the restaurant.', vi: 'Hãy chụp một bức ảnh trước khi rời nhà hàng.' },
+      { en: 'Let us take a photo before we leave, the sunset is beautiful.', vi: 'Hãy chụp một bức ảnh trước khi rời đi, hoàng hôn đẹp quá.' },
     ],
   },
   {
@@ -20057,9 +20099,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will come back again next year.',
     vietnamese: 'Năm sau chúng ta sẽ quay lại.',
     phonetic: '/wiː wɪl kʌm bæk əˈɡɛn nɛkst jɪr/',
+    usage: 'Dùng khi hứa hẹn sẽ quay lại thăm một địa điểm đáng nhớ.',
     role: 'closer',
     examples: [
       { en: 'We will come back again next year for the festival.', vi: 'Năm sau chúng ta sẽ quay lại dự lễ hội.' },
+      { en: 'We will come back again next year with the whole family.', vi: 'Năm sau chúng ta sẽ quay lại cùng cả gia đình.' },
+      { en: 'We will come back again next year, this place is amazing.', vi: 'Năm sau chúng ta sẽ quay lại, nơi này tuyệt vời quá.' },
     ],
   },
   {
@@ -20070,9 +20115,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us check the train time and go home.',
     vietnamese: 'Hãy kiểm tra giờ tàu và về nhà thôi.',
     phonetic: '/lɛt ʌs tʃɛk ðə treɪn taɪm ænd ɡoʊ hoʊm/',
+    usage: 'Dùng khi kiểm tra giờ tàu để kết thúc chuyến đi.',
     role: 'closer',
     examples: [
       { en: 'Let us check the train time and go home now.', vi: 'Hãy kiểm tra giờ tàu và về nhà thôi.' },
+      { en: 'Let us check the train time and go home before it gets dark.', vi: 'Hãy kiểm tra giờ tàu và về nhà trước khi trời tối.' },
+      { en: 'Let us check the train time and go home, we are all tired.', vi: 'Hãy kiểm tra giờ tàu và về nhà thôi, ai cũng mệt rồi.' },
     ],
   },
   {
@@ -20083,9 +20131,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are planning a week-long trip to the mountains.',
     vietnamese: 'Chúng tôi đang lên kế hoạch cho chuyến đi một tuần lên núi.',
     phonetic: '/wiː ɑːr ˈplænɪŋ ə wiːk lɔːŋ trɪp tuː ðə ˈmaʊntənz/',
+    usage: 'Dùng khi nói về kế hoạch du lịch dài ngày ở vùng núi.',
     role: 'opener',
     examples: [
       { en: 'We are planning a week-long trip to the mountains in June.', vi: 'Chúng tôi đang lên kế hoạch cho chuyến đi một tuần lên núi vào tháng Sáu.' },
+      { en: 'We are planning a week-long trip to the mountains with friends.', vi: 'Chúng tôi đang lên kế hoạch cho chuyến đi một tuần lên núi cùng bạn bè.' },
+      { en: 'We are planning a week-long trip to the mountains, the cabins are booked.', vi: 'Chúng tôi đang lên kế hoạch cho chuyến đi một tuần lên núi, các căn nhà gỗ đã được đặt.' },
     ],
   },
   {
@@ -20096,9 +20147,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The flight was delayed by two hours.',
     vietnamese: 'Chuyến bay đã bị hoãn hai tiếng.',
     phonetic: '/ðə flaɪt wʌz dɪˈleɪd baɪ tuː aʊərz/',
+    usage: 'Dùng khi nói về sự cố trễ chuyến và ảnh hưởng của nó.',
     role: 'opener',
     examples: [
       { en: 'The flight was delayed by two hours, so we missed the bus.', vi: 'Chuyến bay đã bị hoãn hai tiếng, nên chúng tôi lỡ chuyến xe buýt.' },
+      { en: 'The flight was delayed by two hours, so we waited at the gate.', vi: 'Chuyến bay đã bị hoãn hai tiếng nên chúng tôi đợi ở cửa lên máy bay.' },
+      { en: 'The flight was delayed by two hours because of the storm.', vi: 'Chuyến bay đã bị hoãn hai tiếng vì bão.' },
     ],
   },
   {
@@ -20109,9 +20163,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We booked a room with a sea view.',
     vietnamese: 'Chúng tôi đã đặt một phòng nhìn ra biển.',
     phonetic: '/wiː bʊkt ə ruːm wɪð ə siː vjuː/',
+    usage: 'Dùng khi nói về việc đặt phòng có tầm nhìn đẹp.',
     role: 'opener',
     examples: [
       { en: 'We booked a room with a sea view for the anniversary.', vi: 'Chúng tôi đã đặt một phòng nhìn ra biển cho dịp kỷ niệm.' },
+      { en: 'We booked a room with a sea view on the top floor.', vi: 'Chúng tôi đã đặt một phòng nhìn ra biển ở tầng trên cùng.' },
+      { en: 'We booked a room with a sea view, the sunrise is stunning.', vi: 'Chúng tôi đã đặt một phòng nhìn ra biển, cảnh bình minh tuyệt đẹp.' },
     ],
   },
   {
@@ -20122,9 +20179,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The itinerary looks quite packed.',
     vietnamese: 'Lịch trình trông khá dày đặc.',
     phonetic: '/ði aɪˈtɪnəˌrɛri lʊks kwaɪt pækt/',
+    usage: 'Dùng khi nhận xét lịch trình quá nhiều hoạt động.',
     role: 'opener',
     examples: [
       { en: 'The itinerary looks quite packed, we may need to drop one stop.', vi: 'Lịch trình trông khá dày đặc, chúng ta có thể phải bỏ bớt một điểm dừng.' },
+      { en: 'The itinerary looks quite packed, let us cut one activity.', vi: 'Lịch trình trông khá dày đặc, bớt một hoạt động đi.' },
+      { en: 'The itinerary looks quite packed for a weekend trip.', vi: 'Lịch trình trông khá dày đặc cho một chuyến cuối tuần.' },
     ],
   },
   {
@@ -20135,9 +20195,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once we arrive, we will rent a car.',
     vietnamese: 'Khi đến nơi, chúng tôi sẽ thuê một chiếc xe.',
     phonetic: '/wʌns wiː əˈraɪv wiː wɪl rɛnt ə kɑːr/',
+    usage: 'Dùng khi nói về kế hoạch thuê xe sau khi đến nơi.',
     role: 'linker',
     examples: [
       { en: 'Once we arrive, we will rent a car to explore the coast.', vi: 'Khi đến nơi, chúng tôi sẽ thuê một chiếc xe để khám phá bờ biển.' },
+      { en: 'Once we arrive, we will rent a car to drive along the coast.', vi: 'Khi đến nơi, chúng tôi sẽ thuê một chiếc xe để chạy dọc bờ biển.' },
+      { en: 'Once we arrive, we will rent a car from the airport office.', vi: 'Khi đến nơi, chúng tôi sẽ thuê xe tại văn phòng ở sân bay.' },
     ],
   },
   {
@@ -20148,9 +20211,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Before we leave, let us check the weather forecast.',
     vietnamese: 'Trước khi đi, chúng ta hãy kiểm tra dự báo thời tiết.',
     phonetic: '/bɪˈfɔːr wiː liːv lɛt ʌs tʃɛk ðə ˈwɛðər ˈfɔːrˌkæst/',
+    usage: 'Dùng khi gợi ý kiểm tra thời tiết trước khi khởi hành.',
     role: 'linker',
     examples: [
       { en: 'Before we leave, let us check the weather forecast for the weekend.', vi: 'Trước khi đi, chúng ta hãy kiểm tra dự báo thời tiết cuối tuần.' },
+      { en: 'Before we leave, let us check the weather forecast for the mountains.', vi: 'Trước khi đi, chúng ta hãy kiểm tra dự báo thời tiết ở vùng núi.' },
+      { en: 'Before we leave, let us check the weather forecast to pack properly.', vi: 'Trước khi đi, chúng ta hãy kiểm tra dự báo thời tiết để đóng gói cho đúng.' },
     ],
   },
   {
@@ -20161,9 +20227,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the tour, we will have dinner by the lake.',
     vietnamese: 'Sau chuyến tham quan, chúng tôi sẽ ăn tối bên hồ.',
     phonetic: '/ˈæftər ðə tʊr wiː wɪl hæv ˈdɪnər baɪ ðə leɪk/',
+    usage: 'Dùng khi nói về kế hoạch ăn tối sau một hoạt động trong ngày.',
     role: 'linker',
     examples: [
       { en: 'After the tour, we will have dinner by the lake with the group.', vi: 'Sau chuyến tham quan, chúng tôi sẽ ăn tối bên hồ cùng cả nhóm.' },
+      { en: 'After the tour, we will have dinner by the lake under the stars.', vi: 'Sau chuyến tham quan, chúng tôi sẽ ăn tối bên hồ dưới bầu trời sao.' },
+      { en: 'After the tour, we will have dinner by the lake at the new restaurant.', vi: 'Sau chuyến tham quan, chúng tôi sẽ ăn tối bên hồ ở nhà hàng mới.' },
     ],
   },
   {
@@ -20174,9 +20243,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In the meantime, we can explore the old quarter.',
     vietnamese: 'Trong lúc đó, chúng ta có thể khám phá khu phố cổ.',
     phonetic: '/ɪn ðə ˈmiːnˌtaɪm wiː kæn ɪkˈsplɔːr ði oʊld ˈkwɔːrtər/',
+    usage: 'Dùng khi nói về việc khám phá trong lúc chờ việc khác.',
     role: 'linker',
     examples: [
       { en: 'In the meantime, we can explore the old quarter on foot.', vi: 'Trong lúc đó, chúng ta có thể khám phá khu phố cổ bằng cách đi bộ.' },
+      { en: 'In the meantime, we can explore the old quarter and its markets.', vi: 'Trong lúc đó, chúng ta có thể khám phá khu phố cổ và các khu chợ.' },
+      { en: 'In the meantime, we can explore the old quarter on bikes.', vi: 'Trong lúc đó, chúng ta có thể khám phá khu phố cổ bằng xe đạp.' },
     ],
   },
   {
@@ -20187,9 +20259,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am not sure the hotel is easy to find.',
     vietnamese: 'Tôi không chắc khách sạn dễ tìm.',
     phonetic: '/aɪ æm nɔːt ʃʊr ðə hoʊˈtɛl ɪz ˈiːzi tuː faɪnd/',
+    usage: 'Dùng khi bày tỏ sự nghi ngờ về việc tìm đường đến khách sạn.',
     role: 'filler',
     examples: [
       { en: 'I am not sure the hotel is easy to find from the station.', vi: 'Tôi không chắc khách sạn dễ tìm từ nhà ga.' },
+      { en: 'I am not sure the hotel is easy to find, let us save the address.', vi: 'Tôi không chắc khách sạn dễ tìm, lưu địa chỉ lại đi.' },
+      { en: 'I am not sure the hotel is easy to find at night.', vi: 'Tôi không chắc khách sạn dễ tìm vào ban đêm.' },
     ],
   },
   {
@@ -20200,9 +20275,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The local guide speaks very good English.',
     vietnamese: 'Hướng dẫn viên địa phương nói tiếng Anh rất tốt.',
     phonetic: '/ðə ˈloʊkəl ɡaɪd spiːks ˈvɛri ɡʊd ˈɪŋɡlɪʃ/',
+    usage: 'Dùng khi khen khả năng ngoại ngữ của hướng dẫn viên.',
     role: 'filler',
     examples: [
       { en: 'The local guide speaks very good English, so we understand everything.', vi: 'Hướng dẫn viên địa phương nói tiếng Anh rất tốt, nên chúng tôi hiểu tất cả.' },
+      { en: 'The local guide speaks very good English, we learned a lot about history.', vi: 'Hướng dẫn viên địa phương nói tiếng Anh rất tốt, chúng tôi học được nhiều về lịch sử.' },
+      { en: 'The local guide speaks very good English and tells great stories.', vi: 'Hướng dẫn viên địa phương nói tiếng Anh rất tốt và kể chuyện rất hay.' },
     ],
   },
   {
@@ -20213,9 +20291,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It might rain later, so bring an umbrella.',
     vietnamese: 'Có thể trời sẽ mưa, nên hãy mang theo ô.',
     phonetic: '/ɪt maɪt reɪn ˈleɪtər soʊ brɪŋ ən ʌmˈbrɛlə/',
+    usage: 'Dùng khi cảnh báo khả năng mưa và khuyên mang theo đồ che mưa.',
     role: 'filler',
     examples: [
       { en: 'It might rain later, so bring an umbrella for the walk.', vi: 'Có thể trời sẽ mưa, nên hãy mang theo ô cho buổi đi dạo.' },
+      { en: 'It might rain later, so bring an umbrella and a jacket.', vi: 'Có thể trời sẽ mưa, nên hãy mang theo ô và áo khoác.' },
+      { en: 'It might rain later, so bring an umbrella for the boat tour.', vi: 'Có thể trời sẽ mưa, nên hãy mang theo ô cho chuyến tham quan bằng thuyền.' },
     ],
   },
   {
@@ -20226,9 +20307,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The food here is absolutely delicious.',
     vietnamese: 'Đồ ăn ở đây ngon tuyệt vời.',
     phonetic: '/ðə fuːd hɪr ɪz ˈæbsəluːtli dɪˈlɪʃəs/',
+    usage: 'Dùng khi khen món ăn địa phương một cách nhiệt tình.',
     role: 'filler',
     examples: [
       { en: 'The food here is absolutely delicious, we should come back.', vi: 'Đồ ăn ở đây ngon tuyệt vời, chúng ta nên quay lại.' },
+      { en: 'The food here is absolutely delicious, we ordered twice.', vi: 'Đồ ăn ở đây ngon tuyệt vời, chúng tôi đã gọi hai lần.' },
+      { en: 'The food here is absolutely delicious, try the seafood.', vi: 'Đồ ăn ở đây ngon tuyệt vời, thử món hải sản đi.' },
     ],
   },
   {
@@ -20239,9 +20323,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We really enjoyed the whole journey.',
     vietnamese: 'Chúng tôi thực sự tận hưởng cả hành trình.',
     phonetic: '/wiː ˈrɪəli ɪnˈdʒɔɪd ðə hoʊl ˈdʒɜːrni/',
+    usage: 'Dùng khi tổng kết rằng cả hành trình rất đáng nhớ.',
     role: 'closer',
     examples: [
       { en: 'We really enjoyed the whole journey from start to finish.', vi: 'Chúng tôi thực sự tận hưởng cả hành trình từ đầu đến cuối.' },
+      { en: 'We really enjoyed the whole journey, even the long bus ride.', vi: 'Chúng tôi thực sự tận hưởng cả hành trình, kể cả chặng xe buýt dài.' },
+      { en: 'We really enjoyed the whole journey, every stop was special.', vi: 'Chúng tôi thực sự tận hưởng cả hành trình, mỗi điểm dừng đều đặc biệt.' },
     ],
   },
   {
@@ -20252,9 +20339,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us write a review for the hotel online.',
     vietnamese: 'Hãy viết một bài đánh giá cho khách sạn trên mạng.',
     phonetic: '/lɛt ʌs raɪt ə rɪˈvjuː fɔːr ðə hoʊˈtɛl ˈɒnlaɪn/',
+    usage: 'Dùng khi đề nghị viết đánh giá trực tuyến cho nơi đã ở.',
     role: 'closer',
     examples: [
       { en: 'Let us write a review for the hotel online tonight.', vi: 'Tối nay hãy viết một bài đánh giá cho khách sạn trên mạng.' },
+      { en: 'Let us write a review for the hotel online to help other travelers.', vi: 'Hãy viết một bài đánh giá cho khách sạn trên mạng để giúp du khách khác.' },
+      { en: 'Let us write a review for the hotel online and rate the service.', vi: 'Hãy viết một bài đánh giá cho khách sạn trên mạng và chấm điểm dịch vụ.' },
     ],
   },
   {
@@ -20265,9 +20355,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will share the photos with everyone.',
     vietnamese: 'Chúng tôi sẽ chia sẻ ảnh cho mọi người.',
     phonetic: '/wiː wɪl ʃɛr ðə ˈfoʊtoʊz wɪð ˈɛvriˌwʌn/',
+    usage: 'Dùng khi hứa chia sẻ hình ảnh của chuyến đi.',
     role: 'closer',
     examples: [
       { en: 'We will share the photos with everyone on the group chat.', vi: 'Chúng tôi sẽ chia sẻ ảnh cho mọi người trong nhóm chat.' },
+      { en: 'We will share the photos with everyone after we edit them.', vi: 'Chúng tôi sẽ chia sẻ ảnh cho mọi người sau khi chỉnh sửa.' },
+      { en: 'We will share the photos with everyone, they turned out great.', vi: 'Chúng tôi sẽ chia sẻ ảnh cho mọi người, chúng chụp rất đẹp.' },
     ],
   },
   {
@@ -20278,9 +20371,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The trip ended on a perfect note.',
     vietnamese: 'Chuyến đi kết thúc một cách hoàn hảo.',
     phonetic: '/ðə trɪp ˈɛndɪd ɒn ə ˈpɜːrfɪkt noʊt/',
+    usage: 'Dùng khi nhận xét chuyến đi kết thúc hoàn hảo.',
     role: 'closer',
     examples: [
       { en: 'The trip ended on a perfect note with a sunset dinner.', vi: 'Chuyến đi kết thúc hoàn hảo với bữa tối ngắm hoàng hôn.' },
+      { en: 'The trip ended on a perfect note with dinner by the sea.', vi: 'Chuyến đi kết thúc một cách hoàn hảo với bữa tối bên biển.' },
+      { en: 'The trip ended on a perfect note, everyone was happy.', vi: 'Chuyến đi kết thúc một cách hoàn hảo, ai cũng vui vẻ.' },
     ],
   },
   // ===== EXPANSION v2: Daily — travel =====
@@ -20292,9 +20388,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are fine-tuning the logistics of the entire trip.',
     vietnamese: 'Chúng ta đang tinh chỉnh khâu hậu cần của toàn bộ chuyến đi.',
     phonetic: '/wiː ɑːr ˌfaɪnˈtuːnɪŋ ðə ləˈdʒɪstɪks ʌv ði ɪnˈtaɪər trɪp/',
+    usage: 'Dùng khi nói về việc rà soát, sắp xếp chi tiết hậu cần của chuyến đi.',
     role: 'opener',
     examples: [
       { en: 'We are fine-tuning the logistics of the entire trip.', vi: 'Chúng ta đang tinh chỉnh khâu hậu cần của toàn bộ chuyến đi.' },
+      { en: 'We are fine-tuning the logistics of the entire trip, from flights to transfers.', vi: 'Chúng ta đang tinh chỉnh khâu hậu cần của toàn bộ chuyến đi, từ chuyến bay đến đưa đón.' },
+      { en: 'We are fine-tuning the logistics of the entire trip before booking anything.', vi: 'Chúng ta đang tinh chỉnh khâu hậu cần của toàn bộ chuyến đi trước khi đặt bất cứ gì.' },
     ],
   },
   {
@@ -20305,9 +20404,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The travel insurance covers most of the risks.',
     vietnamese: 'Bảo hiểm du lịch chi trả hầu hết các rủi ro.',
     phonetic: '/ðə ˈtrævəl ɪnˈʃʊrəns ˈkʌvərz moʊst ʌv ðə rɪsks/',
+    usage: 'Dùng khi nói về phạm vi bảo hiểm của bảo hiểm du lịch.',
     role: 'opener',
     examples: [
       { en: 'The travel insurance covers most of the risks.', vi: 'Bảo hiểm du lịch chi trả hầu hết các rủi ro.' },
+      { en: 'The travel insurance covers most of the risks, including lost luggage.', vi: 'Bảo hiểm du lịch chi trả hầu hết các rủi ro, kể cả mất hành lý.' },
+      { en: 'The travel insurance covers most of the risks, so we travel worry-free.', vi: 'Bảo hiểm du lịch chi trả hầu hết các rủi ro nên chúng ta đi chơi không lo lắng.' },
     ],
   },
   {
@@ -20318,9 +20420,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We prefer off-the-beaten-path destinations.',
     vietnamese: 'Chúng tôi thích những điểm đến ít người biết.',
     phonetic: '/wiː prɪˈfɜːr ɔːf ðə ˈbiːtən pæθ ˌdɛstɪˈneɪʃənz/',
+    usage: 'Dùng khi bày tỏ sở thích đến những nơi ít khách du lịch.',
     role: 'opener',
     examples: [
       { en: 'We prefer off-the-beaten-path destinations.', vi: 'Chúng tôi thích những điểm đến ít người biết.' },
+      { en: 'We prefer off-the-beaten-path destinations to avoid the crowds.', vi: 'Chúng tôi thích những điểm đến ít người biết để tránh đông đúc.' },
+      { en: 'We prefer off-the-beaten-path destinations, so we skip the big cities.', vi: 'Chúng tôi thích những điểm đến ít người biết nên bỏ qua các thành phố lớn.' },
     ],
   },
   {
@@ -20331,9 +20436,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The itinerary needs some optimization.',
     vietnamese: 'Lịch trình cần được tối ưu hóa một chút.',
     phonetic: '/ði aɪˈtɪnəˌrɛri niːdz sʌm ˌɒptɪmɪˈzeɪʃən/',
+    usage: 'Dùng khi nhận thấy lịch trình cần cải thiện về sắp xếp thời gian.',
     role: 'opener',
     examples: [
       { en: 'The itinerary needs some optimization.', vi: 'Lịch trình cần được tối ưu hóa một chút.' },
+      { en: 'The itinerary needs some optimization to reduce the travel time.', vi: 'Lịch trình cần được tối ưu hóa một chút để giảm thời gian di chuyển.' },
+      { en: 'The itinerary needs some optimization, the museum is too far on day three.', vi: 'Lịch trình cần được tối ưu hóa một chút, bảo tàng quá xa vào ngày thứ ba.' },
     ],
   },
   {
@@ -20344,9 +20452,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Provided the weather holds, we will hike the ridge.',
     vietnamese: 'Miễn là thời tiết tốt, chúng ta sẽ đi bộ trên đỉnh núi.',
     phonetic: '/prəˈvaɪdɪd ðə ˈwɛðər hoʊldz wiː wɪl haɪk ðə rɪdʒ/',
+    usage: 'Dùng khi đặt điều kiện về thời tiết cho một hoạt động ngoài trời.',
     role: 'linker',
     examples: [
       { en: 'Provided the weather holds, we will hike the ridge.', vi: 'Miễn là thời tiết tốt, chúng ta sẽ đi bộ trên đỉnh núi.' },
+      { en: 'Provided the weather holds, we will hike the ridge at sunrise.', vi: 'Miễn là thời tiết tốt, chúng ta sẽ đi bộ trên đỉnh núi lúc bình minh.' },
+      { en: 'Provided the weather holds, we will hike the ridge instead of the valley.', vi: 'Miễn là thời tiết tốt, chúng ta sẽ đi bộ trên đỉnh núi thay vì xuống thung lũng.' },
     ],
   },
   {
@@ -20357,9 +20468,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once we check in, we will drop off the luggage.',
     vietnamese: 'Khi đã nhận phòng, chúng ta sẽ gửi hành lý.',
     phonetic: '/wʌns wiː tʃɛk ɪn wiː wɪl drɒp ɔːf ðə ˈlʌɡɪdʒ/',
+    usage: 'Dùng khi nói về việc gửi hành lý ngay sau khi nhận phòng.',
     role: 'linker',
     examples: [
       { en: 'Once we check in, we will drop off the luggage.', vi: 'Khi đã nhận phòng, chúng ta sẽ gửi hành lý.' },
+      { en: 'Once we check in, we will drop off the luggage and go sightseeing.', vi: 'Khi đã nhận phòng, chúng ta sẽ gửi hành lý rồi đi tham quan.' },
+      { en: 'Once we check in, we will drop off the luggage at the bell desk.', vi: 'Khi đã nhận phòng, chúng ta sẽ gửi hành lý ở quầy lễ tân.' },
     ],
   },
   {
@@ -20370,9 +20484,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the excursion, we will unwind by the pool.',
     vietnamese: 'Sau chuyến tham quan, chúng ta sẽ thư giãn bên hồ bơi.',
     phonetic: '/ˈæftər ði ɪkˈskɜːrʒən wiː wɪl ʌnˈwaɪnd baɪ ðə puːl/',
+    usage: 'Dùng khi nói về việc thư giãn sau một ngày tham quan.',
     role: 'linker',
     examples: [
       { en: 'After the excursion, we will unwind by the pool.', vi: 'Sau chuyến tham quan, chúng ta sẽ thư giãn bên hồ bơi.' },
+      { en: 'After the excursion, we will unwind by the pool with drinks.', vi: 'Sau chuyến tham quan, chúng ta sẽ thư giãn bên hồ bơi với đồ uống.' },
+      { en: 'After the excursion, we will unwind by the pool until dinner.', vi: 'Sau chuyến tham quan, chúng ta sẽ thư giãn bên hồ bơi cho đến bữa tối.' },
     ],
   },
   {
@@ -20383,9 +20500,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In the meantime, we can book the museum tickets.',
     vietnamese: 'Trong lúc đó, chúng ta có thể đặt vé bảo tàng.',
     phonetic: '/ɪn ðə ˈmiːnˌtaɪm wiː kæn bʊk ðə mjuːˈziːəm ˈtɪkɪts/',
+    usage: 'Dùng khi nói về việc làm trong lúc chờ đợi, thường là đặt vé trước.',
     role: 'linker',
     examples: [
       { en: 'In the meantime, we can book the museum tickets.', vi: 'Trong lúc đó, chúng ta có thể đặt vé bảo tàng.' },
+      { en: 'In the meantime, we can book the museum tickets online to skip the queue.', vi: 'Trong lúc đó, chúng ta có thể đặt vé bảo tàng trực tuyến để khỏi xếp hàng.' },
+      { en: 'In the meantime, we can book the museum tickets for tomorrow morning.', vi: 'Trong lúc đó, chúng ta có thể đặt vé bảo tàng cho sáng mai.' },
     ],
   },
   {
@@ -20396,9 +20516,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The hotel reviews are somewhat mixed.',
     vietnamese: 'Đánh giá về khách sạn hơi trái chiều.',
     phonetic: '/ðə hoʊˈtɛl rɪˈvjuːz ɑːr ˈsʌmwʌt mɪkst/',
+    usage: 'Dùng khi nhận xét đánh giá về khách sạn không hoàn toàn tốt.',
     role: 'filler',
     examples: [
       { en: 'The hotel reviews are somewhat mixed.', vi: 'Đánh giá về khách sạn hơi trái chiều.' },
+      { en: 'The hotel reviews are somewhat mixed, so we asked for photos first.', vi: 'Đánh giá về khách sạn hơi trái chiều nên chúng tôi đã xin ảnh trước.' },
+      { en: 'The hotel reviews are somewhat mixed, but the location is perfect.', vi: 'Đánh giá về khách sạn hơi trái chiều, nhưng vị trí thì hoàn hảo.' },
     ],
   },
   {
@@ -20409,9 +20532,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a chance the train will be crowded.',
     vietnamese: 'Có khả năng chuyến tàu sẽ đông đúc.',
     phonetic: '/ðɛr ɪz ə tʃæns ðə treɪn wɪl biː ˈkraʊdɪd/',
+    usage: 'Dùng khi dự đoán khả năng đông người trên phương tiện công cộng.',
     role: 'filler',
     examples: [
       { en: 'There is a chance the train will be crowded.', vi: 'Có khả năng chuyến tàu sẽ đông đúc.' },
+      { en: 'There is a chance the train will be crowded during the holiday.', vi: 'Có khả năng chuyến tàu sẽ đông đúc trong dịp lễ.' },
+      { en: 'There is a chance the train will be crowded, so book a seat.', vi: 'Có khả năng chuyến tàu sẽ đông đúc nên hãy đặt chỗ ngồi.' },
     ],
   },
   {
@@ -20422,9 +20548,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It might be worth upgrading the room.',
     vietnamese: 'Có lẽ đáng để nâng cấp phòng.',
     phonetic: '/ɪt maɪt biː wɜːrθ ˈʌpˌɡreɪdɪŋ ðə ruːm/',
+    usage: 'Dùng khi cân nhắc nâng cấp phòng để trải nghiệm tốt hơn.',
     role: 'filler',
     examples: [
       { en: 'It might be worth upgrading the room.', vi: 'Có lẽ đáng để nâng cấp phòng.' },
+      { en: 'It might be worth upgrading the room for the extra balcony.', vi: 'Có lẽ đáng để nâng cấp phòng để có thêm ban công.' },
+      { en: 'It might be worth upgrading the room since we stay five nights.', vi: 'Có lẽ đáng để nâng cấp phòng vì chúng ta ở năm đêm.' },
     ],
   },
   {
@@ -20435,9 +20564,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The local currency is stronger than we expected.',
     vietnamese: 'Đồng nội tệ mạnh hơn chúng ta dự kiến.',
     phonetic: '/ðə ˈloʊkəl ˈkɜːrənsi ɪz ˈstrɒŋər ðæn wiː ɪkˈspɛktɪd/',
+    usage: 'Dùng khi nhận xét về tỷ giá hối đoái so với dự kiến.',
     role: 'filler',
     examples: [
       { en: 'The local currency is stronger than we expected.', vi: 'Đồng nội tệ mạnh hơn chúng ta dự kiến.' },
+      { en: 'The local currency is stronger than we expected, so things cost more.', vi: 'Đồng nội tệ mạnh hơn chúng ta dự kiến nên đồ mọi thứ đắt hơn.' },
+      { en: 'The local currency is stronger than we expected, we should have exchanged earlier.', vi: 'Đồng nội tệ mạnh hơn chúng ta dự kiến, lẽ ra nên đổi tiền sớm hơn.' },
     ],
   },
   {
@@ -20448,9 +20580,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have covered all the main highlights.',
     vietnamese: 'Chúng ta đã khám phá hết những điểm nổi bật chính.',
     phonetic: '/wiː hæv ˈkʌvərd ɔːl ðə meɪn ˈhaɪˌlaɪts/',
+    usage: 'Dùng khi tổng kết đã tham quan xong các điểm chính.',
     role: 'closer',
     examples: [
       { en: 'We have covered all the main highlights.', vi: 'Chúng ta đã khám phá hết những điểm nổi bật chính.' },
+      { en: 'We have covered all the main highlights, only the beach is left.', vi: 'Chúng ta đã khám phá hết những điểm nổi bật chính, chỉ còn bãi biển.' },
+      { en: 'We have covered all the main highlights, the trip was efficient.', vi: 'Chúng ta đã khám phá hết những điểm nổi bật chính, chuyến đi rất hiệu quả.' },
     ],
   },
   {
@@ -20461,9 +20596,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us wrap up the packing before dinner.',
     vietnamese: 'Hãy hoàn tất việc đóng gói trước bữa tối.',
     phonetic: '/lɛt ʌs ræp ʌp ðə ˈpækɪŋ bɪˈfɔːr ˈdɪnər/',
+    usage: 'Dùng khi nhắc hoàn tất việc chuẩn bị hành lý trước một mốc thời gian.',
     role: 'closer',
     examples: [
       { en: 'Let us wrap up the packing before dinner.', vi: 'Hãy hoàn tất việc đóng gói trước bữa tối.' },
+      { en: 'Let us wrap up the packing before dinner, we leave at dawn.', vi: 'Hãy hoàn tất việc đóng gói trước bữa tối, chúng ta đi lúc bình minh.' },
+      { en: 'Let us wrap up the packing before dinner, the taxi comes at nine.', vi: 'Hãy hoàn tất việc đóng gói trước bữa tối, taxi đến lúc chín giờ.' },
     ],
   },
   {
@@ -20474,9 +20612,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will exchange the tickets at the counter.',
     vietnamese: 'Chúng ta sẽ đổi vé tại quầy.',
     phonetic: '/wiː wɪl ɪksˈtʃeɪndʒ ðə ˈtɪkɪts æt ðə ˈkaʊntər/',
+    usage: 'Dùng khi nói về việc đổi vé tại quầy khi đến nơi.',
     role: 'closer',
     examples: [
       { en: 'We will exchange the tickets at the counter.', vi: 'Chúng ta sẽ đổi vé tại quầy.' },
+      { en: 'We will exchange the tickets at the counter when we arrive.', vi: 'Chúng ta sẽ đổi vé tại quầy khi đến nơi.' },
+      { en: 'We will exchange the tickets at the counter, bring the confirmation.', vi: 'Chúng ta sẽ đổi vé tại quầy, nhớ mang theo giấy xác nhận.' },
     ],
   },
   {
@@ -20487,9 +20628,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The trip turned out better than expected.',
     vietnamese: 'Chuyến đi hóa ra tốt hơn mong đợi.',
     phonetic: '/ðə trɪp tɜːrnd aʊt ˈbɛtər ðæn ɪkˈspɛktɪd/',
+    usage: 'Dùng khi nhận xét chuyến đi vượt quá kỳ vọng.',
     role: 'closer',
     examples: [
       { en: 'The trip turned out better than expected.', vi: 'Chuyến đi hóa ra tốt hơn mong đợi.' },
+      { en: 'The trip turned out better than expected, thanks to the locals.', vi: 'Chuyến đi hóa ra tốt hơn mong đợi, nhờ có người dân địa phương.' },
+      { en: 'The trip turned out better than expected despite the rain.', vi: 'Chuyến đi hóa ra tốt hơn mong đợi dù có mưa.' },
     ],
   },
   // ===== EXPANSION v2: Daily — travel =====
@@ -20501,9 +20645,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are planning a sustainable travel itinerary.',
     vietnamese: 'Chúng tôi đang lên lịch trình du lịch bền vững.',
     phonetic: '/wiː ɑːr ˈplænɪŋ ə səˈsteɪnəbəl ˈtrævəl aɪˈtɪnəˌrɛri/',
+    usage: 'Nói về việc lên lịch trình du lịch có trách nhiệm với môi trường.',
     role: 'opener',
     examples: [
       { en: 'We are planning a sustainable travel itinerary.', vi: 'Chúng tôi đang lên lịch trình du lịch bền vững.' },
+      { en: 'We are planning a sustainable travel itinerary that supports local businesses.', vi: 'Chúng tôi đang lên lịch trình du lịch bền vững, ủng hộ các doanh nghiệp địa phương.' },
+      { en: 'We are planning a sustainable travel itinerary with low-impact transport.', vi: 'Chúng tôi đang lên lịch trình du lịch bền vững với phương tiện ít tác động đến môi trường.' },
     ],
   },
   {
@@ -20514,9 +20661,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Cultural immersion is the core of our journey.',
     vietnamese: 'Hòa mình vào văn hóa là cốt lõi của chuyến đi.',
     phonetic: '/ˈkʌltʃərəl ɪˈmɜːrʒən ɪz ðə kɔːr ʌv aʊər ˈdʒɜːrni/',
+    usage: 'Nói về việc lấy hòa mình vào văn hóa làm trọng tâm của chuyến đi.',
     role: 'opener',
     examples: [
       { en: 'Cultural immersion is the core of our journey.', vi: 'Hòa mình vào văn hóa là cốt lõi của chuyến đi.' },
+      { en: 'Cultural immersion is the core of our journey, so we stay with local families.', vi: 'Hòa mình vào văn hóa là cốt lõi của chuyến đi nên chúng tôi ở nhà dân.' },
+      { en: 'Cultural immersion is the core of our journey, not sightseeing.', vi: 'Hòa mình vào văn hóa là cốt lõi của chuyến đi, chứ không phải ngắm cảnh.' },
     ],
   },
   {
@@ -20527,9 +20677,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We must assess the risks before the long haul.',
     vietnamese: 'Chúng ta phải đánh giá rủi ro trước chặng bay dài.',
     phonetic: '/wiː mʌst əˈsɛs ðə rɪsks bɪˈfɔːr ðə lɒŋ hɔːl/',
+    usage: 'Nói về việc đánh giá rủi ro trước chuyến bay đường dài.',
     role: 'opener',
     examples: [
       { en: 'We must assess the risks before the long haul.', vi: 'Chúng ta phải đánh giá rủi ro trước chặng bay dài.' },
+      { en: 'We must assess the risks before the long haul, including health and safety.', vi: 'Chúng ta phải đánh giá rủi ro trước chặng bay dài, gồm cả sức khỏe và an toàn.' },
+      { en: 'We must assess the risks before the long haul and adjust the route.', vi: 'Chúng ta phải đánh giá rủi ro trước chặng bay dài và điều chỉnh lộ trình.' },
     ],
   },
   {
@@ -20540,9 +20693,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Managing a long-haul trip requires discipline.',
     vietnamese: 'Quản lý một chuyến đi dài đòi hỏi sự kỷ luật.',
     phonetic: '/ˈmænɪdʒɪŋ ə lɒŋ hɔːl trɪp rɪˈkwaɪərz ˈdɪsəplɪn/',
+    usage: 'Nói về việc quản lý chuyến đi dài đòi hỏi sự kỷ luật trong lịch trình.',
     role: 'opener',
     examples: [
       { en: 'Managing a long-haul trip requires discipline.', vi: 'Quản lý một chuyến đi dài đòi hỏi sự kỷ luật.' },
+      { en: 'Managing a long-haul trip requires discipline with the budget and time.', vi: 'Quản lý một chuyến đi dài đòi hỏi sự kỷ luật về ngân sách và thời gian.' },
+      { en: 'Managing a long-haul trip requires discipline, or costs spiral quickly.', vi: 'Quản lý một chuyến đi dài đòi hỏi sự kỷ luật, nếu không chi phí sẽ tăng nhanh.' },
     ],
   },
   {
@@ -20553,9 +20709,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Having secured the visas, we can finalize the bookings.',
     vietnamese: 'Sau khi đã xin được visa, chúng ta có thể chốt các đặt chỗ.',
     phonetic: '/ˈhævɪŋ sɪˈkjʊrd ðə ˈviːzəz wiː kæn ˈfaɪnəˌlaɪz ðə ˈbʊkɪŋz/',
+    usage: 'Nói về việc chốt đặt chỗ sau khi đã hoàn tất thủ tục visa.',
     role: 'linker',
     examples: [
       { en: 'Having secured the visas, we can finalize the bookings.', vi: 'Sau khi đã xin được visa, chúng ta có thể chốt các đặt chỗ.' },
+      { en: 'Having secured the visas, we can finalize the bookings for the hotels.', vi: 'Sau khi đã xin được visa, chúng ta có thể chốt các đặt chỗ khách sạn.' },
+      { en: 'Having secured the visas, we can finalize the bookings without delay.', vi: 'Sau khi đã xin được visa, chúng ta có thể chốt các đặt chỗ mà không chậm trễ.' },
     ],
   },
   {
@@ -20566,9 +20725,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Should the flight be cancelled, we will rebook immediately.',
     vietnamese: 'Nếu chuyến bay bị hủy, chúng ta sẽ đặt lại ngay lập tức.',
     phonetic: '/ʃʊd ðə flaɪt biː ˈkænsəld wiː wɪl riːˈbʊk ɪˈmiːdiətli/',
+    usage: 'Nói về phương án xử lý ngay khi chuyến bay bị hủy.',
     role: 'linker',
     examples: [
       { en: 'Should the flight be cancelled, we will rebook immediately.', vi: 'Nếu chuyến bay bị hủy, chúng ta sẽ đặt lại ngay lập tức.' },
+      { en: 'Should the flight be cancelled, we will rebook immediately and inform the hotel.', vi: 'Nếu chuyến bay bị hủy, chúng ta sẽ đặt lại ngay lập tức và báo khách sạn.' },
+      { en: 'Should the flight be cancelled, we will rebook immediately on the next one.', vi: 'Nếu chuyến bay bị hủy, chúng ta sẽ đặt lại ngay chuyến tiếp theo.' },
     ],
   },
   {
@@ -20579,9 +20741,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In light of the feedback, we adjusted the route.',
     vietnamese: 'Theo phản hồi, chúng tôi đã điều chỉnh lộ trình.',
     phonetic: '/ɪn laɪt ʌv ðə ˈfiːdbæk wiː əˈdʒʌstɪd ðə ruːt/',
+    usage: 'Nói về việc điều chỉnh lộ trình dựa trên phản hồi nhận được.',
     role: 'linker',
     examples: [
       { en: 'In light of the feedback, we adjusted the route.', vi: 'Theo phản hồi, chúng tôi đã điều chỉnh lộ trình.' },
+      { en: 'In light of the feedback, we adjusted the route to include the coastal road.', vi: 'Theo phản hồi, chúng tôi đã điều chỉnh lộ trình để đi qua con đường ven biển.' },
+      { en: 'In light of the feedback, we adjusted the route and added a rest day.', vi: 'Theo phản hồi, chúng tôi đã điều chỉnh lộ trình và thêm một ngày nghỉ.' },
     ],
   },
   {
@@ -20592,9 +20757,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subsequently, we will arrange the ground transport.',
     vietnamese: 'Sau đó, chúng ta sẽ sắp xếp phương tiện di chuyển.',
     phonetic: '/ˈsʌbsɪkwəntli wiː wɪl əˈreɪndʒ ðə ɡraʊnd ˈtrænspɔːrt/',
+    usage: 'Nói về bước tiếp theo trong việc sắp xếp di chuyển của chuyến đi.',
     role: 'linker',
     examples: [
       { en: 'Subsequently, we will arrange the ground transport.', vi: 'Sau đó, chúng ta sẽ sắp xếp phương tiện di chuyển.' },
+      { en: 'Subsequently, we will arrange the ground transport from the airport.', vi: 'Sau đó, chúng ta sẽ sắp xếp phương tiện di chuyển từ sân bay.' },
+      { en: 'Subsequently, we will arrange the ground transport and confirm the timings.', vi: 'Sau đó, chúng ta sẽ sắp xếp phương tiện di chuyển và xác nhận giờ giấc.' },
     ],
   },
   {
@@ -20605,9 +20773,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It goes without saying that the itinerary is flexible.',
     vietnamese: 'Không cần nói cũng biết rằng lịch trình rất linh hoạt.',
     phonetic: '/ɪt ɡoʊz wɪˈðaʊt ˈseɪɪŋ ðæt ði aɪˈtɪnəˌrɛri ɪz ˈflɛksəbəl/',
+    usage: 'Nói về một điều hiển nhiên, thường là tính linh hoạt của lịch trình.',
     role: 'filler',
     examples: [
       { en: 'It goes without saying that the itinerary is flexible.', vi: 'Không cần nói cũng biết rằng lịch trình rất linh hoạt.' },
+      { en: 'It goes without saying that the itinerary is flexible if the group prefers.', vi: 'Không cần nói cũng biết rằng lịch trình rất linh hoạt nếu cả nhóm muốn.' },
+      { en: 'It goes without saying that the itinerary is flexible during the monsoon season.', vi: 'Không cần nói cũng biết rằng lịch trình linh hoạt trong mùa mưa.' },
     ],
   },
   {
@@ -20618,9 +20789,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a degree of uncertainty about the weather.',
     vietnamese: 'Có một mức độ không chắc chắn về thời tiết.',
     phonetic: '/ðɛr ɪz ə dɪˈɡriː ʌv ʌnˈsɜːrtnti əˈbaʊt ðə ˈwɛðər/',
+    usage: 'Nói về mức độ không chắc chắn trong dự đoán thời tiết.',
     role: 'filler',
     examples: [
       { en: 'There is a degree of uncertainty about the weather.', vi: 'Có một mức độ không chắc chắn về thời tiết.' },
+      { en: 'There is a degree of uncertainty about the weather, so pack layers.', vi: 'Có một mức độ không chắc chắn về thời tiết nên hãy mang nhiều lớp quần áo.' },
+      { en: 'There is a degree of uncertainty about the weather for the summit day.', vi: 'Có một mức độ không chắc chắn về thời tiết cho ngày leo đỉnh.' },
     ],
   },
   {
@@ -20631,9 +20805,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is prudent to book the tours in advance.',
     vietnamese: 'Thật khôn ngoan khi đặt các tour trước.',
     phonetic: '/ɪt ɪz ˈpruːdənt tuː bʊk ðə tʊrz ɪn ədˈvæns/',
+    usage: 'Nói về sự khôn ngoan khi đặt tour trước để đảm bảo chỗ.',
     role: 'filler',
     examples: [
       { en: 'It is prudent to book the tours in advance.', vi: 'Thật khôn ngoan khi đặt các tour trước.' },
+      { en: 'It is prudent to book the tours in advance during the peak season.', vi: 'Thật khôn ngoan khi đặt các tour trước trong mùa cao điểm.' },
+      { en: 'It is prudent to book the tours in advance to secure the good guides.', vi: 'Thật khôn ngoan khi đặt các tour trước để giữ được hướng dẫn viên giỏi.' },
     ],
   },
   {
@@ -20644,9 +20821,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'One cannot overstate the value of travel insurance.',
     vietnamese: 'Không thể phóng đại quá giá trị của bảo hiểm du lịch.',
     phonetic: '/wʌn ˈkænɒt ˌoʊvərˈsteɪt ðə ˈvæljuː ʌv ˈtrævəl ɪnˈʃʊrəns/',
+    usage: 'Nói về tầm quan trọng lớn của bảo hiểm du lịch.',
     role: 'filler',
     examples: [
       { en: 'One cannot overstate the value of travel insurance.', vi: 'Không thể phóng đại quá giá trị của bảo hiểm du lịch.' },
+      { en: 'One cannot overstate the value of travel insurance for long journeys.', vi: 'Không thể phóng đại quá giá trị của bảo hiểm du lịch cho những chuyến đi dài.' },
+      { en: 'One cannot overstate the value of travel insurance when visiting remote areas.', vi: 'Không thể phóng đại quá giá trị của bảo hiểm du lịch khi đến vùng xa xôi.' },
     ],
   },
   {
@@ -20657,9 +20837,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The journey has been a resounding success.',
     vietnamese: 'Chuyến đi đã thành công vang dội.',
     phonetic: '/ðə ˈdʒɜːrni hæz biːn ə rɪˈzaʊndɪŋ səkˈsɛs/',
+    usage: 'Nói về việc chuyến đi đã thành công rực rỡ.',
     role: 'closer',
     examples: [
       { en: 'The journey has been a resounding success.', vi: 'Chuyến đi đã thành công vang dội.' },
+      { en: 'The journey has been a resounding success, every goal was met.', vi: 'Chuyến đi đã thành công vang dội, mọi mục tiêu đều đạt được.' },
+      { en: 'The journey has been a resounding success beyond our expectations.', vi: 'Chuyến đi đã thành công vang dội, vượt ngoài mong đợi của chúng tôi.' },
     ],
   },
   {
@@ -20670,9 +20853,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us consolidate the highlights into a journal.',
     vietnamese: 'Hãy gom những điểm nổi bật vào một cuốn nhật ký.',
     phonetic: '/lɛt ʌs kənˈsɒlɪdeɪt ðə ˈhaɪˌlaɪts ˈɪntuː ə ˈdʒɜːrnəl/',
+    usage: 'Nói về việc gom lại những điểm nổi bật vào nhật ký hành trình.',
     role: 'closer',
     examples: [
       { en: 'Let us consolidate the highlights into a journal.', vi: 'Hãy gom những điểm nổi bật vào một cuốn nhật ký.' },
+      { en: 'Let us consolidate the highlights into a journal with photos and notes.', vi: 'Hãy gom những điểm nổi bật vào một cuốn nhật ký kèm ảnh và ghi chú.' },
+      { en: 'Let us consolidate the highlights into a journal before we forget the details.', vi: 'Hãy gom những điểm nổi bật vào một cuốn nhật ký trước khi quên chi tiết.' },
     ],
   },
   {
@@ -20683,9 +20869,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will preserve the memories for the years ahead.',
     vietnamese: 'Chúng ta sẽ gìn giữ những kỷ niệm cho những năm sau.',
     phonetic: '/wiː wɪl prɪˈzɜːrv ðə ˈmɛməriz fɔːr ðə jɪrz əˈhɛd/',
+    usage: 'Nói về việc gìn giữ kỷ niệm của chuyến đi cho tương lai.',
     role: 'closer',
     examples: [
       { en: 'We will preserve the memories for the years ahead.', vi: 'Chúng ta sẽ gìn giữ những kỷ niệm cho những năm sau.' },
+      { en: 'We will preserve the memories for the years ahead in a photo book.', vi: 'Chúng ta sẽ gìn giữ những kỷ niệm cho những năm sau trong một cuốn album ảnh.' },
+      { en: 'We will preserve the memories for the years ahead and share them with the kids.', vi: 'Chúng ta sẽ gìn giữ những kỷ niệm cho những năm sau và chia sẻ với các con.' },
     ],
   },
   {
@@ -20696,9 +20885,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The expedition concludes with a sense of fulfillment.',
     vietnamese: 'Chuyến thám hiểm kết thúc với cảm giác viên mãn.',
     phonetic: '/ði ˌɛkspɪˈdɪʃən kənˈkluːdz wɪð ə sɛns ʌv fʊlˈfɪlmənt/',
+    usage: 'Nói về việc chuyến đi kết thúc với cảm giác trọn vẹn.',
     role: 'closer',
     examples: [
       { en: 'The expedition concludes with a sense of fulfillment.', vi: 'Chuyến thám hiểm kết thúc với cảm giác viên mãn.' },
+      { en: 'The expedition concludes with a sense of fulfillment and gratitude.', vi: 'Chuyến thám hiểm kết thúc với cảm giác viên mãn và biết ơn.' },
+      { en: 'The expedition concludes with a sense of fulfillment after the tough climb.', vi: 'Chuyến thám hiểm kết thúc với cảm giác viên mãn sau chặng leo núi gian nan.' },
     ],
   },
 
