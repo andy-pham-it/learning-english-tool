@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "seed:scenarios": "tsx scripts/seed-phrase-scenarios.ts",
     "audit": "npm audit",
     "audit:fix": "npm audit fix",
     "test:api": "node --test api/lib/*.test.js"
