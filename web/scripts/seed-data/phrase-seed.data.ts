@@ -18441,9 +18441,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to the best of my knowledge',
     vietnamese: 'theo hiểu biết tốt nhất của tôi',
     phonetic: '/tə ðə best əv maɪ ˈnɒlɪdʒ/',
+    usage: 'Dùng khi bạn muốn khẳng định điều mình nói dựa trên những gì bạn biết, nhưng không chắc chắn 100%.',
     role: 'opener',
     examples: [
       { en: 'To the best of my knowledge, the meeting is still on.', vi: 'Theo hiểu biết tốt nhất của tôi, cuộc họp vẫn diễn ra.' },
+      { en: 'To the best of my knowledge, she has not submitted the report yet.', vi: 'Theo hiểu biết tốt nhất của tôi, cô ấy vẫn chưa nộp báo cáo.' },
+      { en: 'To the best of my knowledge, the store opens at nine.', vi: 'Theo hiểu biết tốt nhất của tôi, cửa hàng mở cửa lúc chín giờ.' },
     ],
   },
   {
@@ -18454,9 +18457,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be honest',
     vietnamese: 'thành thật mà nói',
     phonetic: '/tə bi ˈɒnɪst/',
+    usage: 'Dùng khi bạn muốn nói thẳng suy nghĩ thật của mình, thường là điều hơi khó nói.',
     role: 'opener',
     examples: [
       { en: 'To be honest, I do not think the plan is realistic.', vi: 'Thành thật mà nói, tôi không nghĩ kế hoạch này khả thi.' },
+      { en: 'To be honest, I did not like the movie at all.', vi: 'Thành thật mà nói, tôi không thích bộ phim đó chút nào.' },
+      { en: 'To be honest, the service was quite slow.', vi: 'Thành thật mà nói, dịch vụ khá chậm.' },
     ],
   },
   {
@@ -18467,9 +18473,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in that case',
     vietnamese: 'trong trường hợp đó',
     phonetic: '/ɪn ðæt keɪs/',
+    usage: 'Dùng khi muốn đưa ra giải pháp hoặc kết luận dựa trên tình huống vừa được nhắc đến.',
     role: 'linker',
     examples: [
       { en: 'In that case, let us reschedule for next week.', vi: 'Trong trường hợp đó, ta dời lịch sang tuần sau nhé.' },
+      { en: 'In that case, we should cancel the reservation.', vi: 'Trong trường hợp đó, chúng ta nên hủy đặt chỗ.' },
+      { en: 'In that case, I will bring an umbrella.', vi: 'Trong trường hợp đó, tôi sẽ mang ô.' },
     ],
   },
   {
@@ -18480,9 +18489,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'it depends on',
     vietnamese: 'nó phụ thuộc vào',
     phonetic: '/ɪt dɪˈpendz ɒn/',
+    usage: 'Dùng khi câu trả lời của bạn phụ thuộc vào một yếu tố khác chưa xác định.',
     role: 'filler',
     examples: [
       { en: 'It depends on the weather and the team size.', vi: 'Nó phụ thuộc vào thời tiết và quy mô team.' },
+      { en: 'It depends on how much time we have.', vi: 'Nó phụ thuộc vào việc chúng ta có bao nhiêu thời gian.' },
+      { en: 'It depends on the price they offer.', vi: 'Nó phụ thuộc vào mức giá họ đưa ra.' },
     ],
   },
   {
@@ -18493,9 +18505,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'from my point of view',
     vietnamese: 'theo quan điểm của tôi',
     phonetic: '/frɒm maɪ pɔɪnt əv vjuː/',
+    usage: 'Dùng khi muốn trình bày ý kiến cá nhân, nhấn mạnh rằng đó là góc nhìn riêng của bạn.',
     role: 'opener',
     examples: [
       { en: 'From my point of view, the risk is acceptable.', vi: 'Theo quan điểm của tôi, rủi ro là chấp nhận được.' },
+      { en: 'From my point of view, we should invest in training.', vi: 'Theo quan điểm của tôi, chúng ta nên đầu tư vào đào tạo.' },
+      { en: 'From my point of view, the design needs improvement.', vi: 'Theo quan điểm của tôi, thiết kế cần được cải thiện.' },
     ],
   },
   {
@@ -18506,9 +18521,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that said',
     vietnamese: 'dù vậy',
     phonetic: '/ðæt sed/',
+    usage: 'Dùng để nêu một ý bổ sung trái ngược nhẹ với điều vừa nói trước đó.',
     role: 'linker',
     examples: [
       { en: 'That said, I would still recommend a smaller pilot first.', vi: 'Dù vậy, tôi vẫn đề xuất chạy pilot nhỏ trước.' },
+      { en: 'The idea is ambitious. That said, it might work.', vi: 'Ý tưởng rất tham vọng. Dù vậy, nó có thể hiệu quả.' },
+      { en: 'That said, we still need to check the details.', vi: 'Dù vậy, chúng ta vẫn cần kiểm tra chi tiết.' },
     ],
   },
   {
@@ -18519,9 +18537,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to weigh the pros and cons',
     vietnamese: 'cân nhắc ưu nhược điểm',
     phonetic: '/tə weɪ ðə prəʊz ənd kɒnz/',
+    usage: 'Dùng khi muốn so sánh mặt tốt và mặt xấu trước khi đưa ra quyết định.',
     role: 'linker',
     examples: [
       { en: 'Let us weigh the pros and cons before deciding.', vi: 'Chúng ta hãy cân nhắc ưu nhược điểm trước khi quyết.' },
+      { en: 'Let us weigh the pros and cons of moving to the new office.', vi: 'Chúng ta hãy cân nhắc ưu nhược điểm của việc chuyển văn phòng mới.' },
+      { en: 'We weighed the pros and cons and chose the cheaper option.', vi: 'Chúng tôi đã cân nhắc ưu nhược điểm và chọn phương án rẻ hơn.' },
     ],
   },
   {
@@ -18532,9 +18553,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: "I couldn't agree more",
     vietnamese: 'tôi hoàn toàn đồng ý',
     phonetic: '/aɪ ˈkʊdnt əˈɡriː mɔː/',
+    usage: 'Dùng để bày tỏ sự đồng ý hoàn toàn, nhấn mạnh rằng bạn không thể đồng ý hơn được nữa.',
     role: 'closer',
     examples: [
       { en: 'I could not agree more with your assessment.', vi: 'Tôi hoàn toàn đồng ý với đánh giá của bạn.' },
+      { en: 'I could not agree more that we need a break.', vi: 'Tôi hoàn toàn đồng ý rằng chúng ta cần nghỉ ngơi.' },
+      { en: 'I could not agree more with your suggestion about dinner.', vi: 'Tôi hoàn toàn đồng ý với gợi ý về bữa tối của bạn.' },
     ],
   },
 
@@ -23227,9 +23251,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for my part',
     vietnamese: 'về phần tôi',
     phonetic: '/fɔː maɪ pɑːrt/',
+    usage: 'Dùng khi bạn muốn nói rõ ý kiến của riêng mình, tách biệt với những người khác.',
     role: 'opener',
     examples: [
       { en: 'For my part, I would choose the simpler plan.', vi: 'Về phần tôi, tôi sẽ chọn phương án đơn giản hơn.' },
+      { en: 'For my part, I am happy with the result.', vi: 'Về phần tôi, tôi hài lòng với kết quả.' },
+      { en: 'For my part, I will prepare the food.', vi: 'Về phần tôi, tôi sẽ chuẩn bị đồ ăn.' },
     ],
   },
   {
@@ -23240,9 +23267,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I agree with',
     vietnamese: 'tôi đồng ý với',
     phonetic: '/aɪ əˈɡriː wɪð/',
+    usage: 'Dùng khi bạn đồng ý với người khác về một điểm cụ thể nào đó.',
     role: 'linker',
     examples: [
       { en: 'I agree with you on that point.', vi: 'Tôi đồng ý với bạn ở điểm đó.' },
+      { en: 'I agree with your opinion about the film.', vi: 'Tôi đồng ý với ý kiến của bạn về bộ phim.' },
+      { en: 'I agree with the plan for the weekend.', vi: 'Tôi đồng ý với kế hoạch cuối tuần.' },
     ],
   },
   {
@@ -23253,9 +23283,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for me',
     vietnamese: 'với tôi',
     phonetic: '/fə miː/',
+    usage: 'Dùng khi muốn nêu tiêu chí hoặc yếu tố quan trọng đối với riêng bạn.',
     role: 'filler',
     examples: [
       { en: 'For me, the location matters most.', vi: 'Với tôi, vị trí quan trọng nhất.' },
+      { en: 'For me, the price is the most important thing.', vi: 'Với tôi, giá cả là điều quan trọng nhất.' },
+      { en: 'For me, it is better to travel by train.', vi: 'Với tôi, đi tàu hỏa thì tốt hơn.' },
     ],
   },
   {
@@ -23266,9 +23299,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that is my point',
     vietnamese: 'đó là quan điểm của tôi',
     phonetic: '/ðæt ɪz maɪ pɔɪnt/',
+    usage: 'Dùng khi muốn nhấn mạnh lại quan điểm của mình sau khi giải thích.',
     role: 'closer',
     examples: [
       { en: 'That is my point — we should wait.', vi: 'Đó là quan điểm của tôi — chúng ta nên chờ.' },
+      { en: 'That is my point, we need more time.', vi: 'Đó là quan điểm của tôi, chúng ta cần thêm thời gian.' },
+      { en: 'That is my point, the food was too salty.', vi: 'Đó là quan điểm của tôi, đồ ăn quá mặn.' },
     ],
   },
   {
@@ -23279,9 +23315,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in short',
     vietnamese: 'nói ngắn gọn',
     phonetic: '/ɪn ʃɔːt/',
+    usage: 'Dùng khi muốn tóm tắt ngắn gọn những gì vừa trình bày.',
     role: 'closer',
     examples: [
       { en: 'In short, I think the plan works.', vi: 'Nói ngắn gọn, tôi nghĩ kế hoạch này khả thi.' },
+      { en: 'In short, we had a wonderful trip.', vi: 'Nói ngắn gọn, chúng tôi đã có chuyến đi tuyệt vời.' },
+      { en: 'In short, the meeting was productive.', vi: 'Nói ngắn gọn, cuộc họp rất hiệu quả.' },
     ],
   },
   {
@@ -23292,9 +23331,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'honestly speaking',
     vietnamese: 'thành thật mà nói',
     phonetic: '/ˈɒnɪstli ˈspiːkɪŋ/',
+    usage: 'Dùng khi muốn mở đầu câu nói thẳng thắn, thường để chia sẻ cảm xúc hoặc nhận xét thật.',
     role: 'filler',
     examples: [
       { en: 'Honestly speaking, I did not expect this result.', vi: 'Thành thật mà nói, tôi không ngờ đến kết quả này.' },
+      { en: 'Honestly speaking, the test was harder than I expected.', vi: 'Thành thật mà nói, bài kiểm tra khó hơn tôi mong đợi.' },
+      { en: 'Honestly speaking, I prefer tea over coffee.', vi: 'Thành thật mà nói, tôi thích trà hơn cà phê.' },
     ],
   },
   {
@@ -23305,9 +23347,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'from my perspective',
     vietnamese: 'từ góc nhìn của tôi',
     phonetic: '/frɒm maɪ pəˈspektɪv/',
+    usage: 'Dùng khi muốn trình bày quan điểm cá nhân trong bối cảnh trang trọng hoặc chuyên nghiệp.',
     role: 'opener',
     examples: [
       { en: 'From my perspective, the decision was rushed.', vi: 'Từ góc nhìn của tôi, quyết định đó quá vội vàng.' },
+      { en: 'From my perspective, the proposal lacks a clear timeline.', vi: 'Từ góc nhìn của tôi, đề xuất thiếu một mốc thời gian rõ ràng.' },
+      { en: 'From my perspective, the negotiation could have been smoother.', vi: 'Từ góc nhìn của tôi, cuộc đàm phán đã có thể suôn sẻ hơn.' },
     ],
   },
   {
@@ -23318,9 +23363,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that being said',
     vietnamese: 'dù vậy',
     phonetic: '/ðæt ˈbiːɪŋ sed/',
+    usage: 'Dùng để đưa ra một ý bổ sung mang tính đối chiếu sau khi đã nêu một nhận định.',
     role: 'linker',
     examples: [
       { en: 'The plan is risky. That being said, it could work.', vi: 'Kế hoạch có rủi ro. Dù vậy, nó có thể hiệu quả.' },
+      { en: 'The offer is generous. That being said, the terms are strict.', vi: 'Lời đề nghị rất hào phóng. Dù vậy, các điều khoản khá ngặt nghèo.' },
+      { en: 'That being said, we should respect their decision.', vi: 'Dù vậy, chúng ta nên tôn trọng quyết định của họ.' },
     ],
   },
   {
@@ -23331,9 +23379,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all things being equal',
     vietnamese: 'trong điều kiện bình thường',
     phonetic: '/ɔːl θɪŋz ˈbiːɪŋ ˈiːkwəl/',
+    usage: 'Dùng khi nói về một tình huống giả định trong điều kiện bình thường, không có yếu tố đặc biệt.',
     role: 'filler',
     examples: [
       { en: 'All things being equal, I prefer the morning train.', vi: 'Trong điều kiện bình thường, tôi thích chuyến tàu buổi sáng hơn.' },
+      { en: 'All things being equal, the cheaper supplier wins.', vi: 'Trong điều kiện bình thường, nhà cung cấp rẻ hơn sẽ thắng.' },
+      { en: 'All things being equal, I would take the train.', vi: 'Trong điều kiện bình thường, tôi sẽ đi tàu.' },
     ],
   },
   {
@@ -23344,9 +23395,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to sum it up',
     vietnamese: 'tóm lại',
     phonetic: '/tə sʌm ɪt ʌp/',
+    usage: 'Dùng khi kết thúc một bài phát biểu hoặc phần trình bày bằng cách tổng kết.',
     role: 'closer',
     examples: [
       { en: 'To sum it up, the weekend was a total success.', vi: 'Tóm lại, cuối tuần đã thành công trọn vẹn.' },
+      { en: 'To sum it up, the project exceeded our expectations.', vi: 'Tóm lại, dự án đã vượt qua mong đợi của chúng tôi.' },
+      { en: 'To sum it up, everyone enjoyed the celebration.', vi: 'Tóm lại, mọi người đều thích buổi lễ kỷ niệm.' },
     ],
   },
 
@@ -23359,9 +23413,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think this is a great idea.',
     vietnamese: 'Tôi nghĩ đây là một ý tưởng tuyệt vời.',
     phonetic: '/aɪ θɪŋk ðɪs ɪz ə ɡreɪt aɪˈdɪə/',
+    usage: 'Dùng khi muốn bày tỏ sự hào hứng và ủng hộ một ý tưởng mới.',
     role: 'opener',
     examples: [
       { en: 'I think this is a great idea, we should try it.', vi: 'Tôi nghĩ đây là một ý tưởng tuyệt vời, chúng ta nên thử.' },
+      { en: 'I think this is a great idea, let us start tomorrow.', vi: 'Tôi nghĩ đây là một ý tưởng tuyệt vời, chúng ta hãy bắt đầu vào ngày mai.' },
+      { en: 'I think this is a great idea for the party.', vi: 'Tôi nghĩ đây là một ý tưởng tuyệt vời cho bữa tiệc.' },
     ],
   },
   {
@@ -23372,9 +23429,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In my view, that is too expensive.',
     vietnamese: 'Theo quan điểm của tôi, cái đó quá đắt.',
     phonetic: '/ɪn maɪ vjuː ðæt ɪz tuː ɪkˈspɛnsɪv/',
+    usage: 'Dùng khi muốn nêu ý kiến phản đối về giá cả hoặc chi phí.',
     role: 'opener',
     examples: [
       { en: 'In my view, that is too expensive for us.', vi: 'Theo quan điểm của tôi, cái đó quá đắt đối với chúng ta.' },
+      { en: 'In my view, that is too expensive for a gift.', vi: 'Theo quan điểm của tôi, cái đó quá đắt để làm quà.' },
+      { en: 'In my view, that is too expensive for one night.', vi: 'Theo quan điểm của tôi, cái đó quá đắt cho một đêm.' },
     ],
   },
   {
@@ -23385,9 +23445,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'What is your opinion about it?',
     vietnamese: 'Ý kiến của bạn về việc này là gì?',
     phonetic: '/wʌt ɪz jʊər əˈpɪnjən əˈbaʊt ɪt/',
+    usage: 'Dùng khi muốn hỏi người khác nghĩ gì về một vấn đề đang bàn.',
     role: 'linker',
     examples: [
       { en: 'What is your opinion about it? I am curious.', vi: 'Ý kiến của bạn về việc này là gì? Tôi tò mò lắm.' },
+      { en: 'What is your opinion about the new menu?', vi: 'Ý kiến của bạn về thực đơn mới là gì?' },
+      { en: 'What is your opinion about moving to a bigger house?', vi: 'Ý kiến của bạn về việc chuyển đến nhà lớn hơn là gì?' },
     ],
   },
   {
@@ -23398,9 +23461,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Do you agree with me?',
     vietnamese: 'Bạn có đồng ý với tôi không?',
     phonetic: '/duː juː əˈɡriː wɪð miː/',
+    usage: 'Dùng khi muốn kiểm tra xem người nghe có cùng quan điểm với bạn không.',
     role: 'linker',
     examples: [
       { en: 'Do you agree with me on this point?', vi: 'Bạn có đồng ý với tôi ở điểm này không?' },
+      { en: 'Do you agree with me about the schedule?', vi: 'Bạn có đồng ý với tôi về lịch trình không?' },
+      { en: 'Do you agree with me that the soup needs more salt?', vi: 'Bạn có đồng ý với tôi rằng món súp cần thêm muối không?' },
     ],
   },
   {
@@ -23411,9 +23477,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It depends on the situation.',
     vietnamese: 'Nó còn tùy thuộc vào tình huống.',
     phonetic: '/ɪt dɪˈpɛndz ɒn ðə ˌsɪtʃuˈeɪʃən/',
+    usage: 'Dùng khi muốn nói rằng quyết định của bạn sẽ thay đổi tùy theo hoàn cảnh.',
     role: 'filler',
     examples: [
       { en: 'It depends on the situation, I cannot decide now.', vi: 'Nó còn tùy thuộc vào tình huống, tôi chưa quyết được.' },
+      { en: 'It depends on the situation, I cannot promise now.', vi: 'Nó còn tùy thuộc vào tình huống, tôi không thể hứa ngay bây giờ.' },
+      { en: 'It depends on the situation, sometimes I cook at home.', vi: 'Nó còn tùy thuộc vào tình huống, đôi khi tôi nấu ăn ở nhà.' },
     ],
   },
   {
@@ -23424,9 +23493,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am not so sure about that.',
     vietnamese: 'Tôi không chắc lắm về điều đó.',
     phonetic: '/aɪ æm nɑːt soʊ ʃʊr əˈbaʊt ðæt/',
+    usage: 'Dùng khi bạn chưa chắc chắn về một điều gì đó và cần thời gian xác minh.',
     role: 'filler',
     examples: [
       { en: 'I am not so sure about that, let me check.', vi: 'Tôi không chắc lắm về điều đó, để tôi kiểm tra.' },
+      { en: 'I am not so sure about that, I will ask again.', vi: 'Tôi không chắc lắm về điều đó, tôi sẽ hỏi lại.' },
+      { en: 'I am not so sure about that answer.', vi: 'Tôi không chắc lắm về câu trả lời đó.' },
     ],
   },
   {
@@ -23437,9 +23509,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us agree to disagree.',
     vietnamese: 'Chúng ta hãy đồng ý rằng mỗi người một ý.',
     phonetic: '/lɛt ʌs əˈɡriː tuː ˌdɪsəˈɡriː/',
+    usage: 'Dùng khi hai bên không thống nhất được và muốn kết thúc tranh luận một cách lịch sự.',
     role: 'closer',
     examples: [
       { en: 'Let us agree to disagree on this topic.', vi: 'Chúng ta hãy đồng ý rằng mỗi người một ý về chủ đề này.' },
+      { en: 'Let us agree to disagree and move on.', vi: 'Chúng ta hãy đồng ý rằng mỗi người một ý và tiếp tục.' },
+      { en: 'We agreed to disagree about the best route.', vi: 'Chúng tôi đồng ý rằng mỗi người một ý về tuyến đường tốt nhất.' },
     ],
   },
   {
@@ -23450,9 +23525,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Thank you for sharing your view.',
     vietnamese: 'Cảm ơn bạn đã chia sẻ quan điểm của mình.',
     phonetic: '/θæŋk juː fɔːr ˈʃɛrɪŋ jʊər vjuː/',
+    usage: 'Dùng khi muốn cảm ơn người khác đã chia sẻ suy nghĩ, dù bạn có thể không đồng tình.',
     role: 'closer',
     examples: [
       { en: 'Thank you for sharing your view on the matter.', vi: 'Cảm ơn bạn đã chia sẻ quan điểm của mình về vấn đề này.' },
+      { en: 'Thank you for sharing your view about the plan.', vi: 'Cảm ơn bạn đã chia sẻ quan điểm về kế hoạch.' },
+      { en: 'Thank you for sharing your view, it helped me a lot.', vi: 'Cảm ơn bạn đã chia sẻ quan điểm, nó giúp tôi rất nhiều.' },
     ],
   },
   {
@@ -23463,9 +23541,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I strongly believe we made the right choice.',
     vietnamese: 'Tôi tin chắc rằng chúng ta đã chọn đúng.',
     phonetic: '/aɪ ˈstrɒŋli bɪˈliːv wiː meɪd ðə raɪt tʃɔɪs/',
+    usage: 'Dùng khi muốn khẳng định mạnh mẽ rằng quyết định trong quá khứ là đúng.',
     role: 'opener',
     examples: [
       { en: 'I strongly believe we made the right choice back then.', vi: 'Tôi tin chắc rằng chúng ta đã chọn đúng lúc đó.' },
+      { en: 'I strongly believe we made the right choice to move here.', vi: 'Tôi tin chắc rằng chúng ta đã chọn đúng khi chuyển đến đây.' },
+      { en: 'I strongly believe we made the right choice for the team.', vi: 'Tôi tin chắc rằng chúng ta đã chọn đúng cho đội nhóm.' },
     ],
   },
   {
@@ -23476,9 +23557,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'From my perspective, the plan is solid.',
     vietnamese: 'Theo góc nhìn của tôi, kế hoạch rất vững chắc.',
     phonetic: '/frɒm maɪ pərˈspɛktɪv ðə plæn ɪz ˈsɒlɪd/',
+    usage: 'Dùng khi muốn đánh giá tích cực một kế hoạch và sẵn sàng bắt đầu.',
     role: 'opener',
     examples: [
       { en: 'From my perspective, the plan is solid enough to start.', vi: 'Theo góc nhìn của tôi, kế hoạch đủ vững chắc để bắt đầu.' },
+      { en: 'From my perspective, the plan is solid enough to try.', vi: 'Theo góc nhìn của tôi, kế hoạch đủ vững chắc để thử.' },
+      { en: 'From my perspective, the plan is solid but needs a budget.', vi: 'Theo góc nhìn của tôi, kế hoạch vững chắc nhưng cần ngân sách.' },
     ],
   },
   {
@@ -23489,9 +23573,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'How do you feel about this approach?',
     vietnamese: 'Bạn cảm thấy thế nào về cách tiếp cận này?',
     phonetic: '/haʊ duː juː fiːl əˈbaʊt ðɪs əˈproʊtʃ/',
+    usage: 'Dùng khi muốn hỏi cảm nhận của người khác về một cách làm việc hoặc giải pháp.',
     role: 'linker',
     examples: [
       { en: 'How do you feel about this approach we discussed?', vi: 'Bạn cảm thấy thế nào về cách tiếp cận mà chúng ta đã thảo luận?' },
+      { en: 'How do you feel about this approach to learning?', vi: 'Bạn cảm thấy thế nào về cách tiếp cận học tập này?' },
+      { en: 'How do you feel about this approach to the problem?', vi: 'Bạn cảm thấy thế nào về cách tiếp cận vấn đề này?' },
     ],
   },
   {
@@ -23502,9 +23589,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Would you see it in a different light?',
     vietnamese: 'Bạn có nhìn nó theo một hướng khác không?',
     phonetic: '/wʊd juː siː ɪt ɪn ə ˈdɪfərənt laɪt/',
+    usage: 'Dùng khi muốn hỏi người khác có nhìn nhận vấn đề theo hướng khác không.',
     role: 'linker',
     examples: [
       { en: 'Would you see it in a different light if we changed the timing?', vi: 'Bạn có nhìn nó theo một hướng khác không nếu chúng ta đổi thời điểm?' },
+      { en: 'Would you see it in a different light if we tried again?', vi: 'Bạn có nhìn nó theo một hướng khác không nếu chúng ta thử lại?' },
+      { en: 'Would you see it in a different light with more information?', vi: 'Bạn có nhìn nó theo một hướng khác không nếu có thêm thông tin?' },
     ],
   },
   {
@@ -23515,9 +23605,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have mixed feelings about it.',
     vietnamese: 'Tôi có cảm xúc lẫn lộn về việc đó.',
     phonetic: '/aɪ hæv mɪkst ˈfiːlɪŋz əˈbaʊt ɪt/',
+    usage: 'Dùng khi bạn có cảm xúc trái chiều, vừa thích vừa không thích về một việc.',
     role: 'filler',
     examples: [
       { en: 'I have mixed feelings about it, both good and bad.', vi: 'Tôi có cảm xúc lẫn lộn về việc đó, cả tốt lẫn xấu.' },
+      { en: 'I have mixed feelings about the new job offer.', vi: 'Tôi có cảm xúc lẫn lộn về lời mời làm việc mới.' },
+      { en: 'I have mixed feelings about moving to a new city.', vi: 'Tôi có cảm xúc lẫn lộn về việc chuyển đến thành phố mới.' },
     ],
   },
   {
@@ -23528,9 +23621,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There are pros and cons on both sides.',
     vietnamese: 'Cả hai bên đều có ưu và nhược điểm.',
     phonetic: '/ðɛr ɑːr proʊz ænd kɒnz ɒn boʊθ saɪdz/',
+    usage: 'Dùng khi muốn nói rằng mọi lựa chọn đều có mặt tốt và mặt xấu.',
     role: 'filler',
     examples: [
       { en: 'There are pros and cons on both sides, it is tricky.', vi: 'Cả hai bên đều có ưu và nhược điểm, khó xử thật.' },
+      { en: 'There are pros and cons on both sides of the debate.', vi: 'Cả hai bên đều có ưu và nhược điểm trong cuộc tranh luận.' },
+      { en: 'There are pros and cons on both sides, so we need time.', vi: 'Cả hai bên đều có ưu và nhược điểm, nên chúng ta cần thời gian.' },
     ],
   },
   {
@@ -23541,9 +23637,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am curious to hear your take.',
     vietnamese: 'Tôi tò mò muốn nghe quan điểm của bạn.',
     phonetic: '/aɪ æm ˈkjʊriəs tuː hɪr jʊər teɪk/',
+    usage: 'Dùng khi muốn mời người khác chia sẻ quan điểm trước khi tiếp tục.',
     role: 'closer',
     examples: [
       { en: 'I am curious to hear your take before we move on.', vi: 'Tôi tò mò muốn nghe quan điểm của bạn trước khi chúng ta chuyển tiếp.' },
+      { en: 'I am curious to hear your take on the news.', vi: 'Tôi tò mò muốn nghe quan điểm của bạn về tin tức đó.' },
+      { en: 'I am curious to hear your take before we choose.', vi: 'Tôi tò mò muốn nghe quan điểm của bạn trước khi chúng ta chọn.' },
     ],
   },
   {
@@ -23554,9 +23653,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let me think it over before deciding.',
     vietnamese: 'Để tôi suy nghĩ kỹ trước khi quyết định.',
     phonetic: '/lɛt miː θɪŋk ɪt ˈoʊvər bɪˈfɔːr dɪˈsaɪdɪŋ/',
+    usage: 'Dùng khi bạn cần thời gian suy nghĩ trước khi đưa ra quyết định.',
     role: 'closer',
     examples: [
       { en: 'Let me think it over before deciding on the answer.', vi: 'Để tôi suy nghĩ kỹ trước khi quyết định câu trả lời.' },
+      { en: 'Let me think it over before deciding on the color.', vi: 'Để tôi suy nghĩ kỹ trước khi chọn màu.' },
+      { en: 'Let me think it over before deciding on the offer.', vi: 'Để tôi suy nghĩ kỹ trước khi quyết định về lời đề nghị.' },
     ],
   },
   {
@@ -23567,9 +23669,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would argue the benefits outweigh the risks.',
     vietnamese: 'Tôi sẽ lập luận rằng lợi ích lớn hơn rủi ro.',
     phonetic: '/aɪ wʊd ˈɑːrɡjuː ðə ˈbɛnɪfɪts ˌaʊtˈweɪ ðə rɪsks/',
+    usage: 'Dùng khi muốn trình bày một lập luận ủng hộ, khẳng định lợi ích lớn hơn rủi ro.',
     role: 'opener',
     examples: [
       { en: 'I would argue the benefits outweigh the risks in the long run.', vi: 'Tôi sẽ lập luận rằng lợi ích lớn hơn rủi ro về lâu dài.' },
+      { en: 'I would argue the benefits outweigh the risks of the trip.', vi: 'Tôi sẽ lập luận rằng lợi ích lớn hơn rủi ro của chuyến đi.' },
+      { en: 'I would argue the benefits outweigh the risks in this deal.', vi: 'Tôi sẽ lập luận rằng lợi ích lớn hơn rủi ro trong thương vụ này.' },
     ],
   },
   {
@@ -23580,9 +23685,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'My stance on this has evolved over time.',
     vietnamese: 'Quan điểm của tôi về việc này đã thay đổi theo thời gian.',
     phonetic: '/maɪ stæns ɒn ðɪs hæz ɪˈvɒlvd ˈoʊvər taɪm/',
+    usage: 'Dùng khi muốn nói rằng quan điểm của bạn đã thay đổi sau khi có thêm trải nghiệm.',
     role: 'opener',
     examples: [
       { en: 'My stance on this has evolved over time after seeing results.', vi: 'Quan điểm của tôi về việc này đã thay đổi theo thời gian sau khi thấy kết quả.' },
+      { en: 'My stance on this has evolved over time after the feedback.', vi: 'Quan điểm của tôi về việc này đã thay đổi theo thời gian sau khi nhận phản hồi.' },
+      { en: 'My stance on this has evolved over time as I learned more.', vi: 'Quan điểm của tôi về việc này đã thay đổi theo thời gian khi tôi hiểu thêm.' },
     ],
   },
   {
@@ -23593,9 +23701,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Where do you stand on this issue?',
     vietnamese: 'Bạn đứng về phía nào trong vấn đề này?',
     phonetic: '/wɛr duː juː stænd ɒn ðɪs ˈɪʃuː/',
+    usage: 'Dùng khi muốn hỏi người khác đứng về phía nào trong một vấn đề gây tranh cãi.',
     role: 'linker',
     examples: [
       { en: 'Where do you stand on this issue, are you in favor?', vi: 'Bạn đứng về phía nào trong vấn đề này, bạn ủng hộ không?' },
+      { en: 'Where do you stand on this issue about the new rules?', vi: 'Bạn đứng về phía nào trong vấn đề về quy định mới này?' },
+      { en: 'Where do you stand on this issue about remote work?', vi: 'Bạn đứng về phía nào trong vấn đề làm việc từ xa này?' },
     ],
   },
   {
@@ -23606,9 +23717,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us weigh the arguments carefully.',
     vietnamese: 'Chúng ta hãy cân nhắc các lập luận một cách kỹ lưỡng.',
     phonetic: '/lɛt ʌs weɪ ði ˈɑːrɡjʊmənts ˈkɛrfəli/',
+    usage: 'Dùng khi muốn đề nghị cả nhóm phân tích kỹ các lập luận trước khi cam kết.',
     role: 'linker',
     examples: [
       { en: 'Let us weigh the arguments carefully before committing.', vi: 'Chúng ta hãy cân nhắc các lập luận một cách kỹ lưỡng trước khi cam kết.' },
+      { en: 'Let us weigh the arguments carefully before we sign.', vi: 'Chúng ta hãy cân nhắc các lập luận một cách kỹ lưỡng trước khi ký.' },
+      { en: 'Let us weigh the arguments carefully before we invest.', vi: 'Chúng ta hãy cân nhắc các lập luận một cách kỹ lưỡng trước khi đầu tư.' },
     ],
   },
   {
@@ -23619,9 +23733,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The evidence seems to point the other way.',
     vietnamese: 'Bằng chứng dường như chỉ ra hướng ngược lại.',
     phonetic: '/ði ˈɛvɪdəns siːmz tuː pɔɪnt ði ˈʌðər weɪ/',
+    usage: 'Dùng khi bằng chứng lại đi ngược lại với điều mọi người đang nghĩ.',
     role: 'filler',
     examples: [
       { en: 'The evidence seems to point the other way though.', vi: 'Tuy nhiên bằng chứng dường như chỉ ra hướng ngược lại.' },
+      { en: 'The evidence seems to point the other way about the trend.', vi: 'Bằng chứng dường như chỉ ra hướng ngược lại về xu hướng đó.' },
+      { en: 'The evidence seems to point the other way this time.', vi: 'Bằng chứng dường như chỉ ra hướng ngược lại lần này.' },
     ],
   },
   {
@@ -23632,9 +23749,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am inclined to disagree with that view.',
     vietnamese: 'Tôi có xu hướng không đồng ý với quan điểm đó.',
     phonetic: '/aɪ æm ɪnˈklaɪnd tuː ˌdɪsəˈɡriː wɪð ðæt vjuː/',
+    usage: 'Dùng khi muốn bày tỏ sự không đồng ý một cách nhẹ nhàng, có cơ sở.',
     role: 'filler',
     examples: [
       { en: 'I am inclined to disagree with that view based on the data.', vi: 'Tôi có xu hướng không đồng ý với quan điểm đó dựa trên dữ liệu.' },
+      { en: 'I am inclined to disagree with that view about the plan.', vi: 'Tôi có xu hướng không đồng ý với quan điểm đó về kế hoạch.' },
+      { en: 'I am inclined to disagree with that view after the test.', vi: 'Tôi có xu hướng không đồng ý với quan điểm đó sau bài kiểm tra.' },
     ],
   },
   {
@@ -23645,9 +23765,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I appreciate your candid perspective.',
     vietnamese: 'Tôi trân trọng quan điểm thẳng thắn của bạn.',
     phonetic: '/aɪ əˈpriːʃiˌeɪt jʊər ˈkændɪd pərˈspɛktɪv/',
+    usage: 'Dùng khi muốn cảm ơn ai đó vì đã nói thẳng thắn, giúp bạn suy nghĩ thêm.',
     role: 'closer',
     examples: [
       { en: 'I appreciate your candid perspective, it gives me food for thought.', vi: 'Tôi trân trọng quan điểm thẳng thắn của bạn, nó khiến tôi phải suy nghĩ.' },
+      { en: 'I appreciate your candid perspective on my proposal.', vi: 'Tôi trân trọng quan điểm thẳng thắn của bạn về đề xuất của tôi.' },
+      { en: 'I appreciate your candid perspective, it was very useful.', vi: 'Tôi trân trọng quan điểm thẳng thắn của bạn, nó rất hữu ích.' },
     ],
   },
   {
@@ -23658,9 +23781,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us revisit this once we have more data.',
     vietnamese: 'Chúng ta hãy xem lại việc này khi có thêm dữ liệu.',
     phonetic: '/lɛt ʌs riːˈvɪzɪt ðɪs wʌns wiː hæv mɔːr ˈdeɪtə/',
+    usage: 'Dùng khi muốn tạm hoãn quyết định vì chưa đủ thông tin, dữ liệu.',
     role: 'closer',
     examples: [
       { en: 'Let us revisit this once we have more data to compare.', vi: 'Chúng ta hãy xem lại việc này khi có thêm dữ liệu để so sánh.' },
+      { en: 'Let us revisit this once we have more data about the market.', vi: 'Chúng ta hãy xem lại việc này khi có thêm dữ liệu về thị trường.' },
+      { en: 'Let us revisit this once we have more data from the survey.', vi: 'Chúng ta hãy xem lại việc này khi có thêm dữ liệu từ khảo sát.' },
     ],
   },
   {
@@ -23671,9 +23797,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I contend that the current approach is unsustainable.',
     vietnamese: 'Tôi cho rằng cách tiếp cận hiện tại là không bền vững.',
     phonetic: '/aɪ kənˈtɛnd ðæt ðə ˈkɜːrənt əˈproʊtʃ ɪz ˌʌnsəˈsteɪnəbəl/',
+    usage: 'Dùng khi muốn tuyên bố mạnh mẽ rằng cách làm hiện tại không thể kéo dài được.',
     role: 'opener',
     examples: [
       { en: 'I contend that the current approach is unsustainable in the long term.', vi: 'Tôi cho rằng cách tiếp cận hiện tại là không bền vững về lâu dài.' },
+      { en: 'I contend that the current approach is unsustainable for the budget.', vi: 'Tôi cho rằng cách tiếp cận hiện tại là không bền vững cho ngân sách.' },
+      { en: 'I contend that the current approach is unsustainable without reform.', vi: 'Tôi cho rằng cách tiếp cận hiện tại là không bền vững nếu không cải cách.' },
     ],
   },
   {
@@ -23684,9 +23813,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'My position remains unchanged despite the counterarguments.',
     vietnamese: 'Lập trường của tôi vẫn không thay đổi dù có những phản biện.',
     phonetic: '/maɪ pəˈzɪʃən rɪˈmeɪnz ʌnˈtʃeɪndʒd dɪˈspaɪt ðə ˌkaʊntərˈɑːrɡjʊmənts/',
+    usage: 'Dùng khi muốn khẳng định lập trường vững chắc dù có phản biện.',
     role: 'opener',
     examples: [
       { en: 'My position remains unchanged despite the counterarguments presented.', vi: 'Lập trường của tôi vẫn không thay đổi dù có những phản biện được trình bày.' },
+      { en: 'My position remains unchanged despite the counterarguments raised.', vi: 'Lập trường của tôi vẫn không thay đổi dù có những phản biện được nêu ra.' },
+      { en: 'My position remains unchanged despite the counterarguments from the team.', vi: 'Lập trường của tôi vẫn không thay đổi dù có những phản biện từ đội nhóm.' },
     ],
   },
   {
@@ -23697,9 +23829,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would be interested in your counterpoint.',
     vietnamese: 'Tôi rất muốn nghe quan điểm phản bác của bạn.',
     phonetic: '/aɪ wʊd biː ˈɪntrəstɪd ɪn jʊər ˈkaʊntərpɔɪnt/',
+    usage: 'Dùng khi muốn mời người khác đưa ra quan điểm đối lập để có góc nhìn đầy đủ.',
     role: 'linker',
     examples: [
       { en: 'I would be interested in your counterpoint on the proposal.', vi: 'Tôi rất muốn nghe quan điểm phản bác của bạn về đề xuất này.' },
+      { en: 'I would be interested in your counterpoint on this strategy.', vi: 'Tôi rất muốn nghe quan điểm phản bác của bạn về chiến lược này.' },
+      { en: 'I would be interested in your counterpoint before we vote.', vi: 'Tôi rất muốn nghe quan điểm phản bác của bạn trước khi chúng ta bỏ phiếu.' },
     ],
   },
   {
@@ -23710,9 +23845,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us examine the underlying assumptions.',
     vietnamese: 'Chúng ta hãy xem xét các giả định nền tảng.',
     phonetic: '/lɛt ʌs ɪɡˈzæmɪn ði ˌʌndərˈlaɪɪŋ əˈsʌmpʃənz/',
+    usage: 'Dùng khi muốn kiểm tra những giả định nền tảng của một lập luận.',
     role: 'linker',
     examples: [
       { en: 'Let us examine the underlying assumptions of this argument.', vi: 'Chúng ta hãy xem xét các giả định nền tảng của lập luận này.' },
+      { en: 'Let us examine the underlying assumptions of the forecast.', vi: 'Chúng ta hãy xem xét các giả định nền tảng của bản dự báo.' },
+      { en: 'Let us examine the underlying assumptions before we proceed.', vi: 'Chúng ta hãy xem xét các giả định nền tảng trước khi tiến hành.' },
     ],
   },
   {
@@ -23723,9 +23861,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The reasoning, while compelling, has a notable gap.',
     vietnamese: 'Lập luận dù thuyết phục nhưng có một khoảng trống đáng chú ý.',
     phonetic: '/ðə ˈriːzənɪŋ waɪl kəmˈpɛlɪŋ hæz ə ˈnoʊtəbəl ɡæp/',
+    usage: 'Dùng khi thừa nhận lập luận hay nhưng chỉ ra điểm thiếu sót quan trọng.',
     role: 'filler',
     examples: [
       { en: 'The reasoning, while compelling, has a notable gap in evidence.', vi: 'Lập luận dù thuyết phục nhưng có một khoảng trống đáng chú ý về bằng chứng.' },
+      { en: 'The reasoning, while compelling, has a notable gap in the data.', vi: 'Lập luận dù thuyết phục nhưng có một khoảng trống đáng chú ý về dữ liệu.' },
+      { en: 'The reasoning, while compelling, has a notable gap in the timeline.', vi: 'Lập luận dù thuyết phục nhưng có một khoảng trống đáng chú ý về mốc thời gian.' },
     ],
   },
   {
@@ -23736,9 +23877,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a subtle distinction worth acknowledging.',
     vietnamese: 'Có một sự khác biệt tinh tế đáng được thừa nhận.',
     phonetic: '/ðɛr ɪz ə ˈsʌtəl dɪˈstɪŋkʃən wɜːrθ ækˈnɒlɪdʒɪŋ/',
+    usage: 'Dùng khi muốn chỉ ra một khác biệt nhỏ nhưng quan trọng giữa hai khái niệm.',
     role: 'filler',
     examples: [
       { en: 'There is a subtle distinction worth acknowledging between the two cases.', vi: 'Có một sự khác biệt tinh tế đáng được thừa nhận giữa hai trường hợp.' },
+      { en: 'There is a subtle distinction worth acknowledging between the two terms.', vi: 'Có một sự khác biệt tinh tế đáng được thừa nhận giữa hai thuật ngữ.' },
+      { en: 'There is a subtle distinction worth acknowledging in the contract.', vi: 'Có một sự khác biệt tinh tế đáng được thừa nhận trong hợp đồng.' },
     ],
   },
   {
@@ -23749,9 +23893,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I respect your differing viewpoint.',
     vietnamese: 'Tôi tôn trọng quan điểm khác biệt của bạn.',
     phonetic: '/aɪ rɪˈspɛkt jʊər ˈdɪfərɪŋ ˈvjuːpɔɪnt/',
+    usage: 'Dùng khi muốn bày tỏ sự tôn trọng với quan điểm khác, dù không đồng tình.',
     role: 'closer',
     examples: [
       { en: 'I respect your differing viewpoint even though we disagree.', vi: 'Tôi tôn trọng quan điểm khác biệt của bạn dù chúng ta không đồng ý.' },
+      { en: 'I respect your differing viewpoint on the merger.', vi: 'Tôi tôn trọng quan điểm khác biệt của bạn về thương vụ sáp nhập.' },
+      { en: 'I respect your differing viewpoint, let us keep discussing.', vi: 'Tôi tôn trọng quan điểm khác biệt của bạn, chúng ta hãy tiếp tục thảo luận.' },
     ],
   },
   {
@@ -23762,9 +23909,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us conclude this discussion on a constructive note.',
     vietnamese: 'Chúng ta hãy kết thúc cuộc thảo luận này trên tinh thần xây dựng.',
     phonetic: '/lɛt ʌs kənˈkluːd ðɪs dɪˈskʌʃən ɒn ə kənˈstrʌktɪv noʊt/',
+    usage: 'Dùng khi muốn kết thúc cuộc thảo luận một cách tích cực và xây dựng.',
     role: 'closer',
     examples: [
       { en: 'Let us conclude this discussion on a constructive note, everyone learned something.', vi: 'Chúng ta hãy kết thúc cuộc thảo luận này trên tinh thần xây dựng, ai cũng học được điều gì đó.' },
+      { en: 'Let us conclude this discussion on a constructive note and act.', vi: 'Chúng ta hãy kết thúc cuộc thảo luận này trên tinh thần xây dựng và hành động.' },
+      { en: 'Let us conclude this discussion on a constructive note with clear actions.', vi: 'Chúng ta hãy kết thúc cuộc thảo luận này trên tinh thần xây dựng với hành động rõ ràng.' },
     ],
   },
   {
@@ -23775,9 +23925,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as I see it',
     vietnamese: 'theo tôi thấy',
     phonetic: '/æz aɪ siː ɪt/',
+    usage: 'Dùng khi trình bày cách bạn nhìn nhận một vấn đề nào đó.',
     role: 'opener',
     examples: [
       { en: 'As I see it, the plan can work if we try.', vi: 'Theo tôi thấy, kế hoạch có thể thành công nếu chúng ta cố gắng.' },
+      { en: 'As I see it, the best time to go is in the morning.', vi: 'Theo tôi thấy, thời điểm đi tốt nhất là buổi sáng.' },
+      { en: 'As I see it, we have two choices here.', vi: 'Theo tôi thấy, chúng ta có hai lựa chọn ở đây.' },
     ],
   },
   {
@@ -23788,9 +23941,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for my two cents',
     vietnamese: 'theo ý kiến nhỏ của tôi',
     phonetic: '/fɔː maɪ tuː sents/',
+    usage: 'Dùng khi muốn đưa ra góp ý khiêm tốn, không áp đặt.',
     role: 'opener',
     examples: [
       { en: 'For my two cents, we should keep it simple.', vi: 'Theo ý kiến nhỏ của tôi, chúng ta nên giữ nó đơn giản.' },
+      { en: 'For my two cents, the blue one looks better.', vi: 'Theo ý kiến nhỏ của tôi, chiếc màu xanh trông đẹp hơn.' },
+      { en: 'For my two cents, we should start earlier.', vi: 'Theo ý kiến nhỏ của tôi, chúng ta nên bắt đầu sớm hơn.' },
     ],
   },
   {
@@ -23801,9 +23957,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in my view',
     vietnamese: 'theo quan điểm của tôi',
     phonetic: '/ɪn maɪ vjuː/',
+    usage: 'Dùng khi nêu quan điểm cá nhân về một quyết định hoặc lựa chọn.',
     role: 'opener',
     examples: [
       { en: 'In my view, we should leave earlier tomorrow.', vi: 'Theo quan điểm của tôi, ngày mai chúng ta nên đi sớm hơn.' },
+      { en: 'In my view, this restaurant is the best in town.', vi: 'Theo quan điểm của tôi, nhà hàng này là tốt nhất trong thành phố.' },
+      { en: 'In my view, we should book the tickets now.', vi: 'Theo quan điểm của tôi, chúng ta nên đặt vé ngay bây giờ.' },
     ],
   },
   {
@@ -23814,9 +23973,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in my own view',
     vietnamese: 'theo quan điểm riêng của tôi',
     phonetic: '/ɪn maɪ əʊn vjuː/',
+    usage: 'Dùng khi nhấn mạnh rằng đây là ý kiến riêng của bạn, có thể khác người khác.',
     role: 'opener',
     examples: [
       { en: 'In my own view, the timing is perfect.', vi: 'Theo quan điểm riêng của tôi, thời điểm rất hoàn hảo.' },
+      { en: 'In my own view, the house needs a fresh coat of paint.', vi: 'Theo quan điểm riêng của tôi, ngôi nhà cần sơn lại.' },
+      { en: 'In my own view, the movie is better than the book.', vi: 'Theo quan điểm riêng của tôi, phim hay hơn sách.' },
     ],
   },
   {
@@ -23827,9 +23989,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'with that being said',
     vietnamese: 'nói vậy thì',
     phonetic: '/wɪð ðæt ˈbiːɪŋ sed/',
+    usage: 'Dùng để chuyển hướng sau khi đã nói một điều gì đó, muốn bổ sung ý mới.',
     role: 'linker',
     examples: [
       { en: 'With that being said, let us move on.', vi: 'Nói vậy thì, chúng ta chuyển tiếp nhé.' },
+      { en: 'With that being said, let us focus on the solution.', vi: 'Nói vậy thì, chúng ta hãy tập trung vào giải pháp.' },
+      { en: 'With that being said, I still want to try it.', vi: 'Nói vậy thì, tôi vẫn muốn thử nó.' },
     ],
   },
   {
@@ -23840,9 +24005,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the other hand',
     vietnamese: 'mặt khác',
     phonetic: '/ɒn ði ˈʌðə hænd/',
+    usage: 'Dùng khi muốn nêu mặt khác hoặc ý trái ngược của vấn đề.',
     role: 'linker',
     examples: [
       { en: 'On the other hand, the price is quite high.', vi: 'Mặt khác, giá cả khá cao.' },
+      { en: 'On the other hand, the location is very convenient.', vi: 'Mặt khác, vị trí rất thuận tiện.' },
+      { en: 'On the other hand, we save a lot of money.', vi: 'Mặt khác, chúng ta tiết kiệm được rất nhiều tiền.' },
     ],
   },
   {
@@ -23853,9 +24021,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'having said that',
     vietnamese: 'nói vậy nhưng',
     phonetic: '/ˈhævɪŋ sed ðæt/',
+    usage: 'Dùng khi muốn nói một điều trái ngược nhẹ với những gì vừa nói.',
     role: 'linker',
     examples: [
       { en: 'Having said that, I still like the design.', vi: 'Nói vậy nhưng tôi vẫn thích thiết kế này.' },
+      { en: 'Having said that, I still enjoyed the trip.', vi: 'Nói vậy nhưng, tôi vẫn thích chuyến đi.' },
+      { en: 'Having said that, we need to be careful.', vi: 'Nói vậy nhưng, chúng ta cần phải cẩn thận.' },
     ],
   },
   {
@@ -23866,9 +24037,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'but then again',
     vietnamese: 'nhưng rồi lại nghĩ',
     phonetic: '/bʌt ðen əˈɡen/',
+    usage: 'Dùng khi bạn chợt nghĩ ra một khía cạnh khác làm thay đổi suy nghĩ.',
     role: 'linker',
     examples: [
       { en: 'But then again, maybe it is not that simple.', vi: 'Nhưng rồi lại nghĩ, có lẽ nó không đơn giản vậy.' },
+      { en: 'But then again, maybe it is not a big problem.', vi: 'Nhưng rồi lại nghĩ, có lẽ đó không phải vấn đề lớn.' },
+      { en: 'But then again, we could ask for help.', vi: 'Nhưng rồi lại nghĩ, chúng ta có thể nhờ giúp đỡ.' },
     ],
   },
   {
@@ -23879,9 +24053,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to some extent',
     vietnamese: 'ở một mức độ nào đó',
     phonetic: '/tə sʌm ɪkˈstent/',
+    usage: 'Dùng khi đồng ý một phần, không đồng ý hoàn toàn.',
     role: 'filler',
     examples: [
       { en: 'To some extent, I agree with what you said.', vi: 'Ở một mức độ nào đó, tôi đồng ý với điều bạn nói.' },
+      { en: 'To some extent, the criticism is fair.', vi: 'Ở một mức độ nào đó, lời chỉ trích là công bằng.' },
+      { en: 'To some extent, I understand your decision.', vi: 'Ở một mức độ nào đó, tôi hiểu quyết định của bạn.' },
     ],
   },
   {
@@ -23892,9 +24069,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'admittedly',
     vietnamese: 'phải thừa nhận là',
     phonetic: '/ədˈmɪtɪdli/',
+    usage: 'Dùng khi thừa nhận một điều không mấy tích cực về bản thân.',
     role: 'filler',
     examples: [
       { en: 'Admittedly, I was late to the meeting.', vi: 'Phải thừa nhận là tôi đã đến cuộc họp muộn.' },
+      { en: 'Admittedly, I forgot about the appointment.', vi: 'Phải thừa nhận là, tôi đã quên mất cuộc hẹn.' },
+      { en: 'Admittedly, the cake did not turn out well.', vi: 'Phải thừa nhận là, chiếc bánh không được ngon.' },
     ],
   },
   {
@@ -23905,9 +24085,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to tell you the truth',
     vietnamese: 'thật lòng mà nói',
     phonetic: '/tə tel juː ðə truːθ/',
+    usage: 'Dùng khi muốn nói sự thật, kể cả khi nó hơi khó chịu.',
     role: 'filler',
     examples: [
       { en: 'To tell you the truth, I did not enjoy the party.', vi: 'Thật lòng mà nói, tôi không thích bữa tiệc đó.' },
+      { en: 'To tell you the truth, I have never been there.', vi: 'Thật lòng mà nói, tôi chưa từng đến đó.' },
+      { en: 'To tell you the truth, the soup is a bit cold.', vi: 'Thật lòng mà nói, món súp hơi nguội.' },
     ],
   },
   {
@@ -23918,9 +24101,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be frank',
     vietnamese: 'nói thẳng ra',
     phonetic: '/tə biː fræŋk/',
+    usage: 'Dùng khi muốn nói thẳng, không vòng vo, thường là nhận xét tiêu cực.',
     role: 'filler',
     examples: [
       { en: 'To be frank, I am not impressed.', vi: 'Nói thẳng ra, tôi không ấn tượng lắm.' },
+      { en: 'To be frank, the room is too small.', vi: 'Nói thẳng ra, căn phòng quá nhỏ.' },
+      { en: 'To be frank, I do not like spicy food.', vi: 'Nói thẳng ra, tôi không thích đồ ăn cay.' },
     ],
   },
   {
@@ -23931,9 +24117,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'taking everything into account',
     vietnamese: 'xét mọi thứ lại với nhau',
     phonetic: '/ˈteɪkɪŋ ˈevriθɪŋ ˈɪntuː əˈkaʊnt/',
+    usage: 'Dùng khi đưa ra kết luận sau khi đã cân nhắc mọi yếu tố.',
     role: 'closer',
     examples: [
       { en: 'Taking everything into account, it is a fair trade.', vi: 'Xét mọi thứ lại với nhau, đó là một thương vụ công bằng.' },
+      { en: 'Taking everything into account, it was a good deal.', vi: 'Xét mọi thứ lại với nhau, đó là một thương vụ tốt.' },
+      { en: 'Taking everything into account, we should accept.', vi: 'Xét mọi thứ lại với nhau, chúng ta nên chấp nhận.' },
     ],
   },
   {
@@ -23944,9 +24133,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to conclude',
     vietnamese: 'kết luận lại',
     phonetic: '/tə kənˈkluːd/',
+    usage: 'Dùng khi kết thúc bài nói hoặc ý kiến bằng một kết luận ngắn.',
     role: 'closer',
     examples: [
       { en: 'To conclude, I think we made the right choice.', vi: 'Kết luận lại, tôi nghĩ chúng ta đã chọn đúng.' },
+      { en: 'To conclude, the event was a success.', vi: 'Kết luận lại, sự kiện đã thành công.' },
+      { en: 'To conclude, I thank everyone for coming.', vi: 'Kết luận lại, tôi cảm ơn mọi người đã đến.' },
     ],
   },
   {
@@ -23957,9 +24149,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'my final take is',
     vietnamese: 'kết luận cuối cùng của tôi là',
     phonetic: '/maɪ ˈfaɪnl teɪk ɪz/',
+    usage: 'Dùng khi đưa ra quan điểm cuối cùng sau một cuộc trao đổi.',
     role: 'closer',
     examples: [
       { en: 'My final take is that we should wait.', vi: 'Kết luận cuối cùng của tôi là chúng ta nên chờ.' },
+      { en: 'My final take is that we should accept the offer.', vi: 'Kết luận cuối cùng của tôi là chúng ta nên chấp nhận lời đề nghị.' },
+      { en: 'My final take is that the plan will work.', vi: 'Kết luận cuối cùng của tôi là kế hoạch sẽ hiệu quả.' },
     ],
   },
   {
@@ -23970,9 +24165,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end',
     vietnamese: 'cuối cùng thì',
     phonetic: '/ɪn ði end/',
+    usage: 'Dùng khi kể về kết quả cuối cùng của một việc.',
     role: 'closer',
     examples: [
       { en: 'In the end, we all agreed on the plan.', vi: 'Cuối cùng thì tất cả chúng tôi đều đồng ý với kế hoạch.' },
+      { en: 'In the end, we decided to stay home.', vi: 'Cuối cùng thì, chúng tôi quyết định ở nhà.' },
+      { en: 'In the end, everything worked out fine.', vi: 'Cuối cùng thì, mọi thứ đều ổn thỏa.' },
     ],
   },
   {
@@ -23983,9 +24181,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I could not agree more',
     vietnamese: 'tôi hoàn toàn đồng ý',
     phonetic: '/aɪ kʊd nɒt əˈɡriː mɔː/',
+    usage: 'Dùng để bày tỏ sự đồng ý hoàn toàn với điều vừa nghe.',
     role: 'reaction',
     examples: [
       { en: 'I could not agree more with what you just said.', vi: 'Tôi hoàn toàn đồng ý với điều bạn vừa nói.' },
+      { en: 'I could not agree more about the food here.', vi: 'Tôi hoàn toàn đồng ý về đồ ăn ở đây.' },
+      { en: 'I could not agree more with your last sentence.', vi: 'Tôi hoàn toàn đồng ý với câu nói cuối của bạn.' },
     ],
   },
   {
@@ -23996,9 +24197,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that is a fair point',
     vietnamese: 'đó là một ý kiến hợp lý',
     phonetic: '/ðæt ɪz ə feə pɔɪnt/',
+    usage: 'Dùng khi công nhận ý kiến của người khác là hợp lý.',
     role: 'reaction',
     examples: [
       { en: 'That is a fair point, I had not thought of that.', vi: 'Đó là một ý kiến hợp lý, tôi chưa nghĩ đến điều đó.' },
+      { en: 'That is a fair point, let us consider it.', vi: 'Đó là một ý kiến hợp lý, chúng ta hãy xem xét nó.' },
+      { en: 'That is a fair point about the weather.', vi: 'Đó là một ý kiến hợp lý về thời tiết.' },
     ],
   },
   {
@@ -24009,9 +24213,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I respectfully disagree',
     vietnamese: 'tôi xin phép không đồng ý',
     phonetic: '/aɪ rɪˈspektfəli ˌdɪsəˈɡriː/',
+    usage: 'Dùng khi không đồng ý nhưng muốn giữ thái độ lịch sự.',
     role: 'reaction',
     examples: [
       { en: 'I respectfully disagree with your last comment.', vi: 'Tôi xin phép không đồng ý với nhận xét cuối của bạn.' },
+      { en: 'I respectfully disagree with the last point.', vi: 'Tôi xin phép không đồng ý với điểm cuối cùng.' },
+      { en: 'I respectfully disagree, the price is still high.', vi: 'Tôi xin phép không đồng ý, giá vẫn còn cao.' },
     ],
   },
   {
@@ -24022,9 +24229,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as I see it, the situation is clear',
     vietnamese: 'theo tôi thấy, tình hình rất rõ ràng',
     phonetic: '/æz aɪ siː ɪt ðə ˌsɪtʃuˈeɪʃən ɪz klɪə/',
+    usage: 'Dùng khi muốn trình bày nhận định rằng tình hình đã rõ ràng và cần hành động.',
     role: 'opener',
     examples: [
       { en: 'As I see it, the situation is clear and we should act now.', vi: 'Theo tôi thấy, tình hình rất rõ ràng và chúng ta nên hành động ngay.' },
+      { en: 'As I see it, the situation is clear and we should book now.', vi: 'Theo tôi thấy, tình hình rất rõ ràng và chúng ta nên đặt chỗ ngay.' },
+      { en: 'As I see it, the situation is clear enough to decide.', vi: 'Theo tôi thấy, tình hình đủ rõ ràng để quyết định.' },
     ],
   },
   {
@@ -24035,9 +24245,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if you ask me, it is worth a try',
     vietnamese: 'nếu bạn hỏi tôi, đáng để thử một lần',
     phonetic: '/ɪf juː ɑːsk miː ɪt ɪz wɜːθ ə traɪ/',
+    usage: 'Dùng khi muốn khuyến khích thử một điều gì đó dù chưa chắc thành công.',
     role: 'opener',
     examples: [
       { en: 'If you ask me, it is worth a try before we give up.', vi: 'Nếu bạn hỏi tôi, đáng để thử một lần trước khi bỏ cuộc.' },
+      { en: 'If you ask me, it is worth a try before we quit.', vi: 'Nếu bạn hỏi tôi, đáng để thử một lần trước khi chúng ta bỏ cuộc.' },
+      { en: 'If you ask me, it is worth a try at this price.', vi: 'Nếu bạn hỏi tôi, đáng để thử một lần với mức giá này.' },
     ],
   },
   {
@@ -24048,9 +24261,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in my view, it depends on the context',
     vietnamese: 'theo quan điểm của tôi, nó tùy vào bối cảnh',
     phonetic: '/ɪn maɪ vjuː ɪt dɪˈpendz ɒn ðə ˈkɒntekst/',
+    usage: 'Dùng khi muốn nói rằng câu trả lời thay đổi tùy theo bối cảnh.',
     role: 'opener',
     examples: [
       { en: 'In my view, it depends on the context we are talking about.', vi: 'Theo quan điểm của tôi, nó tùy vào bối cảnh chúng ta đang nói.' },
+      { en: 'In my view, it depends on the context of the question.', vi: 'Theo quan điểm của tôi, nó tùy vào bối cảnh của câu hỏi.' },
+      { en: 'In my view, it depends on the context we are in.', vi: 'Theo quan điểm của tôi, nó tùy vào bối cảnh chúng ta đang ở.' },
     ],
   },
   {
@@ -24061,9 +24277,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'from my point of view, it is a risk',
     vietnamese: 'từ quan điểm của tôi, đó là một rủi ro',
     phonetic: '/frɒm maɪ pɔɪnt ɒv vjuː ɪt ɪz ə rɪsk/',
+    usage: 'Dùng khi cảnh báo rằng có rủi ro cần được chú ý.',
     role: 'opener',
     examples: [
       { en: 'From my point of view, it is a risk we cannot ignore.', vi: 'Từ quan điểm của tôi, đó là một rủi ro chúng ta không thể bỏ qua.' },
+      { en: 'From my point of view, it is a risk we must manage.', vi: 'Từ quan điểm của tôi, đó là một rủi ro chúng ta phải quản lý.' },
+      { en: 'From my point of view, it is a risk worth taking.', vi: 'Từ quan điểm của tôi, đó là một rủi ro đáng để chấp nhận.' },
     ],
   },
   {
@@ -24074,8 +24293,11 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that said, I understand your side',
     vietnamese: 'dù vậy, tôi hiểu quan điểm của bạn',
     phonetic: '/ðæt sed aɪ ˌʌndəˈstænd jɔː saɪd/',
+    usage: 'Dùng khi bạn không đồng ý hoàn toàn nhưng muốn thể hiện sự thấu hiểu.',
     role: 'linker',
     examples: [
+      { en: 'That said, I understand your side of the argument.', vi: 'Dù vậy, tôi hiểu quan điểm của bạn trong cuộc tranh luận.' },
+      { en: 'That said, I understand your side of the story.', vi: 'Dù vậy, tôi hiểu quan điểm của bạn trong câu chuyện này.' },
       { en: 'That said, I understand your side of the argument.', vi: 'Dù vậy, tôi hiểu quan điểm của bạn trong cuộc tranh luận.' },
     ],
   },
@@ -24087,9 +24309,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the other hand, it costs a lot',
     vietnamese: 'mặt khác, nó tốn rất nhiều tiền',
     phonetic: '/ɒn ði ˈʌðə hænd ɪt kɒsts ə lɒt/',
+    usage: 'Dùng khi muốn nêu nhược điểm về chi phí của một lựa chọn.',
     role: 'linker',
     examples: [
       { en: 'On the other hand, it costs a lot more than we planned.', vi: 'Mặt khác, nó tốn nhiều hơn nhiều so với kế hoạch.' },
+      { en: 'On the other hand, it costs a lot to maintain.', vi: 'Mặt khác, nó tốn rất nhiều tiền để bảo trì.' },
+      { en: 'On the other hand, it costs a lot in the long run.', vi: 'Mặt khác, nó tốn rất nhiều tiền về lâu dài.' },
     ],
   },
   {
@@ -24100,9 +24325,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'having said that, there are benefits',
     vietnamese: 'nói vậy nhưng, vẫn có những lợi ích',
     phonetic: '/ˈhævɪŋ sed ðæt ðeə ɑː ˈbenɪfɪts/',
+    usage: 'Dùng khi muốn nhấn mạnh mặt tích cực sau khi đã nêu khó khăn.',
     role: 'linker',
     examples: [
       { en: 'Having said that, there are benefits we should consider.', vi: 'Nói vậy nhưng, vẫn có những lợi ích chúng ta nên cân nhắc.' },
+      { en: 'Having said that, there are benefits we cannot ignore.', vi: 'Nói vậy nhưng, vẫn có những lợi ích chúng ta không thể bỏ qua.' },
+      { en: 'Having said that, there are benefits for the whole family.', vi: 'Nói vậy nhưng, vẫn có những lợi ích cho cả gia đình.' },
     ],
   },
   {
@@ -24113,9 +24341,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'but then again, it could fail',
     vietnamese: 'nhưng rồi lại nghĩ, nó có thể thất bại',
     phonetic: '/bʌt ðen əˈɡen ɪt kʊd feɪl/',
+    usage: 'Dùng khi lo lắng về khả năng thất bại của một kế hoạch.',
     role: 'linker',
     examples: [
       { en: 'But then again, it could fail and we lose everything.', vi: 'Nhưng rồi lại nghĩ, nó có thể thất bại và chúng ta mất tất cả.' },
+      { en: 'But then again, it could fail and hurt our reputation.', vi: 'Nhưng rồi lại nghĩ, nó có thể thất bại và ảnh hưởng đến uy tín của chúng ta.' },
+      { en: 'But then again, it could fail despite the preparation.', vi: 'Nhưng rồi lại nghĩ, nó có thể thất bại dù đã chuẩn bị.' },
     ],
   },
   {
@@ -24126,9 +24357,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to some extent, that is true',
     vietnamese: 'ở một mức độ nào đó, điều đó đúng',
     phonetic: '/tə sʌm ɪkˈstent ðæt ɪz truː/',
+    usage: 'Dùng khi đồng ý một phần với nhận định của người khác.',
     role: 'filler',
     examples: [
       { en: 'To some extent, that is true, but not entirely.', vi: 'Ở một mức độ nào đó, điều đó đúng, nhưng không hoàn toàn.' },
+      { en: 'To some extent, that is true, but we must verify.', vi: 'Ở một mức độ nào đó, điều đó đúng, nhưng chúng ta phải kiểm chứng.' },
+      { en: 'To some extent, that is true for big cities.', vi: 'Ở một mức độ nào đó, điều đó đúng với các thành phố lớn.' },
     ],
   },
   {
@@ -24139,9 +24373,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'admittedly, I was wrong about that',
     vietnamese: 'phải thừa nhận là tôi đã sai về điều đó',
     phonetic: '/ədˈmɪtɪdli aɪ wɒz rɒŋ əˈbaʊt ðæt/',
+    usage: 'Dùng khi thừa nhận mình đã sai về một nhận định trước đó.',
     role: 'filler',
     examples: [
       { en: 'Admittedly, I was wrong about that assumption.', vi: 'Phải thừa nhận là tôi đã sai về giả định đó.' },
+      { en: 'Admittedly, I was wrong about that forecast.', vi: 'Phải thừa nhận là tôi đã sai về dự báo đó.' },
+      { en: 'Admittedly, I was wrong about that route.', vi: 'Phải thừa nhận là tôi đã sai về tuyến đường đó.' },
     ],
   },
   {
@@ -24152,9 +24389,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to tell you the truth, I hesitated',
     vietnamese: 'thật lòng mà nói, tôi đã do dự',
     phonetic: '/tə tel juː ðə truːθ aɪ ˈhezɪteɪtɪd/',
+    usage: 'Dùng khi chia sẻ rằng bạn đã do dự trước khi quyết định.',
     role: 'filler',
     examples: [
       { en: 'To tell you the truth, I hesitated before saying yes.', vi: 'Thật lòng mà nói, tôi đã do dự trước khi đồng ý.' },
+      { en: 'To tell you the truth, I hesitated before calling you.', vi: 'Thật lòng mà nói, tôi đã do dự trước khi gọi cho bạn.' },
+      { en: 'To tell you the truth, I hesitated about the price.', vi: 'Thật lòng mà nói, tôi đã do dự về mức giá.' },
     ],
   },
   {
@@ -24165,9 +24405,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be honest, the results surprised me',
     vietnamese: 'thành thật mà nói, kết quả làm tôi ngạc nhiên',
     phonetic: '/tə biː ˈɒnɪst ðə rɪˈzʌlts səˈpraɪzd miː/',
+    usage: 'Dùng khi kết quả khác xa với điều bạn dự đoán.',
     role: 'filler',
     examples: [
       { en: 'To be honest, the results surprised me a lot.', vi: 'Thành thật mà nói, kết quả làm tôi ngạc nhiên lắm.' },
+      { en: 'To be honest, the results surprised me completely.', vi: 'Thành thật mà nói, kết quả làm tôi ngạc nhiên hoàn toàn.' },
+      { en: 'To be honest, the results surprised me in a good way.', vi: 'Thành thật mà nói, kết quả làm tôi ngạc nhiên theo hướng tích cực.' },
     ],
   },
   {
@@ -24178,9 +24421,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all things considered, we should move on',
     vietnamese: 'cân nhắc mọi điều, chúng ta nên tiếp tục',
     phonetic: '/ɔːl θɪŋz kənˈsɪdəd wiː ʃʊd muːv ɒn/',
+    usage: 'Dùng khi kết luận rằng nên chuyển sang việc khác sau khi cân nhắc.',
     role: 'closer',
     examples: [
       { en: 'All things considered, we should move on to the next topic.', vi: 'Cân nhắc mọi điều, chúng ta nên chuyển sang chủ đề tiếp theo.' },
+      { en: 'All things considered, we should move on to the next task.', vi: 'Cân nhắc mọi điều, chúng ta nên chuyển sang nhiệm vụ tiếp theo.' },
+      { en: 'All things considered, we should move on and stop arguing.', vi: 'Cân nhắc mọi điều, chúng ta nên tiếp tục và ngừng tranh cãi.' },
     ],
   },
   {
@@ -24191,9 +24437,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to conclude, I support the idea',
     vietnamese: 'kết luận lại, tôi ủng hộ ý tưởng này',
     phonetic: '/tə kənˈkluːd aɪ səˈpɔːt ði aɪˈdɪə/',
+    usage: 'Dùng khi kết thúc bằng việc bày tỏ sự ủng hộ một ý tưởng.',
     role: 'closer',
     examples: [
       { en: 'To conclude, I support the idea and we should try it.', vi: 'Kết luận lại, tôi ủng hộ ý tưởng này và chúng ta nên thử.' },
+      { en: 'To conclude, I support the idea of a picnic.', vi: 'Kết luận lại, tôi ủng hộ ý tưởng đi dã ngoại.' },
+      { en: 'To conclude, I support the idea and will help.', vi: 'Kết luận lại, tôi ủng hộ ý tưởng này và sẽ giúp đỡ.' },
     ],
   },
   {
@@ -24204,9 +24453,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'my final take is that we wait',
     vietnamese: 'kết luận cuối cùng của tôi là chúng ta chờ',
     phonetic: '/maɪ ˈfaɪnl teɪk ɪz ðæt wiː weɪt/',
+    usage: 'Dùng khi quan điểm cuối cùng là nên chờ đợi thêm.',
     role: 'closer',
     examples: [
       { en: 'My final take is that we wait a bit longer.', vi: 'Kết luận cuối cùng của tôi là chúng ta chờ thêm một chút.' },
+      { en: 'My final take is that we wait for the review.', vi: 'Kết luận cuối cùng của tôi là chúng ta chờ đánh giá.' },
+      { en: 'My final take is that we wait for a better offer.', vi: 'Kết luận cuối cùng của tôi là chúng ta chờ một lời đề nghị tốt hơn.' },
     ],
   },
   {
@@ -24217,9 +24469,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end, it was the right call',
     vietnamese: 'cuối cùng thì, đó là quyết định đúng',
     phonetic: '/ɪn ði end ɪt wɒz ðə raɪt kɔːl/',
+    usage: 'Dùng khi khẳng định quyết định trong quá khứ là đúng sau khi đã thấy kết quả.',
     role: 'closer',
     examples: [
       { en: 'In the end, it was the right call for everyone.', vi: 'Cuối cùng thì, đó là quyết định đúng cho tất cả mọi người.' },
+      { en: 'In the end, it was the right call to stay.', vi: 'Cuối cùng thì, đó là quyết định đúng khi ở lại.' },
+      { en: 'In the end, it was the right call for our family.', vi: 'Cuối cùng thì, đó là quyết định đúng cho gia đình chúng tôi.' },
     ],
   },
   {
@@ -24230,9 +24485,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I could not agree more with that',
     vietnamese: 'tôi hoàn toàn đồng ý với điều đó',
     phonetic: '/aɪ kʊd nɒt əˈɡriː mɔː wɪð ðæt/',
+    usage: 'Dùng khi hoàn toàn đồng tình với một ý kiến vừa được nêu.',
     role: 'reaction',
     examples: [
       { en: 'I could not agree more with that point you made.', vi: 'Tôi hoàn toàn đồng ý với luận điểm bạn đưa ra.' },
+      { en: 'I could not agree more with that point about safety.', vi: 'Tôi hoàn toàn đồng ý với điểm đó về an toàn.' },
+      { en: 'I could not agree more with that, well said.', vi: 'Tôi hoàn toàn đồng ý với điều đó, nói hay lắm.' },
     ],
   },
   {
@@ -24243,9 +24501,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that is a fair point, I will reconsider',
     vietnamese: 'đó là một ý kiến hợp lý, tôi sẽ cân nhắc lại',
     phonetic: '/ðæt ɪz ə feə pɔɪnt aɪ wɪl ˌriːkənˈsɪdə/',
+    usage: 'Dùng khi công nhận ý kiến hay của người khác và hứa sẽ cân nhắc lại.',
     role: 'reaction',
     examples: [
       { en: 'That is a fair point, I will reconsider my position.', vi: 'Đó là một ý kiến hợp lý, tôi sẽ cân nhắc lại quan điểm của mình.' },
+      { en: 'That is a fair point, I will reconsider my plan.', vi: 'Đó là một ý kiến hợp lý, tôi sẽ cân nhắc lại kế hoạch của mình.' },
+      { en: 'That is a fair point, I will reconsider before buying.', vi: 'Đó là một ý kiến hợp lý, tôi sẽ cân nhắc lại trước khi mua.' },
     ],
   },
   {
@@ -24256,9 +24517,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I respectfully disagree, but I hear you',
     vietnamese: 'tôi xin phép không đồng ý, nhưng tôi hiểu bạn',
     phonetic: '/aɪ rɪˈspektfəli ˌdɪsəˈɡriː bʌt aɪ hɪə juː/',
+    usage: 'Dùng khi không đồng ý nhưng vẫn muốn giữ thiện chí tiếp tục trao đổi.',
     role: 'reaction',
     examples: [
       { en: 'I respectfully disagree, but I hear you and we can talk more.', vi: 'Tôi xin phép không đồng ý, nhưng tôi hiểu bạn và chúng ta có thể trao đổi thêm.' },
+      { en: 'I respectfully disagree, but I hear you and we can talk.', vi: 'Tôi xin phép không đồng ý, nhưng tôi hiểu bạn và chúng ta có thể nói chuyện.' },
+      { en: 'I respectfully disagree, but I hear you on the timing.', vi: 'Tôi xin phép không đồng ý, nhưng tôi hiểu bạn về thời điểm.' },
     ],
   },
   {
@@ -24269,9 +24533,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as I see it, the evidence points elsewhere',
     vietnamese: 'theo tôi thấy, bằng chứng chỉ ra hướng khác',
     phonetic: '/æz aɪ siː ɪt ði ˈevɪdəns pɔɪnts ˌelsˈweə/',
+    usage: 'Dùng khi bằng chứng dẫn đến một kết luận khác với dự kiến.',
     role: 'opener',
     examples: [
       { en: 'As I see it, the evidence points elsewhere and we need to look again.', vi: 'Theo tôi thấy, bằng chứng chỉ ra hướng khác và chúng ta cần xem lại.' },
+      { en: 'As I see it, the evidence points elsewhere and we must investigate.', vi: 'Theo tôi thấy, bằng chứng chỉ ra hướng khác và chúng ta phải điều tra.' },
+      { en: 'As I see it, the evidence points elsewhere in this case.', vi: 'Theo tôi thấy, bằng chứng chỉ ra hướng khác trong trường hợp này.' },
     ],
   },
   {
@@ -24282,9 +24549,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if you ask me, the timing is off',
     vietnamese: 'nếu bạn hỏi tôi, thời điểm không hợp',
     phonetic: '/ɪf juː ɑːsk miː ðə ˈtaɪmɪŋ ɪz ɒf/',
+    usage: 'Dùng khi cho rằng thời điểm triển khai không phù hợp.',
     role: 'opener',
     examples: [
       { en: 'If you ask me, the timing is off for this launch.', vi: 'Nếu bạn hỏi tôi, thời điểm ra mắt này không hợp.' },
+      { en: 'If you ask me, the timing is off for this release.', vi: 'Nếu bạn hỏi tôi, thời điểm không hợp cho bản phát hành này.' },
+      { en: 'If you ask me, the timing is off for the announcement.', vi: 'Nếu bạn hỏi tôi, thời điểm không hợp cho buổi công bố.' },
     ],
   },
   {
@@ -24295,9 +24565,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in my view, we are overcomplicating it',
     vietnamese: 'theo quan điểm của tôi, chúng ta đang làm phức tạp vấn đề',
     phonetic: '/ɪn maɪ vjuː wiː ɑːr ˌəʊvəˈkɒmplɪkeɪtɪŋ ɪt/',
+    usage: 'Dùng khi muốn nói rằng vấn đề đang bị làm phức tạp hóa.',
     role: 'opener',
     examples: [
       { en: 'In my view, we are overcomplicating a fairly simple issue.', vi: 'Theo quan điểm của tôi, chúng ta đang làm phức tạp một vấn đề khá đơn giản.' },
+      { en: 'In my view, we are overcomplicating a simple decision.', vi: 'Theo quan điểm của tôi, chúng ta đang làm phức tạp một quyết định đơn giản.' },
+      { en: 'In my view, we are overcomplicating the menu.', vi: 'Theo quan điểm của tôi, chúng ta đang làm phức tạp thực đơn.' },
     ],
   },
   {
@@ -24308,9 +24581,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'from my point of view, the approach is flawed',
     vietnamese: 'từ quan điểm của tôi, cách tiếp cận có sai sót',
     phonetic: '/frɒm maɪ pɔɪnt ɒv vjuː ði əˈprəʊtʃ ɪz flɔːd/',
+    usage: 'Dùng khi muốn chỉ ra sai sót trong cách tiếp cận ngay từ đầu.',
     role: 'opener',
     examples: [
       { en: 'From my point of view, the approach is flawed from the start.', vi: 'Từ quan điểm của tôi, cách tiếp cận sai từ đầu.' },
+      { en: 'From my point of view, the approach is flawed from the beginning.', vi: 'Từ quan điểm của tôi, cách tiếp cận có sai sót ngay từ đầu.' },
+      { en: 'From my point of view, the approach is flawed without testing.', vi: 'Từ quan điểm của tôi, cách tiếp cận có sai sót nếu không kiểm thử.' },
     ],
   },
   {
@@ -24321,9 +24597,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that said, we must not dismiss it',
     vietnamese: 'dù vậy, chúng ta không nên gạt bỏ nó',
     phonetic: '/ðæt sed wiː mʌst nɒt dɪsˈmɪs ɪt/',
+    usage: 'Dùng khi cảnh báo không nên vội bác bỏ một ý tưởng.',
     role: 'linker',
     examples: [
       { en: 'That said, we must not dismiss it without proper analysis.', vi: 'Dù vậy, chúng ta không nên gạt bỏ nó mà không phân tích kỹ.' },
+      { en: 'That said, we must not dismiss it without trying it.', vi: 'Dù vậy, chúng ta không nên gạt bỏ nó mà không thử.' },
+      { en: 'That said, we must not dismiss it based on one failure.', vi: 'Dù vậy, chúng ta không nên gạt bỏ nó chỉ vì một lần thất bại.' },
     ],
   },
   {
@@ -24334,9 +24613,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the other hand, it has hidden costs',
     vietnamese: 'mặt khác, nó có những chi phí ẩn',
     phonetic: '/ɒn ði ˈʌðə hænd ɪt hæz ˈhɪdn kɒsts/',
+    usage: 'Dùng khi muốn nhắc đến những chi phí không lường trước được.',
     role: 'linker',
     examples: [
       { en: 'On the other hand, it has hidden costs we cannot ignore.', vi: 'Mặt khác, nó có những chi phí ẩn mà chúng ta không thể bỏ qua.' },
+      { en: 'On the other hand, it has hidden costs like maintenance.', vi: 'Mặt khác, nó có những chi phí ẩn như bảo trì.' },
+      { en: 'On the other hand, it has hidden costs we should estimate.', vi: 'Mặt khác, nó có những chi phí ẩn chúng ta nên ước tính.' },
     ],
   },
   {
@@ -24347,9 +24629,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'having said that, the upside is real',
     vietnamese: 'nói vậy nhưng, phần tích cực là thật',
     phonetic: '/ˈhævɪŋ sed ðæt ði ˈʌpsaɪd ɪz rɪəl/',
+    usage: 'Dùng khi muốn nhấn mạnh mặt tích cực thật sự nếu làm tốt.',
     role: 'linker',
     examples: [
       { en: 'Having said that, the upside is real if we execute well.', vi: 'Nói vậy nhưng, phần tích cực là thật nếu chúng ta thực hiện tốt.' },
+      { en: 'Having said that, the upside is real if we commit.', vi: 'Nói vậy nhưng, phần tích cực là thật nếu chúng ta cam kết.' },
+      { en: 'Having said that, the upside is real for our brand.', vi: 'Nói vậy nhưng, phần tích cực là thật cho thương hiệu của chúng ta.' },
     ],
   },
   {
@@ -24360,9 +24645,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'but then again, assumptions can shift',
     vietnamese: 'nhưng rồi lại nghĩ, các giả định có thể thay đổi',
     phonetic: '/bʌt ðen əˈɡen əˈsʌmpʃənz kæn ʃɪft/',
+    usage: 'Dùng khi nhắc rằng giả định có thể thay đổi theo thời gian.',
     role: 'linker',
     examples: [
       { en: 'But then again, assumptions can shift as new data comes in.', vi: 'Nhưng rồi lại nghĩ, các giả định có thể thay đổi khi dữ liệu mới đến.' },
+      { en: 'But then again, assumptions can shift as conditions change.', vi: 'Nhưng rồi lại nghĩ, các giả định có thể thay đổi khi điều kiện thay đổi.' },
+      { en: 'But then again, assumptions can shift after the meeting.', vi: 'Nhưng rồi lại nghĩ, các giả định có thể thay đổi sau cuộc họp.' },
     ],
   },
   {
@@ -24373,9 +24661,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to some extent, the criticism is valid',
     vietnamese: 'ở một mức độ nào đó, lời chỉ trích là có lý',
     phonetic: '/tə sʌm ɪkˈstent ðə ˈkrɪtɪsɪzəm ɪz ˈvælɪd/',
+    usage: 'Dùng khi thừa nhận lời chỉ trích có cơ sở và đáng suy ngẫm.',
     role: 'filler',
     examples: [
       { en: 'To some extent, the criticism is valid and we should reflect.', vi: 'Ở một mức độ nào đó, lời chỉ trích là có lý và chúng ta nên suy ngẫm.' },
+      { en: 'To some extent, the criticism is valid and we should reflect.', vi: 'Ở một mức độ nào đó, lời chỉ trích là có lý và chúng ta nên suy ngẫm.' },
+      { en: 'To some extent, the criticism is valid about the service.', vi: 'Ở một mức độ nào đó, lời chỉ trích là có lý về dịch vụ.' },
     ],
   },
   {
@@ -24386,9 +24677,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'admittedly, the data is incomplete',
     vietnamese: 'phải thừa nhận là, dữ liệu chưa đầy đủ',
     phonetic: '/ədˈmɪtɪdli ðə ˈdeɪtə ɪz ˌɪnkəmˈpliːt/',
+    usage: 'Dùng khi thừa nhận thiếu dữ liệu và cần thận trọng.',
     role: 'filler',
     examples: [
       { en: 'Admittedly, the data is incomplete, so we should be cautious.', vi: 'Phải thừa nhận là, dữ liệu chưa đầy đủ, nên chúng ta cần thận trọng.' },
+      { en: 'Admittedly, the data is incomplete, so we should wait.', vi: 'Phải thừa nhận là, dữ liệu chưa đầy đủ, nên chúng ta nên chờ.' },
+      { en: 'Admittedly, the data is incomplete for a full analysis.', vi: 'Phải thừa nhận là, dữ liệu chưa đầy đủ để phân tích toàn diện.' },
     ],
   },
   {
@@ -24399,9 +24693,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to tell you the truth, it bothers me',
     vietnamese: 'thật lòng mà nói, điều đó làm tôi bận tâm',
     phonetic: '/tə tel juː ðə truːθ ɪt ˈbɒðəz miː/',
+    usage: 'Dùng khi chia sẻ rằng một điều gì đó khiến bạn khó chịu hoặc lo lắng.',
     role: 'filler',
     examples: [
       { en: 'To tell you the truth, it bothers me that nobody raised it.', vi: 'Thật lòng mà nói, điều đó làm tôi bận tâm vì không ai nêu ra.' },
+      { en: 'To tell you the truth, it bothers me that we waited so long.', vi: 'Thật lòng mà nói, điều đó làm tôi bận tâm rằng chúng ta đã chờ quá lâu.' },
+      { en: 'To tell you the truth, it bothers me more than I show.', vi: 'Thật lòng mà nói, điều đó làm tôi bận tâm nhiều hơn tôi thể hiện.' },
     ],
   },
   {
@@ -24412,9 +24709,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be honest, the debate missed the point',
     vietnamese: 'thành thật mà nói, cuộc tranh luận đã lạc đề',
     phonetic: '/tə biː ˈɒnɪst ðə dɪˈbeɪt mɪst ðə pɔɪnt/',
+    usage: 'Dùng khi cuộc tranh luận không bàn đúng trọng tâm vấn đề.',
     role: 'filler',
     examples: [
       { en: 'To be honest, the debate missed the point entirely.', vi: 'Thành thật mà nói, cuộc tranh luận đã lạc đề hoàn toàn.' },
+      { en: 'To be honest, the debate missed the point about costs.', vi: 'Thành thật mà nói, cuộc tranh luận đã lạc đề về chi phí.' },
+      { en: 'To be honest, the debate missed the point of the proposal.', vi: 'Thành thật mà nói, cuộc tranh luận đã lạc đề về mục đích của đề xuất.' },
     ],
   },
   {
@@ -24425,9 +24725,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all things considered, the risks outweigh the benefits',
     vietnamese: 'cân nhắc mọi điều, rủi ro nhiều hơn lợi ích',
     phonetic: '/ɔːl θɪŋz kənˈsɪdəd ðə rɪsks ˌaʊtˈweɪ ðə ˈbenɪfɪts/',
+    usage: 'Dùng khi kết luận rằng rủi ro lớn hơn lợi ích nên không nên tiến hành.',
     role: 'closer',
     examples: [
       { en: 'All things considered, the risks outweigh the benefits of moving now.', vi: 'Cân nhắc mọi điều, rủi ro nhiều hơn lợi ích khi chuyển đi ngay lúc này.' },
+      { en: 'All things considered, the risks outweigh the benefits of expanding now.', vi: 'Cân nhắc mọi điều, rủi ro nhiều hơn lợi ích của việc mở rộng lúc này.' },
+      { en: 'All things considered, the risks outweigh the benefits of waiting.', vi: 'Cân nhắc mọi điều, rủi ro nhiều hơn lợi ích của việc chờ đợi.' },
     ],
   },
   {
@@ -24438,9 +24741,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to conclude, we need a compromise',
     vietnamese: 'kết luận lại, chúng ta cần một sự thỏa hiệp',
     phonetic: '/tə kənˈkluːd wiː niːd ə ˈkɒmprəmaɪz/',
+    usage: 'Dùng khi kết luận rằng cả hai bên cần nhượng bộ để đi đến thống nhất.',
     role: 'closer',
     examples: [
       { en: 'To conclude, we need a compromise that works for both sides.', vi: 'Kết luận lại, chúng ta cần một sự thỏa hiệp phù hợp cho cả hai bên.' },
+      { en: 'To conclude, we need a compromise on the deadline.', vi: 'Kết luận lại, chúng ta cần một sự thỏa hiệp về thời hạn.' },
+      { en: 'To conclude, we need a compromise between price and quality.', vi: 'Kết luận lại, chúng ta cần một sự thỏa hiệp giữa giá và chất lượng.' },
     ],
   },
   {
@@ -24451,9 +24757,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'my final take is to pause and reflect',
     vietnamese: 'kết luận cuối cùng của tôi là dừng lại và suy ngẫm',
     phonetic: '/maɪ ˈfaɪnl teɪk ɪz tə pɔːz ænd rɪˈflekt/',
+    usage: 'Dùng khi quan điểm cuối cùng là nên dừng lại để suy ngẫm trước khi quyết.',
     role: 'closer',
     examples: [
       { en: 'My final take is to pause and reflect before deciding.', vi: 'Kết luận cuối cùng của tôi là dừng lại và suy ngẫm trước khi quyết định.' },
+      { en: 'My final take is to pause and reflect before we commit.', vi: 'Kết luận cuối cùng của tôi là dừng lại và suy ngẫm trước khi cam kết.' },
+      { en: 'My final take is to pause and reflect on the feedback.', vi: 'Kết luận cuối cùng của tôi là dừng lại và suy ngẫm về phản hồi.' },
     ],
   },
   {
@@ -24464,9 +24773,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end, the choice is clear to me',
     vietnamese: 'cuối cùng thì, lựa chọn rất rõ ràng với tôi',
     phonetic: '/ɪn ði end ðə tʃɔɪs ɪz klɪə tə miː/',
+    usage: 'Dùng khi sau khi thảo luận, bạn đã rõ mình muốn chọn gì.',
     role: 'closer',
     examples: [
       { en: 'In the end, the choice is clear to me after all this discussion.', vi: 'Cuối cùng thì, lựa chọn rất rõ ràng với tôi sau tất cả cuộc thảo luận này.' },
+      { en: 'In the end, the choice is clear to me after this talk.', vi: 'Cuối cùng thì, lựa chọn rất rõ ràng với tôi sau cuộc trò chuyện này.' },
+      { en: 'In the end, the choice is clear to me, let us go.', vi: 'Cuối cùng thì, lựa chọn rất rõ ràng với tôi, chúng ta đi thôi.' },
     ],
   },
   {
@@ -24477,9 +24789,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I could not agree more, it is obvious',
     vietnamese: 'tôi hoàn toàn đồng ý, điều đó quá rõ ràng',
     phonetic: '/aɪ kʊd nɒt əˈɡriː mɔː ɪt ɪz ˈɒbviəs/',
+    usage: 'Dùng khi nhấn mạnh sự đồng tình với một điều hiển nhiên.',
     role: 'reaction',
     examples: [
       { en: 'I could not agree more, it is obvious to everyone here.', vi: 'Tôi hoàn toàn đồng ý, điều đó quá rõ ràng với tất cả ở đây.' },
+      { en: 'I could not agree more, it is obvious to everyone here.', vi: 'Tôi hoàn toàn đồng ý, điều đó quá rõ ràng với mọi người ở đây.' },
+      { en: 'I could not agree more, it is obvious from the results.', vi: 'Tôi hoàn toàn đồng ý, điều đó quá rõ ràng từ kết quả.' },
     ],
   },
   {
@@ -24490,9 +24805,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that is a fair point, let me adjust',
     vietnamese: 'đó là một ý kiến hợp lý, để tôi điều chỉnh',
     phonetic: '/ðæt ɪz ə feə pɔɪnt let miː əˈdʒʌst/',
+    usage: 'Dùng khi công nhận ý kiến hay và sẵn sàng thay đổi đề xuất của mình.',
     role: 'reaction',
     examples: [
       { en: 'That is a fair point, let me adjust my proposal accordingly.', vi: 'Đó là một ý kiến hợp lý, để tôi điều chỉnh đề xuất của mình cho phù hợp.' },
+      { en: 'That is a fair point, let me adjust my suggestion.', vi: 'Đó là một ý kiến hợp lý, để tôi điều chỉnh đề xuất của mình.' },
+      { en: 'That is a fair point, let me adjust the budget.', vi: 'Đó là một ý kiến hợp lý, để tôi điều chỉnh ngân sách.' },
     ],
   },
   {
@@ -24503,9 +24821,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I respectfully disagree, the facts differ',
     vietnamese: 'tôi xin phép không đồng ý, sự thật khác đi',
     phonetic: '/aɪ rɪˈspektfəli ˌdɪsəˈɡriː ðə fækts ˈdɪfə/',
+    usage: 'Dùng khi không đồng ý vì sự thật khác với những gì được trình bày.',
     role: 'reaction',
     examples: [
       { en: 'I respectfully disagree, the facts differ from what was presented.', vi: 'Tôi xin phép không đồng ý, sự thật khác với những gì đã được trình bày.' },
+      { en: 'I respectfully disagree, the facts differ from the report.', vi: 'Tôi xin phép không đồng ý, sự thật khác với báo cáo.' },
+      { en: 'I respectfully disagree, the facts differ from the rumor.', vi: 'Tôi xin phép không đồng ý, sự thật khác với tin đồn.' },
     ],
   },
   {
@@ -24516,9 +24837,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as I see it, the premise is questionable',
     vietnamese: 'theo tôi thấy, tiền đề này đáng ngờ',
     phonetic: '/æz aɪ siː ɪt ðə ˈpremɪs ɪz ˈkwestʃənəbl/',
+    usage: 'Dùng khi nghi ngờ tính đúng đắn của tiền đề trong một lập luận.',
     role: 'opener',
     examples: [
       { en: 'As I see it, the premise is questionable at best.', vi: 'Theo tôi thấy, tiền đề này khó mà đúng được.' },
+      { en: 'As I see it, the premise is questionable without evidence.', vi: 'Theo tôi thấy, tiền đề này đáng ngờ nếu không có bằng chứng.' },
+      { en: 'As I see it, the premise is questionable in this debate.', vi: 'Theo tôi thấy, tiền đề này đáng ngờ trong cuộc tranh luận này.' },
     ],
   },
   {
@@ -24529,9 +24853,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'if you ask me, this is a false dichotomy',
     vietnamese: 'nếu bạn hỏi tôi, đây là một sự phân đôi giả tạo',
     phonetic: '/ɪf juː ɑːsk miː ðɪs ɪz ə fɔːls daɪˈkɒtəmi/',
+    usage: 'Dùng khi cho rằng vấn đề được trình bày chỉ có hai lựa chọn là sai.',
     role: 'opener',
     examples: [
       { en: 'If you ask me, this is a false dichotomy we keep falling into.', vi: 'Nếu bạn hỏi tôi, đây là một sự phân đôi giả tạo mà chúng ta cứ mắc phải.' },
+      { en: 'If you ask me, this is a false dichotomy we keep repeating.', vi: 'Nếu bạn hỏi tôi, đây là một sự phân đôi giả tạo chúng ta cứ lặp lại.' },
+      { en: 'If you ask me, this is a false dichotomy between cost and quality.', vi: 'Nếu bạn hỏi tôi, đây là một sự phân đôi giả tạo giữa chi phí và chất lượng.' },
     ],
   },
   {
@@ -24542,9 +24869,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in my view, the argument is compelling',
     vietnamese: 'theo quan điểm của tôi, lập luận này thuyết phục',
     phonetic: '/ɪn maɪ vjuː ði ˈɑːɡjumənt ɪz kəmˈpelɪŋ/',
+    usage: 'Dùng khi lập luận thuyết phục nhưng chưa đủ để kết luận.',
     role: 'opener',
     examples: [
       { en: 'In my view, the argument is compelling but not conclusive.', vi: 'Theo quan điểm của tôi, lập luận này thuyết phục nhưng chưa chốt được.' },
+      { en: 'In my view, the argument is compelling but needs more proof.', vi: 'Theo quan điểm của tôi, lập luận này thuyết phục nhưng cần thêm bằng chứng.' },
+      { en: 'In my view, the argument is compelling for a general audience.', vi: 'Theo quan điểm của tôi, lập luận này thuyết phục với khán giả đại chúng.' },
     ],
   },
   {
@@ -24555,9 +24885,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'from my point of view, it warrants caution',
     vietnamese: 'từ quan điểm của tôi, điều đó đòi hỏi sự thận trọng',
     phonetic: '/frɒm maɪ pɔɪnt ɒv vjuː ɪt ˈwɒrənts ˈkɔːʃən/',
+    usage: 'Dùng khi cảnh báo nên thận trọng trước khi cam kết vào một việc.',
     role: 'opener',
     examples: [
       { en: 'From my point of view, it warrants caution before we commit.', vi: 'Từ quan điểm của tôi, điều đó đòi hỏi sự thận trọng trước khi cam kết.' },
+      { en: 'From my point of view, it warrants caution before we invest.', vi: 'Từ quan điểm của tôi, điều đó đòi hỏi sự thận trọng trước khi chúng ta đầu tư.' },
+      { en: 'From my point of view, it warrants caution with new partners.', vi: 'Từ quan điểm của tôi, điều đó đòi hỏi sự thận trọng với đối tác mới.' },
     ],
   },
   {
@@ -24568,9 +24901,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that said, the nuance matters',
     vietnamese: 'dù vậy, sắc thái mới là điều quan trọng',
     phonetic: '/ðæt sed ðə ˈnjuːɑːns ˈmætəz/',
+    usage: 'Dùng khi nhấn mạnh rằng chi tiết tinh tế quan trọng hơn con số lớn.',
     role: 'linker',
     examples: [
       { en: 'That said, the nuance matters more than the headline numbers.', vi: 'Dù vậy, sắc thái quan trọng hơn những con số chung.' },
+      { en: 'That said, the nuance matters more than the raw numbers.', vi: 'Dù vậy, sắc thái mới là điều quan trọng hơn con số thô.' },
+      { en: 'That said, the nuance matters in every negotiation.', vi: 'Dù vậy, sắc thái mới là điều quan trọng trong mọi cuộc đàm phán.' },
     ],
   },
   {
@@ -24581,9 +24917,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on the other hand, context changes everything',
     vietnamese: 'mặt khác, bối cảnh thay đổi mọi thứ',
     phonetic: '/ɒn ði ˈʌðə hænd ˈkɒntekst ˈtʃeɪndʒɪz ˈevriθɪŋ/',
+    usage: 'Dùng khi bối cảnh hoàn toàn thay đổi cách đánh giá vấn đề.',
     role: 'linker',
     examples: [
       { en: 'On the other hand, context changes everything in this case.', vi: 'Mặt khác, bối cảnh thay đổi mọi thứ trong trường hợp này.' },
+      { en: 'On the other hand, context changes everything in this market.', vi: 'Mặt khác, bối cảnh thay đổi mọi thứ trong thị trường này.' },
+      { en: 'On the other hand, context changes everything we assumed.', vi: 'Mặt khác, bối cảnh thay đổi mọi thứ chúng ta đã giả định.' },
     ],
   },
   {
@@ -24594,9 +24933,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'having said that, we cannot generalize',
     vietnamese: 'nói vậy nhưng, chúng ta không thể khái quát hóa',
     phonetic: '/ˈhævɪŋ sed ðæt wiː ˈkænət ˈdʒenərəlaɪz/',
+    usage: 'Dùng khi cảnh báo không nên khái quát hóa từ một trường hợp đơn lẻ.',
     role: 'linker',
     examples: [
       { en: 'Having said that, we cannot generalize from a single example.', vi: 'Nói vậy nhưng, chúng ta không thể khái quát hóa từ một ví dụ.' },
+      { en: 'Having said that, we cannot generalize from a single survey.', vi: 'Nói vậy nhưng, chúng ta không thể khái quát hóa từ một cuộc khảo sát.' },
+      { en: 'Having said that, we cannot generalize without more samples.', vi: 'Nói vậy nhưng, chúng ta không thể khái quát hóa nếu không có thêm mẫu.' },
     ],
   },
   {
@@ -24607,9 +24949,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'but then again, the lens we choose matters',
     vietnamese: 'nhưng rồi lại nghĩ, lăng kính ta chọn mới quan trọng',
     phonetic: '/bʌt ðen əˈɡen ðə lenz wiː tʃuːz ˈmætəz/',
+    usage: 'Dùng khi cách nhìn vấn đề quan trọng hơn bản thân sự việc.',
     role: 'linker',
     examples: [
       { en: 'But then again, the lens we choose matters more than the facts.', vi: 'Nhưng rồi lại nghĩ, lăng kính ta chọn quan trọng hơn sự thật.' },
+      { en: 'But then again, the lens we choose matters more than the outcome.', vi: 'Nhưng rồi lại nghĩ, lăng kính ta chọn mới quan trọng hơn kết quả.' },
+      { en: 'But then again, the lens we choose shapes the conclusion.', vi: 'Nhưng rồi lại nghĩ, lăng kính ta chọn định hình kết luận.' },
     ],
   },
   {
@@ -24620,9 +24965,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to some extent, the premise holds',
     vietnamese: 'ở một mức độ nào đó, tiền đề là đúng',
     phonetic: '/tə sʌm ɪkˈstent ðə ˈpremɪs həʊldz/',
+    usage: 'Dùng khi tiền đề đúng trong một số điều kiện nhất định.',
     role: 'filler',
     examples: [
       { en: 'To some extent, the premise holds under certain conditions.', vi: 'Ở một mức độ nào đó, tiền đề đúng trong những điều kiện nhất định.' },
+      { en: 'To some extent, the premise holds under controlled conditions.', vi: 'Ở một mức độ nào đó, tiền đề là đúng trong điều kiện kiểm soát.' },
+      { en: 'To some extent, the premise holds for experienced teams.', vi: 'Ở một mức độ nào đó, tiền đề là đúng với đội ngũ giàu kinh nghiệm.' },
     ],
   },
   {
@@ -24633,9 +24981,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'admittedly, my reasoning has gaps',
     vietnamese: 'phải thừa nhận là, lập luận của tôi có lỗ hổng',
     phonetic: '/ədˈmɪtɪdli maɪ ˈriːzənɪŋ hæz ɡæps/',
+    usage: 'Dùng khi thừa nhận lập luận của mình có lỗ hổng cần khắc phục.',
     role: 'filler',
     examples: [
       { en: 'Admittedly, my reasoning has gaps that need addressing.', vi: 'Phải thừa nhận là, lập luận của tôi có lỗ hổng cần giải quyết.' },
+      { en: 'Admittedly, my reasoning has gaps that need addressing.', vi: 'Phải thừa nhận là, lập luận của tôi có lỗ hổng cần được khắc phục.' },
+      { en: 'Admittedly, my reasoning has gaps around the estimates.', vi: 'Phải thừa nhận là, lập luận của tôi có lỗ hổng xung quanh các ước tính.' },
     ],
   },
   {
@@ -24646,9 +24997,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to tell you the truth, I am ambivalent',
     vietnamese: 'thật lòng mà nói, tôi đang phân vân',
     phonetic: '/tə tel juː ðə truːθ aɪ æm æmˈbɪvələnt/',
+    usage: 'Dùng khi bạn chưa thể quyết định vì có cảm xúc trái chiều.',
     role: 'filler',
     examples: [
       { en: 'To tell you the truth, I am ambivalent about the whole proposal.', vi: 'Thật lòng mà nói, tôi đang phân vân về toàn bộ đề xuất.' },
+      { en: 'To tell you the truth, I am ambivalent about the relocation.', vi: 'Thật lòng mà nói, tôi đang phân vân về việc chuyển nơi làm việc.' },
+      { en: 'To tell you the truth, I am ambivalent about the new policy.', vi: 'Thật lòng mà nói, tôi đang phân vân về chính sách mới.' },
     ],
   },
   {
@@ -24659,9 +25013,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to be honest, the framing is misleading',
     vietnamese: 'thành thật mà nói, cách trình bày gây hiểu lầm',
     phonetic: '/tə biː ˈɒnɪst ðə ˈfreɪmɪŋ ɪz mɪsˈliːdɪŋ/',
+    usage: 'Dùng khi cách trình bày vấn đề gây hiểu lầm và làm lệch trọng tâm.',
     role: 'filler',
     examples: [
       { en: 'To be honest, the framing is misleading and distracts from the core issue.', vi: 'Thành thật mà nói, cách trình bày gây hiểu lầm và đánh lạc hướng khỏi vấn đề cốt lõi.' },
+      { en: 'To be honest, the framing is misleading about the actual cost.', vi: 'Thành thật mà nói, cách trình bày gây hiểu lầm về chi phí thực tế.' },
+      { en: 'To be honest, the framing is misleading and unhelpful here.', vi: 'Thành thật mà nói, cách trình bày gây hiểu lầm và không hữu ích ở đây.' },
     ],
   },
   {
@@ -24672,9 +25029,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'all things considered, it is a trade-off',
     vietnamese: 'cân nhắc mọi điều, đó là một sự đánh đổi',
     phonetic: '/ɔːl θɪŋz kənˈsɪdəd ɪt ɪz ə ˈtreɪd ɒf/',
+    usage: 'Dùng khi kết luận rằng vấn đề là sự đánh đổi giữa các yếu tố.',
     role: 'closer',
     examples: [
       { en: 'All things considered, it is a trade-off between speed and quality.', vi: 'Cân nhắc mọi điều, đó là sự đánh đổi giữa tốc độ và chất lượng.' },
+      { en: 'All things considered, it is a trade-off between cost and speed.', vi: 'Cân nhắc mọi điều, đó là một sự đánh đổi giữa chi phí và tốc độ.' },
+      { en: 'All things considered, it is a trade-off we accept.', vi: 'Cân nhắc mọi điều, đó là một sự đánh đổi chúng ta chấp nhận.' },
     ],
   },
   {
@@ -24685,9 +25045,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to conclude, the evidence is mixed',
     vietnamese: 'kết luận lại, bằng chứng còn trái chiều',
     phonetic: '/tə kənˈkluːd ði ˈevɪdəns ɪz mɪkst/',
+    usage: 'Dùng khi bằng chứng chưa rõ ràng nên cần tạm hoãn quyết định.',
     role: 'closer',
     examples: [
       { en: 'To conclude, the evidence is mixed and we should hold off.', vi: 'Kết luận lại, bằng chứng còn trái chiều và chúng ta nên hoãn lại.' },
+      { en: 'To conclude, the evidence is mixed and we should wait.', vi: 'Kết luận lại, bằng chứng còn trái chiều và chúng ta nên chờ.' },
+      { en: 'To conclude, the evidence is mixed across the regions.', vi: 'Kết luận lại, bằng chứng còn trái chiều giữa các khu vực.' },
     ],
   },
   {
@@ -24698,9 +25061,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'my final take is to remain skeptical',
     vietnamese: 'kết luận cuối cùng của tôi là giữ thái độ hoài nghi',
     phonetic: '/maɪ ˈfaɪnl teɪk ɪz tə rɪˈmeɪn ˈskeptɪkl/',
+    usage: 'Dùng khi giữ thái độ hoài nghi cho đến khi số liệu được xác minh.',
     role: 'closer',
     examples: [
       { en: 'My final take is to remain skeptical until the numbers are verified.', vi: 'Kết luận cuối cùng của tôi là giữ thái độ hoài nghi cho đến khi số liệu được kiểm chứng.' },
+      { en: 'My final take is to remain skeptical until the audit is done.', vi: 'Kết luận cuối cùng của tôi là giữ thái độ hoài nghi cho đến khi kiểm toán xong.' },
+      { en: 'My final take is to remain skeptical of the projections.', vi: 'Kết luận cuối cùng của tôi là giữ thái độ hoài nghi với các dự báo.' },
     ],
   },
   {
@@ -24711,9 +25077,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the end, the burden of proof remains',
     vietnamese: 'cuối cùng thì, nghĩa vụ chứng minh vẫn còn đó',
     phonetic: '/ɪn ði end ðə ˈbɜːdn ɒv pruːf rɪˈmeɪnz/',
+    usage: 'Dùng khi nhấn mạnh rằng người đề xuất phải chứng minh cho ý kiến của mình.',
     role: 'closer',
     examples: [
       { en: 'In the end, the burden of proof remains with those proposing the change.', vi: 'Cuối cùng thì, nghĩa vụ chứng minh vẫn thuộc về những người đề xuất thay đổi.' },
+      { en: 'In the end, the burden of proof remains with the proposers.', vi: 'Cuối cùng thì, nghĩa vụ chứng minh vẫn thuộc về người đề xuất.' },
+      { en: 'In the end, the burden of proof remains regardless of the debate.', vi: 'Cuối cùng thì, nghĩa vụ chứng minh vẫn còn đó dù cuộc tranh luận ra sao.' },
     ],
   },
   {
@@ -24724,9 +25093,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I could not agree more, it is self-evident',
     vietnamese: 'tôi hoàn toàn đồng ý, điều đó hiển nhiên',
     phonetic: '/aɪ kʊd nɒt əˈɡriː mɔː ɪt ɪz ˌselfˈevɪdənt/',
+    usage: 'Dùng khi điều đồng ý là hiển nhiên, không cần tranh cãi.',
     role: 'reaction',
     examples: [
       { en: 'I could not agree more, it is self-evident once you look closely.', vi: 'Tôi hoàn toàn đồng ý, điều đó hiển nhiên khi bạn nhìn kỹ.' },
+      { en: 'I could not agree more, it is self-evident from the results.', vi: 'Tôi hoàn toàn đồng ý, điều đó hiển nhiên từ kết quả.' },
+      { en: 'I could not agree more, it is self-evident to any expert.', vi: 'Tôi hoàn toàn đồng ý, điều đó hiển nhiên với bất kỳ chuyên gia nào.' },
     ],
   },
   {
@@ -24737,9 +25109,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that is a fair point, well argued',
     vietnamese: 'đó là một ý kiến hợp lý, lập luận hay',
     phonetic: '/ðæt ɪz ə feə pɔɪnt wel ˈɑːɡjuːd/',
+    usage: 'Dùng khi khen ngợi lập luận hay và cam kết xem xét nó.',
     role: 'reaction',
     examples: [
       { en: 'That is a fair point, well argued, and I will take it into account.', vi: 'Đó là một ý kiến hợp lý, lập luận hay, và tôi sẽ xem xét.' },
+      { en: 'That is a fair point, well argued, and worth adopting.', vi: 'Đó là một ý kiến hợp lý, lập luận hay, và đáng để áp dụng.' },
+      { en: 'That is a fair point, well argued, I will note it down.', vi: 'Đó là một ý kiến hợp lý, lập luận hay, tôi sẽ ghi chú lại.' },
     ],
   },
   {
@@ -24750,9 +25125,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I respectfully disagree, the logic is circular',
     vietnamese: 'tôi xin phép không đồng ý, logic này là luẩn quẩn',
     phonetic: '/aɪ rɪˈspektfəli ˌdɪsəˈɡriː ðə ˈlɒdʒɪk ɪz ˈsɜːkjələ/',
+    usage: 'Dùng khi chỉ ra lỗi logic vòng vo khiến lập luận không thuyết phục.',
     role: 'reaction',
     examples: [
       { en: 'I respectfully disagree, the logic is circular and proves nothing.', vi: 'Tôi xin phép không đồng ý, logic này luẩn quẩn và không chứng minh được gì.' },
+      { en: 'I respectfully disagree, the logic is circular and adds nothing.', vi: 'Tôi xin phép không đồng ý, logic này là luẩn quẩn và chẳng thêm gì.' },
+      { en: 'I respectfully disagree, the logic is circular in the reasoning.', vi: 'Tôi xin phép không đồng ý, logic này là luẩn quẩn trong cách suy luận.' },
     ],
   },
 
