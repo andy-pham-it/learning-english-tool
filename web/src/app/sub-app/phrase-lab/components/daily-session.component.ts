@@ -33,6 +33,9 @@ const RATING_LABELS: Record<ReviewRating, string> = {
         @if (showVi()) {
           <p class="text-sm text-slate-500">{{ c.vietnamese }}</p>
           <p class="text-xs text-slate-400">{{ c.phonetic }}</p>
+          @if (c.usage) {
+            <p class="mt-2 rounded-xl bg-amber-50 border border-amber-200 px-3 py-2 text-sm text-amber-900">💡 {{ c.usage }}</p>
+          }
         }
         <div class="flex gap-2">
           <button (click)="listen()" class="rounded-xl border border-slate-200 px-4 py-2 text-sm">🐢 Nghe</button>

@@ -27,8 +27,20 @@ const ROLE_COLOR: Record<string, string> = {
         <button (click)="speak(chunk().english)" class="shrink-0 rounded-full bg-slate-100 hover:bg-slate-200 p-2 text-slate-600" aria-label="Nghe mẫu">🔊</button>
       </div>
       <p class="mt-1 text-sm text-slate-700">{{ chunk().vietnamese }}</p>
-      <p class="mt-2 text-sm text-slate-500 italic">{{ chunk().examples[0].en }}</p>
-      <p class="text-xs text-slate-400">{{ chunk().examples[0].vi }}</p>
+      @if (chunk().usage) {
+        <div class="mt-2 rounded-xl bg-amber-50 border border-amber-200 px-3 py-2">
+          <p class="text-xs font-semibold text-amber-700">Khi nào dùng?</p>
+          <p class="text-sm text-amber-900">{{ chunk().usage }}</p>
+        </div>
+      }
+      <div class="mt-2 space-y-1">
+        @for (ex of chunk().examples; track $index) {
+          <div>
+            <p class="text-sm text-slate-500 italic">{{ ex.en }}</p>
+            <p class="text-xs text-slate-400">{{ ex.vi }}</p>
+          </div>
+        }
+      </div>
       <button
         (click)="learn()"
         [disabled]="mastered()"

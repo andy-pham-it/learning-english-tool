@@ -6,7 +6,7 @@ import { PhraseProgressService } from '../services/phrase-progress.service';
 import { SpeechService } from '../../../core/services/speech.service';
 import { Level, PhraseChunk, Role } from '../models/phrase.model';
 
-function chunk(id: string, ctx = 'meeting', role: Role = 'opener', level: Level = 'A2'): PhraseChunk {
+function chunk(id: string, ctx = 'meeting', role: Role = 'opener', level: Level = 'A2', usage?: string): PhraseChunk {
   return {
     id,
     domain: 'it',
@@ -16,6 +16,7 @@ function chunk(id: string, ctx = 'meeting', role: Role = 'opener', level: Level 
     vietnamese: `Tiếng Việt ${id}`,
     phonetic: '/test/',
     role,
+    usage,
     examples: [],
   };
 }
@@ -113,6 +114,23 @@ describe('DailySessionComponent', () => {
     expect(comp.index()).toBe(1);
     expect(comp.current()!.id).toBe('b1');
     expect(comp.isNew()).toBeTrue();
+  });
+
+  it('reveals usage text when meanings are shown', async () => {
+    chunks.set([chunk('u1', 'meeting', 'opener', 'A2', 'Dùng khi mở đầu cuộc họp.')]);
+    progressStub.getDueChunks.and.returnValue(['u1']);
+    progressStub.getCoverage.and.returnValue({ meeting: { learned: 0, total: 1 } });
+    progressStub.progress.set(emptyProgress());
+    await rebuild();
+
+    expect(fixture.nativeElement.textContent).not.toContain('Dùng khi mở đầu cuộc họp.');
+
+    const revealBtn = Array.from(fixture.nativeElement.querySelectorAll('button') as NodeListOf<HTMLElement>)
+      .find((b) => b.textContent?.includes('Nghĩa')) as HTMLElement;
+    revealBtn.click();
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.textContent).toContain('Dùng khi mở đầu cuộc họp.');
   });
 
   it('shows completion screen when the queue is exhausted', async () => {

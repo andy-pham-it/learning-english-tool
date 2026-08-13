@@ -9,6 +9,8 @@ export interface PhraseChunk {
   english: string;
   vietnamese: string;
   phonetic: string;
+  /** Ngữ cảnh áp dụng — giải thích chunk dùng trong tình huống nào (tiếng Việt). */
+  usage?: string;
   role: Role;
   examples: { en: string; vi: string }[];
 }
