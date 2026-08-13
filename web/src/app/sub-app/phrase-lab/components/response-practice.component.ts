@@ -162,7 +162,7 @@ interface TurnResult {
   `,
 })
 export class ResponsePracticeComponent {
-  private readonly scenariosSvc = inject(ScenarioService);
+  readonly scenariosSvc = inject(ScenarioService);
   private readonly content = inject(PhraseContentService);
   private readonly progress = inject(PhraseProgressService);
   private readonly speech = inject(SpeechService);
