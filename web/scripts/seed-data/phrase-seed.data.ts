@@ -9216,9 +9216,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I hope this finds you well',
     vietnamese: 'hy vọng bạn vẫn khỏe',
     phonetic: '/aɪ həʊp ðɪs faɪndz juː wel/',
+    usage: 'Dùng khi mở đầu email lịch sự, hỏi thăm sức khỏe người nhận trước khi vào nội dung chính.',
     role: 'opener',
     examples: [
       { en: 'Hi Mai, I hope this finds you well.', vi: 'Chào Mai, hy vọng bạn vẫn khỏe.' },
+      { en: 'I hope this finds you well after the long weekend.', vi: 'Hy vọng bạn vẫn khỏe sau kỳ nghỉ cuối tuần dài.' },
+      { en: 'I hope this finds you well and that business is going smoothly.', vi: 'Hy vọng bạn vẫn khỏe và công việc kinh doanh đang suôn sẻ.' },
     ],
   },
   {
@@ -9229,9 +9232,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'just a quick follow-up',
     vietnamese: 'chỉ là một lần nhắc lại ngắn',
     phonetic: '/dʒʌst ə kwɪk ˈfɒləʊ ʌp/',
+    usage: 'Dùng khi nhắc lại một vấn đề đã trao đổi trước đó một cách ngắn gọn, không muốn làm phiền.',
     role: 'opener',
     examples: [
       { en: 'Just a quick follow-up on the contract we discussed last week.', vi: 'Chỉ là một lần nhắc lại ngắn về hợp đồng ta bàn tuần trước.' },
+      { en: 'Just a quick follow-up on the quote I sent you last week.', vi: 'Chỉ là một lần nhắc lại ngắn về báo giá tôi đã gửi bạn tuần trước.' },
+      { en: 'Just a quick follow-up to see if you had a chance to review the draft.', vi: 'Chỉ là một lần nhắc lại ngắn để xem bạn đã có dịp xem bản nháp chưa.' },
     ],
   },
   {
@@ -9242,9 +9248,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'at your earliest convenience',
     vietnamese: 'khi nào bạn tiện',
     phonetic: '/æt jɔː ˈɜːliɪst kənˈviːniəns/',
+    usage: 'Dùng khi yêu cầu người nhận phản hồi vào lúc họ thuận tiện, thể hiện sự tôn trọng thời gian của họ.',
     role: 'closer',
     examples: [
       { en: 'Please reply at your earliest convenience.', vi: 'Vui lòng phản hồi khi nào bạn tiện nhé.' },
+      { en: 'Kindly send us the signed document at your earliest convenience.', vi: 'Vui lòng gửi cho chúng tôi tài liệu đã ký khi bạn thuận tiện.' },
+      { en: 'Please let me know your decision at your earliest convenience.', vi: 'Vui lòng cho tôi biết quyết định của bạn khi bạn thuận tiện.' },
     ],
   },
   {
@@ -9255,9 +9264,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'looking forward to',
     vietnamese: 'rất mong',
     phonetic: '/ˈlʊkɪŋ ˈfɔːwəd tə/',
+    usage: 'Dùng ở cuối email để bày tỏ sự mong đợi nhận được phản hồi hoặc kết quả từ người nhận.',
     role: 'closer',
     examples: [
       { en: 'Looking forward to your feedback on the draft.', vi: 'Rất mong nhận phản hồi của bạn về bản nháp.' },
+      { en: 'Looking forward to your comments on the revised proposal.', vi: 'Rất mong nhận được ý kiến của bạn về đề xuất đã chỉnh sửa.' },
+      { en: 'Looking forward to meeting you at the conference next month.', vi: 'Rất mong được gặp bạn tại hội nghị tháng tới.' },
     ],
   },
   {
@@ -9268,9 +9280,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to touch base',
     vietnamese: 'trao đổi nhanh',
     phonetic: '/tə tʌtʃ beɪs/',
+    usage: 'Dùng khi muốn trao đổi nhanh, cập nhật tình hình với ai đó mà không cần một cuộc họp chính thức.',
     role: 'opener',
     examples: [
       { en: 'Wanted to touch base on the proposal before Friday.', vi: 'Muốn trao đổi nhanh về đề xuất trước thứ Sáu.' },
+      { en: 'I wanted to touch base on the marketing campaign before launch.', vi: 'Tôi muốn trao đổi nhanh về chiến dịch marketing trước khi ra mắt.' },
+      { en: "Let's touch base next week to align on the budget.", vi: 'Chúng ta hãy trao đổi nhanh vào tuần sau để thống nhất về ngân sách.' },
     ],
   },
   {
@@ -9281,9 +9296,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as per our conversation',
     vietnamese: 'theo đúng như cuộc trao đổi',
     phonetic: '/æz pɜː aʊə ˌkɒnvəˈseɪʃən/',
+    usage: 'Dùng khi nhắc lại nội dung đã thống nhất trong cuộc trao đổi trước, để tạo sự liên kết và xác nhận.',
     role: 'opener',
     examples: [
       { en: 'As per our conversation, here are the next steps.', vi: 'Theo đúng như cuộc trao đổi, đây là các bước tiếp theo.' },
+      { en: 'As per our conversation, I have updated the delivery schedule.', vi: 'Theo đúng như cuộc trao đổi, tôi đã cập nhật lịch giao hàng.' },
+      { en: 'As per our conversation, the meeting has been moved to Thursday.', vi: 'Theo đúng như cuộc trao đổi, cuộc họp đã được dời sang thứ Năm.' },
     ],
   },
   {
@@ -9294,9 +9312,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'should you have any questions',
     vietnamese: 'nếu bạn có bất kỳ câu hỏi nào',
     phonetic: '/ʃʊd juː hæv ˈeni ˈkwestʃənz/',
+    usage: 'Dùng ở cuối email để mời người nhận liên hệ nếu có thắc mắc, tạo cảm giác cởi mở và sẵn sàng hỗ trợ.',
     role: 'closer',
     examples: [
       { en: 'Should you have any questions, do not hesitate to reach out.', vi: 'Nếu bạn có bất kỳ câu hỏi nào, cứ thoải mái liên hệ nhé.' },
+      { en: 'Should you have any questions, please contact our support team.', vi: 'Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ đội hỗ trợ của chúng tôi.' },
+      { en: 'Should you have any questions about the invoice, feel free to write back.', vi: 'Nếu bạn có bất kỳ câu hỏi nào về hóa đơn, cứ thoải mái viết lại.' },
     ],
   },
   {
@@ -9307,9 +9328,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I look forward to your reply',
     vietnamese: 'tôi mong nhận được hồi âm',
     phonetic: '/aɪ lʊk ˈfɔːwəd tə jɔː rɪˈplaɪ/',
+    usage: 'Dùng ở cuối email để nêu rõ thời hạn mong muốn nhận được hồi âm từ người nhận.',
     role: 'closer',
     examples: [
       { en: 'I look forward to your reply by Wednesday.', vi: 'Tôi mong nhận được hồi âm của bạn trước thứ Tư.' },
+      { en: 'I look forward to your reply before the end of this week.', vi: 'Tôi mong nhận được hồi âm của bạn trước cuối tuần này.' },
+      { en: 'I look forward to your reply so we can finalize the plan.', vi: 'Tôi mong nhận được hồi âm của bạn để chúng ta có thể chốt kế hoạch.' },
     ],
   },
 
@@ -14034,9 +14058,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'thank you for your email',
     vietnamese: 'cảm ơn email của bạn',
     phonetic: '/θæŋk juː fə jɔːr ˈiːmeɪl/',
+    usage: 'Dùng khi bắt đầu email để cảm ơn người gửi trước đó, thể hiện sự lịch sự và ghi nhận.',
     role: 'opener',
     examples: [
       { en: 'Thank you for your email — I will check with the team.', vi: 'Cảm ơn email của bạn — tôi sẽ kiểm tra với team.' },
+      { en: 'Thank you for your email about the new product launch.', vi: 'Cảm ơn email của bạn về việc ra mắt sản phẩm mới.' },
+      { en: 'Thank you for your email, I will reply in detail tomorrow.', vi: 'Cảm ơn email của bạn, tôi sẽ trả lời chi tiết vào ngày mai.' },
     ],
   },
   {
@@ -14047,9 +14074,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'about your question',
     vietnamese: 'về câu hỏi của bạn',
     phonetic: '/əbaʊt jɔː ˈkwestʃən/',
+    usage: 'Dùng khi chuyển sang trả lời một câu hỏi cụ thể mà người nhận đã đặt ra trong email.',
     role: 'linker',
     examples: [
       { en: 'About your question, the pricing page is updated.', vi: 'Về câu hỏi của bạn, trang giá đã được cập nhật.' },
+      { en: 'About your question, the new version will be released next month.', vi: 'Về câu hỏi của bạn, phiên bản mới sẽ được phát hành vào tháng tới.' },
+      { en: 'About your question, yes, we can extend the deadline.', vi: 'Về câu hỏi của bạn, vâng, chúng tôi có thể gia hạn thời hạn.' },
     ],
   },
   {
@@ -14060,9 +14090,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I hope this helps',
     vietnamese: 'mong điều này hữu ích',
     phonetic: '/aɪ həʊp ðɪs helps/',
+    usage: 'Dùng ở cuối phần trả lời để chốt lại rằng thông tin đã cung cấp hữu ích, kèm lời mời hỏi thêm.',
     role: 'filler',
     examples: [
       { en: 'I hope this helps — let me know if you need more.', vi: 'Mong điều này hữu ích — cho tôi biết nếu bạn cần thêm.' },
+      { en: 'I hope this helps, please ask if anything is unclear.', vi: 'Mong điều này hữu ích, hãy hỏi nếu có gì chưa rõ.' },
+      { en: 'I hope this helps you prepare for the meeting.', vi: 'Mong điều này giúp bạn chuẩn bị cho cuộc họp.' },
     ],
   },
   {
@@ -14073,9 +14106,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'talk soon',
     vietnamese: 'nói chuyện sớm nhé',
     phonetic: '/tɔːk suːn/',
+    usage: 'Dùng ở cuối email thân mật để chào tạm biệt và hẹn gặp lại trong thời gian tới.',
     role: 'closer',
     examples: [
       { en: 'Talk soon — have a good week.', vi: 'Nói chuyện sớm nhé — chúc tuần vui vẻ.' },
+      { en: 'Talk soon, I will send the report on Monday.', vi: 'Nói chuyện sớm nhé, tôi sẽ gửi báo cáo vào thứ Hai.' },
+      { en: 'Talk soon and enjoy your weekend.', vi: 'Nói chuyện sớm nhé và chúc bạn cuối tuần vui vẻ.' },
     ],
   },
   {
@@ -14086,9 +14122,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to get back to you on',
     vietnamese: 'phản hồi lại bạn về',
     phonetic: '/tə ɡet bæk tə juː ɒn/',
+    usage: 'Dùng khi hứa sẽ trả lời hoặc cung cấp thông tin cho ai đó sau khi đã kiểm tra, xác minh.',
     role: 'linker',
     examples: [
       { en: 'I will get back to you on the delivery date tomorrow.', vi: 'Tôi sẽ phản hồi lại bạn về ngày giao hàng vào ngày mai.' },
+      { en: 'I will get back to you on the budget numbers tomorrow morning.', vi: 'Tôi sẽ phản hồi lại bạn về số liệu ngân sách vào sáng mai.' },
+      { en: 'Let me get back to you on that after I check with the legal team.', vi: 'Để tôi phản hồi lại bạn về việc đó sau khi kiểm tra với đội pháp lý.' },
     ],
   },
   {
@@ -14099,9 +14138,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'just to confirm',
     vietnamese: 'chỉ để xác nhận',
     phonetic: '/dʒʌst tə kənˈfɜːm/',
+    usage: 'Dùng khi xác nhận lại một thông tin quan trọng để tránh hiểu lầm giữa các bên.',
     role: 'filler',
     examples: [
       { en: 'Just to confirm, the meeting is at 10am.', vi: 'Chỉ để xác nhận, cuộc họp lúc 10 giờ sáng.' },
+      { en: 'Just to confirm, the workshop starts at 9am sharp.', vi: 'Chỉ để xác nhận, buổi hội thảo bắt đầu đúng 9 giờ sáng.' },
+      { en: 'Just to confirm, we agreed on a 10 percent discount.', vi: 'Chỉ để xác nhận, chúng ta đã đồng ý mức giảm giá 10 phần trăm.' },
     ],
   },
   {
@@ -14112,9 +14154,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to circle back on',
     vietnamese: 'quay lại về',
     phonetic: '/tə ˈsɜːkəl bæk ɒn/',
+    usage: 'Dùng khi quay lại một chủ đề đã bỏ dở hoặc chưa giải quyết xong trong các trao đổi trước.',
     role: 'linker',
     examples: [
       { en: 'Let me circle back on the partnership terms next week.', vi: 'Để tôi quay lại về điều khoản hợp tác vào tuần sau.' },
+      { en: 'Let me circle back on the staffing question after the review.', vi: 'Để tôi quay lại về câu hỏi nhân sự sau buổi đánh giá.' },
+      { en: 'I will circle back on the pricing discussion next Monday.', vi: 'Tôi sẽ quay lại về cuộc thảo luận giá vào thứ Hai tuần sau.' },
     ],
   },
   {
@@ -14125,9 +14170,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for the record',
     vietnamese: 'để ghi nhận',
     phonetic: '/fə ðə ˈrekɔːd/',
+    usage: 'Dùng khi muốn ghi nhận chính thức một sự việc hoặc quan điểm vào hồ sơ, tránh tranh cãi sau này.',
     role: 'filler',
     examples: [
       { en: 'For the record, we proposed a 12-month contract.', vi: 'Để ghi nhận, chúng tôi đã đề xuất hợp đồng 12 tháng.' },
+      { en: 'For the record, we delivered the goods on time.', vi: 'Để ghi nhận, chúng tôi đã giao hàng đúng hạn.' },
+      { en: 'For the record, the client approved the design on Tuesday.', vi: 'Để ghi nhận, khách hàng đã duyệt thiết kế vào thứ Ba.' },
     ],
   },
   {
@@ -14138,9 +14186,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would like to draw your attention to',
     vietnamese: 'tôi muốn thu hút sự chú ý của bạn đến',
     phonetic: '/aɪ wʊd laɪk tə drɔː jɔːr əˈtenʃən tə/',
+    usage: 'Dùng khi muốn nhấn mạnh một điểm quan trọng trong email để người nhận đặc biệt chú ý.',
     role: 'opener',
     examples: [
       { en: 'I would like to draw your attention to clause 4.2.', vi: 'Tôi muốn thu hút sự chú ý của bạn đến điều khoản 4.2.' },
+      { en: 'I would like to draw your attention to the revised deadline.', vi: 'Tôi muốn thu hút sự chú ý của bạn đến thời hạn đã được điều chỉnh.' },
+      { en: 'I would like to draw your attention to the safety guidelines.', vi: 'Tôi muốn thu hút sự chú ý của bạn đến các hướng dẫn an toàn.' },
     ],
   },
   {
@@ -14151,9 +14202,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in light of',
     vietnamese: 'xét theo',
     phonetic: '/ɪn laɪt əv/',
+    usage: 'Dùng khi đưa ra lý do hoặc bối cảnh cho một quyết định, thay đổi dựa trên tình hình mới.',
     role: 'linker',
     examples: [
       { en: 'In light of the new budget, we need to revise the plan.', vi: 'Xét theo ngân sách mới, chúng ta cần điều chỉnh kế hoạch.' },
+      { en: 'In light of the feedback, we have simplified the process.', vi: 'Xét theo phản hồi, chúng tôi đã đơn giản hóa quy trình.' },
+      { en: 'In light of the delay, the launch has been postponed.', vi: 'Xét theo sự chậm trễ, buổi ra mắt đã bị hoãn lại.' },
     ],
   },
   {
@@ -14164,9 +14218,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'needless to say',
     vietnamese: 'khỏi phải nói',
     phonetic: '/ˈniːdləs tə seɪ/',
+    usage: 'Dùng khi nhắc một điều hiển nhiên, ai cũng biết, để nhấn mạnh tầm quan trọng của nó.',
     role: 'filler',
     examples: [
       { en: 'Needless to say, confidentiality is our priority.', vi: 'Khỏi phải nói, bảo mật là ưu tiên của chúng tôi.' },
+      { en: 'Needless to say, quality is our top priority.', vi: 'Khỏi phải nói, chất lượng là ưu tiên hàng đầu của chúng tôi.' },
+      { en: 'Needless to say, we expect full commitment from the team.', vi: 'Khỏi phải nói, chúng tôi mong đợi sự cam kết trọn vẹn từ đội ngũ.' },
     ],
   },
   {
@@ -14177,9 +14234,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'awaiting your kind response',
     vietnamese: 'mong nhận hồi âm của bạn',
     phonetic: '/əˈweɪtɪŋ jɔː kaɪnd rɪˈspɒns/',
+    usage: 'Dùng ở cuối email trang trọng để bày tỏ sự mong đợi nhận được hồi âm từ người nhận.',
     role: 'closer',
     examples: [
       { en: 'Awaiting your kind response at your earliest convenience.', vi: 'Mong nhận hồi âm của bạn khi thuận tiện.' },
+      { en: 'Awaiting your kind response, we remain at your disposal.', vi: 'Mong nhận hồi âm của bạn, chúng tôi luôn sẵn sàng phục vụ.' },
+      { en: 'Awaiting your kind response regarding the final terms.', vi: 'Mong nhận hồi âm của bạn về các điều khoản cuối cùng.' },
     ],
   },
 
@@ -14192,9 +14252,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am writing about the new price list.',
     vietnamese: 'Tôi viết thư về bảng giá mới.',
     phonetic: '/aɪ æm ˈraɪtɪŋ əˈbaʊt ðə njuː praɪs lɪst/',
+    usage: 'Dùng khi mở đầu email để nêu rõ mục đích viết thư, ví dụ thông báo về bảng giá mới.',
     role: 'opener',
     examples: [
       { en: 'I am writing about the new price list for our clients.', vi: 'Tôi viết thư về bảng giá mới cho khách hàng của chúng tôi.' },
+      { en: 'I am writing about the new price list for the upcoming quarter.', vi: 'Tôi viết thư về bảng giá mới cho quý sắp tới.' },
+      { en: 'I am writing about the new price list, please find it attached.', vi: 'Tôi viết thư về bảng giá mới, xin xem file đính kèm.' },
     ],
   },
   {
@@ -14205,9 +14268,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Here is our offer for the project.',
     vietnamese: 'Đây là đề xuất của chúng tôi cho dự án.',
     phonetic: '/hɪr ɪz aʊər ˈɔːfər fɔːr ðə ˈprɒdʒɛkt/',
+    usage: 'Dùng khi gửi đề xuất hoặc báo giá cho khách hàng, mời họ xem xét.',
     role: 'opener',
     examples: [
       { en: 'Here is our offer for the project, please review it.', vi: 'Đây là đề xuất của chúng tôi cho dự án, xin hãy xem qua.' },
+      { en: 'Here is our offer for the project, we look forward to your feedback.', vi: 'Đây là đề xuất của chúng tôi cho dự án, chúng tôi mong nhận phản hồi của bạn.' },
+      { en: 'Here is our offer for the project with the detailed breakdown.', vi: 'Đây là đề xuất của chúng tôi cho dự án kèm chi tiết phân tích.' },
     ],
   },
   {
@@ -14218,9 +14284,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'You can find the prices in the list.',
     vietnamese: 'Bạn có thể tìm thấy giá trong danh sách.',
     phonetic: '/juː kæn faɪnd ðə ˈpraɪsɪz ɪn ðə lɪst/',
+    usage: 'Dùng khi hướng dẫn người nhận tìm thông tin giá trong một danh sách hoặc tài liệu đính kèm.',
     role: 'linker',
     examples: [
       { en: 'You can find the prices in the list attached.', vi: 'Bạn có thể tìm thấy giá trong danh sách đính kèm.' },
+      { en: 'You can find the prices in the list on page two.', vi: 'Bạn có thể tìm thấy giá trong danh sách ở trang hai.' },
+      { en: 'You can find the prices in the list I shared yesterday.', vi: 'Bạn có thể tìm thấy giá trong danh sách tôi đã chia sẻ hôm qua.' },
     ],
   },
   {
@@ -14231,9 +14300,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Please tell us your answer soon.',
     vietnamese: 'Xin hãy cho chúng tôi biết câu trả lời của bạn sớm.',
     phonetic: '/pliːz tɛl ʌs jʊər ˈænsər suːn/',
+    usage: 'Dùng khi yêu cầu người nhận trả lời sớm về một đề xuất hoặc quyết định đang chờ.',
     role: 'linker',
     examples: [
       { en: 'Please tell us your answer soon about the offer.', vi: 'Xin hãy cho chúng tôi biết câu trả lời của bạn sớm về đề xuất.' },
+      { en: 'Please tell us your answer soon so we can prepare the contract.', vi: 'Xin hãy cho chúng tôi biết câu trả lời sớm để chúng tôi chuẩn bị hợp đồng.' },
+      { en: 'Please tell us your answer soon about the delivery date.', vi: 'Xin hãy cho chúng tôi biết câu trả lời sớm về ngày giao hàng.' },
     ],
   },
   {
@@ -14244,9 +14316,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Our team is working on it now.',
     vietnamese: 'Đội ngũ của chúng tôi đang xử lý việc đó.',
     phonetic: '/aʊər tiːm ɪz ˈwɜːrkɪŋ ɒn ɪt naʊ/',
+    usage: 'Dùng khi trấn an người nhận rằng công việc đang được xử lý và sẽ có cập nhật sau.',
     role: 'filler',
     examples: [
       { en: 'Our team is working on it now and will update you.', vi: 'Đội ngũ của chúng tôi đang xử lý việc đó và sẽ cập nhật cho bạn.' },
+      { en: 'Our team is working on it now and will get back to you today.', vi: 'Đội ngũ của chúng tôi đang xử lý việc đó và sẽ phản hồi bạn hôm nay.' },
+      { en: 'Our team is working on it now, please bear with us.', vi: 'Đội ngũ của chúng tôi đang xử lý việc đó, xin vui lòng chờ chút.' },
     ],
   },
   {
@@ -14257,9 +14332,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The delivery will arrive next week.',
     vietnamese: 'Lô hàng sẽ đến vào tuần sau.',
     phonetic: '/ðə dɪˈlɪvəri wɪl əˈraɪv nɛkst wiːk/',
+    usage: 'Dùng khi thông báo về thời gian giao hàng hoặc thời điểm một việc sẽ xảy ra.',
     role: 'filler',
     examples: [
       { en: 'The delivery will arrive next week as scheduled.', vi: 'Lô hàng sẽ đến vào tuần sau như dự kiến.' },
+      { en: 'The delivery will arrive next week, we will send the tracking number.', vi: 'Lô hàng sẽ đến vào tuần sau, chúng tôi sẽ gửi mã theo dõi.' },
+      { en: 'The delivery will arrive next week as confirmed by the supplier.', vi: 'Lô hàng sẽ đến vào tuần sau như nhà cung cấp đã xác nhận.' },
     ],
   },
   {
@@ -14270,9 +14348,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We hope to work with you again.',
     vietnamese: 'Chúng tôi hy vọng sẽ hợp tác với bạn lần nữa.',
     phonetic: '/wiː hoʊp tuː wɜːrk wɪð juː əˈɡɛn/',
+    usage: 'Dùng ở cuối email để bày tỏ mong muốn tiếp tục hợp tác với khách hàng hoặc đối tác.',
     role: 'closer',
     examples: [
       { en: 'We hope to work with you again in the future.', vi: 'Chúng tôi hy vọng sẽ hợp tác với bạn lần nữa trong tương lai.' },
+      { en: 'We hope to work with you again on future projects.', vi: 'Chúng tôi hy vọng sẽ hợp tác với bạn lần nữa trong các dự án tương lai.' },
+      { en: 'We hope to work with you again and thank you for your trust.', vi: 'Chúng tôi hy vọng sẽ hợp tác với bạn lần nữa và cảm ơn sự tin tưởng của bạn.' },
     ],
   },
   {
@@ -14283,9 +14364,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Have a great day.',
     vietnamese: 'Chúc bạn một ngày tốt lành.',
     phonetic: '/hæv ə ɡreɪt deɪ/',
+    usage: 'Dùng ở cuối email như lời chúc tốt đẹp, kết thúc thư một cách thân thiện.',
     role: 'closer',
     examples: [
       { en: 'Have a great day and thank you for your time.', vi: 'Chúc bạn một ngày tốt lành và cảm ơn bạn đã dành thời gian.' },
+      { en: 'Have a great day and see you at the meeting.', vi: 'Chúc bạn một ngày tốt lành và hẹn gặp ở cuộc họp.' },
+      { en: 'Have a great day, we will be in touch soon.', vi: 'Chúc bạn một ngày tốt lành, chúng tôi sẽ liên lạc sớm.' },
     ],
   },
   {
@@ -14296,9 +14380,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am reaching out regarding our partnership agreement.',
     vietnamese: 'Tôi liên hệ để trao đổi về thỏa thuận hợp tác của chúng ta.',
     phonetic: '/aɪ æm ˈriːtʃɪŋ aʊt rɪˈɡɑːrdɪŋ aʊər ˈpɑːrtnərʃɪp əˈɡriːmənt/',
+    usage: 'Dùng khi mở đầu email để nêu rõ chủ đề liên hệ, thường là về một thỏa thuận hoặc hợp đồng.',
     role: 'opener',
     examples: [
       { en: 'I am reaching out regarding our partnership agreement renewal.', vi: 'Tôi liên hệ để trao đổi về việc gia hạn thỏa thuận hợp tác.' },
+      { en: 'I am reaching out regarding our partnership agreement to discuss the renewal.', vi: 'Tôi liên hệ để trao đổi về thỏa thuận hợp tác của chúng ta nhằm bàn về việc gia hạn.' },
+      { en: 'I am reaching out regarding our partnership agreement and the new terms.', vi: 'Tôi liên hệ để trao đổi về thỏa thuận hợp tác của chúng ta và các điều khoản mới.' },
     ],
   },
   {
@@ -14309,9 +14396,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We received your request and are reviewing it.',
     vietnamese: 'Chúng tôi đã nhận được yêu cầu của bạn và đang xem xét.',
     phonetic: '/wiː rɪˈsiːvd jʊər rɪˈkwɛst ænd ɑːr rɪˈvjuːɪŋ ɪt/',
+    usage: 'Dùng khi xác nhận đã nhận được yêu cầu của khách hàng và đang trong quá trình xem xét.',
     role: 'opener',
     examples: [
       { en: 'We received your request and are reviewing it carefully.', vi: 'Chúng tôi đã nhận được yêu cầu của bạn và đang xem xét cẩn thận.' },
+      { en: 'We received your request and are reviewing it with the relevant team.', vi: 'Chúng tôi đã nhận được yêu cầu của bạn và đang xem xét cùng đội ngũ liên quan.' },
+      { en: 'We received your request and are reviewing it, we will reply within two days.', vi: 'Chúng tôi đã nhận được yêu cầu của bạn và đang xem xét, chúng tôi sẽ trả lời trong hai ngày.' },
     ],
   },
   {
@@ -14322,9 +14412,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In response to your inquiry, we prepared a quote.',
     vietnamese: 'Để trả lời câu hỏi của bạn, chúng tôi đã chuẩn bị một báo giá.',
     phonetic: '/ɪn rɪˈspɒns tuː jʊər ɪnˈkwaɪəri wiː prɪˈpɛrd ə kwoʊt/',
+    usage: 'Dùng khi trả lời một câu hỏi hoặc yêu cầu báo giá mà khách hàng đã gửi trước đó.',
     role: 'linker',
     examples: [
       { en: 'In response to your inquiry, we prepared a quote for the services.', vi: 'Để trả lời câu hỏi của bạn, chúng tôi đã chuẩn bị một báo giá cho các dịch vụ.' },
+      { en: 'In response to your inquiry, we prepared a quote for the annual plan.', vi: 'Để trả lời câu hỏi của bạn, chúng tôi đã chuẩn bị một báo giá cho gói hàng năm.' },
+      { en: 'In response to your inquiry, we prepared a quote valid for thirty days.', vi: 'Để trả lời câu hỏi của bạn, chúng tôi đã chuẩn bị một báo giá có hiệu lực ba mươi ngày.' },
     ],
   },
   {
@@ -14335,9 +14428,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Could you clarify the requirements for us?',
     vietnamese: 'Bạn có thể làm rõ các yêu cầu cho chúng tôi không?',
     phonetic: '/kʊd juː ˈklærɪfaɪ ðə rɪˈkwaɪərmənts fɔːr ʌs/',
+    usage: 'Dùng khi cần làm rõ thêm thông tin từ người nhận trước khi bắt đầu công việc.',
     role: 'linker',
     examples: [
       { en: 'Could you clarify the requirements for us before we start?', vi: 'Bạn có thể làm rõ các yêu cầu cho chúng tôi trước khi bắt đầu không?' },
+      { en: 'Could you clarify the requirements for us before we draft the proposal?', vi: 'Bạn có thể làm rõ các yêu cầu cho chúng tôi trước khi chúng tôi soạn đề xuất không?' },
+      { en: 'Could you clarify the requirements for us, especially the delivery timeline?', vi: 'Bạn có thể làm rõ các yêu cầu cho chúng tôi, đặc biệt là mốc thời gian giao hàng?' },
     ],
   },
   {
@@ -14348,9 +14444,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are confident the proposal meets your expectations.',
     vietnamese: 'Chúng tôi tin rằng đề xuất đáp ứng được kỳ vọng của bạn.',
     phonetic: '/wiː ɑːr ˈkɒnfɪdənt ðə prəˈpoʊzəl miːts jʊər ˌɛkspɛkˈteɪʃənz/',
+    usage: 'Dùng khi trấn an khách hàng rằng đề xuất của mình đáp ứng được kỳ vọng và ngân sách của họ.',
     role: 'filler',
     examples: [
       { en: 'We are confident the proposal meets your expectations and budget.', vi: 'Chúng tôi tin rằng đề xuất đáp ứng được kỳ vọng và ngân sách của bạn.' },
+      { en: 'We are confident the proposal meets your expectations and we can start next week.', vi: 'Chúng tôi tin rằng đề xuất đáp ứng được kỳ vọng của bạn và chúng tôi có thể bắt đầu vào tuần sau.' },
+      { en: 'We are confident the proposal meets your expectations based on our experience.', vi: 'Chúng tôi tin rằng đề xuất đáp ứng được kỳ vọng của bạn dựa trên kinh nghiệm của chúng tôi.' },
     ],
   },
   {
@@ -14361,9 +14460,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a slight delay in the shipment.',
     vietnamese: 'Có một sự chậm trễ nhỏ trong việc giao hàng.',
     phonetic: '/ðɛr ɪz ə slaɪt dɪˈleɪ ɪn ðə ˈʃɪpmənt/',
+    usage: 'Dùng khi thông báo một vấn đề về giao hàng một cách nhẹ nhàng, tránh gây lo lắng.',
     role: 'filler',
     examples: [
       { en: 'There is a slight delay in the shipment due to customs.', vi: 'Có một sự chậm trễ nhỏ trong việc giao hàng do hải quan.' },
+      { en: 'There is a slight delay in the shipment because of the holiday.', vi: 'Có một sự chậm trễ nhỏ trong việc giao hàng vì kỳ nghỉ lễ.' },
+      { en: 'There is a slight delay in the shipment, we apologize for the inconvenience.', vi: 'Có một sự chậm trễ nhỏ trong việc giao hàng, chúng tôi xin lỗi vì sự bất tiện.' },
     ],
   },
   {
@@ -14374,9 +14476,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We would be glad to schedule a call.',
     vietnamese: 'Chúng tôi rất vui được sắp xếp một cuộc gọi.',
     phonetic: '/wiː wʊd biː ɡlæd tuː ˈʃɛdjuːl ə kɔːl/',
+    usage: 'Dùng khi đề nghị sắp xếp một cuộc gọi để trao đổi chi tiết hơn với đối tác.',
     role: 'closer',
     examples: [
       { en: 'We would be glad to schedule a call at your convenience.', vi: 'Chúng tôi rất vui được sắp xếp một cuộc gọi khi bạn thuận tiện.' },
+      { en: 'We would be glad to schedule a call to walk you through the details.', vi: 'Chúng tôi rất vui được sắp xếp một cuộc gọi để trình bày chi tiết cho bạn.' },
+      { en: 'We would be glad to schedule a call next week if that suits you.', vi: 'Chúng tôi rất vui được sắp xếp một cuộc gọi vào tuần sau nếu phù hợp với bạn.' },
     ],
   },
   {
@@ -14387,9 +14492,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We appreciate your continued partnership.',
     vietnamese: 'Chúng tôi trân trọng sự hợp tác lâu dài của bạn.',
     phonetic: '/wiː əˈpriːʃiˌeɪt jʊər kənˈtɪnjuːd ˈpɑːrtnərʃɪp/',
+    usage: 'Dùng ở cuối email để bày tỏ sự trân trọng đối với mối quan hệ hợp tác lâu dài.',
     role: 'closer',
     examples: [
       { en: 'We appreciate your continued partnership over the years.', vi: 'Chúng tôi trân trọng sự hợp tác lâu dài của bạn qua nhiều năm.' },
+      { en: 'We appreciate your continued partnership and look forward to more success.', vi: 'Chúng tôi trân trọng sự hợp tác lâu dài của bạn và mong chờ thêm nhiều thành công.' },
+      { en: 'We appreciate your continued partnership and your trust in our team.', vi: 'Chúng tôi trân trọng sự hợp tác lâu dài của bạn và sự tin tưởng vào đội ngũ của chúng tôi.' },
     ],
   },
   {
@@ -14400,9 +14508,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am writing to follow up on the outstanding invoice.',
     vietnamese: 'Tôi viết thư để theo dõi hóa đơn còn tồn đọng.',
     phonetic: '/aɪ æm ˈraɪtɪŋ tuː ˈfɒloʊ ʌp ɒn ði aʊtˈstændɪŋ ˈɪnvɔɪs/',
+    usage: 'Dùng khi nhắc khéo về một hóa đơn chưa thanh toán, thường là trong email theo dõi công nợ.',
     role: 'opener',
     examples: [
       { en: 'I am writing to follow up on the outstanding invoice from last month.', vi: 'Tôi viết thư để theo dõi hóa đơn còn tồn đọng từ tháng trước.' },
+      { en: 'I am writing to follow up on the outstanding invoice for the consulting services.', vi: 'Tôi viết thư để theo dõi hóa đơn còn tồn đọng cho dịch vụ tư vấn.' },
+      { en: 'I am writing to follow up on the outstanding invoice, the payment is now overdue.', vi: 'Tôi viết thư để theo dõi hóa đơn còn tồn đọng, khoản thanh toán hiện đã quá hạn.' },
     ],
   },
   {
@@ -14413,9 +14524,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have enclosed the signed copy of the contract.',
     vietnamese: 'Chúng tôi đã đính kèm bản hợp đồng đã ký.',
     phonetic: '/wiː hæv ɪnˈkloʊzd ðə saɪnd ˈkɒpi ɒv ðə ˈkɒntrækt/',
+    usage: 'Dùng khi gửi kèm một tài liệu quan trọng đã được ký, yêu cầu người nhận lưu hồ sơ.',
     role: 'opener',
     examples: [
       { en: 'We have enclosed the signed copy of the contract for your records.', vi: 'Chúng tôi đã đính kèm bản hợp đồng đã ký để bạn lưu hồ sơ.' },
+      { en: 'We have enclosed the signed copy of the contract for your records.', vi: 'Chúng tôi đã đính kèm bản hợp đồng đã ký để bạn lưu hồ sơ.' },
+      { en: 'We have enclosed the signed copy of the contract, please keep it safe.', vi: 'Chúng tôi đã đính kèm bản hợp đồng đã ký, xin hãy giữ cẩn thận.' },
     ],
   },
   {
@@ -14426,9 +14540,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We would appreciate an update on the payment status.',
     vietnamese: 'Chúng tôi rất mong nhận được cập nhật về tình trạng thanh toán.',
     phonetic: '/wiː wʊd əˈpriːʃiˌeɪt ən ʌpˈdeɪt ɒn ðə ˈpeɪmənt ˈsteɪtəs/',
+    usage: 'Dùng khi lịch sự yêu cầu cập nhật về tình trạng thanh toán hoặc tiến độ công việc.',
     role: 'linker',
     examples: [
       { en: 'We would appreciate an update on the payment status at your earliest.', vi: 'Chúng tôi rất mong nhận được cập nhật về tình trạng thanh toán sớm nhất có thể.' },
+      { en: 'We would appreciate an update on the payment status by the end of the week.', vi: 'Chúng tôi rất mong nhận được cập nhật về tình trạng thanh toán trước cuối tuần.' },
+      { en: 'We would appreciate an update on the payment status as soon as possible.', vi: 'Chúng tôi rất mong nhận được cập nhật về tình trạng thanh toán càng sớm càng tốt.' },
     ],
   },
   {
@@ -14439,9 +14556,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Please be informed that our terms have changed.',
     vietnamese: 'Xin được thông báo rằng các điều khoản của chúng tôi đã thay đổi.',
     phonetic: '/pliːz biː ɪnˈfɔːrmd ðæt aʊər tɜːrmz hæv tʃeɪndʒd/',
+    usage: 'Dùng khi thông báo chính thức về sự thay đổi điều khoản, thường kèm thời điểm có hiệu lực.',
     role: 'linker',
     examples: [
       { en: 'Please be informed that our terms have changed effective next month.', vi: 'Xin được thông báo rằng các điều khoản của chúng tôi đã thay đổi có hiệu lực từ tháng sau.' },
+      { en: 'Please be informed that our terms have changed starting from January.', vi: 'Xin được thông báo rằng các điều khoản của chúng tôi đã thay đổi kể từ tháng Một.' },
+      { en: 'Please be informed that our terms have changed, the new policy is attached.', vi: 'Xin được thông báo rằng các điều khoản của chúng tôi đã thay đổi, chính sách mới được đính kèm.' },
     ],
   },
   {
@@ -14452,9 +14572,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are currently finalizing the details with our team.',
     vietnamese: 'Chúng tôi hiện đang hoàn thiện các chi tiết với đội ngũ của mình.',
     phonetic: '/wiː ɑːr ˈkɜːrəntli ˈfaɪnəlaɪzɪŋ ðə ˈdiːteɪlz wɪð aʊər tiːm/',
+    usage: 'Dùng khi trấn an rằng công việc đang được hoàn thiện và sẽ có phản hồi sớm.',
     role: 'filler',
     examples: [
       { en: 'We are currently finalizing the details with our team and will revert soon.', vi: 'Chúng tôi hiện đang hoàn thiện các chi tiết với đội ngũ của mình và sẽ phản hồi sớm.' },
+      { en: 'We are currently finalizing the details with our team and will update you shortly.', vi: 'Chúng tôi hiện đang hoàn thiện các chi tiết với đội ngũ của mình và sẽ cập nhật cho bạn sớm.' },
+      { en: 'We are currently finalizing the details with our team, please allow a few more days.', vi: 'Chúng tôi hiện đang hoàn thiện các chi tiết với đội ngũ của mình, xin cho thêm vài ngày.' },
     ],
   },
   {
@@ -14465,9 +14588,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The revised quote is subject to your approval.',
     vietnamese: 'Báo giá đã chỉnh sửa phụ thuộc vào sự phê duyệt của bạn.',
     phonetic: '/ðə rɪˈvaɪzd kwoʊt ɪz ˈsʌbdʒɪkt tuː jʊər əˈpruːvəl/',
+    usage: 'Dùng khi nhấn mạnh rằng báo giá hoặc kế hoạch chỉ có hiệu lực sau khi được phê duyệt.',
     role: 'filler',
     examples: [
       { en: 'The revised quote is subject to your approval before we proceed.', vi: 'Báo giá đã chỉnh sửa phụ thuộc vào sự phê duyệt của bạn trước khi chúng tôi tiến hành.' },
+      { en: 'The revised quote is subject to your approval before we place the order.', vi: 'Báo giá đã chỉnh sửa phụ thuộc vào sự phê duyệt của bạn trước khi chúng tôi đặt hàng.' },
+      { en: 'The revised quote is subject to your approval, please confirm by Friday.', vi: 'Báo giá đã chỉnh sửa phụ thuộc vào sự phê duyệt của bạn, xin xác nhận trước thứ Sáu.' },
     ],
   },
   {
@@ -14478,9 +14604,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We trust this arrangement will be satisfactory.',
     vietnamese: 'Chúng tôi tin rằng thỏa thuận này sẽ khiến bạn hài lòng.',
     phonetic: '/wiː trʌst ðɪs əˈreɪndʒmənt wɪl biː ˌsætɪsˈfæktəri/',
+    usage: 'Dùng ở cuối email để bày tỏ niềm tin rằng thỏa thuận sẽ được cả hai bên chấp nhận.',
     role: 'closer',
     examples: [
       { en: 'We trust this arrangement will be satisfactory to all parties involved.', vi: 'Chúng tôi tin rằng thỏa thuận này sẽ khiến tất cả các bên liên quan hài lòng.' },
+      { en: 'We trust this arrangement will be satisfactory and we can move forward.', vi: 'Chúng tôi tin rằng thỏa thuận này sẽ khiến bạn hài lòng và chúng ta có thể tiến tới.' },
+      { en: 'We trust this arrangement will be satisfactory to both parties.', vi: 'Chúng tôi tin rằng thỏa thuận này sẽ khiến cả hai bên hài lòng.' },
     ],
   },
   {
@@ -14491,9 +14620,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Should you have any concerns, please do not hesitate to contact us.',
     vietnamese: 'Nếu bạn có bất kỳ băn khoăn nào, xin đừng ngần ngại liên hệ với chúng tôi.',
     phonetic: '/ʃʊd juː hæv ˈɛni kənˈsɜːrnz pliːz duː nɑːt ˈhɛzɪteɪt tuː ˈkɒntækt ʌs/',
+    usage: 'Dùng ở cuối email để mời người nhận liên hệ nếu có bất kỳ băn khoăn nào, thể hiện sự cởi mở.',
     role: 'closer',
     examples: [
       { en: 'Should you have any concerns, please do not hesitate to contact us.', vi: 'Nếu bạn có bất kỳ băn khoăn nào, xin đừng ngần ngại liên hệ với chúng tôi.' },
+      { en: 'Should you have any concerns, please do not hesitate to contact our manager.', vi: 'Nếu bạn có bất kỳ băn khoăn nào, xin đừng ngần ngại liên hệ với quản lý của chúng tôi.' },
+      { en: 'Should you have any concerns, please do not hesitate to contact us by phone.', vi: 'Nếu bạn có bất kỳ băn khoăn nào, xin đừng ngần ngại liên hệ với chúng tôi qua điện thoại.' },
     ],
   },
   {
@@ -14504,9 +14636,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We respectfully submit our counterproposal for your consideration.',
     vietnamese: 'Chúng tôi trân trọng trình đề xuất đối ứng để bạn xem xét.',
     phonetic: '/wiː rɪˈspɛktfəli səbˈmɪt aʊər ˈkaʊntərprəˌpoʊzəl fɔːr jʊər kənˌsɪdəˈreɪʃən/',
+    usage: 'Dùng khi trình bày một đề xuất đối ứng trong đàm phán, thể hiện sự tôn trọng và trang trọng.',
     role: 'opener',
     examples: [
       { en: 'We respectfully submit our counterproposal for your consideration at this juncture.', vi: 'Chúng tôi trân trọng trình đề xuất đối ứng để bạn xem xét ở thời điểm này.' },
+      { en: 'We respectfully submit our counterproposal for your consideration before the deadline.', vi: 'Chúng tôi trân trọng trình đề xuất đối ứng để bạn xem xét trước thời hạn.' },
+      { en: 'We respectfully submit our counterproposal for your consideration, hoping for a fair outcome.', vi: 'Chúng tôi trân trọng trình đề xuất đối ứng để bạn xem xét, hy vọng một kết quả công bằng.' },
     ],
   },
   {
@@ -14517,9 +14652,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Following our discussion, we have revised the terms accordingly.',
     vietnamese: 'Sau cuộc thảo luận, chúng tôi đã điều chỉnh các điều khoản cho phù hợp.',
     phonetic: '/ˈfɒloʊɪŋ aʊər dɪˈskʌʃən wiː hæv rɪˈvaɪzd ðə tɜːrmz əˈkɔːrdɪŋli/',
+    usage: 'Dùng khi thông báo đã điều chỉnh điều khoản dựa trên cuộc thảo luận trước đó với đối tác.',
     role: 'opener',
     examples: [
       { en: 'Following our discussion, we have revised the terms accordingly to address your concerns.', vi: 'Sau cuộc thảo luận, chúng tôi đã điều chỉnh các điều khoản để giải quyết các băn khoăn của bạn.' },
+      { en: 'Following our discussion, we have revised the terms accordingly to reflect your input.', vi: 'Sau cuộc thảo luận, chúng tôi đã điều chỉnh các điều khoản cho phù hợp với ý kiến của bạn.' },
+      { en: 'Following our discussion, we have revised the terms accordingly, please review the annex.', vi: 'Sau cuộc thảo luận, chúng tôi đã điều chỉnh các điều khoản cho phù hợp, xin xem phụ lục.' },
     ],
   },
   {
@@ -14530,9 +14668,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We kindly invite you to reconsider the proposed timeline.',
     vietnamese: 'Chúng tôi trân trọng mời bạn xem xét lại mốc thời gian đề xuất.',
     phonetic: '/wiː ˈkaɪndli ɪnˈvaɪt juː tuː ˌriːkənˈsɪdər ðə prəˈpoʊzd ˈtaɪmlaɪn/',
+    usage: 'Dùng khi lịch sự đề nghị đối tác xem xét lại một mốc thời gian hoặc kế hoạch đã đề xuất.',
     role: 'linker',
     examples: [
       { en: 'We kindly invite you to reconsider the proposed timeline given the constraints.', vi: 'Chúng tôi trân trọng mời bạn xem xét lại mốc thời gian đề xuất với các ràng buộc hiện có.' },
+      { en: 'We kindly invite you to reconsider the proposed timeline given the current workload.', vi: 'Chúng tôi trân trọng mời bạn xem xét lại mốc thời gian đề xuất trong bối cảnh khối lượng công việc hiện tại.' },
+      { en: 'We kindly invite you to reconsider the proposed timeline to allow more preparation time.', vi: 'Chúng tôi trân trọng mời bạn xem xét lại mốc thời gian đề xuất để có thêm thời gian chuẩn bị.' },
     ],
   },
   {
@@ -14543,9 +14684,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We would be grateful for your confirmation of the amended scope.',
     vietnamese: 'Chúng tôi rất biết ơn nếu bạn xác nhận phạm vi đã sửa đổi.',
     phonetic: '/wiː wʊd biː ˈɡreɪtfəl fɔːr jʊər ˌkɒnfərˈmeɪʃən ɒv ði əˈmɛndɪd skoʊp/',
+    usage: 'Dùng khi yêu cầu xác nhận chính thức về phạm vi công việc đã được sửa đổi.',
     role: 'linker',
     examples: [
       { en: 'We would be grateful for your confirmation of the amended scope by end of week.', vi: 'Chúng tôi rất biết ơn nếu bạn xác nhận phạm vi đã sửa đổi trước cuối tuần.' },
+      { en: 'We would be grateful for your confirmation of the amended scope by tomorrow.', vi: 'Chúng tôi rất biết ơn nếu bạn xác nhận phạm vi đã sửa đổi trước ngày mai.' },
+      { en: 'We would be grateful for your confirmation of the amended scope so we can proceed.', vi: 'Chúng tôi rất biết ơn nếu bạn xác nhận phạm vi đã sửa đổi để chúng tôi có thể tiến hành.' },
     ],
   },
   {
@@ -14556,9 +14700,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The current terms are no longer tenable given the market conditions.',
     vietnamese: 'Các điều khoản hiện tại không còn khả thi trong bối cảnh thị trường hiện nay.',
     phonetic: '/ðə ˈkɜːrənt tɜːrmz ɑːr noʊ ˈlɔːŋɡər ˈtɛnəbəl ˈɡɪvən ðə ˈmɑːrkɪt kənˈdɪʃənz/',
+    usage: 'Dùng khi giải thích rằng điều khoản hiện tại không còn phù hợp do điều kiện thị trường thay đổi.',
     role: 'filler',
     examples: [
       { en: 'The current terms are no longer tenable given the market conditions we face.', vi: 'Các điều khoản hiện tại không còn khả thi trong bối cảnh thị trường chúng ta đang đối mặt.' },
+      { en: 'The current terms are no longer tenable given the rising material costs.', vi: 'Các điều khoản hiện tại không còn khả thi trong bối cảnh chi phí nguyên vật liệu tăng.' },
+      { en: 'The current terms are no longer tenable given the new regulations.', vi: 'Các điều khoản hiện tại không còn khả thi trong bối cảnh các quy định mới.' },
     ],
   },
   {
@@ -14569,9 +14716,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are prepared to make reasonable concessions to close the deal.',
     vietnamese: 'Chúng tôi sẵn sàng nhượng bộ hợp lý để chốt thương vụ.',
     phonetic: '/wiː ɑːr prɪˈpɛrd tuː meɪk ˈriːzənəbəl kənˈsɛʃənz tuː kloʊz ðə diːl/',
+    usage: 'Dùng khi thể hiện thiện chí nhượng bộ để thúc đẩy chốt thương vụ trong đàm phán.',
     role: 'filler',
     examples: [
       { en: 'We are prepared to make reasonable concessions to close the deal amicably.', vi: 'Chúng tôi sẵn sàng nhượng bộ hợp lý để chốt thương vụ một cách thiện chí.' },
+      { en: 'We are prepared to make reasonable concessions to close the deal this quarter.', vi: 'Chúng tôi sẵn sàng nhượng bộ hợp lý để chốt thương vụ trong quý này.' },
+      { en: 'We are prepared to make reasonable concessions on the delivery schedule.', vi: 'Chúng tôi sẵn sàng nhượng bộ hợp lý về lịch giao hàng.' },
     ],
   },
   {
@@ -14582,9 +14732,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We trust this proposal reflects a fair balance of interests.',
     vietnamese: 'Chúng tôi tin rằng đề xuất này phản ánh sự cân bằng lợi ích hợp lý.',
     phonetic: '/wiː trʌst ðɪs prəˈpoʊzəl rɪˈflɛkts ə fɛr ˈbæləns ɒv ˈɪntrəsts/',
+    usage: 'Dùng ở cuối email để khẳng định đề xuất cân bằng lợi ích giữa hai bên, tạo niềm tin.',
     role: 'closer',
     examples: [
       { en: 'We trust this proposal reflects a fair balance of interests for both sides.', vi: 'Chúng tôi tin rằng đề xuất này phản ánh sự cân bằng lợi ích hợp lý cho cả hai bên.' },
+      { en: 'We trust this proposal reflects a fair balance of interests for a long-term partnership.', vi: 'Chúng tôi tin rằng đề xuất này phản ánh sự cân bằng lợi ích hợp lý cho một mối quan hệ hợp tác lâu dài.' },
+      { en: 'We trust this proposal reflects a fair balance of interests and we look forward to your reply.', vi: 'Chúng tôi tin rằng đề xuất này phản ánh sự cân bằng lợi ích hợp lý và chúng tôi mong nhận hồi âm của bạn.' },
     ],
   },
   {
@@ -14595,9 +14748,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We remain optimistic about concluding this agreement favorably.',
     vietnamese: 'Chúng tôi vẫn lạc quan về việc chốt thỏa thuận này một cách thuận lợi.',
     phonetic: '/wiː rɪˈmeɪn ˈɒptɪmɪstɪk əˈbaʊt kənˈkluːdɪŋ ðɪs əˈɡriːmənt ˈfeɪvərəbli/',
+    usage: 'Dùng ở cuối email để bày tỏ sự lạc quan về việc hoàn tất thỏa thuận một cách thuận lợi.',
     role: 'closer',
     examples: [
       { en: 'We remain optimistic about concluding this agreement favorably for all parties.', vi: 'Chúng tôi vẫn lạc quan về việc chốt thỏa thuận này một cách thuận lợi cho tất cả các bên.' },
+      { en: 'We remain optimistic about concluding this agreement favorably for both sides.', vi: 'Chúng tôi vẫn lạc quan về việc chốt thỏa thuận này một cách thuận lợi cho cả hai bên.' },
+      { en: 'We remain optimistic about concluding this agreement favorably before the end of the year.', vi: 'Chúng tôi vẫn lạc quan về việc chốt thỏa thuận này một cách thuận lợi trước cuối năm.' },
     ],
   },
   {
@@ -14608,9 +14764,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am writing in connection with',
     vietnamese: 'tôi viết thư này để liên hệ về',
     phonetic: '/aɪ əm ˈraɪtɪŋ ɪn kəˈnekʃən wɪð/',
+    usage: 'Dùng khi mở đầu email để nêu lý do viết thư, liên quan đến một sự việc hoặc cuộc gặp trước đó.',
     role: 'opener',
     examples: [
       { en: 'I am writing in connection with our meeting yesterday.', vi: 'Tôi viết thư này để liên hệ về buổi họp hôm qua.' },
+      { en: 'I am writing in connection with the interview we scheduled.', vi: 'Tôi viết thư này để liên hệ về buổi phỏng vấn chúng ta đã lên lịch.' },
+      { en: 'I am writing in connection with the order you placed last week.', vi: 'Tôi viết thư này để liên hệ về đơn hàng bạn đã đặt tuần trước.' },
     ],
   },
   {
@@ -14621,9 +14780,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'per our earlier discussion',
     vietnamese: 'theo như thảo luận trước đó của chúng ta',
     phonetic: '/pɜːr ˈaʊər ˈɜːliə dɪˈskʌʃən/',
+    usage: 'Dùng khi nhắc lại nội dung đã thống nhất trước đó và gửi tài liệu liên quan.',
     role: 'opener',
     examples: [
       { en: 'Per our earlier discussion, I am sending the file.', vi: 'Theo như thảo luận trước đó, tôi đang gửi tệp tin này.' },
+      { en: 'Per our earlier discussion, I am sending the updated schedule.', vi: 'Theo như thảo luận trước đó của chúng ta, tôi đang gửi lịch trình đã cập nhật.' },
+      { en: 'Per our earlier discussion, the team will start on Monday.', vi: 'Theo như thảo luận trước đó của chúng ta, đội ngũ sẽ bắt đầu vào thứ Hai.' },
     ],
   },
   {
@@ -14634,9 +14796,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'thank you for the prompt reply',
     vietnamese: 'cảm ơn bạn đã phản hồi nhanh chóng',
     phonetic: '/θæŋk juː fə ðə prɒmpt rɪˈplaɪ/',
+    usage: 'Dùng khi mở đầu email để cảm ơn người nhận đã trả lời nhanh chóng, thể hiện sự ghi nhận.',
     role: 'opener',
     examples: [
       { en: 'Thank you for the prompt reply to my question.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng câu hỏi của tôi.' },
+      { en: 'Thank you for the prompt reply, we will proceed with the plan.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng, chúng tôi sẽ tiến hành theo kế hoạch.' },
+      { en: 'Thank you for the prompt reply to my request for information.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng yêu cầu cung cấp thông tin của tôi.' },
     ],
   },
   {
@@ -14647,9 +14812,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I hope this email finds you well',
     vietnamese: 'tôi hy vọng bạn vẫn khỏe',
     phonetic: '/aɪ həʊp ðɪs ˈiːmeɪl faɪndz juː wel/',
+    usage: 'Dùng khi mở đầu email hỏi thăm sức khỏe người nhận một cách thân thiện trước khi vào việc.',
     role: 'opener',
     examples: [
       { en: 'I hope this email finds you well and ready for the quarter.', vi: 'Tôi hy vọng bạn vẫn khỏe và sẵn sàng cho quý mới.' },
+      { en: 'I hope this email finds you well and ready for the new quarter.', vi: 'Tôi hy vọng bạn vẫn khỏe và sẵn sàng cho quý mới.' },
+      { en: 'I hope this email finds you well despite the busy season.', vi: 'Tôi hy vọng bạn vẫn khỏe dù đang trong mùa bận rộn.' },
     ],
   },
   {
@@ -14660,9 +14828,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in response to your query',
     vietnamese: 'để trả lời câu hỏi của bạn',
     phonetic: '/ɪn rɪˈspɒns tə jɔː ˈkwɪəri/',
+    usage: 'Dùng khi chuyển sang trả lời một câu hỏi cụ thể mà người nhận đã gửi trước đó.',
     role: 'linker',
     examples: [
       { en: 'In response to your query, the price is unchanged.', vi: 'Để trả lời câu hỏi của bạn, giá vẫn không đổi.' },
+      { en: 'In response to your query, the delivery is scheduled for Friday.', vi: 'Để trả lời câu hỏi của bạn, việc giao hàng được lên lịch vào thứ Sáu.' },
+      { en: 'In response to your query, we do offer a trial version.', vi: 'Để trả lời câu hỏi của bạn, chúng tôi có cung cấp phiên bản dùng thử.' },
     ],
   },
   {
@@ -14673,9 +14844,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'with regard to the invoice',
     vietnamese: 'về việc hóa đơn',
     phonetic: '/wɪð rɪˈɡɑːd tə ði ˈɪnvɔɪs/',
+    usage: 'Dùng khi chuyển chủ đề email sang một vấn đề cụ thể, ví dụ về hóa đơn.',
     role: 'linker',
     examples: [
       { en: 'With regard to the invoice, please find it attached.', vi: 'Về việc hóa đơn, bạn vui lòng xem tệp đính kèm.' },
+      { en: 'With regard to the invoice, the payment was made yesterday.', vi: 'Về việc hóa đơn, khoản thanh toán đã được thực hiện hôm qua.' },
+      { en: 'With regard to the invoice, please note the new bank details.', vi: 'Về việc hóa đơn, xin lưu ý thông tin ngân hàng mới.' },
     ],
   },
   {
@@ -14686,9 +14860,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on a related note',
     vietnamese: 'nhân tiện, liên quan đến việc này',
     phonetic: '/ɒn ə rɪˈleɪtɪd nəʊt/',
+    usage: 'Dùng khi muốn thêm một thông tin liên quan đến chủ đề đang nói, như một ghi chú phụ.',
     role: 'linker',
     examples: [
       { en: 'On a related note, the contract is ready.', vi: 'Nhân tiện, hợp đồng đã sẵn sàng.' },
+      { en: 'On a related note, the office will be closed on Friday.', vi: 'Nhân tiện, liên quan đến việc này, văn phòng sẽ đóng cửa vào thứ Sáu.' },
+      { en: 'On a related note, we have hired two new designers.', vi: 'Nhân tiện, liên quan đến việc này, chúng tôi đã tuyển thêm hai nhà thiết kế mới.' },
     ],
   },
   {
@@ -14699,9 +14876,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we discussed earlier',
     vietnamese: 'như chúng ta đã thảo luận trước đó',
     phonetic: '/æz wiː dɪˈskʌst ˈɜːliə/',
+    usage: 'Dùng khi nhắc lại một thỏa thuận hoặc thông tin đã bàn trong các trao đổi trước.',
     role: 'linker',
     examples: [
       { en: 'As we discussed earlier, the deadline is Friday.', vi: 'Như chúng ta đã thảo luận trước đó, hạn chót là thứ Sáu.' },
+      { en: 'As we discussed earlier, the budget is still under review.', vi: 'Như chúng ta đã thảo luận trước đó, ngân sách vẫn đang được xem xét.' },
+      { en: 'As we discussed earlier, I will handle the client meeting.', vi: 'Như chúng ta đã thảo luận trước đó, tôi sẽ phụ trách buổi gặp khách hàng.' },
     ],
   },
   {
@@ -14712,9 +14892,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for the sake of clarity',
     vietnamese: 'để cho rõ ràng',
     phonetic: '/fə ðə seɪk ɒv ˈklærəti/',
+    usage: 'Dùng khi muốn làm rõ một điểm có thể gây hiểu lầm, giúp thông tin trở nên minh bạch.',
     role: 'filler',
     examples: [
       { en: 'For the sake of clarity, the total is twenty dollars.', vi: 'Để cho rõ ràng, tổng cộng là hai mươi đô la.' },
+      { en: 'For the sake of clarity, the discount applies to new orders only.', vi: 'Để cho rõ ràng, mức giảm giá chỉ áp dụng cho đơn hàng mới.' },
+      { en: 'For the sake of clarity, we are not changing the pricing this year.', vi: 'Để cho rõ ràng, chúng tôi không thay đổi giá trong năm nay.' },
     ],
   },
   {
@@ -14725,9 +14908,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in due course',
     vietnamese: 'trong thời gian thích hợp',
     phonetic: '/ɪn djuː kɔːs/',
+    usage: 'Dùng khi hứa sẽ gửi hoặc hoàn thành việc gì đó trong thời gian thích hợp, không nêu ngày cụ thể.',
     role: 'filler',
     examples: [
       { en: 'We will send the report in due course.', vi: 'Chúng tôi sẽ gửi báo cáo trong thời gian thích hợp.' },
+      { en: 'We will send the detailed report in due course.', vi: 'Chúng tôi sẽ gửi báo cáo chi tiết trong thời gian thích hợp.' },
+      { en: 'The refund will be processed in due course.', vi: 'Khoản hoàn tiền sẽ được xử lý trong thời gian thích hợp.' },
     ],
   },
   {
@@ -14738,9 +14924,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'needless to add',
     vietnamese: 'không cần phải nói thêm',
     phonetic: '/ˈniːdləs tə æd/',
+    usage: 'Dùng khi nhấn mạnh một điều hiển nhiên, ai cũng đồng tình, để tăng sức thuyết phục.',
     role: 'filler',
     examples: [
       { en: 'Needless to add, we are happy to help.', vi: 'Không cần phải nói thêm, chúng tôi rất vui được giúp đỡ.' },
+      { en: 'Needless to add, we are happy to support your team.', vi: 'Không cần phải nói thêm, chúng tôi rất vui được hỗ trợ đội ngũ của bạn.' },
+      { en: 'Needless to add, your feedback is always welcome.', vi: 'Không cần phải nói thêm, phản hồi của bạn luôn được hoan nghênh.' },
     ],
   },
   {
@@ -14751,9 +14940,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a quick note',
     vietnamese: 'như một ghi chú nhanh',
     phonetic: '/æz ə kwɪk nəʊt/',
+    usage: 'Dùng khi thêm một thông tin ngắn, quan trọng vào cuối hoặc giữa email như một ghi chú nhanh.',
     role: 'filler',
     examples: [
       { en: 'As a quick note, the meeting is moved to Monday.', vi: 'Như một ghi chú nhanh, buổi họp đã dời sang thứ Hai.' },
+      { en: 'As a quick note, the client called and confirmed the order.', vi: 'Như một ghi chú nhanh, khách hàng đã gọi và xác nhận đơn hàng.' },
+      { en: 'As a quick note, the training session is postponed.', vi: 'Như một ghi chú nhanh, buổi đào tạo đã bị hoãn.' },
     ],
   },
   {
@@ -14764,9 +14956,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would appreciate your confirmation',
     vietnamese: 'chúng tôi rất mong nhận được sự xác nhận của bạn',
     phonetic: '/wiː wʊd əˈpriːʃieɪt jɔː ˌkɒnfəˈmeɪʃən/',
+    usage: 'Dùng khi lịch sự yêu cầu người nhận xác nhận một thông tin hoặc quyết định, kèm thời hạn.',
     role: 'closer',
     examples: [
       { en: 'We would appreciate your confirmation by Friday.', vi: 'Chúng tôi rất mong nhận được sự xác nhận của bạn trước thứ Sáu.' },
+      { en: 'We would appreciate your confirmation by the end of the day.', vi: 'Chúng tôi rất mong nhận được sự xác nhận của bạn trước cuối ngày.' },
+      { en: 'We would appreciate your confirmation of the meeting time.', vi: 'Chúng tôi rất mong nhận được sự xác nhận của bạn về giờ họp.' },
     ],
   },
   {
@@ -14777,9 +14972,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'please revert at your convenience',
     vietnamese: 'xin vui lòng phản hồi khi bạn thuận tiện',
     phonetic: '/pliːz rɪˈvɜːt æt jɔː kənˈviːniəns/',
+    usage: 'Dùng ở cuối email để mời người nhận phản hồi khi họ thuận tiện, không tạo áp lực.',
     role: 'closer',
     examples: [
       { en: 'Please revert at your convenience with your decision.', vi: 'Xin vui lòng phản hồi khi bạn thuận tiện với quyết định của bạn.' },
+      { en: 'Please revert at your convenience with your preferred dates.', vi: 'Xin vui lòng phản hồi khi bạn thuận tiện với những ngày bạn muốn.' },
+      { en: 'Please revert at your convenience, there is no rush.', vi: 'Xin vui lòng phản hồi khi bạn thuận tiện, không cần gấp.' },
     ],
   },
   {
@@ -14790,9 +14988,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'warm regards for now',
     vietnamese: 'trân trọng cảm ơn',
     phonetic: '/wɔːm rɪˈɡɑːdz fə naʊ/',
+    usage: 'Dùng ở cuối email như lời chào kết thúc thân thiện, thường kèm lời hẹn gặp.',
     role: 'closer',
     examples: [
       { en: 'Warm regards for now and see you next week.', vi: 'Trân trọng và hẹn gặp bạn tuần sau.' },
+      { en: 'Warm regards for now and I will see you at the workshop.', vi: 'Trân trọng cảm ơn và hẹn gặp bạn tại buổi hội thảo.' },
+      { en: 'Warm regards for now and thank you for your support.', vi: 'Trân trọng cảm ơn và cảm ơn sự hỗ trợ của bạn.' },
     ],
   },
   {
@@ -14803,9 +15004,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'hoping to hear from you soon',
     vietnamese: 'hy vọng sớm nhận được phản hồi của bạn',
     phonetic: '/ˈhəʊpɪŋ tə hɪə frɒm juː suːn/',
+    usage: 'Dùng ở cuối email để bày tỏ hy vọng sớm nhận được phản hồi từ người nhận.',
     role: 'closer',
     examples: [
       { en: 'Hoping to hear from you soon, thank you.', vi: 'Hy vọng sớm nhận được phản hồi của bạn, cảm ơn.' },
+      { en: 'Hoping to hear from you soon, we are ready to start.', vi: 'Hy vọng sớm nhận được phản hồi của bạn, chúng tôi đã sẵn sàng bắt đầu.' },
+      { en: 'Hoping to hear from you soon about the proposal.', vi: 'Hy vọng sớm nhận được phản hồi của bạn về đề xuất.' },
     ],
   },
   {
@@ -14816,9 +15020,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am writing in connection with the proposal',
     vietnamese: 'tôi viết thư này để liên hệ về đề xuất',
     phonetic: '/aɪ əm ˈraɪtɪŋ ɪn kəˈnekʃən wɪð ðə prəˈpəʊzəl/',
+    usage: 'Dùng khi mở đầu email để nêu rõ mục đích liên hệ, thường về một đề xuất đã chia sẻ.',
     role: 'opener',
     examples: [
       { en: 'I am writing in connection with the proposal we shared.', vi: 'Tôi viết thư này để liên hệ về đề xuất chúng tôi đã chia sẻ.' },
+      { en: 'I am writing in connection with the proposal we shared last month.', vi: 'Tôi viết thư này để liên hệ về đề xuất chúng tôi đã chia sẻ tháng trước.' },
+      { en: 'I am writing in connection with the proposal, please find the updated version.', vi: 'Tôi viết thư này để liên hệ về đề xuất, xin xem phiên bản đã cập nhật.' },
     ],
   },
   {
@@ -14829,9 +15036,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'per our earlier discussion on the scope',
     vietnamese: 'theo như thảo luận trước đó về phạm vi',
     phonetic: '/pɜːr ˈaʊər ˈɜːliə dɪˈskʌʃən ɒn ðə skəʊp/',
+    usage: 'Dùng khi nhắc lại thảo luận trước về phạm vi công việc và gửi tài liệu liên quan.',
     role: 'opener',
     examples: [
       { en: 'Per our earlier discussion on the scope, I attach the plan.', vi: 'Theo như thảo luận trước đó về phạm vi, tôi gửi kèm kế hoạch.' },
+      { en: 'Per our earlier discussion on the scope, I attach the revised plan.', vi: 'Theo như thảo luận trước đó về phạm vi, tôi đính kèm kế hoạch đã chỉnh sửa.' },
+      { en: 'Per our earlier discussion on the scope, we have added two new tasks.', vi: 'Theo như thảo luận trước đó về phạm vi, chúng tôi đã thêm hai nhiệm vụ mới.' },
     ],
   },
   {
@@ -14842,9 +15052,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'thank you for the prompt reply to my inquiry',
     vietnamese: 'cảm ơn bạn đã phản hồi nhanh chóng thắc mắc của tôi',
     phonetic: '/θæŋk juː fə ðə prɒmpt rɪˈplaɪ tə maɪ ɪnˈkwaɪəri/',
+    usage: 'Dùng khi mở đầu email để cảm ơn người nhận đã trả lời nhanh một thắc mắc cụ thể.',
     role: 'opener',
     examples: [
       { en: 'Thank you for the prompt reply to my inquiry about pricing.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng thắc mắc của tôi về giá cả.' },
+      { en: 'Thank you for the prompt reply to my inquiry about the warranty.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng thắc mắc của tôi về bảo hành.' },
+      { en: 'Thank you for the prompt reply to my inquiry, it was very helpful.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng thắc mắc của tôi, điều đó rất hữu ích.' },
     ],
   },
   {
@@ -14855,9 +15068,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I trust this email finds you well',
     vietnamese: 'Tôi tin rằng thư này đến tay bạn lúc bạn khỏe',
     phonetic: '/aɪ trʌst ðɪs ˈiːmeɪl faɪndz juː wel/',
+    usage: 'Dùng khi mở đầu email trang trọng để hỏi thăm sức khỏe người nhận trước khi vào nội dung.',
     role: 'opener',
     examples: [
       { en: 'I trust this email finds you well.', vi: 'Tôi tin rằng thư này đến tay bạn lúc bạn khỏe.' },
+      { en: 'I trust this email finds you well and in good spirits.', vi: 'Tôi tin rằng thư này đến tay bạn lúc bạn khỏe và vui vẻ.' },
+      { en: 'I trust this email finds you well after the busy quarter.', vi: 'Tôi tin rằng thư này đến tay bạn lúc bạn khỏe sau một quý bận rộn.' },
     ],
   },
   {
@@ -14868,9 +15084,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in response to your query about the terms',
     vietnamese: 'để trả lời câu hỏi của bạn về các điều khoản',
     phonetic: '/ɪn rɪˈspɒns tə jɔː ˈkwɪəri əˈbaʊt ðə tɜːmz/',
+    usage: 'Dùng khi trả lời một câu hỏi cụ thể về điều khoản mà người nhận đã đặt ra.',
     role: 'linker',
     examples: [
       { en: 'In response to your query about the terms, here are the details.', vi: 'Để trả lời câu hỏi của bạn về các điều khoản, đây là chi tiết.' },
+      { en: 'In response to your query about the terms, the payment is due in thirty days.', vi: 'Để trả lời câu hỏi của bạn về các điều khoản, khoản thanh toán đến hạn trong ba mươi ngày.' },
+      { en: 'In response to your query about the terms, we can negotiate the price.', vi: 'Để trả lời câu hỏi của bạn về các điều khoản, chúng tôi có thể thương lượng giá.' },
     ],
   },
   {
@@ -14881,9 +15100,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'with regard to the invoice of last week',
     vietnamese: 'về hóa đơn của tuần trước',
     phonetic: '/wɪð rɪˈɡɑːd tə ði ˈɪnvɔɪs ɒv lɑːst wiːk/',
+    usage: 'Dùng khi chuyển chủ đề email sang một hóa đơn cụ thể cần xử lý.',
     role: 'linker',
     examples: [
       { en: 'With regard to the invoice of last week, the payment is due.', vi: 'Về hóa đơn của tuần trước, khoản thanh toán đã đến hạn.' },
+      { en: 'With regard to the invoice of last week, the payment is now due.', vi: 'Về hóa đơn của tuần trước, khoản thanh toán hiện đã đến hạn.' },
+      { en: 'With regard to the invoice of last week, please check the total amount.', vi: 'Về hóa đơn của tuần trước, xin hãy kiểm tra tổng số tiền.' },
     ],
   },
   {
@@ -14894,9 +15116,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on a related note, the schedule has changed',
     vietnamese: 'nhân tiện, lịch trình đã thay đổi',
     phonetic: '/ɒn ə rɪˈleɪtɪd nəʊt ðə ˈʃedjuːl hæz tʃeɪndʒd/',
+    usage: 'Dùng khi thêm một thông tin liên quan về sự thay đổi lịch trình vào email.',
     role: 'linker',
     examples: [
       { en: 'On a related note, the schedule has changed for next month.', vi: 'Nhân tiện, lịch trình đã thay đổi cho tháng tới.' },
+      { en: 'On a related note, the schedule has changed for the training sessions.', vi: 'Nhân tiện, lịch trình đã thay đổi cho các buổi đào tạo.' },
+      { en: 'On a related note, the schedule has changed, please check the calendar invite.', vi: 'Nhân tiện, lịch trình đã thay đổi, xin hãy kiểm tra lời mời trên lịch.' },
     ],
   },
   {
@@ -14907,9 +15132,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we discussed in the call',
     vietnamese: 'như chúng ta đã thảo luận trong cuộc gọi',
     phonetic: '/æz wiː dɪˈskʌst ɪn ðə kɔːl/',
+    usage: 'Dùng khi nhắc lại nội dung đã bàn trong cuộc gọi và gửi tài liệu theo thỏa thuận.',
     role: 'linker',
     examples: [
       { en: 'As we discussed in the call, I will share the draft.', vi: 'Như chúng ta đã thảo luận trong cuộc gọi, tôi sẽ chia sẻ bản nháp.' },
+      { en: 'As we discussed in the call, I will share the draft by tomorrow.', vi: 'Như chúng ta đã thảo luận trong cuộc gọi, tôi sẽ chia sẻ bản nháp trước ngày mai.' },
+      { en: 'As we discussed in the call, the client agreed to the new timeline.', vi: 'Như chúng ta đã thảo luận trong cuộc gọi, khách hàng đã đồng ý với mốc thời gian mới.' },
     ],
   },
   {
@@ -14920,9 +15148,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for the sake of clarity, here is the summary',
     vietnamese: 'để cho rõ ràng, đây là bản tóm tắt',
     phonetic: '/fə ðə seɪk ɒv ˈklærəti hɪə ɪz ðə ˈsʌməri/',
+    usage: 'Dùng khi muốn tóm tắt lại nội dung để mọi thứ rõ ràng, tránh hiểu lầm.',
     role: 'filler',
     examples: [
       { en: 'For the sake of clarity, here is the summary of the agreement.', vi: 'Để cho rõ ràng, đây là bản tóm tắt của thỏa thuận.' },
+      { en: 'For the sake of clarity, here is the summary of the agreement.', vi: 'Để cho rõ ràng, đây là bản tóm tắt của thỏa thuận.' },
+      { en: 'For the sake of clarity, here is the summary of the meeting notes.', vi: 'Để cho rõ ràng, đây là bản tóm tắt biên bản cuộc họp.' },
     ],
   },
   {
@@ -14933,9 +15164,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we will finalize in due course',
     vietnamese: 'chúng tôi sẽ hoàn tất trong thời gian thích hợp',
     phonetic: '/wiː wɪl ˈfaɪnəlaɪz ɪn djuː kɔːs/',
+    usage: 'Dùng khi hứa sẽ hoàn tất một việc trong thời gian thích hợp, không cam kết ngày cụ thể.',
     role: 'filler',
     examples: [
       { en: 'We will finalize the contract in due course.', vi: 'Chúng tôi sẽ hoàn tất hợp đồng trong thời gian thích hợp.' },
+      { en: 'We will finalize the contract in due course after the review.', vi: 'Chúng tôi sẽ hoàn tất hợp đồng trong thời gian thích hợp sau khi xem xét.' },
+      { en: 'We will finalize the details in due course, please be patient.', vi: 'Chúng tôi sẽ hoàn tất các chi tiết trong thời gian thích hợp, xin hãy kiên nhẫn.' },
     ],
   },
   {
@@ -14946,9 +15180,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'needless to add, everything is in order',
     vietnamese: 'không cần phải nói thêm, mọi thứ đều ổn',
     phonetic: '/ˈniːdləs tə æd ˈevriθɪŋ ɪz ɪn ˈɔːdə/',
+    usage: 'Dùng khi trấn an rằng mọi thứ đang ổn, không có vấn đề gì cần lo lắng.',
     role: 'filler',
     examples: [
       { en: 'Needless to add, everything is in order for the launch.', vi: 'Không cần phải nói thêm, mọi thứ đều ổn cho buổi ra mắt.' },
+      { en: 'Needless to add, everything is in order for the product launch.', vi: 'Không cần phải nói thêm, mọi thứ đều ổn cho buổi ra mắt sản phẩm.' },
+      { en: 'Needless to add, everything is in order and we are on track.', vi: 'Không cần phải nói thêm, mọi thứ đều ổn và chúng ta đang đúng tiến độ.' },
     ],
   },
   {
@@ -14959,9 +15196,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a quick note, the date has been set',
     vietnamese: 'như một ghi chú nhanh, ngày đã được chốt',
     phonetic: '/æz ə kwɪk nəʊt ðə deɪt hæz biːn set/',
+    usage: 'Dùng khi thêm một thông tin ngắn về một ngày đã được chốt, như một ghi chú nhanh.',
     role: 'filler',
     examples: [
       { en: 'As a quick note, the date has been set for the review.', vi: 'Như một ghi chú nhanh, ngày đã được chốt cho buổi đánh giá.' },
+      { en: 'As a quick note, the date has been set for the product review.', vi: 'Như một ghi chú nhanh, ngày đã được chốt cho buổi đánh giá sản phẩm.' },
+      { en: 'As a quick note, the date has been set for the annual meeting.', vi: 'Như một ghi chú nhanh, ngày đã được chốt cho cuộc họp thường niên.' },
     ],
   },
   {
@@ -14972,9 +15212,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would appreciate your confirmation on this',
     vietnamese: 'chúng tôi rất mong nhận được sự xác nhận của bạn về việc này',
     phonetic: '/wiː wʊd əˈpriːʃieɪt jɔː ˌkɒnfəˈmeɪʃən ɒn ðɪs/',
+    usage: 'Dùng khi lịch sự yêu cầu xác nhận về một việc cụ thể, thường kèm thời hạn.',
     role: 'closer',
     examples: [
       { en: 'We would appreciate your confirmation on this by end of day.', vi: 'Chúng tôi rất mong nhận được sự xác nhận của bạn về việc này trước cuối ngày.' },
+      { en: 'We would appreciate your confirmation on this by the end of the day.', vi: 'Chúng tôi rất mong nhận được sự xác nhận của bạn về việc này trước cuối ngày.' },
+      { en: 'We would appreciate your confirmation on this before we proceed.', vi: 'Chúng tôi rất mong nhận được sự xác nhận của bạn về việc này trước khi chúng tôi tiến hành.' },
     ],
   },
   {
@@ -14985,9 +15228,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'please respond when convenient',
     vietnamese: 'vui lòng phản hồi khi thuận tiện',
     phonetic: '/pliːz rɪˈspɒnd wen kənˈviːniənt/',
+    usage: 'Dùng ở cuối email để mời người nhận phản hồi khi họ thấy thuận tiện.',
     role: 'closer',
     examples: [
       { en: 'Please respond when convenient with your decision.', vi: 'Vui lòng phản hồi khi thuận tiện về quyết định của bạn.' },
+      { en: 'Please respond when convenient with your final decision.', vi: 'Vui lòng phản hồi khi thuận tiện với quyết định cuối cùng của bạn.' },
+      { en: 'Please respond when convenient, we will wait for your input.', vi: 'Vui lòng phản hồi khi thuận tiện, chúng tôi sẽ chờ ý kiến của bạn.' },
     ],
   },
   {
@@ -14998,9 +15244,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'warm regards and best wishes',
     vietnamese: 'trân trọng và chúc mọi điều tốt đẹp',
     phonetic: '/wɔːm rɪˈɡɑːdz ənd best ˈwɪʃɪz/',
+    usage: 'Dùng ở cuối email như lời chào kết thúc trang trọng, thường kèm lời chúc tốt đẹp.',
     role: 'closer',
     examples: [
       { en: 'Warm regards and best wishes for the new year.', vi: 'Trân trọng và chúc mọi điều tốt đẹp cho năm mới.' },
+      { en: 'Warm regards and best wishes for the upcoming holiday.', vi: 'Trân trọng và chúc mọi điều tốt đẹp cho kỳ nghỉ sắp tới.' },
+      { en: 'Warm regards and best wishes for your family.', vi: 'Trân trọng và chúc mọi điều tốt đẹp cho gia đình bạn.' },
     ],
   },
   {
@@ -15011,9 +15260,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'awaiting your confirmation',
     vietnamese: 'đang chờ xác nhận của bạn',
     phonetic: '/əˈweɪtɪŋ jɔːr ˌkɒnfəˈmeɪʃn/',
+    usage: 'Dùng ở cuối email để thông báo đang chờ xác nhận và sẽ hành động theo sau đó.',
     role: 'closer',
     examples: [
       { en: 'Awaiting your confirmation, we will proceed accordingly.', vi: 'Đang chờ xác nhận của bạn, chúng tôi sẽ tiến hành theo đó.' },
+      { en: 'Awaiting your confirmation, we will proceed accordingly.', vi: 'Đang chờ xác nhận của bạn, chúng tôi sẽ tiến hành theo đó.' },
+      { en: 'Awaiting your confirmation, we will prepare the documents.', vi: 'Đang chờ xác nhận của bạn, chúng tôi sẽ chuẩn bị tài liệu.' },
     ],
   },
   {
@@ -15024,9 +15276,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am writing in connection with the partnership',
     vietnamese: 'tôi viết thư này để liên hệ về quan hệ đối tác',
     phonetic: '/aɪ əm ˈraɪtɪŋ ɪn kəˈnekʃən wɪð ðə ˈpɑːtnəʃɪp/',
+    usage: 'Dùng khi mở đầu email để liên hệ về một mối quan hệ đối tác đã được bàn trước đó.',
     role: 'opener',
     examples: [
       { en: 'I am writing in connection with the partnership we discussed.', vi: 'Tôi viết thư này để liên hệ về quan hệ đối tác chúng ta đã thảo luận.' },
+      { en: 'I am writing in connection with the partnership we discussed at the conference.', vi: 'Tôi viết thư này để liên hệ về quan hệ đối tác chúng ta đã bàn tại hội nghị.' },
+      { en: 'I am writing in connection with the partnership, here are the next steps.', vi: 'Tôi viết thư này để liên hệ về quan hệ đối tác, đây là các bước tiếp theo.' },
     ],
   },
   {
@@ -15037,9 +15292,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'per our earlier discussion on the deliverables',
     vietnamese: 'theo như thảo luận trước đó về các sản phẩm bàn giao',
     phonetic: '/pɜːr ˈaʊər ˈɜːliə dɪˈskʌʃən ɒn ðə dɪˈlɪvərəbəlz/',
+    usage: 'Dùng khi nhắc lại thảo luận về sản phẩm bàn giao và gửi kèm mốc thời gian.',
     role: 'opener',
     examples: [
       { en: 'Per our earlier discussion on the deliverables, here is the timeline.', vi: 'Theo như thảo luận trước đó về các sản phẩm bàn giao, đây là mốc thời gian.' },
+      { en: 'Per our earlier discussion on the deliverables, here is the timeline.', vi: 'Theo như thảo luận trước đó về các sản phẩm bàn giao, đây là mốc thời gian.' },
+      { en: 'Per our earlier discussion on the deliverables, we have adjusted the scope.', vi: 'Theo như thảo luận trước đó về các sản phẩm bàn giao, chúng tôi đã điều chỉnh phạm vi.' },
     ],
   },
   {
@@ -15050,9 +15308,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'thank you for the prompt reply to our request',
     vietnamese: 'cảm ơn bạn đã phản hồi nhanh chóng yêu cầu của chúng tôi',
     phonetic: '/θæŋk juː fə ðə prɒmpt rɪˈplaɪ tə ˈaʊə rɪˈkwest/',
+    usage: 'Dùng khi mở đầu email để cảm ơn người nhận đã phản hồi nhanh một yêu cầu của mình.',
     role: 'opener',
     examples: [
       { en: 'Thank you for the prompt reply to our request for documents.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng yêu cầu tài liệu của chúng tôi.' },
+      { en: 'Thank you for the prompt reply to our request for the financial statements.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng yêu cầu cung cấp báo cáo tài chính của chúng tôi.' },
+      { en: 'Thank you for the prompt reply to our request, we appreciate it.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng yêu cầu của chúng tôi, chúng tôi rất trân trọng.' },
     ],
   },
   {
@@ -15063,9 +15324,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I hope all is well with you',
     vietnamese: 'Tôi hy vọng bạn vẫn ổn',
     phonetic: '/aɪ həʊp ɔːl ɪz wel wɪð juː/',
+    usage: 'Dùng khi mở đầu email để hỏi thăm tình hình của người nhận và đội ngũ của họ.',
     role: 'opener',
     examples: [
       { en: 'I hope all is well with you and your team.', vi: 'Tôi hy vọng bạn và đội của bạn vẫn ổn.' },
+      { en: 'I hope all is well with you and your team during this busy period.', vi: 'Tôi hy vọng bạn vẫn ổn và đội ngũ của bạn vẫn khỏe trong giai đoạn bận rộn này.' },
+      { en: 'I hope all is well with you, we look forward to working together.', vi: 'Tôi hy vọng bạn vẫn ổn, chúng tôi mong chờ được hợp tác cùng bạn.' },
     ],
   },
   {
@@ -15076,9 +15340,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in response to your query on the contract',
     vietnamese: 'để trả lời câu hỏi của bạn về hợp đồng',
     phonetic: '/ɪn rɪˈspɒns tə jɔː ˈkwɪəri ɒn ðə ˈkɒntrækt/',
+    usage: 'Dùng khi trả lời một câu hỏi cụ thể về hợp đồng mà người nhận đã đặt ra.',
     role: 'linker',
     examples: [
       { en: 'In response to your query on the contract, all clauses are final.', vi: 'Để trả lời câu hỏi của bạn về hợp đồng, mọi điều khoản đã là cuối cùng.' },
+      { en: 'In response to your query on the contract, all clauses are final.', vi: 'Để trả lời câu hỏi của bạn về hợp đồng, tất cả các điều khoản đã chốt.' },
+      { en: 'In response to your query on the contract, the renewal is automatic.', vi: 'Để trả lời câu hỏi của bạn về hợp đồng, việc gia hạn là tự động.' },
     ],
   },
   {
@@ -15089,9 +15356,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'with regard to the invoice attached',
     vietnamese: 'về hóa đơn đính kèm',
     phonetic: '/wɪð rɪˈɡɑːd tə ði ˈɪnvɔɪs əˈtætʃt/',
+    usage: 'Dùng khi chuyển chủ đề email sang hóa đơn đính kèm cần người nhận kiểm tra.',
     role: 'linker',
     examples: [
       { en: 'With regard to the invoice attached, the total is correct.', vi: 'Về hóa đơn đính kèm, tổng số tiền là chính xác.' },
+      { en: 'With regard to the invoice attached, the total is correct.', vi: 'Về hóa đơn đính kèm, tổng số tiền là chính xác.' },
+      { en: 'With regard to the invoice attached, please confirm the bank details.', vi: 'Về hóa đơn đính kèm, xin hãy xác nhận thông tin ngân hàng.' },
     ],
   },
   {
@@ -15102,9 +15372,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on a related note, the pricing has changed',
     vietnamese: 'nhân tiện, giá cả đã thay đổi',
     phonetic: '/ɒn ə rɪˈleɪtɪd nəʊt ðə ˈpraɪsɪŋ hæz tʃeɪndʒd/',
+    usage: 'Dùng khi thêm thông tin về sự thay đổi giá cả liên quan đến chủ đề đang trao đổi.',
     role: 'linker',
     examples: [
       { en: 'On a related note, the pricing has changed for the new tier.', vi: 'Nhân tiện, giá cả đã thay đổi cho gói mới.' },
+      { en: 'On a related note, the pricing has changed for the enterprise tier.', vi: 'Nhân tiện, giá cả đã thay đổi cho gói doanh nghiệp.' },
+      { en: 'On a related note, the pricing has changed, the new list is attached.', vi: 'Nhân tiện, giá cả đã thay đổi, bảng giá mới được đính kèm.' },
     ],
   },
   {
@@ -15115,9 +15388,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we discussed in our last call',
     vietnamese: 'như chúng ta đã thảo luận trong cuộc gọi gần nhất',
     phonetic: '/æz wiː dɪˈskʌst ɪn ˈaʊə lɑːst kɔːl/',
+    usage: 'Dùng khi nhắc lại nội dung đã bàn trong cuộc gọi gần nhất và gửi tài liệu liên quan.',
     role: 'linker',
     examples: [
       { en: 'As we discussed in our last call, I will send the budget.', vi: 'Như chúng ta đã thảo luận trong cuộc gọi gần nhất, tôi sẽ gửi ngân sách.' },
+      { en: 'As we discussed in our last call, I will send the budget breakdown.', vi: 'Như chúng ta đã thảo luận trong cuộc gọi gần nhất, tôi sẽ gửi bảng phân tích ngân sách.' },
+      { en: 'As we discussed in our last call, the launch date is confirmed.', vi: 'Như chúng ta đã thảo luận trong cuộc gọi gần nhất, ngày ra mắt đã được xác nhận.' },
     ],
   },
   {
@@ -15128,9 +15404,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for the sake of clarity, allow me to summarize',
     vietnamese: 'để cho rõ ràng, cho phép tôi tóm tắt',
     phonetic: '/fə ðə seɪk ɒv ˈklærəti əˈlaʊ miː tə ˈsʌməraɪz/',
+    usage: 'Dùng khi muốn tóm tắt lại các điểm chính để mọi thứ rõ ràng trước khi kết thúc email.',
     role: 'filler',
     examples: [
       { en: 'For the sake of clarity, allow me to summarize the points.', vi: 'Để cho rõ ràng, cho phép tôi tóm tắt các điểm.' },
+      { en: 'For the sake of clarity, allow me to summarize the key points.', vi: 'Để cho rõ ràng, cho phép tôi tóm tắt các điểm chính.' },
+      { en: 'For the sake of clarity, allow me to summarize the next steps.', vi: 'Để cho rõ ràng, cho phép tôi tóm tắt các bước tiếp theo.' },
     ],
   },
   {
@@ -15141,9 +15420,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we will revert in due course',
     vietnamese: 'chúng tôi sẽ phản hồi trong thời gian thích hợp',
     phonetic: '/wiː wɪl rɪˈvɜːt ɪn djuː kɔːs/',
+    usage: 'Dùng khi hứa sẽ phản hồi sau khi đội ngũ xem xét, không nêu thời điểm cụ thể.',
     role: 'filler',
     examples: [
       { en: 'We will revert in due course once the team reviews it.', vi: 'Chúng tôi sẽ phản hồi trong thời gian thích hợp khi nhóm xem xét.' },
+      { en: 'We will revert in due course once the team reviews the proposal.', vi: 'Chúng tôi sẽ phản hồi trong thời gian thích hợp sau khi đội ngũ xem xét đề xuất.' },
+      { en: 'We will revert in due course with our final answer.', vi: 'Chúng tôi sẽ phản hồi trong thời gian thích hợp với câu trả lời cuối cùng.' },
     ],
   },
   {
@@ -15154,9 +15436,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'needless to add, we remain committed',
     vietnamese: 'không cần phải nói thêm, chúng tôi vẫn cam kết',
     phonetic: '/ˈniːdləs tə æd wiː rɪˈmeɪn kəˈmɪtɪd/',
+    usage: 'Dùng khi khẳng định lại cam kết của mình với một mốc thời gian hoặc kế hoạch.',
     role: 'filler',
     examples: [
       { en: 'Needless to add, we remain committed to the timeline.', vi: 'Không cần phải nói thêm, chúng tôi vẫn cam kết với tiến độ.' },
+      { en: 'Needless to add, we remain committed to the agreed timeline.', vi: 'Không cần phải nói thêm, chúng tôi vẫn cam kết với mốc thời gian đã thống nhất.' },
+      { en: 'Needless to add, we remain committed to delivering quality work.', vi: 'Không cần phải nói thêm, chúng tôi vẫn cam kết mang lại chất lượng công việc.' },
     ],
   },
   {
@@ -15167,9 +15452,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a quick note, the budget is approved',
     vietnamese: 'như một ghi chú nhanh, ngân sách đã được duyệt',
     phonetic: '/æz ə kwɪk nəʊt ðə ˈbʌdʒɪt ɪz əˈpruːvd/',
+    usage: 'Dùng khi thêm một thông tin ngắn về một quyết định đã được duyệt, như một ghi chú nhanh.',
     role: 'filler',
     examples: [
       { en: 'As a quick note, the budget is approved for the project.', vi: 'Như một ghi chú nhanh, ngân sách đã được duyệt cho dự án.' },
+      { en: 'As a quick note, the budget is approved for the marketing campaign.', vi: 'Như một ghi chú nhanh, ngân sách đã được duyệt cho chiến dịch marketing.' },
+      { en: 'As a quick note, the budget is approved, we can start hiring.', vi: 'Như một ghi chú nhanh, ngân sách đã được duyệt, chúng ta có thể bắt đầu tuyển dụng.' },
     ],
   },
   {
@@ -15180,9 +15468,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would appreciate your confirmation of receipt',
     vietnamese: 'chúng tôi rất mong nhận được sự xác nhận đã nhận được',
     phonetic: '/wiː wʊd əˈpriːʃieɪt jɔː ˌkɒnfəˈmeɪʃən ɒv rɪˈsiːt/',
+    usage: 'Dùng khi yêu cầu người nhận xác nhận đã nhận được email hoặc tài liệu gửi kèm.',
     role: 'closer',
     examples: [
       { en: 'We would appreciate your confirmation of receipt of this email.', vi: 'Chúng tôi rất mong nhận được sự xác nhận đã nhận được email này.' },
+      { en: 'We would appreciate your confirmation of receipt of this email.', vi: 'Chúng tôi rất mong nhận được sự xác nhận đã nhận được email này.' },
+      { en: 'We would appreciate your confirmation of receipt of the attached files.', vi: 'Chúng tôi rất mong nhận được sự xác nhận đã nhận được các file đính kèm.' },
     ],
   },
   {
@@ -15193,9 +15484,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'please revert at your earliest convenience',
     vietnamese: 'xin vui lòng phản hồi càng sớm càng tốt',
     phonetic: '/pliːz rɪˈvɜːt æt jɔː ˈɜːliɪst kənˈviːniəns/',
+    usage: 'Dùng ở cuối email để yêu cầu phản hồi càng sớm càng tốt, thể hiện sự cần thiết về thời gian.',
     role: 'closer',
     examples: [
       { en: 'Please revert at your earliest convenience with the schedule.', vi: 'Xin vui lòng phản hồi càng sớm càng tốt với lịch trình.' },
+      { en: 'Please revert at your earliest convenience with the proposed dates.', vi: 'Xin vui lòng phản hồi càng sớm càng tốt với những ngày đề xuất.' },
+      { en: 'Please revert at your earliest convenience so we can finalize the plan.', vi: 'Xin vui lòng phản hồi càng sớm càng tốt để chúng ta có thể chốt kế hoạch.' },
     ],
   },
   {
@@ -15206,9 +15500,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'warm regards and looking forward',
     vietnamese: 'trân trọng và mong chờ',
     phonetic: '/wɔːm rɪˈɡɑːdz ənd ˈlʊkɪŋ ˈfɔːwəd/',
+    usage: 'Dùng ở cuối email như lời chào kết thúc, kèm sự mong chờ các bước tiếp theo.',
     role: 'closer',
     examples: [
       { en: 'Warm regards and looking forward to our next steps.', vi: 'Trân trọng và mong chờ các bước tiếp theo của chúng ta.' },
+      { en: 'Warm regards and looking forward to our next steps.', vi: 'Trân trọng và mong chờ các bước tiếp theo của chúng ta.' },
+      { en: 'Warm regards and looking forward to working with you.', vi: 'Trân trọng và mong chờ được làm việc cùng bạn.' },
     ],
   },
   {
@@ -15219,9 +15516,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'looking forward to your confirmation of the terms',
     vietnamese: 'mong chờ sự xác nhận của bạn về các điều khoản',
     phonetic: '/ˈlʊkɪŋ ˈfɔːwəd tə jɔː ˌkɒnfəˈmeɪʃən ɒv ðə tɜːmz/',
+    usage: 'Dùng ở cuối email để bày tỏ sự mong đợi nhận được xác nhận về các điều khoản.',
     role: 'closer',
     examples: [
       { en: 'Looking forward to your confirmation of the terms this week.', vi: 'Mong chờ sự xác nhận của bạn về các điều khoản trong tuần này.' },
+      { en: 'Looking forward to your confirmation of the terms this week.', vi: 'Mong chờ sự xác nhận của bạn về các điều khoản trong tuần này.' },
+      { en: 'Looking forward to your confirmation of the terms so we can sign.', vi: 'Mong chờ sự xác nhận của bạn về các điều khoản để chúng ta có thể ký kết.' },
     ],
   },
   {
@@ -15232,9 +15532,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am writing in connection with the agreement',
     vietnamese: 'tôi viết thư này để liên hệ về thỏa thuận',
     phonetic: '/aɪ əm ˈraɪtɪŋ ɪn kəˈnekʃən wɪð ði əˈɡriːmənt/',
+    usage: 'Dùng khi mở đầu email trang trọng để liên hệ về một thỏa thuận đã ký hoặc đang bàn.',
     role: 'opener',
     examples: [
       { en: 'I am writing in connection with the agreement we signed.', vi: 'Tôi viết thư này để liên hệ về thỏa thuận chúng ta đã ký.' },
+      { en: 'I am writing in connection with the agreement we signed last quarter.', vi: 'Tôi viết thư này để liên hệ về thỏa thuận chúng ta đã ký quý trước.' },
+      { en: 'I am writing in connection with the agreement, please find the amendment.', vi: 'Tôi viết thư này để liên hệ về thỏa thuận, xin xem phụ lục sửa đổi.' },
     ],
   },
   {
@@ -15245,9 +15548,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'per our earlier discussion on the terms',
     vietnamese: 'theo như thảo luận trước đó về các điều khoản',
     phonetic: '/pɜːr ˈaʊər ˈɜːliə dɪˈskʌʃən ɒn ðə tɜːmz/',
+    usage: 'Dùng khi nhắc lại thảo luận về điều khoản và gửi kèm bản nháp cho đối tác.',
     role: 'opener',
     examples: [
       { en: 'Per our earlier discussion on the terms, I enclose the draft.', vi: 'Theo như thảo luận trước đó về các điều khoản, tôi gửi kèm bản nháp.' },
+      { en: 'Per our earlier discussion on the terms, I enclose the draft.', vi: 'Theo như thảo luận trước đó về các điều khoản, tôi đính kèm bản nháp.' },
+      { en: 'Per our earlier discussion on the terms, we have made the adjustments.', vi: 'Theo như thảo luận trước đó về các điều khoản, chúng tôi đã thực hiện các điều chỉnh.' },
     ],
   },
   {
@@ -15258,9 +15564,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'thank you for the prompt reply to our proposal',
     vietnamese: 'cảm ơn bạn đã phản hồi nhanh chóng đề xuất của chúng tôi',
     phonetic: '/θæŋk juː fə ðə prɒmpt rɪˈplaɪ tə ˈaʊə prəˈpəʊzəl/',
+    usage: 'Dùng khi mở đầu email để cảm ơn đối tác đã phản hồi nhanh một đề xuất quan trọng.',
     role: 'opener',
     examples: [
       { en: 'Thank you for the prompt reply to our proposal for the merger.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng đề xuất sáp nhập của chúng tôi.' },
+      { en: 'Thank you for the prompt reply to our proposal for the merger.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng đề xuất sáp nhập của chúng tôi.' },
+      { en: 'Thank you for the prompt reply to our proposal, we value your input.', vi: 'Cảm ơn bạn đã phản hồi nhanh chóng đề xuất của chúng tôi, chúng tôi trân trọng ý kiến của bạn.' },
     ],
   },
   {
@@ -15271,9 +15580,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I trust this message finds you well',
     vietnamese: 'tôi tin rằng bạn vẫn khỏe',
     phonetic: '/aɪ trʌst ðɪs ˈmesɪdʒ faɪndz juː wel/',
+    usage: 'Dùng khi mở đầu email trang trọng để hỏi thăm sức khỏe người nhận sau một khoảng thời gian.',
     role: 'opener',
     examples: [
       { en: 'I trust this message finds you well after the holidays.', vi: 'Tôi tin rằng bạn vẫn khỏe sau kỳ nghỉ.' },
+      { en: 'I trust this message finds you well after the holidays.', vi: 'Tôi tin rằng bạn vẫn khỏe sau kỳ nghỉ lễ.' },
+      { en: 'I trust this message finds you well and in good health.', vi: 'Tôi tin rằng bạn vẫn khỏe và có sức khỏe tốt.' },
     ],
   },
   {
@@ -15284,9 +15596,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in response to your query on the annex',
     vietnamese: 'để trả lời câu hỏi của bạn về phụ lục',
     phonetic: '/ɪn rɪˈspɒns tə jɔː ˈkwɪəri ɒn ðə əˈneks/',
+    usage: 'Dùng khi trả lời một câu hỏi cụ thể về phụ lục hoặc tài liệu đính kèm.',
     role: 'linker',
     examples: [
       { en: 'In response to your query on the annex, it has been revised.', vi: 'Để trả lời câu hỏi của bạn về phụ lục, nó đã được sửa lại.' },
+      { en: 'In response to your query on the annex, it has been revised.', vi: 'Để trả lời câu hỏi của bạn về phụ lục, nó đã được sửa đổi.' },
+      { en: 'In response to your query on the annex, the figures are updated.', vi: 'Để trả lời câu hỏi của bạn về phụ lục, các số liệu đã được cập nhật.' },
     ],
   },
   {
@@ -15297,9 +15612,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'with regard to the invoice enclosed',
     vietnamese: 'về hóa đơn gửi kèm',
     phonetic: '/wɪð rɪˈɡɑːd tə ði ˈɪnvɔɪs ɪnˈkləʊzd/',
+    usage: 'Dùng khi chuyển chủ đề email sang hóa đơn gửi kèm và nêu điều kiện thanh toán.',
     role: 'linker',
     examples: [
       { en: 'With regard to the invoice enclosed, payment is due in thirty days.', vi: 'Về hóa đơn gửi kèm, khoản thanh toán đến hạn trong ba mươi ngày.' },
+      { en: 'With regard to the invoice enclosed, payment is due in thirty days.', vi: 'Về hóa đơn gửi kèm, khoản thanh toán đến hạn trong ba mươi ngày.' },
+      { en: 'With regard to the invoice enclosed, please note the early payment discount.', vi: 'Về hóa đơn gửi kèm, xin lưu ý chiết khấu thanh toán sớm.' },
     ],
   },
   {
@@ -15310,9 +15628,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on a related note, the timeline has been extended',
     vietnamese: 'nhân tiện, tiến độ đã được gia hạn',
     phonetic: '/ɒn ə rɪˈleɪtɪd nəʊt ðə ˈtaɪmlaɪn hæz biːn ɪkˈstendɪd/',
+    usage: 'Dùng khi thêm thông tin về việc gia hạn tiến độ liên quan đến chủ đề đang trao đổi.',
     role: 'linker',
     examples: [
       { en: 'On a related note, the timeline has been extended by two weeks.', vi: 'Nhân tiện, tiến độ đã được gia hạn thêm hai tuần.' },
+      { en: 'On a related note, the timeline has been extended by two weeks.', vi: 'Nhân tiện, tiến độ đã được gia hạn thêm hai tuần.' },
+      { en: 'On a related note, the timeline has been extended to accommodate the review.', vi: 'Nhân tiện, tiến độ đã được gia hạn để phù hợp với buổi đánh giá.' },
     ],
   },
   {
@@ -15323,9 +15644,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we concurred in our previous correspondence',
     vietnamese: 'như chúng ta đã thống nhất trong thư từ trước đó',
     phonetic: '/æz wiː kənˈkɜːd ɪn ˈaʊə ˈpriːviəs ˌkɒrɪˈspɒndəns/',
+    usage: 'Dùng khi nhắc lại sự thống nhất trong các thư từ trước đó để xác nhận kế hoạch.',
     role: 'linker',
     examples: [
       { en: 'As we concurred in our previous correspondence, the plan is set.', vi: 'Như chúng ta đã thống nhất trong thư từ trước đó, kế hoạch đã được chốt.' },
+      { en: 'As we concurred in our previous correspondence, the plan is set.', vi: 'Như chúng ta đã thống nhất trong thư từ trước đó, kế hoạch đã được chốt.' },
+      { en: 'As we concurred in our previous correspondence, the budget is final.', vi: 'Như chúng ta đã thống nhất trong thư từ trước đó, ngân sách là cuối cùng.' },
     ],
   },
   {
@@ -15336,9 +15660,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for the sake of clarity, the terms are as follows',
     vietnamese: 'để cho rõ ràng, các điều khoản như sau',
     phonetic: '/fə ðə seɪk ɒv ˈklærəti ðə tɜːmz ɑːr æz ˈfɒləʊz/',
+    usage: 'Dùng khi trình bày các điều khoản một cách rõ ràng, thường kèm tài liệu tham chiếu.',
     role: 'filler',
     examples: [
       { en: 'For the sake of clarity, the terms are as follows in the annex.', vi: 'Để cho rõ ràng, các điều khoản như sau trong phụ lục.' },
+      { en: 'For the sake of clarity, the terms are as follows in the annex.', vi: 'Để cho rõ ràng, các điều khoản như sau trong phụ lục.' },
+      { en: 'For the sake of clarity, the terms are as follows, please review carefully.', vi: 'Để cho rõ ràng, các điều khoản như sau, xin hãy xem xét kỹ.' },
     ],
   },
   {
@@ -15349,9 +15676,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we shall proceed in due course',
     vietnamese: 'chúng tôi sẽ tiến hành trong thời gian thích hợp',
     phonetic: '/wiː ʃəl prəˈsiːd ɪn djuː kɔːs/',
+    usage: 'Dùng khi thông báo sẽ tiến hành một việc trong thời gian thích hợp sau khi xem xét.',
     role: 'filler',
     examples: [
       { en: 'We shall proceed in due course after the review.', vi: 'Chúng tôi sẽ tiến hành trong thời gian thích hợp sau khi rà soát.' },
+      { en: 'We shall proceed in due course after the final review.', vi: 'Chúng tôi sẽ tiến hành trong thời gian thích hợp sau buổi đánh giá cuối cùng.' },
+      { en: 'We shall proceed in due course once the documents are ready.', vi: 'Chúng tôi sẽ tiến hành trong thời gian thích hợp khi tài liệu đã sẵn sàng.' },
     ],
   },
   {
@@ -15362,9 +15692,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'needless to add, the matter is confidential',
     vietnamese: 'không cần phải nói thêm, vấn đề này là bảo mật',
     phonetic: '/ˈniːdləs tə æd ðə ˈmætər ɪz ˌkɒnfɪˈdenʃəl/',
+    usage: 'Dùng khi nhấn mạnh tính bảo mật của một vấn đề trước khi công bố.',
     role: 'filler',
     examples: [
       { en: 'Needless to add, the matter is confidential until the release.', vi: 'Không cần phải nói thêm, vấn đề này là bảo mật cho đến khi công bố.' },
+      { en: 'Needless to add, the matter is confidential until the official announcement.', vi: 'Không cần phải nói thêm, vấn đề này là bảo mật cho đến khi có thông báo chính thức.' },
+      { en: 'Needless to add, the matter is confidential, please do not share it.', vi: 'Không cần phải nói thêm, vấn đề này là bảo mật, xin đừng chia sẻ.' },
     ],
   },
   {
@@ -15375,9 +15708,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as a side note, the annex is updated',
     vietnamese: 'như một ghi chú phụ, phụ lục đã được cập nhật',
     phonetic: '/æz ə saɪd nəʊt ði əˈneks ɪz ˌʌpˈdeɪtɪd/',
+    usage: 'Dùng khi thêm một ghi chú phụ về tài liệu đã được cập nhật, như một thông tin bổ sung.',
     role: 'filler',
     examples: [
       { en: 'As a side note, the annex is updated with the final figures.', vi: 'Như một ghi chú phụ, phụ lục đã được cập nhật với các số liệu cuối cùng.' },
+      { en: 'As a side note, the annex is updated with the final figures.', vi: 'Như một ghi chú phụ, phụ lục đã được cập nhật với các số liệu cuối cùng.' },
+      { en: 'As a side note, the annex is updated, please use the latest version.', vi: 'Như một ghi chú phụ, phụ lục đã được cập nhật, xin hãy dùng phiên bản mới nhất.' },
     ],
   },
   {
@@ -15388,9 +15724,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we would appreciate your written confirmation',
     vietnamese: 'chúng tôi rất mong nhận được sự xác nhận bằng văn bản của bạn',
     phonetic: '/wiː wʊd əˈpriːʃieɪt jɔː ˈrɪtən ˌkɒnfəˈmeɪʃən/',
+    usage: 'Dùng khi yêu cầu xác nhận bằng văn bản cho một quyết định quan trọng, thường kèm thời hạn.',
     role: 'closer',
     examples: [
       { en: 'We would appreciate your written confirmation before the deadline.', vi: 'Chúng tôi rất mong nhận được sự xác nhận bằng văn bản của bạn trước hạn.' },
+      { en: 'We would appreciate your written confirmation before the deadline.', vi: 'Chúng tôi rất mong nhận được sự xác nhận bằng văn bản của bạn trước thời hạn.' },
+      { en: 'We would appreciate your written confirmation of the revised terms.', vi: 'Chúng tôi rất mong nhận được sự xác nhận bằng văn bản của bạn về các điều khoản đã sửa đổi.' },
     ],
   },
   {
@@ -15401,9 +15740,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'please revert at your convenience with your decision',
     vietnamese: 'xin vui lòng phản hồi khi bạn thuận tiện với quyết định của bạn',
     phonetic: '/pliːz rɪˈvɜːt æt jɔː kənˈviːniəns wɪð jɔː dɪˈsɪʒən/',
+    usage: 'Dùng ở cuối email để mời người nhận phản hồi với quyết định của họ khi thuận tiện.',
     role: 'closer',
     examples: [
       { en: 'Please revert at your convenience with your decision on the offer.', vi: 'Xin vui lòng phản hồi khi bạn thuận tiện với quyết định của bạn về lời đề nghị.' },
+      { en: 'Please revert at your convenience with your decision on the offer.', vi: 'Xin vui lòng phản hồi khi bạn thuận tiện với quyết định của bạn về đề xuất.' },
+      { en: 'Please revert at your convenience with your decision, we will wait.', vi: 'Xin vui lòng phản hồi khi bạn thuận tiện với quyết định của bạn, chúng tôi sẽ chờ.' },
     ],
   },
   {
@@ -15414,9 +15756,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'warm regards and best wishes for the project',
     vietnamese: 'trân trọng và chúc dự án thành công',
     phonetic: '/wɔːm rɪˈɡɑːdz ənd best ˈwɪʃɪz fə ðə ˈprɒdʒekt/',
+    usage: 'Dùng ở cuối email như lời chào kết thúc trang trọng, kèm lời chúc dự án thành công.',
     role: 'closer',
     examples: [
       { en: 'Warm regards and best wishes for the project ahead.', vi: 'Trân trọng và chúc dự án phía trước thành công.' },
+      { en: 'Warm regards and best wishes for the project ahead.', vi: 'Trân trọng và chúc dự án phía trước thành công.' },
+      { en: 'Warm regards and best wishes for the successful launch.', vi: 'Trân trọng và chúc buổi ra mắt thành công tốt đẹp.' },
     ],
   },
   {
@@ -15427,9 +15772,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'looking forward to your final confirmation',
     vietnamese: 'mong chờ sự xác nhận cuối cùng của bạn',
     phonetic: '/ˈlʊkɪŋ ˈfɔːwəd tə jɔː ˈfaɪnəl ˌkɒnfəˈmeɪʃən/',
+    usage: 'Dùng ở cuối email để bày tỏ sự mong đợi nhận được xác nhận cuối cùng từ đối tác.',
     role: 'closer',
     examples: [
       { en: 'Looking forward to your final confirmation of the agreement.', vi: 'Mong chờ sự xác nhận cuối cùng của bạn về thỏa thuận.' },
+      { en: 'Looking forward to your final confirmation of the agreement.', vi: 'Mong chờ sự xác nhận cuối cùng của bạn về thỏa thuận.' },
+      { en: 'Looking forward to your final confirmation so we can proceed.', vi: 'Mong chờ sự xác nhận cuối cùng của bạn để chúng ta có thể tiến hành.' },
     ],
   },
 
