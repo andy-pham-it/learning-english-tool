@@ -10,12 +10,13 @@ import { OrderArrangeComponent } from '../components/order-arrange.component';
 import { SpeakPracticeComponent } from '../components/speak-practice.component';
 import { DailySessionComponent } from '../components/daily-session.component';
 import { ConversationBuilderComponent } from '../components/conversation-builder.component';
+import { ResponsePracticeComponent } from '../components/response-practice.component';
 
 @Component({
   selector: 'app-phrase-lab-page',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [ChunkBrowserComponent, SentenceAnalysisComponent, SentenceBuilderComponent, RoleCombinerComponent, OrderArrangeComponent, SpeakPracticeComponent, DailySessionComponent, ConversationBuilderComponent],
+  imports: [ChunkBrowserComponent, SentenceAnalysisComponent, SentenceBuilderComponent, RoleCombinerComponent, OrderArrangeComponent, SpeakPracticeComponent, DailySessionComponent, ConversationBuilderComponent, ResponsePracticeComponent],
   template: `
     <div class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 p-4">
       <header class="mb-4 flex items-center justify-between">
@@ -56,6 +57,8 @@ import { ConversationBuilderComponent } from '../components/conversation-builder
         <app-conversation-builder />
       } @else if (activeTab() === 'explore') {
         <app-chunk-browser />
+      } @else if (activeTab() === 'response') {
+        <app-response-practice />
       } @else {
         @if (content.templates().length > 0) {
           <div class="mb-4 flex flex-wrap items-center gap-2 text-sm">
@@ -102,6 +105,7 @@ export class PhraseLabPageComponent implements OnInit {
     { id: 'role', label: 'Tổ hợp role' },
     { id: 'order', label: 'Xếp thứ tự' },
     { id: 'speak', label: 'Luyện nói' },
+    { id: 'response', label: 'Phản xạ' },
   ];
   readonly activeTab = signal<string>('today');
   readonly selectedTemplate = signal<PhraseTemplate | null>(null);
@@ -128,7 +132,7 @@ export class PhraseLabPageComponent implements OnInit {
 
   setTab(id: string): void {
     this.activeTab.set(id);
-    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && !this.selectedTemplate()) {
+    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && id !== 'response' && !this.selectedTemplate()) {
       this.selectedTemplate.set(this.content.templates()[0] ?? null);
     }
   }

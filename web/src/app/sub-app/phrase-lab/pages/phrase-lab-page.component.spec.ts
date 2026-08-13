@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PhraseLabPageComponent } from './phrase-lab-page.component';
 import { PhraseContentService } from '../services/phrase-content.service';
 import { PhraseProgressService } from '../services/phrase-progress.service';
+import { ScenarioService } from '../services/scenario.service';
 import { SpeechService } from '../../../core/services/speech.service';
 import { signal } from '@angular/core';
 
@@ -32,6 +33,14 @@ describe('PhraseLabPageComponent', () => {
     progress.reviewChunk.and.returnValue(Promise.resolve());
     const speech = jasmine.createSpyObj('SpeechService', ['speak', 'startListening', 'isRecognitionSupported']);
     speech.isRecognitionSupported.and.returnValue(false);
+    const scenarios = jasmine.createSpyObj(
+      'ScenarioService',
+      ['loadScenarios'],
+      {
+        scenarios: signal([]), loading: signal(false), offline: signal(false),
+      } as any
+    );
+    scenarios.loadScenarios.and.returnValue(Promise.resolve([]));
 
     TestBed.configureTestingModule({
       imports: [PhraseLabPageComponent],
@@ -39,6 +48,7 @@ describe('PhraseLabPageComponent', () => {
         { provide: PhraseContentService, useValue: content },
         { provide: PhraseProgressService, useValue: progress },
         { provide: SpeechService, useValue: speech },
+        { provide: ScenarioService, useValue: scenarios },
       ],
     });
     fixture = TestBed.createComponent(PhraseLabPageComponent);
@@ -94,6 +104,14 @@ describe('PhraseLabPageComponent', () => {
     expect(c.selectedTemplate()).toBeNull();
     c.setTab('explore');
     expect(c.selectedTemplate()).toBeNull();
+  });
+
+  it('renders the response practice on the Phản xạ tab without auto-selecting a template', () => {
+    const c = fixture.componentInstance;
+    c.setTab('response');
+    expect(c.selectedTemplate()).toBeNull();
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('app-response-practice')).not.toBeNull();
   });
 
   it('computes coverage from getCoverage', () => {
