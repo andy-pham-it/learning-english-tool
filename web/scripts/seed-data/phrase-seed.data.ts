@@ -18849,9 +18849,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have dinner together every night.',
     vietnamese: 'Chúng tôi ăn tối cùng nhau mỗi tối.',
     phonetic: '/wiː hæv ˈdɪnər təˈɡɛðər ˈɛvri naɪt/',
+    usage: 'Dùng khi mô tả thói quen ăn tối chung của gia đình vào buổi tối.',
     role: 'opener',
     examples: [
       { en: 'We have dinner together every night at seven.', vi: 'Chúng tôi ăn tối cùng nhau mỗi tối lúc bảy giờ.' },
+      { en: 'We have dinner together every night before watching TV.', vi: 'Chúng tôi ăn tối cùng nhau mỗi tối trước khi xem TV.' },
+      { en: 'Since dad works late, we have dinner together every night at eight.', vi: 'Vì bố làm muộn, chúng tôi ăn tối cùng nhau mỗi tối lúc tám giờ.' },
     ],
   },
   {
@@ -18862,9 +18865,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'My mother cooks very well.',
     vietnamese: 'Mẹ tôi nấu ăn rất giỏi.',
     phonetic: '/maɪ ˈmʌðər kʊks ˈvɛri wɛl/',
+    usage: 'Dùng khi khen tài nấu ăn của một thành viên trong gia đình.',
     role: 'opener',
     examples: [
       { en: 'My mother cooks very well, we all love her food.', vi: 'Mẹ tôi nấu ăn rất giỏi, cả nhà đều yêu món mẹ nấu.' },
+      { en: 'My mother cooks very well, especially her fried noodles.', vi: 'Mẹ tôi nấu ăn rất giỏi, nhất là món mì xào của bà.' },
+      { en: 'Everyone says my mother cooks very well, and I agree.', vi: 'Ai cũng nói mẹ tôi nấu ăn rất giỏi, và tôi đồng ý.' },
     ],
   },
   {
@@ -18875,9 +18881,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The whole family is at home today.',
     vietnamese: 'Cả gia đình đang ở nhà hôm nay.',
     phonetic: '/ðə hoʊl ˈfæməli ɪz æt hoʊm təˈdeɪ/',
+    usage: 'Dùng khi nói rằng mọi thành viên đang có mặt ở nhà, thường vào dịp lễ hoặc cuối tuần.',
     role: 'opener',
     examples: [
       { en: 'The whole family is at home today for the celebration.', vi: 'Cả gia đình đang ở nhà hôm nay để ăn mừng.' },
+      { en: 'The whole family is at home today because it is Sunday.', vi: 'Cả gia đình đang ở nhà hôm nay vì hôm nay là Chủ nhật.' },
+      { en: 'The whole family is at home today, so we can have lunch together.', vi: 'Cả gia đình đang ở nhà hôm nay nên chúng ta có thể ăn trưa cùng nhau.' },
     ],
   },
   {
@@ -18888,9 +18897,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are going to visit grandma this weekend.',
     vietnamese: 'Chúng tôi sẽ đi thăm bà vào cuối tuần này.',
     phonetic: '/wiː ɑːr ˈɡoʊɪŋ tuː ˈvɪzɪt ˈɡrænmɑː ðɪs ˌwiːkˈɛnd/',
+    usage: 'Dùng khi nói về kế hoạch thăm người thân vào cuối tuần.',
     role: 'opener',
     examples: [
       { en: 'We are going to visit grandma this weekend with the kids.', vi: 'Chúng tôi sẽ đi thăm bà vào cuối tuần này cùng bọn trẻ.' },
+      { en: 'We are going to visit grandma this weekend, and mom is preparing gifts.', vi: 'Chúng tôi sẽ đi thăm bà vào cuối tuần này, và mẹ đang chuẩn bị quà.' },
+      { en: 'Are we still going to visit grandma this weekend?', vi: 'Cuối tuần này chúng ta vẫn đi thăm bà chứ?' },
     ],
   },
   {
@@ -18901,9 +18913,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, we set the table for dinner.',
     vietnamese: 'Đầu tiên, chúng tôi dọn bàn ăn tối.',
     phonetic: '/fɜːrst wiː sɛt ðə ˈteɪbəl fɔːr ˈdɪnər/',
+    usage: 'Dùng khi kể trình tự các bước chuẩn bị bữa ăn, bắt đầu bằng việc dọn bàn.',
     role: 'linker',
     examples: [
       { en: 'First, we set the table for dinner and light the candles.', vi: 'Đầu tiên, chúng tôi dọn bàn ăn tối và thắp nến.' },
+      { en: 'First, we set the table for dinner and put out the chopsticks.', vi: 'Đầu tiên, chúng tôi dọn bàn ăn tối và bày đũa.' },
+      { en: 'First, we set the table for dinner before mom serves the soup.', vi: 'Đầu tiên, chúng tôi dọn bàn ăn tối trước khi mẹ múc canh.' },
     ],
   },
   {
@@ -18914,9 +18929,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Then my father tells a funny story.',
     vietnamese: 'Sau đó bố tôi kể một câu chuyện vui.',
     phonetic: '/ðɛn maɪ ˈfɑːðər tɛlz ə ˈfʌni ˈstɔːri/',
+    usage: 'Dùng khi kể tiếp câu chuyện theo thứ tự thời gian, nhấn mạnh điều xảy ra sau đó.',
     role: 'linker',
     examples: [
       { en: 'Then my father tells a funny story at the table.', vi: 'Sau đó bố tôi kể một câu chuyện vui ở bàn ăn.' },
+      { en: 'Then my father tells a funny story that makes everyone laugh.', vi: 'Sau đó bố tôi kể một câu chuyện vui khiến cả nhà cười.' },
+      { en: 'Then my father tells a funny story about his childhood.', vi: 'Sau đó bố tôi kể một câu chuyện vui về thời thơ ấu của ông.' },
     ],
   },
   {
@@ -18927,9 +18945,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, we wash the dishes together.',
     vietnamese: 'Sau đó, chúng tôi cùng nhau rửa bát.',
     phonetic: '/ˈæftər ðæt wiː wɒʃ ðə ˈdɪʃɪz təˈɡɛðər/',
+    usage: 'Dùng khi nói về việc cùng nhau làm việc nhà sau bữa ăn.',
     role: 'linker',
     examples: [
       { en: 'After that, we wash the dishes together in the kitchen.', vi: 'Sau đó, chúng tôi cùng nhau rửa bát trong bếp.' },
+      { en: 'After that, we wash the dishes together while singing.', vi: 'Sau đó, chúng tôi cùng nhau rửa bát trong khi hát.' },
+      { en: 'After that, we wash the dishes together so mom can rest.', vi: 'Sau đó, chúng tôi cùng nhau rửa bát để mẹ được nghỉ ngơi.' },
     ],
   },
   {
@@ -18940,9 +18961,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, we watch a movie in the living room.',
     vietnamese: 'Tiếp theo, chúng tôi xem phim ở phòng khách.',
     phonetic: '/nɛkst wiː wɒtʃ ə ˈmuːvi ɪn ðə ˈlɪvɪŋ ruːm/',
+    usage: 'Dùng khi giới thiệu hoạt động tiếp theo trong buổi tối gia đình.',
     role: 'linker',
     examples: [
       { en: 'Next, we watch a movie in the living room together.', vi: 'Tiếp theo, chúng tôi xem phim ở phòng khách cùng nhau.' },
+      { en: 'Next, we watch a movie in the living room and eat popcorn.', vi: 'Tiếp theo, chúng tôi xem phim ở phòng khách và ăn bỏng ngô.' },
+      { en: 'Next, we watch a movie in the living room on the big screen.', vi: 'Tiếp theo, chúng tôi xem phim ở phòng khách trên màn hình lớn.' },
     ],
   },
   {
@@ -18953,9 +18977,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think my sister likes the gift.',
     vietnamese: 'Tôi nghĩ em gái tôi thích món quà.',
     phonetic: '/aɪ θɪŋk maɪ ˈsɪstər laɪks ðə ɡɪft/',
+    usage: 'Dùng khi đoán hoặc bày tỏ suy nghĩ về cảm xúc của người thân.',
     role: 'filler',
     examples: [
       { en: 'I think my sister likes the gift we bought her.', vi: 'Tôi nghĩ em gái tôi thích món quà chúng tôi mua cho nó.' },
+      { en: 'I think my sister likes the gift because she smiled a lot.', vi: 'Tôi nghĩ em gái tôi thích món quà vì nó cười rất nhiều.' },
+      { en: 'I think my sister likes the gift, but she is too shy to say it.', vi: 'Tôi nghĩ em gái tôi thích món quà nhưng nó ngại không nói ra.' },
     ],
   },
   {
@@ -18966,9 +18993,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The house feels quiet without the children.',
     vietnamese: 'Ngôi nhà có vẻ yên tĩnh khi không có bọn trẻ.',
     phonetic: '/ðə haʊs fiːlz ˈkwaɪət wɪˈðaʊt ðə ˈtʃɪldrən/',
+    usage: 'Dùng khi miêu tả không khí trong nhà khi không có trẻ con.',
     role: 'filler',
     examples: [
       { en: 'The house feels quiet without the children around.', vi: 'Ngôi nhà có vẻ yên tĩnh khi không có bọn trẻ quanh quẩn.' },
+      { en: 'The house feels quiet without the children making noise.', vi: 'Ngôi nhà có vẻ yên tĩnh khi không có bọn trẻ làm ồn.' },
+      { en: 'The house feels quiet without the children, so we read books.', vi: 'Ngôi nhà có vẻ yên tĩnh khi không có bọn trẻ nên chúng tôi đọc sách.' },
     ],
   },
   {
@@ -18979,9 +19009,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we can bake a cake for the party.',
     vietnamese: 'Có lẽ chúng ta có thể nướng bánh cho bữa tiệc.',
     phonetic: '/ˈmeɪbi wiː kæn beɪk ə keɪk fɔːr ðə ˈpɑːrti/',
+    usage: 'Dùng khi đề xuất một ý tưởng chưa chắc chắn cho một dịp gia đình.',
     role: 'filler',
     examples: [
       { en: 'Maybe we can bake a cake for the party tomorrow.', vi: 'Có lẽ chúng ta có thể nướng bánh cho bữa tiệc ngày mai.' },
+      { en: 'Maybe we can bake a cake for the party instead of buying one.', vi: 'Có lẽ chúng ta có thể tự nướng bánh cho bữa tiệc thay vì mua.' },
+      { en: 'Maybe we can bake a cake for the party if we have enough time.', vi: 'Có lẽ chúng ta có thể nướng bánh cho bữa tiệc nếu có đủ thời gian.' },
     ],
   },
   {
@@ -18992,9 +19025,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'My brother always helps with the cleaning.',
     vietnamese: 'Anh trai tôi luôn giúp dọn dẹp.',
     phonetic: '/maɪ ˈbrʌðər ˈɔːlweɪz hɛlps wɪð ðə ˈkliːnɪŋ/',
+    usage: 'Dùng khi nói về thói quen giúp đỡ việc nhà của một thành viên.',
     role: 'filler',
     examples: [
       { en: 'My brother always helps with the cleaning on Sundays.', vi: 'Anh trai tôi luôn giúp dọn dẹp vào các ngày Chủ nhật.' },
+      { en: 'My brother always helps with the cleaning before guests arrive.', vi: 'Anh trai tôi luôn giúp dọn dẹp trước khi khách đến.' },
+      { en: 'My brother always helps with the cleaning, even after a long day.', vi: 'Anh trai tôi luôn giúp dọn dẹp, kể cả sau một ngày dài.' },
     ],
   },
   {
@@ -19005,9 +19041,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It was a wonderful evening with the family.',
     vietnamese: 'Đó là một buổi tối tuyệt vời bên gia đình.',
     phonetic: '/ɪt wʌz ə ˈwʌndərfʊl ˈiːvnɪŋ wɪð ðə ˈfæməli/',
+    usage: 'Dùng khi nhận xét tổng kết về một buổi tối vui vẻ bên gia đình.',
     role: 'closer',
     examples: [
       { en: 'It was a wonderful evening with the family, we talked for hours.', vi: 'Đó là một buổi tối tuyệt vời bên gia đình, chúng tôi trò chuyện hàng giờ.' },
+      { en: 'It was a wonderful evening with the family, full of laughter.', vi: 'Đó là một buổi tối tuyệt vời bên gia đình, tràn ngập tiếng cười.' },
+      { en: 'It was a wonderful evening with the family, we should do it again.', vi: 'Đó là một buổi tối tuyệt vời bên gia đình, chúng ta nên làm lại lần nữa.' },
     ],
   },
   {
@@ -19018,9 +19057,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us take a family photo together.',
     vietnamese: 'Hãy chụp một tấm ảnh gia đình cùng nhau.',
     phonetic: '/lɛt ʌs teɪk ə ˈfæməli ˈfoʊtoʊ təˈɡɛðər/',
+    usage: 'Dùng khi rủ mọi người chụp ảnh kỷ niệm trước khi rời đi.',
     role: 'closer',
     examples: [
       { en: 'Let us take a family photo together before we leave.', vi: 'Hãy chụp một tấm ảnh gia đình cùng nhau trước khi chúng ta ra về.' },
+      { en: 'Let us take a family photo together in front of the house.', vi: 'Hãy chụp một tấm ảnh gia đình cùng nhau trước cửa nhà.' },
+      { en: 'Let us take a family photo together to remember this day.', vi: 'Hãy chụp một tấm ảnh gia đình cùng nhau để nhớ về ngày này.' },
     ],
   },
   {
@@ -19031,9 +19073,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will call everyone tomorrow morning.',
     vietnamese: 'Chúng tôi sẽ gọi cho mọi người vào sáng mai.',
     phonetic: '/wiː wɪl kɔːl ˈɛvriˌwʌn təˈmɒroʊ ˈmɔːrnɪŋ/',
+    usage: 'Dùng khi hứa liên lạc lại với mọi người vào sáng hôm sau.',
     role: 'closer',
     examples: [
       { en: 'We will call everyone tomorrow morning to say goodbye.', vi: 'Chúng tôi sẽ gọi cho mọi người vào sáng mai để chào tạm biệt.' },
+      { en: 'We will call everyone tomorrow morning with the news.', vi: 'Chúng tôi sẽ gọi cho mọi người vào sáng mai để báo tin.' },
+      { en: 'We will call everyone tomorrow morning to arrange the meeting.', vi: 'Chúng tôi sẽ gọi cho mọi người vào sáng mai để sắp xếp buổi gặp.' },
     ],
   },
   {
@@ -19044,9 +19089,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us go to bed, it is late.',
     vietnamese: 'Chúng ta đi ngủ thôi, muộn rồi.',
     phonetic: '/lɛt ʌs ɡoʊ tuː bɛd ɪt ɪz leɪt/',
+    usage: 'Dùng khi nhắc mọi người đi ngủ vì đã muộn.',
     role: 'closer',
     examples: [
       { en: 'Let us go to bed, it is late and we have a busy day tomorrow.', vi: 'Chúng ta đi ngủ thôi, muộn rồi và ngày mai chúng ta có một ngày bận rộn.' },
+      { en: 'Let us go to bed, it is late and tomorrow is Monday.', vi: 'Chúng ta đi ngủ thôi, muộn rồi và mai là thứ Hai.' },
+      { en: 'Let us go to bed, it is late, we can talk more tomorrow.', vi: 'Chúng ta đi ngủ thôi, muộn rồi, ngày mai mình nói chuyện tiếp.' },
     ],
   },
   {
@@ -19057,9 +19105,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are celebrating my parents wedding anniversary this weekend.',
     vietnamese: 'Cuối tuần này chúng tôi kỷ niệm ngày cưới của bố mẹ.',
     phonetic: '/wiː ɑːr ˈsɛlɪbreɪtɪŋ maɪ ˈpɛrənts ˈwɛdɪŋ ˌænɪˈvɜːrsəri ðɪs ˌwiːkˈɛnd/',
+    usage: 'Dùng khi thông báo về một dịp kỷ niệm quan trọng của gia đình sắp diễn ra.',
     role: 'opener',
     examples: [
       { en: 'We are celebrating my parents wedding anniversary this weekend.', vi: 'Cuối tuần này chúng tôi kỷ niệm ngày cưới của bố mẹ.' },
+      { en: 'We are celebrating my parents wedding anniversary this weekend with a big dinner.', vi: 'Cuối tuần này chúng tôi kỷ niệm ngày cưới của bố mẹ bằng một bữa tối lớn.' },
+      { en: 'We are celebrating my parents wedding anniversary this weekend, so please come early.', vi: 'Cuối tuần này chúng tôi kỷ niệm ngày cưới của bố mẹ nên mọi người đến sớm nhé.' },
     ],
   },
   {
@@ -19070,9 +19121,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'My daughter just started primary school.',
     vietnamese: 'Con gái tôi vừa vào học tiểu học.',
     phonetic: '/maɪ ˈdɔːtər dʒʌst ˈstɑːrtɪd ˈpraɪməri skuːl/',
+    usage: 'Dùng khi nói về một cột mốc lớn trong đời của con cái, như bắt đầu đi học.',
     role: 'opener',
     examples: [
       { en: 'My daughter just started primary school, she is very excited.', vi: 'Con gái tôi vừa vào học tiểu học, cháu rất háo hức.' },
+      { en: 'My daughter just started primary school, and she loves her new teacher.', vi: 'Con gái tôi vừa vào học tiểu học, và cháu rất quý cô giáo mới.' },
+      { en: 'My daughter just started primary school, so we bought her a new backpack.', vi: 'Con gái tôi vừa vào học tiểu học nên chúng tôi mua cho cháu chiếc cặp mới.' },
     ],
   },
   {
@@ -19083,9 +19137,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We take care of my grandmother on the weekends.',
     vietnamese: 'Chúng tôi chăm sóc bà vào cuối tuần.',
     phonetic: '/wiː teɪk kɛr ʌv maɪ ˈɡrænˌmʌðər ɒn ðə ˌwiːkˈɛndz/',
+    usage: 'Dùng khi nói về trách nhiệm chăm sóc người lớn tuổi trong gia đình.',
     role: 'opener',
     examples: [
       { en: 'We take care of my grandmother on the weekends.', vi: 'Chúng tôi chăm sóc bà vào cuối tuần.' },
+      { en: 'We take care of my grandmother on the weekends when the nurse is off.', vi: 'Chúng tôi chăm sóc bà vào cuối tuần khi y tá được nghỉ.' },
+      { en: 'We take care of my grandmother on the weekends, taking turns with my aunt.', vi: 'Chúng tôi chăm sóc bà vào cuối tuần, thay phiên với dì tôi.' },
     ],
   },
   {
@@ -19096,9 +19153,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The whole extended family is coming for the holiday.',
     vietnamese: 'Cả đại gia đình sẽ về ăn ngày lễ.',
     phonetic: '/ðə hoʊl ɪkˈstɛndɪd ˈfæməli ɪz ˈkʌmɪŋ fɔːr ðə ˈhɒlədeɪ/',
+    usage: 'Dùng khi nói về việc họ hàng xa tụ họp về nhân dịp lễ.',
     role: 'opener',
     examples: [
       { en: 'The whole extended family is coming for the holiday.', vi: 'Cả đại gia đình sẽ về ăn ngày lễ.' },
+      { en: 'The whole extended family is coming for the holiday, so we booked extra rooms.', vi: 'Cả đại gia đình sẽ về ăn ngày lễ nên chúng tôi đã đặt thêm phòng.' },
+      { en: 'The whole extended family is coming for the holiday and the house will be full.', vi: 'Cả đại gia đình sẽ về ăn ngày lễ và ngôi nhà sẽ chật kín.' },
     ],
   },
   {
@@ -19109,9 +19169,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once everyone arrives, we serve the food.',
     vietnamese: 'Khi mọi người đến đông đủ, chúng tôi bắt đầu dọn món.',
     phonetic: '/wʌns ˈɛvriˌwʌn əˈraɪvz wiː sɜːrv ðə fuːd/',
+    usage: 'Dùng khi nói về thời điểm bắt đầu dọn thức ăn sau khi mọi người đã có mặt đủ.',
     role: 'linker',
     examples: [
       { en: 'Once everyone arrives, we serve the food.', vi: 'Khi mọi người đến đông đủ, chúng tôi bắt đầu dọn món.' },
+      { en: 'Once everyone arrives, we serve the food and start eating.', vi: 'Khi mọi người đến đông đủ, chúng tôi bắt đầu dọn món và dùng bữa.' },
+      { en: 'Once everyone arrives, we serve the food on the big table.', vi: 'Khi mọi người đến đông đủ, chúng tôi bày thức ăn lên bàn lớn.' },
     ],
   },
   {
@@ -19122,9 +19185,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Before we leave, we should take some family photos.',
     vietnamese: 'Trước khi về, chúng ta nên chụp vài tấm ảnh gia đình.',
     phonetic: '/bɪˈfɔːr wiː liːv wiː ʃʊd teɪk sʌm ˈfæməli ˈfoʊtoʊz/',
+    usage: 'Dùng khi gợi ý một việc nên làm trước khi chia tay, thường là chụp ảnh lưu niệm.',
     role: 'linker',
     examples: [
       { en: 'Before we leave, we should take some family photos.', vi: 'Trước khi về, chúng ta nên chụp vài tấm ảnh gia đình.' },
+      { en: 'Before we leave, we should take some family photos with the grandparents.', vi: 'Trước khi về, chúng ta nên chụp vài tấm ảnh gia đình cùng ông bà.' },
+      { en: 'Before we leave, we should take some family photos in the garden.', vi: 'Trước khi về, chúng ta nên chụp vài tấm ảnh gia đình trong vườn.' },
     ],
   },
   {
@@ -19135,9 +19201,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After dinner, the kids play with their cousins.',
     vietnamese: 'Sau bữa tối, bọn trẻ chơi với các anh chị em họ.',
     phonetic: '/ˈæftər ˈdɪnər ðə kɪdz pleɪ wɪð ðɛr ˈkʌzənz/',
+    usage: 'Dùng khi kể về hoạt động của trẻ con sau bữa ăn trong dịp họp mặt.',
     role: 'linker',
     examples: [
       { en: 'After dinner, the kids play with their cousins.', vi: 'Sau bữa tối, bọn trẻ chơi với các anh chị em họ.' },
+      { en: 'After dinner, the kids play with their cousins in the yard.', vi: 'Sau bữa tối, bọn trẻ chơi với các anh chị em họ ở sân.' },
+      { en: 'After dinner, the kids play with their cousins until it gets dark.', vi: 'Sau bữa tối, bọn trẻ chơi với các anh chị em họ cho đến khi trời tối.' },
     ],
   },
   {
@@ -19148,9 +19217,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In the meantime, we prepare the guest rooms.',
     vietnamese: 'Trong lúc đó, chúng tôi chuẩn bị phòng khách.',
     phonetic: '/ɪn ðə ˈmiːnˌtaɪm wiː prɪˈpɛr ðə ɡɛst ruːmz/',
+    usage: 'Dùng khi nói về việc làm trong lúc chờ đợi một việc khác hoàn tất.',
     role: 'linker',
     examples: [
       { en: 'In the meantime, we prepare the guest rooms.', vi: 'Trong lúc đó, chúng tôi chuẩn bị phòng khách.' },
+      { en: 'In the meantime, we prepare the guest rooms for the relatives.', vi: 'Trong lúc đó, chúng tôi chuẩn bị phòng khách cho người thân.' },
+      { en: 'In the meantime, we prepare the guest rooms and lay out fresh towels.', vi: 'Trong lúc đó, chúng tôi chuẩn bị phòng khách và trải khăn tắm mới.' },
     ],
   },
   {
@@ -19161,9 +19233,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think the kids are enjoying themselves a lot.',
     vietnamese: 'Tôi nghĩ bọn trẻ đang rất vui vẻ.',
     phonetic: '/aɪ θɪŋk ðə kɪdz ɑːr ɪnˈdʒɔɪɪŋ ðəmˈsɛlvz ə lɒt/',
+    usage: 'Dùng khi nhận xét rằng trẻ em đang vui vẻ trong một buổi họp mặt.',
     role: 'filler',
     examples: [
       { en: 'I think the kids are enjoying themselves a lot.', vi: 'Tôi nghĩ bọn trẻ đang rất vui vẻ.' },
+      { en: 'I think the kids are enjoying themselves a lot with the games.', vi: 'Tôi nghĩ bọn trẻ đang rất vui vẻ với các trò chơi.' },
+      { en: 'I think the kids are enjoying themselves a lot, they keep laughing.', vi: 'Tôi nghĩ bọn trẻ đang rất vui vẻ, chúng cười suốt.' },
     ],
   },
   {
@@ -19174,9 +19249,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It seems my uncle will stay for another week.',
     vietnamese: 'Có vẻ chú tôi sẽ ở lại thêm một tuần nữa.',
     phonetic: '/ɪt siːmz maɪ ˈʌŋkəl wɪl steɪ fɔːr əˈnʌðər wiːk/',
+    usage: 'Dùng khi suy đoán về kế hoạch lưu lại của một người thân.',
     role: 'filler',
     examples: [
       { en: 'It seems my uncle will stay for another week.', vi: 'Có vẻ chú tôi sẽ ở lại thêm một tuần nữa.' },
+      { en: 'It seems my uncle will stay for another week because of the festival.', vi: 'Có vẻ chú tôi sẽ ở lại thêm một tuần nữa vì lễ hội.' },
+      { en: 'It seems my uncle will stay for another week, so we should plan a trip.', vi: 'Có vẻ chú tôi sẽ ở lại thêm một tuần nữa nên chúng ta nên lên kế hoạch đi chơi.' },
     ],
   },
   {
@@ -19187,9 +19265,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We might need to buy more groceries for the party.',
     vietnamese: 'Chúng ta có thể cần mua thêm thực phẩm cho bữa tiệc.',
     phonetic: '/wiː maɪt niːd tuː baɪ mɔːr ˈɡroʊsəriz fɔːr ðə ˈpɑːrti/',
+    usage: 'Dùng khi dự đoán nhu cầu phát sinh khi chuẩn bị cho một buổi họp mặt.',
     role: 'filler',
     examples: [
       { en: 'We might need to buy more groceries for the party.', vi: 'Chúng ta có thể cần mua thêm thực phẩm cho bữa tiệc.' },
+      { en: 'We might need to buy more groceries for the party on Saturday.', vi: 'Chúng ta có thể cần mua thêm thực phẩm cho bữa tiệc thứ Bảy.' },
+      { en: 'We might need to buy more groceries for the party if more cousins come.', vi: 'Chúng ta có thể cần mua thêm thực phẩm cho bữa tiệc nếu có thêm anh chị em họ đến.' },
     ],
   },
   {
@@ -19200,9 +19281,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'My brother is usually the first one to help in the kitchen.',
     vietnamese: 'Anh trai tôi thường là người đầu tiên giúp việc bếp núc.',
     phonetic: '/maɪ ˈbrʌðər ɪz ˈjuːʒuəli ðə fɜːrst wʌn tuː hɛlp ɪn ðə ˈkɪtʃɪn/',
+    usage: 'Dùng khi mô tả vai trò quen thuộc của một thành viên trong việc bếp núc.',
     role: 'filler',
     examples: [
       { en: 'My brother is usually the first one to help in the kitchen.', vi: 'Anh trai tôi thường là người đầu tiên giúp việc bếp núc.' },
+      { en: 'My brother is usually the first one to help in the kitchen on holidays.', vi: 'Anh trai tôi thường là người đầu tiên giúp việc bếp núc trong các dịp lễ.' },
+      { en: 'My brother is usually the first one to help in the kitchen when guests come.', vi: 'Anh trai tôi thường là người đầu tiên giúp việc bếp núc khi có khách.' },
     ],
   },
   {
@@ -19213,9 +19297,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It was a great reunion, everyone had a wonderful time.',
     vietnamese: 'Đó là một buổi đoàn tụ tuyệt vời, ai cũng có khoảng thời gian đáng nhớ.',
     phonetic: '/ɪt wʌz ə ɡreɪt riːˈjuːnjən ˈɛvriˌwʌn hæd ə ˈwʌndərfəl taɪm/',
+    usage: 'Dùng khi tổng kết một buổi họp mặt thành công, mọi người đều vui vẻ.',
     role: 'closer',
     examples: [
       { en: 'It was a great reunion, everyone had a wonderful time.', vi: 'Đó là một buổi đoàn tụ tuyệt vời, ai cũng có khoảng thời gian đáng nhớ.' },
+      { en: 'It was a great reunion, everyone had a wonderful time sharing stories.', vi: 'Đó là một buổi đoàn tụ tuyệt vời, ai cũng có khoảng thời gian đáng nhớ khi kể chuyện.' },
+      { en: 'It was a great reunion, everyone had a wonderful time at the beach.', vi: 'Đó là một buổi đoàn tụ tuyệt vời, ai cũng có khoảng thời gian đáng nhớ ở biển.' },
     ],
   },
   {
@@ -19226,9 +19313,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us make sure everyone gets home safely.',
     vietnamese: 'Hãy đảm bảo mọi người về nhà an toàn.',
     phonetic: '/lɛt ʌs meɪk ʃʊr ˈɛvriˌwʌn ɡɛts hoʊm ˈseɪfli/',
+    usage: 'Dùng khi nhắc nhở quan tâm đến sự an toàn của mọi người khi kết thúc buổi gặp mặt.',
     role: 'closer',
     examples: [
       { en: 'Let us make sure everyone gets home safely.', vi: 'Hãy đảm bảo mọi người về nhà an toàn.' },
+      { en: 'Let us make sure everyone gets home safely after the party.', vi: 'Hãy đảm bảo mọi người về nhà an toàn sau bữa tiệc.' },
+      { en: 'Let us make sure everyone gets home safely, call me when you arrive.', vi: 'Hãy đảm bảo mọi người về nhà an toàn, gọi cho tôi khi về đến nơi nhé.' },
     ],
   },
   {
@@ -19239,9 +19329,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will call you once we get home.',
     vietnamese: 'Chúng tôi sẽ gọi cho bạn khi về đến nhà.',
     phonetic: '/wiː wɪl kɔːl juː wʌns wiː ɡɛt hoʊm/',
+    usage: 'Dùng khi hứa sẽ gọi báo tin sau khi về đến nhà.',
     role: 'closer',
     examples: [
       { en: 'We will call you once we get home.', vi: 'Chúng tôi sẽ gọi cho bạn khi về đến nhà.' },
+      { en: 'We will call you once we get home, it should take an hour.', vi: 'Chúng tôi sẽ gọi cho bạn khi về đến nhà, mất khoảng một tiếng.' },
+      { en: 'We will call you once we get home to say good night.', vi: 'Chúng tôi sẽ gọi cho bạn khi về đến nhà để chúc ngủ ngon.' },
     ],
   },
   {
@@ -19252,9 +19345,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'That is all for today, see you all next weekend.',
     vietnamese: 'Hôm nay đến đây thôi, hẹn mọi người cuối tuần sau.',
     phonetic: '/ðæt ɪz ɔːl fɔːr təˈdeɪ siː juː ɔːl nɛkst ˌwiːkˈɛnd/',
+    usage: 'Dùng khi kết thúc một buổi họp mặt và hẹn gặp lại dịp sau.',
     role: 'closer',
     examples: [
       { en: 'That is all for today, see you all next weekend.', vi: 'Hôm nay đến đây thôi, hẹn mọi người cuối tuần sau.' },
+      { en: 'That is all for today, see you all next weekend at the market.', vi: 'Hôm nay đến đây thôi, hẹn mọi người cuối tuần sau ở chợ.' },
+      { en: 'That is all for today, see you all next weekend for the picnic.', vi: 'Hôm nay đến đây thôi, hẹn mọi người cuối tuần sau để đi dã ngoại.' },
     ],
   },
   {
@@ -19265,9 +19361,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are trying to strike a better work-life balance.',
     vietnamese: 'Chúng tôi đang cố gắng cân bằng giữa công việc và cuộc sống tốt hơn.',
     phonetic: '/wiː ɑːr ˈtraɪɪŋ tuː straɪk ə ˈbɛtər wɜːrk laɪf ˈbæləns/',
+    usage: 'Dùng khi nói về nỗ lực cân bằng thời gian giữa công việc và cuộc sống gia đình.',
     role: 'opener',
     examples: [
       { en: 'We are trying to strike a better work-life balance since the new policy.', vi: 'Chúng tôi đang cố gắng cân bằng giữa công việc và cuộc sống tốt hơn kể từ chính sách mới.' },
+      { en: 'We are trying to strike a better work-life balance since the new policy allows remote work.', vi: 'Chúng tôi đang cố gắng cân bằng giữa công việc và cuộc sống tốt hơn kể từ khi chính sách mới cho phép làm việc từ xa.' },
+      { en: 'We are trying to strike a better work-life balance by setting clear boundaries at home.', vi: 'Chúng tôi đang cố gắng cân bằng giữa công việc và cuộc sống tốt hơn bằng cách đặt ranh giới rõ ràng ở nhà.' },
     ],
   },
   {
@@ -19278,9 +19377,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The multigenerational household is quite common in our culture.',
     vietnamese: 'Gia đình nhiều thế hệ sống chung khá phổ biến trong văn hóa của chúng tôi.',
     phonetic: '/ðə ˌmʌltiˌdʒɛnəˈreɪʃənəl ˈhaʊshoʊld ɪz kwaɪt ˈkɒmən ɪn aʊər ˈkʌltʃər/',
+    usage: 'Dùng khi nói về đặc điểm văn hóa khi nhiều thế hệ sống chung một nhà.',
     role: 'opener',
     examples: [
       { en: 'The multigenerational household is quite common in our culture, and it has many benefits.', vi: 'Gia đình nhiều thế hệ sống chung khá phổ biến trong văn hóa của chúng tôi, và nó có nhiều lợi ích.' },
+      { en: 'The multigenerational household is quite common in our culture, especially in rural areas.', vi: 'Gia đình nhiều thế hệ sống chung khá phổ biến trong văn hóa của chúng tôi, nhất là ở vùng nông thôn.' },
+      { en: 'The multigenerational household is quite common in our culture and helps share the childcare.', vi: 'Gia đình nhiều thế hệ sống chung khá phổ biến trong văn hóa của chúng tôi và giúp chia sẻ việc trông trẻ.' },
     ],
   },
   {
@@ -19291,9 +19393,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are reviewing the family budget for the coming year.',
     vietnamese: 'Chúng tôi đang rà soát ngân sách gia đình cho năm tới.',
     phonetic: '/wiː ɑːr rɪˈvjuːɪŋ ðə ˈfæməli ˈbʌdʒɪt fər ðə ˈkʌmɪŋ jɪr/',
+    usage: 'Dùng khi nói về việc lên kế hoạch chi tiêu của gia đình cho năm tới.',
     role: 'opener',
     examples: [
       { en: 'We are reviewing the family budget for the coming year to plan the savings.', vi: 'Chúng tôi đang rà soát ngân sách gia đình cho năm tới để lên kế hoạch tiết kiệm.' },
+      { en: 'We are reviewing the family budget for the coming year to cut unnecessary costs.', vi: 'Chúng tôi đang rà soát ngân sách gia đình cho năm tới để cắt giảm chi phí không cần thiết.' },
+      { en: 'We are reviewing the family budget for the coming year after the tuition increase.', vi: 'Chúng tôi đang rà soát ngân sách gia đình cho năm tới sau khi học phí tăng.' },
     ],
   },
   {
@@ -19304,9 +19409,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We uphold the family traditions that our grandparents started.',
     vietnamese: 'Chúng tôi gìn giữ những truyền thống gia đình mà ông bà đã bắt đầu.',
     phonetic: '/wiː ʌpˈhoʊld ðə ˈfæməli trəˈdɪʃənz ðæt aʊər ˈɡrænˌpɛrənts ˈstɑːrtɪd/',
+    usage: 'Dùng khi nói về việc giữ gìn các phong tục do ông bà khởi xướng.',
     role: 'opener',
     examples: [
       { en: 'We uphold the family traditions that our grandparents started decades ago.', vi: 'Chúng tôi gìn giữ những truyền thống gia đình mà ông bà đã bắt đầu từ nhiều thập kỷ trước.' },
+      { en: 'We uphold the family traditions that our grandparents started, like the annual reunion.', vi: 'Chúng tôi gìn giữ những truyền thống gia đình mà ông bà đã bắt đầu, như buổi đoàn tụ hằng năm.' },
+      { en: 'We uphold the family traditions that our grandparents started during Tet.', vi: 'Chúng tôi gìn giữ những truyền thống gia đình mà ông bà đã bắt đầu trong dịp Tết.' },
     ],
   },
   {
@@ -19317,9 +19425,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Provided everyone agrees, we will book the trip together.',
     vietnamese: 'Nếu mọi người đồng ý, chúng tôi sẽ đặt chuyến đi cùng nhau.',
     phonetic: '/prəˈvaɪdɪd ˈɛvriˌwʌn əˈɡriːz wiː wɪl bʊk ðə trɪp təˈɡɛðər/',
+    usage: 'Dùng khi đưa ra điều kiện để thực hiện một kế hoạch chung của gia đình.',
     role: 'linker',
     examples: [
       { en: 'Provided everyone agrees, we will book the trip together next month.', vi: 'Nếu mọi người đồng ý, chúng tôi sẽ đặt chuyến đi cùng nhau vào tháng tới.' },
+      { en: 'Provided everyone agrees, we will book the trip together during the summer break.', vi: 'Nếu mọi người đồng ý, chúng tôi sẽ đặt chuyến đi cùng nhau trong kỳ nghỉ hè.' },
+      { en: 'Provided everyone agrees, we will book the trip together to Da Nang.', vi: 'Nếu mọi người đồng ý, chúng tôi sẽ đặt chuyến đi cùng nhau tới Đà Nẵng.' },
     ],
   },
   {
@@ -19330,9 +19441,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Given the tight schedule, we moved the family dinner earlier.',
     vietnamese: 'Vì lịch trình kín, chúng tôi đã dời bữa tối gia đình sớm hơn.',
     phonetic: '/ˈɡɪvən ðə taɪt ˈʃɛdʒuːl wiː muːvd ðə ˈfæməli ˈdɪnər ˈɜːrliər/',
+    usage: 'Dùng khi giải thích lý do thay đổi lịch trình vì thời gian không thuận tiện.',
     role: 'linker',
     examples: [
       { en: 'Given the tight schedule, we moved the family dinner earlier this week.', vi: 'Vì lịch trình kín, chúng tôi đã dời bữa tối gia đình sớm hơn trong tuần này.' },
+      { en: 'Given the tight schedule, we moved the family dinner earlier to six o clock.', vi: 'Vì lịch trình kín, chúng tôi đã dời bữa tối gia đình sớm hơn lúc sáu giờ.' },
+      { en: 'Given the tight schedule, we moved the family dinner earlier so the kids can study.', vi: 'Vì lịch trình kín, chúng tôi đã dời bữa tối gia đình sớm hơn để bọn trẻ có thể học bài.' },
     ],
   },
   {
@@ -19343,9 +19457,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After we settle the bills, we can discuss the vacation plans.',
     vietnamese: 'Sau khi thanh toán các hóa đơn, chúng ta có thể bàn về kế hoạch kỳ nghỉ.',
     phonetic: '/ˈæftər wiː ˈsɛtəl ðə bɪlz wiː kæn dɪˈskʌs ðə vəˈkeɪʃən plænz/',
+    usage: 'Dùng khi nói về trình tự giải quyết việc nhà trước khi bàn chuyện lớn.',
     role: 'linker',
     examples: [
       { en: 'After we settle the bills, we can discuss the vacation plans in detail.', vi: 'Sau khi thanh toán các hóa đơn, chúng ta có thể bàn chi tiết về kế hoạch kỳ nghỉ.' },
+      { en: 'After we settle the bills, we can discuss the vacation plans with the whole family.', vi: 'Sau khi thanh toán các hóa đơn, chúng ta có thể bàn về kế hoạch kỳ nghỉ với cả gia đình.' },
+      { en: 'After we settle the bills, we can discuss the vacation plans and the budget together.', vi: 'Sau khi thanh toán các hóa đơn, chúng ta có thể bàn về kế hoạch kỳ nghỉ và ngân sách cùng nhau.' },
     ],
   },
   {
@@ -19356,9 +19473,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In the meantime, we are saving for the house renovation.',
     vietnamese: 'Trong lúc đó, chúng tôi đang tiết kiệm cho việc cải tạo nhà.',
     phonetic: '/ɪn ðə ˈmiːntaɪm wiː ɑːr ˈseɪvɪŋ fər ðə haʊs ˌrɛnəˈveɪʃən/',
+    usage: 'Dùng khi nói về việc tiết kiệm tiền cho một dự án cải tạo nhà.',
     role: 'linker',
     examples: [
       { en: 'In the meantime, we are saving for the house renovation next spring.', vi: 'Trong lúc đó, chúng tôi đang tiết kiệm cho việc cải tạo nhà vào mùa xuân tới.' },
+      { en: 'In the meantime, we are saving for the house renovation by cutting travel costs.', vi: 'Trong lúc đó, chúng tôi đang tiết kiệm cho việc cải tạo nhà bằng cách cắt giảm chi phí đi lại.' },
+      { en: 'In the meantime, we are saving for the house renovation, so we rarely eat out.', vi: 'Trong lúc đó, chúng tôi đang tiết kiệm cho việc cải tạo nhà nên hiếm khi ăn ngoài.' },
     ],
   },
   {
@@ -19369,9 +19489,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The children are adapting to the new routine quite well.',
     vietnamese: 'Các con đang thích nghi với nếp sinh hoạt mới khá tốt.',
     phonetic: '/ðə ˈtʃɪldrən ɑːr əˈdæptɪŋ tuː ðə nuː ruːˈtiːn kwaɪt wɛl/',
+    usage: 'Dùng khi nhận xét rằng trẻ em đang quen dần với nếp sinh hoạt mới.',
     role: 'filler',
     examples: [
       { en: 'The children are adapting to the new routine quite well, which is a relief.', vi: 'Các con đang thích nghi với nếp sinh hoạt mới khá tốt, điều đó thật nhẹ nhõm.' },
+      { en: 'The children are adapting to the new routine quite well, they wake up on time now.', vi: 'Các con đang thích nghi với nếp sinh hoạt mới khá tốt, giờ chúng dậy đúng giờ.' },
+      { en: 'The children are adapting to the new routine quite well after the school change.', vi: 'Các con đang thích nghi với nếp sinh hoạt mới khá tốt sau khi đổi trường.' },
     ],
   },
   {
@@ -19382,9 +19505,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a subtle tension between the generations at times.',
     vietnamese: 'Đôi khi có sự căng thẳng ngầm giữa các thế hệ.',
     phonetic: '/ðɛr ɪz ə ˈsʌtəl ˈtɛnʃən bɪˈtwiːn ðə ˌdʒɛnəˈreɪʃənz æt taɪmz/',
+    usage: 'Dùng khi nhận xét khéo léo về những bất đồng ngầm giữa các thế hệ.',
     role: 'filler',
     examples: [
       { en: 'There is a subtle tension between the generations at times, but we manage it well.', vi: 'Đôi khi có sự căng thẳng ngầm giữa các thế hệ, nhưng chúng tôi xử lý tốt.' },
+      { en: 'There is a subtle tension between the generations at times about screen time.', vi: 'Đôi khi có sự căng thẳng ngầm giữa các thế hệ về việc dùng điện thoại.' },
+      { en: 'There is a subtle tension between the generations at times, but open talk solves it.', vi: 'Đôi khi có sự căng thẳng ngầm giữa các thế hệ, nhưng nói chuyện cởi mở sẽ giải quyết được.' },
     ],
   },
   {
@@ -19395,9 +19521,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We cannot overlook the importance of open communication.',
     vietnamese: 'Chúng ta không thể bỏ qua tầm quan trọng của việc giao tiếp cởi mở.',
     phonetic: '/wiː ˈkænɒt ˌoʊvərˈlʊk ði ɪmˈpɔːrtəns ʌv ˈoʊpən kəˌmjuːnɪˈkeɪʃən/',
+    usage: 'Dùng khi nhấn mạnh vai trò của giao tiếp cởi mở trong gia đình đông người.',
     role: 'filler',
     examples: [
       { en: 'We cannot overlook the importance of open communication in a large family.', vi: 'Chúng ta không thể bỏ qua tầm quan trọng của việc giao tiếp cởi mở trong một gia đình lớn.' },
+      { en: 'We cannot overlook the importance of open communication when planning the budget.', vi: 'Chúng ta không thể bỏ qua tầm quan trọng của việc giao tiếp cởi mở khi lên kế hoạch ngân sách.' },
+      { en: 'We cannot overlook the importance of open communication between parents and teens.', vi: 'Chúng ta không thể bỏ qua tầm quan trọng của việc giao tiếp cởi mở giữa cha mẹ và trẻ vị thành niên.' },
     ],
   },
   {
@@ -19408,9 +19537,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is worth keeping the family records organized.',
     vietnamese: 'Đáng để giữ các giấy tờ gia đình được sắp xếp ngăn nắp.',
     phonetic: '/ɪt ɪz wɜːrθ ˈkiːpɪŋ ðə ˈfæməli ˈrɛkərdz ˈɔːrɡənaɪzd/',
+    usage: 'Dùng khi đề xuất giữ giấy tờ gia đình ngăn nắp để dễ tra cứu về sau.',
     role: 'filler',
     examples: [
       { en: 'It is worth keeping the family records organized for the future.', vi: 'Đáng để giữ các giấy tờ gia đình được sắp xếp ngăn nắp cho tương lai.' },
+      { en: 'It is worth keeping the family records organized in a single folder.', vi: 'Đáng để giữ các giấy tờ gia đình được sắp xếp ngăn nắp trong một thư mục.' },
+      { en: 'It is worth keeping the family records organized for tax season.', vi: 'Đáng để giữ các giấy tờ gia đình được sắp xếp ngăn nắp cho mùa khai thuế.' },
     ],
   },
   {
@@ -19421,9 +19553,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have finally reached an agreement on the household duties.',
     vietnamese: 'Cuối cùng chúng tôi đã đạt được thỏa thuận về việc nhà.',
     phonetic: '/wiː hæv ˈfaɪnəli riːtʃt ən əˈɡriːmənt ɒn ðə ˈhaʊshoʊld ˈdjuːtiz/',
+    usage: 'Dùng khi thông báo đã thống nhất được cách phân chia việc nhà.',
     role: 'closer',
     examples: [
       { en: 'We have finally reached an agreement on the household duties for the month.', vi: 'Cuối cùng chúng tôi đã đạt được thỏa thuận về việc nhà trong tháng này.' },
+      { en: 'We have finally reached an agreement on the household duties after a long talk.', vi: 'Cuối cùng chúng tôi đã đạt được thỏa thuận về việc nhà sau một buổi nói chuyện dài.' },
+      { en: 'We have finally reached an agreement on the household duties for the month.', vi: 'Cuối cùng chúng tôi đã đạt được thỏa thuận về việc nhà trong tháng.' },
     ],
   },
   {
@@ -19434,9 +19569,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us plan the celebration well in advance.',
     vietnamese: 'Hãy lên kế hoạch cho buổi lễ từ trước.',
     phonetic: '/lɛt ʌs plæn ðə ˌsɛlɪˈbreɪʃən wɛl ɪn ədˈvæns/',
+    usage: 'Dùng khi khuyên nên chuẩn bị trước cho một dịp lễ để tránh vội vàng.',
     role: 'closer',
     examples: [
       { en: 'Let us plan the celebration well in advance to avoid the rush.', vi: 'Hãy lên kế hoạch cho buổi lễ từ trước để tránh vội vàng.' },
+      { en: 'Let us plan the celebration well in advance to get the best venue.', vi: 'Hãy lên kế hoạch cho buổi lễ từ trước để chọn được địa điểm tốt nhất.' },
+      { en: 'Let us plan the celebration well in advance so everyone can take leave.', vi: 'Hãy lên kế hoạch cho buổi lễ từ trước để mọi người có thể xin nghỉ phép.' },
     ],
   },
   {
@@ -19447,9 +19585,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will keep in touch with the relatives abroad.',
     vietnamese: 'Chúng tôi sẽ giữ liên lạc với người thân ở nước ngoài.',
     phonetic: '/wiː wɪl kiːp ɪn tʌtʃ wɪð ðə ˈrɛlətɪvz əˈbrɔːd/',
+    usage: 'Dùng khi nói về việc duy trì liên lạc với người thân ở xa.',
     role: 'closer',
     examples: [
       { en: 'We will keep in touch with the relatives abroad through video calls.', vi: 'Chúng tôi sẽ giữ liên lạc với người thân ở nước ngoài qua các cuộc gọi video.' },
+      { en: 'We will keep in touch with the relatives abroad through weekly video calls.', vi: 'Chúng tôi sẽ giữ liên lạc với người thân ở nước ngoài qua các cuộc gọi video hằng tuần.' },
+      { en: 'We will keep in touch with the relatives abroad using a shared photo album.', vi: 'Chúng tôi sẽ giữ liên lạc với người thân ở nước ngoài bằng một album ảnh dùng chung.' },
     ],
   },
   {
@@ -19460,9 +19601,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will wrap up the family gathering before midnight.',
     vietnamese: 'Chúng tôi sẽ kết thúc buổi họp mặt gia đình trước nửa đêm.',
     phonetic: '/wiː wɪl ræp ʌp ðə ˈfæməli ˈɡæðərɪŋ bɪˈfɔːr ˈmɪdnaɪt/',
+    usage: 'Dùng khi nói về việc kết thúc buổi họp mặt đúng giờ để trẻ em được nghỉ.',
     role: 'closer',
     examples: [
       { en: 'We will wrap up the family gathering before midnight so the kids can rest.', vi: 'Chúng tôi sẽ kết thúc buổi họp mặt gia đình trước nửa đêm để các con được nghỉ ngơi.' },
+      { en: 'We will wrap up the family gathering before midnight so everyone can rest.', vi: 'Chúng tôi sẽ kết thúc buổi họp mặt gia đình trước nửa đêm để mọi người được nghỉ.' },
+      { en: 'We will wrap up the family gathering before midnight, the party was lovely.', vi: 'Chúng tôi sẽ kết thúc buổi họp mặt gia đình trước nửa đêm, buổi tiệc thật đáng yêu.' },
     ],
   },
   {
@@ -19473,9 +19617,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are cultivating a set of enduring values to pass down the generations.',
     vietnamese: 'Chúng tôi đang vun đắp một bộ giá trị bền vững để truyền lại cho các thế hệ sau.',
     phonetic: '/wiː ɑːr ˈkʌltɪveɪtɪŋ ə sɛt ʌv ɪnˈdjʊrɪŋ ˈvæljuːz tuː pæs daʊn ðə ˌdʒɛnəˈreɪʃənz/',
+    usage: 'Nói về việc xây dựng và truyền lại các giá trị cốt lõi của gia đình qua nhiều thế hệ.',
     role: 'opener',
     examples: [
       { en: 'We are cultivating a set of enduring values to pass down the generations.', vi: 'Chúng tôi đang vun đắp một bộ giá trị bền vững để truyền lại cho các thế hệ sau.' },
+      { en: 'We are cultivating a set of enduring values to pass down the generations, starting with honesty.', vi: 'Chúng tôi đang vun đắp một bộ giá trị bền vững để truyền lại cho các thế hệ sau, bắt đầu từ sự trung thực.' },
+      { en: 'We are cultivating a set of enduring values to pass down the generations through daily rituals.', vi: 'Chúng tôi đang vun đắp một bộ giá trị bền vững để truyền lại cho các thế hệ sau qua những nghi thức hằng ngày.' },
     ],
   },
   {
@@ -19486,9 +19633,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The legacy planning process requires careful consideration of every stakeholder.',
     vietnamese: 'Quá trình lập kế hoạch di sản đòi hỏi cân nhắc kỹ lưỡng từng bên liên quan.',
     phonetic: '/ðə ˈlɛɡəsi ˈplænɪŋ ˈprɒsɛs rɪˈkwaɪərz ˈkɛrfəl kənˌsɪdəˈreɪʃən ʌv ˈɛvri ˈsteɪkhoʊldər/',
+    usage: 'Nói về quá trình lập kế hoạch di sản, trong đó cần cân nhắc đến quyền lợi của mọi thành viên.',
     role: 'opener',
     examples: [
       { en: 'The legacy planning process requires careful consideration of every stakeholder involved.', vi: 'Quá trình lập kế hoạch di sản đòi hỏi cân nhắc kỹ lưỡng từng bên liên quan.' },
+      { en: 'The legacy planning process requires careful consideration of every stakeholder, including the grandchildren.', vi: 'Quá trình lập kế hoạch di sản đòi hỏi cân nhắc kỹ lưỡng từng bên liên quan, kể cả các cháu.' },
+      { en: 'The legacy planning process requires careful consideration of every stakeholder before drafting the will.', vi: 'Quá trình lập kế hoạch di sản đòi hỏi cân nhắc kỹ lưỡng từng bên liên quan trước khi soạn di chúc.' },
     ],
   },
   {
@@ -19499,9 +19649,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are documenting the cultural heritage of our lineage.',
     vietnamese: 'Chúng tôi đang ghi chép lại di sản văn hóa của dòng họ mình.',
     phonetic: '/wiː ɑːr ˈdɒkjəmɛntɪŋ ðə ˈkʌltʃərəl ˈhɛrɪtɪdʒ ʌv aʊər ˈlɪniɪdʒ/',
+    usage: 'Nói về việc ghi chép lại văn hóa, phong tục của dòng họ để lưu trữ lâu dài.',
     role: 'opener',
     examples: [
       { en: 'We are documenting the cultural heritage of our lineage for the archive.', vi: 'Chúng tôi đang ghi chép lại di sản văn hóa của dòng họ mình để lưu trữ.' },
+      { en: 'We are documenting the cultural heritage of our lineage through interviews with the elders.', vi: 'Chúng tôi đang ghi chép lại di sản văn hóa của dòng họ mình qua các cuộc phỏng vấn với người lớn tuổi.' },
+      { en: 'We are documenting the cultural heritage of our lineage, including old recipes and songs.', vi: 'Chúng tôi đang ghi chép lại di sản văn hóa của dòng họ mình, gồm cả những công thức nấu ăn và bài hát xưa.' },
     ],
   },
   {
@@ -19512,9 +19665,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The intergenerational dynamics shape the decisions we make together.',
     vietnamese: 'Các động lực liên thế hệ định hình những quyết định chúng ta cùng đưa ra.',
     phonetic: '/ði ˌɪntərˌdʒɛnəˈreɪʃənəl daɪˈnæmɪks ʃeɪp ðə dɪˈsɪʒənz wiː meɪk təˈɡɛðər/',
+    usage: 'Nói về cách quan hệ giữa các thế hệ ảnh hưởng đến quyết định chung của gia đình.',
     role: 'opener',
     examples: [
       { en: 'The intergenerational dynamics shape the decisions we make together as a family.', vi: 'Các động lực liên thế hệ định hình những quyết định chúng ta cùng đưa ra với tư cách một gia đình.' },
+      { en: 'The intergenerational dynamics shape the decisions we make together on education and housing.', vi: 'Các động lực liên thế hệ định hình những quyết định chúng ta cùng đưa ra về giáo dục và nhà ở.' },
+      { en: 'The intergenerational dynamics shape the decisions we make together, so we listen to every generation.', vi: 'Các động lực liên thế hệ định hình những quyết định chúng ta cùng đưa ra nên chúng tôi lắng nghe mọi thế hệ.' },
     ],
   },
   {
@@ -19525,9 +19681,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Having weighed the options, we prefer the phased approach to the relocation.',
     vietnamese: 'Sau khi cân nhắc các phương án, chúng tôi ưu tiên cách tiếp cận theo giai đoạn cho việc chuyển nhà.',
     phonetic: '/ˈhævɪŋ weɪd ði ˈɒpʃənz wiː prɪˈfɜːr ðə feɪzd əˈproʊtʃ tuː ðə ˌriːloʊˈkeɪʃən/',
+    usage: 'Nói về việc lựa chọn cách làm theo giai đoạn sau khi đã cân nhắc các phương án.',
     role: 'linker',
     examples: [
       { en: 'Having weighed the options, we prefer the phased approach to the relocation.', vi: 'Sau khi cân nhắc các phương án, chúng tôi ưu tiên cách tiếp cận theo giai đoạn cho việc chuyển nhà.' },
+      { en: 'Having weighed the options, we prefer the phased approach to the relocation to reduce stress.', vi: 'Sau khi cân nhắc các phương án, chúng tôi ưu tiên cách tiếp cận theo giai đoạn cho việc chuyển nhà để giảm căng thẳng.' },
+      { en: 'Having weighed the options, we prefer the phased approach to the relocation over a sudden move.', vi: 'Sau khi cân nhắc các phương án, chúng tôi ưu tiên cách tiếp cận theo giai đoạn cho việc chuyển nhà hơn là chuyển gấp.' },
     ],
   },
   {
@@ -19538,9 +19697,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Should the circumstances change, we will revisit the arrangement.',
     vietnamese: 'Nếu hoàn cảnh thay đổi, chúng tôi sẽ xem xét lại thỏa thuận.',
     phonetic: '/ʃʊd ðə ˈsɜːrkəmstænsɪz tʃeɪndʒ wiː wɪl riːˈvɪzɪt ði əˈreɪndʒmənt/',
+    usage: 'Nói về điều kiện sẽ khiến gia đình xem xét lại một thỏa thuận đã đặt ra.',
     role: 'linker',
     examples: [
       { en: 'Should the circumstances change, we will revisit the arrangement without delay.', vi: 'Nếu hoàn cảnh thay đổi, chúng tôi sẽ xem xét lại thỏa thuận ngay lập tức.' },
+      { en: 'Should the circumstances change, we will revisit the arrangement about the caretaking schedule.', vi: 'Nếu hoàn cảnh thay đổi, chúng tôi sẽ xem xét lại thỏa thuận về lịch chăm sóc.' },
+      { en: 'Should the circumstances change, we will revisit the arrangement and inform everyone in writing.', vi: 'Nếu hoàn cảnh thay đổi, chúng tôi sẽ xem xét lại thỏa thuận và báo cho mọi người bằng văn bản.' },
     ],
   },
   {
@@ -19551,9 +19713,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In accordance with the wishes of the elders, we will honor the ceremony.',
     vietnamese: 'Theo nguyện vọng của các bậc trưởng bối, chúng tôi sẽ tôn trọng nghi lễ.',
     phonetic: '/ɪn əˈkɔːrdəns wɪð ðə ˈwɪʃɪz ʌv ði ˈɛldərz wiː wɪl ˈɒnər ðə ˈsɛrəmoʊni/',
+    usage: 'Nói về việc tôn trọng nguyện vọng của người lớn tuổi trong việc thực hiện nghi lễ.',
     role: 'linker',
     examples: [
       { en: 'In accordance with the wishes of the elders, we will honor the ceremony.', vi: 'Theo nguyện vọng của các bậc trưởng bối, chúng tôi sẽ tôn trọng nghi lễ.' },
+      { en: 'In accordance with the wishes of the elders, we will honor the ceremony with the full ritual.', vi: 'Theo nguyện vọng của các bậc trưởng bối, chúng tôi sẽ tôn trọng nghi lễ với đầy đủ nghi thức.' },
+      { en: 'In accordance with the wishes of the elders, we will honor the ceremony at the ancestral house.', vi: 'Theo nguyện vọng của các bậc trưởng bối, chúng tôi sẽ tôn trọng nghi lễ tại nhà thờ họ.' },
     ],
   },
   {
@@ -19564,9 +19729,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subsequently, we will align the household budget with the new priorities.',
     vietnamese: 'Sau đó, chúng tôi sẽ điều chỉnh ngân sách gia đình cho phù hợp với các ưu tiên mới.',
     phonetic: '/ˈsʌbsɪkwəntli wiː wɪl əˈlaɪn ðə ˈhaʊshoʊld ˈbʌdʒɪt wɪð ðə nuː praɪˈɒrətiz/',
+    usage: 'Nói về bước tiếp theo sau một quyết định, thường là điều chỉnh ngân sách.',
     role: 'linker',
     examples: [
       { en: 'Subsequently, we will align the household budget with the new priorities.', vi: 'Sau đó, chúng tôi sẽ điều chỉnh ngân sách gia đình cho phù hợp với các ưu tiên mới.' },
+      { en: 'Subsequently, we will align the household budget with the new priorities for education.', vi: 'Sau đó, chúng tôi sẽ điều chỉnh ngân sách gia đình cho phù hợp với các ưu tiên mới về giáo dục.' },
+      { en: 'Subsequently, we will align the household budget with the new priorities and share it with the family.', vi: 'Sau đó, chúng tôi sẽ điều chỉnh ngân sách gia đình cho phù hợp với các ưu tiên mới và chia sẻ với cả nhà.' },
     ],
   },
   {
@@ -19577,9 +19745,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It goes without saying that mutual respect underpins the whole dynamic.',
     vietnamese: 'Không cần nói cũng biết rằng sự tôn trọng lẫn nhau là nền tảng của cả mối quan hệ.',
     phonetic: '/ɪt ɡoʊz wɪˈðaʊt ˈseɪɪŋ ðæt ˈmjuːtʃuəl rɪˈspɛkt ˌʌndərˈpɪnz ðə hoʊl daɪˈnæmɪk/',
+    usage: 'Nói về một điều hiển nhiên làm nền tảng cho mối quan hệ gia đình.',
     role: 'filler',
     examples: [
       { en: 'It goes without saying that mutual respect underpins the whole dynamic.', vi: 'Không cần nói cũng biết rằng sự tôn trọng lẫn nhau là nền tảng của cả mối quan hệ.' },
+      { en: 'It goes without saying that mutual respect underpins the whole dynamic between the generations.', vi: 'Không cần nói cũng biết rằng sự tôn trọng lẫn nhau là nền tảng của cả mối quan hệ giữa các thế hệ.' },
+      { en: 'It goes without saying that mutual respect underpins the whole dynamic, from chores to finances.', vi: 'Không cần nói cũng biết rằng sự tôn trọng lẫn nhau là nền tảng của cả mối quan hệ, từ việc nhà đến tài chính.' },
     ],
   },
   {
@@ -19590,9 +19761,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is a discernible shift in the way the younger members perceive tradition.',
     vietnamese: 'Có một sự thay đổi rõ rệt trong cách các thành viên trẻ nhìn nhận truyền thống.',
     phonetic: '/ðɛr ɪz ə dɪˈsɜːrnəbəl ʃɪft ɪn ðə weɪ ðə ˈjʌŋɡər ˈmɛmbərz pərˈsiːv trəˈdɪʃən/',
+    usage: 'Nói về sự thay đổi có thể nhận thấy trong cách thế hệ trẻ nhìn nhận truyền thống.',
     role: 'filler',
     examples: [
       { en: 'There is a discernible shift in the way the younger members perceive tradition.', vi: 'Có một sự thay đổi rõ rệt trong cách các thành viên trẻ nhìn nhận truyền thống.' },
+      { en: 'There is a discernible shift in the way the younger members perceive tradition and marriage.', vi: 'Có một sự thay đổi rõ rệt trong cách các thành viên trẻ nhìn nhận truyền thống và hôn nhân.' },
+      { en: 'There is a discernible shift in the way the younger members perceive tradition, which is worth discussing.', vi: 'Có một sự thay đổi rõ rệt trong cách các thành viên trẻ nhìn nhận truyền thống, điều này đáng để thảo luận.' },
     ],
   },
   {
@@ -19603,9 +19777,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'One cannot underestimate the value of shared memories in binding the family.',
     vietnamese: 'Không thể đánh giá thấp giá trị của những kỷ niệm chung trong việc gắn kết gia đình.',
     phonetic: '/wʌn ˈkænɒt ˌʌndərˈɛstɪmeɪt ðə ˈvæljuː ʌv ʃɛrd ˈmɛməriz ɪn ˈbaɪndɪŋ ðə ˈfæməli/',
+    usage: 'Nói về vai trò quan trọng của kỷ niệm chung trong việc gắn kết các thành viên.',
     role: 'filler',
     examples: [
       { en: 'One cannot underestimate the value of shared memories in binding the family.', vi: 'Không thể đánh giá thấp giá trị của những kỷ niệm chung trong việc gắn kết gia đình.' },
+      { en: 'One cannot underestimate the value of shared memories in binding the family across the years.', vi: 'Không thể đánh giá thấp giá trị của những kỷ niệm chung trong việc gắn kết gia đình qua năm tháng.' },
+      { en: 'One cannot underestimate the value of shared memories in binding the family when conflicts arise.', vi: 'Không thể đánh giá thấp giá trị của những kỷ niệm chung trong việc gắn kết gia đình khi có mâu thuẫn.' },
     ],
   },
   {
@@ -19616,9 +19793,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is prudent to involve the younger generation in the long-term decisions.',
     vietnamese: 'Thật khôn ngoan khi để thế hệ trẻ tham gia vào các quyết định dài hạn.',
     phonetic: '/ɪt ɪz ˈpruːdənt tuː ɪnˈvɒlv ðə ˈjʌŋɡər ˌdʒɛnəˈreɪʃən ɪn ðə lɔːŋ tɜːrm dɪˈsɪʒənz/',
+    usage: 'Nói về sự khôn ngoan khi cho thế hệ trẻ tham gia vào các quyết định dài hạn.',
     role: 'filler',
     examples: [
       { en: 'It is prudent to involve the younger generation in the long-term decisions.', vi: 'Thật khôn ngoan khi để thế hệ trẻ tham gia vào các quyết định dài hạn.' },
+      { en: 'It is prudent to involve the younger generation in the long-term decisions about the family property.', vi: 'Thật khôn ngoan khi để thế hệ trẻ tham gia vào các quyết định dài hạn về tài sản gia đình.' },
+      { en: 'It is prudent to involve the younger generation in the long-term decisions to ensure continuity.', vi: 'Thật khôn ngoan khi để thế hệ trẻ tham gia vào các quyết định dài hạn để đảm bảo tính kế thừa.' },
     ],
   },
   {
@@ -19629,9 +19809,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have reconciled the differing viewpoints and reached a consensus.',
     vietnamese: 'Chúng tôi đã dung hòa các quan điểm khác biệt và đạt được sự đồng thuận.',
     phonetic: '/wiː hæv ˈrɛkənsaɪld ðə ˈdɪfərɪŋ ˈvjuːpɔɪnts ænd riːtʃt ə kənˈsɛnsəs/',
+    usage: 'Nói về việc đã hòa giải các quan điểm khác nhau và đạt được đồng thuận trong gia đình.',
     role: 'closer',
     examples: [
       { en: 'We have reconciled the differing viewpoints and reached a consensus.', vi: 'Chúng tôi đã dung hòa các quan điểm khác biệt và đạt được sự đồng thuận.' },
+      { en: 'We have reconciled the differing viewpoints and reached a consensus on the new house rules.', vi: 'Chúng tôi đã dung hòa các quan điểm khác biệt và đạt được sự đồng thuận về nội quy mới của gia đình.' },
+      { en: 'We have reconciled the differing viewpoints and reached a consensus after several family meetings.', vi: 'Chúng tôi đã dung hòa các quan điểm khác biệt và đạt được sự đồng thuận sau nhiều buổi họp gia đình.' },
     ],
   },
   {
@@ -19642,9 +19825,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will institutionalize this practice as part of the family charter.',
     vietnamese: 'Chúng tôi sẽ thể chế hóa tập quán này như một phần của hiến chương gia đình.',
     phonetic: '/wiː wɪl ˌɪnstɪˈtuːʃənəlaɪz ðɪs ˈpræktɪs æz pɑːrt ʌv ðə ˈfæməli ˈtʃɑːrtər/',
+    usage: 'Nói về việc biến một tập quán tốt thành quy định chính thức của gia đình.',
     role: 'closer',
     examples: [
       { en: 'We will institutionalize this practice as part of the family charter.', vi: 'Chúng tôi sẽ thể chế hóa tập quán này như một phần của hiến chương gia đình.' },
+      { en: 'We will institutionalize this practice as part of the family charter for future generations.', vi: 'Chúng tôi sẽ thể chế hóa tập quán này như một phần của hiến chương gia đình cho các thế hệ tương lai.' },
+      { en: 'We will institutionalize this practice as part of the family charter, starting with the annual meeting.', vi: 'Chúng tôi sẽ thể chế hóa tập quán này như một phần của hiến chương gia đình, bắt đầu từ cuộc họp hằng năm.' },
     ],
   },
   {
@@ -19655,9 +19841,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will preserve the archive for the benefit of the generations to come.',
     vietnamese: 'Chúng tôi sẽ bảo quản kho lưu trữ vì lợi ích của các thế hệ mai sau.',
     phonetic: '/wiː wɪl prɪˈzɜːrv ði ˈɑːrkaɪv fər ðə ˈbɛnɪfɪt ʌv ðə ˌdʒɛnəˈreɪʃənz tuː kʌm/',
+    usage: 'Nói về việc gìn giữ kho lưu trữ gia đình vì lợi ích của các thế hệ mai sau.',
     role: 'closer',
     examples: [
       { en: 'We will preserve the archive for the benefit of the generations to come.', vi: 'Chúng tôi sẽ bảo quản kho lưu trữ vì lợi ích của các thế hệ mai sau.' },
+      { en: 'We will preserve the archive for the benefit of the generations to come, digitizing old letters.', vi: 'Chúng tôi sẽ bảo quản kho lưu trữ vì lợi ích của các thế hệ mai sau, số hóa những lá thư cũ.' },
+      { en: 'We will preserve the archive for the benefit of the generations to come and keep it secure.', vi: 'Chúng tôi sẽ bảo quản kho lưu trữ vì lợi ích của các thế hệ mai sau và giữ nó an toàn.' },
     ],
   },
   {
@@ -19668,9 +19857,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will convene the family council to close the discussion formally.',
     vietnamese: 'Chúng tôi sẽ triệu tập hội đồng gia đình để chính thức kết thúc cuộc thảo luận.',
     phonetic: '/wiː wɪl kənˈviːn ðə ˈfæməli ˈkaʊnsəl tuː kloʊz ðə dɪˈskʌʃən ˈfɔːrməli/',
+    usage: 'Nói về việc chính thức kết thúc một cuộc họp gia đình bằng cách triệu tập hội đồng.',
     role: 'closer',
     examples: [
       { en: 'We will convene the family council to close the discussion formally.', vi: 'Chúng tôi sẽ triệu tập hội đồng gia đình để chính thức kết thúc cuộc thảo luận.' },
+      { en: 'We will convene the family council to close the discussion formally and record the minutes.', vi: 'Chúng tôi sẽ triệu tập hội đồng gia đình để chính thức kết thúc cuộc thảo luận và ghi biên bản.' },
+      { en: 'We will convene the family council to close the discussion formally before the holidays.', vi: 'Chúng tôi sẽ triệu tập hội đồng gia đình để chính thức kết thúc cuộc thảo luận trước kỳ nghỉ lễ.' },
     ],
   },
 
