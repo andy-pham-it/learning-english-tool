@@ -2354,9 +2354,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let me look at your code.',
     vietnamese: 'Để tôi xem mã của bạn.',
     phonetic: '/lɛt miː lʊk æt jɔːr koʊd/',
+    usage: 'Dùng khi bắt đầu xem xét mã nguồn của người khác, thường trước khi merge hoặc deploy.',
     role: 'opener',
     examples: [
       { en: 'Let me look at your code before we deploy.', vi: 'Để tôi xem mã của bạn trước khi chúng ta triển khai.' },
+      { en: 'Let me look at your code before the release.', vi: 'Để tôi xem mã của bạn trước khi phát hành.' },
+      { en: 'Let me look at your code and give feedback.', vi: 'Để tôi xem mã của bạn và đưa ra phản hồi.' },
     ],
   },
   {
@@ -2367,9 +2370,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I read your changes.',
     vietnamese: 'Tôi đã đọc những thay đổi của bạn.',
     phonetic: '/aɪ riːd jɔːr ˈtʃeɪndʒɪz/',
+    usage: 'Dùng khi thông báo bạn đã đọc xong các thay đổi và sẵn sàng nhận xét.',
     role: 'opener',
     examples: [
       { en: 'I read your changes and they look good.', vi: 'Tôi đã đọc những thay đổi của bạn và chúng trông ổn.' },
+      { en: 'I read your changes and have one comment.', vi: 'Tôi đã đọc những thay đổi của bạn và có một góp ý.' },
+      { en: 'I read your changes, they are clear.', vi: 'Tôi đã đọc những thay đổi của bạn, chúng rất rõ ràng.' },
     ],
   },
   {
@@ -2380,9 +2386,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us go through your code together.',
     vietnamese: 'Chúng ta hãy cùng xem qua mã của bạn.',
     phonetic: '/lɛt ʌz ɡoʊ θruː jɔːr koʊd təˈɡɛðər/',
+    usage: 'Dùng khi đề nghị cùng xem qua mã với người viết để tìm vấn đề chung.',
     role: 'opener',
     examples: [
       { en: 'Let us go through your code together and find the issue.', vi: 'Chúng ta hãy cùng xem qua mã của bạn và tìm ra vấn đề.' },
+      { en: 'Let us go through your code together and check it.', vi: 'Chúng ta hãy cùng xem qua mã của bạn và kiểm tra nó.' },
+      { en: 'Let us go through your code together step by step.', vi: 'Chúng ta hãy cùng xem qua mã của bạn từng bước một.' },
     ],
   },
   {
@@ -2393,9 +2402,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Here is what I found in the review.',
     vietnamese: 'Đây là những gì tôi tìm thấy khi xem xét.',
     phonetic: '/hɪr ɪz wʌt aɪ faʊnd ɪn ðə rɪˈvjuː/',
+    usage: 'Dùng khi bắt đầu trình bày những gì bạn phát hiện trong quá trình xem xét.',
     role: 'opener',
     examples: [
       { en: 'Here is what I found in the review, a small bug on line twenty.', vi: 'Đây là những gì tôi tìm thấy khi xem xét, một lỗi nhỏ ở dòng hai mươi.' },
+      { en: 'Here is what I found in the review, a missing check.', vi: 'Đây là những gì tôi tìm thấy khi xem xét, một bước kiểm tra bị thiếu.' },
+      { en: 'Here is what I found in the review, nothing serious.', vi: 'Đây là những gì tôi tìm thấy khi xem xét, không có gì nghiêm trọng.' },
     ],
   },
   {
@@ -2406,9 +2418,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, let me check this part.',
     vietnamese: 'Trước tiên, để tôi kiểm tra phần này.',
     phonetic: '/fɜːrst lɛt miː tʃɛk ðɪs pɑːrt/',
+    usage: 'Dùng khi bắt đầu kiểm tra một phần cụ thể của mã trong buổi review.',
     role: 'linker',
     examples: [
       { en: 'First, let me check this part of the function.', vi: 'Trước tiên, để tôi kiểm tra phần này của hàm.' },
+      { en: 'First, let me check this part of the code.', vi: 'Trước tiên, để tôi kiểm tra phần này của mã.' },
+      { en: 'First, let me check this part for errors.', vi: 'Trước tiên, để tôi kiểm tra phần này xem có lỗi không.' },
     ],
   },
   {
@@ -2419,9 +2434,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, look at this line.',
     vietnamese: 'Tiếp theo, hãy nhìn vào dòng này.',
     phonetic: '/nɛkst lʊk æt ðɪs laɪn/',
+    usage: 'Dùng khi chuyển sự chú ý sang một dòng mã cụ thể có thể gây lỗi.',
     role: 'linker',
     examples: [
       { en: 'Next, look at this line, it may cause an error.', vi: 'Tiếp theo, hãy nhìn vào dòng này, nó có thể gây lỗi.' },
+      { en: 'Next, look at this line, it is missing a semicolon.', vi: 'Tiếp theo, hãy nhìn vào dòng này, nó thiếu dấu chấm phẩy.' },
+      { en: 'Next, look at this line, the logic is wrong.', vi: 'Tiếp theo, hãy nhìn vào dòng này, logic bị sai.' },
     ],
   },
   {
@@ -2432,9 +2450,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, we can test the new code.',
     vietnamese: 'Sau đó, chúng ta có thể kiểm thử mã mới.',
     phonetic: '/ˈæftər ðæt wiː kæn tɛst ðə nuː koʊd/',
+    usage: 'Dùng khi đề xuất kiểm thử mã mới sau khi đã xem xét xong.',
     role: 'linker',
     examples: [
       { en: 'After that, we can test the new code in the staging area.', vi: 'Sau đó, chúng ta có thể kiểm thử mã mới trên môi trường staging.' },
+      { en: 'After that, we can test the new code together.', vi: 'Sau đó, chúng ta có thể kiểm thử mã mới cùng nhau.' },
+      { en: 'After that, we can test the new code on staging.', vi: 'Sau đó, chúng ta có thể kiểm thử mã mới trên môi trường staging.' },
     ],
   },
   {
@@ -2445,9 +2466,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Also, check this function here.',
     vietnamese: 'Ngoài ra, hãy kiểm tra hàm này ở đây.',
     phonetic: '/ˈɔːlsoʊ tʃɛk ðɪs ˈfʌŋkʃən hɪr/',
+    usage: 'Dùng khi thêm một điểm cần kiểm tra khác trong quá trình review.',
     role: 'linker',
     examples: [
       { en: 'Also, check this function here, it runs too slowly.', vi: 'Ngoài ra, hãy kiểm tra hàm này ở đây, nó chạy quá chậm.' },
+      { en: 'Also, check this function here, it has a bug.', vi: 'Ngoài ra, hãy kiểm tra hàm này ở đây, nó có một lỗi.' },
+      { en: 'Also, check this function here for edge cases.', vi: 'Ngoài ra, hãy kiểm tra hàm này ở đây cho các trường hợp biên.' },
     ],
   },
   {
@@ -2458,9 +2482,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I think this part is fine.',
     vietnamese: 'Tôi nghĩ phần này ổn.',
     phonetic: '/aɪ θɪŋk ðɪs pɑːrt ɪz faɪn/',
+    usage: 'Dùng khi đánh giá một phần mã không cần thay đổi gì.',
     role: 'filler',
     examples: [
       { en: 'I think this part is fine, no changes needed.', vi: 'Tôi nghĩ phần này ổn, không cần thay đổi.' },
+      { en: 'I think this part is fine, keep it.', vi: 'Tôi nghĩ phần này ổn, hãy giữ nguyên.' },
+      { en: 'I think this part is fine as it is.', vi: 'Tôi nghĩ phần này ổn như hiện tại.' },
     ],
   },
   {
@@ -2471,9 +2498,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This looks good to me.',
     vietnamese: 'Phần này trông ổn với tôi.',
     phonetic: '/ðɪs lʊks ɡʊd tuː miː/',
+    usage: 'Dùng khi đồng ý với một phần mã và cho phép giữ nguyên.',
     role: 'filler',
     examples: [
       { en: 'This looks good to me, you can keep it.', vi: 'Phần này trông ổn với tôi, bạn có thể giữ nó.' },
+      { en: 'This looks good to me, no problem.', vi: 'Phần này trông ổn với tôi, không vấn đề gì.' },
+      { en: 'This looks good to me, well done.', vi: 'Phần này trông ổn với tôi, làm tốt lắm.' },
     ],
   },
   {
@@ -2484,9 +2514,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we can change this name.',
     vietnamese: 'Có lẽ chúng ta có thể đổi tên chỗ này.',
     phonetic: '/ˈmeɪbi wiː kæn tʃeɪndʒ ðɪs neɪm/',
+    usage: 'Dùng khi gợi ý đổi tên biến hoặc hàm cho rõ nghĩa hơn.',
     role: 'filler',
     examples: [
       { en: 'Maybe we can change this name to something clearer.', vi: 'Có lẽ chúng ta có thể đổi tên chỗ này thành thứ gì đó rõ ràng hơn.' },
+      { en: 'Maybe we can change this name to a better one.', vi: 'Có lẽ chúng ta có thể đổi tên chỗ này thành một cái rõ hơn.' },
+      { en: 'Maybe we can change this name to match the style.', vi: 'Có lẽ chúng ta có thể đổi tên chỗ này cho hợp phong cách.' },
     ],
   },
   {
@@ -2497,9 +2530,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is only a small thing.',
     vietnamese: 'Đây chỉ là một chi tiết nhỏ thôi.',
     phonetic: '/ɪt ɪz ˈoʊnli ə smɔːl θɪŋ/',
+    usage: 'Dùng khi trấn an rằng vấn đề nhỏ, nhưng vẫn nên sửa.',
     role: 'filler',
     examples: [
       { en: 'It is only a small thing, but please fix it.', vi: 'Đây chỉ là một chi tiết nhỏ thôi, nhưng hãy sửa nó.' },
+      { en: 'It is only a small thing, but worth fixing.', vi: 'Đây chỉ là một chi tiết nhỏ thôi, nhưng đáng để sửa.' },
+      { en: 'It is only a small thing, do not worry.', vi: 'Đây chỉ là một chi tiết nhỏ thôi, đừng lo lắng.' },
     ],
   },
   {
@@ -2510,9 +2546,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Please fix this and send it again.',
     vietnamese: 'Vui lòng sửa chỗ này và gửi lại.',
     phonetic: '/pliːz fɪks ðɪs ænd sɛnd ɪt əˈɡɛn/',
+    usage: 'Dùng khi yêu cầu sửa lỗi và gửi lại để xem xét lần nữa.',
     role: 'closer',
     examples: [
       { en: 'Please fix this and send it again for a new review.', vi: 'Vui lòng sửa chỗ này và gửi lại để xem xét lần nữa.' },
+      { en: 'Please fix this and send it again tomorrow.', vi: 'Vui lòng sửa chỗ này và gửi lại vào ngày mai.' },
+      { en: 'Please fix this and send it again when ready.', vi: 'Vui lòng sửa chỗ này và gửi lại khi sẵn sàng.' },
     ],
   },
   {
@@ -2523,9 +2562,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us approve your changes.',
     vietnamese: 'Chúng ta sẽ duyệt những thay đổi của bạn.',
     phonetic: '/lɛt ʌz əˈpruːv jɔːr ˈtʃeɪndʒɪz/',
+    usage: 'Dùng khi đồng ý duyệt các thay đổi và chuyển sang việc khác.',
     role: 'closer',
     examples: [
       { en: 'Let us approve your changes and move on.', vi: 'Chúng ta sẽ duyệt những thay đổi của bạn và tiếp tục.' },
+      { en: 'Let us approve your changes and merge.', vi: 'Chúng ta sẽ duyệt những thay đổi của bạn và merge.' },
+      { en: 'Let us approve your changes, they are ready.', vi: 'Chúng ta sẽ duyệt những thay đổi của bạn, chúng đã sẵn sàng.' },
     ],
   },
   {
@@ -2536,9 +2578,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Great work, keep it up.',
     vietnamese: 'Làm tốt lắm, cứ tiếp tục nhé.',
     phonetic: '/ɡreɪt wɜːrk kiːp ɪt ʌp/',
+    usage: 'Dùng ở cuối review để khen ngợi và động viên người viết mã.',
     role: 'closer',
     examples: [
       { en: 'Great work, keep it up with the tests.', vi: 'Làm tốt lắm, cứ tiếp tục với các bài kiểm thử nhé.' },
+      { en: 'Great work, keep it up with the good code.', vi: 'Làm tốt lắm, cứ tiếp tục với mã nguồn tốt nhé.' },
+      { en: 'Great work, keep it up and keep testing.', vi: 'Làm tốt lắm, cứ tiếp tục và duy trì kiểm thử.' },
     ],
   },
   {
@@ -2549,9 +2594,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are done with the review.',
     vietnamese: 'Chúng ta đã xong phần xem xét.',
     phonetic: '/wiː ɑːr dʌn wɪð ðə rɪˈvjuː/',
+    usage: 'Dùng khi kết thúc buổi review và cho phép merge.',
     role: 'closer',
     examples: [
       { en: 'We are done with the review, you can merge now.', vi: 'Chúng ta đã xong phần xem xét, bạn có thể merge bây giờ.' },
+      { en: 'We are done with the review, go ahead.', vi: 'Chúng ta đã xong phần xem xét, cứ tiến hành.' },
+      { en: 'We are done with the review, everything is fine.', vi: 'Chúng ta đã xong phần xem xét, mọi thứ đều ổn.' },
     ],
   },
   {
@@ -2562,9 +2610,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have a few comments on your changes.',
     vietnamese: 'Tôi có vài góp ý về những thay đổi của bạn.',
     phonetic: '/aɪ hæv ə fjuː ˈkɑːmɛnts ɒn jɔːr ˈtʃeɪndʒɪz/',
+    usage: 'Dùng khi bắt đầu review với vài góp ý trước khi merge.',
     role: 'opener',
     examples: [
       { en: 'I have a few comments on your changes before we merge.', vi: 'Tôi có vài góp ý về những thay đổi của bạn trước khi chúng ta merge.' },
+      { en: 'I have a few comments on your changes about naming.', vi: 'Tôi có vài góp ý về những thay đổi của bạn về cách đặt tên.' },
+      { en: 'I have a few comments on your changes, mostly minor.', vi: 'Tôi có vài góp ý về những thay đổi của bạn, chủ yếu là nhỏ.' },
     ],
   },
   {
@@ -2575,9 +2626,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let me walk you through my feedback.',
     vietnamese: 'Để tôi trình bày phản hồi của tôi.',
     phonetic: '/lɛt miː wɔːk juː θruː maɪ ˈfiːdbæk/',
+    usage: 'Dùng khi bắt đầu trình bày phản hồi một cách có cấu trúc.',
     role: 'opener',
     examples: [
       { en: 'Let me walk you through my feedback on the login flow.', vi: 'Để tôi trình bày phản hồi của tôi về luồng đăng nhập.' },
+      { en: 'Let me walk you through my feedback on the code.', vi: 'Để tôi trình bày phản hồi của tôi về mã nguồn.' },
+      { en: 'Let me walk you through my feedback step by step.', vi: 'Để tôi trình bày phản hồi của tôi từng bước một.' },
     ],
   },
   {
@@ -2588,9 +2642,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have finished reviewing your pull request.',
     vietnamese: 'Tôi đã xem xong pull request của bạn.',
     phonetic: '/aɪ hæv ˈfɪnɪʃt rɪˈvjuːɪŋ jɔːr pʊl rɪˈkwɛst/',
+    usage: 'Dùng khi thông báo đã xem xong pull request và đưa ra đánh giá chung.',
     role: 'opener',
     examples: [
       { en: 'I have finished reviewing your pull request, most of it looks solid.', vi: 'Tôi đã xem xong pull request của bạn, hầu hết trông ổn.' },
+      { en: 'I have finished reviewing your pull request, it is good.', vi: 'Tôi đã xem xong pull request của bạn, nó rất tốt.' },
+      { en: 'I have finished reviewing your pull request, two small notes.', vi: 'Tôi đã xem xong pull request của bạn, có hai ghi chú nhỏ.' },
     ],
   },
   {
@@ -2601,9 +2658,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There are a few things we need to discuss.',
     vietnamese: 'Có vài điều chúng ta cần thảo luận.',
     phonetic: '/ðɛr ɑːr ə fjuː θɪŋz wiː niːd tuː dɪˈskʌs/',
+    usage: 'Dùng khi có những điểm cần thảo luận trước khi quyết định.',
     role: 'opener',
     examples: [
       { en: 'There are a few things we need to discuss about the API design.', vi: 'Có vài điều chúng ta cần thảo luận về thiết kế API.' },
+      { en: 'There are a few things we need to discuss about the schema.', vi: 'Có vài điều chúng ta cần thảo luận về cấu trúc dữ liệu.' },
+      { en: 'There are a few things we need to discuss before merging.', vi: 'Có vài điều chúng ta cần thảo luận trước khi merge.' },
     ],
   },
   {
@@ -2614,9 +2674,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Moving on to the next file.',
     vietnamese: 'Chuyển sang file tiếp theo.',
     phonetic: '/ˈmuːvɪŋ ɒn tuː ðə nɛkst faɪl/',
+    usage: 'Dùng khi chuyển sang xem xét file tiếp theo trong buổi review.',
     role: 'linker',
     examples: [
       { en: 'Moving on to the next file, the service layer looks clean.', vi: 'Chuyển sang file tiếp theo, tầng service trông gọn gàng.' },
+      { en: 'Moving on to the next file, the config looks fine.', vi: 'Chuyển sang file tiếp theo, cấu hình trông ổn.' },
+      { en: 'Moving on to the next file, the tests are missing.', vi: 'Chuyển sang file tiếp theo, các bài kiểm thử bị thiếu.' },
     ],
   },
   {
@@ -2627,9 +2690,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us talk about this condition here.',
     vietnamese: 'Hãy bàn về điều kiện ở chỗ này.',
     phonetic: '/lɛt ʌz tɔːk əˈbaʊt ðɪs kənˈdɪʃən hɪr/',
+    usage: 'Dùng khi muốn thảo luận về một điều kiện cụ thể trong mã.',
     role: 'linker',
     examples: [
       { en: 'Let us talk about this condition here, it might be backwards.', vi: 'Hãy bàn về điều kiện ở chỗ này, nó có thể bị đảo ngược.' },
+      { en: 'Let us talk about this condition here, it looks inverted.', vi: 'Hãy bàn về điều kiện ở chỗ này, nó có vẻ bị đảo ngược.' },
+      { en: 'Let us talk about this condition here and its edge case.', vi: 'Hãy bàn về điều kiện ở chỗ này và trường hợp biên của nó.' },
     ],
   },
   {
@@ -2640,9 +2706,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'On that point, I would add a check.',
     vietnamese: 'Về điểm đó, tôi sẽ thêm một kiểm tra.',
     phonetic: '/ɒn ðæt pɔɪnt aɪ wʊd æd ə tʃɛk/',
+    usage: 'Dùng khi đề xuất thêm một kiểm tra dựa trên một điểm vừa nêu.',
     role: 'linker',
     examples: [
       { en: 'On that point, I would add a check for empty input.', vi: 'Về điểm đó, tôi sẽ thêm một kiểm tra cho dữ liệu đầu vào rỗng.' },
+      { en: 'On that point, I would add a check for null values.', vi: 'Về điểm đó, tôi sẽ thêm một kiểm tra cho các giá trị rỗng.' },
+      { en: 'On that point, I would add a check before the call.', vi: 'Về điểm đó, tôi sẽ thêm một kiểm tra trước lời gọi.' },
     ],
   },
   {
@@ -2653,9 +2722,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Regarding the error handling part.',
     vietnamese: 'Về phần xử lý lỗi.',
     phonetic: '/rɪˈɡɑːrdɪŋ ði ˈɛrər ˈhændlɪŋ pɑːrt/',
+    usage: 'Dùng khi chuyển sang nhận xét về phần xử lý lỗi.',
     role: 'linker',
     examples: [
       { en: 'Regarding the error handling part, we should retry the request.', vi: 'Về phần xử lý lỗi, chúng ta nên thử lại yêu cầu.' },
+      { en: 'Regarding the error handling part, we should log more.', vi: 'Về phần xử lý lỗi, chúng ta nên ghi log nhiều hơn.' },
+      { en: 'Regarding the error handling part, it is too quiet.', vi: 'Về phần xử lý lỗi, nó quá im lặng.' },
     ],
   },
   {
@@ -2666,9 +2738,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'In my experience, this can fail.',
     vietnamese: 'Theo kinh nghiệm của tôi, chỗ này có thể lỗi.',
     phonetic: '/ɪn maɪ ɪkˈspɪriəns ðɪs kæn feɪl/',
+    usage: 'Dùng khi đưa ra cảnh báo dựa trên kinh nghiệm cá nhân.',
     role: 'filler',
     examples: [
       { en: 'In my experience, this can fail when the server is slow.', vi: 'Theo kinh nghiệm của tôi, chỗ này có thể lỗi khi máy chủ chậm.' },
+      { en: 'In my experience, this can fail under load.', vi: 'Theo kinh nghiệm của tôi, chỗ này có thể lỗi khi tải cao.' },
+      { en: 'In my experience, this can fail with bad input.', vi: 'Theo kinh nghiệm của tôi, chỗ này có thể lỗi với dữ liệu xấu.' },
     ],
   },
   {
@@ -2679,9 +2754,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'To be fair, it works in most cases.',
     vietnamese: 'Công bằng mà nói, nó chạy được trong hầu hết trường hợp.',
     phonetic: '/tuː biː fɛr ɪt wɜːrks ɪn moʊst ˈkeɪsɪz/',
+    usage: 'Dùng khi cân bằng nhận xét, thừa nhận mã chạy được trong hầu hết trường hợp.',
     role: 'filler',
     examples: [
       { en: 'To be fair, it works in most cases, so this is a minor point.', vi: 'Công bằng mà nói, nó chạy được trong hầu hết trường hợp, nên đây chỉ là điểm nhỏ.' },
+      { en: 'To be fair, it works in most cases, so it is minor.', vi: 'Công bằng mà nói, nó chạy được trong hầu hết trường hợp, nên chỉ là điểm nhỏ.' },
+      { en: 'To be fair, it works in most cases, no rush.', vi: 'Công bằng mà nói, nó chạy được trong hầu hết trường hợp, không cần gấp.' },
     ],
   },
   {
@@ -2692,9 +2770,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This is not a big problem.',
     vietnamese: 'Đây không phải là vấn đề lớn.',
     phonetic: '/ðɪs ɪz nɒt ə bɪɡ ˈprɒbləm/',
+    usage: 'Dùng khi trấn an rằng vấn đề không nghiêm trọng nhưng nên xử lý sớm.',
     role: 'filler',
     examples: [
       { en: 'This is not a big problem, but it is good to fix it now.', vi: 'Đây không phải là vấn đề lớn, nhưng tốt hơn là sửa ngay.' },
+      { en: 'This is not a big problem, but fix it soon.', vi: 'Đây không phải là vấn đề lớn, nhưng hãy sửa sớm.' },
+      { en: 'This is not a big problem, we can handle it later.', vi: 'Đây không phải là vấn đề lớn, chúng ta có thể xử lý sau.' },
     ],
   },
   {
@@ -2705,9 +2786,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would suggest a different approach.',
     vietnamese: 'Tôi sẽ đề xuất một cách tiếp cận khác.',
     phonetic: '/aɪ wʊd səˈdʒɛst ə ˈdɪfərənt əˈproʊtʃ/',
+    usage: 'Dùng khi đề xuất một cách tiếp cận khác cho vấn đề đang bàn.',
     role: 'filler',
     examples: [
       { en: 'I would suggest a different approach for loading the data.', vi: 'Tôi sẽ đề xuất một cách tiếp cận khác để tải dữ liệu.' },
+      { en: 'I would suggest a different approach for the retry logic.', vi: 'Tôi sẽ đề xuất một cách tiếp cận khác cho logic thử lại.' },
+      { en: 'I would suggest a different approach using a queue.', vi: 'Tôi sẽ đề xuất một cách tiếp cận khác dùng hàng đợi.' },
     ],
   },
   {
@@ -2718,9 +2802,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once you fix these, we can merge.',
     vietnamese: 'Khi bạn sửa những chỗ này, chúng ta có thể merge.',
     phonetic: '/wʌns juː fɪks ðiːz wiː kæn mɜːrdʒ/',
+    usage: 'Dùng khi nói rõ điều kiện để có thể merge sau khi sửa.',
     role: 'closer',
     examples: [
       { en: 'Once you fix these, we can merge the branch.', vi: 'Khi bạn sửa những chỗ này, chúng ta có thể merge nhánh.' },
+      { en: 'Once you fix these, we can merge the code.', vi: 'Khi bạn sửa những chỗ này, chúng ta có thể merge mã.' },
+      { en: 'Once you fix these, we can merge today.', vi: 'Khi bạn sửa những chỗ này, chúng ta có thể merge hôm nay.' },
     ],
   },
   {
@@ -2731,9 +2818,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us run the tests again.',
     vietnamese: 'Chúng ta hãy chạy lại kiểm thử.',
     phonetic: '/lɛt ʌz rʌn ðə tɛsts əˈɡɛn/',
+    usage: 'Dùng khi đề xuất chạy lại kiểm thử sau khi có thay đổi.',
     role: 'closer',
     examples: [
       { en: 'Let us run the tests again after your fix.', vi: 'Chúng ta hãy chạy lại kiểm thử sau khi bạn sửa.' },
+      { en: 'Let us run the tests again to be sure.', vi: 'Chúng ta hãy chạy lại kiểm thử để chắc chắn.' },
+      { en: 'Let us run the tests again on the new code.', vi: 'Chúng ta hãy chạy lại kiểm thử trên mã mới.' },
     ],
   },
   {
@@ -2744,9 +2834,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I will approve after the changes.',
     vietnamese: 'Tôi sẽ duyệt sau khi có các thay đổi.',
     phonetic: '/aɪ wɪl əˈpruːv ˈæftər ðə ˈtʃeɪndʒɪz/',
+    usage: 'Dùng khi cam kết sẽ duyệt sau khi các thay đổi được đẩy lên.',
     role: 'closer',
     examples: [
       { en: 'I will approve after the changes are pushed.', vi: 'Tôi sẽ duyệt sau khi các thay đổi được push lên.' },
+      { en: 'I will approve after the changes are ready.', vi: 'Tôi sẽ duyệt sau khi các thay đổi sẵn sàng.' },
+      { en: 'I will approve after the changes are reviewed again.', vi: 'Tôi sẽ duyệt sau khi các thay đổi được xem xét lại.' },
     ],
   },
   {
@@ -2757,9 +2850,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Thanks for the good work.',
     vietnamese: 'Cảm ơn bạn vì công việc tốt.',
     phonetic: '/θæŋks fɔːr ðə ɡʊd wɜːrk/',
+    usage: 'Dùng ở cuối review để cảm ơn và khen ngợi công việc.',
     role: 'closer',
     examples: [
       { en: 'Thanks for the good work on this feature.', vi: 'Cảm ơn bạn vì công việc tốt về tính năng này.' },
+      { en: 'Thanks for the good work on this module.', vi: 'Cảm ơn bạn vì công việc tốt trên module này.' },
+      { en: 'Thanks for the good work, it is appreciated.', vi: 'Cảm ơn bạn vì công việc tốt, rất trân trọng.' },
     ],
   },
   {
@@ -2770,9 +2866,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have reviewed the diff and have some notes.',
     vietnamese: 'Tôi đã xem xét diff và có vài ghi chú.',
     phonetic: '/aɪ hæv rɪˈvjuːd ðə dɪf ænd hæv sʌm noʊts/',
+    usage: 'Dùng khi bắt đầu review bằng cách nêu các ghi chú về diff.',
     role: 'opener',
     examples: [
       { en: 'I have reviewed the diff and have some notes on the database queries.', vi: 'Tôi đã xem xét diff và có vài ghi chú về các truy vấn cơ sở dữ liệu.' },
+      { en: 'I have reviewed the diff and have some notes on the queries.', vi: 'Tôi đã xem xét diff và có vài ghi chú về các câu truy vấn.' },
+      { en: 'I have reviewed the diff and have some notes on style.', vi: 'Tôi đã xem xét diff và có vài ghi chú về phong cách.' },
     ],
   },
   {
@@ -2783,9 +2882,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let me share my thoughts on the implementation.',
     vietnamese: 'Để tôi chia sẻ suy nghĩ của tôi về phần triển khai.',
     phonetic: '/lɛt miː ʃɛr maɪ θɔːts ɒn ði ˌɪmplɪmɛnˈteɪʃən/',
+    usage: 'Dùng khi bắt đầu chia sẻ suy nghĩ về cách triển khai.',
     role: 'opener',
     examples: [
       { en: 'Let me share my thoughts on the implementation of the retry logic.', vi: 'Để tôi chia sẻ suy nghĩ của tôi về phần triển khai logic thử lại.' },
+      { en: 'Let me share my thoughts on the implementation of the cache.', vi: 'Để tôi chia sẻ suy nghĩ của tôi về phần triển khai bộ nhớ đệm.' },
+      { en: 'Let me share my thoughts on the implementation overall.', vi: 'Để tôi chia sẻ suy nghĩ của tôi về phần triển khai nói chung.' },
     ],
   },
   {
@@ -2796,9 +2898,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have a couple of concerns about this PR.',
     vietnamese: 'Tôi có vài băn khoăn về PR này.',
     phonetic: '/aɪ hæv ə ˈkʌpəl ɒv kənˈsɜːrnz əˈbaʊt ðɪs piː ɑːr/',
+    usage: 'Dùng khi nêu các băn khoăn cụ thể về pull request.',
     role: 'opener',
     examples: [
       { en: 'I have a couple of concerns about this PR regarding timeouts.', vi: 'Tôi có vài băn khoăn về PR này liên quan đến thời gian chờ.' },
+      { en: 'I have a couple of concerns about this PR regarding security.', vi: 'Tôi có vài băn khoăn về PR này liên quan đến bảo mật.' },
+      { en: 'I have a couple of concerns about this PR, let us discuss.', vi: 'Tôi có vài băn khoăn về PR này, hãy thảo luận.' },
     ],
   },
   {
@@ -2809,9 +2914,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us look at the edge cases here.',
     vietnamese: 'Chúng ta hãy xem các trường hợp biên ở đây.',
     phonetic: '/lɛt ʌz lʊk æt ði ɛdʒ ˈkeɪsɪz hɪr/',
+    usage: 'Dùng khi đề nghị xem xét các trường hợp biên của mã.',
     role: 'opener',
     examples: [
       { en: 'Let us look at the edge cases here, like empty payloads.', vi: 'Chúng ta hãy xem các trường hợp biên ở đây, như payload rỗng.' },
+      { en: 'Let us look at the edge cases here, like null input.', vi: 'Chúng ta hãy xem các trường hợp biên ở đây, như dữ liệu rỗng.' },
+      { en: 'Let us look at the edge cases here before merging.', vi: 'Chúng ta hãy xem các trường hợp biên ở đây trước khi merge.' },
     ],
   },
   {
@@ -2822,9 +2930,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'With that in mind, let us check the tests.',
     vietnamese: 'Với ý đó, hãy kiểm tra các bài kiểm thử.',
     phonetic: '/wɪð ðæt ɪn maɪnd lɛt ʌz tʃɛk ðə tɛsts/',
+    usage: 'Dùng khi chuyển sang kiểm tra bài kiểm thử dựa trên một ý vừa nêu.',
     role: 'linker',
     examples: [
       { en: 'With that in mind, let us check the tests cover this branch.', vi: 'Với ý đó, hãy kiểm tra các bài kiểm thử bao phủ nhánh này.' },
+      { en: 'With that in mind, let us check the tests for this path.', vi: 'Với ý đó, hãy kiểm tra các bài kiểm thử cho đường này.' },
+      { en: 'With that in mind, let us check the tests cover it.', vi: 'Với ý đó, hãy kiểm tra các bài kiểm thử có bao phủ nó.' },
     ],
   },
   {
@@ -2835,9 +2946,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The next point is about performance.',
     vietnamese: 'Điểm tiếp theo là về hiệu năng.',
     phonetic: '/ðə nɛkst pɔɪnt ɪz əˈbaʊt pərˈfɔːrməns/',
+    usage: 'Dùng khi chuyển sang nhận xét về hiệu năng của mã.',
     role: 'linker',
     examples: [
       { en: 'The next point is about performance, this loop runs in linear time.', vi: 'Điểm tiếp theo là về hiệu năng, vòng lặp này chạy theo thời gian tuyến tính.' },
+      { en: 'The next point is about performance, this query is slow.', vi: 'Điểm tiếp theo là về hiệu năng, câu truy vấn này chậm.' },
+      { en: 'The next point is about performance, consider caching.', vi: 'Điểm tiếp theo là về hiệu năng, hãy cân nhắc bộ nhớ đệm.' },
     ],
   },
   {
@@ -2848,9 +2962,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let me raise one more concern.',
     vietnamese: 'Để tôi nêu thêm một băn khoăn.',
     phonetic: '/lɛt miː reɪz wʌn mɔːr kənˈsɜːrn/',
+    usage: 'Dùng khi nêu thêm một băn khoăn nữa trong buổi review.',
     role: 'linker',
     examples: [
       { en: 'Let me raise one more concern about the logging statements.', vi: 'Để tôi nêu thêm một băn khoăn về các câu lệnh ghi log.' },
+      { en: 'Let me raise one more concern about the error messages.', vi: 'Để tôi nêu thêm một băn khoăn về các thông báo lỗi.' },
+      { en: 'Let me raise one more concern about the timeout value.', vi: 'Để tôi nêu thêm một băn khoăn về giá trị thời gian chờ.' },
     ],
   },
   {
@@ -2861,9 +2978,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Building on your approach here.',
     vietnamese: 'Dựa trên cách tiếp cận của bạn ở đây.',
     phonetic: '/ˈbɪldɪŋ ɒn jɔːr əˈproʊtʃ hɪr/',
+    usage: 'Dùng khi phát triển thêm ý tưởng dựa trên cách tiếp cận của người viết.',
     role: 'linker',
     examples: [
       { en: 'Building on your approach here, we could cache the result.', vi: 'Dựa trên cách tiếp cận của bạn ở đây, chúng ta có thể lưu bộ nhớ đệm kết quả.' },
+      { en: 'Building on your approach here, we could add a fallback.', vi: 'Dựa trên cách tiếp cận của bạn ở đây, chúng ta có thể thêm phương án dự phòng.' },
+      { en: 'Building on your approach here, the tests can be shared.', vi: 'Dựa trên cách tiếp cận của bạn ở đây, các bài kiểm thử có thể dùng chung.' },
     ],
   },
   {
@@ -2874,9 +2994,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'From a maintenance standpoint.',
     vietnamese: 'Xét từ góc độ bảo trì.',
     phonetic: '/frɒm ə ˈmeɪntɪnəns ˈstændpɔɪnt/',
+    usage: 'Dùng khi đánh giá mã từ góc độ bảo trì lâu dài.',
     role: 'filler',
     examples: [
       { en: 'From a maintenance standpoint, this naming is confusing.', vi: 'Xét từ góc độ bảo trì, cách đặt tên này gây nhầm lẫn.' },
+      { en: 'From a maintenance standpoint, this is hard to read.', vi: 'Xét từ góc độ bảo trì, chỗ này khó đọc.' },
+      { en: 'From a maintenance standpoint, add a comment here.', vi: 'Xét từ góc độ bảo trì, hãy thêm một chú thích ở đây.' },
     ],
   },
   {
@@ -2887,9 +3010,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It might be worth extracting a helper.',
     vietnamese: 'Có thể đáng để tách ra một hàm phụ trợ.',
     phonetic: '/ɪt maɪt biː wɜːrθ ɪkˈstræktɪŋ ə ˈhɛlpər/',
+    usage: 'Dùng khi gợi ý tách một hàm phụ trợ để giảm trùng lặp.',
     role: 'filler',
     examples: [
       { en: 'It might be worth extracting a helper for this validation logic.', vi: 'Có thể đáng để tách ra một hàm phụ trợ cho logic xác thực này.' },
+      { en: 'It might be worth extracting a helper for this logic.', vi: 'Có thể đáng để tách ra một hàm phụ trợ cho logic này.' },
+      { en: 'It might be worth extracting a helper to reuse it.', vi: 'Có thể đáng để tách ra một hàm phụ trợ để tái sử dụng.' },
     ],
   },
   {
@@ -2900,9 +3026,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The logic seems solid overall.',
     vietnamese: 'Nhìn chung logic có vẻ vững chắc.',
     phonetic: '/ðə ˈlɒdʒɪk siːmz ˈsɒlɪd ˌoʊvərˈɔːl/',
+    usage: 'Dùng khi đánh giá tổng thể logic vững chắc, chỉ cần chỉnh nhỏ.',
     role: 'filler',
     examples: [
       { en: 'The logic seems solid overall, with just a few minor tweaks.', vi: 'Nhìn chung logic có vẻ vững chắc, chỉ cần vài điều chỉnh nhỏ.' },
+      { en: 'The logic seems solid overall, just minor tweaks.', vi: 'Nhìn chung logic có vẻ vững chắc, chỉ cần chỉnh nhỏ.' },
+      { en: 'The logic seems solid overall, good structure.', vi: 'Nhìn chung logic có vẻ vững chắc, cấu trúc tốt.' },
     ],
   },
   {
@@ -2913,9 +3042,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This adds some unnecessary complexity.',
     vietnamese: 'Chỗ này thêm độ phức tạp không cần thiết.',
     phonetic: '/ðɪs ædz sʌm ʌnˈnɛsəˌsɛri kəmˈplɛksɪti/',
+    usage: 'Dùng khi nhận xét mã bị phức tạp hóa không cần thiết.',
     role: 'filler',
     examples: [
       { en: 'This adds some unnecessary complexity, a simple flag would do.', vi: 'Chỗ này thêm độ phức tạp không cần thiết, một cờ đơn giản là đủ.' },
+      { en: 'This adds some unnecessary complexity, simplify it.', vi: 'Chỗ này thêm độ phức tạp không cần thiết, hãy đơn giản hóa.' },
+      { en: 'This adds some unnecessary complexity for a small case.', vi: 'Chỗ này thêm độ phức tạp không cần thiết cho một trường hợp nhỏ.' },
     ],
   },
   {
@@ -2926,9 +3058,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us schedule a follow-up on this.',
     vietnamese: 'Chúng ta hãy lên lịch theo dõi việc này.',
     phonetic: '/lɛt ʌs ˈskɛdʒuːl ə ˈfɒloʊʌp ɒn ðɪs/',
+    usage: 'Dùng khi đề xuất lên lịch theo dõi một vấn đề sau review.',
     role: 'closer',
     examples: [
       { en: 'Let us schedule a follow-up on this before the release.', vi: 'Chúng ta hãy lên lịch theo dõi việc này trước khi phát hành.' },
+      { en: 'Let us schedule a follow-up on this next week.', vi: 'Chúng ta hãy lên lịch theo dõi việc này vào tuần sau.' },
+      { en: 'Let us schedule a follow-up on this after the release.', vi: 'Chúng ta hãy lên lịch theo dõi việc này sau bản phát hành.' },
     ],
   },
   {
@@ -2939,9 +3074,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am happy to approve once CI passes.',
     vietnamese: 'Tôi sẵn lòng duyệt khi CI chạy qua.',
     phonetic: '/aɪ æm ˈhæpi tuː əˈpruːv wʌns siː aɪ ˈpæsɪz/',
+    usage: 'Dùng khi cam kết duyệt sau khi CI và lint chạy qua.',
     role: 'closer',
     examples: [
       { en: 'I am happy to approve once CI passes and the lint is clean.', vi: 'Tôi sẵn lòng duyệt khi CI chạy qua và lint sạch.' },
+      { en: 'I am happy to approve once CI passes on the branch.', vi: 'Tôi sẵn lòng duyệt khi CI chạy qua trên nhánh này.' },
+      { en: 'I am happy to approve once CI passes and tests are green.', vi: 'Tôi sẵn lòng duyệt khi CI chạy qua và kiểm thử xanh.' },
     ],
   },
   {
@@ -2952,9 +3090,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us align on the naming conventions.',
     vietnamese: 'Chúng ta hãy thống nhất quy ước đặt tên.',
     phonetic: '/lɛt ʌz əˈlaɪn ɒn ðə ˈneɪmɪŋ kənˈvɛnʃənz/',
+    usage: 'Dùng khi đề xuất thống nhất quy ước đặt tên trước khi viết thêm mã.',
     role: 'closer',
     examples: [
       { en: 'Let us align on the naming conventions before writing more code.', vi: 'Chúng ta hãy thống nhất quy ước đặt tên trước khi viết thêm mã.' },
+      { en: 'Let us align on the naming conventions for this module.', vi: 'Chúng ta hãy thống nhất quy ước đặt tên cho module này.' },
+      { en: 'Let us align on the naming conventions in the next PR.', vi: 'Chúng ta hãy thống nhất quy ước đặt tên trong PR tiếp theo.' },
     ],
   },
   {
@@ -2965,9 +3106,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Solid PR, nice attention to detail.',
     vietnamese: 'PR chắc chắn, chú ý đến chi tiết tốt.',
     phonetic: '/ˈsɒlɪd piː ɑːr naɪs əˈtɛnʃən tuː dɪˈteɪl/',
+    usage: 'Dùng ở cuối review để khen PR chắc chắn và chú ý chi tiết.',
     role: 'closer',
     examples: [
       { en: 'Solid PR, nice attention to detail on the edge cases.', vi: 'PR chắc chắn, chú ý đến chi tiết tốt ở các trường hợp biên.' },
+      { en: 'Solid PR, nice attention to detail on the tests.', vi: 'PR chắc chắn, chú ý đến chi tiết tốt ở các bài kiểm thử.' },
+      { en: 'Solid PR, nice attention to detail overall.', vi: 'PR chắc chắn, chú ý đến chi tiết tốt nói chung.' },
     ],
   },
   {
@@ -2978,9 +3122,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have a few remarks on the architectural choices here.',
     vietnamese: 'Tôi có vài nhận xét về các lựa chọn kiến trúc ở đây.',
     phonetic: '/aɪ hæv ə fjuː rɪˈmɑːrks ɒn ði ˌɑːrkɪˈtɛktʃərəl ˈtʃɔɪsɪz hɪr/',
+    usage: 'Dùng khi bắt đầu review cấp cao với nhận xét về lựa chọn kiến trúc.',
     role: 'opener',
     examples: [
       { en: 'I have a few remarks on the architectural choices here, especially the event bus.', vi: 'Tôi có vài nhận xét về các lựa chọn kiến trúc ở đây, đặc biệt là event bus.' },
+      { en: 'I have a few remarks on the architectural choices here, especially the queue.', vi: 'Tôi có vài nhận xét về các lựa chọn kiến trúc ở đây, đặc biệt là hàng đợi.' },
+      { en: 'I have a few remarks on the architectural choices here, let us discuss.', vi: 'Tôi có vài nhận xét về các lựa chọn kiến trúc ở đây, hãy thảo luận.' },
     ],
   },
   {
@@ -2991,9 +3138,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let me outline my assessment of the codebase changes.',
     vietnamese: 'Để tôi trình bày đánh giá của tôi về các thay đổi mã nguồn.',
     phonetic: '/lɛt miː ˈaʊtlaɪn maɪ əˈsɛsmənt ɒv ðə ˈkoʊdbeɪs ˈtʃeɪndʒɪz/',
+    usage: 'Dùng khi bắt đầu trình bày đánh giá tổng thể về các thay đổi mã nguồn.',
     role: 'opener',
     examples: [
       { en: 'Let me outline my assessment of the codebase changes and their ripple effects.', vi: 'Để tôi trình bày đánh giá của tôi về các thay đổi mã nguồn và các tác động lan tỏa của chúng.' },
+      { en: 'Let me outline my assessment of the codebase changes and the risks.', vi: 'Để tôi trình bày đánh giá của tôi về các thay đổi mã nguồn và các rủi ro.' },
+      { en: 'Let me outline my assessment of the codebase changes briefly.', vi: 'Để tôi trình bày đánh giá của tôi về các thay đổi mã nguồn một cách ngắn gọn.' },
     ],
   },
   {
@@ -3004,9 +3154,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would like to flag a subtle issue in the logic.',
     vietnamese: 'Tôi muốn nêu một vấn đề tinh tế trong logic.',
     phonetic: '/aɪ wʊd laɪk tuː flæɡ ə ˈsʌtəl ˈɪʃuː ɪn ðə ˈlɒdʒɪk/',
+    usage: 'Dùng khi muốn nêu một vấn đề tinh tế, khó thấy trong logic.',
     role: 'opener',
     examples: [
       { en: 'I would like to flag a subtle issue in the logic around pagination.', vi: 'Tôi muốn nêu một vấn đề tinh tế trong logic phân trang.' },
+      { en: 'I would like to flag a subtle issue in the logic around retries.', vi: 'Tôi muốn nêu một vấn đề tinh tế trong logic xung quanh việc thử lại.' },
+      { en: 'I would like to flag a subtle issue in the logic of the loop.', vi: 'Tôi muốn nêu một vấn đề tinh tế trong logic của vòng lặp.' },
     ],
   },
   {
@@ -3017,9 +3170,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us scrutinize the concurrency handling.',
     vietnamese: 'Chúng ta hãy soi xét phần xử lý đồng thời.',
     phonetic: '/lɛt ʌs ˈskruːtənaɪz ðə kənˈkʌrənsi ˈhændlɪŋ/',
+    usage: 'Dùng khi đề nghị soi xét kỹ phần xử lý đồng thời.',
     role: 'opener',
     examples: [
       { en: 'Let us scrutinize the concurrency handling under high load.', vi: 'Chúng ta hãy soi xét phần xử lý đồng thời dưới tải cao.' },
+      { en: 'Let us scrutinize the concurrency handling in this service.', vi: 'Chúng ta hãy soi xét phần xử lý đồng thời trong dịch vụ này.' },
+      { en: 'Let us scrutinize the concurrency handling for races.', vi: 'Chúng ta hãy soi xét phần xử lý đồng thời để tìm điều kiện đua.' },
     ],
   },
   {
@@ -3030,9 +3186,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Which brings me to the caching layer.',
     vietnamese: 'Điều này dẫn tôi đến lớp bộ nhớ đệm.',
     phonetic: '/wɪtʃ brɪŋz miː tuː ðə ˈkæʃɪŋ ˈleɪər/',
+    usage: 'Dùng khi chuyển chủ đề sang một lớp liên quan trong kiến trúc.',
     role: 'linker',
     examples: [
       { en: 'Which brings me to the caching layer, where the invalidation is tricky.', vi: 'Điều này dẫn tôi đến lớp bộ nhớ đệm, nơi việc vô hiệu hóa rất khó xử lý.' },
+      { en: 'Which brings me to the caching layer, where it gets tricky.', vi: 'Điều này dẫn tôi đến lớp bộ nhớ đệm, nơi mọi thứ trở nên phức tạp.' },
+      { en: 'Which brings me to the caching layer and its invalidation.', vi: 'Điều này dẫn tôi đến lớp bộ nhớ đệm và việc vô hiệu hóa nó.' },
     ],
   },
   {
@@ -3043,9 +3202,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'On a related note, the error paths look fragile.',
     vietnamese: 'Liên quan đến đó, các đường xử lý lỗi trông mong manh.',
     phonetic: '/ɒn ə rɪˈleɪtɪd noʊt ði ˈɛrər pæθs lʊk ˈfrædʒaɪl/',
+    usage: 'Dùng khi nêu nhận xét liên quan về các đường xử lý lỗi.',
     role: 'linker',
     examples: [
       { en: 'On a related note, the error paths look fragile under partial failures.', vi: 'Liên quan đến đó, các đường xử lý lỗi trông mong manh khi có sự cố một phần.' },
+      { en: 'On a related note, the error paths look fragile here.', vi: 'Liên quan đến đó, các đường xử lý lỗi trông mong manh ở đây.' },
+      { en: 'On a related note, the error paths need more tests.', vi: 'Liên quan đến đó, các đường xử lý lỗi cần thêm kiểm thử.' },
     ],
   },
   {
@@ -3056,9 +3218,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Expanding on your reasoning here.',
     vietnamese: 'Mở rộng suy luận của bạn ở đây.',
     phonetic: '/ɪkˈspændɪŋ ɒn jɔːr ˈriːzənɪŋ hɪr/',
+    usage: 'Dùng khi mở rộng suy luận của người viết và đề xuất thêm giải pháp.',
     role: 'linker',
     examples: [
       { en: 'Expanding on your reasoning here, a circuit breaker would help.', vi: 'Mở rộng suy luận của bạn ở đây, một circuit breaker sẽ hữu ích.' },
+      { en: 'Expanding on your reasoning here, a timeout would help.', vi: 'Mở rộng suy luận của bạn ở đây, một thời gian chờ sẽ hữu ích.' },
+      { en: 'Expanding on your reasoning here, we can simplify it.', vi: 'Mở rộng suy luận của bạn ở đây, chúng ta có thể đơn giản hóa nó.' },
     ],
   },
   {
@@ -3069,9 +3234,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Turning to the test coverage now.',
     vietnamese: 'Chuyển sang mức độ bao phủ kiểm thử.',
     phonetic: '/ˈtɜːrnɪŋ tuː ðə tɛst ˈkʌvərɪdʒ naʊ/',
+    usage: 'Dùng khi chuyển sang đánh giá mức độ bao phủ kiểm thử.',
     role: 'linker',
     examples: [
       { en: 'Turning to the test coverage now, the new endpoint is barely exercised.', vi: 'Chuyển sang mức độ bao phủ kiểm thử, endpoint mới gần như chưa được kiểm tra.' },
+      { en: 'Turning to the test coverage now, the new module is untested.', vi: 'Chuyển sang mức độ bao phủ kiểm thử, module mới chưa được kiểm thử.' },
+      { en: 'Turning to the test coverage now, it is quite good.', vi: 'Chuyển sang mức độ bao phủ kiểm thử, nó khá tốt.' },
     ],
   },
   {
@@ -3082,9 +3250,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'For all intents and purposes, it holds up.',
     vietnamese: 'Về mọi mặt thực tế, nó vẫn ổn.',
     phonetic: '/fɔːr ɔːl ɪnˈtɛnts ænd ˈpɜːrpəsɪz ɪt hoʊldz ʌp/',
+    usage: 'Dùng khi đánh giá mã vẫn ổn về mọi mặt thực tế.',
     role: 'filler',
     examples: [
       { en: 'For all intents and purposes, it holds up under the current traffic.', vi: 'Về mọi mặt thực tế, nó vẫn ổn dưới lưu lượng hiện tại.' },
+      { en: 'For all intents and purposes, it holds up in production.', vi: 'Về mọi mặt thực tế, nó vẫn ổn trong production.' },
+      { en: 'For all intents and purposes, it holds up under load.', vi: 'Về mọi mặt thực tế, nó vẫn ổn khi tải cao.' },
     ],
   },
   {
@@ -3095,9 +3266,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'That is a reasonable trade-off.',
     vietnamese: 'Đó là một sự đánh đổi hợp lý.',
     phonetic: '/ðæt ɪz ə ˈriːznəbl ˈtreɪd ɒf/',
+    usage: 'Dùng khi chấp nhận một sự đánh đổi hợp lý giữa các yếu tố.',
     role: 'filler',
     examples: [
       { en: 'That is a reasonable trade-off between speed and consistency.', vi: 'Đó là một sự đánh đổi hợp lý giữa tốc độ và tính nhất quán.' },
+      { en: 'That is a reasonable trade-off between speed and safety.', vi: 'Đó là một sự đánh đổi hợp lý giữa tốc độ và an toàn.' },
+      { en: 'That is a reasonable trade-off for this use case.', vi: 'Đó là một sự đánh đổi hợp lý cho trường hợp sử dụng này.' },
     ],
   },
   {
@@ -3108,9 +3282,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The approach is sound in principle.',
     vietnamese: 'Về nguyên tắc, cách tiếp cận này là vững chắc.',
     phonetic: '/ði əˈproʊtʃ ɪz saʊnd ɪn ˈprɪnsəpəl/',
+    usage: 'Dùng khi đánh giá cách tiếp cận vững chắc về nguyên tắc, cần chú ý chi tiết.',
     role: 'filler',
     examples: [
       { en: 'The approach is sound in principle, though the details need care.', vi: 'Về nguyên tắc, cách tiếp cận này là vững chắc, dù chi tiết cần được chăm chút.' },
+      { en: 'The approach is sound in principle, but verify the details.', vi: 'Về nguyên tắc, cách tiếp cận này là vững chắc, nhưng hãy kiểm tra chi tiết.' },
+      { en: 'The approach is sound in principle, go ahead.', vi: 'Về nguyên tắc, cách tiếp cận này là vững chắc, cứ tiến hành.' },
     ],
   },
   {
@@ -3121,9 +3298,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would lean toward a simpler design.',
     vietnamese: 'Tôi nghiêng về một thiết kế đơn giản hơn.',
     phonetic: '/aɪ wʊd liːn təˈwɔːrd ə ˈsɪmplər dɪˈzaɪn/',
+    usage: 'Dùng khi bày tỏ xu hướng chọn thiết kế đơn giản hơn.',
     role: 'filler',
     examples: [
       { en: 'I would lean toward a simpler design without the extra abstraction.', vi: 'Tôi nghiêng về một thiết kế đơn giản hơn không cần lớp trừu tượng thừa.' },
+      { en: 'I would lean toward a simpler design without the wrapper.', vi: 'Tôi nghiêng về một thiết kế đơn giản hơn không có lớp bọc.' },
+      { en: 'I would lean toward a simpler design for now.', vi: 'Tôi nghiêng về một thiết kế đơn giản hơn cho lúc này.' },
     ],
   },
   {
@@ -3134,9 +3314,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once the concerns are addressed, I will sign off.',
     vietnamese: 'Khi các băn khoăn được xử lý, tôi sẽ ký duyệt.',
     phonetic: '/wʌns ðə kənˈsɜːrnz ɑːr əˈdrɛst aɪ wɪl saɪn ɒf/',
+    usage: 'Dùng khi cam kết ký duyệt sau khi các băn khoăn được xử lý.',
     role: 'closer',
     examples: [
       { en: 'Once the concerns are addressed, I will sign off on the merge.', vi: 'Khi các băn khoăn được xử lý, tôi sẽ ký duyệt cho việc merge.' },
+      { en: 'Once the concerns are addressed, I will sign off on it.', vi: 'Khi các băn khoăn được xử lý, tôi sẽ ký duyệt.' },
+      { en: 'Once the concerns are addressed, I will sign off today.', vi: 'Khi các băn khoăn được xử lý, tôi sẽ ký duyệt hôm nay.' },
     ],
   },
   {
@@ -3147,9 +3330,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us make sure the regression suite stays green.',
     vietnamese: 'Hãy đảm bảo bộ kiểm thử hồi quy luôn xanh.',
     phonetic: '/lɛt ʌs meɪk ʃʊr ðə rɪˈɡrɛʃən swiːt steɪz ɡriːn/',
+    usage: 'Dùng khi nhấn mạnh cần giữ bộ kiểm thử hồi quy luôn xanh sau thay đổi.',
     role: 'closer',
     examples: [
       { en: 'Let us make sure the regression suite stays green after this change.', vi: 'Hãy đảm bảo bộ kiểm thử hồi quy luôn xanh sau thay đổi này.' },
+      { en: 'Let us make sure the regression suite stays green after this.', vi: 'Hãy đảm bảo bộ kiểm thử hồi quy luôn xanh sau thay đổi này.' },
+      { en: 'Let us make sure the regression suite stays green in CI.', vi: 'Hãy đảm bảo bộ kiểm thử hồi quy luôn xanh trong CI.' },
     ],
   },
   {
@@ -3160,9 +3346,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I appreciate the diligence in addressing the edge cases.',
     vietnamese: 'Tôi đánh giá cao sự cẩn thận khi xử lý các trường hợp biên.',
     phonetic: '/aɪ əˈpriːʃieɪt ðə ˈdɪlɪdʒəns ɪn əˈdrɛsɪŋ ði ɛdʒ ˈkeɪsɪz/',
+    usage: 'Dùng để khen sự cẩn thận trong việc xử lý các trường hợp biên.',
     role: 'closer',
     examples: [
       { en: 'I appreciate the diligence in addressing the edge cases in the validator.', vi: 'Tôi đánh giá cao sự cẩn thận khi xử lý các trường hợp biên trong validator.' },
+      { en: 'I appreciate the diligence in addressing the edge cases here.', vi: 'Tôi đánh giá cao sự cẩn thận khi xử lý các trường hợp biên ở đây.' },
+      { en: 'I appreciate the diligence in addressing the edge cases, well done.', vi: 'Tôi đánh giá cao sự cẩn thận khi xử lý các trường hợp biên, làm tốt lắm.' },
     ],
   },
   {
@@ -3173,9 +3362,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us iterate once more before merging.',
     vietnamese: 'Chúng ta hãy lặp thêm một vòng trước khi merge.',
     phonetic: '/lɛt ʌs ˈɪtəreɪt wʌns mɔːr bɪˈfɔːr ˈmɜːrdʒɪŋ/',
+    usage: 'Dùng khi đề xuất lặp thêm một vòng nữa trước khi merge để hoàn thiện.',
     role: 'closer',
     examples: [
       { en: 'Let us iterate once more before merging to polish the interface.', vi: 'Chúng ta hãy lặp thêm một vòng trước khi merge để trau chuốt giao diện.' },
+      { en: 'Let us iterate once more before merging to polish it.', vi: 'Chúng ta hãy lặp thêm một vòng trước khi merge để hoàn thiện.' },
+      { en: 'Let us iterate once more before merging, it is close.', vi: 'Chúng ta hãy lặp thêm một vòng trước khi merge, nó gần xong rồi.' },
     ],
   },
 
