@@ -9654,9 +9654,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are launching a new campaign today.',
     vietnamese: 'Hôm nay chúng ta khởi động một chiến dịch mới.',
     phonetic: '/wiː ɑːr ˈlɔːntʃɪŋ ə nuː kæmˈpeɪn təˈdeɪ/',
+    usage: 'Dùng khi thông báo cho đội nhóm về việc bắt đầu một chiến dịch quảng cáo mới.',
     role: 'opener',
     examples: [
       { en: 'We are launching a new campaign today on social media.', vi: 'Hôm nay chúng ta khởi động một chiến dịch mới trên mạng xã hội.' },
+      { en: 'We are launching a new campaign today, please share it everywhere.', vi: 'Hôm nay chúng ta khởi động một chiến dịch mới, xin hãy chia sẻ ở mọi nơi.' },
+      { en: 'We are launching a new campaign today to promote the sale.', vi: 'Hôm nay chúng ta khởi động một chiến dịch mới để quảng bá đợt giảm giá.' },
     ],
   },
   {
@@ -9667,9 +9670,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The ad will be shown to many people.',
     vietnamese: 'Quảng cáo sẽ được hiển thị cho nhiều người.',
     phonetic: '/ði æd wɪl biː ʃoʊn tuː ˈmɛni ˈpiːpəl/',
+    usage: 'Dùng khi nói về phạm vi tiếp cận của quảng cáo, số lượng người xem sẽ nhìn thấy nó.',
     role: 'opener',
     examples: [
       { en: 'The ad will be shown to many people this week.', vi: 'Quảng cáo sẽ được hiển thị cho nhiều người trong tuần này.' },
+      { en: 'The ad will be shown to many people on the platform.', vi: 'Quảng cáo sẽ được hiển thị cho nhiều người trên nền tảng.' },
+      { en: 'The ad will be shown to many people in the city.', vi: 'Quảng cáo sẽ được hiển thị cho nhiều người trong thành phố.' },
     ],
   },
   {
@@ -9680,9 +9686,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We need more customers to visit our shop.',
     vietnamese: 'Chúng ta cần nhiều khách hàng ghé cửa hàng hơn.',
     phonetic: '/wiː niːd mɔːr ˈkʌstəmərz tuː ˈvɪzɪt aʊər ʃɒp/',
+    usage: 'Dùng khi nêu mục tiêu của chiến dịch, muốn thu hút thêm khách hàng đến cửa hàng.',
     role: 'opener',
     examples: [
       { en: 'We need more customers to visit our shop this month.', vi: 'Chúng ta cần nhiều khách hàng ghé cửa hàng hơn trong tháng này.' },
+      { en: 'We need more customers to visit our shop after the promotion.', vi: 'Chúng ta cần nhiều khách hàng ghé cửa hàng sau đợt khuyến mãi.' },
+      { en: 'We need more customers to visit our shop on weekends.', vi: 'Chúng ta cần nhiều khách hàng ghé cửa hàng vào cuối tuần.' },
     ],
   },
   {
@@ -9693,9 +9702,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The poster looks very nice.',
     vietnamese: 'Tấm áp phích trông rất đẹp.',
     phonetic: '/ðə ˈpoʊstər lʊks ˈvɛri naɪs/',
+    usage: 'Dùng khi nhận xét tích cực về thiết kế của áp phích hoặc vật phẩm quảng cáo.',
     role: 'opener',
     examples: [
       { en: 'The poster looks very nice, people will like it.', vi: 'Tấm áp phích trông rất đẹp, mọi người sẽ thích nó.' },
+      { en: 'The poster looks very nice with the new colors.', vi: 'Tấm áp phích trông rất đẹp với màu sắc mới.' },
+      { en: 'The poster looks very nice, let us print more.', vi: 'Tấm áp phích trông rất đẹp, hãy in thêm.' },
     ],
   },
   {
@@ -9706,9 +9718,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'First, we choose a good picture.',
     vietnamese: 'Đầu tiên, chúng ta chọn một bức ảnh đẹp.',
     phonetic: '/fɜːrst wiː tʃuːz ə ɡʊd ˈpɪktʃər/',
+    usage: 'Dùng khi mô tả bước đầu tiên trong quy trình làm quảng cáo, chọn hình ảnh.',
     role: 'linker',
     examples: [
       { en: 'First, we choose a good picture for the ad.', vi: 'Đầu tiên, chúng ta chọn một bức ảnh đẹp cho quảng cáo.' },
+      { en: 'First, we choose a good picture of the product.', vi: 'Đầu tiên, chúng ta chọn một bức ảnh đẹp của sản phẩm.' },
+      { en: 'First, we choose a good picture for the banner.', vi: 'Đầu tiên, chúng ta chọn một bức ảnh đẹp cho banner.' },
     ],
   },
   {
@@ -9719,9 +9734,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Then we write a short message.',
     vietnamese: 'Sau đó chúng ta viết một thông điệp ngắn.',
     phonetic: '/ðɛn wiː raɪt ə ʃɔːrt ˈmɛsɪdʒ/',
+    usage: 'Dùng khi mô tả bước viết nội dung ngắn gọn cho quảng cáo.',
     role: 'linker',
     examples: [
       { en: 'Then we write a short message about the product.', vi: 'Sau đó chúng ta viết một thông điệp ngắn về sản phẩm.' },
+      { en: 'Then we write a short message about the discount.', vi: 'Sau đó chúng ta viết một thông điệp ngắn về đợt giảm giá.' },
+      { en: 'Then we write a short message for the poster.', vi: 'Sau đó chúng ta viết một thông điệp ngắn cho áp phích.' },
     ],
   },
   {
@@ -9732,9 +9750,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After that, we post it online.',
     vietnamese: 'Sau đó, chúng ta đăng nó lên mạng.',
     phonetic: '/ˈæftər ðæt wiː poʊst ɪt ˈɒnlaɪn/',
+    usage: 'Dùng khi mô tả bước đăng nội dung lên mạng sau khi đã chuẩn bị xong.',
     role: 'linker',
     examples: [
       { en: 'After that, we post it online and wait for likes.', vi: 'Sau đó, chúng ta đăng nó lên mạng và chờ lượt thích.' },
+      { en: 'After that, we post it online and monitor the likes.', vi: 'Sau đó, chúng ta đăng nó lên mạng và theo dõi lượt thích.' },
+      { en: 'After that, we post it online on the fan page.', vi: 'Sau đó, chúng ta đăng nó lên mạng trên trang fanpage.' },
     ],
   },
   {
@@ -9745,9 +9766,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Next, we answer the questions from customers.',
     vietnamese: 'Tiếp theo, chúng ta trả lời câu hỏi của khách hàng.',
     phonetic: '/nɛkst wiː ˈænsər ðə ˈkwɛstʃənz frʌm ˈkʌstəmərz/',
+    usage: 'Dùng khi mô tả bước phản hồi khách hàng sau khi đăng quảng cáo.',
     role: 'linker',
     examples: [
       { en: 'Next, we answer the questions from customers in the comments.', vi: 'Tiếp theo, chúng ta trả lời câu hỏi của khách hàng trong phần bình luận.' },
+      { en: 'Next, we answer the questions from customers about the price.', vi: 'Tiếp theo, chúng ta trả lời câu hỏi của khách hàng về giá cả.' },
+      { en: 'Next, we answer the questions from customers as fast as possible.', vi: 'Tiếp theo, chúng ta trả lời câu hỏi của khách hàng càng nhanh càng tốt.' },
     ],
   },
   {
@@ -9758,9 +9782,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I hope many people see the ad.',
     vietnamese: 'Tôi hy vọng nhiều người xem quảng cáo.',
     phonetic: '/aɪ hoʊp ˈmɛni ˈpiːpəl siː ði æd/',
+    usage: 'Dùng khi bày tỏ mong muốn quảng cáo được nhiều người xem, hy vọng về hiệu quả.',
     role: 'filler',
     examples: [
       { en: 'I hope many people see the ad this weekend.', vi: 'Tôi hy vọng nhiều người xem quảng cáo vào cuối tuần này.' },
+      { en: 'I hope many people see the ad and visit us.', vi: 'Tôi hy vọng nhiều người xem quảng cáo và ghé thăm chúng tôi.' },
+      { en: 'I hope many people see the ad during the holiday.', vi: 'Tôi hy vọng nhiều người xem quảng cáo trong dịp lễ.' },
     ],
   },
   {
@@ -9771,9 +9798,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The price is a little high.',
     vietnamese: 'Giá hơi cao một chút.',
     phonetic: '/ðə praɪs ɪz ə ˈlɪtəl haɪ/',
+    usage: 'Dùng khi nhận xét rằng giá sản phẩm hơi cao, thường kèm lý do hoặc so sánh.',
     role: 'filler',
     examples: [
       { en: 'The price is a little high, but the product is good.', vi: 'Giá hơi cao một chút, nhưng sản phẩm rất tốt.' },
+      { en: 'The price is a little high, but customers still buy.', vi: 'Giá hơi cao một chút, nhưng khách hàng vẫn mua.' },
+      { en: 'The price is a little high compared to last year.', vi: 'Giá hơi cao một chút so với năm ngoái.' },
     ],
   },
   {
@@ -9784,9 +9814,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Maybe we should try a different idea.',
     vietnamese: 'Có lẽ chúng ta nên thử một ý tưởng khác.',
     phonetic: '/ˈmeɪbi wiː ʃʊd traɪ ə ˈdɪfərənt aɪˈdɪə/',
+    usage: 'Dùng khi gợi ý thử một ý tưởng khác cho quảng cáo vì ý tưởng hiện tại chưa hiệu quả.',
     role: 'filler',
     examples: [
       { en: 'Maybe we should try a different idea for the banner.', vi: 'Có lẽ chúng ta nên thử một ý tưởng khác cho banner.' },
+      { en: 'Maybe we should try a different idea for the video.', vi: 'Có lẽ chúng ta nên thử một ý tưởng khác cho video.' },
+      { en: 'Maybe we should try a different idea for the poster.', vi: 'Có lẽ chúng ta nên thử một ý tưởng khác cho áp phích.' },
     ],
   },
   {
@@ -9797,9 +9830,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The customers like the new color.',
     vietnamese: 'Khách hàng thích màu mới.',
     phonetic: '/ðə ˈkʌstəmərz laɪk ðə nuː ˈkʌlər/',
+    usage: 'Dùng khi nói về sở thích của khách hàng đối với màu sắc hoặc thiết kế mới.',
     role: 'filler',
     examples: [
       { en: 'The customers like the new color of the logo.', vi: 'Khách hàng thích màu mới của logo.' },
+      { en: 'The customers like the new color of the packaging.', vi: 'Khách hàng thích màu mới của bao bì.' },
+      { en: 'The customers like the new color, so keep it.', vi: 'Khách hàng thích màu mới, vậy hãy giữ nó.' },
     ],
   },
   {
@@ -9810,9 +9846,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The campaign was a success.',
     vietnamese: 'Chiến dịch đã thành công.',
     phonetic: '/ðə kæmˈpeɪn wʌz ə səkˈsɛs/',
+    usage: 'Dùng khi tổng kết kết quả tích cực của một chiến dịch đã hoàn thành.',
     role: 'closer',
     examples: [
       { en: 'The campaign was a success, sales went up.', vi: 'Chiến dịch đã thành công, doanh số tăng lên.' },
+      { en: 'The campaign was a success, many people came.', vi: 'Chiến dịch đã thành công, nhiều người đã đến.' },
+      { en: 'The campaign was a success, we are happy.', vi: 'Chiến dịch đã thành công, chúng tôi rất vui.' },
     ],
   },
   {
@@ -9823,9 +9862,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us share the good news with the team.',
     vietnamese: 'Hãy chia sẻ tin tốt với cả nhóm.',
     phonetic: '/lɛt ʌs ʃɛr ðə ɡʊd nuːz wɪð ðə tiːm/',
+    usage: 'Dùng khi muốn chia sẻ tin vui với đội nhóm sau một kết quả tốt.',
     role: 'closer',
     examples: [
       { en: 'Let us share the good news with the team today.', vi: 'Hãy chia sẻ tin tốt với cả nhóm hôm nay.' },
+      { en: 'Let us share the good news with the team at the meeting.', vi: 'Hãy chia sẻ tin tốt với cả nhóm tại buổi họp.' },
+      { en: 'Let us share the good news with the team, everyone worked hard.', vi: 'Hãy chia sẻ tin tốt với cả nhóm, mọi người đã làm việc chăm chỉ.' },
     ],
   },
   {
@@ -9836,9 +9878,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will check the numbers tomorrow.',
     vietnamese: 'Chúng ta sẽ kiểm tra số liệu vào ngày mai.',
     phonetic: '/wiː wɪl tʃɛk ðə ˈnʌmbərz təˈmɒroʊ/',
+    usage: 'Dùng khi nói về việc sẽ kiểm tra số liệu vào thời điểm cụ thể trong tương lai.',
     role: 'closer',
     examples: [
       { en: 'We will check the numbers tomorrow morning.', vi: 'Chúng ta sẽ kiểm tra số liệu vào sáng mai.' },
+      { en: 'We will check the numbers tomorrow and report.', vi: 'Chúng ta sẽ kiểm tra số liệu vào ngày mai và báo cáo.' },
+      { en: 'We will check the numbers tomorrow after the ads run.', vi: 'Chúng ta sẽ kiểm tra số liệu vào ngày mai sau khi quảng cáo chạy.' },
     ],
   },
   {
@@ -9849,9 +9894,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us stop here and celebrate.',
     vietnamese: 'Hãy dừng ở đây và ăn mừng.',
     phonetic: '/lɛt ʌs stɒp hɪr ænd ˈsɛlɪbreɪt/',
+    usage: 'Dùng khi kết thúc buổi làm việc với kết quả tốt và đề nghị ăn mừng.',
     role: 'closer',
     examples: [
       { en: 'Let us stop here and celebrate the result.', vi: 'Hãy dừng ở đây và ăn mừng kết quả.' },
+      { en: 'Let us stop here and celebrate the good result.', vi: 'Hãy dừng ở đây và ăn mừng kết quả tốt.' },
+      { en: 'Let us stop here and celebrate, it was a great day.', vi: 'Hãy dừng ở đây và ăn mừng, đó là một ngày tuyệt vời.' },
     ],
   },
   {
@@ -9862,9 +9910,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are about to launch the spring campaign.',
     vietnamese: 'Chúng ta sắp khởi động chiến dịch mùa xuân.',
     phonetic: '/wiː ɑːr əˈbaʊt tuː lɔːntʃ ðə sprɪŋ kæmˈpeɪn/',
+    usage: 'Dùng khi thông báo kế hoạch sắp khởi động một chiến dịch theo mùa, thường kèm thời điểm.',
     role: 'opener',
     examples: [
       { en: 'We are about to launch the spring campaign next Monday.', vi: 'Chúng ta sắp khởi động chiến dịch mùa xuân vào thứ Hai tới.' },
+      { en: 'We are about to launch the spring campaign in two weeks.', vi: 'Chúng ta sắp khởi động chiến dịch mùa xuân trong hai tuần nữa.' },
+      { en: 'We are about to launch the spring campaign, the assets are ready.', vi: 'Chúng ta sắp khởi động chiến dịch mùa xuân, các tài liệu đã sẵn sàng.' },
     ],
   },
   {
@@ -9875,9 +9926,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The brand awareness has improved a lot.',
     vietnamese: 'Nhận diện thương hiệu đã được cải thiện nhiều.',
     phonetic: '/ðə brænd əˈwɛrnəs hæz ɪmˈpruːvd ə lɒt/',
+    usage: 'Dùng khi báo cáo sự cải thiện về nhận diện thương hiệu sau một hoạt động truyền thông.',
     role: 'opener',
     examples: [
       { en: 'The brand awareness has improved a lot after the video went viral.', vi: 'Nhận diện thương hiệu đã được cải thiện nhiều sau khi video lan truyền.' },
+      { en: 'The brand awareness has improved a lot after the campaign.', vi: 'Nhận diện thương hiệu đã được cải thiện nhiều sau chiến dịch.' },
+      { en: 'The brand awareness has improved a lot this quarter.', vi: 'Nhận diện thương hiệu đã được cải thiện nhiều trong quý này.' },
     ],
   },
   {
@@ -9888,9 +9942,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should boost the post during peak hours.',
     vietnamese: 'Chúng ta nên đẩy bài đăng vào giờ cao điểm.',
     phonetic: '/wiː ʃʊd buːst ðə poʊst ˈdʊrɪŋ piːk aʊərz/',
+    usage: 'Dùng khi đề xuất đẩy bài đăng vào khung giờ có nhiều người xem nhất.',
     role: 'opener',
     examples: [
       { en: 'We should boost the post during peak hours to reach more people.', vi: 'Chúng ta nên đẩy bài đăng vào giờ cao điểm để tiếp cận nhiều người hơn.' },
+      { en: 'We should boost the post during peak hours to maximize reach.', vi: 'Chúng ta nên đẩy bài đăng vào giờ cao điểm để tối đa phạm vi tiếp cận.' },
+      { en: 'We should boost the post during peak hours tonight.', vi: 'Chúng ta nên đẩy bài đăng vào giờ cao điểm tối nay.' },
     ],
   },
   {
@@ -9901,9 +9958,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The competitor is running a big sale.',
     vietnamese: 'Đối thủ đang chạy một đợt giảm giá lớn.',
     phonetic: '/ðə kəmˈpɛtɪtər ɪz ˈrʌnɪŋ ə bɪɡ seɪl/',
+    usage: 'Dùng khi cảnh báo về hoạt động khuyến mãi của đối thủ và cần phản ứng kịp.',
     role: 'opener',
     examples: [
       { en: 'The competitor is running a big sale, we need a counter offer.', vi: 'Đối thủ đang chạy một đợt giảm giá lớn, chúng ta cần một đòn đáp trả.' },
+      { en: 'The competitor is running a big sale, we should react fast.', vi: 'Đối thủ đang chạy một đợt giảm giá lớn, chúng ta nên phản ứng nhanh.' },
+      { en: 'The competitor is running a big sale this weekend.', vi: 'Đối thủ đang chạy một đợt giảm giá lớn vào cuối tuần này.' },
     ],
   },
   {
@@ -9914,9 +9974,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Once the budget is approved, we start filming.',
     vietnamese: 'Một khi ngân sách được duyệt, chúng ta bắt đầu quay phim.',
     phonetic: '/wʌns ðə ˈbʌdʒɪt ɪz əˈpruːvd wiː stɑːrt ˈfɪlmɪŋ/',
+    usage: 'Dùng khi nêu điều kiện để bắt đầu một giai đoạn mới, ví dụ ngân sách được duyệt.',
     role: 'linker',
     examples: [
       { en: 'Once the budget is approved, we start filming the commercial.', vi: 'Một khi ngân sách được duyệt, chúng ta bắt đầu quay quảng cáo.' },
+      { en: 'Once the budget is approved, we start filming next week.', vi: 'Một khi ngân sách được duyệt, chúng ta bắt đầu quay phim vào tuần sau.' },
+      { en: 'Once the budget is approved, we can hire the agency.', vi: 'Một khi ngân sách được duyệt, chúng ta có thể thuê công ty quảng cáo.' },
     ],
   },
   {
@@ -9927,9 +9990,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Before we publish, let us double-check the copy.',
     vietnamese: 'Trước khi đăng, hãy kiểm tra lại nội dung hai lần.',
     phonetic: '/bɪˈfɔːr wiː ˈpʌblɪʃ lɛt ʌs ˈdʌbəl-tʃɛk ðə ˈkɒpi/',
+    usage: 'Dùng khi nhắc kiểm tra lại nội dung trước khi đăng, tránh lỗi chính tả.',
     role: 'linker',
     examples: [
       { en: 'Before we publish, let us double-check the copy for typos.', vi: 'Trước khi đăng, hãy kiểm tra lại nội dung hai lần xem có lỗi chính tả không.' },
+      { en: 'Before we publish, let us double-check the copy for errors.', vi: 'Trước khi đăng, hãy kiểm tra lại nội dung hai lần để tránh lỗi.' },
+      { en: 'Before we publish, let us double-check the copy with the team.', vi: 'Trước khi đăng, hãy kiểm tra lại nội dung với cả nhóm.' },
     ],
   },
   {
@@ -9940,9 +10006,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the launch, we will track the clicks.',
     vietnamese: 'Sau khi ra mắt, chúng ta sẽ theo dõi số lượt nhấp.',
     phonetic: '/ˈæftər ðə lɔːntʃ wiː wɪl træk ðə klɪks/',
+    usage: 'Dùng khi nói về việc theo dõi số liệu sau khi chiến dịch ra mắt.',
     role: 'linker',
     examples: [
       { en: 'After the launch, we will track the clicks on the landing page.', vi: 'Sau khi ra mắt, chúng ta sẽ theo dõi số lượt nhấp trên trang đích.' },
+      { en: 'After the launch, we will track the clicks and sales.', vi: 'Sau khi ra mắt, chúng ta sẽ theo dõi lượt nhấp và doanh số.' },
+      { en: 'After the launch, we will track the clicks daily.', vi: 'Sau khi ra mắt, chúng ta sẽ theo dõi lượt nhấp hàng ngày.' },
     ],
   },
   {
@@ -9953,9 +10022,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Based on the results, we can adjust the strategy.',
     vietnamese: 'Dựa trên kết quả, chúng ta có thể điều chỉnh chiến lược.',
     phonetic: '/beɪst ɒn ðə rɪˈzʌlts wiː kæn əˈdʒʌst ðə ˈstrætədʒi/',
+    usage: 'Dùng khi nói về việc điều chỉnh chiến lược dựa trên kết quả đã đo được.',
     role: 'linker',
     examples: [
       { en: 'Based on the results, we can adjust the strategy for the next quarter.', vi: 'Dựa trên kết quả, chúng ta có thể điều chỉnh chiến lược cho quý tới.' },
+      { en: 'Based on the results, we can adjust the strategy for next month.', vi: 'Dựa trên kết quả, chúng ta có thể điều chỉnh chiến lược cho tháng tới.' },
+      { en: 'Based on the results, we can adjust the strategy and budget.', vi: 'Dựa trên kết quả, chúng ta có thể điều chỉnh chiến lược và ngân sách.' },
     ],
   },
   {
@@ -9966,9 +10038,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The engagement rate is looking good this week.',
     vietnamese: 'Tỷ lệ tương tác tuần này trông khá tốt.',
     phonetic: '/ði ɪnˈɡeɪdʒmənt reɪt ɪz ˈlʊkɪŋ ɡʊd ðɪs wiːk/',
+    usage: 'Dùng khi nhận xét tích cực về tỷ lệ tương tác trong một khoảng thời gian.',
     role: 'filler',
     examples: [
       { en: 'The engagement rate is looking good this week, keep it up.', vi: 'Tỷ lệ tương tác tuần này trông khá tốt, cứ tiếp tục phát huy.' },
+      { en: 'The engagement rate is looking good this week, keep it up.', vi: 'Tỷ lệ tương tác tuần này trông khá tốt, tiếp tục phát huy.' },
+      { en: 'The engagement rate is looking good this week on social media.', vi: 'Tỷ lệ tương tác tuần này trông khá tốt trên mạng xã hội.' },
     ],
   },
   {
@@ -9979,9 +10054,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We still have not heard back from the influencer.',
     vietnamese: 'Chúng ta vẫn chưa nhận được phản hồi từ người có ảnh hưởng.',
     phonetic: '/wiː stɪl hæv nɒt hɜːrd bæk frʌm ði ˈɪnfluənsər/',
+    usage: 'Dùng khi thông báo chưa nhận được phản hồi từ người có ảnh hưởng, cần chờ hoặc nhắc lại.',
     role: 'filler',
     examples: [
       { en: 'We still have not heard back from the influencer about the collab.', vi: 'Chúng ta vẫn chưa nhận được phản hồi từ người có ảnh hưởng về việc hợp tác.' },
+      { en: 'We still have not heard back from the influencer about the deal.', vi: 'Chúng ta vẫn chưa nhận được phản hồi từ người có ảnh hưởng về thỏa thuận.' },
+      { en: 'We still have not heard back from the influencer, let us follow up.', vi: 'Chúng ta vẫn chưa nhận được phản hồi từ người có ảnh hưởng, hãy nhắc lại.' },
     ],
   },
   {
@@ -9992,9 +10070,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It might be worth testing a shorter headline.',
     vietnamese: 'Có lẽ đáng để thử một tiêu đề ngắn hơn.',
     phonetic: '/ɪt maɪt biː wɜːrθ ˈtɛstɪŋ ə ʃɔːrtər ˈhɛdlaɪn/',
+    usage: 'Dùng khi gợi ý thử nghiệm một phương án khác, ví dụ tiêu đề ngắn hơn, để so sánh hiệu quả.',
     role: 'filler',
     examples: [
       { en: 'It might be worth testing a shorter headline for the email.', vi: 'Có lẽ đáng để thử một tiêu đề ngắn hơn cho email.' },
+      { en: 'It might be worth testing a shorter headline for the ad.', vi: 'Có lẽ đáng để thử một tiêu đề ngắn hơn cho quảng cáo.' },
+      { en: 'It might be worth testing a shorter headline on the banner.', vi: 'Có lẽ đáng để thử một tiêu đề ngắn hơn trên banner.' },
     ],
   },
   {
@@ -10005,9 +10086,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The audience seems to love the new mascot.',
     vietnamese: 'Khán giả có vẻ rất thích linh vật mới.',
     phonetic: '/ði ˈɔːdiəns siːmz tuː lʌv ðə nuː ˈmæskɒt/',
+    usage: 'Dùng khi nhận xét về phản ứng tích cực của khán giả đối với linh vật hoặc hình ảnh mới.',
     role: 'filler',
     examples: [
       { en: 'The audience seems to love the new mascot in the ads.', vi: 'Khán giả có vẻ rất thích linh vật mới trong quảng cáo.' },
+      { en: 'The audience seems to love the new mascot in the videos.', vi: 'Khán giả có vẻ rất thích linh vật mới trong các video.' },
+      { en: 'The audience seems to love the new mascot, great choice.', vi: 'Khán giả có vẻ rất thích linh vật mới, lựa chọn tuyệt vời.' },
     ],
   },
   {
@@ -10018,9 +10102,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The campaign exceeded our expectations.',
     vietnamese: 'Chiến dịch đã vượt qua kỳ vọng của chúng ta.',
     phonetic: '/ðə kæmˈpeɪn ɪkˈsiːdɪd aʊər ɛkspɛkˈteɪʃənz/',
+    usage: 'Dùng khi tổng kết rằng chiến dịch đạt kết quả tốt hơn mong đợi.',
     role: 'closer',
     examples: [
       { en: 'The campaign exceeded our expectations, great teamwork.', vi: 'Chiến dịch đã vượt qua kỳ vọng của chúng ta, làm việc nhóm tuyệt vời.' },
+      { en: 'The campaign exceeded our expectations, great teamwork.', vi: 'Chiến dịch đã vượt qua kỳ vọng của chúng ta, làm việc nhóm tuyệt vời.' },
+      { en: 'The campaign exceeded our expectations in every metric.', vi: 'Chiến dịch đã vượt qua kỳ vọng của chúng ta ở mọi chỉ số.' },
     ],
   },
   {
@@ -10031,9 +10118,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will compile the report by Friday.',
     vietnamese: 'Chúng ta sẽ tổng hợp báo cáo trước thứ Sáu.',
     phonetic: '/wiː wɪl kəmˈpaɪl ðə rɪˈpɔːrt baɪ ˈfraɪdeɪ/',
+    usage: 'Dùng khi nói về việc tổng hợp báo cáo trước một thời hạn cụ thể.',
     role: 'closer',
     examples: [
       { en: 'We will compile the report by Friday and share it with the boss.', vi: 'Chúng ta sẽ tổng hợp báo cáo trước thứ Sáu và chia sẻ với sếp.' },
+      { en: 'We will compile the report by Friday and share it.', vi: 'Chúng ta sẽ tổng hợp báo cáo trước thứ Sáu và chia sẻ.' },
+      { en: 'We will compile the report by Friday with all the data.', vi: 'Chúng ta sẽ tổng hợp báo cáo trước thứ Sáu với đầy đủ số liệu.' },
     ],
   },
   {
@@ -10044,9 +10134,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us schedule a review meeting next week.',
     vietnamese: 'Hãy lên lịch một buổi họp đánh giá vào tuần tới.',
     phonetic: '/lɛt ʌs ˈʃɛdʒuːl ə rɪˈvjuː ˈmiːtɪŋ nɛkst wiːk/',
+    usage: 'Dùng khi đề xuất lên lịch một buổi họp để đánh giá kết quả.',
     role: 'closer',
     examples: [
       { en: 'Let us schedule a review meeting next week to go over the numbers.', vi: 'Hãy lên lịch một buổi họp đánh giá vào tuần tới để xem lại số liệu.' },
+      { en: 'Let us schedule a review meeting next week to go over the numbers.', vi: 'Hãy lên lịch một buổi họp đánh giá vào tuần tới để xem xét số liệu.' },
+      { en: 'Let us schedule a review meeting next week with the agency.', vi: 'Hãy lên lịch một buổi họp đánh giá vào tuần tới với công ty quảng cáo.' },
     ],
   },
   {
@@ -10057,9 +10150,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Thanks for the great ideas, see you at the next meeting.',
     vietnamese: 'Cảm ơn những ý tưởng tuyệt vời, hẹn gặp lại ở buổi họp tới.',
     phonetic: '/θæŋks fɔːr ðə ɡreɪt aɪˈdɪəz siː juː æt ðə nɛkst ˈmiːtɪŋ/',
+    usage: 'Dùng ở cuối buổi làm việc để cảm ơn và hẹn gặp lại trong buổi họp tới.',
     role: 'closer',
     examples: [
       { en: 'Thanks for the great ideas, see you at the next meeting.', vi: 'Cảm ơn những ý tưởng tuyệt vời, hẹn gặp lại ở buổi họp tới.' },
+      { en: 'Thanks for the great ideas, see you at the next meeting.', vi: 'Cảm ơn những ý tưởng tuyệt vời, hẹn gặp lại ở buổi họp tới.' },
+      { en: 'Thanks for the great ideas, see you all tomorrow.', vi: 'Cảm ơn những ý tưởng tuyệt vời, hẹn gặp lại mọi người vào ngày mai.' },
     ],
   },
   {
@@ -10070,9 +10166,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are rolling out a multi-channel campaign next month.',
     vietnamese: 'Chúng ta đang triển khai một chiến dịch đa kênh vào tháng tới.',
     phonetic: '/wiː ɑːr ˈroʊlɪŋ aʊt ə ˈmʌlti-ˈtʃænəl kæmˈpeɪn nɛkst mʌnθ/',
+    usage: 'Dùng khi thông báo kế hoạch triển khai chiến dịch trên nhiều kênh truyền thông.',
     role: 'opener',
     examples: [
       { en: 'We are rolling out a multi-channel campaign next month across all platforms.', vi: 'Chúng ta đang triển khai một chiến dịch đa kênh vào tháng tới trên tất cả các nền tảng.' },
+      { en: 'We are rolling out a multi-channel campaign next month across all platforms.', vi: 'Chúng ta đang triển khai một chiến dịch đa kênh vào tháng tới trên mọi nền tảng.' },
+      { en: 'We are rolling out a multi-channel campaign next month with new creatives.', vi: 'Chúng ta đang triển khai một chiến dịch đa kênh vào tháng tới với nội dung sáng tạo mới.' },
     ],
   },
   {
@@ -10083,9 +10182,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The conversion funnel needs some optimization.',
     vietnamese: 'Phễu chuyển đổi cần được tối ưu hóa một chút.',
     phonetic: '/ðə kənˈvɜːrʒən ˈfʌnəl niːdz sʌm ˌɒptɪmaɪˈzeɪʃən/',
+    usage: 'Dùng khi nhận xét rằng phễu chuyển đổi cần được tối ưu, thường ở một giai đoạn cụ thể.',
     role: 'opener',
     examples: [
       { en: 'The conversion funnel needs some optimization at the checkout stage.', vi: 'Phễu chuyển đổi cần được tối ưu hóa một chút ở giai đoạn thanh toán.' },
+      { en: 'The conversion funnel needs some optimization at the checkout stage.', vi: 'Phễu chuyển đổi cần được tối ưu hóa một chút ở giai đoạn thanh toán.' },
+      { en: 'The conversion funnel needs some optimization on mobile.', vi: 'Phễu chuyển đổi cần được tối ưu hóa một chút trên di động.' },
     ],
   },
   {
@@ -10096,9 +10198,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are testing two versions of the landing page.',
     vietnamese: 'Chúng ta đang thử nghiệm hai phiên bản của trang đích.',
     phonetic: '/wiː ɑːr ˈtɛstɪŋ tuː ˈvɜːrʒənz ɒv ðə ˈlændɪŋ peɪdʒ/',
+    usage: 'Dùng khi nói về việc thử nghiệm các phiên bản khác nhau của trang đích để so sánh.',
     role: 'opener',
     examples: [
       { en: 'We are testing two versions of the landing page to compare the conversion rates.', vi: 'Chúng ta đang thử nghiệm hai phiên bản của trang đích để so sánh tỷ lệ chuyển đổi.' },
+      { en: 'We are testing two versions of the landing page to compare the conversion rates.', vi: 'Chúng ta đang thử nghiệm hai phiên bản của trang đích để so sánh tỷ lệ chuyển đổi.' },
+      { en: 'We are testing two versions of the landing page this week.', vi: 'Chúng ta đang thử nghiệm hai phiên bản của trang đích trong tuần này.' },
     ],
   },
   {
@@ -10109,9 +10214,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The ad spend is growing faster than the revenue.',
     vietnamese: 'Chi phí quảng cáo đang tăng nhanh hơn doanh thu.',
     phonetic: '/ði æd spɛnd ɪz ˈɡroʊɪŋ ˈfæstər ðæn ðə ˈrɛvənuː/',
+    usage: 'Dùng khi cảnh báo rằng chi phí quảng cáo tăng nhanh hơn doanh thu, cần điều chỉnh ngân sách.',
     role: 'opener',
     examples: [
       { en: 'The ad spend is growing faster than the revenue, we need to reallocate the budget.', vi: 'Chi phí quảng cáo đang tăng nhanh hơn doanh thu, chúng ta cần phân bổ lại ngân sách.' },
+      { en: 'The ad spend is growing faster than the revenue, we need to reallocate the budget.', vi: 'Chi phí quảng cáo đang tăng nhanh hơn doanh thu, chúng ta cần phân bổ lại ngân sách.' },
+      { en: 'The ad spend is growing faster than the revenue this month.', vi: 'Chi phí quảng cáo đang tăng nhanh hơn doanh thu trong tháng này.' },
     ],
   },
   {
@@ -10122,9 +10230,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Provided the A/B test is conclusive, we scale the winner.',
     vietnamese: 'Nếu thử nghiệm A/B cho kết quả rõ ràng, chúng ta sẽ nhân rộng phiên bản thắng.',
     phonetic: '/prəˈvaɪdɪd ði eɪ/biː tɛst ɪz kənˈkluːsɪv wiː skeɪl ðə ˈwɪnər/',
+    usage: 'Dùng khi nêu điều kiện để nhân rộng phiên bản thắng, dựa trên kết quả thử nghiệm A/B.',
     role: 'linker',
     examples: [
       { en: 'Provided the A/B test is conclusive, we scale the winner across the market.', vi: 'Nếu thử nghiệm A/B cho kết quả rõ ràng, chúng ta sẽ nhân rộng phiên bản thắng ra toàn thị trường.' },
+      { en: 'Provided the A/B test is conclusive, we scale the winner across the market.', vi: 'Nếu thử nghiệm A/B cho kết quả rõ ràng, chúng ta sẽ nhân rộng phiên bản thắng ra thị trường.' },
+      { en: 'Provided the A/B test is conclusive, we scale the winner.', vi: 'Nếu thử nghiệm A/B cho kết quả rõ ràng, chúng ta sẽ nhân rộng phiên bản thắng.' },
     ],
   },
   {
@@ -10135,9 +10246,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Given the customer feedback, we should pivot the message.',
     vietnamese: 'Dựa trên phản hồi của khách hàng, chúng ta nên chuyển hướng thông điệp.',
     phonetic: '/ˈɡɪvən ðə ˈkʌstəmər ˈfiːdbæk wiː ʃʊd ˈpɪvət ðə ˈmɛsɪdʒ/',
+    usage: 'Dùng khi nói về việc chuyển hướng thông điệp dựa trên phản hồi của khách hàng.',
     role: 'linker',
     examples: [
       { en: 'Given the customer feedback, we should pivot the message towards quality.', vi: 'Dựa trên phản hồi của khách hàng, chúng ta nên chuyển hướng thông điệp về chất lượng.' },
+      { en: 'Given the customer feedback, we should pivot the message towards quality.', vi: 'Dựa trên phản hồi của khách hàng, chúng ta nên chuyển hướng thông điệp về phía chất lượng.' },
+      { en: 'Given the customer feedback, we should pivot the message soon.', vi: 'Dựa trên phản hồi của khách hàng, chúng ta nên chuyển hướng thông điệp sớm.' },
     ],
   },
   {
@@ -10148,9 +10262,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'After the retargeting wave, we measure the lift.',
     vietnamese: 'Sau đợt tiếp thị lại, chúng ta đo lường mức tăng.',
     phonetic: '/ˈæftər ðə riːˈtɑːrɡɪtɪŋ weɪv wiː ˈmɛʒər ðə lɪft/',
+    usage: 'Dùng khi nói về việc đo lường mức tăng sau một đợt tiếp thị lại.',
     role: 'linker',
     examples: [
       { en: 'After the retargeting wave, we measure the lift in returning visitors.', vi: 'Sau đợt tiếp thị lại, chúng ta đo lường mức tăng của khách quay lại.' },
+      { en: 'After the retargeting wave, we measure the lift in returning visitors.', vi: 'Sau đợt tiếp thị lại, chúng ta đo lường mức tăng số khách truy cập quay lại.' },
+      { en: 'After the retargeting wave, we measure the lift in sales.', vi: 'Sau đợt tiếp thị lại, chúng ta đo lường mức tăng doanh số.' },
     ],
   },
   {
@@ -10161,9 +10278,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We then segment the audience by their buying behavior.',
     vietnamese: 'Sau đó chúng ta phân khúc khán giả theo hành vi mua hàng.',
     phonetic: '/wiː ðɛn ˈsɛɡmənt ði ˈɔːdiəns baɪ ðeər ˈbaɪɪŋ bɪˈheɪvjər/',
+    usage: 'Dùng khi nói về việc phân khúc khán giả theo hành vi mua hàng để cá nhân hóa.',
     role: 'linker',
     examples: [
       { en: 'We then segment the audience by their buying behavior to personalize the offers.', vi: 'Sau đó chúng ta phân khúc khán giả theo hành vi mua hàng để cá nhân hóa ưu đãi.' },
+      { en: 'We then segment the audience by their buying behavior to personalize the offers.', vi: 'Sau đó chúng ta phân khúc khán giả theo hành vi mua hàng để cá nhân hóa ưu đãi.' },
+      { en: 'We then segment the audience by their buying behavior for each channel.', vi: 'Sau đó chúng ta phân khúc khán giả theo hành vi mua hàng cho từng kênh.' },
     ],
   },
   {
@@ -10174,9 +10294,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The cost per acquisition is still above our target.',
     vietnamese: 'Chi phí trên mỗi lượt chuyển đổi vẫn cao hơn mục tiêu.',
     phonetic: '/ðə kɒst pɜːr ˌækwɪˈzɪʃən ɪz stɪl əˈbʌv aʊər ˈtɑːrɡɪt/',
+    usage: 'Dùng khi báo cáo rằng chi phí trên mỗi lượt chuyển đổi vẫn cao hơn mục tiêu.',
     role: 'filler',
     examples: [
       { en: 'The cost per acquisition is still above our target for this channel.', vi: 'Chi phí trên mỗi lượt chuyển đổi vẫn cao hơn mục tiêu cho kênh này.' },
+      { en: 'The cost per acquisition is still above our target for this channel.', vi: 'Chi phí trên mỗi lượt chuyển đổi vẫn cao hơn mục tiêu cho kênh này.' },
+      { en: 'The cost per acquisition is still above our target this month.', vi: 'Chi phí trên mỗi lượt chuyển đổi vẫn cao hơn mục tiêu trong tháng này.' },
     ],
   },
   {
@@ -10187,9 +10310,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is some seasonality affecting the numbers.',
     vietnamese: 'Có một số yếu tố mùa vụ ảnh hưởng đến số liệu.',
     phonetic: '/ðɛr ɪz sʌm ˌsiːzəˈnæləti əˈfɛktɪŋ ðə ˈnʌmbərz/',
+    usage: 'Dùng khi giải thích rằng yếu tố mùa vụ ảnh hưởng đến số liệu, nên so sánh cùng kỳ.',
     role: 'filler',
     examples: [
       { en: 'There is some seasonality affecting the numbers, we should compare year over year.', vi: 'Có một số yếu tố mùa vụ ảnh hưởng đến số liệu, chúng ta nên so sánh theo năm.' },
+      { en: 'There is some seasonality affecting the numbers, we should compare year over year.', vi: 'Có một số yếu tố mùa vụ ảnh hưởng đến số liệu, chúng ta nên so sánh cùng kỳ năm trước.' },
+      { en: 'There is some seasonality affecting the numbers during the holidays.', vi: 'Có một số yếu tố mùa vụ ảnh hưởng đến số liệu trong dịp lễ.' },
     ],
   },
   {
@@ -10200,9 +10326,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The creative assets are being refreshed for the new quarter.',
     vietnamese: 'Các tài sản sáng tạo đang được làm mới cho quý mới.',
     phonetic: '/ðə kriˈeɪtɪv ˈæsɛts ɑːr ˈbiːɪŋ rɪˈfrɛʃt fɔːr ðə nuː ˈkwɔːrtər/',
+    usage: 'Dùng khi nói về việc làm mới các tài sản sáng tạo cho một giai đoạn mới.',
     role: 'filler',
     examples: [
       { en: 'The creative assets are being refreshed for the new quarter, so expect new visuals.', vi: 'Các tài sản sáng tạo đang được làm mới cho quý mới, hãy chờ những hình ảnh mới.' },
+      { en: 'The creative assets are being refreshed for the new quarter, so expect new visuals.', vi: 'Các tài sản sáng tạo đang được làm mới cho quý mới, nên hãy chờ các hình ảnh mới.' },
+      { en: 'The creative assets are being refreshed for the new quarter by the design team.', vi: 'Các tài sản sáng tạo đang được làm mới cho quý mới bởi đội thiết kế.' },
     ],
   },
   {
@@ -10213,9 +10342,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We cannot overlook the retention aspect of the funnel.',
     vietnamese: 'Chúng ta không thể bỏ qua khía cạnh giữ chân khách hàng của phễu.',
     phonetic: '/wiː ˈkænɒt ˌoʊvərˈlʊk ðə rɪˈtɛnʃən ˈæspɛkt ɒv ðə ˈfʌnəl/',
+    usage: 'Dùng khi nhấn mạnh không được bỏ qua khía cạnh giữ chân khách hàng khi lập kế hoạch.',
     role: 'filler',
     examples: [
       { en: 'We cannot overlook the retention aspect of the funnel when planning the budget.', vi: 'Chúng ta không thể bỏ qua khía cạnh giữ chân khách hàng của phễu khi lập ngân sách.' },
+      { en: 'We cannot overlook the retention aspect of the funnel when planning the budget.', vi: 'Chúng ta không thể bỏ qua khía cạnh giữ chân khách hàng của phễu khi lập ngân sách.' },
+      { en: 'We cannot overlook the retention aspect of the funnel this quarter.', vi: 'Chúng ta không thể bỏ qua khía cạnh giữ chân khách hàng của phễu trong quý này.' },
     ],
   },
   {
@@ -10226,9 +10358,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The ROI on the campaign is finally in the green.',
     vietnamese: 'Tỷ lệ hoàn vốn của chiến dịch cuối cùng đã dương.',
     phonetic: '/ðə ɑːr-oʊ-aɪ ɒn ðə kæmˈpeɪn ɪz ˈfaɪnəli ɪn ðə ɡriːn/',
+    usage: 'Dùng khi báo cáo tin tốt rằng tỷ lệ hoàn vốn của chiến dịch đã đạt mức dương.',
     role: 'closer',
     examples: [
       { en: 'The ROI on the campaign is finally in the green, we can report that up.', vi: 'Tỷ lệ hoàn vốn của chiến dịch cuối cùng đã dương, chúng ta có thể báo cáo lên.' },
+      { en: 'The ROI on the campaign is finally in the green, we can report that up.', vi: 'Tỷ lệ hoàn vốn của chiến dịch cuối cùng đã dương, chúng ta có thể báo cáo lên.' },
+      { en: 'The ROI on the campaign is finally in the green this week.', vi: 'Tỷ lệ hoàn vốn của chiến dịch cuối cùng đã dương trong tuần này.' },
     ],
   },
   {
@@ -10239,9 +10374,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will present the results to the board on Thursday.',
     vietnamese: 'Chúng ta sẽ trình bày kết quả lên ban giám đốc vào thứ Năm.',
     phonetic: '/wiː wɪl prɪˈzɛnt ðə rɪˈzʌlts tuː ðə bɔːrd ɒn ˈθɜːrzdeɪ/',
+    usage: 'Dùng khi nói về việc trình bày kết quả trước ban giám đốc hoặc cấp trên.',
     role: 'closer',
     examples: [
       { en: 'We will present the results to the board on Thursday with the full breakdown.', vi: 'Chúng ta sẽ trình bày kết quả lên ban giám đốc vào thứ Năm kèm bảng phân tích đầy đủ.' },
+      { en: 'We will present the results to the board on Thursday with the full breakdown.', vi: 'Chúng ta sẽ trình bày kết quả lên ban giám đốc vào thứ Năm với phân tích chi tiết.' },
+      { en: 'We will present the results to the board on Thursday, please prepare the slides.', vi: 'Chúng ta sẽ trình bày kết quả lên ban giám đốc vào thứ Năm, xin chuẩn bị slide.' },
     ],
   },
   {
@@ -10252,9 +10390,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us archive the learnings for the next campaign.',
     vietnamese: 'Hãy lưu lại những bài học cho chiến dịch tiếp theo.',
     phonetic: '/lɛt ʌs ˈɑːrkaɪv ðə ˈlɜːrnɪŋz fɔːr ðə nɛkst kæmˈpeɪn/',
+    usage: 'Dùng khi đề xuất lưu lại bài học kinh nghiệm cho chiến dịch sau.',
     role: 'closer',
     examples: [
       { en: 'Let us archive the learnings for the next campaign so we do not repeat mistakes.', vi: 'Hãy lưu lại những bài học cho chiến dịch tiếp theo để không lặp lại sai lầm.' },
+      { en: 'Let us archive the learnings for the next campaign so we do not repeat mistakes.', vi: 'Hãy lưu lại những bài học cho chiến dịch tiếp theo để không lặp lại sai lầm.' },
+      { en: 'Let us archive the learnings for the next campaign in the doc.', vi: 'Hãy lưu lại những bài học cho chiến dịch tiếp theo trong tài liệu.' },
     ],
   },
   {
@@ -10265,9 +10406,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will close the books on this quarter tomorrow.',
     vietnamese: 'Chúng ta sẽ chốt sổ cho quý này vào ngày mai.',
     phonetic: '/wiː wɪl kloʊz ðə bʊks ɒn ðɪs ˈkwɔːrtər təˈmɒroʊ/',
+    usage: 'Dùng khi nói về việc chốt số liệu cuối cùng của quý trước khi bắt đầu quý mới.',
     role: 'closer',
     examples: [
       { en: 'We will close the books on this quarter tomorrow after the final review.', vi: 'Chúng ta sẽ chốt sổ cho quý này vào ngày mai sau buổi đánh giá cuối.' },
+      { en: 'We will close the books on this quarter tomorrow after the final review.', vi: 'Chúng ta sẽ chốt sổ cho quý này vào ngày mai sau buổi đánh giá cuối.' },
+      { en: 'We will close the books on this quarter tomorrow with the finance team.', vi: 'Chúng ta sẽ chốt sổ cho quý này vào ngày mai cùng đội tài chính.' },
     ],
   },
   {
@@ -10278,9 +10422,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are undertaking a comprehensive rebranding initiative this fiscal year.',
     vietnamese: 'Chúng ta đang thực hiện một sáng kiến tái định vị thương hiệu toàn diện trong năm tài chính này.',
     phonetic: '/wiː ɑːr ˌʌndərˈteɪkɪŋ ə ˌkɒmprɪˈhɛnsɪv riːˈbrændɪŋ ɪˈnɪʃətɪv ðɪs ˈfɪskəl jɪr/',
+    usage: 'Dùng trong báo cáo chiến lược khi công bố một sáng kiến tái định vị thương hiệu lớn.',
     role: 'opener',
     examples: [
       { en: 'We are undertaking a comprehensive rebranding initiative this fiscal year to strengthen equity.', vi: 'Chúng ta đang thực hiện một sáng kiến tái định vị thương hiệu toàn diện trong năm tài chính này để củng cố giá trị thương hiệu.' },
+      { en: 'We are undertaking a comprehensive rebranding initiative this fiscal year to strengthen equity.', vi: 'Chúng ta đang thực hiện một sáng kiến tái định vị thương hiệu toàn diện trong năm tài chính này để củng cố giá trị thương hiệu.' },
+      { en: 'We are undertaking a comprehensive rebranding initiative this fiscal year with a new identity.', vi: 'Chúng ta đang thực hiện một sáng kiến tái định vị thương hiệu toàn diện trong năm tài chính này với bộ nhận diện mới.' },
     ],
   },
   {
@@ -10291,9 +10438,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The market positioning must be recalibrated to address the evolving competitive landscape.',
     vietnamese: 'Định vị thị trường cần được hiệu chỉnh lại để đối phó với bối cảnh cạnh tranh đang thay đổi.',
     phonetic: '/ðə ˈmɑːrkɪt pəˈzɪʃənɪŋ mʌst biː riːˈkælɪbreɪtɪd tuː əˈdrɛs ði ɪˈvɒlvɪŋ kəmˈpɛtɪtɪv ˈlændskeɪp/',
+    usage: 'Dùng khi nhận định rằng định vị thị trường cần điều chỉnh theo sự thay đổi của cạnh tranh.',
     role: 'opener',
     examples: [
       { en: 'The market positioning must be recalibrated to address the evolving competitive landscape.', vi: 'Định vị thị trường cần được hiệu chỉnh lại để đối phó với bối cảnh cạnh tranh đang thay đổi.' },
+      { en: 'The market positioning must be recalibrated to address the evolving competitive landscape.', vi: 'Định vị thị trường cần được hiệu chỉnh lại để đối phó với bối cảnh cạnh tranh đang thay đổi.' },
+      { en: 'The market positioning must be recalibrated given the new entrants.', vi: 'Định vị thị trường cần được hiệu chỉnh lại với sự xuất hiện của các đối thủ mới.' },
     ],
   },
   {
@@ -10304,9 +10454,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are deploying an attribution model to quantify the contribution of each channel.',
     vietnamese: 'Chúng ta đang triển khai mô hình phân bổ để định lượng đóng góp của từng kênh.',
     phonetic: '/wiː ɑːr dɪˈplɔɪɪŋ ən ˌætrɪˈbjuːʃən ˈmɒdəl tuː ˈkwɒntɪfaɪ ðə ˌkɒntrɪˈbjuːʃən ɒv iːtʃ ˈtʃænəl/',
+    usage: 'Dùng khi nói về việc triển khai mô hình phân bổ để đo lường đóng góp của từng kênh.',
     role: 'opener',
     examples: [
       { en: 'We are deploying an attribution model to quantify the contribution of each channel.', vi: 'Chúng ta đang triển khai mô hình phân bổ để định lượng đóng góp của từng kênh.' },
+      { en: 'We are deploying an attribution model to quantify the contribution of each channel.', vi: 'Chúng ta đang triển khai mô hình phân bổ để định lượng đóng góp của từng kênh.' },
+      { en: 'We are deploying an attribution model to improve our reporting.', vi: 'Chúng ta đang triển khai mô hình phân bổ để cải thiện báo cáo.' },
     ],
   },
   {
@@ -10317,9 +10470,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The omnichannel orchestration has been identified as a key growth lever.',
     vietnamese: 'Việc điều phối đa kênh đã được xác định là đòn bẩy tăng trưởng chủ chốt.',
     phonetic: '/ði ˈɒmnɪtʃænəl ˌɔːrkəˈstreɪʃən hæz biːn aɪˈdɛntɪfaɪd æz ə kiː ɡroʊθ ˈlɛvər/',
+    usage: 'Dùng khi xác định điều phối đa kênh là một đòn bẩy tăng trưởng quan trọng.',
     role: 'opener',
     examples: [
       { en: 'The omnichannel orchestration has been identified as a key growth lever.', vi: 'Việc điều phối đa kênh đã được xác định là đòn bẩy tăng trưởng chủ chốt.' },
+      { en: 'The omnichannel orchestration has been identified as a key growth lever.', vi: 'Việc điều phối đa kênh đã được xác định là đòn bẩy tăng trưởng chủ chốt.' },
+      { en: 'The omnichannel orchestration has been identified as a key growth lever for next year.', vi: 'Việc điều phối đa kênh đã được xác định là đòn bẩy tăng trưởng chủ chốt cho năm sau.' },
     ],
   },
   {
@@ -10330,9 +10486,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Having benchmarked the category leaders, we propose a differentiated value proposition.',
     vietnamese: 'Sau khi so sánh với các thương hiệu dẫn đầu phân khúc, chúng tôi đề xuất một đề xuất giá trị khác biệt.',
     phonetic: '/ˈhævɪŋ ˈbɛntʃmɑːrkt ðə ˈkætəɡɔːri ˈliːdərz wiː prəˈpoʊz ə ˌdɪfəˈrɛnʃieɪtɪd ˈvæljuː ˌprɒpəˈzɪʃən/',
+    usage: 'Dùng khi đề xuất một đề xuất giá trị khác biệt sau khi so sánh với các thương hiệu dẫn đầu.',
     role: 'linker',
     examples: [
       { en: 'Having benchmarked the category leaders, we propose a differentiated value proposition.', vi: 'Sau khi so sánh với các thương hiệu dẫn đầu phân khúc, chúng tôi đề xuất một đề xuất giá trị khác biệt.' },
+      { en: 'Having benchmarked the category leaders, we propose a differentiated value proposition.', vi: 'Sau khi so sánh với các thương hiệu dẫn đầu phân khúc, chúng tôi đề xuất một đề xuất giá trị khác biệt.' },
+      { en: 'Having benchmarked the category leaders, we see a clear gap in the market.', vi: 'Sau khi so sánh với các thương hiệu dẫn đầu phân khúc, chúng tôi thấy một khoảng trống rõ ràng trên thị trường.' },
     ],
   },
   {
@@ -10343,9 +10502,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subject to the approval of the steering committee, we will proceed with the rollout.',
     vietnamese: 'Tùy thuộc vào sự chấp thuận của ban chỉ đạo, chúng ta sẽ tiến hành triển khai.',
     phonetic: '/ˈsʌbdʒɪkt tuː ði əˈpruːvəl ɒv ðə ˈstɪrɪŋ kəˈmɪti wiː wɪl prəˈsiːd wɪð ðə ˈroʊlaʊt/',
+    usage: 'Dùng khi nêu rõ việc triển khai phụ thuộc vào sự chấp thuận của cấp phê duyệt.',
     role: 'linker',
     examples: [
       { en: 'Subject to the approval of the steering committee, we will proceed with the rollout.', vi: 'Tùy thuộc vào sự chấp thuận của ban chỉ đạo, chúng ta sẽ tiến hành triển khai.' },
+      { en: 'Subject to the approval of the steering committee, we will proceed with the rollout.', vi: 'Tùy thuộc vào sự chấp thuận của ban chỉ đạo, chúng ta sẽ tiến hành triển khai.' },
+      { en: 'Subject to the approval of the steering committee, we will start next month.', vi: 'Tùy thuộc vào sự chấp thuận của ban chỉ đạo, chúng ta sẽ bắt đầu vào tháng tới.' },
     ],
   },
   {
@@ -10356,9 +10518,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We shall defer the media spend until the creative testing yields conclusive results.',
     vietnamese: 'Chúng ta sẽ hoãn chi phí truyền thông cho đến khi kiểm thử sáng tạo cho kết quả thuyết phục.',
     phonetic: '/wiː ʃæl dɪˈfɜːr ðə ˈmiːdiə spɛnd ənˈtɪl ðə kriˈeɪtɪv ˈtɛstɪŋ jiːldz kənˈkluːsɪv rɪˈzʌlts/',
+    usage: 'Dùng khi quyết định hoãn chi tiêu truyền thông cho đến khi có kết quả kiểm thử rõ ràng.',
     role: 'linker',
     examples: [
       { en: 'We shall defer the media spend until the creative testing yields conclusive results.', vi: 'Chúng ta sẽ hoãn chi phí truyền thông cho đến khi kiểm thử sáng tạo cho kết quả thuyết phục.' },
+      { en: 'We shall defer the media spend until the creative testing yields conclusive results.', vi: 'Chúng ta sẽ hoãn chi phí truyền thông cho đến khi kiểm thử sáng tạo cho kết quả thuyết phục.' },
+      { en: 'We shall defer the media spend until the next quarter.', vi: 'Chúng ta sẽ hoãn chi phí truyền thông đến quý sau.' },
     ],
   },
   {
@@ -10369,9 +10534,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Subsequently, we will harmonize the messaging across all owned and paid touchpoints.',
     vietnamese: 'Sau đó, chúng ta sẽ đồng bộ thông điệp trên mọi điểm chạm sở hữu và trả phí.',
     phonetic: '/ˈsʌbsɪkwəntli wiː wɪl ˈhɑːrmənaɪz ðə ˈmɛsɪdʒɪŋ əˈkrɒs ɔːl oʊnd ænd peɪd ˈtʌtʃpɔɪnts/',
+    usage: 'Dùng khi nói về việc đồng bộ thông điệp trên mọi điểm chạm sau một giai đoạn.',
     role: 'linker',
     examples: [
       { en: 'Subsequently, we will harmonize the messaging across all owned and paid touchpoints.', vi: 'Sau đó, chúng ta sẽ đồng bộ thông điệp trên mọi điểm chạm sở hữu và trả phí.' },
+      { en: 'Subsequently, we will harmonize the messaging across all owned and paid touchpoints.', vi: 'Sau đó, chúng ta sẽ đồng bộ thông điệp trên mọi điểm chạm sở hữu và trả phí.' },
+      { en: 'Subsequently, we will harmonize the messaging across all channels.', vi: 'Sau đó, chúng ta sẽ đồng bộ thông điệp trên mọi kênh.' },
     ],
   },
   {
@@ -10382,9 +10550,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The brand equity metrics have remained remarkably resilient throughout the transition.',
     vietnamese: 'Các chỉ số giá trị thương hiệu vẫn duy trì sức bền đáng kinh ngạc trong suốt quá trình chuyển đổi.',
     phonetic: '/ðə brænd ˈɛkwɪti ˈmɛtrɪks hæv rɪˈmeɪnd rɪˈmɑːrkəbli rɪˈzɪliənt θruːˈaʊt ðə trænˈzɪʃən/',
+    usage: 'Dùng khi báo cáo rằng các chỉ số giá trị thương hiệu vẫn vững vàng trong quá trình chuyển đổi.',
     role: 'filler',
     examples: [
       { en: 'The brand equity metrics have remained remarkably resilient throughout the transition.', vi: 'Các chỉ số giá trị thương hiệu vẫn duy trì sức bền đáng kinh ngạc trong suốt quá trình chuyển đổi.' },
+      { en: 'The brand equity metrics have remained remarkably resilient throughout the transition.', vi: 'Các chỉ số giá trị thương hiệu vẫn duy trì sức bền đáng kinh ngạc trong suốt quá trình chuyển đổi.' },
+      { en: 'The brand equity metrics have remained remarkably resilient this quarter.', vi: 'Các chỉ số giá trị thương hiệu vẫn duy trì sức bền đáng kinh ngạc trong quý này.' },
     ],
   },
   {
@@ -10395,9 +10566,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There remains a degree of uncertainty regarding the attribution of offline conversions.',
     vietnamese: 'Vẫn còn một mức độ không chắc chắn liên quan đến việc phân bổ các chuyển đổi ngoại tuyến.',
     phonetic: '/ðɛr rɪˈmeɪnz ə dɪˈɡriː ɒv ʌnˈsɜːrtənti rɪˈɡɑːrdɪŋ ði ˌætrɪˈbjuːʃən ɒv ˌɒfˈlaɪn kənˈvɜːrʒənz/',
+    usage: 'Dùng khi thừa nhận sự không chắc chắn trong việc phân bổ các chuyển đổi ngoại tuyến.',
     role: 'filler',
     examples: [
       { en: 'There remains a degree of uncertainty regarding the attribution of offline conversions.', vi: 'Vẫn còn một mức độ không chắc chắn liên quan đến việc phân bổ các chuyển đổi ngoại tuyến.' },
+      { en: 'There remains a degree of uncertainty regarding the attribution of offline conversions.', vi: 'Vẫn còn một mức độ không chắc chắn liên quan đến việc phân bổ các chuyển đổi ngoại tuyến.' },
+      { en: 'There remains a degree of uncertainty regarding the attribution model.', vi: 'Vẫn còn một mức độ không chắc chắn liên quan đến mô hình phân bổ.' },
     ],
   },
   {
@@ -10408,9 +10582,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is prudent to validate the hypothesis with a controlled pilot before scaling.',
     vietnamese: 'Cần thận trọng xác nhận giả thuyết bằng một thử nghiệm có kiểm soát trước khi mở rộng.',
     phonetic: '/ɪt ɪz ˈpruːdənt tuː ˈvælɪdeɪt ðə haɪˈpɒθɪsɪs wɪð ə kənˈtroʊld ˈpaɪlət bɪˈfɔːr ˈskeɪlɪŋ/',
+    usage: 'Dùng khi khuyến nghị xác nhận giả thuyết bằng thử nghiệm có kiểm soát trước khi mở rộng.',
     role: 'filler',
     examples: [
       { en: 'It is prudent to validate the hypothesis with a controlled pilot before scaling.', vi: 'Cần thận trọng xác nhận giả thuyết bằng một thử nghiệm có kiểm soát trước khi mở rộng.' },
+      { en: 'It is prudent to validate the hypothesis with a controlled pilot before scaling.', vi: 'Cần thận trọng xác nhận giả thuyết bằng một thử nghiệm có kiểm soát trước khi mở rộng.' },
+      { en: 'It is prudent to validate the hypothesis with a pilot in one market.', vi: 'Cần thận trọng xác nhận giả thuyết bằng thử nghiệm ở một thị trường.' },
     ],
   },
   {
@@ -10421,9 +10598,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'One cannot overstate the importance of customer lifetime value in this calculus.',
     vietnamese: 'Không thể phóng đại tầm quan trọng của giá trị vòng đời khách hàng trong phép tính này.',
     phonetic: '/wʌn ˈkænɒt ˌoʊvərˈsteɪt ði ɪmˈpɔːrtəns ɒv ˈkʌstəmər ˈlaɪftaɪm ˈvæljuː ɪn ðɪs ˈkælkjələs/',
+    usage: 'Dùng khi nhấn mạnh tầm quan trọng của giá trị vòng đời khách hàng trong tính toán chiến lược.',
     role: 'filler',
     examples: [
       { en: 'One cannot overstate the importance of customer lifetime value in this calculus.', vi: 'Không thể phóng đại tầm quan trọng của giá trị vòng đời khách hàng trong phép tính này.' },
+      { en: 'One cannot overstate the importance of customer lifetime value in this calculus.', vi: 'Không thể phóng đại tầm quan trọng của giá trị vòng đời khách hàng trong phép tính này.' },
+      { en: 'One cannot overstate the importance of customer lifetime value for growth.', vi: 'Không thể phóng đại tầm quan trọng của giá trị vòng đời khách hàng cho tăng trưởng.' },
     ],
   },
   {
@@ -10434,9 +10614,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The campaign has concluded with a measurable uplift in share of voice.',
     vietnamese: 'Chiến dịch đã kết thúc với mức tăng đo lường được về thị phần truyền thông.',
     phonetic: '/ðə kæmˈpeɪn hæz kənˈkluːdɪd wɪð ə ˈmɛʒərəbəl ˈʌplɪft ɪn ʃɛr ɒv vɔɪs/',
+    usage: 'Dùng khi tổng kết chiến dịch với kết quả đo lường được về thị phần truyền thông.',
     role: 'closer',
     examples: [
       { en: 'The campaign has concluded with a measurable uplift in share of voice.', vi: 'Chiến dịch đã kết thúc với mức tăng đo lường được về thị phần truyền thông.' },
+      { en: 'The campaign has concluded with a measurable uplift in share of voice.', vi: 'Chiến dịch đã kết thúc với mức tăng đo lường được về thị phần truyền thông.' },
+      { en: 'The campaign has concluded with a measurable uplift in brand mentions.', vi: 'Chiến dịch đã kết thúc với mức tăng đo lường được về số lần nhắc đến thương hiệu.' },
     ],
   },
   {
@@ -10447,9 +10630,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will present the comprehensive findings to the executive board at the next session.',
     vietnamese: 'Chúng ta sẽ trình bày những phát hiện toàn diện lên ban điều hành tại phiên họp tới.',
     phonetic: '/wiː wɪl prɪˈzɛnt ðə ˌkɒmprɪˈhɛnsɪv ˈfaɪndɪŋz tuː ði ɪɡˈzɛkjʊtɪv bɔːrd æt ðə nɛkst ˈsɛʃən/',
+    usage: 'Dùng khi nói về việc trình bày phát hiện toàn diện trước ban điều hành.',
     role: 'closer',
     examples: [
       { en: 'We will present the comprehensive findings to the executive board at the next session.', vi: 'Chúng ta sẽ trình bày những phát hiện toàn diện lên ban điều hành tại phiên họp tới.' },
+      { en: 'We will present the comprehensive findings to the executive board at the next session.', vi: 'Chúng ta sẽ trình bày những phát hiện toàn diện lên ban điều hành tại phiên họp tới.' },
+      { en: 'We will present the comprehensive findings to the executive board next week.', vi: 'Chúng ta sẽ trình bày những phát hiện toàn diện lên ban điều hành vào tuần tới.' },
     ],
   },
   {
@@ -10460,9 +10646,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us institutionalize the learnings into the brand playbook for future cycles.',
     vietnamese: 'Hãy thể chế hóa những bài học vào sổ tay thương hiệu cho các chu kỳ tương lai.',
     phonetic: '/lɛt ʌs ˌɪnstɪˈtuːʃənəlaɪz ðə ˈlɜːrnɪŋz ˈɪntuː ðə brænd ˈpleɪbʊk fɔːr ˈfjuːtʃər ˈsaɪkəlz/',
+    usage: 'Dùng khi đề xuất đưa các bài học vào sổ tay thương hiệu để dùng cho các chu kỳ sau.',
     role: 'closer',
     examples: [
       { en: 'Let us institutionalize the learnings into the brand playbook for future cycles.', vi: 'Hãy thể chế hóa những bài học vào sổ tay thương hiệu cho các chu kỳ tương lai.' },
+      { en: 'Let us institutionalize the learnings into the brand playbook for future cycles.', vi: 'Hãy thể chế hóa những bài học vào sổ tay thương hiệu cho các chu kỳ tương lai.' },
+      { en: 'Let us institutionalize the learnings into the brand playbook this week.', vi: 'Hãy thể chế hóa những bài học vào sổ tay thương hiệu trong tuần này.' },
     ],
   },
   {
@@ -10473,9 +10662,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will convene a strategic review to consolidate the marketing agenda for next year.',
     vietnamese: 'Chúng ta sẽ triệu tập một phiên đánh giá chiến lược để tổng hợp chương trình marketing cho năm sau.',
     phonetic: '/wiː wɪl kənˈviːn ə strəˈtiːdʒɪk rɪˈvjuː tuː kənˈsɒlɪdeɪt ðə ˈmɑːrkɪtɪŋ əˈdʒɛndə fɔːr nɛkst jɪr/',
+    usage: 'Dùng khi nói về việc triệu tập phiên đánh giá chiến lược để tổng hợp chương trình năm sau.',
     role: 'closer',
     examples: [
       { en: 'We will convene a strategic review to consolidate the marketing agenda for next year.', vi: 'Chúng ta sẽ triệu tập một phiên đánh giá chiến lược để tổng hợp chương trình marketing cho năm sau.' },
+      { en: 'We will convene a strategic review to consolidate the marketing agenda for next year.', vi: 'Chúng ta sẽ triệu tập một phiên đánh giá chiến lược để tổng hợp chương trình marketing cho năm sau.' },
+      { en: 'We will convene a strategic review to consolidate the agenda for next year.', vi: 'Chúng ta sẽ triệu tập một phiên đánh giá chiến lược để tổng hợp chương trình cho năm sau.' },
     ],
   },
 
