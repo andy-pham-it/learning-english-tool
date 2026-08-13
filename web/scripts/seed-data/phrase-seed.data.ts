@@ -18311,9 +18311,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: "how's it going",
     vietnamese: 'dạo này thế nào',
     phonetic: '/haʊz ɪt ˈɡəʊɪŋ/',
+    usage: 'Dùng khi mở đầu cuộc trò chuyện thân mật để hỏi thăm tình hình người quen.',
     role: 'opener',
     examples: [
       { en: "Hey, how's it going? Long time no see.", vi: 'Ê, dạo này thế nào? Lâu rồi không gặp.' },
+      { en: "Hey, how's it going? You look well.", vi: 'Này, dạo này thế nào? Trông bạn ổn đấy.' },
+      { en: "How's it going at the new office?", vi: 'Dạo này ở văn phòng mới thế nào?' },
     ],
   },
   {
@@ -18324,9 +18327,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'long time no see',
     vietnamese: 'lâu rồi không gặp',
     phonetic: '/lɒŋ taɪm nəʊ siː/',
+    usage: 'Dùng khi gặp lại người đã lâu không gặp để mở đầu câu chuyện.',
     role: 'opener',
     examples: [
       { en: 'Long time no see — how have you been?', vi: 'Lâu rồi không gặp — dạo này bạn thế nào?' },
+      { en: 'Long time no see — you cut your hair!', vi: 'Lâu rồi không gặp — bạn cắt tóc rồi à!' },
+      { en: 'Long time no see, how is your family?', vi: 'Lâu rồi không gặp, gia đình bạn khỏe chứ?' },
     ],
   },
   {
@@ -18337,9 +18343,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'by the way',
     vietnamese: 'nhân tiện',
     phonetic: '/baɪ ðə weɪ/',
+    usage: 'Dùng khi muốn chuyển sang một chủ đề khác giữa cuộc trò chuyện.',
     role: 'linker',
     examples: [
       { en: 'By the way, did you finish the book I lent you?', vi: 'Nhân tiện, bạn đọc xong cuốn sách tôi cho mượn chưa?' },
+      { en: 'By the way, are you still playing football?', vi: 'Nhân tiện, bạn còn chơi bóng đá không?' },
+      { en: 'By the way, the meeting moved to Friday.', vi: 'Nhân tiện, cuộc họp đã dời sang thứ sáu.' },
     ],
   },
   {
@@ -18350,9 +18359,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to catch up',
     vietnamese: 'hàn huyên, cập nhật chuyện',
     phonetic: '/tə kætʃ ʌp/',
+    usage: 'Dùng khi đề nghị gặp nhau để hàn huyên, cập nhật tin tức.',
     role: 'closer',
     examples: [
       { en: 'We should catch up over coffee this weekend.', vi: 'Cuối tuần này mình hàn huyên qua cà phê nhé.' },
+      { en: 'We should catch up over lunch next week.', vi: 'Chúng ta nên hẹn ăn trưa và hàn huyên vào tuần sau.' },
+      { en: 'I owe you a call to catch up.', vi: 'Tôi nợ bạn một cuộc gọi để hàn huyên.' },
     ],
   },
   {
@@ -18363,9 +18375,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: "it's been a while",
     vietnamese: 'đã một thời gian rồi',
     phonetic: '/ɪts biːn ə waɪl/',
+    usage: 'Dùng khi nhận xét rằng đã khá lâu kể từ lần gặp trước.',
     role: 'opener',
     examples: [
       { en: "It's been a while since we last met.", vi: 'Đã một thời gian rồi kể từ lần gặp cuối.' },
+      { en: "It's been a while since we worked together.", vi: 'Đã một thời gian rồi kể từ khi chúng ta làm việc cùng nhau.' },
+      { en: "It's been a while — how have you been?", vi: 'Đã một thời gian rồi — bạn dạo này thế nào?' },
     ],
   },
   {
@@ -18376,9 +18391,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'speaking of which',
     vietnamese: 'nói đến chuyện đó',
     phonetic: '/ˈspiːkɪŋ əv wɪtʃ/',
+    usage: 'Dùng để nối ý, chuyển sang chủ đề liên quan vừa được nhắc đến.',
     role: 'linker',
     examples: [
       { en: 'Speaking of which, have you heard the news?', vi: 'Nói đến chuyện đó, bạn đã nghe tin chưa?' },
+      { en: 'Speaking of which, did you hear the result?', vi: 'Nói đến chuyện đó, bạn nghe kết quả chưa?' },
+      { en: 'Speaking of which, I got the promotion.', vi: 'Nói đến chuyện đó, tôi được thăng chức rồi.' },
     ],
   },
   {
@@ -18389,9 +18407,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to keep things short',
     vietnamese: 'giữ cho ngắn gọn',
     phonetic: '/tə kiːp θɪŋz ʃɔːt/',
+    usage: 'Dùng khi muốn nói ngắn gọn, tránh dài dòng.',
     role: 'opener',
     examples: [
       { en: 'To keep things short, I will just send you a summary.', vi: 'Giữ cho ngắn gọn, tôi sẽ gửi bạn tóm tắt thôi.' },
+      { en: 'To keep things short, the deal is off.', vi: 'Giữ cho ngắn gọn, thương vụ hủy rồi.' },
+      { en: 'To keep things short, we need more time.', vi: 'Giữ cho ngắn gọn, chúng ta cần thêm thời gian.' },
     ],
   },
   {
@@ -18402,9 +18423,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: "let's pick this up later",
     vietnamese: 'để dành nói tiếp sau',
     phonetic: '/lets pɪk ðɪs ʌp ˈleɪtə/',
+    usage: 'Dùng khi muốn hoãn nói tiếp một chuyện sang lúc khác.',
     role: 'closer',
     examples: [
       { en: "Let's pick this up later — I have a call in five.", vi: 'Để dành nói tiếp sau nhé — tôi có cuộc gọi trong năm phút nữa.' },
+      { en: "Let's pick this up later after the demo.", vi: 'Để dành nói tiếp sau buổi demo nhé.' },
+      { en: "Let's pick this up later, I have another call.", vi: 'Để dành nói tiếp sau nhé, tôi có cuộc gọi khác.' },
     ],
   },
 
@@ -18631,9 +18655,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how is it going?',
     vietnamese: 'dạo này thế nào?',
     phonetic: '/haʊ ɪz ɪt ˈɡəʊɪŋ/',
+    usage: 'Dùng khi chào hỏi thân mật để hỏi thăm tình hình.',
     role: 'opener',
     examples: [
       { en: 'How is it going? We have not talked in a while.', vi: 'Dạo này thế nào? Lâu rồi chúng ta chưa nói chuyện.' },
+      { en: 'How is it going? Everything okay?', vi: 'Dạo này thế nào? Mọi thứ ổn chứ?' },
+      { en: 'How is it going with your studies?', vi: 'Việc học của bạn thế nào rồi?' },
     ],
   },
   {
@@ -18644,9 +18671,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'incidentally',
     vietnamese: 'tình cờ',
     phonetic: '/ˌɪnsɪˈdentli/',
+    usage: 'Dùng khi vô tình nhớ ra và nói thêm một chuyện không liên quan.',
     role: 'linker',
     examples: [
       { en: 'Incidentally, I saw your sister at the market.', vi: 'Tình cờ, tôi thấy chị bạn ở chợ.' },
+      { en: 'Incidentally, I met your brother yesterday.', vi: 'Tình cờ, hôm qua tôi gặp anh trai bạn.' },
+      { en: 'Incidentally, the train was delayed again.', vi: 'Tình cờ, tàu lại bị hoãn nữa rồi.' },
     ],
   },
   {
@@ -18657,9 +18687,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'kind of',
     vietnamese: 'kiểu như',
     phonetic: '/kaɪnd əv/',
+    usage: 'Dùng khi trả lời mập mờ, không chắc chắn về điều gì.',
     role: 'filler',
     examples: [
       { en: 'I am kind of busy these days.', vi: 'Dạo này tôi kiểu như hơi bận.' },
+      { en: 'I am kind of tired after the trip.', vi: 'Tôi kiểu như hơi mệt sau chuyến đi.' },
+      { en: 'It was kind of fun, I guess.', vi: 'Kiểu như cũng vui, tôi đoán vậy.' },
     ],
   },
   {
@@ -18670,9 +18703,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'nice talking to you',
     vietnamese: 'rất vui được trò chuyện với bạn',
     phonetic: '/naɪs ˈtɔːkɪŋ tə juː/',
+    usage: 'Dùng khi kết thúc cuộc trò chuyện một cách lịch sự.',
     role: 'closer',
     examples: [
       { en: 'Nice talking to you — see you around.', vi: 'Rất vui được trò chuyện với bạn — hẹn gặp lại.' },
+      { en: 'Nice talking to you — take care!', vi: 'Rất vui được trò chuyện với bạn — bảo trọng nhé!' },
+      { en: 'Nice talking to you, have a good day.', vi: 'Rất vui được trò chuyện với bạn, chúc một ngày tốt lành.' },
     ],
   },
   {
@@ -18683,9 +18719,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'mind you',
     vietnamese: 'mà này, lưu ý',
     phonetic: '/maɪnd juː/',
+    usage: 'Dùng khi thêm lưu ý bổ sung sau một nhận xét.',
     role: 'filler',
     examples: [
       { en: 'The food was fine — mind you, the service was slow.', vi: 'Đồ ăn ổn — mà này, phục vụ thì chậm.' },
+      { en: 'The hotel was nice — mind you, it was pricey.', vi: 'Khách sạn ổn đấy — mà này, cũng đắt lắm.' },
+      { en: 'He is clever — mind you, he can be lazy.', vi: 'Cậu ấy thông minh — mà này, cũng có thể lười.' },
     ],
   },
   {
@@ -18696,9 +18735,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'it has been ages since',
     vietnamese: 'đã lâu lắm rồi kể từ',
     phonetic: '/ɪt hæz biːn ˈeɪdʒɪz sɪns/',
+    usage: 'Dùng khi nhấn mạnh đã rất lâu kể từ lần cuối làm điều gì đó.',
     role: 'opener',
     examples: [
       { en: 'It has been ages since we sat down like this.', vi: 'Đã lâu lắm rồi kể từ khi chúng ta ngồi xuống thế này.' },
+      { en: 'It has been ages since we had dinner together.', vi: 'Đã lâu lắm rồi kể từ khi chúng ta ăn tối cùng nhau.' },
+      { en: 'It has been ages since I visited the museum.', vi: 'Đã lâu lắm rồi kể từ khi tôi đến bảo tàng.' },
     ],
   },
   {
@@ -18709,9 +18751,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to switch gears',
     vietnamese: 'đổi chủ đề',
     phonetic: '/tə swɪtʃ ɡɪəz/',
+    usage: 'Dùng khi muốn đổi chủ đề đang nói sang một vấn đề khác.',
     role: 'linker',
     examples: [
       { en: 'Let me switch gears and ask about your trip.', vi: 'Để tôi đổi chủ đề và hỏi về chuyến đi của bạn.' },
+      { en: 'Let me switch gears and ask about your project.', vi: 'Để tôi đổi chủ đề và hỏi về dự án của bạn.' },
+      { en: 'Let us switch gears and discuss the budget.', vi: 'Chúng ta hãy đổi chủ đề và bàn về ngân sách.' },
     ],
   },
   {
@@ -18722,9 +18767,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'for what that is worth',
     vietnamese: 'cho dù điều đó đáng giá đến đâu',
     phonetic: '/fɔː wɒt ðæt ɪz wɜːrθ/',
+    usage: 'Dùng khi đưa ra nhận xét kèm thái độ khiêm tốn, không khẳng định chắc chắn.',
     role: 'filler',
     examples: [
       { en: 'For what that is worth, I enjoyed the talk.', vi: 'Cho dù điều đó đáng giá đến đâu, tôi đã thích buổi nói chuyện.' },
+      { en: 'For what that is worth, I trust his judgement.', vi: 'Cho dù điều đó đáng giá đến đâu, tôi tin vào sự phán đoán của anh ấy.' },
+      { en: 'For what that is worth, the plan seems solid.', vi: 'Cho dù điều đó đáng giá đến đâu, kế hoạch có vẻ chắc chắn.' },
     ],
   },
   {
@@ -18735,9 +18783,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to take off',
     vietnamese: 'tạm biệt, rời đi',
     phonetic: '/tə teɪk ɒf/',
+    usage: 'Dùng khi xin phép rời đi hoặc kết thúc buổi gặp.',
     role: 'closer',
     examples: [
       { en: 'I should take off — it is getting late.', vi: 'Tôi nên đi thôi — trễ rồi.' },
+      { en: 'I should take off — we have an early start.', vi: 'Tôi nên đi đây — mai chúng ta phải dậy sớm.' },
+      { en: 'I will take off now, see you tomorrow.', vi: 'Tôi đi đây, hẹn gặp lại ngày mai.' },
     ],
   },
 
@@ -21254,9 +21305,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It is a beautiful day outside.',
     vietnamese: 'Ngoài trời hôm nay thật đẹp.',
     phonetic: '/ɪt ɪz ə ˈbjuːtəfəl deɪ ˌaʊtˈsaɪd/',
+    usage: 'Dùng khi mở đầu trò chuyện bằng nhận xét về thời tiết.',
     role: 'opener',
     examples: [
       { en: 'It is a beautiful day outside, let us take a walk.', vi: 'Ngoài trời hôm nay thật đẹp, chúng ta đi dạo nhé.' },
+      { en: 'It is a beautiful day outside, perfect for a picnic.', vi: 'Ngoài trời hôm nay thật đẹp, hoàn hảo cho một buổi dã ngoại.' },
+      { en: 'It is a beautiful day outside, let us open the windows.', vi: 'Ngoài trời hôm nay thật đẹp, hãy mở cửa sổ ra.' },
     ],
   },
   {
@@ -21267,9 +21321,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have not seen you for a long time.',
     vietnamese: 'Đã lâu tôi không gặp bạn.',
     phonetic: '/aɪ hæv nɑːt siːn juː fɔːr ə lɔːŋ taɪm/',
+    usage: 'Dùng khi gặp lại người đã lâu không gặp và muốn hỏi thăm.',
     role: 'opener',
     examples: [
       { en: 'I have not seen you for a long time, how are you?', vi: 'Đã lâu tôi không gặp bạn, bạn khỏe không?' },
+      { en: 'I have not seen you for a long time, how is work?', vi: 'Đã lâu tôi không gặp bạn, công việc thế nào?' },
+      { en: 'I have not seen you for a long time, you look different!', vi: 'Đã lâu tôi không gặp bạn, trông bạn khác quá!' },
     ],
   },
   {
@@ -21280,9 +21337,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'What did you do last weekend?',
     vietnamese: 'Cuối tuần trước bạn đã làm gì?',
     phonetic: '/wʌt dɪd juː duː læst ˌwiːkˈɛnd/',
+    usage: 'Dùng khi hỏi về việc người khác đã làm cuối tuần trước.',
     role: 'linker',
     examples: [
       { en: 'What did you do last weekend? I stayed home.', vi: 'Cuối tuần trước bạn đã làm gì? Tôi ở nhà.' },
+      { en: 'What did you do last weekend? Did you go out?', vi: 'Cuối tuần trước bạn đã làm gì? Bạn có đi chơi không?' },
+      { en: 'What did you do last weekend? I heard you went hiking.', vi: 'Cuối tuần trước bạn đã làm gì? Tôi nghe nói bạn đi leo núi.' },
     ],
   },
   {
@@ -21293,9 +21353,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Tell me a bit about your hobby.',
     vietnamese: 'Kể cho tôi một chút về sở thích của bạn.',
     phonetic: '/tɛl miː ə bɪt əˈbaʊt jʊər ˈhɒbi/',
+    usage: 'Dùng khi muốn tìm hiểu về sở thích của người đối thoại.',
     role: 'linker',
     examples: [
       { en: 'Tell me a bit about your hobby, I am curious.', vi: 'Kể cho tôi một chút về sở thích của bạn, tôi tò mò lắm.' },
+      { en: 'Tell me a bit about your hobby, what do you do?', vi: 'Kể cho tôi một chút về sở thích của bạn, bạn thường làm gì?' },
+      { en: 'Tell me a bit about your hobby, it sounds interesting.', vi: 'Kể cho tôi một chút về sở thích của bạn, nghe thú vị đấy.' },
     ],
   },
   {
@@ -21306,9 +21369,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I really like your new shoes.',
     vietnamese: 'Tôi rất thích đôi giày mới của bạn.',
     phonetic: '/aɪ ˈrɪəli laɪk jʊər nuː ʃuːz/',
+    usage: 'Dùng khi khen người khác để làm không khí thân thiện.',
     role: 'filler',
     examples: [
       { en: 'I really like your new shoes, where did you get them?', vi: 'Tôi rất thích đôi giày mới của bạn, bạn mua ở đâu vậy?' },
+      { en: 'I really like your new shoes, they suit you.', vi: 'Tôi rất thích đôi giày mới của bạn, hợp với bạn lắm.' },
+      { en: 'I really like your new shoes, are they comfortable?', vi: 'Tôi rất thích đôi giày mới của bạn, chúng có thoải mái không?' },
     ],
   },
   {
@@ -21319,9 +21385,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The coffee here is very good.',
     vietnamese: 'Cà phê ở đây rất ngon.',
     phonetic: '/ðə ˈkɒfi hɪr ɪz ˈvɛri gʊd/',
+    usage: 'Dùng khi khen đồ ăn hoặc đồ uống để tạo chủ đề trò chuyện.',
     role: 'filler',
     examples: [
       { en: 'The coffee here is very good, you should try it.', vi: 'Cà phê ở đây rất ngon, bạn nên thử.' },
+      { en: 'The coffee here is very good, I come every morning.', vi: 'Cà phê ở đây rất ngon, tôi đến mỗi sáng.' },
+      { en: 'The coffee here is very good, let us order another cup.', vi: 'Cà phê ở đây rất ngon, gọi thêm một ly nữa đi.' },
     ],
   },
   {
@@ -21332,9 +21401,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us keep in touch more often.',
     vietnamese: 'Chúng ta hãy giữ liên lạc thường xuyên hơn.',
     phonetic: '/lɛt ʌs kiːp ɪn tʌtʃ mɔːr ˈɒfən/',
+    usage: 'Dùng khi đề nghị duy trì liên lạc thường xuyên hơn.',
     role: 'closer',
     examples: [
       { en: 'Let us keep in touch more often from now on.', vi: 'Chúng ta hãy giữ liên lạc thường xuyên hơn từ bây giờ.' },
+      { en: 'Let us keep in touch more often, message me anytime.', vi: 'Chúng ta hãy giữ liên lạc thường xuyên hơn, nhắn tôi bất cứ lúc nào.' },
+      { en: 'Let us keep in touch more often, I miss our chats.', vi: 'Chúng ta hãy giữ liên lạc thường xuyên hơn, tôi nhớ những buổi trò chuyện.' },
     ],
   },
   {
@@ -21345,9 +21417,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'See you at the same place tomorrow.',
     vietnamese: 'Hẹn gặp bạn ở chỗ cũ vào ngày mai.',
     phonetic: '/siː juː æt ðə seɪm pleɪs təˈmɒroʊ/',
+    usage: 'Dùng khi hẹn gặp lại ở một địa điểm quen thuộc.',
     role: 'closer',
     examples: [
       { en: 'See you at the same place tomorrow at noon.', vi: 'Hẹn gặp bạn ở chỗ cũ vào trưa mai.' },
+      { en: 'See you at the same place tomorrow, bring the notes.', vi: 'Hẹn gặp bạn ở chỗ cũ vào ngày mai, mang theo ghi chú nhé.' },
+      { en: 'See you at the same place tomorrow, do not be late.', vi: 'Hẹn gặp bạn ở chỗ cũ vào ngày mai, đừng trễ nhé.' },
     ],
   },
   {
@@ -21358,9 +21433,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It has been ages since we last talked.',
     vietnamese: 'Đã rất lâu kể từ lần cuối chúng ta trò chuyện.',
     phonetic: '/ɪt hæz biːn ˈeɪdʒɪz sɪns wiː læst tɔːkt/',
+    usage: 'Dùng khi nhấn mạnh đã rất lâu từ lần cuối trò chuyện.',
     role: 'opener',
     examples: [
       { en: 'It has been ages since we last talked, I missed you.', vi: 'Đã rất lâu kể từ lần cuối chúng ta trò chuyện, tôi nhớ bạn.' },
+      { en: 'It has been ages since we last talked, we must meet soon.', vi: 'Đã rất lâu kể từ lần cuối chúng ta trò chuyện, chúng ta phải gặp sớm thôi.' },
+      { en: 'It has been ages since we last talked, you have changed.', vi: 'Đã rất lâu kể từ lần cuối chúng ta trò chuyện, bạn thay đổi nhiều rồi.' },
     ],
   },
   {
@@ -21371,9 +21449,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'How has your week been so far?',
     vietnamese: 'Tuần của bạn thế nào rồi?',
     phonetic: '/haʊ hæz jʊər wiːk biːn soʊ fɑːr/',
+    usage: 'Dùng khi hỏi thăm về tuần vừa qua của người khác.',
     role: 'opener',
     examples: [
       { en: 'How has your week been so far? Busy I assume.', vi: 'Tuần của bạn thế nào rồi? Chắc là bận lắm nhỉ.' },
+      { en: 'How has your week been so far? Mine is crazy.', vi: 'Tuần của bạn thế nào rồi? Của tôi bận rộn lắm.' },
+      { en: 'How has your week been so far? Anything new?', vi: 'Tuần của bạn thế nào rồi? Có gì mới không?' },
     ],
   },
   {
@@ -21384,9 +21465,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I heard you went on a trip recently.',
     vietnamese: 'Tôi nghe nói bạn vừa đi du lịch gần đây.',
     phonetic: '/aɪ hɜːrd juː wɛnt ɒn ə trɪp ˈriːsəntli/',
+    usage: 'Dùng khi biết người khác vừa đi chơi và muốn hỏi về chuyến đi.',
     role: 'linker',
     examples: [
       { en: 'I heard you went on a trip recently, how was it?', vi: 'Tôi nghe nói bạn vừa đi du lịch gần đây, chuyến đi thế nào?' },
+      { en: 'I heard you went on a trip recently, where did you go?', vi: 'Tôi nghe nói bạn vừa đi du lịch gần đây, bạn đã đi đâu?' },
+      { en: 'I heard you went on a trip recently, show me the photos.', vi: 'Tôi nghe nói bạn vừa đi du lịch gần đây, cho tôi xem ảnh đi.' },
     ],
   },
   {
@@ -21397,9 +21481,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Do you follow the local football team?',
     vietnamese: 'Bạn có theo dõi đội bóng đá địa phương không?',
     phonetic: '/duː juː ˈfɒloʊ ðə ˈloʊkəl ˈfʊtbɔːl tiːm/',
+    usage: 'Dùng khi hỏi về sở thích chung để duy trì cuộc trò chuyện.',
     role: 'linker',
     examples: [
       { en: 'Do you follow the local football team? They are doing well.', vi: 'Bạn có theo dõi đội bóng đá địa phương không? Họ đang chơi tốt.' },
+      { en: 'Do you follow the local football team? They won again.', vi: 'Bạn có theo dõi đội bóng đá địa phương không? Họ lại thắng rồi.' },
+      { en: 'Do you follow the local football team, or are you into tennis?', vi: 'Bạn có theo dõi đội bóng đá địa phương không, hay bạn thích tennis?' },
     ],
   },
   {
@@ -21410,9 +21497,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am not really a morning person.',
     vietnamese: 'Tôi không thực sự là người dậy sớm.',
     phonetic: '/aɪ æm nɑːt ˈrɪəli ə ˈmɔːrnɪŋ ˈpɜːrsən/',
+    usage: 'Dùng khi nói về sở thích cá nhân liên quan đến thời gian trong ngày.',
     role: 'filler',
     examples: [
       { en: 'I am not really a morning person, I prefer evenings.', vi: 'Tôi không thực sự là người dậy sớm, tôi thích buổi tối.' },
+      { en: 'I am not really a morning person, I work late.', vi: 'Tôi không thực sự là người dậy sớm, tôi làm việc muộn.' },
+      { en: 'I am not really a morning person, coffee helps though.', vi: 'Tôi không thực sự là người dậy sớm, nhưng cà phê giúp ích đấy.' },
     ],
   },
   {
@@ -21423,9 +21513,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The traffic was terrible this morning.',
     vietnamese: 'Giao thông sáng nay tệ thật.',
     phonetic: '/ðə ˈtræfɪk wɒz ˈtɛrəbəl ðɪs ˈmɔːrnɪŋ/',
+    usage: 'Dùng khi phàn nàn về giao thông trong lúc trò chuyện.',
     role: 'filler',
     examples: [
       { en: 'The traffic was terrible this morning, I was late again.', vi: 'Giao thông sáng nay tệ thật, tôi lại bị muộn.' },
+      { en: 'The traffic was terrible this morning, I left home at six.', vi: 'Giao thông sáng nay tệ thật, tôi rời nhà lúc sáu giờ.' },
+      { en: 'The traffic was terrible this morning, take the train instead.', vi: 'Giao thông sáng nay tệ thật, bạn nên đi tàu thay vì ô tô.' },
     ],
   },
   {
@@ -21436,9 +21529,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We should grab a coffee sometime.',
     vietnamese: 'Chúng ta nên đi cà phê lúc nào đó.',
     phonetic: '/wiː ʃʊd græb ə ˈkɒfi ˈsʌmtaɪm/',
+    usage: 'Dùng khi đề nghị hẹn đi cà phê với người quen.',
     role: 'closer',
     examples: [
       { en: 'We should grab a coffee sometime and chat.', vi: 'Chúng ta nên đi cà phê lúc nào đó và trò chuyện.' },
+      { en: 'We should grab a coffee sometime, this week maybe?', vi: 'Chúng ta nên đi cà phê lúc nào đó, tuần này nhé?' },
+      { en: 'We should grab a coffee sometime, I have a story to tell.', vi: 'Chúng ta nên đi cà phê lúc nào đó, tôi có chuyện muốn kể.' },
     ],
   },
   {
@@ -21449,9 +21545,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Send my regards to your family.',
     vietnamese: 'Cho tôi gửi lời hỏi thăm tới gia đình bạn.',
     phonetic: '/sɛnd maɪ rɪˈɡɑːrdz tuː jʊər ˈfæməli/',
+    usage: 'Dùng khi gửi lời hỏi thăm đến gia đình người khác khi kết thúc câu chuyện.',
     role: 'closer',
     examples: [
       { en: 'Send my regards to your family when you see them.', vi: 'Cho tôi gửi lời hỏi thăm tới gia đình bạn khi gặp họ.' },
+      { en: 'Send my regards to your family when you see them.', vi: 'Cho tôi gửi lời hỏi thăm tới gia đình bạn khi bạn gặp họ nhé.' },
+      { en: 'Send my regards to your family, hope everyone is well.', vi: 'Cho tôi gửi lời hỏi thăm tới gia đình bạn, mong mọi người đều khỏe.' },
     ],
   },
   {
@@ -21462,9 +21561,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I never expected to run into you here.',
     vietnamese: 'Tôi không ngờ lại tình cờ gặp bạn ở đây.',
     phonetic: '/aɪ ˈnɛvər ɪkˈspɛktɪd tuː rʌn ˈɪntuː juː hɪr/',
+    usage: 'Dùng khi vô tình gặp ai đó ở nơi bất ngờ.',
     role: 'opener',
     examples: [
       { en: 'I never expected to run into you here of all places.', vi: 'Tôi không ngờ lại tình cờ gặp bạn ở đây trong tất cả các nơi.' },
+      { en: 'I never expected to run into you here of all places.', vi: 'Tôi không ngờ lại tình cờ gặp bạn ở đây, của tất cả mọi nơi.' },
+      { en: 'I never expected to run into you here, what a surprise.', vi: 'Tôi không ngờ lại tình cờ gặp bạn ở đây, bất ngờ thật.' },
     ],
   },
   {
@@ -21475,9 +21577,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It has been quite a while, has it not?',
     vietnamese: 'Đã khá lâu rồi nhỉ?',
     phonetic: '/ɪt hæz biːn kwaɪt ə waɪl hæz ɪt nɑːt/',
+    usage: 'Dùng khi hỏi xác nhận rằng đã khá lâu kể từ lần gặp trước.',
     role: 'opener',
     examples: [
       { en: 'It has been quite a while, has it not? I lost count.', vi: 'Đã khá lâu rồi nhỉ? Tôi không đếm nổi.' },
+      { en: 'It has been quite a while, has it not? Almost a year.', vi: 'Đã khá lâu rồi nhỉ? Gần một năm rồi đấy.' },
+      { en: 'It has been quite a while, has it not? You look great.', vi: 'Đã khá lâu rồi nhỉ? Trông bạn tuyệt lắm.' },
     ],
   },
   {
@@ -21488,9 +21593,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'What has been keeping you busy these days?',
     vietnamese: 'Điều gì đang khiến bạn bận rộn những ngày này?',
     phonetic: '/wʌt hæz biːn ˈkiːpɪŋ juː ˈbɪzi ðiːz deɪz/',
+    usage: 'Dùng khi hỏi điều gì đang chiếm thời gian của người khác.',
     role: 'linker',
     examples: [
       { en: 'What has been keeping you busy these days? You seem unstoppable.', vi: 'Điều gì đang khiến bạn bận rộn những ngày này? Bạn có vẻ không ngừng nghỉ.' },
+      { en: 'What has been keeping you busy these days? You are everywhere.', vi: 'Điều gì đang khiến bạn bận rộn những ngày này? Bạn ở khắp nơi vậy.' },
+      { en: 'What has been keeping you busy these days? The new role?', vi: 'Điều gì đang khiến bạn bận rộn những ngày này? Công việc mới à?' },
     ],
   },
   {
@@ -21501,9 +21609,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Are you still working on that side project?',
     vietnamese: 'Bạn vẫn đang làm dự án phụ đó chứ?',
     phonetic: '/ɑːr juː stɪl ˈwɜːrkɪŋ ɒn ðæt saɪd ˈprɒdʒɛkt/',
+    usage: 'Dùng khi hỏi về một dự án hoặc công việc phụ từng biết.',
     role: 'linker',
     examples: [
       { en: 'Are you still working on that side project or did you drop it?', vi: 'Bạn vẫn đang làm dự án phụ đó hay đã bỏ rồi?' },
+      { en: 'Are you still working on that side project or did you drop it?', vi: 'Bạn vẫn đang làm dự án phụ đó chứ hay đã bỏ rồi?' },
+      { en: 'Are you still working on that side project? I am curious.', vi: 'Bạn vẫn đang làm dự án phụ đó chứ? Tôi tò mò lắm.' },
     ],
   },
   {
@@ -21514,9 +21625,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I have been meaning to call you for ages.',
     vietnamese: 'Đã lâu rồi tôi cứ định gọi cho bạn.',
     phonetic: '/aɪ hæv biːn ˈmiːnɪŋ tuː kɔːl juː fɔːr ˈeɪdʒɪz/',
+    usage: 'Dùng khi giải thích rằng đã định liên lạc từ lâu nhưng chưa làm.',
     role: 'filler',
     examples: [
       { en: 'I have been meaning to call you for ages but time slips away.', vi: 'Đã lâu rồi tôi cứ định gọi cho bạn nhưng thời gian trôi qua.' },
+      { en: 'I have been meaning to call you for ages but life got busy.', vi: 'Đã lâu rồi tôi cứ định gọi cho bạn nhưng cuộc sống bận quá.' },
+      { en: 'I have been meaning to call you for ages, sorry for the delay.', vi: 'Đã lâu rồi tôi cứ định gọi cho bạn, xin lỗi vì chậm trễ.' },
     ],
   },
   {
@@ -21527,9 +21641,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'This place has a really cozy atmosphere.',
     vietnamese: 'Nơi này có bầu không khí thực sự ấm cúng.',
     phonetic: '/ðɪs pleɪs hæz ə ˈrɪəli ˈkoʊzi ˈætməsfɪr/',
+    usage: 'Dùng khi khen không gian nơi gặp gỡ để tạo bầu không khí thoải mái.',
     role: 'filler',
     examples: [
       { en: 'This place has a really cozy atmosphere, perfect for a chat.', vi: 'Nơi này có bầu không khí thực sự ấm cúng, hoàn hảo cho một cuộc trò chuyện.' },
+      { en: 'This place has a really cozy atmosphere, perfect for talking.', vi: 'Nơi này có bầu không khí thực sự ấm cúng, hoàn hảo để trò chuyện.' },
+      { en: 'This place has a really cozy atmosphere, let us come here more.', vi: 'Nơi này có bầu không khí thực sự ấm cúng, mình đến đây thường xuyên nhé.' },
     ],
   },
   {
@@ -21540,9 +21657,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us catch up properly over dinner soon.',
     vietnamese: 'Chúng ta hãy hẹn gặp trò chuyện đàng hoàng qua bữa tối sớm nhé.',
     phonetic: '/lɛt ʌs kætʃ ʌp ˈprɒpərli ˈoʊvər ˈdɪnər suːn/',
+    usage: 'Dùng khi hẹn gặp trò chuyện tử tế qua một bữa ăn.',
     role: 'closer',
     examples: [
       { en: 'Let us catch up properly over dinner soon, I insist.', vi: 'Chúng ta hãy hẹn gặp trò chuyện đàng hoàng qua bữa tối sớm nhé, tôi nài nỉ đấy.' },
+      { en: 'Let us catch up properly over dinner soon, I insist.', vi: 'Chúng ta hãy hẹn gặp trò chuyện đàng hoàng qua bữa tối sớm nhé, tôi nài nỉ đấy.' },
+      { en: 'Let us catch up properly over dinner soon, I will book a place.', vi: 'Chúng ta hãy hẹn gặp trò chuyện đàng hoàng qua bữa tối sớm nhé, tôi sẽ đặt chỗ.' },
     ],
   },
   {
@@ -21553,9 +21673,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I will text you the details later.',
     vietnamese: 'Tôi sẽ nhắn cho bạn chi tiết sau.',
     phonetic: '/aɪ wɪl tɛkst juː ðə dɪˈteɪlz ˈleɪtər/',
+    usage: 'Dùng khi hứa sẽ gửi chi tiết thông tin qua tin nhắn.',
     role: 'closer',
     examples: [
       { en: 'I will text you the details later once I check my schedule.', vi: 'Tôi sẽ nhắn cho bạn chi tiết sau khi kiểm tra lịch.' },
+      { en: 'I will text you the details later once I check my schedule.', vi: 'Tôi sẽ nhắn cho bạn chi tiết sau khi kiểm tra lịch.' },
+      { en: 'I will text you the details later, watch your phone.', vi: 'Tôi sẽ nhắn cho bạn chi tiết sau, để ý điện thoại nhé.' },
     ],
   },
   {
@@ -21566,9 +21689,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'What a coincidence bumping into you today.',
     vietnamese: 'Thật trùng hợp khi tình cờ gặp bạn hôm nay.',
     phonetic: '/wʌt ə koʊˈɪnsɪdəns ˈbʌmpɪŋ ˈɪntuː juː təˈdeɪ/',
+    usage: 'Dùng khi ngạc nhiên vì tình cờ gặp ai đó đúng lúc bất ngờ.',
     role: 'opener',
     examples: [
       { en: 'What a coincidence bumping into you today of all days.', vi: 'Thật trùng hợp khi tình cờ gặp bạn vào hôm nay của tất cả các ngày.' },
+      { en: 'What a coincidence bumping into you today of all days.', vi: 'Thật trùng hợp khi tình cờ gặp bạn hôm nay, đúng ngày bất ngờ nhất.' },
+      { en: 'What a coincidence bumping into you today, I was about to call.', vi: 'Thật trùng hợp khi tình cờ gặp bạn hôm nay, tôi đang định gọi cho bạn.' },
     ],
   },
   {
@@ -21579,9 +21705,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It has been far too long since we last spoke.',
     vietnamese: 'Đã quá lâu kể từ lần cuối chúng ta nói chuyện.',
     phonetic: '/ɪt hæz biːn fɑːr tuː lɔːŋ sɪns wiː læst spoʊk/',
+    usage: 'Dùng khi nhấn mạnh khoảng thời gian xa cách quá lâu.',
     role: 'opener',
     examples: [
       { en: 'It has been far too long since we last spoke, we must fix that.', vi: 'Đã quá lâu kể từ lần cuối chúng ta nói chuyện, chúng ta phải khắc phục điều đó.' },
+      { en: 'It has been far too long since we last spoke, we must fix that.', vi: 'Đã quá lâu kể từ lần cuối chúng ta nói chuyện, chúng ta phải khắc phục điều đó.' },
+      { en: 'It has been far too long since we last spoke, you owe me news.', vi: 'Đã quá lâu kể từ lần cuối chúng ta nói chuyện, bạn nợ tôi tin tức đấy.' },
     ],
   },
   {
@@ -21592,9 +21721,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'You must tell me all about your recent travels.',
     vietnamese: 'Bạn phải kể cho tôi nghe tất cả về những chuyến đi gần đây.',
     phonetic: '/juː mʌst tɛl miː ɔːl əˈbaʊt jʊər ˈriːsənt ˈtrævəlz/',
+    usage: 'Dùng khi háo hức muốn nghe về chuyến đi của người khác.',
     role: 'linker',
     examples: [
       { en: 'You must tell me all about your recent travels, I heard stories.', vi: 'Bạn phải kể cho tôi nghe tất cả về những chuyến đi gần đây, tôi nghe được nhiều chuyện lắm.' },
+      { en: 'You must tell me all about your recent travels, I heard stories.', vi: 'Bạn phải kể cho tôi nghe tất cả về những chuyến đi gần đây, tôi nghe kể rồi.' },
+      { en: 'You must tell me all about your recent travels, start from the beginning.', vi: 'Bạn phải kể cho tôi nghe tất cả về những chuyến đi gần đây, kể từ đầu đi.' },
     ],
   },
   {
@@ -21605,9 +21737,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I recall you mentioned a big move.',
     vietnamese: 'Tôi nhớ là bạn từng nhắc đến một sự chuyển nhà lớn.',
     phonetic: '/aɪ rɪˈkɔːl juː ˈmɛnʃənd ə bɪg muːv/',
+    usage: 'Dùng khi nhớ lại điều người khác từng nhắc đến và hỏi lại.',
     role: 'linker',
     examples: [
       { en: 'I recall you mentioned a big move, did it happen?', vi: 'Tôi nhớ là bạn từng nhắc đến một sự chuyển nhà lớn, đã diễn ra chưa?' },
+      { en: 'I recall you mentioned a big move, did it happen?', vi: 'Tôi nhớ là bạn từng nhắc đến một sự chuyển nhà lớn, đã xong chưa?' },
+      { en: 'I recall you mentioned a big move, how is the new place?', vi: 'Tôi nhớ là bạn từng nhắc đến một sự chuyển nhà lớn, nơi mới thế nào?' },
     ],
   },
   {
@@ -21618,9 +21753,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Time flies when you are not looking.',
     vietnamese: 'Thời gian trôi nhanh khi bạn không để ý.',
     phonetic: '/taɪm flaɪz wɛn juː ɑːr nɑːt ˈlʊkɪŋ/',
+    usage: 'Dùng khi nhận xét thời gian trôi nhanh trong cuộc trò chuyện.',
     role: 'filler',
     examples: [
       { en: 'Time flies when you are not looking, does it not?', vi: 'Thời gian trôi nhanh khi bạn không để ý, phải không?' },
+      { en: 'Time flies when you are not looking, does it not?', vi: 'Thời gian trôi nhanh khi bạn không để ý, phải không?' },
+      { en: 'Time flies when you are not looking, it is already June.', vi: 'Thời gian trôi nhanh khi bạn không để ý, đã là tháng sáu rồi.' },
     ],
   },
   {
@@ -21631,9 +21769,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'There is never a dull moment in this city.',
     vietnamese: 'Thành phố này chưa bao giờ có một khoảnh khắc buồn tẻ.',
     phonetic: '/ðɛr ɪz ˈnɛvər ə dʌl ˈmoʊmənt ɪn ðɪs ˈsɪti/',
+    usage: 'Dùng khi nhận xét về sự sôi động không ngừng của một nơi.',
     role: 'filler',
     examples: [
       { en: 'There is never a dull moment in this city, something is always on.', vi: 'Thành phố này chưa bao giờ có một khoảnh khắc buồn tẻ, lúc nào cũng có sự kiện.' },
+      { en: 'There is never a dull moment in this city, something is always on.', vi: 'Thành phố này chưa bao giờ có một khoảnh khắc buồn tẻ, lúc nào cũng có hoạt động.' },
+      { en: 'There is never a dull moment in this city, you will never be bored.', vi: 'Thành phố này chưa bao giờ có một khoảnh khắc buồn tẻ, bạn sẽ không bao giờ chán.' },
     ],
   },
   {
@@ -21644,9 +21785,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us not let this much time pass again.',
     vietnamese: 'Chúng ta đừng để khoảng thời gian trôi qua lâu thế này nữa.',
     phonetic: '/lɛt ʌs nɑːt lɛt ðɪs mʌtʃ taɪm pæs əˈɡɛn/',
+    usage: 'Dùng khi hứa hẹn không để khoảng cách quá lâu giữa các lần gặp.',
     role: 'closer',
     examples: [
       { en: 'Let us not let this much time pass again before we meet.', vi: 'Chúng ta đừng để khoảng thời gian trôi qua lâu thế này nữa trước khi gặp nhau.' },
+      { en: 'Let us not let this much time pass again before we meet.', vi: 'Chúng ta đừng để khoảng thời gian trôi qua lâu thế này nữa trước khi gặp nhau.' },
+      { en: 'Let us not let this much time pass again, schedule something now.', vi: 'Chúng ta đừng để khoảng thời gian trôi qua lâu thế này nữa, hẹn ngay đi.' },
     ],
   },
   {
@@ -21657,9 +21801,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I would love to hear more another time.',
     vietnamese: 'Tôi rất muốn nghe thêm vào lúc khác.',
     phonetic: '/aɪ wʊd lʌv tuː hɪr mɔːr əˈnʌðər taɪm/',
+    usage: 'Dùng khi muốn nghe tiếp câu chuyện vào dịp khác.',
     role: 'closer',
     examples: [
       { en: 'I would love to hear more another time, do not leave out details.', vi: 'Tôi rất muốn nghe thêm vào lúc khác, đừng bỏ sót chi tiết nhé.' },
+      { en: 'I would love to hear more another time, do not leave out details.', vi: 'Tôi rất muốn nghe thêm vào lúc khác, đừng bỏ sót chi tiết nhé.' },
+      { en: 'I would love to hear more another time, it is getting late.', vi: 'Tôi rất muốn nghe thêm vào lúc khác, trời muộn rồi.' },
     ],
   },
   {
@@ -21670,9 +21817,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how has your week been',
     vietnamese: 'tuần của bạn thế nào rồi',
     phonetic: '/haʊ hæz jɔː wiːk biːn/',
+    usage: 'Dùng khi hỏi thăm về tuần của người đối thoại.',
     role: 'opener',
     examples: [
       { en: 'How has your week been so far?', vi: 'Tuần của bạn thế nào rồi?' },
+      { en: 'How has your week been so far? Busy or relaxed?', vi: 'Tuần của bạn thế nào rồi? Bận rộn hay thư thả?' },
+      { en: 'How has your week been? I hope it went well.', vi: 'Tuần của bạn thế nào rồi? Tôi hy vọng mọi thứ suôn sẻ.' },
     ],
   },
   {
@@ -21683,9 +21833,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'it has been a while',
     vietnamese: 'đã lâu không gặp',
     phonetic: '/ɪt hæz bɪn ə waɪl/',
+    usage: 'Dùng khi mở đầu cuộc trò chuyện sau một thời gian xa cách.',
     role: 'opener',
     examples: [
       { en: 'It has been a while since we last talked.', vi: 'Đã lâu rồi chúng ta mới nói chuyện.' },
+      { en: 'It has been a while since we last talked, right?', vi: 'Đã lâu không gặp kể từ lần cuối chúng ta nói chuyện, phải không?' },
+      { en: 'It has been a while, what are you up to now?', vi: 'Đã lâu không gặp, giờ bạn đang làm gì?' },
     ],
   },
   {
@@ -21696,9 +21849,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'any plans for the weekend',
     vietnamese: 'có kế hoạch gì cho cuối tuần không',
     phonetic: '/ˈeni plænz fə ðə ˌwiːkˈend/',
+    usage: 'Dùng khi hỏi kế hoạch cuối tuần của người khác.',
     role: 'opener',
     examples: [
       { en: 'Any plans for the weekend? Maybe we can meet.', vi: 'Có kế hoạch gì cho cuối tuần không? Có lẽ chúng ta có thể gặp nhau.' },
+      { en: 'Any plans for the weekend? Maybe we can meet.', vi: 'Có kế hoạch gì cho cuối tuần không? Có lẽ mình có thể gặp nhau.' },
+      { en: 'Any plans for the weekend? I am free on Sunday.', vi: 'Có kế hoạch gì cho cuối tuần không? Tôi rảnh chủ nhật.' },
     ],
   },
   {
@@ -21709,9 +21865,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how is everything going',
     vietnamese: 'mọi thứ đang diễn ra thế nào',
     phonetic: '/haʊ ɪz ˈevriθɪŋ ˈɡəʊɪŋ/',
+    usage: 'Dùng khi hỏi thăm tình hình công việc hoặc cuộc sống.',
     role: 'opener',
     examples: [
       { en: 'How is everything going at your new job?', vi: 'Mọi thứ ở công việc mới của bạn đang diễn ra thế nào?' },
+      { en: 'How is everything going at your new job?', vi: 'Mọi thứ đang diễn ra thế nào ở công việc mới của bạn?' },
+      { en: 'How is everything going? You look happy.', vi: 'Mọi thứ đang diễn ra thế nào? Trông bạn vui vẻ đấy.' },
     ],
   },
   {
@@ -21722,9 +21881,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'which reminds me',
     vietnamese: 'nhắc mới nhớ',
     phonetic: '/wɪtʃ rɪˈmaɪndz miː/',
+    usage: 'Dùng khi nhớ ra một chuyện liên quan để nói thêm.',
     role: 'linker',
     examples: [
       { en: 'Which reminds me, we still owe you a dinner.', vi: 'Nhắc mới nhớ, chúng tôi vẫn nợ bạn một bữa tối.' },
+      { en: 'Which reminds me, we still owe you a dinner.', vi: 'Nhắc mới nhớ, chúng tôi vẫn còn nợ bạn một bữa tối.' },
+      { en: 'Which reminds me, the tickets are tomorrow.', vi: 'Nhắc mới nhớ, vé xem là ngày mai đấy.' },
     ],
   },
   {
@@ -21735,9 +21897,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me',
     vietnamese: 'điều đó làm tôi nhớ ra',
     phonetic: '/ðæt rɪˈmaɪndz miː/',
+    usage: 'Dùng khi chợt nhớ một việc cần làm và nói xen vào.',
     role: 'linker',
     examples: [
       { en: 'That reminds me, I need to buy bread on the way home.', vi: 'Điều đó làm tôi nhớ ra, tôi cần mua bánh mì trên đường về nhà.' },
+      { en: 'That reminds me, I need to buy bread on the way home.', vi: 'Điều đó làm tôi nhớ ra, tôi cần mua bánh mì trên đường về.' },
+      { en: 'That reminds me, call mom tonight.', vi: 'Điều đó làm tôi nhớ ra, tối nay phải gọi cho mẹ.' },
     ],
   },
   {
@@ -21748,9 +21913,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on another note',
     vietnamese: 'nhân một chuyện khác',
     phonetic: '/ɒn əˈnʌðər nəʊt/',
+    usage: 'Dùng khi chuyển sang một chủ đề hoàn toàn khác.',
     role: 'linker',
     examples: [
       { en: 'On another note, are you coming to the party?', vi: 'Nhân một chuyện khác, bạn có đến tiệc không?' },
+      { en: 'On another note, are you coming to the party?', vi: 'Nhân một chuyện khác, bạn có đến tiệc không?' },
+      { en: 'On another note, have you seen the new movie?', vi: 'Nhân một chuyện khác, bạn xem phim mới chưa?' },
     ],
   },
   {
@@ -21761,9 +21929,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of our trip',
     vietnamese: 'điều đó làm tôi nhớ về chuyến đi của chúng ta',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ˈaʊə trɪp/',
+    usage: 'Dùng khi một điều nhắc bạn nhớ về kỷ niệm chung.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of our trip to the beach last summer.', vi: 'Điều đó làm tôi nhớ về chuyến đi biển của chúng ta mùa hè năm ngoái.' },
+      { en: 'That reminds me of our trip to the beach last summer.', vi: 'Điều đó làm tôi nhớ về chuyến đi biển mùa hè năm ngoái.' },
+      { en: 'That reminds me of our trip, remember the rain?', vi: 'Điều đó làm tôi nhớ về chuyến đi của chúng ta, nhớ cơn mưa không?' },
     ],
   },
   {
@@ -21774,9 +21945,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'you know what I mean',
     vietnamese: 'bạn biết ý tôi mà',
     phonetic: '/juː nəʊ wɒt aɪ miːn/',
+    usage: 'Dùng khi muốn xác nhận người nghe hiểu ý mình.',
     role: 'filler',
     examples: [
       { en: 'It was a long day, you know what I mean?', vi: 'Hôm nay là một ngày dài, bạn biết ý tôi mà.' },
+      { en: 'It was a long day, you know what I mean?', vi: 'Hôm nay dài quá, bạn biết ý tôi mà?' },
+      { en: 'The meeting went nowhere, you know what I mean?', vi: 'Cuộc họp chẳng đi đến đâu, bạn biết ý tôi mà?' },
     ],
   },
   {
@@ -21787,9 +21961,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'sort of',
     vietnamese: 'đại loại là',
     phonetic: '/sɔːt ɒv/',
+    usage: 'Dùng khi trả lời không chắc chắn, đại khái.',
     role: 'filler',
     examples: [
       { en: 'I sort of like the new design, but it needs work.', vi: 'Tôi đại loại là thích thiết kế mới, nhưng nó cần chỉnh sửa.' },
+      { en: 'I sort of like the new design, but it needs work.', vi: 'Tôi đại loại là thích thiết kế mới, nhưng nó cần chỉnh thêm.' },
+      { en: 'I sort of understood the lecture, not fully.', vi: 'Tôi đại loại là hiểu bài giảng, không hẳn là hoàn toàn.' },
     ],
   },
   {
@@ -21800,9 +21977,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I guess',
     vietnamese: 'tôi đoán vậy',
     phonetic: '/aɪ ɡes/',
+    usage: 'Dùng khi đoán phỏng, không khẳng định chắc chắn.',
     role: 'filler',
     examples: [
       { en: 'I guess we will see how it goes.', vi: 'Tôi đoán chúng ta sẽ xem mọi thứ diễn ra thế nào.' },
+      { en: 'I guess we will see how it goes.', vi: 'Tôi đoán chúng ta sẽ xem mọi chuyện thế nào.' },
+      { en: 'I guess he is busy today.', vi: 'Tôi đoán hôm nay anh ấy bận.' },
     ],
   },
   {
@@ -21813,9 +21993,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in a way',
     vietnamese: 'theo một cách nào đó',
     phonetic: '/ɪn ə weɪ/',
+    usage: 'Dùng khi diễn đạt một phần nào đó, theo một góc nhìn.',
     role: 'filler',
     examples: [
       { en: 'It is in a way hard to explain.', vi: 'Nó theo một cách nào đó khó giải thích.' },
+      { en: 'It is in a way hard to explain.', vi: 'Theo một cách nào đó thì khó giải thích.' },
+      { en: 'In a way, it was a good thing.', vi: 'Theo một cách nào đó, đó là điều tốt.' },
     ],
   },
   {
@@ -21826,9 +22009,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'well, I should get going',
     vietnamese: 'thôi, tôi nên đi đây',
     phonetic: '/wel aɪ ʃʊd get ˈɡəʊɪŋ/',
+    usage: 'Dùng khi bắt đầu kết thúc cuộc trò chuyện.',
     role: 'closer',
     examples: [
       { en: 'Well, I should get going before the traffic gets worse.', vi: 'Thôi, tôi nên đi trước khi tắc đường.' },
+      { en: 'Well, I should get going before the traffic gets worse.', vi: 'Thôi, tôi nên đi đây trước khi giao thông tệ hơn.' },
+      { en: 'Well, I should get going, see you at work.', vi: 'Thôi, tôi nên đi đây, hẹn gặp bạn ở chỗ làm.' },
     ],
   },
   {
@@ -21839,9 +22025,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us catch up soon',
     vietnamese: 'hôm nào mình gặp nhau tâm sự nhé',
     phonetic: '/let ʌs kætʃ ʌp suːn/',
+    usage: 'Dùng khi hẹn gặp lại để trò chuyện trong thời gian tới.',
     role: 'closer',
     examples: [
       { en: 'Let us catch up soon over coffee.', vi: 'Hôm nào mình gặp nhau uống cà phê tâm sự nhé.' },
+      { en: 'Let us catch up soon over coffee.', vi: 'Hôm nào mình gặp nhau tâm sự qua ly cà phê nhé.' },
+      { en: 'Let us catch up soon, I miss our talks.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, tôi nhớ những buổi trò chuyện.' },
     ],
   },
   {
@@ -21852,9 +22041,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'take care of yourself',
     vietnamese: 'bảo trọng nhé',
     phonetic: '/teɪk keə ɒv jɔːˈself/',
+    usage: 'Dùng khi chúc người khác giữ gìn sức khỏe khi chia tay.',
     role: 'closer',
     examples: [
       { en: 'Take care of yourself and get some rest.', vi: 'Bảo trọng nhé và nhớ nghỉ ngơi.' },
+      { en: 'Take care of yourself and get some rest.', vi: 'Bảo trọng nhé và nhớ nghỉ ngơi.' },
+      { en: 'Take care of yourself, call me if you need anything.', vi: 'Bảo trọng nhé, gọi tôi nếu bạn cần gì.' },
     ],
   },
   {
@@ -21865,9 +22057,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'see you around',
     vietnamese: 'hẹn gặp lại bạn nhé',
     phonetic: '/siː juː əˈraʊnd/',
+    usage: 'Dùng khi hẹn gặp lại một cách thân mật, không hẹn cụ thể.',
     role: 'closer',
     examples: [
       { en: 'See you around at the office tomorrow.', vi: 'Hẹn gặp lại bạn ở công ty vào ngày mai.' },
+      { en: 'See you around at the office tomorrow.', vi: 'Hẹn gặp lại bạn ở văn phòng ngày mai nhé.' },
+      { en: 'See you around, have a nice evening.', vi: 'Hẹn gặp lại bạn nhé, chúc buổi tối vui vẻ.' },
     ],
   },
   {
@@ -21878,9 +22073,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'no way, really',
     vietnamese: 'không thể nào, thật sao',
     phonetic: '/nəʊ weɪ ˈrɪəli/',
+    usage: 'Dùng khi ngạc nhiên trước thông tin vừa nghe.',
     role: 'reaction',
     examples: [
       { en: 'No way, really? You moved to a new city?', vi: 'Không thể nào, thật sao? Bạn đã chuyển đến thành phố mới?' },
+      { en: 'No way, really? You moved to a new city?', vi: 'Không thể nào, thật sao? Bạn chuyển đến thành phố mới rồi à?' },
+      { en: 'No way, really? That is a huge surprise.', vi: 'Không thể nào, thật sao? Bất ngờ lớn đấy.' },
     ],
   },
   {
@@ -21891,9 +22089,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that sounds lovely',
     vietnamese: 'nghe tuyệt quá',
     phonetic: '/ðæt saʊndz ˈlʌvli/',
+    usage: 'Dùng khi phản hồi tích cực với một lời mời hoặc ý tưởng.',
     role: 'reaction',
     examples: [
       { en: 'That sounds lovely, I would love to come.', vi: 'Nghe tuyệt quá, tôi rất muốn đến.' },
+      { en: 'That sounds lovely, I would love to come.', vi: 'Nghe tuyệt quá, tôi rất muốn đến.' },
+      { en: 'That sounds lovely, let us do it this weekend.', vi: 'Nghe tuyệt quá, cuối tuần này làm luôn đi.' },
     ],
   },
   {
@@ -21904,9 +22105,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'oh, how interesting',
     vietnamese: 'ồ, thú vị đấy',
     phonetic: '/əʊ haʊ ˈɪntrəstɪŋ/',
+    usage: 'Dùng khi tỏ ra quan tâm và muốn nghe thêm.',
     role: 'reaction',
     examples: [
       { en: 'Oh, how interesting, tell me more about it.', vi: 'Ồ, thú vị đấy, kể thêm cho tôi nghe đi.' },
+      { en: 'Oh, how interesting, tell me more about it.', vi: 'Ồ, thú vị đấy, kể thêm cho tôi nghe đi.' },
+      { en: 'Oh, how interesting, I did not know that.', vi: 'Ồ, thú vị đấy, tôi không biết điều đó.' },
     ],
   },
   {
@@ -21917,9 +22121,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what have you been up to',
     vietnamese: 'dạo này bạn đang làm gì',
     phonetic: '/wɒt hæv juː biːn ʌp tə/',
+    usage: 'Dùng khi hỏi người khác đã làm gì trong thời gian gần đây.',
     role: 'question',
     examples: [
       { en: 'What have you been up to since we last met?', vi: 'Dạo này bạn đang làm gì từ lần gặp trước?' },
+      { en: 'What have you been up to since we last met?', vi: 'Dạo này bạn đang làm gì kể từ lần cuối chúng ta gặp nhau?' },
+      { en: 'What have you been up to? Any new hobbies?', vi: 'Dạo này bạn đang làm gì? Có sở thích mới nào không?' },
     ],
   },
   {
@@ -21930,9 +22137,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how was your trip',
     vietnamese: 'chuyến đi của bạn thế nào',
     phonetic: '/haʊ wɒz jɔː trɪp/',
+    usage: 'Dùng khi hỏi về trải nghiệm chuyến đi của người khác.',
     role: 'question',
     examples: [
       { en: 'How was your trip to the mountains?', vi: 'Chuyến đi lên núi của bạn thế nào?' },
+      { en: 'How was your trip to the mountains?', vi: 'Chuyến đi lên núi của bạn thế nào?' },
+      { en: 'How was your trip? Did you take many photos?', vi: 'Chuyến đi của bạn thế nào? Bạn có chụp nhiều ảnh không?' },
     ],
   },
   {
@@ -21943,9 +22153,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'are you into cooking',
     vietnamese: 'bạn có thích nấu ăn không',
     phonetic: '/ɑː juː ˈɪntə ˈkʊkɪŋ/',
+    usage: 'Dùng khi hỏi về sở thích nấu ăn của người khác.',
     role: 'question',
     examples: [
       { en: 'Are you into cooking, or do you eat out most days?', vi: 'Bạn có thích nấu ăn không, hay ăn ngoài hầu hết các ngày?' },
+      { en: 'Are you into cooking, or do you eat out most days?', vi: 'Bạn có thích nấu ăn không, hay bạn ăn ngoài hầu hết các ngày?' },
+      { en: 'Are you into cooking? You should try this recipe.', vi: 'Bạn có thích nấu ăn không? Bạn nên thử công thức này.' },
     ],
   },
   {
@@ -21956,9 +22169,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how has your week been treating you',
     vietnamese: 'tuần này của bạn thế nào',
     phonetic: '/haʊ hæz jɔː wiːk biːn ˈtriːtɪŋ juː/',
+    usage: 'Dùng khi hỏi thăm sức khỏe và tình hình tuần của người khác.',
     role: 'opener',
     examples: [
       { en: 'How has your week been treating you? Busy as usual?', vi: 'Tuần này của bạn thế nào? Vẫn bận như thường lệ?' },
+      { en: 'How has your week been treating you? Busy as usual?', vi: 'Tuần này của bạn thế nào? Bận như thường lệ à?' },
+      { en: 'How has your week been treating you? Any good news?', vi: 'Tuần này của bạn thế nào? Có tin vui gì không?' },
     ],
   },
   {
@@ -21969,9 +22185,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'long time no see, how are you',
     vietnamese: 'lâu rồi không gặp, bạn khỏe chứ',
     phonetic: '/lɒŋ taɪm nəʊ siː haʊ ɑː juː/',
+    usage: 'Dùng khi gặp lại người quen sau thời gian dài.',
     role: 'opener',
     examples: [
       { en: 'Long time no see, how are you? You look great.', vi: 'Lâu rồi không gặp, bạn khỏe chứ? Trông bạn tuyệt lắm.' },
+      { en: 'Long time no see, how are you? You look great.', vi: 'Lâu rồi không gặp, bạn khỏe chứ? Trông bạn tuyệt lắm.' },
+      { en: 'Long time no see, how are you? Where have you been?', vi: 'Lâu rồi không gặp, bạn khỏe chứ? Bạn đã ở đâu vậy?' },
     ],
   },
   {
@@ -21982,9 +22201,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'any plans for the weekend coming up',
     vietnamese: 'có kế hoạch gì cho cuối tuần sắp tới không',
     phonetic: '/ˈeni plænz fə ðə ˌwiːkˈend ˈkʌmɪŋ ʌp/',
+    usage: 'Dùng khi hỏi về kế hoạch cuối tuần sắp tới.',
     role: 'opener',
     examples: [
       { en: 'Any plans for the weekend coming up, or just relaxing?', vi: 'Có kế hoạch gì cho cuối tuần sắp tới không, hay chỉ nghỉ ngơi?' },
+      { en: 'Any plans for the weekend coming up, or just relaxing?', vi: 'Có kế hoạch gì cho cuối tuần sắp tới không, hay chỉ thư giãn?' },
+      { en: 'Any plans for the weekend coming up? I might go hiking.', vi: 'Có kế hoạch gì cho cuối tuần sắp tới không? Tôi có thể đi leo núi.' },
     ],
   },
   {
@@ -21995,9 +22217,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how is everything going with the move',
     vietnamese: 'việc chuyển nhà của bạn thế nào rồi',
     phonetic: '/haʊ ɪz ˈevriθɪŋ ˈɡəʊɪŋ wɪð ðə muːv/',
+    usage: 'Dùng khi hỏi thăm tiến độ một việc lớn đang diễn ra.',
     role: 'opener',
     examples: [
       { en: 'How is everything going with the move to the new flat?', vi: 'Việc chuyển đến căn hộ mới của bạn thế nào rồi?' },
+      { en: 'How is everything going with the move to the new flat?', vi: 'Việc chuyển nhà đến căn hộ mới của bạn thế nào rồi?' },
+      { en: 'How is everything going with the move? Need a hand?', vi: 'Việc chuyển nhà thế nào rồi? Cần giúp một tay không?' },
     ],
   },
   {
@@ -22008,9 +22233,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'speaking of which, I saw your post',
     vietnamese: 'nhắc mới nhớ, tôi đã thấy bài đăng của bạn',
     phonetic: '/ˈspiːkɪŋ ɒv wɪtʃ aɪ sɔː jɔː pəʊst/',
+    usage: 'Dùng khi liên kết câu chuyện với một bài đăng hoặc điều đã thấy.',
     role: 'linker',
     examples: [
       { en: 'Speaking of which, I saw your post about the new recipe.', vi: 'Nhắc mới nhớ, tôi đã thấy bài đăng của bạn về công thức nấu ăn mới.' },
+      { en: 'Speaking of which, I saw your post about the new recipe.', vi: 'Nhắc mới nhớ, tôi đã thấy bài đăng của bạn về công thức mới.' },
+      { en: 'Speaking of which, I saw your post about the trip.', vi: 'Nhắc mới nhớ, tôi đã thấy bài đăng của bạn về chuyến đi.' },
     ],
   },
   {
@@ -22021,9 +22249,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of something funny',
     vietnamese: 'điều đó làm tôi nhớ ra một chuyện vui',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ˈsʌmθɪŋ ˈfʌni/',
+    usage: 'Dùng khi muốn kể một chuyện vui nảy sinh từ cuộc trò chuyện.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of something funny that happened at work.', vi: 'Điều đó làm tôi nhớ ra một chuyện vui xảy ra ở công ty.' },
+      { en: 'That reminds me of something funny that happened at work.', vi: 'Điều đó làm tôi nhớ ra một chuyện vui xảy ra ở chỗ làm.' },
+      { en: 'That reminds me of something funny, wait till you hear.', vi: 'Điều đó làm tôi nhớ ra một chuyện vui, đợi nghe nhé.' },
     ],
   },
   {
@@ -22034,9 +22265,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'by the way, have you heard',
     vietnamese: 'nhân tiện, bạn đã nghe gì chưa',
     phonetic: '/baɪ ðə weɪ hæv juː hɜːd/',
+    usage: 'Dùng khi muốn chia sẻ một tin tức hoặc câu chuyện.',
     role: 'linker',
     examples: [
       { en: 'By the way, have you heard about the new restaurant downtown?', vi: 'Nhân tiện, bạn đã nghe về nhà hàng mới ở trung tâm chưa?' },
+      { en: 'By the way, have you heard about the new restaurant downtown?', vi: 'Nhân tiện, bạn đã nghe về nhà hàng mới ở trung tâm chưa?' },
+      { en: 'By the way, have you heard? They are getting married.', vi: 'Nhân tiện, bạn đã nghe gì chưa? Họ sắp cưới đấy.' },
     ],
   },
   {
@@ -22047,9 +22281,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of our conversation last week',
     vietnamese: 'điều đó làm tôi nhớ về cuộc trò chuyện của chúng ta tuần trước',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ˈaʊə ˌkɒnvəˈseɪʃən lɑːst wiːk/',
+    usage: 'Dùng khi kết nối cuộc trò chuyện hiện tại với một cuộc trò chuyện trước.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of our conversation last week about traveling.', vi: 'Điều đó làm tôi nhớ về cuộc trò chuyện tuần trước về việc đi du lịch.' },
+      { en: 'That reminds me of our conversation last week about traveling.', vi: 'Điều đó làm tôi nhớ về cuộc trò chuyện của chúng ta tuần trước về du lịch.' },
+      { en: 'That reminds me of our conversation last week, you were right.', vi: 'Điều đó làm tôi nhớ về cuộc trò chuyện của chúng ta tuần trước, bạn đã đúng.' },
     ],
   },
   {
@@ -22060,9 +22297,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'you know what I mean, right',
     vietnamese: 'bạn biết ý tôi mà, phải không',
     phonetic: '/juː nəʊ wɒt aɪ miːn raɪt/',
+    usage: 'Dùng khi muốn người nghe đồng tình với cảm nhận của mình.',
     role: 'filler',
     examples: [
       { en: 'It gets stressful sometimes, you know what I mean, right?', vi: 'Đôi khi nó cũng căng thẳng, bạn biết ý tôi mà, phải không?' },
+      { en: 'It gets stressful sometimes, you know what I mean, right?', vi: 'Đôi khi căng thẳng lắm, bạn biết ý tôi mà, phải không?' },
+      { en: 'You know what I mean, right? It is not easy.', vi: 'Bạn biết ý tôi mà, phải không? Không dễ dàng đâu.' },
     ],
   },
   {
@@ -22073,9 +22313,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'sort of, I suppose',
     vietnamese: 'đại loại là, tôi nghĩ vậy',
     phonetic: '/sɔːt ɒv aɪ səˈpəʊz/',
+    usage: 'Dùng khi trả lời lưỡng lự, không chắc chắn.',
     role: 'filler',
     examples: [
       { en: 'Sort of, I suppose it depends on the day.', vi: 'Đại loại là, tôi nghĩ nó tùy vào từng ngày.' },
+      { en: 'Sort of, I suppose it depends on the day.', vi: 'Đại loại là, tôi nghĩ điều đó tùy ngày.' },
+      { en: 'Sort of, I suppose we will find out soon.', vi: 'Đại loại là, tôi nghĩ chúng ta sẽ sớm biết.' },
     ],
   },
   {
@@ -22086,9 +22329,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I guess it is what it is',
     vietnamese: 'tôi đoán chuyện cũng đành vậy thôi',
     phonetic: '/aɪ ɡes ɪt ɪz wɒt ɪt ɪz/',
+    usage: 'Dùng khi chấp nhận tình huống không thể thay đổi.',
     role: 'filler',
     examples: [
       { en: 'I guess it is what it is, no point worrying now.', vi: 'Tôi đoán chuyện cũng đành vậy thôi, bây giờ lo lắng cũng vô ích.' },
+      { en: 'I guess it is what it is, no point worrying now.', vi: 'Tôi đoán chuyện cũng đành vậy thôi, giờ lo lắng cũng vô ích.' },
+      { en: 'I guess it is what it is, we did our best.', vi: 'Tôi đoán chuyện cũng đành vậy thôi, chúng ta đã cố hết sức.' },
     ],
   },
   {
@@ -22099,9 +22345,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'kind of like that, yeah',
     vietnamese: 'kiểu như vậy, ừ',
     phonetic: '/kaɪnd ɒv laɪk ðæt jɛə/',
+    usage: 'Dùng khi xác nhận sự giống nhau với điều vừa được mô tả.',
     role: 'filler',
     examples: [
       { en: 'Kind of like that, yeah, it was a weird day.', vi: 'Kiểu như vậy, ừ, đó là một ngày kỳ lạ.' },
+      { en: 'Kind of like that, yeah, it was a weird day.', vi: 'Kiểu như vậy, ừ, đó là một ngày kỳ lạ.' },
+      { en: 'Kind of like that, yeah, exactly what I meant.', vi: 'Kiểu như vậy, ừ, chính xác điều tôi muốn nói.' },
     ],
   },
   {
@@ -22112,9 +22361,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'well, I should get going now',
     vietnamese: 'thôi, tôi nên đi đây',
     phonetic: '/wel aɪ ʃʊd get ˈɡəʊɪŋ naʊ/',
+    usage: 'Dùng khi kết thúc cuộc trò chuyện và chuẩn bị rời đi.',
     role: 'closer',
     examples: [
       { en: 'Well, I should get going now, it was great talking to you.', vi: 'Thôi, tôi nên đi đây, được nói chuyện với bạn thật vui.' },
+      { en: 'Well, I should get going now, it was great talking to you.', vi: 'Thôi, tôi nên đi đây, rất vui được trò chuyện với bạn.' },
+      { en: 'Well, I should get going now, see you at the meeting.', vi: 'Thôi, tôi nên đi đây, hẹn gặp bạn ở cuộc họp.' },
     ],
   },
   {
@@ -22125,9 +22377,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us catch up soon, okay',
     vietnamese: 'hôm nào mình gặp nhau tâm sự nhé, được chứ',
     phonetic: '/let ʌs kætʃ ʌp suːn əʊˈkeɪ/',
+    usage: 'Dùng khi hẹn gặp lại và xin xác nhận từ người nghe.',
     role: 'closer',
     examples: [
       { en: 'Let us catch up soon, okay? I miss our talks.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, được chứ? Tôi nhớ những buổi trò chuyện của chúng ta.' },
+      { en: 'Let us catch up soon, okay? I miss our talks.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, được chứ? Tôi nhớ những buổi trò chuyện.' },
+      { en: 'Let us catch up soon, okay? I will call you.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, được chứ? Tôi sẽ gọi cho bạn.' },
     ],
   },
   {
@@ -22138,9 +22393,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'take care of yourself out there',
     vietnamese: 'bảo trọng nhé ngoài kia',
     phonetic: '/teɪk keə ɒv jɔːˈself aʊt ðeə/',
+    usage: 'Dùng khi nhắn nhủ người khác giữ gìn sức khỏe khi chia tay.',
     role: 'closer',
     examples: [
       { en: 'Take care of yourself out there and stay safe.', vi: 'Bảo trọng nhé ngoài kia và giữ an toàn.' },
+      { en: 'Take care of yourself out there and stay safe.', vi: 'Bảo trọng nhé ngoài kia và giữ an toàn.' },
+      { en: 'Take care of yourself out there, the weather is turning.', vi: 'Bảo trọng nhé ngoài kia, trời đang trở lạnh đấy.' },
     ],
   },
   {
@@ -22151,9 +22409,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'see you around soon',
     vietnamese: 'sớm gặp lại nhé',
     phonetic: '/siː juː əˈraʊnd suːn/',
+    usage: 'Dùng khi hẹn gặp lại trong thời gian gần.',
     role: 'closer',
     examples: [
       { en: 'See you around soon, take it easy.', vi: 'Sớm gặp lại nhé, bình an nhé.' },
+      { en: 'See you around soon, take it easy.', vi: 'Sớm gặp lại nhé, thoải mái nhé.' },
+      { en: 'See you around soon, text me when you are free.', vi: 'Sớm gặp lại nhé, nhắn tôi khi nào bạn rảnh.' },
     ],
   },
   {
@@ -22164,9 +22425,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'no way, really, that is amazing',
     vietnamese: 'không thể nào, thật sao, tuyệt vời quá',
     phonetic: '/nəʊ weɪ ˈrɪəli ðæt ɪz əˈmeɪzɪŋ/',
+    usage: 'Dùng khi bày tỏ sự ngạc nhiên và vui mừng trước tin tốt.',
     role: 'reaction',
     examples: [
       { en: 'No way, really, that is amazing news, congratulations!', vi: 'Không thể nào, thật sao, tin tuyệt vời quá, chúc mừng bạn!' },
+      { en: 'No way, really, that is amazing news, congratulations!', vi: 'Không thể nào, thật sao, tin tuyệt vời quá, chúc mừng bạn!' },
+      { en: 'No way, really, that is amazing, how did that happen?', vi: 'Không thể nào, thật sao, tuyệt vời quá, chuyện đó xảy ra thế nào vậy?' },
     ],
   },
   {
@@ -22177,9 +22441,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that sounds lovely, count me in',
     vietnamese: 'nghe tuyệt quá, tính cả tôi nhé',
     phonetic: '/ðæt saʊndz ˈlʌvli kaʊnt miː ɪn/',
+    usage: 'Dùng khi đồng ý tham gia một hoạt động được đề xuất.',
     role: 'reaction',
     examples: [
       { en: 'That sounds lovely, count me in for the picnic.', vi: 'Nghe tuyệt quá, tính cả tôi cho buổi dã ngoại nhé.' },
+      { en: 'That sounds lovely, count me in for the picnic.', vi: 'Nghe tuyệt quá, tính cả tôi cho buổi dã ngoại nhé.' },
+      { en: 'That sounds lovely, count me in if there is space.', vi: 'Nghe tuyệt quá, tính cả tôi nếu còn chỗ nhé.' },
     ],
   },
   {
@@ -22190,9 +22457,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'oh, how interesting, I had no idea',
     vietnamese: 'ồ, thú vị đấy, tôi không hề biết',
     phonetic: '/əʊ haʊ ˈɪntrəstɪŋ aɪ hæd nəʊ aɪˈdɪə/',
+    usage: 'Dùng khi ngạc nhiên trước điều mới biết về người khác.',
     role: 'reaction',
     examples: [
       { en: 'Oh, how interesting, I had no idea you played guitar.', vi: 'Ồ, thú vị đấy, tôi không hề biết bạn chơi guitar.' },
+      { en: 'Oh, how interesting, I had no idea you played guitar.', vi: 'Ồ, thú vị đấy, tôi không hề biết bạn chơi guitar.' },
+      { en: 'Oh, how interesting, I had no idea you moved here.', vi: 'Ồ, thú vị đấy, tôi không hề biết bạn chuyển đến đây.' },
     ],
   },
   {
@@ -22203,9 +22473,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what have you been up to lately',
     vietnamese: 'dạo này bạn đang làm gì',
     phonetic: '/wɒt hæv juː biːn ʌp tə ˈleɪtli/',
+    usage: 'Dùng khi hỏi về những gì người khác làm gần đây.',
     role: 'question',
     examples: [
       { en: 'What have you been up to lately? Anything new?', vi: 'Dạo này bạn đang làm gì? Có gì mới không?' },
+      { en: 'What have you been up to lately? Anything new?', vi: 'Dạo này bạn đang làm gì? Có gì mới không?' },
+      { en: 'What have you been up to lately? You seem busy.', vi: 'Dạo này bạn đang làm gì? Trông bạn bận rộn đấy.' },
     ],
   },
   {
@@ -22216,9 +22489,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how was your trip to the coast',
     vietnamese: 'chuyến đi đến bờ biển của bạn thế nào',
     phonetic: '/haʊ wɒz jɔː trɪp tə ðə kəʊst/',
+    usage: 'Dùng khi hỏi cụ thể về một chuyến đi gần đây.',
     role: 'question',
     examples: [
       { en: 'How was your trip to the coast last weekend?', vi: 'Chuyến đi đến bờ biển cuối tuần trước của bạn thế nào?' },
+      { en: 'How was your trip to the coast last weekend?', vi: 'Chuyến đi đến bờ biển cuối tuần trước của bạn thế nào?' },
+      { en: 'How was your trip to the coast? Did you swim?', vi: 'Chuyến đi đến bờ biển của bạn thế nào? Bạn có đi bơi không?' },
     ],
   },
   {
@@ -22229,9 +22505,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'are you into cooking these days',
     vietnamese: 'dạo này bạn có thích nấu ăn không',
     phonetic: '/ɑː juː ˈɪntə ˈkʊkɪŋ ðiːz deɪz/',
+    usage: 'Dùng khi hỏi về thói quen nấu ăn hiện tại của người khác.',
     role: 'question',
     examples: [
       { en: 'Are you into cooking these days, or still ordering out?', vi: 'Dạo này bạn có thích nấu ăn không, hay vẫn đặt đồ ăn ngoài?' },
+      { en: 'Are you into cooking these days, or still ordering out?', vi: 'Dạo này bạn có thích nấu ăn không, hay vẫn gọi đồ ăn ngoài?' },
+      { en: 'Are you into cooking these days? I need some tips.', vi: 'Dạo này bạn có thích nấu ăn không? Tôi cần vài mẹo.' },
     ],
   },
   {
@@ -22242,9 +22521,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how has your week been treating you so far',
     vietnamese: 'tuần này của bạn đối đãi với bạn thế nào rồi',
     phonetic: '/haʊ hæz jɔː wiːk biːn ˈtriːtɪŋ juː səʊ fɑː/',
+    usage: 'Dùng khi hỏi thăm chi tiết về tuần vừa qua.',
     role: 'opener',
     examples: [
       { en: 'How has your week been treating you so far? Anything exciting?', vi: 'Tuần này của bạn đối đãi với bạn thế nào rồi? Có gì thú vị không?' },
+      { en: 'How has your week been treating you so far? Anything exciting?', vi: 'Tuần này của bạn đối đãi với bạn thế nào rồi? Có gì thú vị không?' },
+      { en: 'How has your week been treating you so far? You look tired.', vi: 'Tuần này của bạn đối đãi với bạn thế nào rồi? Trông bạn mệt đấy.' },
     ],
   },
   {
@@ -22255,9 +22537,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'long time no see, it has been ages',
     vietnamese: 'lâu rồi không gặp, đã lâu lắm rồi',
     phonetic: '/lɒŋ taɪm nəʊ siː ɪt hæz biːn ˈeɪdʒɪz/',
+    usage: 'Dùng khi gặp lại người quen sau một thời gian rất dài.',
     role: 'opener',
     examples: [
       { en: 'Long time no see, it has been ages since we last talked.', vi: 'Lâu rồi không gặp, đã lâu lắm rồi kể từ lần cuối chúng ta nói chuyện.' },
+      { en: 'Long time no see, it has been ages since we last talked.', vi: 'Lâu rồi không gặp, đã lâu lắm rồi kể từ lần cuối chúng ta nói chuyện.' },
+      { en: 'Long time no see, it has been ages, how are you?', vi: 'Lâu rồi không gặp, đã lâu lắm rồi, bạn khỏe chứ?' },
     ],
   },
   {
@@ -22268,9 +22553,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'any plans for the weekend worth sharing',
     vietnamese: 'có kế hoạch nào cho cuối tuần đáng để chia sẻ không',
     phonetic: '/ˈeni plænz fə ðə ˌwiːkˈend wɜːθ ˈʃeərɪŋ/',
+    usage: 'Dùng khi hỏi về kế hoạch cuối tuần một cách tinh tế.',
     role: 'opener',
     examples: [
       { en: 'Any plans for the weekend worth sharing, or keeping it low-key?', vi: 'Có kế hoạch nào cho cuối tuần đáng để chia sẻ không, hay giữ kín đáo?' },
+      { en: 'Any plans for the weekend worth sharing, or keeping it low-key?', vi: 'Có kế hoạch nào cho cuối tuần đáng để chia sẻ không, hay cứ nhẹ nhàng?' },
+      { en: 'Any plans for the weekend worth sharing? I am curious.', vi: 'Có kế hoạch nào cho cuối tuần đáng để chia sẻ không? Tôi tò mò lắm.' },
     ],
   },
   {
@@ -22281,9 +22569,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how is everything going on your end',
     vietnamese: 'mọi thứ ở phía bạn đang diễn ra thế nào',
     phonetic: '/haʊ ɪz ˈevriθɪŋ ˈɡəʊɪŋ ɒn jɔːr end/',
+    usage: 'Dùng khi hỏi thăm tình hình phía người đối thoại.',
     role: 'opener',
     examples: [
       { en: 'How is everything going on your end with the new project?', vi: 'Mọi thứ ở phía bạn với dự án mới đang diễn ra thế nào?' },
+      { en: 'How is everything going on your end with the new project?', vi: 'Mọi thứ ở phía bạn đang diễn ra thế nào với dự án mới?' },
+      { en: 'How is everything going on your end? Family doing well?', vi: 'Mọi thứ ở phía bạn đang diễn ra thế nào? Gia đình khỏe chứ?' },
     ],
   },
   {
@@ -22294,9 +22585,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'speaking of which, I ran into an old friend',
     vietnamese: 'nhắc mới nhớ, tôi vừa tình cờ gặp một người bạn cũ',
     phonetic: '/ˈspiːkɪŋ ɒv wɪtʃ aɪ ræn ˈɪntuː ən əʊld frend/',
+    usage: 'Dùng khi kể về một cuộc gặp tình cờ liên quan đến chủ đề.',
     role: 'linker',
     examples: [
       { en: 'Speaking of which, I ran into an old friend from university.', vi: 'Nhắc mới nhớ, tôi vừa tình cờ gặp một người bạn cũ thời đại học.' },
+      { en: 'Speaking of which, I ran into an old friend from university.', vi: 'Nhắc mới nhớ, tôi vừa tình cờ gặp một người bạn cũ thời đại học.' },
+      { en: 'Speaking of which, I ran into an old friend, guess who?', vi: 'Nhắc mới nhớ, tôi vừa tình cờ gặp một người bạn cũ, đoán xem ai?' },
     ],
   },
   {
@@ -22307,9 +22601,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of a story',
     vietnamese: 'điều đó làm tôi nhớ đến một câu chuyện',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ə ˈstɔːri/',
+    usage: 'Dùng khi muốn kể một câu chuyện gợi nhớ từ chủ đề.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of a story about our last camping trip.', vi: 'Điều đó làm tôi nhớ đến một câu chuyện về chuyến cắm trại vừa rồi.' },
+      { en: 'That reminds me of a story about our last camping trip.', vi: 'Điều đó làm tôi nhớ đến một câu chuyện về chuyến cắm trại vừa rồi.' },
+      { en: 'That reminds me of a story, you will find it funny.', vi: 'Điều đó làm tôi nhớ đến một câu chuyện, bạn sẽ thấy buồn cười.' },
     ],
   },
   {
@@ -22320,9 +22617,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'by the way, did you happen to hear',
     vietnamese: 'nhân tiện, bạn có tình cờ nghe gì không',
     phonetic: '/baɪ ðə weɪ dɪd juː ˈhæpən tə hɪə/',
+    usage: 'Dùng khi hỏi liệu người nghe có biết một tin tức không.',
     role: 'linker',
     examples: [
       { en: 'By the way, did you happen to hear about the merger?', vi: 'Nhân tiện, bạn có tình cờ nghe về vụ sáp nhập không?' },
+      { en: 'By the way, did you happen to hear about the merger?', vi: 'Nhân tiện, bạn có tình cờ nghe về vụ sáp nhập không?' },
+      { en: 'By the way, did you happen to hear the latest news?', vi: 'Nhân tiện, bạn có tình cờ nghe tin mới nhất không?' },
     ],
   },
   {
@@ -22333,9 +22633,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of something you said earlier',
     vietnamese: 'điều đó làm tôi nhớ đến điều bạn nói lúc nãy',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ˈsʌmθɪŋ juː sed ˈɜːliə/',
+    usage: 'Dùng khi kết nối với điều người khác nói trước đó.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of something you said earlier about the trip.', vi: 'Điều đó làm tôi nhớ đến điều bạn nói lúc nãy về chuyến đi.' },
+      { en: 'That reminds me of something you said earlier about the trip.', vi: 'Điều đó làm tôi nhớ đến điều bạn nói lúc nãy về chuyến đi.' },
+      { en: 'That reminds me of something you said earlier, you were right.', vi: 'Điều đó làm tôi nhớ đến điều bạn nói lúc nãy, bạn đã đúng.' },
     ],
   },
   {
@@ -22346,9 +22649,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'you know what I mean, it is hard to explain',
     vietnamese: 'bạn biết ý tôi mà, khó giải thích lắm',
     phonetic: '/juː nəʊ wɒt aɪ miːn ɪt ɪz hɑːd tə ɪkˈspleɪn/',
+    usage: 'Dùng khi khó diễn tả chính xác cảm xúc hoặc trải nghiệm.',
     role: 'filler',
     examples: [
       { en: 'You know what I mean, it is hard to explain but it felt special.', vi: 'Bạn biết ý tôi mà, khó giải thích lắm nhưng nó thật đặc biệt.' },
+      { en: 'You know what I mean, it is hard to explain but it felt special.', vi: 'Bạn biết ý tôi mà, khó giải thích lắm nhưng cảm giác rất đặc biệt.' },
+      { en: 'You know what I mean, it is hard to explain in words.', vi: 'Bạn biết ý tôi mà, khó giải thích bằng lời lắm.' },
     ],
   },
   {
@@ -22359,9 +22665,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'sort of, if that makes sense',
     vietnamese: 'đại loại là, nếu điều đó hợp lý',
     phonetic: '/sɔːt ɒv ɪf ðæt meɪks sens/',
+    usage: 'Dùng khi giải thích một điều mơ hồ, khó mô tả.',
     role: 'filler',
     examples: [
       { en: 'Sort of, if that makes sense to you, it is hard to describe.', vi: 'Đại loại là, nếu điều đó hợp lý với bạn, khó mà mô tả.' },
+      { en: 'Sort of, if that makes sense to you, it is hard to describe.', vi: 'Đại loại là, nếu điều đó hợp lý với bạn, khó mô tả lắm.' },
+      { en: 'Sort of, if that makes sense, I will explain more later.', vi: 'Đại loại là, nếu điều đó hợp lý, tôi sẽ giải thích thêm sau.' },
     ],
   },
   {
@@ -22372,9 +22681,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I guess we will just have to see',
     vietnamese: 'tôi đoán chúng ta cứ phải chờ xem',
     phonetic: '/aɪ ɡes wiː wɪl dʒʌst hæv tə siː/',
+    usage: 'Dùng khi chấp nhận chờ xem kết quả trong tương lai.',
     role: 'filler',
     examples: [
       { en: 'I guess we will just have to see how things turn out.', vi: 'Tôi đoán chúng ta cứ phải chờ xem mọi thứ diễn biến thế nào.' },
+      { en: 'I guess we will just have to see how things turn out.', vi: 'Tôi đoán chúng ta cứ phải chờ xem mọi chuyện thế nào.' },
+      { en: 'I guess we will just have to see, keep your fingers crossed.', vi: 'Tôi đoán chúng ta cứ phải chờ xem, cầu chúc điều tốt nhé.' },
     ],
   },
   {
@@ -22385,9 +22697,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'kind of like a gamble, honestly',
     vietnamese: 'kiểu như đánh cược vậy, thật lòng mà nói',
     phonetic: '/kaɪnd ɒv laɪk ə ˈɡæmbl ˈɒnɪstli/',
+    usage: 'Dùng khi mô tả một quyết định có rủi ro nhưng thành công.',
     role: 'filler',
     examples: [
       { en: 'Kind of like a gamble, honestly, but it paid off.', vi: 'Kiểu như đánh cược vậy, thật lòng mà nói, nhưng nó đã thành công.' },
+      { en: 'Kind of like a gamble, honestly, but it paid off.', vi: 'Kiểu như đánh cược vậy, thật lòng mà nói, nhưng đã có kết quả tốt.' },
+      { en: 'Kind of like a gamble, honestly, we were lucky.', vi: 'Kiểu như đánh cược vậy, thật lòng mà nói, chúng ta đã may mắn.' },
     ],
   },
   {
@@ -22398,9 +22713,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'well, I should get going, it was lovely',
     vietnamese: 'thôi, tôi nên đi đây, thật là vui',
     phonetic: '/wel aɪ ʃʊd get ˈɡəʊɪŋ ɪt wɒz ˈlʌvli/',
+    usage: 'Dùng khi kết thúc cuộc gặp gỡ với cảm xúc tích cực.',
     role: 'closer',
     examples: [
       { en: 'Well, I should get going, it was lovely catching up with you.', vi: 'Thôi, tôi nên đi đây, được tâm sự với bạn thật là vui.' },
+      { en: 'Well, I should get going, it was lovely catching up with you.', vi: 'Thôi, tôi nên đi đây, rất vui được hàn huyên với bạn.' },
+      { en: 'Well, I should get going, it was lovely, let us repeat it.', vi: 'Thôi, tôi nên đi đây, thật vui, mình làm lại nhé.' },
     ],
   },
   {
@@ -22411,9 +22729,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us catch up soon over a proper dinner',
     vietnamese: 'hôm nào mình gặp nhau qua một bữa tối thật sự nhé',
     phonetic: '/let ʌs kætʃ ʌp suːn ˈəʊvər ə ˈprɒpə ˈdɪnə/',
+    usage: 'Dùng khi hẹn gặp trò chuyện tử tế hơn là gặp vội vàng.',
     role: 'closer',
     examples: [
       { en: 'Let us catch up soon over a proper dinner, not just coffee.', vi: 'Hôm nào mình gặp nhau qua một bữa tối thật sự nhé, không chỉ cà phê.' },
+      { en: 'Let us catch up soon over a proper dinner, not just coffee.', vi: 'Hôm nào mình gặp nhau qua một bữa tối thật sự nhé, không chỉ cà phê.' },
+      { en: 'Let us catch up soon over a proper dinner, my treat.', vi: 'Hôm nào mình gặp nhau qua một bữa tối thật sự nhé, tôi mời.' },
     ],
   },
   {
@@ -22424,9 +22745,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'take care of yourself, seriously',
     vietnamese: 'bảo trọng nhé, nghiêm túc đấy',
     phonetic: '/teɪk keə ɒv jɔːˈself ˈsɪəriəsli/',
+    usage: 'Dùng khi nghiêm túc nhắn nhủ người khác chăm sóc bản thân.',
     role: 'closer',
     examples: [
       { en: 'Take care of yourself, seriously, do not overwork.', vi: 'Bảo trọng nhé, nghiêm túc đấy, đừng làm việc quá sức.' },
+      { en: 'Take care of yourself, seriously, do not overwork.', vi: 'Bảo trọng nhé, nghiêm túc đấy, đừng làm việc quá sức.' },
+      { en: 'Take care of yourself, seriously, health comes first.', vi: 'Bảo trọng nhé, nghiêm túc đấy, sức khỏe là trên hết.' },
     ],
   },
   {
@@ -22437,9 +22761,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'see you around, keep in touch',
     vietnamese: 'hẹn gặp lại, giữ liên lạc nhé',
     phonetic: '/siː juː əˈraʊnd kiːp ɪn tʌtʃ/',
+    usage: 'Dùng khi chia tay và mong giữ liên lạc.',
     role: 'closer',
     examples: [
       { en: 'See you around, keep in touch and call me anytime.', vi: 'Hẹn gặp lại, giữ liên lạc nhé và gọi cho tôi bất cứ lúc nào.' },
+      { en: 'See you around, keep in touch and call me anytime.', vi: 'Hẹn gặp lại, giữ liên lạc và gọi tôi bất cứ lúc nào.' },
+      { en: 'See you around, keep in touch, I mean it.', vi: 'Hẹn gặp lại, giữ liên lạc nhé, tôi nói thật đấy.' },
     ],
   },
   {
@@ -22450,9 +22777,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'no way, really, I cannot believe it',
     vietnamese: 'không thể nào, thật sao, tôi không thể tin được',
     phonetic: '/nəʊ weɪ ˈrɪəli aɪ ˈkænət bɪˈliːv ɪt/',
+    usage: 'Dùng khi bày tỏ sự khó tin trước một sự việc.',
     role: 'reaction',
     examples: [
       { en: 'No way, really, I cannot believe it happened to you.', vi: 'Không thể nào, thật sao, tôi không thể tin được chuyện đó xảy ra với bạn.' },
+      { en: 'No way, really, I cannot believe it happened to you.', vi: 'Không thể nào, thật sao, tôi không thể tin điều đó xảy ra với bạn.' },
+      { en: 'No way, really, I cannot believe it, that is wild.', vi: 'Không thể nào, thật sao, tôi không thể tin được, điên thật.' },
     ],
   },
   {
@@ -22463,9 +22793,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that sounds lovely, I would love to join',
     vietnamese: 'nghe tuyệt quá, tôi rất muốn tham gia',
     phonetic: '/ðæt saʊndz ˈlʌvli aɪ wʊd lʌv tə dʒɔɪn/',
+    usage: 'Dùng khi hào hứng muốn tham gia hoạt động được mời.',
     role: 'reaction',
     examples: [
       { en: 'That sounds lovely, I would love to join the hiking group.', vi: 'Nghe tuyệt quá, tôi rất muốn tham gia nhóm đi bộ đường dài.' },
+      { en: 'That sounds lovely, I would love to join the hiking group.', vi: 'Nghe tuyệt quá, tôi rất muốn tham gia nhóm leo núi.' },
+      { en: 'That sounds lovely, I would love to join if you have room.', vi: 'Nghe tuyệt quá, tôi rất muốn tham gia nếu bạn còn chỗ.' },
     ],
   },
   {
@@ -22476,9 +22809,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'oh, how interesting, tell me everything',
     vietnamese: 'ồ, thú vị đấy, kể hết cho tôi nghe đi',
     phonetic: '/əʊ haʊ ˈɪntrəstɪŋ tel miː ˈevriθɪŋ/',
+    usage: 'Dùng khi tò mò muốn nghe toàn bộ câu chuyện.',
     role: 'reaction',
     examples: [
       { en: 'Oh, how interesting, tell me everything about the new role.', vi: 'Ồ, thú vị đấy, kể hết cho tôi nghe về vai trò mới đi.' },
+      { en: 'Oh, how interesting, tell me everything about the new role.', vi: 'Ồ, thú vị đấy, kể hết cho tôi nghe về vai trò mới đi.' },
+      { en: 'Oh, how interesting, tell me everything, do not skip details.', vi: 'Ồ, thú vị đấy, kể hết cho tôi nghe đi, đừng bỏ chi tiết.' },
     ],
   },
   {
@@ -22489,9 +22825,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what have you been up to since we last talked',
     vietnamese: 'bạn đã làm gì kể từ lần cuối chúng ta nói chuyện',
     phonetic: '/wɒt hæv juː biːn ʌp tə sɪns wiː lɑːst tɔːkt/',
+    usage: 'Dùng khi hỏi về những gì đã xảy ra kể từ lần gặp trước.',
     role: 'question',
     examples: [
       { en: 'What have you been up to since we last talked at the conference?', vi: 'Bạn đã làm gì kể từ lần cuối chúng ta nói chuyện ở hội nghị?' },
+      { en: 'What have you been up to since we last talked at the conference?', vi: 'Bạn đã làm gì kể từ lần cuối chúng ta nói chuyện ở hội nghị?' },
+      { en: 'What have you been up to since we last talked? Fill me in.', vi: 'Bạn đã làm gì kể từ lần cuối chúng ta nói chuyện? Kể cho tôi nghe đi.' },
     ],
   },
   {
@@ -22502,9 +22841,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how was your trip to the mountains last month',
     vietnamese: 'chuyến đi lên núi tháng trước của bạn thế nào',
     phonetic: '/haʊ wɒz jɔː trɪp tə ðə ˈmaʊntɪnz lɑːst mʌnθ/',
+    usage: 'Dùng khi hỏi về trải nghiệm một chuyến đi cụ thể.',
     role: 'question',
     examples: [
       { en: 'How was your trip to the mountains last month? Worth the climb?', vi: 'Chuyến đi lên núi tháng trước của bạn thế nào? Có đáng công leo không?' },
+      { en: 'How was your trip to the mountains last month? Worth the climb?', vi: 'Chuyến đi lên núi tháng trước của bạn thế nào? Có đáng leo không?' },
+      { en: 'How was your trip to the mountains last month? Any photos?', vi: 'Chuyến đi lên núi tháng trước của bạn thế nào? Có ảnh không?' },
     ],
   },
   {
@@ -22515,9 +22857,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'are you into cooking as a hobby now',
     vietnamese: 'giờ bạn có xem nấu ăn như một sở thích không',
     phonetic: '/ɑː juː ˈɪntə ˈkʊkɪŋ æz ə ˈhɒbi naʊ/',
+    usage: 'Dùng khi hỏi về mức độ nghiêm túc của sở thích nấu ăn.',
     role: 'question',
     examples: [
       { en: 'Are you into cooking as a hobby now, or is it just survival?', vi: 'Giờ bạn có xem nấu ăn như một sở thích không, hay chỉ để sống qua ngày?' },
+      { en: 'Are you into cooking as a hobby now, or is it just survival?', vi: 'Giờ bạn có xem nấu ăn như một sở thích không, hay chỉ là để sống?' },
+      { en: 'Are you into cooking as a hobby now? I admire that.', vi: 'Giờ bạn có xem nấu ăn như một sở thích không? Tôi ngưỡng mộ đấy.' },
     ],
   },
   {
@@ -22528,9 +22873,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how has your week been treating you, honestly',
     vietnamese: 'thành thật mà nói, tuần này của bạn thế nào',
     phonetic: '/haʊ hæz jɔː wiːk biːn ˈtriːtɪŋ juː ˈɒnɪstli/',
+    usage: 'Dùng khi muốn nghe câu trả lời chân thật từ người đối thoại.',
     role: 'opener',
     examples: [
       { en: 'How has your week been treating you, honestly? You seem tired.', vi: 'Thành thật mà nói, tuần này của bạn thế nào? Trông bạn có vẻ mệt.' },
+      { en: 'How has your week been treating you, honestly? You seem tired.', vi: 'Thành thật mà nói, tuần này của bạn thế nào? Trông bạn mệt đấy.' },
+      { en: 'How has your week been treating you, honestly? No sugarcoating.', vi: 'Thành thật mà nói, tuần này của bạn thế nào? Đừng tô hồng nhé.' },
     ],
   },
   {
@@ -22541,9 +22889,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'long time no see, what brings you here',
     vietnamese: 'lâu rồi không gặp, điều gì đưa bạn đến đây',
     phonetic: '/lɒŋ taɪm nəʊ siː wɒt brɪŋz juː hɪə/',
+    usage: 'Dùng khi gặp lại người quen và hỏi lý do có mặt ở đó.',
     role: 'opener',
     examples: [
       { en: 'Long time no see, what brings you here after all this time?', vi: 'Lâu rồi không gặp, điều gì đưa bạn đến đây sau ngần ấy thời gian?' },
+      { en: 'Long time no see, what brings you here after all this time?', vi: 'Lâu rồi không gặp, điều gì đưa bạn đến đây sau ngần ấy thời gian?' },
+      { en: 'Long time no see, what brings you here? I thought you moved.', vi: 'Lâu rồi không gặp, điều gì đưa bạn đến đây? Tôi tưởng bạn chuyển đi rồi.' },
     ],
   },
   {
@@ -22554,9 +22905,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'any plans for the weekend that excite you',
     vietnamese: 'có kế hoạch nào cho cuối tuần khiến bạn hào hứng không',
     phonetic: '/ˈeni plænz fə ðə ˌwiːkˈend ðæt ɪkˈsaɪt juː/',
+    usage: 'Dùng khi hỏi về kế hoạch cuối tuần gây hứng thú.',
     role: 'opener',
     examples: [
       { en: 'Any plans for the weekend that excite you, or is it all chores?', vi: 'Có kế hoạch nào cho cuối tuần khiến bạn hào hứng không, hay toàn việc nhà?' },
+      { en: 'Any plans for the weekend that excite you, or is it all chores?', vi: 'Có kế hoạch nào cho cuối tuần khiến bạn hào hứng không, hay toàn việc nhà?' },
+      { en: 'Any plans for the weekend that excite you? Do tell.', vi: 'Có kế hoạch nào cho cuối tuần khiến bạn hào hứng không? Kể đi.' },
     ],
   },
   {
@@ -22567,9 +22921,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how is everything going on your end of the world',
     vietnamese: 'mọi thứ ở thế giới của bạn đang diễn ra thế nào',
     phonetic: '/haʊ ɪz ˈevriθɪŋ ˈɡəʊɪŋ ɒn jɔːr end ɒv ðə wɜːld/',
+    usage: 'Dùng khi hỏi thăm tình hình cuộc sống của người đối thoại một cách vui vẻ.',
     role: 'opener',
     examples: [
       { en: 'How is everything going on your end of the world? Still travelling?', vi: 'Mọi thứ ở thế giới của bạn đang diễn ra thế nào? Vẫn còn đi du lịch?' },
+      { en: 'How is everything going on your end of the world? Still travelling?', vi: 'Mọi thứ ở thế giới của bạn đang diễn ra thế nào? Vẫn đi du lịch à?' },
+      { en: 'How is everything going on your end of the world? You are missed.', vi: 'Mọi thứ ở thế giới của bạn đang diễn ra thế nào? Mọi người nhớ bạn đấy.' },
     ],
   },
   {
@@ -22580,9 +22937,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'speaking of which, I came across something relevant',
     vietnamese: 'nhắc mới nhớ, tôi vừa tình cờ thấy một điều liên quan',
     phonetic: '/ˈspiːkɪŋ ɒv wɪtʃ aɪ keɪm əˈkrɒs ˈsʌmθɪŋ ˈreləvənt/',
+    usage: 'Dùng khi tình cờ thấy điều liên quan và muốn chia sẻ.',
     role: 'linker',
     examples: [
       { en: 'Speaking of which, I came across something relevant to what you said.', vi: 'Nhắc mới nhớ, tôi vừa tình cờ thấy một điều liên quan đến điều bạn nói.' },
+      { en: 'Speaking of which, I came across something relevant to what you said.', vi: 'Nhắc mới nhớ, tôi vừa tình cờ thấy một điều liên quan đến điều bạn nói.' },
+      { en: 'Speaking of which, I came across something relevant, I will send it.', vi: 'Nhắc mới nhớ, tôi vừa tình cờ thấy một điều liên quan, tôi sẽ gửi cho bạn.' },
     ],
   },
   {
@@ -22593,9 +22953,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of a fascinating detail',
     vietnamese: 'điều đó làm tôi nhớ đến một chi tiết thú vị',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ə ˈfæsɪneɪtɪŋ ˈdiːteɪl/',
+    usage: 'Dùng khi nhớ đến một chi tiết thú vị muốn chia sẻ.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of a fascinating detail about the place.', vi: 'Điều đó làm tôi nhớ đến một chi tiết thú vị về nơi đó.' },
+      { en: 'That reminds me of a fascinating detail about the place.', vi: 'Điều đó làm tôi nhớ đến một chi tiết thú vị về nơi đó.' },
+      { en: 'That reminds me of a fascinating detail you will love.', vi: 'Điều đó làm tôi nhớ đến một chi tiết thú vị mà bạn sẽ thích.' },
     ],
   },
   {
@@ -22606,9 +22969,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'by the way, did you happen to catch the news',
     vietnamese: 'nhân tiện, bạn có tình cờ xem tin tức không',
     phonetic: '/baɪ ðə weɪ dɪd juː ˈhæpən tə kætʃ ðə njuːz/',
+    usage: 'Dùng khi hỏi xem người khác có cập nhật tin tức không.',
     role: 'linker',
     examples: [
       { en: 'By the way, did you happen to catch the news about the summit?', vi: 'Nhân tiện, bạn có tình cờ xem tin tức về hội nghị thượng đỉnh không?' },
+      { en: 'By the way, did you happen to catch the news about the summit?', vi: 'Nhân tiện, bạn có tình cờ xem tin tức về hội nghị thượng đỉnh không?' },
+      { en: 'By the way, did you happen to catch the news this morning?', vi: 'Nhân tiện, bạn có tình cờ xem tin tức sáng nay không?' },
     ],
   },
   {
@@ -22619,9 +22985,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that reminds me of a conversation we had years ago',
     vietnamese: 'điều đó làm tôi nhớ đến một cuộc trò chuyện nhiều năm trước',
     phonetic: '/ðæt rɪˈmaɪndz miː ɒv ə ˌkɒnvəˈseɪʃən wiː hæd jɪəz əˈɡəʊ/',
+    usage: 'Dùng khi hồi tưởng một cuộc trò chuyện lâu năm trước.',
     role: 'linker',
     examples: [
       { en: 'That reminds me of a conversation we had years ago about the same topic.', vi: 'Điều đó làm tôi nhớ đến một cuộc trò chuyện nhiều năm trước về cùng chủ đề.' },
+      { en: 'That reminds me of a conversation we had years ago about the same topic.', vi: 'Điều đó làm tôi nhớ đến một cuộc trò chuyện nhiều năm trước về cùng chủ đề.' },
+      { en: 'That reminds me of a conversation we had years ago, you were right back then.', vi: 'Điều đó làm tôi nhớ đến một cuộc trò chuyện nhiều năm trước, khi đó bạn đã đúng.' },
     ],
   },
   {
@@ -22632,9 +23001,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'you know what I mean, the nuance is subtle',
     vietnamese: 'bạn biết ý tôi mà, sắc thái rất tinh tế',
     phonetic: '/juː nəʊ wɒt aɪ miːn ðə ˈnjuːɑːns ɪz ˈsʌtl/',
+    usage: 'Dùng khi nhấn mạnh sự tinh tế, khó nhận ra của một vấn đề.',
     role: 'filler',
     examples: [
       { en: 'You know what I mean, the nuance is subtle but it changes everything.', vi: 'Bạn biết ý tôi mà, sắc thái rất tinh tế nhưng nó thay đổi mọi thứ.' },
+      { en: 'You know what I mean, the nuance is subtle but it changes everything.', vi: 'Bạn biết ý tôi mà, sắc thái rất tinh tế nhưng nó thay đổi mọi thứ.' },
+      { en: 'You know what I mean, the nuance is subtle, hard to spot.', vi: 'Bạn biết ý tôi mà, sắc thái rất tinh tế, khó nhận ra lắm.' },
     ],
   },
   {
@@ -22645,9 +23017,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'sort of, in a roundabout way',
     vietnamese: 'đại loại là, theo một cách gián tiếp',
     phonetic: '/sɔːt ɒv ɪn ə ˈraʊndəbaʊt weɪ/',
+    usage: 'Dùng khi diễn đạt một điều theo cách gián tiếp, vòng vo.',
     role: 'filler',
     examples: [
       { en: 'Sort of, in a roundabout way, that is how it ended up.', vi: 'Đại loại là, theo một cách gián tiếp, chuyện kết thúc như vậy.' },
+      { en: 'Sort of, in a roundabout way, that is how it ended up.', vi: 'Đại loại là, theo một cách gián tiếp, mọi chuyện đã kết thúc như vậy.' },
+      { en: 'Sort of, in a roundabout way, we got there eventually.', vi: 'Đại loại là, theo một cách gián tiếp, cuối cùng chúng ta cũng đến nơi.' },
     ],
   },
   {
@@ -22658,9 +23033,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I guess it is what it is, in the end',
     vietnamese: 'tôi đoán cuối cùng chuyện cũng đành vậy thôi',
     phonetic: '/aɪ ɡes ɪt ɪz wɒt ɪt ɪz ɪn ði end/',
+    usage: 'Dùng khi chấp nhận kết cục và bước tiếp.',
     role: 'filler',
     examples: [
       { en: 'I guess it is what it is, in the end, and we move on.', vi: 'Tôi đoán cuối cùng chuyện cũng đành vậy thôi, và chúng ta tiếp tục.' },
+      { en: 'I guess it is what it is, in the end, and we move on.', vi: 'Tôi đoán cuối cùng chuyện cũng đành vậy thôi, và chúng ta bước tiếp.' },
+      { en: 'I guess it is what it is, in the end, no use regretting.', vi: 'Tôi đoán cuối cùng chuyện cũng đành vậy thôi, hối tiếc cũng vô ích.' },
     ],
   },
   {
@@ -22671,9 +23049,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'kind of a blessing in disguise, really',
     vietnamese: 'kiểu như tai họa hóa may vậy, thật đấy',
     phonetic: '/kaɪnd ɒv ə ˈblesɪŋ ɪn dɪsˈɡaɪz ˈrɪəli/',
+    usage: 'Dùng khi nhận xét một điều tưởng xấu hóa ra tốt.',
     role: 'filler',
     examples: [
       { en: 'Kind of a blessing in disguise, really, losing that contract.', vi: 'Kiểu như tai họa hóa may vậy, thật đấy, khi mất hợp đồng đó.' },
+      { en: 'Kind of a blessing in disguise, really, losing that contract.', vi: 'Kiểu như tai họa hóa may vậy, thật đấy, việc mất hợp đồng đó.' },
+      { en: 'Kind of a blessing in disguise, really, that setback.', vi: 'Kiểu như tai họa hóa may vậy, thật đấy, cú vấp ngã đó.' },
     ],
   },
   {
@@ -22684,9 +23065,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'well, I should get going, time flies',
     vietnamese: 'thôi, tôi nên đi đây, thời gian trôi nhanh quá',
     phonetic: '/wel aɪ ʃʊd get ˈɡəʊɪŋ taɪm flaɪz/',
+    usage: 'Dùng khi nhận xét thời gian trôi nhanh trong lúc trò chuyện.',
     role: 'closer',
     examples: [
       { en: 'Well, I should get going, time flies when we talk like this.', vi: 'Thôi, tôi nên đi đây, thời gian trôi nhanh thật khi mình trò chuyện thế này.' },
+      { en: 'Well, I should get going, time flies when we talk like this.', vi: 'Thôi, tôi nên đi đây, thời gian trôi nhanh quá khi chúng ta nói chuyện như thế này.' },
+      { en: 'Well, I should get going, time flies, I lost track.', vi: 'Thôi, tôi nên đi đây, thời gian trôi nhanh quá, tôi quên cả giờ giấc.' },
     ],
   },
   {
@@ -22697,9 +23081,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'let us catch up soon, it is overdue',
     vietnamese: 'hôm nào mình gặp nhau tâm sự nhé, lâu quá rồi',
     phonetic: '/let ʌs kætʃ ʌp suːn ɪt ɪz ˌəʊvəˈdjuː/',
+    usage: 'Dùng khi hẹn gặp và nhấn mạnh đã quá lâu rồi.',
     role: 'closer',
     examples: [
       { en: 'Let us catch up soon, it is overdue and I owe you dinner.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, lâu quá rồi và tôi nợ bạn một bữa tối.' },
+      { en: 'Let us catch up soon, it is overdue and I owe you dinner.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, đã lâu quá rồi và tôi nợ bạn một bữa tối.' },
+      { en: 'Let us catch up soon, it is overdue, we cannot postpone more.', vi: 'Hôm nào mình gặp nhau tâm sự nhé, đã lâu quá rồi, không thể hoãn thêm.' },
     ],
   },
   {
@@ -22710,9 +23097,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'take care of yourself, genuinely',
     vietnamese: 'bảo trọng nhé, từ đáy lòng',
     phonetic: '/teɪk keə ɒv jɔːˈself ˈdʒenjuɪnli/',
+    usage: 'Dùng khi nhắn nhủ chân thành từ đáy lòng.',
     role: 'closer',
     examples: [
       { en: 'Take care of yourself, genuinely, it matters to the people around you.', vi: 'Bảo trọng nhé, từ đáy lòng, điều đó quan trọng với những người xung quanh bạn.' },
+      { en: 'Take care of yourself, genuinely, it matters to the people around you.', vi: 'Bảo trọng nhé, từ đáy lòng, điều đó quan trọng với những người xung quanh bạn.' },
+      { en: 'Take care of yourself, genuinely, you mean a lot to us.', vi: 'Bảo trọng nhé, từ đáy lòng, bạn rất quan trọng với chúng tôi.' },
     ],
   },
   {
@@ -22723,9 +23113,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'see you around, until next time',
     vietnamese: 'hẹn gặp lại, cho đến lần sau',
     phonetic: '/siː juː əˈraʊnd ənˈtɪl nekst taɪm/',
+    usage: 'Dùng khi chia tay mà không hẹn thời gian cụ thể.',
     role: 'closer',
     examples: [
       { en: 'See you around, until next time we cross paths.', vi: 'Hẹn gặp lại, cho đến lần sau chúng ta gặp nhau.' },
+      { en: 'See you around, until next time we cross paths.', vi: 'Hẹn gặp lại, cho đến lần tới chúng ta tình cờ gặp nhau.' },
+      { en: 'See you around, until next time, wherever that is.', vi: 'Hẹn gặp lại, cho đến lần tới, dù ở bất cứ đâu.' },
     ],
   },
   {
@@ -22736,9 +23129,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'no way, really, that is extraordinary',
     vietnamese: 'không thể nào, thật sao, điều đó thật phi thường',
     phonetic: '/nəʊ weɪ ˈrɪəli ðæt ɪz ɪkˈstrɔːdənəri/',
+    usage: 'Dùng khi ngạc nhiên và thán phục trước thành tựu của người khác.',
     role: 'reaction',
     examples: [
       { en: 'No way, really, that is extraordinary, tell me how you did it.', vi: 'Không thể nào, thật sao, điều đó thật phi thường, kể cho tôi nghe bạn làm thế nào.' },
+      { en: 'No way, really, that is extraordinary, tell me how you did it.', vi: 'Không thể nào, thật sao, điều đó thật phi thường, kể tôi nghe bạn làm thế nào.' },
+      { en: 'No way, really, that is extraordinary, I am speechless.', vi: 'Không thể nào, thật sao, điều đó thật phi thường, tôi không nói nên lời.' },
     ],
   },
   {
@@ -22749,9 +23145,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'that sounds lovely, almost poetic',
     vietnamese: 'nghe tuyệt quá, gần như là thơ',
     phonetic: '/ðæt saʊndz ˈlʌvli ˈɔːlməʊst pəʊˈetɪk/',
+    usage: 'Dùng khi khen cách diễn đạt đẹp đẽ của người khác.',
     role: 'reaction',
     examples: [
       { en: 'That sounds lovely, almost poetic, the way you describe it.', vi: 'Nghe tuyệt quá, gần như là thơ, cái cách bạn mô tả nó.' },
+      { en: 'That sounds lovely, almost poetic, the way you describe it.', vi: 'Nghe tuyệt quá, gần như là thơ, cái cách bạn mô tả nó.' },
+      { en: 'That sounds lovely, almost poetic, you have a gift.', vi: 'Nghe tuyệt quá, gần như là thơ, bạn có năng khiếu đấy.' },
     ],
   },
   {
@@ -22762,9 +23161,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'oh, how interesting, I did not expect that',
     vietnamese: 'ồ, thú vị đấy, tôi không ngờ điều đó',
     phonetic: '/əʊ haʊ ˈɪntrəstɪŋ aɪ dɪd nɒt ɪkˈspekt ðæt/',
+    usage: 'Dùng khi bất ngờ trước một diễn biến khó lường.',
     role: 'reaction',
     examples: [
       { en: 'Oh, how interesting, I did not expect that twist in the story.', vi: 'Ồ, thú vị đấy, tôi không ngờ có bước ngoặt đó trong câu chuyện.' },
+      { en: 'Oh, how interesting, I did not expect that twist in the story.', vi: 'Ồ, thú vị đấy, tôi không ngờ có cú ngoặt đó trong câu chuyện.' },
+      { en: 'Oh, how interesting, I did not expect that at all.', vi: 'Ồ, thú vị đấy, tôi hoàn toàn không ngờ điều đó.' },
     ],
   },
   {
@@ -22775,9 +23177,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'what have you been up to all this time',
     vietnamese: 'bạn đã làm gì suốt ngần ấy thời gian',
     phonetic: '/wɒt hæv juː biːn ʌp tə ɔːl ðɪs taɪm/',
+    usage: 'Dùng khi hỏi về khoảng thời gian xa cách vừa qua.',
     role: 'question',
     examples: [
       { en: 'What have you been up to all this time we have been apart?', vi: 'Bạn đã làm gì suốt ngần ấy thời gian chúng ta xa nhau?' },
+      { en: 'What have you been up to all this time we have been apart?', vi: 'Bạn đã làm gì suốt ngần ấy thời gian chúng ta xa cách?' },
+      { en: 'What have you been up to all this time? So much to tell?', vi: 'Bạn đã làm gì suốt ngần ấy thời gian? Nhiều chuyện để kể lắm à?' },
     ],
   },
   {
@@ -22788,9 +23193,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'how was your trip, worth the whole journey',
     vietnamese: 'chuyến đi của bạn thế nào, có đáng cho cả hành trình không',
     phonetic: '/haʊ wɒz jɔː trɪp wɜːθ ðə həʊl ˈdʒɜːni/',
+    usage: 'Dùng khi hỏi xem một chuyến đi lớn có xứng đáng không.',
     role: 'question',
     examples: [
       { en: 'How was your trip, worth the whole journey across two continents?', vi: 'Chuyến đi của bạn thế nào, có đáng cho cả hành trình qua hai lục địa không?' },
+      { en: 'How was your trip, worth the whole journey across two continents?', vi: 'Chuyến đi của bạn thế nào, có đáng cho cả hành trình qua hai châu lục không?' },
+      { en: 'How was your trip, worth the whole journey? I want details.', vi: 'Chuyến đi của bạn thế nào, có đáng cho cả hành trình không? Tôi muốn nghe chi tiết.' },
     ],
   },
   {
@@ -22801,9 +23209,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'are you into cooking as an art form',
     vietnamese: 'bạn có xem nấu ăn như một nghệ thuật không',
     phonetic: '/ɑː juː ˈɪntə ˈkʊkɪŋ æz ən ɑːt fɔːm/',
+    usage: 'Dùng khi hỏi về góc nhìn nghệ thuật trong sở thích nấu ăn.',
     role: 'question',
     examples: [
       { en: 'Are you into cooking as an art form, or purely for sustenance?', vi: 'Bạn có xem nấu ăn như một nghệ thuật không, hay chỉ thuần để nuôi sống?' },
+      { en: 'Are you into cooking as an art form, or purely for sustenance?', vi: 'Bạn có xem nấu ăn như một nghệ thuật không, hay thuần túy để nuôi sống?' },
+      { en: 'Are you into cooking as an art form? Your dishes look amazing.', vi: 'Bạn có xem nấu ăn như một nghệ thuật không? Món bạn làm trông tuyệt lắm.' },
     ],
   },
 
