@@ -314,9 +314,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: "it's down",
     vietnamese: 'nó đang ngừng hoạt động',
     phonetic: '/ɪts daʊn/',
+    usage: 'Dùng khi thông báo rằng một hệ thống hoặc dịch vụ đang ngừng hoạt động, thường là khởi đầu một báo cáo sự cố.',
     role: 'opener',
     examples: [
       { en: "It's down — the API has been returning 500s for the last ten minutes.", vi: 'Nó đang ngừng hoạt động — API trả về 500 suốt mười phút qua.' },
+      { en: "It's down — the website is not loading at all.", vi: 'Nó đang ngừng hoạt động — trang web không tải được gì cả.' },
+      { en: "It's down and users are complaining about errors.", vi: 'Nó đang ngừng hoạt động và người dùng đang phàn nàn về lỗi.' },
     ],
   },
   {
@@ -327,9 +330,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'root cause analysis',
     vietnamese: 'phân tích nguyên nhân gốc',
     phonetic: '/ruːt kɔːz əˈnæləsɪs/',
+    usage: 'Dùng khi nói về việc phân tích để tìm ra nguyên nhân sâu xa của một sự cố, không chỉ chữa triệu chứng.',
     role: 'filler',
     examples: [
       { en: 'We are running a root cause analysis on the failed deploy.', vi: 'Chúng tôi đang phân tích nguyên nhân gốc của lần deploy lỗi.' },
+      { en: 'The team started a root cause analysis for the crash.', vi: 'Nhóm đã bắt đầu phân tích nguyên nhân gốc cho sự cố sập hệ thống.' },
+      { en: 'Root cause analysis shows a memory leak.', vi: 'Phân tích nguyên nhân gốc cho thấy một sự rò rỉ bộ nhớ.' },
     ],
   },
   {
@@ -340,9 +346,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to isolate the issue',
     vietnamese: 'cô lập vấn đề',
     phonetic: '/tə ˈaɪsəleɪt ði ˈɪʃuː/',
+    usage: 'Dùng khi nói về việc thu hẹp phạm vi để xác định chính xác nguồn gốc của vấn đề.',
     role: 'linker',
     examples: [
       { en: 'First, we need to isolate the issue to a single shard.', vi: 'Đầu tiên, ta cần cô lập vấn đề về một shard.' },
+      { en: 'We need to isolate the issue to the database layer.', vi: 'Chúng ta cần cô lập vấn đề ở lớp cơ sở dữ liệu.' },
+      { en: "Let's isolate the issue with a simple test.", vi: 'Hãy cô lập vấn đề bằng một bài kiểm thử đơn giản.' },
     ],
   },
   {
@@ -353,9 +362,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to bring it back up',
     vietnamese: 'khôi phục lại',
     phonetic: '/tə brɪŋ ɪt bæk ʌp/',
+    usage: 'Dùng khi nói về việc khởi động lại dịch vụ sau khi đã có bản vá hoặc sửa lỗi.',
     role: 'closer',
     examples: [
       { en: 'Once the patch is in, we will bring it back up.', vi: 'Khi patch vào rồi, chúng tôi sẽ khôi phục lại.' },
+      { en: 'We will bring it back up after the restart.', vi: 'Chúng tôi sẽ khôi phục lại sau khi khởi động lại.' },
+      { en: "Let's bring it back up once the config is fixed.", vi: 'Hãy khôi phục lại khi cấu hình đã được sửa.' },
     ],
   },
   {
@@ -366,9 +378,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'within the expected timeframe',
     vietnamese: 'trong khung thời gian dự kiến',
     phonetic: '/wɪˈðɪn ði ɪkˈspektɪd ˈtaɪmfreɪm/',
+    usage: 'Dùng khi cam kết hoàn thành việc khôi phục đúng theo khung thời gian đã dự kiến.',
     role: 'closer',
     examples: [
       { en: 'We expect full recovery within the expected timeframe.', vi: 'Chúng tôi kỳ vọng phục hồi đầy đủ trong khung thời gian dự kiến.' },
+      { en: 'The fix will ship within the expected timeframe.', vi: 'Bản sửa lỗi sẽ được phát hành trong khung thời gian dự kiến.' },
+      { en: 'Recovery is planned within the expected timeframe of one hour.', vi: 'Việc khôi phục dự kiến trong khung thời gian một giờ.' },
     ],
   },
   {
@@ -379,9 +394,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to flag an incident',
     vietnamese: 'nêu sự cố',
     phonetic: '/tə flæɡ ən ˈɪnsɪdənt/',
+    usage: 'Dùng khi chính thức thông báo lên cấp trên hoặc nhóm về việc có một sự cố cần xử lý.',
     role: 'opener',
     examples: [
       { en: 'I need to flag an incident on the payment service.', vi: 'Tôi cần nêu một sự cố ở dịch vụ thanh toán.' },
+      { en: 'I need to flag an incident on the database cluster.', vi: 'Tôi cần nêu sự cố trên cụm cơ sở dữ liệu.' },
+      { en: 'We should flag an incident before the error rate rises.', vi: 'Chúng ta nên nêu sự cố trước khi tỷ lệ lỗi tăng lên.' },
     ],
   },
   {
@@ -392,9 +410,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'at this point in time',
     vietnamese: 'tại thời điểm này',
     phonetic: '/æt ðɪs pɔɪnt ɪn taɪm/',
+    usage: 'Dùng khi nói về tình hình tại thời điểm hiện tại, thường khi chưa thể xác định điều gì chắc chắn.',
     role: 'filler',
     examples: [
       { en: 'At this point in time, we cannot estimate a fix.', vi: 'Tại thời điểm này, chúng tôi chưa thể ước lượng thời gian sửa.' },
+      { en: 'At this point in time, the cause is unknown.', vi: 'Tại thời điểm này, nguyên nhân vẫn chưa được biết.' },
+      { en: 'At this point in time, we have no estimate.', vi: 'Tại thời điểm này, chúng tôi chưa có ước tính.' },
     ],
   },
 
@@ -407,9 +428,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'there is a problem with',
     vietnamese: 'có vấn đề với',
     phonetic: '/ðeər ɪz ə ˈprɒbləm wɪð/',
+    usage: 'Dùng khi bắt đầu báo cáo rằng có vấn đề xảy ra với một thứ cụ thể.',
     role: 'opener',
     examples: [
       { en: 'There is a problem with the login page.', vi: 'Có vấn đề với trang đăng nhập.' },
+      { en: 'There is a problem with the search function.', vi: 'Có vấn đề với chức năng tìm kiếm.' },
+      { en: 'There is a problem with the new update.', vi: 'Có vấn đề với bản cập nhật mới.' },
     ],
   },
   {
@@ -420,9 +444,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'can you help me with',
     vietnamese: 'bạn có thể giúp tôi với',
     phonetic: '/kæn juː help miː wɪð/',
+    usage: 'Dùng khi lịch sự nhờ người khác giúp đỡ xử lý một lỗi hoặc vấn đề.',
     role: 'linker',
     examples: [
       { en: 'Can you help me with the connection error?', vi: 'Bạn có thể giúp tôi với lỗi kết nối không?' },
+      { en: 'Can you help me with the login error?', vi: 'Bạn có thể giúp tôi với lỗi đăng nhập?' },
+      { en: 'Can you help me with the slow loading page?', vi: 'Bạn có thể giúp tôi với trang tải chậm?' },
     ],
   },
   {
@@ -433,9 +460,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I am not sure',
     vietnamese: 'tôi không chắc',
     phonetic: '/aɪ əm nɒt ʃɔː/',
+    usage: 'Dùng khi diễn đạt sự không chắc chắn về một thông tin hoặc thời điểm.',
     role: 'filler',
     examples: [
       { en: 'I am not sure when the service will be back.', vi: 'Tôi không chắc khi nào dịch vụ hoạt động trở lại.' },
+      { en: 'I am not sure what caused the error.', vi: 'Tôi không chắc điều gì đã gây ra lỗi.' },
+      { en: 'I am not sure if the backup was successful.', vi: 'Tôi không chắc bản sao lưu đã thành công.' },
     ],
   },
   {
@@ -446,9 +476,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'thank you for your help',
     vietnamese: 'cảm ơn sự giúp đỡ của bạn',
     phonetic: '/θæŋk juː fə jɔː help/',
+    usage: 'Dùng ở cuối cuộc trao đổi để cảm ơn người đã giúp xử lý vấn đề.',
     role: 'closer',
     examples: [
       { en: 'Thank you for your help — the issue is fixed.', vi: 'Cảm ơn sự giúp đỡ của bạn — sự cố đã được xử lý.' },
+      { en: 'Thank you for your help with the issue.', vi: 'Cảm ơn sự giúp đỡ của bạn với sự cố này.' },
+      { en: 'Thank you for your help, the problem is solved.', vi: 'Cảm ơn sự giúp đỡ của bạn, vấn đề đã được giải quyết.' },
     ],
   },
   {
@@ -459,9 +492,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to report an issue',
     vietnamese: 'báo cáo một sự cố',
     phonetic: '/tə rɪˈpɔːt ən ˈɪʃuː/',
+    usage: 'Dùng khi chính thức báo cáo một sự cố lên người có trách nhiệm xử lý.',
     role: 'opener',
     examples: [
       { en: 'I would like to report an issue with the mobile app.', vi: 'Tôi muốn báo cáo một sự cố với ứng dụng di động.' },
+      { en: 'I would like to report an issue with the upload feature.', vi: 'Tôi muốn báo cáo một sự cố với chức năng tải lên.' },
+      { en: 'Please report an issue if you see any error.', vi: 'Hãy báo cáo sự cố nếu bạn thấy bất kỳ lỗi nào.' },
     ],
   },
   {
@@ -472,9 +508,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'could you take a look at',
     vietnamese: 'bạn có thể xem xét',
     phonetic: '/kʊd juː teɪk ə lʊk æt/',
+    usage: 'Dùng khi lịch sự nhờ người khác kiểm tra một vấn đề hoặc log.',
     role: 'linker',
     examples: [
       { en: 'Could you take a look at the error logs?', vi: 'Bạn có thể xem xét nhật ký lỗi được không?' },
+      { en: 'Could you take a look at the server status?', vi: 'Bạn có thể xem xét tình trạng máy chủ không?' },
+      { en: 'Could you take a look at the error message?', vi: 'Bạn có thể xem xét thông báo lỗi không?' },
     ],
   },
   {
@@ -485,9 +524,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'while we investigate',
     vietnamese: 'trong khi chúng tôi điều tra',
     phonetic: '/waɪl wiː ɪnˈvestɪɡeɪt/',
+    usage: 'Dùng khi đưa ra hướng dẫn hoặc thông tin tạm thời trong lúc đội đang điều tra sự cố.',
     role: 'filler',
     examples: [
       { en: 'While we investigate, please use the workaround.', vi: 'Trong khi chúng tôi điều tra, vui lòng dùng giải pháp tạm thời.' },
+      { en: 'While we investigate, please avoid the upload feature.', vi: 'Trong khi chúng tôi điều tra, vui lòng tránh dùng chức năng tải lên.' },
+      { en: 'While we investigate, the service stays offline.', vi: 'Trong khi chúng tôi điều tra, dịch vụ vẫn tạm ngừng.' },
     ],
   },
   {
@@ -498,9 +540,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to keep you posted',
     vietnamese: 'sẽ cập nhật cho bạn',
     phonetic: '/tə kiːp juː ˈpəʊstɪd/',
+    usage: 'Dùng ở cuối thông báo khi hứa sẽ tiếp tục cập nhật tiến độ xử lý sự cố.',
     role: 'closer',
     examples: [
       { en: 'We will keep you posted on the fix.', vi: 'Chúng tôi sẽ cập nhật cho bạn về bản sửa.' },
+      { en: 'We will keep you posted on the progress.', vi: 'Chúng tôi sẽ cập nhật cho bạn về tiến độ.' },
+      { en: 'We will keep you posted on any changes.', vi: 'Chúng tôi sẽ cập nhật cho bạn về bất kỳ thay đổi nào.' },
     ],
   },
   {
@@ -511,9 +556,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to raise the alarm',
     vietnamese: 'gióng lên hồi chuông cảnh báo',
     phonetic: '/tə reɪz ði əˈlɑːm/',
+    usage: 'Dùng khi cần cảnh báo khẩn cấp để mọi người chú ý trước khi tình hình trở nên nghiêm trọng hơn.',
     role: 'opener',
     examples: [
       { en: 'We need to raise the alarm before the outage spreads.', vi: 'Chúng ta cần gióng lên hồi chuông cảnh báo trước khi sự cố lan rộng.' },
+      { en: 'We must raise the alarm before more users are affected.', vi: 'Chúng ta phải gióng lên hồi chuông cảnh báo trước khi thêm người dùng bị ảnh hưởng.' },
+      { en: 'Raise the alarm if the error rate keeps climbing.', vi: 'Hãy gióng lên hồi chuông cảnh báo nếu tỷ lệ lỗi tiếp tục tăng.' },
     ],
   },
   {
@@ -524,9 +572,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to drill down into',
     vietnamese: 'đào sâu vào',
     phonetic: '/tə drɪl daʊn ˈɪntə/',
+    usage: 'Dùng khi nói về việc đào sâu chi tiết để tìm ra nguyên nhân thực sự của vấn đề.',
     role: 'linker',
     examples: [
       { en: 'Let us drill down into the root cause of the failure.', vi: 'Chúng ta hãy đào sâu vào nguyên nhân gốc của sự cố.' },
+      { en: 'Let us drill down into the failing query.', vi: 'Hãy đào sâu vào câu truy vấn đang gặp lỗi.' },
+      { en: 'We need to drill down into the deployment logs.', vi: 'Chúng ta cần đào sâu vào nhật ký triển khai.' },
     ],
   },
   {
@@ -537,9 +588,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we speak',
     vietnamese: 'ngay lúc này',
     phonetic: '/æz wiː spiːk/',
+    usage: 'Dùng khi nhấn mạnh rằng việc xử lý đang diễn ra ngay tại thời điểm nói.',
     role: 'filler',
     examples: [
       { en: 'The team is already working on it as we speak.', vi: 'Đội ngũ đang xử lý ngay lúc này.' },
+      { en: 'The engineers are fixing it as we speak.', vi: 'Các kỹ sư đang sửa nó ngay lúc này.' },
+      { en: 'The servers are being restarted as we speak.', vi: 'Các máy chủ đang được khởi động lại ngay lúc này.' },
     ],
   },
   {
@@ -550,9 +604,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to assure you',
     vietnamese: 'đảm bảo với bạn',
     phonetic: '/tə əˈʃɔː juː/',
+    usage: 'Dùng khi trấn an người nghe rằng dịch vụ sẽ sớm hoạt động trở lại.',
     role: 'closer',
     examples: [
       { en: 'I can assure you the service will be restored shortly.', vi: 'Tôi đảm bảo với bạn dịch vụ sẽ được khôi phục ngay.' },
+      { en: 'I can assure you the data is safe.', vi: 'Tôi có thể đảm bảo với bạn dữ liệu an toàn.' },
+      { en: 'I can assure you we are doing our best.', vi: 'Tôi có thể đảm bảo với bạn chúng tôi đang cố gắng hết sức.' },
     ],
   },
 
@@ -565,9 +622,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Something went wrong with the service.',
     vietnamese: 'Có gì đó không ổn với dịch vụ.',
     phonetic: '/ˈsʌmθɪŋ wɛnt rɔːŋ wɪð ðə ˈsɜːrvɪs/',
+    usage: 'Dùng khi thông báo có sự cố xảy ra với dịch vụ, thường là mở đầu cho lời giải thích.',
     role: 'opener',
     examples: [
       { en: 'Something went wrong with the service this morning.', vi: 'Có gì đó không ổn với dịch vụ sáng nay.' },
+      { en: 'Something went wrong with the service during the update.', vi: 'Có gì đó không ổn với dịch vụ trong lúc cập nhật.' },
+      { en: 'Something went wrong with the service and we are fixing it.', vi: 'Có gì đó không ổn với dịch vụ và chúng tôi đang sửa.' },
     ],
   },
   {
@@ -578,9 +638,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The connection is broken again.',
     vietnamese: 'Kết nối lại bị lỗi nữa rồi.',
     phonetic: '/ðə kəˈnɛkʃən ɪz ˈbroʊkən əˈɡɛn/',
+    usage: 'Dùng khi thông báo kết nối lại bị lỗi, thường sau một lần đã sửa trước đó.',
     role: 'opener',
     examples: [
       { en: 'The connection is broken again after the update.', vi: 'Kết nối lại bị lỗi nữa rồi sau bản cập nhật.' },
+      { en: 'The connection is broken again after the restart.', vi: 'Kết nối lại bị lỗi nữa rồi sau khi khởi động lại.' },
+      { en: 'The connection is broken again, please check.', vi: 'Kết nối lại bị lỗi nữa rồi, vui lòng kiểm tra.' },
     ],
   },
   {
@@ -591,9 +654,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The problem is on our side.',
     vietnamese: 'Vấn đề nằm ở phía chúng tôi.',
     phonetic: '/ðə ˈprɒbləm ɪz ɒn aʊər saɪd/',
+    usage: 'Dùng khi xác nhận lỗi thuộc về phía công ty/nhóm của bạn, không phải của người dùng.',
     role: 'linker',
     examples: [
       { en: 'The problem is on our side, not with your device.', vi: 'Vấn đề nằm ở phía chúng tôi, không phải thiết bị của bạn.' },
+      { en: 'The problem is on our side, we apologize.', vi: 'Vấn đề nằm ở phía chúng tôi, chúng tôi xin lỗi.' },
+      { en: 'The problem is on our side, please wait.', vi: 'Vấn đề nằm ở phía chúng tôi, xin vui lòng chờ.' },
     ],
   },
   {
@@ -604,9 +670,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Please wait a moment for us.',
     vietnamese: 'Xin vui lòng chờ chúng tôi một chút.',
     phonetic: '/pliːz weɪt ə ˈmoʊmənt fɔːr ʌs/',
+    usage: 'Dùng khi yêu cầu người dùng chờ trong lúc đội xử lý sự cố.',
     role: 'linker',
     examples: [
       { en: 'Please wait a moment for us to fix the issue.', vi: 'Xin vui lòng chờ chúng tôi một chút để sửa sự cố.' },
+      { en: 'Please wait a moment for us to check.', vi: 'Xin vui lòng chờ chúng tôi một chút để kiểm tra.' },
+      { en: 'Please wait a moment for us to restore it.', vi: 'Xin vui lòng chờ chúng tôi một chút để khôi phục.' },
     ],
   },
   {
@@ -617,9 +686,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are checking the problem now.',
     vietnamese: 'Chúng tôi đang kiểm tra vấn đề.',
     phonetic: '/wiː ɑːr ˈtʃɛkɪŋ ðə ˈprɒbləm naʊ/',
+    usage: 'Dùng khi thông báo đội đang kiểm tra vấn đề và sẽ phản hồi sau.',
     role: 'filler',
     examples: [
       { en: 'We are checking the problem now and will reply soon.', vi: 'Chúng tôi đang kiểm tra vấn đề và sẽ trả lời sớm.' },
+      { en: 'We are checking the problem now, please hold on.', vi: 'Chúng tôi đang kiểm tra vấn đề, xin giữ máy.' },
+      { en: 'We are checking the problem now with the team.', vi: 'Chúng tôi đang kiểm tra vấn đề cùng nhóm.' },
     ],
   },
   {
@@ -630,9 +702,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'It will be fixed very soon.',
     vietnamese: 'Nó sẽ được sửa xong rất sớm.',
     phonetic: '/ɪt wɪl biː fɪkst ˈvɛri suːn/',
+    usage: 'Dùng khi trấn an rằng lỗi sẽ sớm được sửa xong.',
     role: 'filler',
     examples: [
       { en: 'It will be fixed very soon, please be patient.', vi: 'Nó sẽ được sửa xong rất sớm, xin hãy kiên nhẫn.' },
+      { en: 'It will be fixed very soon, do not worry.', vi: 'Nó sẽ được sửa xong rất sớm, đừng lo lắng.' },
+      { en: 'It will be fixed very soon by the team.', vi: 'Nó sẽ được sửa xong rất sớm bởi nhóm.' },
     ],
   },
   {
@@ -643,9 +718,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The system works again now.',
     vietnamese: 'Hệ thống đã hoạt động trở lại.',
     phonetic: '/ðə ˈsɪstəm wɜːrks əˈɡɛn naʊ/',
+    usage: 'Dùng khi thông báo hệ thống đã hoạt động trở lại bình thường.',
     role: 'closer',
     examples: [
       { en: 'The system works again now, you can continue.', vi: 'Hệ thống đã hoạt động trở lại, bạn có thể tiếp tục.' },
+      { en: 'The system works again now, you can log in.', vi: 'Hệ thống đã hoạt động trở lại, bạn có thể đăng nhập.' },
+      { en: 'The system works again now after the fix.', vi: 'Hệ thống đã hoạt động trở lại sau khi sửa.' },
     ],
   },
   {
@@ -656,9 +734,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will watch the problem carefully.',
     vietnamese: 'Chúng tôi sẽ theo dõi vấn đề một cách cẩn thận.',
     phonetic: '/wiː wɪl wɑːtʃ ðə ˈprɒbləm ˈkɛrfəli/',
+    usage: 'Dùng khi cam kết sẽ tiếp tục theo dõi vấn đề để đảm bảo không tái diễn.',
     role: 'closer',
     examples: [
       { en: 'We will watch the problem carefully for the rest of the day.', vi: 'Chúng tôi sẽ theo dõi vấn đề một cách cẩn thận trong suốt ngày hôm nay.' },
+      { en: 'We will watch the problem carefully today.', vi: 'Chúng tôi sẽ theo dõi vấn đề một cách cẩn thận hôm nay.' },
+      { en: 'We will watch the problem carefully and report.', vi: 'Chúng tôi sẽ theo dõi vấn đề một cách cẩn thận và báo cáo.' },
     ],
   },
   {
@@ -669,9 +750,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have detected an issue in the application.',
     vietnamese: 'Chúng tôi đã phát hiện một sự cố trong ứng dụng.',
     phonetic: '/wiː hæv dɪˈtɛktɪd ən ˈɪʃuː ɪn ði ˌæplɪˈkeɪʃən/',
+    usage: 'Dùng khi thông báo đã phát hiện ra một sự cố trong ứng dụng, thường sau khi phát hành.',
     role: 'opener',
     examples: [
       { en: 'We have detected an issue in the application during the release.', vi: 'Chúng tôi đã phát hiện một sự cố trong ứng dụng trong lúc phát hành.' },
+      { en: 'We have detected an issue in the application during testing.', vi: 'Chúng tôi đã phát hiện một sự cố trong ứng dụng trong lúc kiểm thử.' },
+      { en: 'We have detected an issue in the application and are on it.', vi: 'Chúng tôi đã phát hiện một sự cố trong ứng dụng và đang xử lý.' },
     ],
   },
   {
@@ -682,9 +766,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The incident has affected several users.',
     vietnamese: 'Sự cố đã ảnh hưởng đến nhiều người dùng.',
     phonetic: '/ði ˈɪnsɪdənt hæz əˈfɛktɪd ˈsɛvərəl ˈjuːzərz/',
+    usage: 'Dùng khi thông báo mức độ ảnh hưởng của sự cố đến người dùng.',
     role: 'opener',
     examples: [
       { en: 'The incident has affected several users on the new version.', vi: 'Sự cố đã ảnh hưởng đến nhiều người dùng trên phiên bản mới.' },
+      { en: 'The incident has affected several users on mobile.', vi: 'Sự cố đã ảnh hưởng đến nhiều người dùng trên di động.' },
+      { en: 'The incident has affected several users trying to pay.', vi: 'Sự cố đã ảnh hưởng đến nhiều người dùng đang cố thanh toán.' },
     ],
   },
   {
@@ -695,9 +782,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are investigating the root cause.',
     vietnamese: 'Chúng tôi đang điều tra nguyên nhân gốc.',
     phonetic: '/wiː ɑːr ɪnˈvɛstɪˌɡeɪtɪŋ ðə ruːt kɔːz/',
+    usage: 'Dùng khi thông báo đội đang điều tra nguyên nhân gốc của sự cố.',
     role: 'linker',
     examples: [
       { en: 'We are investigating the root cause of the error.', vi: 'Chúng tôi đang điều tra nguyên nhân gốc của lỗi.' },
+      { en: 'We are investigating the root cause of the crash.', vi: 'Chúng tôi đang điều tra nguyên nhân gốc của sự sập hệ thống.' },
+      { en: 'We are investigating the root cause right now.', vi: 'Chúng tôi đang điều tra nguyên nhân gốc ngay bây giờ.' },
     ],
   },
   {
@@ -708,9 +798,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'Let us update you as soon as we know.',
     vietnamese: 'Hãy để chúng tôi cập nhật cho bạn ngay khi biết.',
     phonetic: '/lɛt ʌs ʌpˈdeɪt juː æz suːn æz wiː noʊ/',
+    usage: 'Dùng khi hứa sẽ thông báo ngay khi có thông tin mới về sự cố.',
     role: 'linker',
     examples: [
       { en: 'Let us update you as soon as we know the next step.', vi: 'Hãy để chúng tôi cập nhật cho bạn ngay khi biết bước tiếp theo.' },
+      { en: 'Let us update you as soon as we know more.', vi: 'Hãy để chúng tôi cập nhật cho bạn ngay khi biết thêm.' },
+      { en: 'Let us update you as soon as we know the cause.', vi: 'Hãy để chúng tôi cập nhật cho bạn ngay khi biết nguyên nhân.' },
     ],
   },
   {
@@ -721,9 +814,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The issue seems to be related to the database.',
     vietnamese: 'Sự cố dường như liên quan đến cơ sở dữ liệu.',
     phonetic: '/ði ˈɪʃuː siːmz tuː biː rɪˈleɪtɪd tuː ðə ˈdeɪtəbeɪs/',
+    usage: 'Dùng khi đưa ra nhận định ban đầu về nguyên nhân có thể của sự cố.',
     role: 'filler',
     examples: [
       { en: 'The issue seems to be related to the database connection.', vi: 'Sự cố dường như liên quan đến kết nối cơ sở dữ liệu.' },
+      { en: 'The issue seems to be related to the new update.', vi: 'Sự cố dường như liên quan đến bản cập nhật mới.' },
+      { en: 'The issue seems to be related to the server time.', vi: 'Sự cố dường như liên quan đến thời gian máy chủ.' },
     ],
   },
   {
@@ -734,9 +830,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are restoring the service gradually.',
     vietnamese: 'Chúng tôi đang khôi phục dịch vụ từ từ.',
     phonetic: '/wiː ɑːr rɪˈstɔːrɪŋ ðə ˈsɜːrvɪs ˈɡrædʒuəli/',
+    usage: 'Dùng khi nói về việc khôi phục dịch vụ từng bước để tránh rủi ro thêm.',
     role: 'filler',
     examples: [
       { en: 'We are restoring the service gradually to avoid further issues.', vi: 'Chúng tôi đang khôi phục dịch vụ từ từ để tránh sự cố thêm.' },
+      { en: 'We are restoring the service gradually to users.', vi: 'Chúng tôi đang khôi phục dịch vụ từ từ cho người dùng.' },
+      { en: 'We are restoring the service gradually region by region.', vi: 'Chúng tôi đang khôi phục dịch vụ từ từ theo từng khu vực.' },
     ],
   },
   {
@@ -747,9 +846,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The incident has been resolved for now.',
     vietnamese: 'Sự cố đã được xử lý xong cho đến lúc này.',
     phonetic: '/ði ˈɪnsɪdənt hæz biːn rɪˈzɒlvd fɔːr naʊ/',
+    usage: 'Dùng khi thông báo sự cố tạm thời đã được xử lý xong.',
     role: 'closer',
     examples: [
       { en: 'The incident has been resolved for now, please confirm.', vi: 'Sự cố đã được xử lý xong cho đến lúc này, xin vui lòng xác nhận.' },
+      { en: 'The incident has been resolved for now, keep testing.', vi: 'Sự cố đã được xử lý xong cho đến lúc này, hãy tiếp tục kiểm thử.' },
+      { en: 'The incident has been resolved for now, no action needed.', vi: 'Sự cố đã được xử lý xong cho đến lúc này, không cần hành động.' },
     ],
   },
   {
@@ -760,9 +862,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We will send a full report later.',
     vietnamese: 'Chúng tôi sẽ gửi báo cáo đầy đủ sau.',
     phonetic: '/wiː wɪl sɛnd ə fʊl rɪˈpɔːrt ˈleɪtər/',
+    usage: 'Dùng khi hứa sẽ gửi báo cáo chi tiết về sự cố vào một thời điểm cụ thể sau đó.',
     role: 'closer',
     examples: [
       { en: 'We will send a full report later this afternoon.', vi: 'Chúng tôi sẽ gửi báo cáo đầy đủ vào chiều nay.' },
+      { en: 'We will send a full report later today.', vi: 'Chúng tôi sẽ gửi báo cáo đầy đủ sau hôm nay.' },
+      { en: 'We will send a full report later with the details.', vi: 'Chúng tôi sẽ gửi báo cáo đầy đủ sau với các chi tiết.' },
     ],
   },
   {
@@ -773,9 +878,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have identified a critical incident in the production environment.',
     vietnamese: 'Chúng tôi đã xác định một sự cố nghiêm trọng trong môi trường chạy thật.',
     phonetic: '/wiː hæv aɪˈdɛntɪˌfaɪd ə ˈkrɪtɪkəl ˈɪnsɪdənt ɪn ðə prəˈdʌkʃən ɪnˈvaɪrənmənt/',
+    usage: 'Dùng khi thông báo đã xác định một sự cố nghiêm trọng trong môi trường production.',
     role: 'opener',
     examples: [
       { en: 'We have identified a critical incident in the production environment affecting payments.', vi: 'Chúng tôi đã xác định một sự cố nghiêm trọng trong môi trường chạy thật ảnh hưởng đến thanh toán.' },
+      { en: 'We have identified a critical incident in the production environment affecting orders.', vi: 'Chúng tôi đã xác định một sự cố nghiêm trọng trong môi trường chạy thật ảnh hưởng đến đơn hàng.' },
+      { en: 'We have identified a critical incident in the production environment, please stand by.', vi: 'Chúng tôi đã xác định một sự cố nghiêm trọng trong môi trường chạy thật, xin chờ.' },
     ],
   },
   {
@@ -786,9 +894,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The outage has been running for the past two hours.',
     vietnamese: 'Sự cố ngừng hoạt động đã kéo dài hai giờ qua.',
     phonetic: '/ði ˈaʊtɪdʒ hæz biːn ˈrʌnɪŋ fɔːr ðə pæst tuː aʊərz/',
+    usage: 'Dùng khi thông báo thời gian sự cố đã kéo dài bao lâu.',
     role: 'opener',
     examples: [
       { en: 'The outage has been running for the past two hours without recovery.', vi: 'Sự cố ngừng hoạt động đã kéo dài hai giờ qua mà chưa phục hồi.' },
+      { en: 'The outage has been running for the past three hours.', vi: 'Sự cố ngừng hoạt động đã kéo dài ba giờ qua.' },
+      { en: 'The outage has been running for the past two hours with no fix.', vi: 'Sự cố ngừng hoạt động đã kéo dài hai giờ qua mà chưa có bản sửa.' },
     ],
   },
   {
@@ -799,9 +910,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are applying a hotfix to mitigate the impact.',
     vietnamese: 'Chúng tôi đang áp dụng một bản vá nóng để giảm thiểu tác động.',
     phonetic: '/wiː ɑːr əˈplaɪɪŋ ə ˈhɒtfɪks tuː ˈmɪtɪˌɡeɪt ði ˈɪmpækt/',
+    usage: 'Dùng khi nói về việc áp dụng bản vá nóng để giảm bớt tác động tạm thời.',
     role: 'linker',
     examples: [
       { en: 'We are applying a hotfix to mitigate the impact on end users.', vi: 'Chúng tôi đang áp dụng một bản vá nóng để giảm thiểu tác động đến người dùng cuối.' },
+      { en: 'We are applying a hotfix to mitigate the impact on checkout.', vi: 'Chúng tôi đang áp dụng một bản vá nóng để giảm thiểu tác động lên thanh toán.' },
+      { en: 'We are applying a hotfix to mitigate the impact right away.', vi: 'Chúng tôi đang áp dụng một bản vá nóng để giảm thiểu tác động ngay lập tức.' },
     ],
   },
   {
@@ -812,9 +926,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We need to escalate this to the on-call team.',
     vietnamese: 'Chúng ta cần chuyển sự cố này lên đội trực.',
     phonetic: '/wiː niːd tuː ˈɛskəˌleɪt ðɪs tuː ði ɒn kɔːl tiːm/',
+    usage: 'Dùng khi cần chuyển sự cố lên đội trực hoặc cấp xử lý cao hơn.',
     role: 'linker',
     examples: [
       { en: 'We need to escalate this to the on-call team right away.', vi: 'Chúng ta cần chuyển sự cố này lên đội trực ngay lập tức.' },
+      { en: 'We need to escalate this to the on-call team now.', vi: 'Chúng ta cần chuyển sự cố này lên đội trực ngay bây giờ.' },
+      { en: 'We need to escalate this to the on-call team for the DB.', vi: 'Chúng ta cần chuyển sự cố này lên đội trực phụ trách cơ sở dữ liệu.' },
     ],
   },
   {
@@ -825,9 +942,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The root cause appears to be a faulty configuration.',
     vietnamese: 'Nguyên nhân gốc dường như là một cấu hình sai.',
     phonetic: '/ðə ruːt kɔːz əˈpɪrz tuː biː ə ˈfɔːlti kənˌfɪɡjəˈreɪʃən/',
+    usage: 'Dùng khi nêu nhận định ban đầu rằng cấu hình sai là nguyên nhân sự cố.',
     role: 'filler',
     examples: [
       { en: 'The root cause appears to be a faulty configuration in the load balancer.', vi: 'Nguyên nhân gốc dường như là một cấu hình sai trong bộ cân bằng tải.' },
+      { en: 'The root cause appears to be a faulty configuration in the cache.', vi: 'Nguyên nhân gốc dường như là một cấu hình sai trong bộ nhớ đệm.' },
+      { en: 'The root cause appears to be a faulty configuration from last night.', vi: 'Nguyên nhân gốc dường như là một cấu hình sai từ tối qua.' },
     ],
   },
   {
@@ -838,9 +958,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are monitoring the metrics closely for anomalies.',
     vietnamese: 'Chúng tôi đang theo dõi sát các chỉ số để tìm bất thường.',
     phonetic: '/wiː ɑːr ˈmɒnɪtərɪŋ ðə ˈmɛtrɪks ˈkloʊsli fɔːr əˈnɒməliz/',
+    usage: 'Dùng khi nói về việc theo dõi sát các chỉ số để phát hiện bất thường sau sự cố.',
     role: 'filler',
     examples: [
       { en: 'We are monitoring the metrics closely for anomalies after the restart.', vi: 'Chúng tôi đang theo dõi sát các chỉ số để tìm bất thường sau khi khởi động lại.' },
+      { en: 'We are monitoring the metrics closely for the next hour.', vi: 'Chúng tôi đang theo dõi sát các chỉ số trong giờ tới.' },
+      { en: 'We are monitoring the metrics closely for any spike.', vi: 'Chúng tôi đang theo dõi sát các chỉ số để phát hiện bất kỳ đột biến nào.' },
     ],
   },
   {
@@ -851,9 +974,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have restored service for the affected regions.',
     vietnamese: 'Chúng tôi đã khôi phục dịch vụ cho các khu vực bị ảnh hưởng.',
     phonetic: '/wiː hæv rɪˈstɔːrd ˈsɜːrvɪs fɔːr ði əˈfɛktɪd ˈriːdʒənz/',
+    usage: 'Dùng khi thông báo dịch vụ đã được khôi phục cho các khu vực bị ảnh hưởng.',
     role: 'closer',
     examples: [
       { en: 'We have restored service for the affected regions as of now.', vi: 'Chúng tôi đã khôi phục dịch vụ cho các khu vực bị ảnh hưởng tính đến hiện tại.' },
+      { en: 'We have restored service for the affected regions now.', vi: 'Chúng tôi đã khôi phục dịch vụ cho các khu vực bị ảnh hưởng ngay bây giờ.' },
+      { en: 'We have restored service for the affected regions, please verify.', vi: 'Chúng tôi đã khôi phục dịch vụ cho các khu vực bị ảnh hưởng, vui lòng xác minh.' },
     ],
   },
   {
@@ -864,9 +990,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'A post-incident review will follow shortly.',
     vietnamese: 'Một buổi rà soát sau sự cố sẽ diễn ra ngay sau đó.',
     phonetic: '/ə poʊst ˈɪnsɪdənt rɪˈvjuː wɪl ˈfɒloʊ ˈʃɔːrtli/',
+    usage: 'Dùng khi thông báo sẽ có buổi rà soát sau sự cố với các bên liên quan.',
     role: 'closer',
     examples: [
       { en: 'A post-incident review will follow shortly with all stakeholders.', vi: 'Một buổi rà soát sau sự cố sẽ diễn ra ngay sau đó với tất cả các bên liên quan.' },
+      { en: 'A post-incident review will follow shortly with the team.', vi: 'Một buổi rà soát sau sự cố sẽ diễn ra ngay sau đó với nhóm.' },
+      { en: 'A post-incident review will follow shortly to share findings.', vi: 'Một buổi rà soát sau sự cố sẽ diễn ra ngay sau đó để chia sẻ kết quả.' },
     ],
   },
   {
@@ -877,9 +1006,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are declaring a major incident for the payment gateway.',
     vietnamese: 'Chúng tôi đang tuyên bố một sự cố lớn cho cổng thanh toán.',
     phonetic: '/wiː ɑːr dɪˈklɛrɪŋ ə ˈmeɪdʒər ˈɪnsɪdənt fɔːr ðə ˈpeɪmənt ˈɡeɪtweɪ/',
+    usage: 'Dùng khi chính thức tuyên bố sự cố lớn, thường do tỷ lệ lỗi tăng cao.',
     role: 'opener',
     examples: [
       { en: 'We are declaring a major incident for the payment gateway due to rising error rates.', vi: 'Chúng tôi đang tuyên bố một sự cố lớn cho cổng thanh toán do tỉ lệ lỗi tăng cao.' },
+      { en: 'We are declaring a major incident for the checkout service.', vi: 'Chúng tôi đang tuyên bố một sự cố lớn cho dịch vụ thanh toán.' },
+      { en: 'We are declaring a major incident due to the outage.', vi: 'Chúng tôi đang tuyên bố một sự cố lớn do sự gián đoạn.' },
     ],
   },
   {
@@ -890,9 +1022,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The severity of this outage warrants immediate escalation.',
     vietnamese: 'Mức độ nghiêm trọng của sự cố này đòi hỏi phải chuyển cấp ngay lập tức.',
     phonetic: '/ðə sɪˈvɛrəti ɒv ðɪs ˈaʊtɪdʒ ˈwɔːrənts ɪˈmiːdiət ˌɛskəˈleɪʃən/',
+    usage: 'Dùng khi nhấn mạnh mức độ nghiêm trọng đòi hỏi phải nâng cấp xử lý ngay.',
     role: 'opener',
     examples: [
       { en: 'The severity of this outage warrants immediate escalation to management.', vi: 'Mức độ nghiêm trọng của sự cố này đòi hỏi phải chuyển cấp ngay lập tức lên ban quản lý.' },
+      { en: 'The severity of this outage warrants immediate escalation to the CEO.', vi: 'Mức độ nghiêm trọng của sự cố này đòi hỏi phải chuyển cấp ngay lập tức lên CEO.' },
+      { en: 'The severity of this outage warrants immediate escalation and a war room.', vi: 'Mức độ nghiêm trọng của sự cố này đòi hỏi phải chuyển cấp ngay và lập phòng chiến thuật.' },
     ],
   },
   {
@@ -903,9 +1038,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are coordinating a cross-team response to contain the blast radius.',
     vietnamese: 'Chúng tôi đang phối hợp phản ứng giữa các đội để khoanh vùng phạm vi ảnh hưởng.',
     phonetic: '/wiː ɑːr koʊˈɔːrdɪˌneɪtɪŋ ə krɔːs tiːm rɪˈspɒns tuː kənˈteɪn ðə blæst ˈreɪdiəs/',
+    usage: 'Dùng khi nói về việc phối hợp nhiều đội để khoanh vùng phạm vi ảnh hưởng.',
     role: 'linker',
     examples: [
       { en: 'We are coordinating a cross-team response to contain the blast radius of the failure.', vi: 'Chúng tôi đang phối hợp phản ứng giữa các đội để khoanh vùng phạm vi ảnh hưởng của sự cố.' },
+      { en: 'We are coordinating a cross-team response to contain the issue.', vi: 'Chúng tôi đang phối hợp phản ứng giữa các đội để khoanh vùng vấn đề.' },
+      { en: 'We are coordinating a cross-team response to stop the spread.', vi: 'Chúng tôi đang phối hợp phản ứng giữa các đội để chặn sự lây lan.' },
     ],
   },
   {
@@ -916,9 +1054,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We request a timeline of the events leading to the failure.',
     vietnamese: 'Chúng tôi yêu cầu một mốc thời gian của các sự kiện dẫn đến sự cố.',
     phonetic: '/wiː rɪˈkwɛst ə ˈtaɪmlaɪn ɒv ði ɪˈvɛnts ˈliːdɪŋ tuː ðə ˈfeɪljər/',
+    usage: 'Dùng khi yêu cầu mốc thời gian các sự kiện dẫn đến sự cố, thường phục vụ kiểm toán.',
     role: 'linker',
     examples: [
       { en: 'We request a timeline of the events leading to the failure for the audit.', vi: 'Chúng tôi yêu cầu một mốc thời gian của các sự kiện dẫn đến sự cố để phục vụ kiểm toán.' },
+      { en: 'We request a timeline of the events leading to the failure for the report.', vi: 'Chúng tôi yêu cầu một mốc thời gian của các sự kiện dẫn đến sự cố cho báo cáo.' },
+      { en: 'We request a timeline of the events leading to the failure from the logs.', vi: 'Chúng tôi yêu cầu một mốc thời gian của các sự kiện dẫn đến sự cố từ nhật ký.' },
     ],
   },
   {
@@ -929,9 +1070,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'The preliminary evidence points to a race condition under load.',
     vietnamese: 'Bằng chứng ban đầu chỉ ra một điều kiện đua khi tải cao.',
     phonetic: '/ðə prɪˈlɪmɪˌnɛri ˈɛvɪdəns pɔɪnts tuː ə reɪs kənˈdɪʃən ˈʌndər loʊd/',
+    usage: 'Dùng khi nêu bằng chứng ban đầu về nguyên nhân của sự cố khi tải cao.',
     role: 'filler',
     examples: [
       { en: 'The preliminary evidence points to a race condition under load in the scheduler.', vi: 'Bằng chứng ban đầu chỉ ra một điều kiện đua khi tải cao trong bộ lập lịch.' },
+      { en: 'The preliminary evidence points to a race condition in the cache.', vi: 'Bằng chứng ban đầu chỉ ra một điều kiện đua trong bộ nhớ đệm.' },
+      { en: 'The preliminary evidence points to a race condition under load.', vi: 'Bằng chứng ban đầu chỉ ra một điều kiện đua khi tải cao.' },
     ],
   },
   {
@@ -942,9 +1086,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are reverting the release to isolate the regression.',
     vietnamese: 'Chúng tôi đang hoàn nguyên bản phát hành để cô lập sự hồi quy.',
     phonetic: '/wiː ɑːr rɪˈvɜːrtɪŋ ðə rɪˈliːs tuː ˈaɪsəˌleɪt ðə rɪˈɡrɛʃən/',
+    usage: 'Dùng khi nói về việc hoàn nguyên bản phát hành để tách riêng lỗi hồi quy.',
     role: 'filler',
     examples: [
       { en: 'We are reverting the release to isolate the regression in the checkout flow.', vi: 'Chúng tôi đang hoàn nguyên bản phát hành để cô lập sự hồi quy trong luồng thanh toán.' },
+      { en: 'We are reverting the release to isolate the regression in auth.', vi: 'Chúng tôi đang hoàn nguyên bản phát hành để cô lập lỗi hồi quy trong xác thực.' },
+      { en: 'We are reverting the release to isolate the regression now.', vi: 'Chúng tôi đang hoàn nguyên bản phát hành để cô lập lỗi hồi quy ngay bây giờ.' },
     ],
   },
   {
@@ -955,9 +1102,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We are convening a retrospective to capture the lessons learned.',
     vietnamese: 'Chúng tôi đang tổ chức một buổi rà soát để ghi nhận các bài học kinh nghiệm.',
     phonetic: '/wiː ɑːr kənˈviːnɪŋ ə ˌrɛtrəˈspɛktɪv tuː ˈkæptʃər ðə ˈlɛsənz lɜːrnd/',
+    usage: 'Dùng khi nói về việc tổ chức buổi rà soát để rút kinh nghiệm từ sự cố.',
     role: 'closer',
     examples: [
       { en: 'We are convening a retrospective to capture the lessons learned from this incident.', vi: 'Chúng tôi đang tổ chức một buổi rà soát để ghi nhận các bài học kinh nghiệm từ sự cố này.' },
+      { en: 'We are convening a retrospective to capture the lessons from this outage.', vi: 'Chúng tôi đang tổ chức một buổi rà soát để ghi nhận các bài học từ sự cố này.' },
+      { en: 'We are convening a retrospective with all teams involved.', vi: 'Chúng tôi đang tổ chức một buổi rà soát với tất cả các đội liên quan.' },
     ],
   },
   {
@@ -968,9 +1118,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'We have engaged our stakeholders with a clear communication plan.',
     vietnamese: 'Chúng tôi đã thông báo cho các bên liên quan bằng một kế hoạch truyền thông rõ ràng.',
     phonetic: '/wiː hæv ɪnˈɡeɪdʒd aʊər ˈsteɪkˌhoʊldərz wɪð ə klɪr kəˌmjuːnɪˈkeɪʃən plæn/',
+    usage: 'Dùng khi nói về việc đã thông báo cho các bên liên quan bằng kế hoạch truyền thông rõ ràng.',
     role: 'closer',
     examples: [
       { en: 'We have engaged our stakeholders with a clear communication plan for the next steps.', vi: 'Chúng tôi đã thông báo cho các bên liên quan bằng một kế hoạch truyền thông rõ ràng cho các bước tiếp theo.' },
+      { en: 'We have engaged our stakeholders with a clear plan for the recovery.', vi: 'Chúng tôi đã thông báo cho các bên liên quan bằng một kế hoạch rõ ràng cho việc khôi phục.' },
+      { en: 'We have engaged our stakeholders with a clear plan for updates.', vi: 'Chúng tôi đã thông báo cho các bên liên quan bằng một kế hoạch rõ ràng cho các cập nhật.' },
     ],
   },
   {
@@ -981,9 +1134,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are experiencing an outage',
     vietnamese: 'chúng tôi đang gặp sự cố gián đoạn dịch vụ',
     phonetic: '/wiː ɑːr ɪkˈspɪəriənsɪŋ ən ˈaʊteɪdʒ/',
+    usage: 'Dùng khi thông báo công ty đang gặp sự cố gián đoạn dịch vụ.',
     role: 'opener',
     examples: [
       { en: 'We are experiencing an outage on the main server.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên máy chủ chính.' },
+      { en: 'We are experiencing an outage on the website now.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên trang web ngay bây giờ.' },
+      { en: 'We are experiencing an outage and working on it.', vi: 'Chúng tôi đang gặp sự cố gián đoạn và đang xử lý.' },
     ],
   },
   {
@@ -994,9 +1150,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'there has been a critical incident',
     vietnamese: 'đã xảy ra một sự cố nghiêm trọng',
     phonetic: '/ðeə hæz biːn ə ˈkrɪtɪkəl ˈɪnsɪdənt/',
+    usage: 'Dùng khi thông báo đã xảy ra một sự cố nghiêm trọng với một hệ thống cụ thể.',
     role: 'opener',
     examples: [
       { en: 'There has been a critical incident with the database.', vi: 'Đã xảy ra một sự cố nghiêm trọng với cơ sở dữ liệu.' },
+      { en: 'There has been a critical incident with the search service.', vi: 'Đã xảy ra một sự cố nghiêm trọng với dịch vụ tìm kiếm.' },
+      { en: 'There has been a critical incident with the backup system.', vi: 'Đã xảy ra một sự cố nghiêm trọng với hệ thống sao lưu.' },
     ],
   },
   {
@@ -1007,9 +1166,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I need to escalate',
     vietnamese: 'tôi cần phải nâng mức xử lý',
     phonetic: '/aɪ niːd tə ˈeskəleɪt/',
+    usage: 'Dùng khi cần nâng mức xử lý một vấn đề lên cấp cao hơn.',
     role: 'opener',
     examples: [
       { en: 'I need to escalate this issue to the manager.', vi: 'Tôi cần nâng mức xử lý sự cố này lên quản lý.' },
+      { en: 'I need to escalate this issue to the team lead.', vi: 'Tôi cần phải nâng mức xử lý vấn đề này lên trưởng nhóm.' },
+      { en: 'I need to escalate the ticket to get it fixed faster.', vi: 'Tôi cần nâng mức xử lý ticket để được sửa nhanh hơn.' },
     ],
   },
   {
@@ -1020,9 +1182,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'the system went down',
     vietnamese: 'hệ thống đã ngừng hoạt động',
     phonetic: '/ðə ˈsɪstəm went daʊn/',
+    usage: 'Dùng khi thông báo hệ thống đã ngừng hoạt động, thường là bắt đầu báo cáo sự cố.',
     role: 'opener',
     examples: [
       { en: 'The system went down a few minutes ago.', vi: 'Hệ thống đã ngừng hoạt động vài phút trước.' },
+      { en: 'The system went down during the night.', vi: 'Hệ thống đã ngừng hoạt động trong đêm.' },
+      { en: 'The system went down after the update.', vi: 'Hệ thống đã ngừng hoạt động sau bản cập nhật.' },
     ],
   },
   {
@@ -1033,9 +1198,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on further inspection',
     vietnamese: 'khi kiểm tra kỹ hơn',
     phonetic: '/ɒn ˈfɜːðər ɪnˈspekʃən/',
+    usage: 'Dùng khi chuyển sang nói về kết quả phát hiện sau khi kiểm tra kỹ hơn.',
     role: 'linker',
     examples: [
       { en: 'On further inspection, the error was in the config.', vi: 'Khi kiểm tra kỹ hơn, lỗi nằm ở cấu hình.' },
+      { en: 'On further inspection, the issue was in the code.', vi: 'Khi kiểm tra kỹ hơn, vấn đề nằm ở mã nguồn.' },
+      { en: 'On further inspection, the error disappeared.', vi: 'Khi kiểm tra kỹ hơn, lỗi đã biến mất.' },
     ],
   },
   {
@@ -1046,9 +1214,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the meantime the service is affected',
     vietnamese: 'trong lúc chờ đợi, dịch vụ đang bị ảnh hưởng',
     phonetic: '/ɪn ðə miːnˈtaɪm ðə ˈsɜːvɪs ɪz əˈfektɪd/',
+    usage: 'Dùng khi nói về tình trạng dịch vụ bị ảnh hưởng trong lúc chờ xử lý.',
     role: 'linker',
     examples: [
       { en: 'In the meantime the service is affected for users.', vi: 'Trong lúc chờ đợi, dịch vụ đang bị ảnh hưởng đối với người dùng.' },
+      { en: 'In the meantime the service is affected for some users.', vi: 'Trong lúc chờ đợi, dịch vụ đang bị ảnh hưởng với một số người dùng.' },
+      { en: 'In the meantime the service is affected, we apologize.', vi: 'Trong lúc chờ đợi, dịch vụ đang bị ảnh hưởng, chúng tôi xin lỗi.' },
     ],
   },
   {
@@ -1059,9 +1230,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'once we isolate the root cause',
     vietnamese: 'khi chúng tôi xác định được nguyên nhân gốc',
     phonetic: '/wʌns wiː ˈaɪsəleɪt ðə ruːt kɔːz/',
+    usage: 'Dùng khi nói về việc sẽ xử lý sau khi xác định được nguyên nhân gốc.',
     role: 'linker',
     examples: [
       { en: 'Once we isolate the root cause, we will fix it.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ sửa lỗi.' },
+      { en: 'Once we isolate the root cause, we will restart.', vi: 'Khi chúng tôi xác định được nguyên nhân gốc, chúng tôi sẽ khởi động lại.' },
+      { en: 'Once we isolate the root cause, the fix is simple.', vi: 'Khi chúng tôi xác định được nguyên nhân gốc, bản sửa rất đơn giản.' },
     ],
   },
   {
@@ -1072,9 +1246,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'the first thing we checked',
     vietnamese: 'điều đầu tiên chúng tôi kiểm tra',
     phonetic: '/ðə fɜːst θɪŋ wiː tʃekt/',
+    usage: 'Dùng khi kể lại bước đầu tiên trong quá trình kiểm tra sự cố.',
     role: 'linker',
     examples: [
       { en: 'The first thing we checked was the network.', vi: 'Điều đầu tiên chúng tôi kiểm tra là mạng.' },
+      { en: 'The first thing we checked was the disk space.', vi: 'Điều đầu tiên chúng tôi kiểm tra là dung lượng ổ đĩa.' },
+      { en: 'The first thing we checked was the error log.', vi: 'Điều đầu tiên chúng tôi kiểm tra là nhật ký lỗi.' },
     ],
   },
   {
@@ -1085,9 +1262,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'at this juncture',
     vietnamese: 'ở thời điểm này',
     phonetic: '/æt ðɪs ˈdʒʌŋktʃə/',
+    usage: 'Dùng khi nói về tình hình hiện tại, thường khi kết quả chưa chắc chắn.',
     role: 'filler',
     examples: [
       { en: 'At this juncture, we cannot say when it will recover.', vi: 'Ở thời điểm này, chúng tôi chưa thể nói khi nào hệ thống hồi phục.' },
+      { en: 'At this juncture, we need more information.', vi: 'Ở thời điểm này, chúng tôi cần thêm thông tin.' },
+      { en: 'At this juncture, nothing is confirmed yet.', vi: 'Ở thời điểm này, chưa có gì được xác nhận.' },
     ],
   },
   {
@@ -1098,9 +1278,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to the best of our knowledge',
     vietnamese: 'theo hiểu biết tốt nhất của chúng tôi',
     phonetic: '/tə ðə best ɒv ˈaʊə ˈnɒlɪdʒ/',
+    usage: 'Dùng khi nêu nhận định dựa trên hiểu biết hiện có, dù chưa chắc chắn tuyệt đối.',
     role: 'filler',
     examples: [
       { en: 'To the best of our knowledge, no data was lost.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, không có dữ liệu nào bị mất.' },
+      { en: 'To the best of our knowledge, the fix is live.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, bản sửa đã hoạt động.' },
+      { en: 'To the best of our knowledge, no files were deleted.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, không có file nào bị xóa.' },
     ],
   },
   {
@@ -1111,9 +1294,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'right now',
     vietnamese: 'ngay lúc này',
     phonetic: '/raɪt naʊ/',
+    usage: 'Dùng khi nói về việc đang diễn ra ngay lúc này, thường nhấn mạnh tính khẩn cấp.',
     role: 'filler',
     examples: [
       { en: 'Right now, the team is restoring the service.', vi: 'Ngay lúc này, đội ngũ đang khôi phục dịch vụ.' },
+      { en: 'Right now, the team is fixing the issue.', vi: 'Ngay lúc này, nhóm đang sửa vấn đề.' },
+      { en: 'Right now, the service is partially working.', vi: 'Ngay lúc này, dịch vụ đang hoạt động một phần.' },
     ],
   },
   {
@@ -1124,9 +1310,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as far as we can tell',
     vietnamese: 'theo như chúng tôi nhận thấy',
     phonetic: '/æz fɑːr æz wiː kən tel/',
+    usage: 'Dùng khi nêu nhận định dựa trên những gì quan sát được đến thời điểm hiện tại.',
     role: 'filler',
     examples: [
       { en: 'As far as we can tell, the backup is intact.', vi: 'Theo như chúng tôi nhận thấy, bản sao lưu vẫn nguyên vẹn.' },
+      { en: 'As far as we can tell, the server is fine.', vi: 'Theo như chúng tôi nhận thấy, máy chủ vẫn ổn.' },
+      { en: 'As far as we can tell, nothing is broken.', vi: 'Theo như chúng tôi nhận thấy, không có gì hỏng.' },
     ],
   },
   {
@@ -1137,9 +1326,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we will keep you posted',
     vietnamese: 'chúng tôi sẽ cập nhật thông tin cho bạn',
     phonetic: '/wiː wɪl kiːp juː pəʊst/',
+    usage: 'Dùng khi hứa sẽ tiếp tục cập nhật thông tin về tiến độ xử lý.',
     role: 'closer',
     examples: [
       { en: 'We will keep you posted on the progress.', vi: 'Chúng tôi sẽ cập nhật thông tin về tiến độ cho bạn.' },
+      { en: 'We will keep you posted on the next steps.', vi: 'Chúng tôi sẽ cập nhật thông tin cho bạn về các bước tiếp theo.' },
+      { en: 'We will keep you posted on the results.', vi: 'Chúng tôi sẽ cập nhật thông tin cho bạn về kết quả.' },
     ],
   },
   {
@@ -1150,9 +1342,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to prevent recurrence',
     vietnamese: 'để ngăn chặn sự cố tái diễn',
     phonetic: '/tə prɪˈvent rɪˈkʌrəns/',
+    usage: 'Dùng khi nói về việc thêm biện pháp để ngăn sự cố xảy ra lại.',
     role: 'closer',
     examples: [
       { en: 'We added a check to prevent recurrence.', vi: 'Chúng tôi đã thêm một bước kiểm tra để ngăn chặn sự cố tái diễn.' },
+      { en: 'We added a test to prevent recurrence of this bug.', vi: 'Chúng tôi đã thêm một bài kiểm thử để ngăn chặn sự cố tái diễn.' },
+      { en: 'A check was added to prevent recurrence.', vi: 'Một bước kiểm tra đã được thêm để ngăn chặn sự cố tái diễn.' },
     ],
   },
   {
@@ -1163,9 +1358,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have restored the service',
     vietnamese: 'chúng tôi đã khôi phục dịch vụ',
     phonetic: '/wiː hæv rɪˈstɔːd ðə ˈsɜːvɪs/',
+    usage: 'Dùng khi thông báo dịch vụ đã được khôi phục và hoạt động bình thường.',
     role: 'closer',
     examples: [
       { en: 'We have restored the service and everything is normal.', vi: 'Chúng tôi đã khôi phục dịch vụ và mọi thứ trở lại bình thường.' },
+      { en: 'We have restored the service and it works.', vi: 'Chúng tôi đã khôi phục dịch vụ và nó hoạt động.' },
+      { en: 'We have restored the service, you can continue now.', vi: 'Chúng tôi đã khôi phục dịch vụ, bạn có thể tiếp tục.' },
     ],
   },
   {
@@ -1176,9 +1374,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'sorry for the trouble',
     vietnamese: 'xin lỗi vì sự bất tiện',
     phonetic: '/ˈsɒri fə ðə ˈtrʌbl/',
+    usage: 'Dùng ở cuối thông báo để xin lỗi vì sự bất tiện do sự cố gây ra.',
     role: 'closer',
     examples: [
       { en: 'Sorry for the trouble this caused you.', vi: 'Xin lỗi vì sự bất tiện mà sự cố này gây ra.' },
+      { en: 'Sorry for the trouble, thank you for waiting.', vi: 'Xin lỗi vì sự bất tiện, cảm ơn bạn đã chờ.' },
+      { en: 'Sorry for the trouble this caused.', vi: 'Xin lỗi vì sự bất tiện mà điều này gây ra.' },
     ],
   },
   {
@@ -1189,8 +1390,11 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are experiencing an outage on the platform',
     vietnamese: 'chúng tôi đang gặp sự cố gián đoạn trên nền tảng',
     phonetic: '/wiː ɑːr ɪkˈspɪəriənsɪŋ ən ˈaʊteɪdʒ ɒn ðə ˈplætfɔːm/',
+    usage: 'Dùng khi thông báo nền tảng đang gặp sự cố gián đoạn, thường là thông báo chính thức.',
     role: 'opener',
     examples: [
+      { en: 'We are experiencing an outage on the platform right now.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên nền tảng ngay bây giờ.' },
+      { en: 'We are experiencing an outage on the platform affecting login.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên nền tảng ảnh hưởng đến đăng nhập.' },
       { en: 'We are experiencing an outage on the platform right now.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên nền tảng ngay bây giờ.' },
     ],
   },
@@ -1202,9 +1406,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'there has been a critical incident with the API',
     vietnamese: 'đã xảy ra một sự cố nghiêm trọng với API',
     phonetic: '/ðeə hæz biːn ə ˈkrɪtɪkəl ˈɪnsɪdənt wɪð ðə ˌeɪ piː ˈaɪ/',
+    usage: 'Dùng khi thông báo có sự cố nghiêm trọng liên quan đến API.',
     role: 'opener',
     examples: [
       { en: 'There has been a critical incident with the API gateway.', vi: 'Đã xảy ra một sự cố nghiêm trọng với cổng API.' },
+      { en: 'There has been a critical incident with the API keys.', vi: 'Đã xảy ra một sự cố nghiêm trọng với các khóa API.' },
+      { en: 'There has been a critical incident with the API, traffic is down.', vi: 'Đã xảy ra một sự cố nghiêm trọng với API, lưu lượng đã giảm.' },
     ],
   },
   {
@@ -1215,9 +1422,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I need to escalate this to the on-call team',
     vietnamese: 'tôi cần nâng mức xử lý lên nhóm trực',
     phonetic: '/aɪ niːd tə ˈeskəleɪt ðɪs tə ði ɒn kɔːl tiːm/',
+    usage: 'Dùng khi cần chuyển sự cố lên nhóm trực để xử lý ngay.',
     role: 'opener',
     examples: [
       { en: 'I need to escalate this to the on-call team now.', vi: 'Tôi cần nâng mức xử lý việc này lên nhóm trực ngay bây giờ.' },
+      { en: 'I need to escalate this to the on-call team for the database.', vi: 'Tôi cần nâng mức xử lý lên nhóm trực phụ trách cơ sở dữ liệu.' },
+      { en: 'I need to escalate this to the on-call team right now.', vi: 'Tôi cần nâng mức xử lý lên nhóm trực ngay bây giờ.' },
     ],
   },
   {
@@ -1228,9 +1438,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'the system went down unexpectedly',
     vietnamese: 'hệ thống đã ngừng hoạt động bất ngờ',
     phonetic: '/ðə ˈsɪstəm went daʊn ˌʌnɪkˈspektɪdli/',
+    usage: 'Dùng khi thông báo hệ thống ngừng hoạt động một cách bất ngờ, không có dấu hiệu trước.',
     role: 'opener',
     examples: [
       { en: 'The system went down unexpectedly during the night.', vi: 'Hệ thống đã ngừng hoạt động bất ngờ trong đêm.' },
+      { en: 'The system went down unexpectedly at noon.', vi: 'Hệ thống đã ngừng hoạt động bất ngờ vào buổi trưa.' },
+      { en: 'The system went down unexpectedly without any warning.', vi: 'Hệ thống đã ngừng hoạt động bất ngờ mà không có cảnh báo nào.' },
     ],
   },
   {
@@ -1241,9 +1454,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on further inspection we found the cause',
     vietnamese: 'khi kiểm tra kỹ hơn, chúng tôi đã tìm ra nguyên nhân',
     phonetic: '/ɒn ˈfɜːðər ɪnˈspekʃən wiː faʊnd ðə kɔːz/',
+    usage: 'Dùng khi nói về kết quả tìm được nguyên nhân sau khi kiểm tra kỹ hơn.',
     role: 'linker',
     examples: [
       { en: 'On further inspection we found the cause of the error.', vi: 'Khi kiểm tra kỹ hơn, chúng tôi đã tìm ra nguyên nhân của lỗi.' },
+      { en: 'On further inspection we found the cause of the crash.', vi: 'Khi kiểm tra kỹ hơn, chúng tôi đã tìm ra nguyên nhân của sự cố.' },
+      { en: 'On further inspection we found the cause in the logs.', vi: 'Khi kiểm tra kỹ hơn, chúng tôi đã tìm ra nguyên nhân trong nhật ký.' },
     ],
   },
   {
@@ -1254,9 +1470,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the meantime we are monitoring closely',
     vietnamese: 'trong lúc chờ đợi, chúng tôi đang theo dõi sát sao',
     phonetic: '/ɪn ðə miːnˈtaɪm wiː ɑːr ˈmɒnɪtərɪŋ ˈkləʊsli/',
+    usage: 'Dùng khi nói về việc theo dõi sát hệ thống trong lúc chờ xử lý sự cố.',
     role: 'linker',
     examples: [
       { en: 'In the meantime we are monitoring the system closely.', vi: 'Trong lúc chờ đợi, chúng tôi đang theo dõi hệ thống sát sao.' },
+      { en: 'In the meantime we are monitoring the system closely.', vi: 'Trong lúc chờ đợi, chúng tôi đang theo dõi hệ thống sát sao.' },
+      { en: 'In the meantime we are monitoring the error rate.', vi: 'Trong lúc chờ đợi, chúng tôi đang theo dõi tỷ lệ lỗi.' },
     ],
   },
   {
@@ -1267,9 +1486,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'once we isolate the root cause we will act',
     vietnamese: 'khi xác định được nguyên nhân gốc, chúng tôi sẽ xử lý',
     phonetic: '/wʌns wiː ˈaɪsəleɪt ðə ruːt kɔːz wiː wɪl ækt/',
+    usage: 'Dùng khi nói về việc sẽ hành động ngay khi xác định được nguyên nhân gốc.',
     role: 'linker',
     examples: [
       { en: 'Once we isolate the root cause we will act immediately.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ xử lý ngay lập tức.' },
+      { en: 'Once we isolate the root cause we will act on it.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ xử lý nó.' },
+      { en: 'Once we isolate the root cause we will act fast.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ xử lý nhanh.' },
     ],
   },
   {
@@ -1280,9 +1502,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we checked the logs first',
     vietnamese: 'chúng tôi đã kiểm tra log trước tiên',
     phonetic: '/wiː tʃekt ðə lɒɡz fɜːst/',
+    usage: 'Dùng khi kể lại quy trình kiểm tra, thường là bước đầu tiên trong điều tra sự cố.',
     role: 'linker',
     examples: [
       { en: 'We checked the logs first and found several warnings.', vi: 'Chúng tôi đã kiểm tra log trước tiên và tìm thấy vài cảnh báo.' },
+      { en: 'We checked the logs first and found the error.', vi: 'Chúng tôi đã kiểm tra log trước tiên và tìm thấy lỗi.' },
+      { en: 'We checked the logs first before restarting.', vi: 'Chúng tôi đã kiểm tra log trước tiên trước khi khởi động lại.' },
     ],
   },
   {
@@ -1293,9 +1518,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'at this juncture we cannot confirm',
     vietnamese: 'ở thời điểm này, chúng tôi chưa thể xác nhận',
     phonetic: '/æt ðɪs ˈdʒʌŋktʃə wiː ˈkænət kənˈfɜːm/',
+    usage: 'Dùng khi nói rằng chưa thể xác nhận một điều gì đó tại thời điểm hiện tại.',
     role: 'filler',
     examples: [
       { en: 'At this juncture we cannot confirm when it will recover.', vi: 'Ở thời điểm này, chúng tôi chưa thể xác nhận khi nào hệ thống hồi phục.' },
+      { en: 'At this juncture we cannot confirm the cause.', vi: 'Ở thời điểm này, chúng tôi chưa thể xác nhận nguyên nhân.' },
+      { en: 'At this juncture we cannot confirm the recovery time.', vi: 'Ở thời điểm này, chúng tôi chưa thể xác nhận thời gian khôi phục.' },
     ],
   },
   {
@@ -1306,9 +1534,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to the best of our knowledge no data leaked',
     vietnamese: 'theo hiểu biết tốt nhất của chúng tôi, không có dữ liệu bị rò rỉ',
     phonetic: '/tə ðə best ɒv ˈaʊə ˈnɒlɪdʒ nəʊ ˈdeɪtə liːkt/',
+    usage: 'Dùng khi trấn an rằng không có dữ liệu bị rò rỉ trong sự cố.',
     role: 'filler',
     examples: [
       { en: 'To the best of our knowledge no data leaked during the outage.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, không có dữ liệu bị rò rỉ trong thời gian gián đoạn.' },
+      { en: 'To the best of our knowledge no data leaked during the incident.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, không có dữ liệu bị rò rỉ trong sự cố.' },
+      { en: 'To the best of our knowledge no data leaked from the backup.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, không có dữ liệu bị rò rỉ từ bản sao lưu.' },
     ],
   },
   {
@@ -1319,9 +1550,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we speak the team is on it',
     vietnamese: 'ngay lúc này, nhóm đang xử lý',
     phonetic: '/æz wiː spiːk ðə tiːm ɪz ɒn ɪt/',
+    usage: 'Dùng khi nhấn mạnh nhóm đang xử lý ngay tại thời điểm nói và đang có tiến triển.',
     role: 'filler',
     examples: [
       { en: 'As we speak the team is on it and making progress.', vi: 'Ngay lúc này, nhóm đang xử lý và đạt được tiến triển.' },
+      { en: 'As we speak the team is on it and fixing it.', vi: 'Ngay lúc này, nhóm đang xử lý và sửa nó.' },
+      { en: 'As we speak the team is on it, please wait.', vi: 'Ngay lúc này, nhóm đang xử lý, xin vui lòng chờ.' },
     ],
   },
   {
@@ -1332,9 +1566,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as far as we can tell the issue is isolated',
     vietnamese: 'theo như chúng tôi nhận thấy, sự cố đã được cô lập',
     phonetic: '/æz fɑːr æz wiː kən tel ði ˈɪʃuː ɪz ˈaɪsəleɪtɪd/',
+    usage: 'Dùng khi nêu nhận định rằng sự cố đã được giới hạn trong một phạm vi nhất định.',
     role: 'filler',
     examples: [
       { en: 'As far as we can tell the issue is isolated to one region.', vi: 'Theo như chúng tôi nhận thấy, sự cố chỉ giới hạn ở một khu vực.' },
+      { en: 'As far as we can tell the issue is isolated to one service.', vi: 'Theo như chúng tôi nhận thấy, sự cố đã được cô lập trong một dịch vụ.' },
+      { en: 'As far as we can tell the issue is isolated, not spreading.', vi: 'Theo như chúng tôi nhận thấy, sự cố đã được cô lập, không lây lan.' },
     ],
   },
   {
@@ -1345,9 +1582,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we will keep you posted on the findings',
     vietnamese: 'chúng tôi sẽ cập nhật thông tin về kết quả điều tra',
     phonetic: '/wiː wɪl kiːp juː pəʊst ɒn ðə ˈfaɪndɪŋz/',
+    usage: 'Dùng khi hứa sẽ cập nhật kết quả điều tra cho người nghe.',
     role: 'closer',
     examples: [
       { en: 'We will keep you posted on the findings of the review.', vi: 'Chúng tôi sẽ cập nhật thông tin về kết quả của buổi đánh giá.' },
+      { en: 'We will keep you posted on the findings of the analysis.', vi: 'Chúng tôi sẽ cập nhật thông tin về kết quả điều tra.' },
+      { en: 'We will keep you posted on the findings soon.', vi: 'Chúng tôi sẽ sớm cập nhật thông tin về kết quả điều tra.' },
     ],
   },
   {
@@ -1358,9 +1598,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to prevent recurrence we added a test',
     vietnamese: 'để ngăn chặn sự cố tái diễn, chúng tôi đã thêm một bài kiểm thử',
     phonetic: '/tə prɪˈvent rɪˈkʌrəns wiː ˈædɪd ə test/',
+    usage: 'Dùng khi nói về việc đã thêm bài kiểm thử để ngăn sự cố tái diễn.',
     role: 'closer',
     examples: [
       { en: 'To prevent recurrence we added a test for this scenario.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã thêm một bài kiểm thử cho tình huống này.' },
+      { en: 'To prevent recurrence we added a test for this case.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã thêm một bài kiểm thử cho trường hợp này.' },
+      { en: 'To prevent recurrence we added a test in the pipeline.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã thêm một bài kiểm thử vào quy trình.' },
     ],
   },
   {
@@ -1371,9 +1614,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have restored the service fully',
     vietnamese: 'chúng tôi đã khôi phục dịch vụ hoàn toàn',
     phonetic: '/wiː hæv rɪˈstɔːd ðə ˈsɜːvɪs ˈfʊli/',
+    usage: 'Dùng khi thông báo dịch vụ đã được khôi phục hoàn toàn và xác nhận hoạt động.',
     role: 'closer',
     examples: [
       { en: 'We have restored the service fully and confirmed it works.', vi: 'Chúng tôi đã khôi phục dịch vụ hoàn toàn và xác nhận nó hoạt động.' },
+      { en: 'We have restored the service fully and verified it.', vi: 'Chúng tôi đã khôi phục dịch vụ hoàn toàn và xác minh nó.' },
+      { en: 'We have restored the service fully for all users.', vi: 'Chúng tôi đã khôi phục dịch vụ hoàn toàn cho tất cả người dùng.' },
     ],
   },
   {
@@ -1384,9 +1630,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'sorry for the inconvenience',
     vietnamese: 'xin lỗi vì sự bất tiện',
     phonetic: '/ˈsɒri fə ði ˌɪnkənˈviːniəns/',
+    usage: 'Dùng để xin lỗi vì sự bất tiện do thời gian ngừng hoạt động gây ra.',
     role: 'closer',
     examples: [
       { en: 'Sorry for the inconvenience caused by the downtime.', vi: 'Xin lỗi vì sự bất tiện do thời gian gián đoạn gây ra.' },
+      { en: 'Sorry for the inconvenience caused by the outage.', vi: 'Xin lỗi vì sự bất tiện do sự gián đoạn gây ra.' },
+      { en: 'Sorry for the inconvenience, we are back now.', vi: 'Xin lỗi vì sự bất tiện, chúng tôi đã trở lại.' },
     ],
   },
   {
@@ -1397,9 +1646,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are experiencing an outage across services',
     vietnamese: 'chúng tôi đang gặp sự cố gián đoạn trên nhiều dịch vụ',
     phonetic: '/wiː ɑːr ɪkˈspɪəriənsɪŋ ən ˈaʊteɪdʒ əˈkrɒs ˈsɜːvɪsɪz/',
+    usage: 'Dùng khi thông báo sự cố ảnh hưởng đến nhiều dịch vụ cùng lúc.',
     role: 'opener',
     examples: [
       { en: 'We are experiencing an outage across multiple services.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên nhiều dịch vụ.' },
+      { en: 'We are experiencing an outage across multiple services now.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên nhiều dịch vụ ngay bây giờ.' },
+      { en: 'We are experiencing an outage across services, stand by.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trên nhiều dịch vụ, xin chờ.' },
     ],
   },
   {
@@ -1410,9 +1662,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'there has been a critical incident reported',
     vietnamese: 'đã có một sự cố nghiêm trọng được báo cáo',
     phonetic: '/ðeə hæz biːn ə ˈkrɪtɪkəl ˈɪnsɪdənt rɪˈpɔːtɪd/',
+    usage: 'Dùng khi thông báo có sự cố nghiêm trọng đã được báo cáo bởi người dùng.',
     role: 'opener',
     examples: [
       { en: 'There has been a critical incident reported by several users.', vi: 'Đã có một sự cố nghiêm trọng được nhiều người dùng báo cáo.' },
+      { en: 'There has been a critical incident reported by the support team.', vi: 'Đã có một sự cố nghiêm trọng được báo cáo bởi đội hỗ trợ.' },
+      { en: 'There has been a critical incident reported minutes ago.', vi: 'Đã có một sự cố nghiêm trọng được báo cáo cách đây vài phút.' },
     ],
   },
   {
@@ -1423,9 +1678,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I need to escalate this incident',
     vietnamese: 'tôi cần nâng mức xử lý sự cố này',
     phonetic: '/aɪ niːd tə ˈeskəleɪt ðɪs ˈɪnsɪdənt/',
+    usage: 'Dùng khi cần nâng cấp sự cố lên người quản lý sự cố hoặc cấp cao hơn.',
     role: 'opener',
     examples: [
       { en: 'I need to escalate this incident to the incident manager.', vi: 'Tôi cần nâng mức xử lý sự cố này lên quản lý sự cố.' },
+      { en: 'I need to escalate this incident to the manager on duty.', vi: 'Tôi cần nâng mức xử lý sự cố này lên người quản lý trực.' },
+      { en: 'I need to escalate this incident to the security team.', vi: 'Tôi cần nâng mức xử lý sự cố này lên đội bảo mật.' },
     ],
   },
   {
@@ -1436,9 +1694,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'the system went down due to a config change',
     vietnamese: 'hệ thống ngừng hoạt động do một thay đổi cấu hình',
     phonetic: '/ðə ˈsɪstəm went daʊn djuː tə ə kənˈfɪɡ tʃeɪndʒ/',
+    usage: 'Dùng khi nói rõ nguyên nhân hệ thống ngừng hoạt động là do thay đổi cấu hình.',
     role: 'opener',
     examples: [
       { en: 'The system went down due to a config change last night.', vi: 'Hệ thống ngừng hoạt động do một thay đổi cấu hình đêm qua.' },
+      { en: 'The system went down due to a config change yesterday.', vi: 'Hệ thống ngừng hoạt động do một thay đổi cấu hình hôm qua.' },
+      { en: 'The system went down due to a config change in the gateway.', vi: 'Hệ thống ngừng hoạt động do một thay đổi cấu hình trong cổng kết nối.' },
     ],
   },
   {
@@ -1449,9 +1710,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on further inspection the issue was deeper',
     vietnamese: 'khi kiểm tra kỹ hơn, vấn đề còn sâu hơn',
     phonetic: '/ɒn ˈfɜːðər ɪnˈspekʃən ði ˈɪʃuː wɒz ˈdiːpə/',
+    usage: 'Dùng khi nói rằng vấn đề phức tạp hơn dự kiến sau khi kiểm tra kỹ.',
     role: 'linker',
     examples: [
       { en: 'On further inspection the issue was deeper than expected.', vi: 'Khi kiểm tra kỹ hơn, vấn đề còn sâu hơn dự kiến.' },
+      { en: 'On further inspection the issue was deeper than we thought.', vi: 'Khi kiểm tra kỹ hơn, vấn đề còn sâu hơn chúng tôi nghĩ.' },
+      { en: 'On further inspection the issue was deeper and wider.', vi: 'Khi kiểm tra kỹ hơn, vấn đề còn sâu hơn và rộng hơn.' },
     ],
   },
   {
@@ -1462,9 +1726,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the meantime we applied a workaround',
     vietnamese: 'trong lúc chờ đợi, chúng tôi đã áp dụng giải pháp tạm thời',
     phonetic: '/ɪn ðə miːnˈtaɪm wiː əˈplaɪd ə ˈwɜːkəraʊnd/',
+    usage: 'Dùng khi nói về việc đã áp dụng giải pháp tạm thời để giảm tác động trong lúc chờ.',
     role: 'linker',
     examples: [
       { en: 'In the meantime we applied a workaround to reduce impact.', vi: 'Trong lúc chờ đợi, chúng tôi đã áp dụng giải pháp tạm thời để giảm tác động.' },
+      { en: 'In the meantime we applied a workaround for the login issue.', vi: 'Trong lúc chờ đợi, chúng tôi đã áp dụng giải pháp tạm thời cho vấn đề đăng nhập.' },
+      { en: 'In the meantime we applied a workaround to keep it running.', vi: 'Trong lúc chờ đợi, chúng tôi đã áp dụng giải pháp tạm thời để giữ hệ thống chạy.' },
     ],
   },
   {
@@ -1475,9 +1742,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'once we isolate the root cause we will patch it',
     vietnamese: 'khi xác định được nguyên nhân gốc, chúng tôi sẽ vá lỗi',
     phonetic: '/wʌns wiː ˈaɪsəleɪt ðə ruːt kɔːz wiː wɪl pætʃ ɪt/',
+    usage: 'Dùng khi nói về việc sẽ vá lỗi trong production sau khi xác định được nguyên nhân gốc.',
     role: 'linker',
     examples: [
       { en: 'Once we isolate the root cause we will patch it in production.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ vá lỗi trên môi trường sản xuất.' },
+      { en: 'Once we isolate the root cause we will patch it today.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ vá lỗi hôm nay.' },
+      { en: 'Once we isolate the root cause we will patch it in the code.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ vá lỗi trong mã nguồn.' },
     ],
   },
   {
@@ -1488,9 +1758,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we traced the traffic through the logs',
     vietnamese: 'chúng tôi đã dò luồng truy cập qua log',
     phonetic: '/wiː treɪst ðə ˈtræfɪk θruː ðə lɒɡz/',
+    usage: 'Dùng khi nói về việc đã dò luồng truy cập qua log và phát hiện bất thường.',
     role: 'linker',
     examples: [
       { en: 'We traced the traffic through the logs and found the anomaly.', vi: 'Chúng tôi đã dò luồng truy cập qua log và tìm thấy điểm bất thường.' },
+      { en: 'We traced the traffic through the logs and found the spike.', vi: 'Chúng tôi đã dò luồng truy cập qua log và tìm thấy đột biến.' },
+      { en: 'We traced the traffic through the logs for clues.', vi: 'Chúng tôi đã dò luồng truy cập qua log để tìm manh mối.' },
     ],
   },
   {
@@ -1501,9 +1774,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'at this juncture the impact is limited',
     vietnamese: 'ở thời điểm này, mức độ ảnh hưởng còn hạn chế',
     phonetic: '/æt ðɪs ˈdʒʌŋktʃə ði ˈɪmpækt ɪz ˈlɪmɪtɪd/',
+    usage: 'Dùng khi nói rằng mức độ ảnh hưởng hiện tại còn hạn chế.',
     role: 'filler',
     examples: [
       { en: 'At this juncture the impact is limited to one region.', vi: 'Ở thời điểm này, mức độ ảnh hưởng chỉ giới hạn ở một khu vực.' },
+      { en: 'At this juncture the impact is limited to a few users.', vi: 'Ở thời điểm này, mức độ ảnh hưởng còn hạn chế trong vài người dùng.' },
+      { en: 'At this juncture the impact is limited and under control.', vi: 'Ở thời điểm này, mức độ ảnh hưởng còn hạn chế và trong tầm kiểm soát.' },
     ],
   },
   {
@@ -1514,9 +1790,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to the best of our knowledge the system is safe',
     vietnamese: 'theo hiểu biết tốt nhất của chúng tôi, hệ thống vẫn an toàn',
     phonetic: '/tə ðə best ɒv ˈaʊə ˈnɒlɪdʒ ðə ˈsɪstəm ɪz seɪf/',
+    usage: 'Dùng khi trấn an rằng hệ thống an toàn trước sự cố hoặc mối đe dọa.',
     role: 'filler',
     examples: [
       { en: 'To the best of our knowledge the system is safe from the breach.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, hệ thống vẫn an toàn trước vụ tấn công.' },
+      { en: 'To the best of our knowledge the system is safe from the attack.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, hệ thống an toàn trước cuộc tấn công.' },
+      { en: 'To the best of our knowledge the system is safe and secure.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, hệ thống an toàn và bảo mật.' },
     ],
   },
   {
@@ -1527,9 +1806,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we speak we are rolling back',
     vietnamese: 'ngay lúc này, chúng tôi đang khôi phục lại phiên bản cũ',
     phonetic: '/æz wiː spiːk wiː ɑːr ˈrəʊlɪŋ bæk/',
+    usage: 'Dùng khi nói về việc đang khôi phục về phiên bản cũ ngay lúc này.',
     role: 'filler',
     examples: [
       { en: 'As we speak we are rolling back to the previous version.', vi: 'Ngay lúc này, chúng tôi đang khôi phục về phiên bản trước.' },
+      { en: 'As we speak we are rolling back the release.', vi: 'Ngay lúc này, chúng tôi đang khôi phục lại phiên bản cũ của bản phát hành.' },
+      { en: 'As we speak we are rolling back the config change.', vi: 'Ngay lúc này, chúng tôi đang khôi phục lại thay đổi cấu hình.' },
     ],
   },
   {
@@ -1540,9 +1822,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as far as we can tell the failure is intermittent',
     vietnamese: 'theo như chúng tôi nhận thấy, lỗi xuất hiện không liên tục',
     phonetic: '/æz fɑːr æz wiː kən tel ðə ˈfeɪljər ɪz ˌɪntəˈmɪtənt/',
+    usage: 'Dùng khi nói rằng lỗi xuất hiện không liên tục, khó nắm bắt.',
     role: 'filler',
     examples: [
       { en: 'As far as we can tell the failure is intermittent, not constant.', vi: 'Theo như chúng tôi nhận thấy, lỗi xuất hiện không liên tục chứ không thường xuyên.' },
+      { en: 'As far as we can tell the failure is intermittent in production.', vi: 'Theo như chúng tôi nhận thấy, lỗi xuất hiện không liên tục trong production.' },
+      { en: 'As far as we can tell the failure is intermittent, not consistent.', vi: 'Theo như chúng tôi nhận thấy, lỗi xuất hiện không liên tục, không ổn định.' },
     ],
   },
   {
@@ -1553,9 +1838,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we will keep you posted through the channel',
     vietnamese: 'chúng tôi sẽ cập nhật thông tin qua kênh này',
     phonetic: '/wiː wɪl kiːp juː pəʊst θruː ðə ˈtʃænəl/',
+    usage: 'Dùng khi hứa sẽ cập nhật thông tin qua một kênh cụ thể.',
     role: 'closer',
     examples: [
       { en: 'We will keep you posted through the status channel.', vi: 'Chúng tôi sẽ cập nhật thông tin qua kênh trạng thái.' },
+      { en: 'We will keep you posted through the status page.', vi: 'Chúng tôi sẽ cập nhật thông tin qua trang trạng thái.' },
+      { en: 'We will keep you posted through the team chat.', vi: 'Chúng tôi sẽ cập nhật thông tin qua kênh chat của nhóm.' },
     ],
   },
   {
@@ -1566,9 +1854,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to prevent recurrence we wrote a postmortem',
     vietnamese: 'để ngăn chặn sự cố tái diễn, chúng tôi đã viết bản tổng kết sau sự cố',
     phonetic: '/tə prɪˈvent rɪˈkʌrəns wiː rəʊt ə ˈpəʊstmɔːtəm/',
+    usage: 'Dùng khi nói về việc đã viết bản tổng kết sau sự cố để ngăn tái diễn.',
     role: 'closer',
     examples: [
       { en: 'To prevent recurrence we wrote a postmortem and shared it.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã viết bản tổng kết và chia sẻ nó.' },
+      { en: 'To prevent recurrence we wrote a postmortem and shared it.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã viết bản tổng kết sau sự cố và chia sẻ nó.' },
+      { en: 'To prevent recurrence we wrote a postmortem with action items.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã viết bản tổng kết sau sự cố kèm các mục hành động.' },
     ],
   },
   {
@@ -1579,9 +1870,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have restored the service for everyone',
     vietnamese: 'chúng tôi đã khôi phục dịch vụ cho tất cả mọi người',
     phonetic: '/wiː hæv rɪˈstɔːd ðə ˈsɜːvɪs fə ˈevriwʌn/',
+    usage: 'Dùng khi thông báo dịch vụ đã được khôi phục cho tất cả mọi người bị ảnh hưởng.',
     role: 'closer',
     examples: [
       { en: 'We have restored the service for everyone affected.', vi: 'Chúng tôi đã khôi phục dịch vụ cho tất cả những người bị ảnh hưởng.' },
+      { en: 'We have restored the service for everyone now.', vi: 'Chúng tôi đã khôi phục dịch vụ cho tất cả mọi người ngay bây giờ.' },
+      { en: 'We have restored the service for everyone affected by the outage.', vi: 'Chúng tôi đã khôi phục dịch vụ cho tất cả mọi người bị ảnh hưởng bởi sự cố.' },
     ],
   },
   {
@@ -1592,9 +1886,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we apologize for the disruption',
     vietnamese: 'chúng tôi xin lỗi về sự gián đoạn',
     phonetic: '/wiː əˈpɒlədʒaɪz fə ðə dɪsˈrʌpʃən/',
+    usage: 'Dùng để xin lỗi về sự gián đoạn đã gây ra cho người dùng hoặc nhóm.',
     role: 'closer',
     examples: [
       { en: 'We apologize for the disruption this caused your team.', vi: 'Chúng tôi xin lỗi về sự gián đoạn mà sự cố này gây ra cho nhóm của bạn.' },
+      { en: 'We apologize for the disruption to your work.', vi: 'Chúng tôi xin lỗi về sự gián đoạn công việc của bạn.' },
+      { en: 'We apologize for the disruption and thank you for waiting.', vi: 'Chúng tôi xin lỗi về sự gián đoạn và cảm ơn bạn đã chờ đợi.' },
     ],
   },
   {
@@ -1605,9 +1902,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we are experiencing an outage in the region',
     vietnamese: 'chúng tôi đang gặp sự cố gián đoạn trong khu vực',
     phonetic: '/wiː ɑːr ɪkˈspɪəriənsɪŋ ən ˈaʊteɪdʒ ɪn ðə ˈriːdʒən/',
+    usage: 'Dùng khi thông báo sự cố gián đoạn xảy ra tại một khu vực địa lý cụ thể.',
     role: 'opener',
     examples: [
       { en: 'We are experiencing an outage in the EU region at the moment.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trong khu vực EU vào lúc này.' },
+      { en: 'We are experiencing an outage in the Asia region now.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trong khu vực châu Á ngay bây giờ.' },
+      { en: 'We are experiencing an outage in the region where the DC is.', vi: 'Chúng tôi đang gặp sự cố gián đoạn trong khu vực đặt trung tâm dữ liệu.' },
     ],
   },
   {
@@ -1618,9 +1918,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'there has been a critical incident with authentication',
     vietnamese: 'đã xảy ra một sự cố nghiêm trọng với hệ thống xác thực',
     phonetic: '/ðeə hæz biːn ə ˈkrɪtɪkəl ˈɪnsɪdənt wɪð ɔːˌθentɪˈkeɪʃən/',
+    usage: 'Dùng khi thông báo sự cố nghiêm trọng với hệ thống xác thực ảnh hưởng đến người dùng.',
     role: 'opener',
     examples: [
       { en: 'There has been a critical incident with authentication for all users.', vi: 'Đã xảy ra một sự cố nghiêm trọng với hệ thống xác thực cho tất cả người dùng.' },
+      { en: 'There has been a critical incident with authentication for the app.', vi: 'Đã xảy ra một sự cố nghiêm trọng với hệ thống xác thực cho ứng dụng.' },
+      { en: 'There has been a critical incident with authentication, login fails.', vi: 'Đã xảy ra một sự cố nghiêm trọng với hệ thống xác thực, đăng nhập thất bại.' },
     ],
   },
   {
@@ -1631,9 +1934,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'I need to escalate this to the highest level',
     vietnamese: 'tôi cần nâng mức xử lý lên cấp cao nhất',
     phonetic: '/aɪ niːd tə ˈeskəleɪt ðɪs tə ðə ˈhaɪɪst ˈlevəl/',
+    usage: 'Dùng khi cần nâng sự cố lên cấp quản lý cao nhất vì mức độ nghiêm trọng.',
     role: 'opener',
     examples: [
       { en: 'I need to escalate this to the highest level of management.', vi: 'Tôi cần nâng mức xử lý việc này lên cấp quản lý cao nhất.' },
+      { en: 'I need to escalate this to the highest level of the company.', vi: 'Tôi cần nâng mức xử lý lên cấp cao nhất của công ty.' },
+      { en: 'I need to escalate this to the highest level of the incident command.', vi: 'Tôi cần nâng mức xử lý lên cấp cao nhất của ban chỉ huy sự cố.' },
     ],
   },
   {
@@ -1644,9 +1950,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'the system went down with no warning',
     vietnamese: 'hệ thống ngừng hoạt động mà không có cảnh báo nào',
     phonetic: '/ðə ˈsɪstəm went daʊn wɪð nəʊ ˈwɔːnɪŋ/',
+    usage: 'Dùng khi thông báo hệ thống ngừng hoạt động đột ngột, ảnh hưởng đến nhiều người dùng.',
     role: 'opener',
     examples: [
       { en: 'The system went down with no warning, affecting thousands of users.', vi: 'Hệ thống ngừng hoạt động mà không có cảnh báo, ảnh hưởng đến hàng nghìn người dùng.' },
+      { en: 'The system went down with no warning, affecting many users.', vi: 'Hệ thống ngừng hoạt động mà không có cảnh báo, ảnh hưởng đến nhiều người dùng.' },
+      { en: 'The system went down with no warning this morning.', vi: 'Hệ thống ngừng hoạt động mà không có cảnh báo sáng nay.' },
     ],
   },
   {
@@ -1657,9 +1966,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'on further inspection the root cause emerged',
     vietnamese: 'khi kiểm tra kỹ hơn, nguyên nhân gốc đã lộ ra',
     phonetic: '/ɒn ˈfɜːðər ɪnˈspekʃən ðə ruːt kɔːz ɪˈmɜːdʒd/',
+    usage: 'Dùng khi nói về việc nguyên nhân gốc đã được phát hiện sau khi kiểm tra kỹ.',
     role: 'linker',
     examples: [
       { en: 'On further inspection the root cause emerged from the logs.', vi: 'Khi kiểm tra kỹ hơn, nguyên nhân gốc đã lộ ra từ log.' },
+      { en: 'On further inspection the root cause emerged from the data.', vi: 'Khi kiểm tra kỹ hơn, nguyên nhân gốc đã lộ ra từ dữ liệu.' },
+      { en: 'On further inspection the root cause emerged clearly.', vi: 'Khi kiểm tra kỹ hơn, nguyên nhân gốc đã lộ ra rõ ràng.' },
     ],
   },
   {
@@ -1670,9 +1982,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'in the meantime we have mitigated the risk',
     vietnamese: 'trong lúc chờ đợi, chúng tôi đã giảm thiểu rủi ro',
     phonetic: '/ɪn ðə miːnˈtaɪm wiː hæv ˈmɪtɪɡeɪtɪd ðə rɪsk/',
+    usage: 'Dùng khi nói về việc đã giảm thiểu rủi ro tạm thời trong lúc chờ giải pháp cuối.',
     role: 'linker',
     examples: [
       { en: 'In the meantime we have mitigated the risk with a hotfix.', vi: 'Trong lúc chờ đợi, chúng tôi đã giảm thiểu rủi ro bằng một bản vá nhanh.' },
+      { en: 'In the meantime we have mitigated the risk with a workaround.', vi: 'Trong lúc chờ đợi, chúng tôi đã giảm thiểu rủi ro bằng giải pháp tạm thời.' },
+      { en: 'In the meantime we have mitigated the risk of data loss.', vi: 'Trong lúc chờ đợi, chúng tôi đã giảm thiểu rủi ro mất dữ liệu.' },
     ],
   },
   {
@@ -1683,9 +1998,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'once we isolate the root cause we will report',
     vietnamese: 'khi xác định được nguyên nhân gốc, chúng tôi sẽ báo cáo',
     phonetic: '/wʌns wiː ˈaɪsəleɪt ðə ruːt kɔːz wiː wɪl rɪˈpɔːt/',
+    usage: 'Dùng khi nói về việc sẽ báo cáo kết quả sau khi xác định được nguyên nhân gốc.',
     role: 'linker',
     examples: [
       { en: 'Once we isolate the root cause we will report our findings.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ báo cáo những phát hiện của mình.' },
+      { en: 'Once we isolate the root cause we will report to the board.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ báo cáo lên ban giám đốc.' },
+      { en: 'Once we isolate the root cause we will report the findings.', vi: 'Khi xác định được nguyên nhân gốc, chúng tôi sẽ báo cáo các phát hiện.' },
     ],
   },
   {
@@ -1696,9 +2014,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'a detailed analysis of the incident shows',
     vietnamese: 'một phân tích chi tiết về sự cố cho thấy',
     phonetic: '/ə ˈdiːteɪld əˈnæləsɪs ɒv ði ˈɪnsɪdənt ʃəʊz/',
+    usage: 'Dùng khi giới thiệu kết quả của một phân tích chi tiết về sự cố.',
     role: 'linker',
     examples: [
       { en: 'A detailed analysis of the incident shows a cascading failure.', vi: 'Một phân tích chi tiết về sự cố cho thấy một chuỗi lỗi lan truyền.' },
+      { en: 'A detailed analysis of the incident shows a config error.', vi: 'Một phân tích chi tiết về sự cố cho thấy một lỗi cấu hình.' },
+      { en: 'A detailed analysis of the incident shows the trigger point.', vi: 'Một phân tích chi tiết về sự cố cho thấy điểm khởi phát.' },
     ],
   },
   {
@@ -1709,9 +2030,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'at this juncture we must be cautious',
     vietnamese: 'ở thời điểm này, chúng ta phải thận trọng',
     phonetic: '/æt ðɪs ˈdʒʌŋktʃə wiː mʌst biː ˈkɔːʃəs/',
+    usage: 'Dùng khi nhấn mạnh cần thận trọng trước khi thực hiện thay đổi tại thời điểm hiện tại.',
     role: 'filler',
     examples: [
       { en: 'At this juncture we must be cautious about changing the schema.', vi: 'Ở thời điểm này, chúng ta phải thận trọng với việc thay đổi schema.' },
+      { en: 'At this juncture we must be cautious about new releases.', vi: 'Ở thời điểm này, chúng ta phải thận trọng với các bản phát hành mới.' },
+      { en: 'At this juncture we must be cautious with the rollout.', vi: 'Ở thời điểm này, chúng ta phải thận trọng với việc triển khai.' },
     ],
   },
   {
@@ -1722,9 +2046,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to the best of our knowledge the impact is contained',
     vietnamese: 'theo hiểu biết tốt nhất của chúng tôi, mức độ ảnh hưởng đã được kiểm soát',
     phonetic: '/tə ðə best ɒv ˈaʊə ˈnɒlɪdʒ ði ˈɪmpækt ɪz kənˈteɪnd/',
+    usage: 'Dùng khi nói rằng mức độ ảnh hưởng đã được kiểm soát theo hiểu biết hiện tại.',
     role: 'filler',
     examples: [
       { en: 'To the best of our knowledge the impact is contained for now.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, mức độ ảnh hưởng đã được kiểm soát.' },
+      { en: 'To the best of our knowledge the impact is contained now.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, mức độ ảnh hưởng đã được kiểm soát.' },
+      { en: 'To the best of our knowledge the impact is contained to one region.', vi: 'Theo hiểu biết tốt nhất của chúng tôi, mức độ ảnh hưởng được kiểm soát trong một khu vực.' },
     ],
   },
   {
@@ -1735,9 +2062,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as we speak the recovery is underway',
     vietnamese: 'ngay lúc này, quá trình khôi phục đang được tiến hành',
     phonetic: '/æz wiː spiːk ðə rɪˈkʌvəri ɪz ˌʌndəˈweɪ/',
+    usage: 'Dùng khi nói rằng quá trình khôi phục đang được tiến hành ngay lúc này.',
     role: 'filler',
     examples: [
       { en: 'As we speak the recovery is underway across the fleet.', vi: 'Ngay lúc này, quá trình khôi phục đang được tiến hành trên toàn bộ hệ thống.' },
+      { en: 'As we speak the recovery is underway across the systems.', vi: 'Ngay lúc này, quá trình khôi phục đang được tiến hành trên các hệ thống.' },
+      { en: 'As we speak the recovery is underway, expect updates.', vi: 'Ngay lúc này, quá trình khôi phục đang được tiến hành, hãy chờ cập nhật.' },
     ],
   },
   {
@@ -1748,9 +2078,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'as far as we can tell the chain of events is clear',
     vietnamese: 'theo như chúng tôi nhận thấy, chuỗi sự kiện đã rõ ràng',
     phonetic: '/æz fɑːr æz wiː kən tel ðə tʃeɪn ɒv ɪˈvents ɪz klɪə/',
+    usage: 'Dùng khi nói rằng chuỗi sự kiện dẫn đến sự cố đã được làm rõ.',
     role: 'filler',
     examples: [
       { en: 'As far as we can tell the chain of events is clear now.', vi: 'Theo như chúng tôi nhận thấy, chuỗi sự kiện đã rõ ràng.' },
+      { en: 'As far as we can tell the chain of events is clear from the logs.', vi: 'Theo như chúng tôi nhận thấy, chuỗi sự kiện đã rõ ràng từ nhật ký.' },
+      { en: 'As far as we can tell the chain of events is clear and simple.', vi: 'Theo như chúng tôi nhận thấy, chuỗi sự kiện đã rõ ràng và đơn giản.' },
     ],
   },
   {
@@ -1761,9 +2094,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we will keep you posted on the timeline',
     vietnamese: 'chúng tôi sẽ cập nhật thông tin về mốc thời gian',
     phonetic: '/wiː wɪl kiːp juː pəʊst ɒn ðə ˈtaɪmlaɪn/',
+    usage: 'Dùng khi hứa sẽ cập nhật thông tin về mốc thời gian xử lý.',
     role: 'closer',
     examples: [
       { en: 'We will keep you posted on the timeline for the fix.', vi: 'Chúng tôi sẽ cập nhật thông tin về mốc thời gian cho bản sửa lỗi.' },
+      { en: 'We will keep you posted on the timeline for recovery.', vi: 'Chúng tôi sẽ cập nhật thông tin về mốc thời gian khôi phục.' },
+      { en: 'We will keep you posted on the timeline as it changes.', vi: 'Chúng tôi sẽ cập nhật thông tin về mốc thời gian khi có thay đổi.' },
     ],
   },
   {
@@ -1774,9 +2110,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'to prevent recurrence we introduced safeguards',
     vietnamese: 'để ngăn chặn sự cố tái diễn, chúng tôi đã đưa ra các biện pháp bảo vệ',
     phonetic: '/tə prɪˈvent rɪˈkʌrəns wiː ˌɪntrəˈdjuːst ˈseɪfɡɑːdz/',
+    usage: 'Dùng khi nói về việc đã đưa ra các biện pháp bảo vệ để ngăn sự cố tái diễn.',
     role: 'closer',
     examples: [
       { en: 'To prevent recurrence we introduced safeguards in the pipeline.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã đưa ra các biện pháp bảo vệ trong quy trình.' },
+      { en: 'To prevent recurrence we introduced safeguards in the deployment.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã đưa ra các biện pháp bảo vệ trong quy trình triển khai.' },
+      { en: 'To prevent recurrence we introduced safeguards for the database.', vi: 'Để ngăn chặn sự cố tái diễn, chúng tôi đã đưa ra các biện pháp bảo vệ cho cơ sở dữ liệu.' },
     ],
   },
   {
@@ -1787,9 +2126,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we have restored the service to full capacity',
     vietnamese: 'chúng tôi đã khôi phục dịch vụ về công suất tối đa',
     phonetic: '/wiː hæv rɪˈstɔːd ðə ˈsɜːvɪs tə fʊl kəˈpæsəti/',
+    usage: 'Dùng khi thông báo dịch vụ đã được khôi phục về công suất tối đa.',
     role: 'closer',
     examples: [
       { en: 'We have restored the service to full capacity for all users.', vi: 'Chúng tôi đã khôi phục dịch vụ về công suất tối đa cho tất cả người dùng.' },
+      { en: 'We have restored the service to full capacity for the platform.', vi: 'Chúng tôi đã khôi phục dịch vụ về công suất tối đa cho nền tảng.' },
+      { en: 'We have restored the service to full capacity as of now.', vi: 'Chúng tôi đã khôi phục dịch vụ về công suất tối đa kể từ bây giờ.' },
     ],
   },
   {
@@ -1800,9 +2142,12 @@ export const SEED_CHUNKS: PhraseChunk[] = [
     english: 'we sincerely apologize for the downtime',
     vietnamese: 'chúng tôi thành thật xin lỗi về thời gian gián đoạn',
     phonetic: '/wiː sɪnˈsɪəli əˈpɒlədʒaɪz fə ðə ˈdaʊntaɪm/',
+    usage: 'Dùng khi thành thật xin lỗi về thời gian gián đoạn và ảnh hưởng của nó.',
     role: 'closer',
     examples: [
       { en: 'We sincerely apologize for the downtime and any loss it caused.', vi: 'Chúng tôi thành thật xin lỗi về thời gian gián đoạn và mọi tổn thất mà nó gây ra.' },
+      { en: 'We sincerely apologize for the downtime caused today.', vi: 'Chúng tôi thành thật xin lỗi về thời gian gián đoạn hôm nay.' },
+      { en: 'We sincerely apologize for the downtime and any inconvenience.', vi: 'Chúng tôi thành thật xin lỗi về thời gian gián đoạn và mọi bất tiện.' },
     ],
   },
 
