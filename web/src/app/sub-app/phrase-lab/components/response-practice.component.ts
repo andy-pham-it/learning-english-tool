@@ -126,7 +126,7 @@ interface TurnResult {
           @if (showAnswer() && turn.answers[0]) {
             <div class="mt-2 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2">
               <p class="text-xs font-semibold text-amber-700">Đáp án tham khảo</p>
-              <p class="mt-1 text-sm text-amber-900">{{ answerText(turn.answers[0]) }}</p>
+              <p class="mt-1 text-sm text-amber-900">{{ answerText(turn.answers[0].ids) }}</p>
             </div>
           }
           @if (showReply() || showAnswer()) {
@@ -242,7 +242,7 @@ export class ResponsePracticeComponent {
   revealAnswer(): void {
     const turn = this.currentTurn();
     if (!turn) return;
-    const best = turn.answers[0] ?? [];
+    const best = turn.answers[0]?.ids ?? [];
     this.turnResults.update((rs) => [...rs, { firstTry: false, wrongChunkIds: best }]);
     for (const id of best) {
       void this.progress.reviewChunk(id, 'again');

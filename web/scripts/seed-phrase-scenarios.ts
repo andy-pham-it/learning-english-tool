@@ -17,7 +17,7 @@ const BATCH_MAX = 400; // Firestore giới hạn 500 ops/batch
 
 function verifyChunkIds(): void {
   const known = new Set(SEED_CHUNKS.map((c) => c.id));
-  const referenced = [...new Set(SEED_SCENARIOS.flatMap((s) => s.turns.flatMap((t) => t.answers.flat())))];
+  const referenced = [...new Set(SEED_SCENARIOS.flatMap((s) => s.turns.flatMap((t) => t.answers.flatMap((a) => a.ids))))];
   const missing = referenced.filter((id) => !known.has(id));
   if (missing.length > 0) {
     console.error(`Missing chunk IDs in SEED_CHUNKS: ${missing.join(', ')}`);

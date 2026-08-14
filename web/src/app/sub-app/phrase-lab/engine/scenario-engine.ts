@@ -39,7 +39,7 @@ export function buildTurnPool(
   turn: ScenarioTurn,
   chunks: Map<string, PhraseChunk>
 ): ChunkOption[] {
-  const answerIds = new Set(turn.answers.flat());
+  const answerIds = new Set(turn.answers.flatMap((a) => a.ids));
   const answerChunks: PhraseChunk[] = [];
   for (const id of answerIds) {
     const c = chunks.get(id);
@@ -81,9 +81,10 @@ export function checkAnswer(
   turn: ScenarioTurn
 ): AnswerCheck {
   for (const answer of turn.answers) {
-    if (answer.length !== selectedIds.length) continue;
-    if (answer.every((id, i) => id === selectedIds[i])) {
-      return { correct: true, matchedAnswer: answer };
+    const ids = answer.ids;
+    if (ids.length !== selectedIds.length) continue;
+    if (ids.every((id, i) => id === selectedIds[i])) {
+      return { correct: true, matchedAnswer: ids };
     }
   }
   return { correct: false };

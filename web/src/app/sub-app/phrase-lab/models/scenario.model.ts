@@ -13,12 +13,17 @@ export interface Scenario {
   turns: ScenarioTurn[];
 }
 
+/** Đáp án hợp lệ: chunk-IDs theo thứ tự đúng. Object (không phải nested array) vì Firestore cấm array trong array. */
+export interface ScenarioAnswer {
+  ids: string[];
+}
+
 /** Một lượt: đối phương nói -> user ghép chunk trả lời -> hồi đáp scripted. */
 export interface ScenarioTurn {
   speakerLine: string;      // câu thoại đối phương (phát TTS được)
   speakerLineVi?: string;
-  answers: string[][];      // đáp án hợp lệ; MỖI đáp án = array chunk-IDs theo thứ tự đúng
-                            // answers[0] = đáp án tốt nhất; answers[1..] = 2-3 đáp án hợp lệ khác
+  answers: ScenarioAnswer[]; // đáp án hợp lệ; MỖI đáp án = array chunk-IDs theo thứ tự đúng
+                             // answers[0] = đáp án tốt nhất; answers[1..] = 2-3 đáp án hợp lệ khác
   replyLine: string;        // hồi đáp scripted khi trả lời đúng
   replyLineVi?: string;
 }

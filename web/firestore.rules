@@ -7,6 +7,9 @@ service cloud.firestore {
     match /phrase_templates/{id} {
       allow read: if true;
     }
+    match /phrase_scenarios/{id} {
+      allow read: if true;
+    }
     match /phrase_progress/{uid} {
       allow read, write: if request.auth.uid == uid;
     }

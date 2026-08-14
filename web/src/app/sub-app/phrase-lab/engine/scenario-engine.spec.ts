@@ -23,7 +23,7 @@ describe('scenario-engine', () => {
 
   const turn = (answers: string[][]): ScenarioTurn => ({
     speakerLine: 'Hello, how are you?',
-    answers,
+    answers: answers.map((ids) => ({ ids })),
     replyLine: 'Thanks!',
   });
 

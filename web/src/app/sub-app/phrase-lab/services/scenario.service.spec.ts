@@ -12,7 +12,7 @@ describe('ScenarioService', () => {
     level: 'A2',
     context: 'meeting',
     title: 'T',
-    turns: [{ speakerLine: 'Hi', answers: [['x']], replyLine: 'Ok' }],
+    turns: [{ speakerLine: 'Hi', answers: [{ ids: ['x'] }], replyLine: 'Ok' }],
   });
 
   const installFirestoreSpies = (docs: unknown[]) => {

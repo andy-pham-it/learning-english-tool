@@ -33,12 +33,12 @@ describe('ResponsePracticeComponent', () => {
     turns: [
       {
         speakerLine: 'Shall we start?',
-        answers: [['a1', 'a2'], ['a1']],
+        answers: [{ ids: ['a1', 'a2'] }, { ids: ['a1'] }],
         replyLine: 'Great!',
       },
       {
         speakerLine: 'Anything else?',
-        answers: [['a3']],
+        answers: [{ ids: ['a3'] }],
         replyLine: 'Thanks!',
       },
     ],
