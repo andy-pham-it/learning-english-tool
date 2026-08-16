@@ -64,6 +64,16 @@ describe('SpeakPracticeComponent', () => {
     expect(c.hideText()).toBeFalse();
   });
 
+  it('toggles production mode and reveals answer', () => {
+    const c = fixture.componentInstance;
+    expect(c.productionMode()).toBeFalse();
+    c.toggleProductionMode();
+    expect(c.productionMode()).toBeTrue();
+    expect(c.showProductionAnswer()).toBeFalse();
+    c.revealProductionAnswer();
+    expect(c.showProductionAnswer()).toBeTrue();
+  });
+
   it('records audio locally and exposes a replay URL', async () => {
     const c = fixture.componentInstance;
     const stopTrack = jasmine.createSpy('stopTrack');

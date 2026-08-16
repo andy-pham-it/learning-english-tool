@@ -10,20 +10,43 @@ import { SpeechService } from '../../../core/services/speech.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="rounded-2xl bg-white/70 backdrop-blur p-4 border border-slate-200 space-y-4">
-      <h3 class="font-semibold text-slate-800 flex items-center justify-between">
-        <span>Luyện nói</span>
-        <button
-          (click)="toggleShadow()"
-          class="rounded-full border border-slate-200 px-3 py-1 text-xs"
-          [attr.aria-pressed]="hideText()">
-          {{ hideText() ? '👁 Hiện chữ' : '🙈 Shadowing' }}
-        </button>
-      </h3>
-      @if (hideText()) {
-        <p class="rounded-xl bg-slate-50 p-3 text-slate-400 leading-relaxed">🔇 Chữ đang ẩn — hãy nghe rồi nhắc lại thật to, sau đó bấm "Hiện chữ" để so sánh.</p>
-      } @else {
-        <p class="rounded-xl bg-slate-50 p-3 text-slate-800 leading-relaxed">{{ target() }}</p>
-      }
+       <h3 class="font-semibold text-slate-800 flex items-center justify-between">
+         <span>Luyện nói</span>
+         <div class="flex gap-2">
+           <button
+             (click)="toggleProductionMode()"
+             class="rounded-full border px-3 py-1 text-xs transition-colors"
+             [class.bg-amber-100]="productionMode()"
+             [class.border-amber-300]="productionMode()"
+             [class.text-amber-900]="productionMode()"
+             [class.border-slate-200]="!productionMode()">
+             {{ productionMode() ? '🎯 Mode: Production' : '📖 Mode: Normal' }}
+           </button>
+           <button
+             (click)="toggleShadow()"
+             class="rounded-full border border-slate-200 px-3 py-1 text-xs"
+             [attr.aria-pressed]="hideText()">
+             {{ hideText() ? '👁 Hiện chữ' : '🙈 Shadowing' }}
+           </button>
+         </div>
+       </h3>
+       @if (productionMode()) {
+         @if (showProductionAnswer()) {
+           <p class="rounded-xl bg-slate-50 p-3 text-slate-800 leading-relaxed font-medium">{{ target() }} <span class="text-xs text-amber-600 block mt-1">(Đáp án đã hiển thị)</span></p>
+         } @else {
+           <div class="rounded-xl bg-amber-50 border border-amber-200 p-3 space-y-2">
+             <p class="text-xs font-semibold text-amber-700 uppercase tracking-wide">🎯 Tự nói câu tiếng Anh từ nghĩa tiếng Việt:</p>
+             <p class="text-base text-amber-900 font-medium">{{ template().vietnamese }}</p>
+             <button (click)="revealProductionAnswer()" class="rounded-xl bg-amber-600 px-3 py-1.5 text-xs text-white">💡 Xem đáp án</button>
+           </div>
+         }
+       } @else {
+         @if (hideText()) {
+           <p class="rounded-xl bg-slate-50 p-3 text-slate-400 leading-relaxed">🔇 Chữ đang ẩn — hãy nghe rồi nhắc lại thật to, sau đó bấm "Hiện chữ" để so sánh.</p>
+         } @else {
+           <p class="rounded-xl bg-slate-50 p-3 text-slate-800 leading-relaxed">{{ target() }}</p>
+         }
+       }
       <div class="flex gap-2 flex-wrap">
         <button (click)="listenSlow()" class="rounded-xl border border-slate-200 px-4 py-2 text-sm">🐢 Nghe chậm</button>
         @if (supported) {
@@ -84,6 +107,8 @@ export class SpeakPracticeComponent {
   readonly isListening = signal(false);
   readonly feedback = signal<{ score: number; wrongWords: string[] } | null>(null);
   readonly hideText = signal(false);
+  readonly productionMode = signal(false);
+  readonly showProductionAnswer = signal(false);
   readonly recording = signal(false);
   readonly recordingUrl = signal<string | null>(null);
   readonly ratedLabel = signal<string | null>(null);
@@ -123,6 +148,16 @@ export class SpeakPracticeComponent {
 
   toggleShadow(): void {
     this.hideText.set(!this.hideText());
+  }
+
+  toggleProductionMode(): void {
+    this.productionMode.set(!this.productionMode());
+    this.showProductionAnswer.set(false);
+  }
+
+  revealProductionAnswer(): void {
+    this.showProductionAnswer.set(true);
+    this.rate('again');
   }
 
   async toggleRecording(): Promise<void> {
