@@ -74,6 +74,32 @@ describe('SpeakPracticeComponent', () => {
     expect(c.showProductionAnswer()).toBeTrue();
   });
 
+  it('sets shadow speed', () => {
+    const c = fixture.componentInstance;
+    expect(c.shadowSpeed()).toBe('normal');
+    c.setShadowSpeed('slow');
+    expect(c.shadowSpeed()).toBe('slow');
+    c.setShadowSpeed('fast');
+    expect(c.shadowSpeed()).toBe('fast');
+  });
+
+  it('plays shadow with the correct TTS rate for the selected speed', () => {
+    const c = fixture.componentInstance;
+    c.setShadowSpeed('slow');
+    c.playShadow();
+    expect(speech.speak).toHaveBeenCalledWith(jasmine.any(String), 'en-US', 0.7);
+    c.setShadowSpeed('fast');
+    c.playShadow();
+    expect(speech.speak).toHaveBeenCalledWith(jasmine.any(String), 'en-US', 1.3);
+  });
+
+  it('scores the repeated speech and marks the shadow step done', async () => {
+    const c = fixture.componentInstance;
+    await c.repeatShadow();
+    expect(c.shadowStep()).toBe('done');
+    expect(c.shadowScore()).not.toBeNull();
+  });
+
   it('records audio locally and exposes a replay URL', async () => {
     const c = fixture.componentInstance;
     const stopTrack = jasmine.createSpy('stopTrack');

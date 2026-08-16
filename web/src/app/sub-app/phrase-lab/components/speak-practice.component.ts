@@ -67,6 +67,38 @@ import { SpeechService } from '../../../core/services/speech.service';
           <button (click)="playRecording()" class="rounded-xl border border-slate-200 px-4 py-2 text-sm">▶ Nghe lại</button>
         }
       </div>
+      <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-3 space-y-2">
+        <p class="text-xs font-semibold text-indigo-700 uppercase tracking-wide">🙈 Shadowing — nghe rồi lặp lại</p>
+        <div class="flex gap-1.5 flex-wrap">
+          @for (opt of shadowSpeeds; track opt.value) {
+            <button
+              (click)="setShadowSpeed(opt.value)"
+              class="rounded-full border px-3 py-1 text-xs"
+              [class.bg-indigo-600]="shadowSpeed() === opt.value"
+              [class.text-white]="shadowSpeed() === opt.value"
+              [class.border-indigo-300]="shadowSpeed() === opt.value"
+              [class.border-slate-200]="shadowSpeed() !== opt.value">
+              {{ opt.label }}
+            </button>
+          }
+        </div>
+        <div class="flex gap-2 flex-wrap">
+          <button (click)="playShadow()" class="rounded-xl bg-indigo-600 px-4 py-2 text-sm text-white">▶ Nghe</button>
+          @if (supported) {
+            <button
+              (click)="repeatShadow()"
+              class="rounded-xl bg-indigo-800 px-4 py-2 text-sm text-white"
+              [class.animate-pulse]="shadowStep() === 'listening'">
+              {{ shadowStep() === 'listening' ? 'Đang nghe...' : '🎤 Lặp lại' }}
+            </button>
+          }
+        </div>
+        @if (shadowScore() !== null) {
+          <p class="text-sm font-bold" [class.text-emerald-600]="shadowScore()! >= 80" [class.text-amber-500]="shadowScore()! >= 50 && shadowScore()! < 80" [class.text-red-600]="shadowScore()! < 50">
+            Từ xuất hiện đúng: {{ shadowScore() }}/100
+          </p>
+        }
+      </div>
       @if (!supported) {
         <p class="text-xs text-slate-400">Trình duyệt không hỗ trợ nhận diện giọng nói — hãy tự chấm và bấm "Đã đạt".</p>
       }
@@ -109,6 +141,14 @@ export class SpeakPracticeComponent {
   readonly hideText = signal(false);
   readonly productionMode = signal(false);
   readonly showProductionAnswer = signal(false);
+  readonly shadowSpeed = signal<'slow' | 'normal' | 'fast'>('normal');
+  readonly shadowStep = signal<'idle' | 'listening' | 'done'>('idle');
+  readonly shadowScore = signal<number | null>(null);
+  readonly shadowSpeeds: { value: 'slow' | 'normal' | 'fast'; label: string }[] = [
+    { value: 'slow', label: '🐢 Chậm' },
+    { value: 'normal', label: '▶ Normal' },
+    { value: 'fast', label: '⚡ Nhanh' },
+  ];
   readonly recording = signal(false);
   readonly recordingUrl = signal<string | null>(null);
   readonly ratedLabel = signal<string | null>(null);
@@ -158,6 +198,29 @@ export class SpeakPracticeComponent {
   revealProductionAnswer(): void {
     this.showProductionAnswer.set(true);
     this.rate('again');
+  }
+
+  setShadowSpeed(speed: 'slow' | 'normal' | 'fast'): void {
+    this.shadowSpeed.set(speed);
+  }
+
+  playShadow(): void {
+    const rate = { slow: 0.7, normal: 1.0, fast: 1.3 }[this.shadowSpeed()];
+    this.speech.speak(this.target(), 'en-US', rate);
+  }
+
+  async repeatShadow(): Promise<void> {
+    if (!this.supported) return;
+    this.shadowStep.set('listening');
+    this.shadowScore.set(null);
+    try {
+      const transcript = await this.speech.startListening('en-US');
+      const fb = this.engine.scoreSpeech(this.target(), transcript);
+      this.shadowScore.set(fb.score);
+      this.shadowStep.set('done');
+    } catch {
+      this.shadowStep.set('idle');
+    }
   }
 
   async toggleRecording(): Promise<void> {
