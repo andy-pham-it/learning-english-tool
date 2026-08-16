@@ -12,8 +12,10 @@ export interface UserProfile {
   flashcardsStudied: number;
   gamesPlayed: number;
   bossWins: number;
+  speakingSessions: number;
   streak: number;
   lastActiveDate: string; // ISO date string 'YYYY-MM-DD'
+  lastSpeakDate: string; // ISO date string 'YYYY-MM-DD' of last speaking session with score >= 80
 }
 
 const RANKS = [
@@ -41,12 +43,32 @@ export class UserProfileService {
   private profileSubject = new BehaviorSubject<UserProfile | null>(null);
   public profile$ = this.profileSubject.asObservable();
 
+  /**
+   * Instance-level indirection over `@angular/fire/firestore/lite`.
+   * The lite module re-exports helpers as non-configurable getters, so
+   * `spyOn(lite, ...)` fails in Karma/webpack. Storing them on the instance
+   * lets unit tests substitute jasmine spies.
+   */
+  docFn: typeof doc;
+  getDocFn: typeof getDoc;
+  setDocFn: typeof setDoc;
+  updateDocFn: typeof updateDoc;
+  incrementFn: typeof increment;
+
+  constructor() {
+    this.docFn = doc;
+    this.getDocFn = getDoc;
+    this.setDocFn = setDoc;
+    this.updateDocFn = updateDoc;
+    this.incrementFn = increment;
+  }
+
   async loadOrCreateProfile(): Promise<void> {
     const user = this.auth.currentUser;
     if (!user) return;
 
-    const ref = doc(this.firestore, 'users', user.uid);
-    const snap = await getDoc(ref);
+    const ref = this.docFn(this.firestore, 'users', user.uid);
+    const snap = await this.getDocFn(ref);
 
     if (!snap.exists()) {
       const newProfile: UserProfile = {
@@ -58,10 +80,12 @@ export class UserProfileService {
         flashcardsStudied: 0,
         gamesPlayed: 0,
         bossWins: 0,
+        speakingSessions: 0,
         streak: 0,
         lastActiveDate: new Date().toISOString().split('T')[0],
+        lastSpeakDate: '',
       };
-      await setDoc(ref, newProfile);
+      await this.setDocFn(ref, newProfile);
       this.profileSubject.next(newProfile);
     } else {
       this.profileSubject.next(snap.data() as UserProfile);
@@ -72,8 +96,8 @@ export class UserProfileService {
     const user = this.auth.currentUser;
     if (!user) return;
 
-    const ref = doc(this.firestore, 'users', user.uid);
-    await updateDoc(ref, { xp: increment(amount) });
+    const ref = this.docFn(this.firestore, 'users', user.uid);
+    await this.updateDocFn(ref, { xp: this.incrementFn(amount) });
 
     // Update local state
     const current = this.profileSubject.value;
@@ -83,21 +107,22 @@ export class UserProfileService {
       const updated = { ...current, xp: newXP, rank: newRank };
       // Persist rank if it changed
       if (newRank !== current.rank) {
-        await updateDoc(ref, { rank: newRank });
+        await this.updateDocFn(ref, { rank: newRank });
       }
       this.profileSubject.next(updated);
     }
   }
 
-  async recordActivity(type: 'flashcard' | 'game' | 'boss'): Promise<void> {
+  async recordActivity(type: 'flashcard' | 'game' | 'boss' | 'speaking'): Promise<void> {
     const user = this.auth.currentUser;
     if (!user) return;
 
-    const ref = doc(this.firestore, 'users', user.uid);
+    const ref = this.docFn(this.firestore, 'users', user.uid);
     const fieldMap: Record<string, string> = {
       flashcard: 'flashcardsStudied',
       game: 'gamesPlayed',
       boss: 'bossWins',
+      speaking: 'speakingSessions',
     };
 
     const today = new Date().toISOString().split('T')[0];
@@ -109,15 +134,18 @@ export class UserProfileService {
       const lastActive = current.lastActiveDate;
       const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
       if (lastActive === yesterday) {
-        streakUpdate = { streak: increment(1), lastActiveDate: today };
+        streakUpdate = { streak: this.incrementFn(1), lastActiveDate: today };
       } else if (lastActive !== today) {
         streakUpdate = { streak: 1, lastActiveDate: today };
       }
     }
 
-    await updateDoc(ref, {
-      [fieldMap[type]]: increment(1),
-      ...streakUpdate
+    const speakingUpdate = type === 'speaking' ? { lastSpeakDate: today } : {};
+
+    await this.updateDocFn(ref, {
+      [fieldMap[type]]: this.incrementFn(1),
+      ...streakUpdate,
+      ...speakingUpdate,
     });
 
     // Refresh local state
