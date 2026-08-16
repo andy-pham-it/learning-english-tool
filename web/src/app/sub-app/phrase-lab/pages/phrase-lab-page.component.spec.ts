@@ -114,6 +114,14 @@ describe('PhraseLabPageComponent', () => {
     expect(fixture.nativeElement.querySelector('app-response-practice')).not.toBeNull();
   });
 
+  it('renders the speaking chain on the Chuỗi nói tab without auto-selecting a template', () => {
+    const c = fixture.componentInstance;
+    c.setTab('chain');
+    expect(c.selectedTemplate()).toBeNull();
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('app-speaking-chain')).not.toBeNull();
+  });
+
   it('computes coverage from getCoverage', () => {
     const c = fixture.componentInstance;
     const progress = TestBed.inject(PhraseProgressService) as jasmine.SpyObj<PhraseProgressService>;

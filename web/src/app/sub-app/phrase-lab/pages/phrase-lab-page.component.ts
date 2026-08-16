@@ -11,12 +11,13 @@ import { SpeakPracticeComponent } from '../components/speak-practice.component';
 import { DailySessionComponent } from '../components/daily-session.component';
 import { ConversationBuilderComponent } from '../components/conversation-builder.component';
 import { ResponsePracticeComponent } from '../components/response-practice.component';
+import { SpeakingChainComponent } from '../components/speaking-chain.component';
 
 @Component({
   selector: 'app-phrase-lab-page',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [ChunkBrowserComponent, SentenceAnalysisComponent, SentenceBuilderComponent, RoleCombinerComponent, OrderArrangeComponent, SpeakPracticeComponent, DailySessionComponent, ConversationBuilderComponent, ResponsePracticeComponent],
+  imports: [ChunkBrowserComponent, SentenceAnalysisComponent, SentenceBuilderComponent, RoleCombinerComponent, OrderArrangeComponent, SpeakPracticeComponent, DailySessionComponent, ConversationBuilderComponent, ResponsePracticeComponent, SpeakingChainComponent],
   template: `
     <div class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 p-4">
       <header class="mb-4 flex items-center justify-between">
@@ -59,6 +60,8 @@ import { ResponsePracticeComponent } from '../components/response-practice.compo
         <app-chunk-browser />
       } @else if (activeTab() === 'response') {
         <app-response-practice />
+      } @else if (activeTab() === 'chain') {
+        <app-speaking-chain />
       } @else {
         @if (content.templates().length > 0) {
           <div class="mb-4 flex flex-wrap items-center gap-2 text-sm">
@@ -106,6 +109,7 @@ export class PhraseLabPageComponent implements OnInit {
     { id: 'order', label: 'Xếp thứ tự' },
     { id: 'speak', label: 'Luyện nói' },
     { id: 'response', label: 'Phản xạ' },
+    { id: 'chain', label: 'Chuỗi nói' },
   ];
   readonly activeTab = signal<string>('today');
   readonly selectedTemplate = signal<PhraseTemplate | null>(null);
@@ -132,7 +136,7 @@ export class PhraseLabPageComponent implements OnInit {
 
   setTab(id: string): void {
     this.activeTab.set(id);
-    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && id !== 'response' && !this.selectedTemplate()) {
+    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && id !== 'response' && id !== 'chain' && !this.selectedTemplate()) {
       this.selectedTemplate.set(this.content.templates()[0] ?? null);
     }
   }
