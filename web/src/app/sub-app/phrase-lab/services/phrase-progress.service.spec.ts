@@ -9,7 +9,7 @@ import { startOfDay } from './sm2.util';
 describe('PhraseProgressService', () => {
   let service: PhraseProgressService;
   const hubAuth = jasmine.createSpyObj('HubAuthService', ['requestUserInfo']);
-  const userProfile = jasmine.createSpyObj('UserProfileService', ['addXP']);
+  const userProfile = jasmine.createSpyObj('UserProfileService', ['addXP', 'recordActivity']);
   let setDocSpy: jasmine.Spy;
   let getDocSpy: jasmine.Spy;
   let docSpy: jasmine.Spy;
@@ -19,6 +19,8 @@ describe('PhraseProgressService', () => {
     hubAuth.requestUserInfo.and.returnValue(Promise.resolve(null));
     userProfile.addXP.and.returnValue(Promise.resolve());
     userProfile.addXP.calls.reset();
+    userProfile.recordActivity.and.returnValue(Promise.resolve());
+    userProfile.recordActivity.calls.reset();
     TestBed.configureTestingModule({
       providers: [
         { provide: Firestore, useValue: {} },
@@ -63,17 +65,21 @@ describe('PhraseProgressService', () => {
     expect(args[1].masteredChunks.c1.speakScore).toBe(90);
   });
 
-  it('recordSpeakResult: score >= 80 marks template, adds 10 points, increments streak once per day', async () => {
+  it('recordSpeakResult: score >= 80 marks template and adds 10 points', async () => {
     await service.init();
     await service.recordSpeakResult('t1', ['c1'], 85);
     const p = service.progress()!;
     expect(p.masteredTemplates['t1'].bestSpeakScore).toBe(85);
     expect(p.totalPoints).toBe(10);
-    expect(p.streak.current).toBe(1);
-    expect(p.streak.lastDay).toBe(new Date().toISOString().slice(0, 10));
     await service.recordSpeakResult('t1', ['c1'], 90);
-    expect(service.progress()!.streak.current).toBe(1); // same day, no double count
     expect(service.progress()!.masteredTemplates['t1'].bestSpeakScore).toBe(90);
+  });
+
+  it('recordSpeakResult: score >= 80 calls UserProfileService.recordActivity(speaking) when authed', async () => {
+    hubAuth.requestUserInfo.and.returnValue(Promise.resolve({ id: 'u1', email: null, name: null, image: null }));
+    await service.init();
+    await service.recordSpeakResult('t1', ['c1'], 90);
+    expect(userProfile.recordActivity).toHaveBeenCalledWith('speaking');
   });
 
   it('recordSpeakResult: score >= 80 calls UserProfileService.addXP(10) when authed', async () => {
@@ -88,6 +94,7 @@ describe('PhraseProgressService', () => {
     await service.recordSpeakResult('t1', ['c1'], 50);
     expect(service.progress()!.totalPoints).toBe(0);
     expect(userProfile.addXP).not.toHaveBeenCalled();
+    expect(userProfile.recordActivity).not.toHaveBeenCalled();
     expect(service.progress()!.masteredChunks['c1'].status).toBe('learning');
   });
 

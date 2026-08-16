@@ -165,13 +165,7 @@ export class PhraseProgressService {
     if (score >= 80) {
       p.totalPoints += 10;
       this.awardXp(10);
-      const today = new Date().toISOString().slice(0, 10);
-      if (p.streak.lastDay !== today) {
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        p.streak.current = p.streak.lastDay === yesterday.toISOString().slice(0, 10) ? p.streak.current + 1 : 1;
-        p.streak.lastDay = today;
-      }
+      this.userProfile?.recordActivity('speaking');
     }
     this.progress.set({ ...p });
     await this.write(p);
