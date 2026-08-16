@@ -25,6 +25,16 @@ import { UserProfileService, UserProfile } from '../../services/user-profile.ser
           <span>🔥</span>
           <span>{{ profile.streak }}</span>
         </div>
+        <div class="flex items-center gap-1 text-xs font-bold px-2 py-0.5 rounded-full border"
+             [class.text-emerald-600]="speakingGoalMet"
+             [class.bg-emerald-50]="speakingGoalMet"
+             [class.border-emerald-100]="speakingGoalMet"
+             [class.text-slate-400]="!speakingGoalMet"
+             [class.bg-slate-50]="!speakingGoalMet"
+             [class.border-slate-100]="!speakingGoalMet">
+          <span>🎯</span>
+          <span>{{ speakingGoalMet ? 'Nói: Đã đạt ✓' : 'Nói: Chưa đạt' }}</span>
+        </div>
       </div>
 
       <!-- Navigation Tabs -->
@@ -74,6 +84,11 @@ export class BottomNavComponent implements OnInit {
   xpProgress = 0;
 
   readonly RANK_THRESHOLDS = [0, 100, 300, 700, 1500, 3000];
+
+  get speakingGoalMet(): boolean {
+    const today = new Date().toISOString().split('T')[0];
+    return this.profile?.lastSpeakDate === today;
+  }
 
   ngOnInit() {
     this.profileService.loadOrCreateProfile();
