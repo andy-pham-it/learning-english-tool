@@ -37,4 +37,20 @@ describe('SentenceBuilderComponent', () => {
     expect(c.preview()).toContain('we take into consideration');
     expect(c.preview()).not.toContain('___');
   });
+
+  it('renders one select card per option with english and vietnamese', () => {
+    const cards = Array.from(fixture.nativeElement.querySelectorAll('fieldset button')) as HTMLElement[];
+    expect(cards.length).toBe(3);
+    const texts = cards.map((b) => b.textContent ?? '');
+    expect(texts.join(' ')).toContain('take into consideration — v');
+  });
+
+  it('selects a card on click and updates the preview', () => {
+    const c = fixture.componentInstance;
+    const cards = Array.from(fixture.nativeElement.querySelectorAll('fieldset button')) as HTMLElement[];
+    cards[0].click();
+    fixture.detectChanges();
+    expect(c.values()['subject']).toBe('we');
+    expect(c.preview()).toContain('we');
+  });
 });
