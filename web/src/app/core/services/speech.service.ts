@@ -32,13 +32,13 @@ export class SpeechService {
     return !!this.recognition;
   }
 
-  speak(text: string, lang: string = 'en-US'): void {
+  speak(text: string, lang: string = 'en-US', rate?: number): void {
     if (this.synth.speaking) {
       this.synth.cancel();
     }
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = lang;
-    utterance.rate = 0.9; // Slightly slower for better learning
+    utterance.rate = rate ?? 0.9; // Slightly slower for better learning by default
     this.synth.speak(utterance);
   }
 
