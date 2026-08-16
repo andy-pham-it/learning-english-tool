@@ -20,14 +20,14 @@ function shuffled<T>(items: T[]): T[] {
     <div class="rounded-2xl bg-white/70 backdrop-blur p-4 border border-slate-200 space-y-4">
       <h3 class="font-semibold text-slate-800">Xếp các chunk theo đúng thứ tự</h3>
       <p class="text-sm text-slate-500 leading-relaxed">
-        @for (item of picked(); track $index) {
-          <span class="mr-1 inline-block rounded-lg bg-slate-100 px-2 py-0.5" [class.bg-red-100]="isWrong($index)">{{ item }}</span>
+        @for (id of picked(); track id) {
+          <span class="mr-1 inline-block rounded-lg bg-slate-100 px-2 py-0.5" [class.bg-red-100]="isWrong($index)">{{ textOf(id) }}</span>
         } @empty { <span class="text-slate-400">Bấm các chunk bên dưới theo thứ tự...</span> }
       </p>
       <div class="flex flex-wrap gap-2">
-        @for (item of pool(); track item) {
-          @if (!picked().includes(item)) {
-            <button (click)="tap(item)" class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm">{{ item }}</button>
+        @for (item of pool(); track item.id) {
+          @if (!picked().includes(item.id)) {
+            <button (click)="tap(item.id)" class="rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-sm">{{ item.text }}</button>
           }
         }
       </div>
@@ -51,14 +51,20 @@ export class OrderArrangeComponent {
   readonly verdict = signal<{ correct: boolean; positionErrors: number[] } | null>(null);
   private readonly sequence = computed(() => this.engine.expectedSequence(this.template(), this.content.chunks()));
 
-  readonly pool = computed(() => shuffled(this.sequence()));
+  readonly pool = computed(() => shuffled(this.sequence().map((text, i) => ({ id: `${i}:${text}`, text }))));
 
-  tap(item: string): void {
-    this.picked.update((p) => [...p, item]);
+  private readonly textById = computed(() => new Map(this.pool().map((item) => [item.id, item.text])));
+
+  textOf(id: string): string {
+    return this.textById().get(id) ?? '';
+  }
+
+  tap(id: string): void {
+    this.picked.update((p) => [...p, id]);
   }
 
   check(): void {
-    this.verdict.set(this.engine.validateOrder(this.template(), this.content.chunks(), this.picked()));
+    this.verdict.set(this.engine.validateOrder(this.template(), this.content.chunks(), this.picked().map((id) => this.textOf(id))));
   }
 
   isWrong(index: number): boolean {

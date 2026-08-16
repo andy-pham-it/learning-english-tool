@@ -30,19 +30,42 @@ describe('OrderArrangeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('exposes a shuffled pool containing all sequence items', () => {
+  it('exposes a shuffled pool of id+text items containing all sequence items', () => {
     const c = fixture.componentInstance;
-    const seq = ['we', 'take into consideration'];
-    expect(c.pool().sort()).toEqual(seq.sort());
+    const texts = c.pool().map((p) => p.text).sort();
+    expect(texts).toEqual(['take into consideration', 'we']);
+    expect(new Set(c.pool().map((p) => p.id)).size).toBe(2);
   });
 
-  it('validates the picked order', () => {
+  it('validates the picked order via id lookup', () => {
     const c = fixture.componentInstance;
-    c.picked.set(['we', 'take into consideration']);
+    const idOf = (text: string) => c.pool().find((p) => p.text === text)!.id;
+    c.picked.set([idOf('we'), idOf('take into consideration')]);
     c.check();
     expect(c.verdict()?.correct).toBeTrue();
-    c.picked.set(['take into consideration', 'we']);
+    c.picked.set([idOf('take into consideration'), idOf('we')]);
     c.check();
     expect(c.verdict()?.correct).toBeFalse();
+  });
+
+  it('allows completing a sequence with duplicate chunk texts', () => {
+    const c = fixture.componentInstance;
+    const dupTpl: PhraseTemplate = {
+      id: 'd', domain: 'it', context: 'meeting', level: 'B2', english: 'e', vietnamese: 'v',
+      structure: 'It would be better if {chunk:linker1} {chunk:linker2} the load.',
+      slots: [{ name: 'linker1', role: 'linker' }, { name: 'linker2', role: 'linker' }],
+      example: { en: 'e', vi: 'v' },
+    };
+    fixture.componentRef.setInput('template', dupTpl);
+    fixture.detectChanges();
+    expect(c.pool().length).toBe(2);
+    expect(new Set(c.pool().map((p) => p.id)).size).toBe(2);
+    expect(c.pool().every((p) => p.text === 'take into consideration')).toBeTrue();
+    c.tap(c.pool()[0].id);
+    expect(c.picked().length).toBe(1);
+    expect(c.pool().filter((p) => !c.picked().includes(p.id)).length).toBe(1);
+    c.tap(c.pool()[1].id);
+    c.check();
+    expect(c.verdict()?.correct).toBeTrue();
   });
 });
