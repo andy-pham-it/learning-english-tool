@@ -62,14 +62,14 @@ describe('PhraseLabPageComponent', () => {
 
   it('selects the first template by default in practice tabs', () => {
     const c = fixture.componentInstance;
-    c.setTab('analysis');
+    c.setTab('slot');
     expect(c.selectedTemplate()).not.toBeNull();
     expect(c.selectedTemplate()!.id).toBe('t1');
   });
 
   it('renders the template selector with all templates', () => {
     const c = fixture.componentInstance;
-    c.setTab('analysis');
+    c.setTab('slot');
     fixture.detectChanges();
     const options = fixture.nativeElement.querySelectorAll('#template-select option');
     expect(options.length).toBe(2);
@@ -78,7 +78,7 @@ describe('PhraseLabPageComponent', () => {
 
   it('selects a template by id from the selector', () => {
     const c = fixture.componentInstance;
-    c.setTab('analysis');
+    c.setTab('slot');
     c.selectTemplate('t2');
     expect(c.selectedTemplate()!.id).toBe('t2');
     expect(c.templateLabel(c.selectedTemplate()!)).toContain('it · email · A2');
@@ -129,5 +129,25 @@ describe('PhraseLabPageComponent', () => {
     (TestBed.inject(PhraseContentService) as any).chunks.set([]); // invalidate the coverage computed so it re-reads the stub
     expect(c.coverage()).toEqual({ learned: 1, total: 2 });
     expect(c.coveragePct()).toBe(50);
+  });
+
+  it('renders analysis as a card list without auto-selecting a template', () => {
+    const c = fixture.componentInstance;
+    c.setTab('analysis');
+    expect(c.selectedTemplate()).toBeNull();
+    fixture.detectChanges();
+    const cards = fixture.nativeElement.querySelectorAll('app-sentence-analysis');
+    expect(cards.length).toBe(2);
+  });
+
+  it('filters the analysis card list by context', () => {
+    const c = fixture.componentInstance;
+    c.setTab('analysis');
+    expect(c.filteredTemplates().length).toBe(2);
+    c.selectContext('meeting');
+    expect(c.filteredTemplates().length).toBe(1);
+    expect(c.filteredTemplates()[0].id).toBe('t1');
+    c.selectContext('all');
+    expect(c.filteredTemplates().length).toBe(2);
   });
 });

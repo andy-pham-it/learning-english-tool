@@ -62,6 +62,39 @@ import { SpeakingChainComponent } from '../components/speaking-chain.component';
         <app-response-practice />
       } @else if (activeTab() === 'chain') {
         <app-speaking-chain />
+      } @else if (activeTab() === 'analysis') {
+        <div class="mb-4 flex flex-wrap items-center gap-2 text-sm">
+          <select [value]="selectedDomain()" (change)="selectDomain($any($event.target).value)"
+            class="rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400">
+            <option value="all">Tất cả domain</option>
+            @for (d of content.domains(); track d) {
+              <option [value]="d">{{ d }}</option>
+            }
+          </select>
+          <select [value]="selectedContext()" (change)="selectContext($any($event.target).value)"
+            class="rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400">
+            <option value="all">Tất cả context</option>
+            @for (c of content.contexts(); track c) {
+              <option [value]="c">{{ c }}</option>
+            }
+          </select>
+          <select [value]="selectedLevel()" (change)="selectLevel($any($event.target).value)"
+            class="rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400">
+            <option value="all">Tất cả level</option>
+            @for (l of content.levels(); track l) {
+              <option [value]="l">{{ l }}</option>
+            }
+          </select>
+        </div>
+        @if (filteredTemplates().length === 0) {
+          <p class="text-sm text-slate-400">Chưa có template cho bộ lọc hiện tại.</p>
+        } @else {
+          <div class="grid gap-3 sm:grid-cols-2">
+            @for (t of filteredTemplates(); track t.id) {
+              <app-sentence-analysis [template]="t" />
+            }
+          </div>
+        }
       } @else {
         @if (content.templates().length > 0) {
           <div class="mb-4 flex flex-wrap items-center gap-2 text-sm">
@@ -75,9 +108,6 @@ import { SpeakingChainComponent } from '../components/speaking-chain.component';
               }
             </select>
           </div>
-        }
-        @if (activeTab() === 'analysis' && selectedTemplate(); as t) {
-          <app-sentence-analysis [template]="t" />
         }
         @if (activeTab() === 'slot' && selectedTemplate(); as t) {
           <app-sentence-builder [template]="t" />
@@ -113,9 +143,23 @@ export class PhraseLabPageComponent implements OnInit {
   ];
   readonly activeTab = signal<string>('today');
   readonly selectedTemplate = signal<PhraseTemplate | null>(null);
+  readonly selectedDomain = signal<string>('all');
+  readonly selectedContext = signal<string>('all');
+  readonly selectedLevel = signal<string>('all');
 
   readonly content = inject(PhraseContentService);
   readonly progress = inject(PhraseProgressService);
+
+  readonly filteredTemplates = computed(() =>
+    this.content
+      .templates()
+      .filter(
+        (t) =>
+          (this.selectedDomain() === 'all' || t.domain === this.selectedDomain()) &&
+          (this.selectedContext() === 'all' || t.context === this.selectedContext()) &&
+          (this.selectedLevel() === 'all' || t.level === this.selectedLevel())
+      )
+  );
 
   readonly coverage = computed(() => {
     const cov = this.progress.getCoverage(this.content.chunks());
@@ -136,9 +180,22 @@ export class PhraseLabPageComponent implements OnInit {
 
   setTab(id: string): void {
     this.activeTab.set(id);
-    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && id !== 'response' && id !== 'chain' && !this.selectedTemplate()) {
+    if (id !== 'explore' && id !== 'today' && id !== 'conversation' && id !== 'response' && id !== 'chain' && id !== 'analysis' && !this.selectedTemplate()) {
       this.selectedTemplate.set(this.content.templates()[0] ?? null);
     }
+  }
+
+  selectDomain(value: string): void {
+    this.selectedDomain.set(value);
+    this.selectedContext.set('all');
+  }
+
+  selectContext(value: string): void {
+    this.selectedContext.set(value);
+  }
+
+  selectLevel(value: string): void {
+    this.selectedLevel.set(value);
   }
 
   selectTemplate(id: string): void {
