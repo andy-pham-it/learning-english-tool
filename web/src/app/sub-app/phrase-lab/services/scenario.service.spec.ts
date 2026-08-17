@@ -72,12 +72,23 @@ describe('ScenarioService', () => {
 
   it('version lệch -> refetch (bỏ cache)', async () => {
     localStorage.setItem('phrase_lab_scenarios', JSON.stringify([scenario('scn-1')]));
-    localStorage.setItem('phrase_lab_scenarios_ts', String(Date.now()));
+    localStorage.setItem('phrase_lab_scenarios_ts', String(Date.now() - 25 * 60 * 60 * 1000)); // stale
     localStorage.setItem('phrase_lab_scenarios_version', '0');
     installFirestoreSpies([scenario('scn-2'), { id: 'meta', version: 1 }]);
     const result = await service.loadScenarios();
     expect(getDocsSpy).toHaveBeenCalled();
     expect(result.map((s) => s.id)).toEqual(['scn-2']);
+  });
+
+  it('loadScenarios skips fetchVersion when cache is fresh', async () => {
+    localStorage.setItem('phrase_lab_scenarios', JSON.stringify([{ id: 's1' }]));
+    localStorage.setItem('phrase_lab_scenarios_ts', String(Date.now()));
+    localStorage.setItem('phrase_lab_scenarios_version', '0');
+    const fetchSpy = spyOn(service as any, 'fetchVersion').and.callThrough();
+    service.offline.set(true);
+    await service.loadScenarios();
+    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(service.offline()).toBeFalse();
   });
 
   it('offline + không có cache -> offline signal true, trả []', async () => {

@@ -68,4 +68,14 @@ describe('PhraseContentService', () => {
     expect(service.offline()).toBeTrue();
     expect(service.chunks()).toEqual([{ id: 'c1' }] as any);
   });
+
+  it('loadCollection resets offline(false) when serving a fresh cache', async () => {
+    const key = 'phrase_lab_chunks';
+    const tsKey = 'phrase_lab_chunks_ts';
+    localStorage.setItem(key, JSON.stringify([{ id: 'c1' }]));
+    localStorage.setItem(tsKey, String(Date.now()));
+    service.offline.set(true); // simulate a previous failed fetch
+    await service['loadCollection']('phrase_chunks', key, tsKey, () => undefined);
+    expect(service.offline()).toBeFalse();
+  });
 });

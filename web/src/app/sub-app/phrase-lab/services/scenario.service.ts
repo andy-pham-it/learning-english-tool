@@ -37,10 +37,16 @@ export class ScenarioService {
    * hiện ngay sau khi seed mà không cần chờ hết TTL).
    */
   async loadScenarios(): Promise<Scenario[]> {
-    const version = await this.fetchVersion();
     const cache = this.readCache<Scenario[]>(SCENARIOS_KEY);
     const ts = this.readNumber(SCENARIOS_TS);
-    if (cache && ts !== null && Date.now() - ts <= TTL_MS && this.readNumber(SCENARIOS_VERSION) === version) {
+    if (cache && ts !== null && Date.now() - ts <= TTL_MS) {
+      this.offline.set(false);
+      this.scenarios.set(cache);
+      return cache;
+    }
+    const version = await this.fetchVersion();
+    if (cache && this.readNumber(SCENARIOS_VERSION) === version) {
+      this.offline.set(false);
       this.scenarios.set(cache);
       return cache;
     }

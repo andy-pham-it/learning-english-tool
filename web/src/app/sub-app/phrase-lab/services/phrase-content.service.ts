@@ -72,6 +72,7 @@ export class PhraseContentService {
     const freshCache = this.readCache<T>(key);
     const ts = Number(localStorage.getItem(tsKey) ?? 0);
     if (freshCache && Date.now() - ts <= TTL_MS) {
+      this.offline.set(false);
       sink(freshCache);
       return freshCache;
     }
