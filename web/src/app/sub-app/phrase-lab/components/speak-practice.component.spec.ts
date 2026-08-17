@@ -143,6 +143,17 @@ describe('SpeakPracticeComponent', () => {
     // 'bet' is a substring of 'better' in the target — must NOT match as a whole word.
     expect(c.chunkIds()).not.toContain('bet-chunk');
   });
+
+  it('ngOnDestroy stops a live audio stream and revokes the URL', () => {
+    const c = fixture.componentInstance;
+    const stopTrack = jasmine.createSpy('stopTrack');
+    c['audioStream'] = { getTracks: () => [{ stop: stopTrack }] } as any;
+    c.recordingUrl.set('blob:fake-recording');
+    const revokeSpy = spyOn(URL, 'revokeObjectURL');
+    c.ngOnDestroy();
+    expect(stopTrack).toHaveBeenCalled();
+    expect(revokeSpy).toHaveBeenCalledWith('blob:fake-recording');
+  });
 });
 
 class FakeMediaRecorder {

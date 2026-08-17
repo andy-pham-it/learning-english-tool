@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, input, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, OnDestroy, output, signal } from '@angular/core';
 import { PhraseTemplate, ReviewRating } from '../models/phrase.model';
 import { PhraseEngineService } from '../services/phrase-engine.service';
 import { PhraseContentService } from '../services/phrase-content.service';
@@ -128,7 +128,7 @@ import { SpeechService } from '../../../core/services/speech.service';
     </div>
   `,
 })
-export class SpeakPracticeComponent {
+export class SpeakPracticeComponent implements OnDestroy {
   readonly template = input.required<PhraseTemplate>();
   readonly mastered = output<{ templateId: string; chunkIds: string[]; score: number }>();
 
@@ -301,6 +301,16 @@ export class SpeakPracticeComponent {
     this.masteredDone.set(true);
     this.mastered.emit({ templateId: this.template().id, chunkIds: this.chunkIds(), score: 100 });
     this.feedback.set({ score: 100, wrongWords: [] });
+  }
+
+  ngOnDestroy(): void {
+    if (this.mediaRecorder?.state === 'recording') {
+      this.mediaRecorder.stop();
+    }
+    this.audioStream?.getTracks().forEach((t) => t.stop());
+    this.audioStream = null;
+    const url = this.recordingUrl();
+    if (url) URL.revokeObjectURL(url);
   }
 }
 
