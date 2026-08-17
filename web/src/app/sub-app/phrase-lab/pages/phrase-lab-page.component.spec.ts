@@ -150,4 +150,12 @@ describe('PhraseLabPageComponent', () => {
     c.selectContext('all');
     expect(c.filteredTemplates().length).toBe(2);
   });
+
+  it('wires rated output to reviewChunk for each chunk id', () => {
+    const c = fixture.componentInstance;
+    const progress = TestBed.inject(PhraseProgressService) as jasmine.SpyObj<PhraseProgressService>;
+    c.onRated({ templateId: 't', chunkIds: ['a', 'b'], rating: 'again' });
+    expect(progress.reviewChunk).toHaveBeenCalledWith('a', 'again');
+    expect(progress.reviewChunk).toHaveBeenCalledWith('b', 'again');
+  });
 });

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { PhraseContentService } from '../services/phrase-content.service';
 import { PhraseProgressService } from '../services/phrase-progress.service';
-import { PhraseTemplate } from '../models/phrase.model';
+import { PhraseTemplate, ReviewRating } from '../models/phrase.model';
 import { ChunkBrowserComponent } from '../components/chunk-browser.component';
 import { SentenceAnalysisComponent } from '../components/sentence-analysis.component';
 import { SentenceBuilderComponent } from '../components/sentence-builder.component';
@@ -119,7 +119,7 @@ import { SpeakingChainComponent } from '../components/speaking-chain.component';
           <app-order-arrange [template]="t" />
         }
         @if (activeTab() === 'speak' && selectedTemplate(); as t) {
-          <app-speak-practice [template]="t" (mastered)="onMastered($event)" />
+          <app-speak-practice [template]="t" (mastered)="onMastered($event)" (rated)="onRated($event)" />
         }
         @if (!selectedTemplate()) {
           <p class="text-sm text-slate-400">Chưa có template cho bộ lọc hiện tại.</p>
@@ -209,5 +209,11 @@ export class PhraseLabPageComponent implements OnInit {
 
   onMastered(evt: { templateId: string; chunkIds: string[]; score: number }): void {
     void this.progress.recordSpeakResult(evt.templateId, evt.chunkIds, evt.score);
+  }
+
+  onRated(evt: { templateId: string; chunkIds: string[]; rating: ReviewRating }): void {
+    for (const id of evt.chunkIds) {
+      void this.progress.reviewChunk(id, evt.rating);
+    }
   }
 }
