@@ -106,4 +106,10 @@ describe('scenario-engine', () => {
     const t = turn([['a', 'b'], ['a']]);
     expect(checkAnswer(['a'], t)).toEqual({ correct: true, matchedAnswer: ['a'] });
   });
+
+  it('buildTurnPool returns empty pool when no answer chunk resolves', () => {
+    const chunks = new Map<string, PhraseChunk>([['dis1', chunk('dis1')]]);
+    const pool = buildTurnPool(turn([['missing1'], ['missing2']]), chunks);
+    expect(pool).toEqual([]);
+  });
 });

@@ -46,6 +46,9 @@ export function buildTurnPool(
     if (c) answerChunks.push(c);
     else console.warn(`[scenario-engine] unresolved chunk id: ${id}`);
   }
+  if (answerChunks.length === 0) {
+    return [];
+  }
   const lens = answerChunks.map((c) => c.english.length);
   const minLen = lens.length ? Math.min(...lens) * 0.7 : 0;
   const maxLen = lens.length ? Math.max(...lens) * 1.3 : Number.POSITIVE_INFINITY;
