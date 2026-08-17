@@ -47,7 +47,7 @@ export function computeFeedback(
   const covered: string[] = [];
   const missed: string[] = [];
   for (const c of targetChunks) {
-    if (lower.includes(c.english.toLowerCase())) {
+    if (matchesWord(c.english.toLowerCase(), lower)) {
       covered.push(c.id);
     } else {
       missed.push(c.id);
@@ -55,6 +55,15 @@ export function computeFeedback(
   }
   const wordCount = transcript.trim() ? transcript.trim().split(/\s+/).length : 0;
   const wpm = durationSec > 0 ? Math.round((wordCount / durationSec) * 60) : 0;
-  const fillers = FILLER_WORDS.filter((f) => lower.includes(f));
+  const fillers = FILLER_WORDS.filter((f) => matchesWord(f, lower));
   return { covered, missed, wpm, fillers };
+}
+
+/** Khớp cụm từ ở ranh giới từ (không phải substring trong từ dài hơn). */
+function matchesWord(phrase: string, text: string): boolean {
+  return new RegExp(`\\b${escapeRegex(phrase)}\\b`).test(text);
+}
+
+function escapeRegex(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }

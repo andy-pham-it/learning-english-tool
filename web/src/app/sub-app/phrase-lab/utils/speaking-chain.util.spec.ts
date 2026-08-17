@@ -73,5 +73,23 @@ describe('speaking-chain.util', () => {
       expect(fb.fillers).toContain('you know');
       expect(fb.fillers).toContain('well');
     });
+
+    it('does not match a chunk whose english is a substring of a longer word', () => {
+      const c = chunk('sub', 'filler', 'so');
+      const fb = computeFeedback([c], 'sooner or later', 10);
+      expect(fb.covered).toEqual([]);
+      expect(fb.missed).toEqual(['sub']);
+    });
+
+    it('matches multi-word filler phrases as whole units', () => {
+      const fb = computeFeedback([], 'I mean, basically it works', 10);
+      expect(fb.fillers).toContain('i mean');
+      expect(fb.fillers).toContain('basically');
+    });
+
+    it('does not flag a filler substring inside a word', () => {
+      const fb = computeFeedback([], 'humbly album wellbeing', 10);
+      expect(fb.fillers).toEqual([]);
+    });
   });
 });
