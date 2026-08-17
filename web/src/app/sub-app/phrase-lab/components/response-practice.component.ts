@@ -96,7 +96,7 @@ interface TurnResult {
             <button
               type="button"
               (click)="check()"
-              [disabled]="!canCheck()"
+              [disabled]="!canCheck() || checked()"
               class="rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700 disabled:opacity-40"
             >Kiểm tra</button>
             <button
@@ -104,7 +104,7 @@ interface TurnResult {
               (click)="clearSelection()"
               class="rounded-xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50"
             >Xoá hết</button>
-            @if (canReveal()) {
+            @if (canReveal() && !revealed()) {
               <button
                 type="button"
                 (click)="revealAnswer()"
@@ -181,6 +181,8 @@ export class ResponsePracticeComponent {
   readonly showAnswer = signal(false);
   readonly message = signal('');
   readonly turnResults = signal<TurnResult[]>([]);
+  readonly checked = signal(false);
+  readonly revealed = signal(false);
 
   readonly chunkMap = computed(() => new Map(this.content.chunks().map((c) => [c.id, c])));
   readonly currentTurn = computed(() => this.scenario()?.turns[this.turnIndex()] ?? null);
@@ -206,6 +208,8 @@ export class ResponsePracticeComponent {
     this.turnResults.set([]);
     this.selectedIds.set([]);
     this.wrongStreak.set(0);
+    this.checked.set(false);
+    this.revealed.set(false);
     this.showVi.set(false);
     this.showReply.set(false);
     this.showAnswer.set(false);
@@ -225,8 +229,10 @@ export class ResponsePracticeComponent {
   check(): void {
     const turn = this.currentTurn();
     if (!turn || this.selectedIds().length === 0) return;
+    if (this.checked()) return;
     const res = checkAnswer(this.selectedIds(), turn);
     if (res.correct) {
+      this.checked.set(true);
       this.turnResults.update((rs) => [...rs, { firstTry: this.wrongStreak() === 0, wrongChunkIds: [] }]);
       for (const id of this.selectedIds()) {
         void this.progress.reviewChunk(id, 'good');
@@ -242,9 +248,12 @@ export class ResponsePracticeComponent {
   revealAnswer(): void {
     const turn = this.currentTurn();
     if (!turn) return;
+    if (this.revealed()) return;
+    this.revealed.set(true);
+    const selected = this.selectedIds();
     const best = turn.answers[0]?.ids ?? [];
-    this.turnResults.update((rs) => [...rs, { firstTry: false, wrongChunkIds: best }]);
-    for (const id of best) {
+    this.turnResults.update((rs) => [...rs, { firstTry: false, wrongChunkIds: [...selected, ...best] }]);
+    for (const id of new Set([...selected, ...best])) {
       void this.progress.reviewChunk(id, 'again');
     }
     this.showAnswer.set(true);
@@ -262,6 +271,8 @@ export class ResponsePracticeComponent {
     this.turnIndex.set(nextIndex);
     this.selectedIds.set([]);
     this.wrongStreak.set(0);
+    this.checked.set(false);
+    this.revealed.set(false);
     this.showVi.set(false);
     this.showReply.set(false);
     this.showAnswer.set(false);

@@ -169,4 +169,34 @@ describe('ResponsePracticeComponent', () => {
     fixture.componentInstance.clearSelection();
     expect(fixture.componentInstance.selectedIds()).toEqual([]);
   });
+
+  it('check() đúng -> chỉ review một lần (guard chống spam)', () => {
+    fixture.componentInstance.start();
+    fixture.componentInstance.toggleChip('a1');
+    fixture.componentInstance.toggleChip('a2');
+    fixture.componentInstance.check();
+    fixture.componentInstance.check();
+    expect(progressStub.reviewChunk.calls.count()).toBe(2); // a1 + a2, not 4
+  });
+
+  it('revealAnswer -> review again cho chunk user chọn sai + answers[0]', () => {
+    fixture.componentInstance.start();
+    fixture.componentInstance.toggleChip('a3');
+    fixture.componentInstance.check(); // sai lần 1
+    fixture.componentInstance.check(); // sai lần 2 -> canReveal
+    fixture.componentInstance.revealAnswer();
+    fixture.componentInstance.revealAnswer(); // spam -> không review lại
+    expect(progressStub.reviewChunk).toHaveBeenCalledWith('a3', 'again');
+    expect(progressStub.reviewChunk).toHaveBeenCalledWith('a1', 'again');
+    expect(progressStub.reviewChunk).toHaveBeenCalledWith('a2', 'again');
+  });
+
+  it('revealAnswer đặt revealed=true để ẩn nút Xem đáp án', () => {
+    fixture.componentInstance.start();
+    fixture.componentInstance.toggleChip('a3');
+    fixture.componentInstance.check();
+    fixture.componentInstance.check();
+    fixture.componentInstance.revealAnswer();
+    expect(fixture.componentInstance.revealed()).toBeTrue();
+  });
 });
