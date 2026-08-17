@@ -43,6 +43,10 @@ export interface PhraseProgress {
   masteredTemplates: Record<string, { bestSpeakScore: number; attempts: number }>;
   /** SM-2 scheduling state per chunk id. Absent = never scheduled (new chunk). */
   reviews: Record<string, ReviewState>;
+  /**
+   * @deprecated Dead field — no writer, no reader. Kept to avoid a Firestore
+   * schema migration. Do not use.
+   */
   streak: { current: number; lastDay: string };
   totalPoints: number;
 }
