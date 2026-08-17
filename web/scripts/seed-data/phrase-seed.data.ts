@@ -27443,11 +27443,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'It would be better if we could take into consideration the system load before we proceed.',
     vietnamese: 'Sẽ tốt hơn nếu chúng ta cân nhắc tải hệ thống trước khi tiếp tục.',
-    structure: 'It would be better if {subject} {modal} {chunk:linker} the {noun} before we {verb}.',
+    structure: 'It would be better if {subject} {modal} {verb2} the {noun} before we {verb}.',
     slots: [
       { name: 'subject', role: null, options: ['we', 'you', 'the team'] },
       { name: 'modal', role: null, options: ['could', 'would'] },
-      { name: 'linker', role: 'linker' },
+      { name: 'verb2', role: null, options: ['take into consideration', 'bear in mind', 'factor in'] },
       { name: 'noun', role: null, options: ['system load', 'performance', 'requirements'] },
       { name: 'verb', role: null, options: ['move on', 'proceed'] },
     ],
@@ -27463,10 +27463,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: "I'd like to point out that we should bear in mind the system load before we proceed.",
     vietnamese: 'Tôi muốn chỉ ra rằng chúng ta nên ghi nhớ tải hệ thống trước khi tiếp tục.',
-    structure: '{chunk:opener} that {chunk:linker} the {noun} before we {verb}.',
+    structure: '{chunk:opener} that {verb2} the {noun} before we {verb}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'verb2', role: null, options: ['bear in mind', 'take into account', 'factor in'] },
       { name: 'noun', role: null, options: ['requirements', 'deadline', 'system load'] },
       { name: 'verb', role: null, options: ['proceed', 'make a decision'] },
     ],
@@ -27522,11 +27522,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: "It's down — we're doing root cause analysis to bring it back up within the expected timeframe.",
     vietnamese: 'Hệ thống đang ngừng hoạt động — chúng tôi đang phân tích nguyên nhân gốc để khôi phục trong khung thời gian dự kiến.',
-    structure: "{chunk:opener} — we're doing {chunk:filler} to {chunk:closer} within {timeframe}.",
+    structure: "{chunk:opener} — we're doing {analysis} to {restore} within {timeframe}.",
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'analysis', role: null, options: ['root cause analysis', 'a full investigation', 'a deep dive'] },
+      { name: 'restore', role: null, options: ['bring it back up', 'restore the service', 'get it running again'] },
       { name: 'timeframe', role: null, options: ['the hour', 'the expected timeframe', '2 hours'] },
     ],
     example: {
@@ -27541,10 +27541,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'We need to isolate the issue first, then bring it back up.',
     vietnamese: 'Chúng ta cần cô lập vấn đề trước, sau đó khôi phục.',
-    structure: 'We need to {chunk:linker} first, then {chunk:closer}.',
+    structure: 'We need to {isolate} first, then {restore}.',
     slots: [
-      { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'isolate', role: null, options: ['isolate the issue', 'pin down the cause', 'contain the damage'] },
+      { name: 'restore', role: null, options: ['bring it back up', 'restore the service', 'get it running again'] },
     ],
     example: {
       en: 'We need to isolate the issue first, then bring it back up.',
@@ -27560,12 +27560,12 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'From a business perspective, we should align on this before we put it on hold.',
     vietnamese: 'Từ góc độ kinh doanh, chúng ta nên thống nhất về việc này trước khi tạm gác lại.',
-    structure: '{chunk:opener}, {subject} should {verb} on this before we {chunk:closer}.',
+    structure: '{chunk:opener}, {subject} should {verb} on this before we {hold}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'subject', role: null, options: ['we', 'the team', 'management'] },
       { name: 'verb', role: null, options: ['align', 'decide', 'discuss'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'hold', role: null, options: ['put it on hold', 'table it', 'park it'] },
     ],
     example: {
       en: 'From a business perspective, we should align on this before we put it on hold.',
@@ -27616,7 +27616,7 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'To touch base on the proposal — let me know at your earliest convenience.',
     vietnamese: 'Để trao đổi nhanh về đề xuất — cho tôi biết khi nào bạn tiện.',
-    structure: '{chunk:opener} on {noun} {chunk:closer}.',
+    structure: '{chunk:opener} on {noun} — {chunk:closer}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'noun', role: null, options: ['the proposal', 'the contract', 'the timeline'] },
@@ -27636,11 +27636,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'Our bottom line is 20% — can you meet us halfway on the price?',
     vietnamese: 'Giới hạn cuối của chúng tôi là 20% — bạn có thể nhân nhượng nửa chừng về giá không?',
-    structure: '{chunk:opener} {number} — can you {chunk:linker} on the {noun}?',
+    structure: '{chunk:opener} {number} — can you {concede} on the {noun}?',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'number', role: null, options: ['20%', '15%', '10%'] },
-      { name: 'linker', role: 'linker' },
+      { name: 'concede', role: null, options: ['meet us halfway', 'come down', 'give us a break'] },
       { name: 'noun', role: null, options: ['price', 'timeline', 'scope'] },
     ],
     example: {
@@ -27655,10 +27655,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'If you can meet us halfway, we can come to an agreement.',
     vietnamese: 'Nếu bạn nhân nhượng nửa chừng, chúng ta có thể đi đến thỏa thuận.',
-    structure: 'If you can {chunk:linker}, we can {chunk:closer}.',
+    structure: 'If you can {concede}, we can {agree}.',
     slots: [
-      { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'concede', role: null, options: ['meet us halfway', 'come down a bit', 'flex on the price'] },
+      { name: 'agree', role: null, options: ['come to an agreement', 'shake on it', 'sign the deal'] },
     ],
     example: {
       en: 'If you can meet us halfway, we can come to an agreement.',
@@ -27750,13 +27750,13 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'To stay on top of things, we need to prioritize the tasks to get them done by Friday.',
     vietnamese: 'Để luôn theo sát công việc, chúng ta cần ưu tiên các việc để hoàn thành trước thứ Sáu.',
-    structure: '{chunk:opener}, {subject} need to {chunk:linker} {noun} to {chunk:closer}.',
+    structure: '{chunk:opener}, {subject} need to {prioritize} {noun} to {finish}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'subject', role: null, options: ['we', 'I', 'the team'] },
-      { name: 'linker', role: 'linker' },
+      { name: 'prioritize', role: null, options: ['prioritize', 'tackle', 'knock out'] },
       { name: 'noun', role: null, options: ['the tasks', 'the deadlines'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'finish', role: null, options: ['get them done by Friday', 'wrap them up', 'finish them on time'] },
     ],
     example: {
       en: 'To stay on top of things, we need to prioritize the tasks to get them done by Friday.',
@@ -27770,10 +27770,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: "Let's push things forward and wrap things up.",
     vietnamese: 'Hãy thúc đẩy công việc và chốt lại mọi việc.',
-    structure: "Let's {chunk:linker} and {chunk:closer}.",
+    structure: "Let's {push} and {wrap}.",
     slots: [
-      { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'push', role: null, options: ['push things forward', 'move things along', 'keep the momentum going'] },
+      { name: 'wrap', role: null, options: ['wrap things up', 'close it out', 'finish the day strong'] },
     ],
     example: {
       en: "Let's push things forward and wrap things up.",
@@ -27910,10 +27910,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'How is it going? — I am kind of busy. By the way, did you finish the project? Nice talking to you.',
     vietnamese: 'Dạo này thế nào? — Tôi hơi bận. Nhân tiện, bạn xong dự án chưa? Nói chuyện vui quá.',
-    structure: '{chunk:opener} — I am {chunk:filler} busy. {chunk:linker}, did you {verb}? {chunk:closer}.',
+    structure: '{chunk:opener} — I am {degree} busy. {chunk:linker}, did you {verb}? {chunk:closer}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'filler', role: 'filler' },
+      { name: 'degree', role: null, options: ['kind of', 'a bit', 'pretty'] },
       { name: 'linker', role: 'linker' },
       { name: 'verb', role: null, options: ['finish the project', 'see the movie', 'try the café'] },
       { name: 'closer', role: 'closer' },
@@ -28015,14 +28015,14 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'I would like to report an issue with the API — could you take a look at the error log; while we investigate, we will keep you posted.',
     vietnamese: 'Tôi muốn báo cáo một sự cố với API — bạn có thể xem nhật ký lỗi; trong khi chúng tôi điều tra, chúng tôi sẽ cập nhật cho bạn.',
-    structure: '{chunk:opener} with the {noun} — {chunk:linker} the {log}; {chunk:filler}, we will {chunk:closer}.',
+    structure: '{chunk:opener} with the {noun} — {chunk:linker} the {log}; {chunk:filler}, we will {update}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'noun', role: null, options: ['API', 'database', 'service'] },
       { name: 'linker', role: 'linker' },
       { name: 'log', role: null, options: ['error log', 'metrics', 'trace'] },
       { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'update', role: null, options: ['keep you posted', 'update you', 'get back to you'] },
     ],
     example: {
       en: 'I would like to report an issue with the API — could you take a look at the error log; while we investigate, we will keep you posted.',
@@ -28079,14 +28079,14 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'Let me make an offer — we can go down to 12% if you commit to two years. That is a bit of a stretch, but let us shake on it.',
     vietnamese: 'Để tôi đưa ra một đề nghị — chúng tôi có thể giảm xuống 12% nếu bạn cam kết hai năm. Điều đó hơi quá sức, nhưng chúng ta bắt tay chốt nhé.',
-    structure: '{chunk:opener} — we can {chunk:linker} {number} if you {verb}. That is {chunk:filler}, but let us {chunk:closer}.',
+    structure: '{chunk:opener} — we can {concede} {number} if you {verb}. That is {stretch}, but let us {seal}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'concede', role: null, options: ['go down to', 'drop to', 'come down to'] },
       { name: 'number', role: null, options: ['12%', '15%', '10%'] },
       { name: 'verb', role: null, options: ['commit to two years', 'order in bulk', 'sign today'] },
-      { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'stretch', role: null, options: ['a bit of a stretch', 'a tough ask', 'a big concession'] },
+      { name: 'seal', role: null, options: ['shake on it', 'seal the deal', 'sign off on it'] },
     ],
     example: {
       en: 'Let me make an offer — we can go down to 12% if you commit to two years. That is a bit of a stretch, but let us shake on it.',
@@ -28165,13 +28165,13 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: "To circle back to the roadmap, we should delve into the trade-offs before we table this discussion.",
     vietnamese: 'Quay lại lộ trình, chúng ta nên đào sâu vào các đánh đổi trước khi kết thúc thảo luận này.',
-    structure: '{chunk:opener} the {noun}, we should {chunk:linker} the {detail} {chunk:closer}.',
+    structure: '{chunk:opener} the {noun}, we should {delve} the {detail} {table}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'noun', role: null, options: ['roadmap', 'backlog', 'architecture'] },
-      { name: 'linker', role: 'linker' },
+      { name: 'delve', role: null, options: ['delve into', 'dig into', 'examine'] },
       { name: 'detail', role: null, options: ['risks', 'trade-offs', 'alternatives'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'table', role: null, options: ['table this discussion', 'wrap up this topic', 'defer this decision'] },
     ],
     example: {
       en: 'To circle back to the roadmap, we should delve into the trade-offs before we table this discussion.',
@@ -28207,13 +28207,13 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'We need to raise the alarm — the team is drilling down into the root cause as we speak. I can assure you on the fix.',
     vietnamese: 'Chúng ta cần gióng lên hồi chuông cảnh báo — đội ngũ đang đào sâu vào nguyên nhân gốc ngay lúc này. Tôi đảm bảo với bạn về bản sửa.',
-    structure: '{chunk:opener} — the team is {action} the {noun} {timing}. I can {chunk:closer} on the fix.',
+    structure: '{chunk:opener} — the team is {action} the {noun} {timing}. I can {assure} on the fix.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'action', role: null, options: ['drilling down into', 'digging into', 'investigating'] },
       { name: 'noun', role: null, options: ['root cause', 'failure', 'issue'] },
       { name: 'timing', role: null, options: ['as we speak', 'right now', 'at this very moment'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'assure', role: null, options: ['assure you', 'guarantee you', 'vouch for'] },
     ],
     example: {
       en: 'We need to raise the alarm — the team is drilling down into the root cause as we speak. I can assure you on the fix.',
@@ -28227,7 +28227,7 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: "To set the stage with the quarterly numbers — let me touch upon retention; to play devil's advocate, what if churn rises? Let us bring this to a close.",
     vietnamese: 'Đặt nền móng bằng số liệu quý — để tôi đề cập đến tỷ lệ giữ chân; chơi trò phản biện nhé, nếu tỷ lệ rời bỏ tăng thì sao? Hãy kết thúc vấn đề này.',
-    structure: '{chunk:opener} with the {noun} — {chunk:linker} the {topic}; {chunk:filler}, what if {risk}? Let us {chunk:closer}.',
+    structure: '{chunk:opener} with the {noun} — {chunk:linker} the {topic}; {chunk:filler}, what if {risk}? Let us {close}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'noun', role: null, options: ['quarterly numbers', 'annual report', 'market data'] },
@@ -28235,7 +28235,7 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
       { name: 'topic', role: null, options: ['retention', 'pricing', 'expansion'] },
       { name: 'filler', role: 'filler' },
       { name: 'risk', role: null, options: ['churn rises', 'costs spike', 'demand drops'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'close', role: null, options: ['bring this to a close', 'wrap this up', 'conclude this'] },
     ],
     example: {
       en: "To set the stage with the quarterly numbers — let me touch upon retention; to play devil's advocate, what if churn rises? Let us bring this to a close.",
@@ -28271,14 +28271,14 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'Let us lay our cards on the table — strictly speaking, our floor is 20%; we can throw in free onboarding. Let us reach a consensus.',
     vietnamese: 'Chúng ta hãy chơi bài ngửa — nói đúng ra, giới hạn của chúng tôi là 20%; chúng tôi có thể thêm khóa onboarding miễn phí. Hãy đạt đồng thuận.',
-    structure: '{chunk:opener} — {chunk:filler}, our floor is {number}; we can {chunk:linker} {bonus}. Let us {chunk:closer}.',
+    structure: '{chunk:opener} — {chunk:filler}, our floor is {number}; we can {add} {bonus}. Let us {consensus}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'filler', role: 'filler' },
       { name: 'number', role: null, options: ['20%', '15%', '25%'] },
-      { name: 'linker', role: 'linker' },
+      { name: 'add', role: null, options: ['throw in', 'add', 'include'] },
       { name: 'bonus', role: null, options: ['free onboarding', 'priority support', 'a 30-day trial'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'consensus', role: null, options: ['reach a consensus', 'come to terms', 'finalize the deal'] },
     ],
     example: {
       en: 'Let us lay our cards on the table — strictly speaking, our floor is 20%; we can throw in free onboarding. Let us reach a consensus.',
@@ -28364,11 +28364,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'Thanks for having me — I just want to introduce myself before we go around the table.',
     vietnamese: 'Cảm ơn vì đã mời tôi — tôi chỉ muốn giới thiệu bản thân trước khi chúng ta lần lượt trình bày.',
-    structure: '{chunk:opener} — I just want to {verb} before we {chunk:closer}.',
+    structure: '{chunk:opener} — I just want to {verb} before we {round}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'verb', role: null, options: ['introduce myself', 'share an update'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'round', role: null, options: ['go around the table', 'take turns', 'introduce everyone'] },
     ],
     example: {
       en: 'Thanks for having me — I just want to introduce myself before we go around the table.',
@@ -28382,12 +28382,12 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'To kick things off, let me summarize the agenda so we stay focused during the call.',
     vietnamese: 'Để bắt đầu, để tôi tóm tắt chương trình nghị sự để chúng ta tập trung trong suốt cuộc gọi.',
-    structure: '{chunk:opener}, let me {verb} the {noun} so we {chunk:linker}.',
+    structure: '{chunk:opener}, let me {verb} the {noun} so we {focus}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'verb', role: null, options: ['summarize', 'walk through'] },
       { name: 'noun', role: null, options: ['agenda', 'timeline'] },
-      { name: 'linker', role: 'linker' },
+      { name: 'focus', role: null, options: ['stay focused', 'keep on track', 'stay on topic'] },
     ],
     example: {
       en: 'To kick things off, let me summarize the agenda so we stay focused during the call.',
@@ -28419,10 +28419,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'Given the constraints we are facing, it would be prudent to revisit the milestones before committing to a date.',
     vietnamese: 'Với những ràng buộc chúng ta đang gặp phải, thận trọng nhất là xem lại các mốc trước khi cam kết một ngày.',
-    structure: '{chunk:opener}, it would be prudent to {chunk:linker} before committing to a date.',
+    structure: '{chunk:opener}, it would be prudent to {revisit} before committing to a date.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'revisit', role: null, options: ['revisit the milestones', 'reassess the timeline', 'review the scope'] },
     ],
     example: {
       en: 'Given the constraints we are facing, it would be prudent to revisit the milestones before committing to a date.',
@@ -28436,10 +28436,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'That makes sense to me — should we move on to the next topic then?',
     vietnamese: 'Điều đó hợp lý với tôi — vậy chúng ta chuyển sang chủ đề tiếp theo nhé?',
-    structure: '{chunk:reaction} — should we {chunk:closer}?',
+    structure: '{chunk:reaction} — should we {move}?',
     slots: [
       { name: 'reaction', role: 'reaction' },
-      { name: 'closer', role: 'closer' },
+      { name: 'move', role: null, options: ['move on to the next topic', 'move forward', 'wrap up this topic'] },
     ],
     example: {
       en: 'That makes sense to me — should we move on to the next topic then?',
@@ -28453,10 +28453,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'I see your point — could you clarify how this affects our timeline for delivery?',
     vietnamese: 'Tôi hiểu quan điểm của bạn — bạn có thể làm rõ điều này ảnh hưởng đến tiến độ giao hàng của chúng ta thế nào không?',
-    structure: '{chunk:reaction} — could you {chunk:question} for {noun}?',
+    structure: '{chunk:reaction} — could you {clarify} for {noun}?',
     slots: [
       { name: 'reaction', role: 'reaction' },
-      { name: 'question', role: 'question' },
+      { name: 'clarify', role: null, options: ['clarify how this affects', 'explain the impact on', 'walk us through'] },
       { name: 'noun', role: null, options: ['our timeline', 'the release plan'] },
     ],
     example: {
@@ -28506,10 +28506,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'Just writing to share the status — please let me know if you need anything else.',
     vietnamese: 'Chỉ viết để chia sẻ tình trạng — bạn cứ cho tôi biết nếu cần thêm gì nhé.',
-    structure: '{chunk:opener} — please let me know if you {chunk:closer}.',
+    structure: '{chunk:opener} — please let me know if you {need}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'need', role: null, options: ['need anything else', 'have any questions', 'want more details'] },
     ],
     example: {
       en: 'Just writing to share the status — please let me know if you need anything else.',
@@ -28557,10 +28557,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'Following up on my previous note, I would appreciate your confirmation at your earliest convenience.',
     vietnamese: 'Theo dõi lại thư trước của tôi, tôi rất mong nhận được xác nhận của bạn khi tiện nhất.',
-    structure: '{chunk:linker}, I would appreciate your {chunk:closer}.',
+    structure: '{chunk:linker}, I would appreciate your {confirmation}.',
     slots: [
       { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'confirmation', role: null, options: ['confirmation', 'feedback', 'response'] },
     ],
     example: {
       en: 'Following up on my previous note, I would appreciate your confirmation at your earliest convenience.',
@@ -28574,10 +28574,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We are having a problem with the service — we are checking now and will keep you posted.',
     vietnamese: 'Chúng tôi đang gặp sự cố với dịch vụ — chúng tôi đang kiểm tra và sẽ cập nhật cho bạn.',
-    structure: '{chunk:opener} — we are checking now and will {chunk:closer}.',
+    structure: '{chunk:opener} — we are checking now and will {update}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'update', role: null, options: ['keep you posted', 'update you', 'get back to you'] },
     ],
     example: {
       en: 'We are having a problem with the service — we are checking now and will keep you posted.',
@@ -28625,10 +28625,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'Once we isolate the root cause, we will implement a fix to prevent recurrence and restore the service.',
     vietnamese: 'Khi đã cô lập nguyên nhân gốc, chúng tôi sẽ triển khai bản vá để ngăn tái diễn và khôi phục dịch vụ.',
-    structure: '{chunk:linker}, we will {chunk:closer} to prevent recurrence.',
+    structure: '{chunk:linker}, we will {fix} to prevent recurrence.',
     slots: [
       { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'fix', role: null, options: ['implement a fix', 'roll out a patch', 'deploy a solution'] },
     ],
     example: {
       en: 'Once we isolate the root cause, we will implement a fix to prevent recurrence and restore the service.',
@@ -28642,10 +28642,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'Good to see everyone — let us start by going around the table with a quick update.',
     vietnamese: 'Rất vui được gặp mọi người — chúng ta bắt đầu bằng lượt trình bày nhanh quanh bàn nhé.',
-    structure: '{chunk:opener} — let us {chunk:linker} with a quick update.',
+    structure: '{chunk:opener} — let us {start} with a quick update.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'start', role: null, options: ['start by going around the table', 'kick off with introductions', 'begin with a quick round'] },
     ],
     example: {
       en: 'Good to see everyone — let us start by going around the table with a quick update.',
@@ -28694,10 +28694,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'Before we finalize the next steps, it would be wise to take this offline and consult the stakeholders.',
     vietnamese: 'Trước khi chốt các bước tiếp theo, khôn ngoan nhất là bàn riêng và tham vấn các bên liên quan.',
-    structure: '{chunk:opener}, it would be wise to {chunk:closer} and consult the stakeholders.',
+    structure: '{chunk:opener}, it would be wise to {offline} and consult the stakeholders.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'offline', role: null, options: ['take this offline', 'discuss this separately', 'handle this in private'] },
     ],
     example: {
       en: 'Before we finalize the next steps, it would be wise to take this offline and consult the stakeholders.',
@@ -28796,11 +28796,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'With regard to the invoice, please note that payment is due by the end of the month.',
     vietnamese: 'Liên quan đến hóa đơn, xin lưu ý rằng thanh toán đến hạn vào cuối tháng.',
-    structure: '{chunk:opener} the {noun}, please note that {chunk:closer}.',
+    structure: '{chunk:opener} the {noun}, please note that {due}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'noun', role: null, options: ['invoice', 'proposal'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'due', role: null, options: ['payment is due by the end of the month', 'the amount is payable within 30 days', 'the balance is due on receipt'] },
     ],
     example: {
       en: 'With regard to the invoice, please note that payment is due by the end of the month.',
@@ -28814,10 +28814,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'On a related note, I would appreciate your confirmation before we proceed with the contract.',
     vietnamese: 'Nhân tiện, tôi mong nhận được xác nhận của bạn trước khi chúng tôi tiến hành hợp đồng.',
-    structure: '{chunk:linker}, I would appreciate your {chunk:closer} before we proceed.',
+    structure: '{chunk:linker}, I would appreciate your {confirmation} before we proceed.',
     slots: [
       { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'confirmation', role: null, options: ['confirmation', 'approval', 'sign-off'] },
     ],
     example: {
       en: 'On a related note, I would appreciate your confirmation before we proceed with the contract.',
@@ -28884,10 +28884,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'If we adjust the volume, we would be willing to meet you halfway on the unit price.',
     vietnamese: 'Nếu chúng ta điều chỉnh khối lượng, chúng tôi sẵn sàng nhượng bộ một nửa về đơn giá.',
-    structure: '{chunk:linker}, we would be willing to {chunk:closer} on the unit price.',
+    structure: '{chunk:linker}, we would be willing to {concede} on the unit price.',
     slots: [
       { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'concede', role: null, options: ['meet you halfway', 'come down', 'flex a little'] },
     ],
     example: {
       en: 'If we adjust the volume, we would be willing to meet you halfway on the unit price.',
@@ -28901,10 +28901,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'To be quite frank, we cannot accept those terms as they stand, but we are open to further negotiation.',
     vietnamese: 'Thành thật mà nói, chúng tôi không thể chấp nhận các điều khoản như hiện tại, nhưng chúng tôi sẵn sàng đàm phán thêm.',
-    structure: '{chunk:filler}, we cannot accept those terms, but we are open to {chunk:closer}.',
+    structure: '{chunk:filler}, we cannot accept those terms, but we are open to {negotiation}.',
     slots: [
       { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'negotiation', role: null, options: ['further negotiation', 'a revised proposal', 'another round of talks'] },
     ],
     example: {
       en: 'To be quite frank, we cannot accept those terms as they stand, but we are open to further negotiation.',
@@ -29020,10 +29020,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'Speaking of which, I have been meaning to ask you about that new course you mentioned last time.',
     vietnamese: 'Nhắc mới nhớ, tôi đã định hỏi bạn về khóa học mới bạn nhắc đến lần trước.',
-    structure: '{chunk:linker}, I have been meaning to {chunk:closer}.',
+    structure: '{chunk:linker}, I have been meaning to {ask}.',
     slots: [
       { name: 'linker', role: 'linker' },
-      { name: 'closer', role: 'closer' },
+      { name: 'ask', role: null, options: ['ask you about that new course', 'bring up that topic', 'follow up on that'] },
     ],
     example: {
       en: 'Speaking of which, I have been meaning to ask you about that new course you mentioned last time.',
@@ -29037,11 +29037,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'That reminds me — you know what I mean, we should catch up over coffee sometime next week.',
     vietnamese: 'Nhắc mới nhớ — bạn hiểu ý tôi mà, tuần sau chúng ta nên gặp cà phê nói chuyện một lúc.',
-    structure: '{chunk:linker} — {chunk:filler}, we should {chunk:closer} sometime next week.',
+    structure: '{chunk:linker} — {chunk:filler}, we should {catchup} sometime next week.',
     slots: [
       { name: 'linker', role: 'linker' },
       { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'catchup', role: null, options: ['catch up over coffee', 'grab a coffee', 'meet up for a chat'] },
     ],
     example: {
       en: 'That reminds me — you know what I mean, we should catch up over coffee sometime next week.',
@@ -29123,10 +29123,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'As I see it, this is a good idea, but we need to think about the cost first.',
     vietnamese: 'Theo tôi thấy, đây là một ý tưởng hay, nhưng chúng ta cần nghĩ về chi phí trước đã.',
-    structure: '{chunk:opener}, this is a good idea, but we need to {chunk:closer}.',
+    structure: '{chunk:opener}, this is a good idea, but we need to {think}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'think', role: null, options: ['think about the cost', 'weigh the pros and cons', 'consider the budget'] },
     ],
     example: {
       en: 'As I see it, this is a good idea, but we need to think about the cost first.',
@@ -29208,10 +29208,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'That is a fair point, although I would still lean toward the other option overall.',
     vietnamese: 'Đó là một ý hợp lý, mặc dù nhìn chung tôi vẫn nghiêng về lựa chọn kia.',
-    structure: '{chunk:reaction}, although I would still {chunk:closer} overall.',
+    structure: '{chunk:reaction}, although I would still {lean} overall.',
     slots: [
       { name: 'reaction', role: 'reaction' },
-      { name: 'closer', role: 'closer' },
+      { name: 'lean', role: null, options: ['lean toward the other option', 'prefer the alternative', 'side with the other choice'] },
     ],
     example: {
       en: 'That is a fair point, although I would still lean toward the other option overall.',
@@ -29225,10 +29225,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'I respectfully disagree — the evidence seems to point in the opposite direction in this case.',
     vietnamese: 'Tôi xin phép không đồng ý — bằng chứng dường như chỉ theo hướng ngược lại trong trường hợp này.',
-    structure: '{chunk:reaction} — the evidence seems to {chunk:linker} in this case.',
+    structure: '{chunk:reaction} — the evidence seems to {point} in this case.',
     slots: [
       { name: 'reaction', role: 'reaction' },
-      { name: 'linker', role: 'linker' },
+      { name: 'point', role: null, options: ['point in the opposite direction', 'suggest otherwise', 'tell a different story'] },
     ],
     example: {
       en: 'I respectfully disagree — the evidence seems to point in the opposite direction in this case.',
@@ -29242,10 +29242,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'That is a fair point, and I appreciate the nuance; still, I would challenge the underlying assumption.',
     vietnamese: 'Đó là một ý hợp lý và tôi đánh giá cao sự tinh tế; tuy vậy, tôi muốn chất vấn giả định nền tảng.',
-    structure: '{chunk:reaction}, and I appreciate the nuance; still, I would {chunk:closer} the underlying assumption.',
+    structure: '{chunk:reaction}, and I appreciate the nuance; still, I would {challenge} the underlying assumption.',
     slots: [
       { name: 'reaction', role: 'reaction' },
-      { name: 'closer', role: 'closer' },
+      { name: 'challenge', role: null, options: ['challenge the underlying assumption', 'question that premise', 'push back on that'] },
     ],
     example: {
       en: 'That is a fair point, and I appreciate the nuance; still, I would challenge the underlying assumption.',
@@ -29259,10 +29259,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'First, I clock in and check my emails — then I tackle the first task of the day.',
     vietnamese: 'Đầu tiên, tôi chấm công và kiểm tra email — sau đó tôi xử lý nhiệm vụ đầu tiên trong ngày.',
-    structure: '{chunk:opener}, I {chunk:linker} my emails — then I {verb} the first task.',
+    structure: '{chunk:opener}, I {check} my emails — then I {verb} the first task.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'check', role: null, options: ['clock in and check', 'check', 'go through'] },
       { name: 'verb', role: null, options: ['tackle', 'start'] },
     ],
     example: {
@@ -29277,11 +29277,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'Once that is done, I move on to the meetings and reply to the messages that came in overnight.',
     vietnamese: 'Khi xong việc đó, tôi chuyển sang các cuộc họp và trả lời tin nhắn đến trong đêm.',
-    structure: '{chunk:linker}, I move on to the {noun} and {chunk:closer}.',
+    structure: '{chunk:linker}, I move on to the {noun} and {reply}.',
     slots: [
       { name: 'linker', role: 'linker' },
       { name: 'noun', role: null, options: ['meetings', 'reports'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'reply', role: null, options: ['reply to the messages', 'answer the emails', 'respond to the requests'] },
     ],
     example: {
       en: 'Once that is done, I move on to the meetings and reply to the messages that came in overnight.',
@@ -29295,11 +29295,11 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'On top of that, I usually batch my tasks in the morning so I can focus in the afternoon.',
     vietnamese: 'Ngoài ra, tôi thường gom nhóm các nhiệm vụ vào buổi sáng để buổi chiều tập trung.',
-    structure: '{chunk:linker}, I usually {verb} my tasks in the morning so I can {chunk:closer} in the afternoon.',
+    structure: '{chunk:linker}, I usually {verb} my tasks in the morning so I can {focus} in the afternoon.',
     slots: [
       { name: 'linker', role: 'linker' },
       { name: 'verb', role: null, options: ['batch', 'plan'] },
-      { name: 'closer', role: 'closer' },
+      { name: 'focus', role: null, options: ['focus', 'concentrate', 'get deep work done'] },
     ],
     example: {
       en: 'On top of that, I usually batch my tasks in the morning so I can focus in the afternoon.',
@@ -29332,10 +29332,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'Let me look at your changes, then I can tell you what I think.',
     vietnamese: 'Để tôi xem những thay đổi của bạn, sau đó tôi có thể nói cho bạn biết tôi nghĩ gì.',
-    structure: '{chunk:opener}, then I can {chunk:closer}.',
+    structure: '{chunk:opener}, then I can {tell}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'tell', role: null, options: ['tell you what I think', 'share my thoughts', 'give you my feedback'] },
     ],
     example: {
       en: 'Let me look at your changes, then I can tell you what I think.',
@@ -29366,10 +29366,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'The logic looks solid overall, though I would suggest a small refactor of the loop.',
     vietnamese: 'Nhìn chung logic khá ổn, dù tôi muốn đề xuất tái cấu trúc nhỏ phần vòng lặp.',
-    structure: '{chunk:filler}, though I would {chunk:closer} of the loop.',
+    structure: '{chunk:filler}, though I would {suggest} of the loop.',
     slots: [
       { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'suggest', role: null, options: ['suggest a small refactor', 'recommend a tweak', 'propose a cleanup'] },
     ],
     example: {
       en: 'The logic looks solid overall, though I would suggest a small refactor of the loop.',
@@ -29383,10 +29383,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'The implementation is sound in principle, yet we should address the edge case before merging.',
     vietnamese: 'Về nguyên tắc bản triển khai là hợp lý, nhưng chúng ta nên xử lý trường hợp ngoại lệ trước khi merge.',
-    structure: '{chunk:opener} in principle, yet we should {chunk:linker} the edge case before merging.',
+    structure: '{chunk:opener} in principle, yet we should {address} the edge case before merging.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'address', role: null, options: ['address', 'handle', 'resolve'] },
     ],
     example: {
       en: 'The implementation is sound in principle, yet we should address the edge case before merging.',
@@ -29400,10 +29400,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We are ready to deploy, and I will check the logs after it.',
     vietnamese: 'Chúng ta sẵn sàng triển khai và tôi sẽ kiểm tra nhật ký sau đó.',
-    structure: '{chunk:opener}, and I will {chunk:closer} after it.',
+    structure: '{chunk:opener}, and I will {check} after it.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'check', role: null, options: ['check the logs', 'monitor the output', 'review the metrics'] },
     ],
     example: {
       en: 'We are ready to deploy, and I will check the logs after it.',
@@ -29417,10 +29417,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'The build passed, so we can move to the next step of the release.',
     vietnamese: 'Bản build đã qua, vì vậy chúng ta có thể chuyển sang bước tiếp theo của bản phát hành.',
-    structure: '{chunk:filler}, so we can {chunk:linker} of the release.',
+    structure: '{chunk:filler}, so we can {move} of the release.',
     slots: [
       { name: 'filler', role: 'filler' },
-      { name: 'linker', role: 'linker' },
+      { name: 'move', role: null, options: ['move to the next step', 'proceed to the next phase', 'advance to the next stage'] },
     ],
     example: {
       en: 'The build passed, so we can move to the next step of the release.',
@@ -29434,10 +29434,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'We are running the smoke test, and everything looks stable on staging.',
     vietnamese: 'Chúng tôi đang chạy kiểm thử nhanh và mọi thứ trông ổn định trên môi trường staging.',
-    structure: '{chunk:opener}, and {chunk:filler} on staging.',
+    structure: '{chunk:opener}, and {status} on staging.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'filler', role: 'filler' },
+      { name: 'status', role: null, options: ['everything looks stable', 'all systems are green', 'the environment is healthy'] },
     ],
     example: {
       en: 'We are running the smoke test, and everything looks stable on staging.',
@@ -29451,10 +29451,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'The rollout is proceeding as planned, and we are monitoring the metrics closely.',
     vietnamese: 'Việc triển khai đang diễn ra đúng kế hoạch và chúng tôi đang theo dõi sát các chỉ số.',
-    structure: '{chunk:opener} as planned, and we are {chunk:linker} the metrics closely.',
+    structure: '{chunk:opener} as planned, and we are {monitor} the metrics closely.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'monitor', role: null, options: ['monitoring', 'tracking', 'watching'] },
     ],
     example: {
       en: 'The rollout is proceeding as planned, and we are monitoring the metrics closely.',
@@ -29468,10 +29468,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'The project is on time, and we have a small task left.',
     vietnamese: 'Dự án đang đúng tiến độ và chúng ta còn một nhiệm vụ nhỏ.',
-    structure: '{chunk:opener}, and we have a {chunk:closer} left.',
+    structure: '{chunk:opener}, and we have a {task} left.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'task', role: null, options: ['small task', 'minor issue', 'last step'] },
     ],
     example: {
       en: 'The project is on time, and we have a small task left.',
@@ -29485,10 +29485,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'We finished the first phase, and now we are planning the next one.',
     vietnamese: 'Chúng tôi đã hoàn thành giai đoạn đầu và giờ đang lên kế hoạch cho giai đoạn tiếp theo.',
-    structure: '{chunk:opener}, and now we are {chunk:linker} the next one.',
+    structure: '{chunk:opener}, and now we are {planning} the next one.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'planning', role: null, options: ['planning', 'scoping', 'preparing'] },
     ],
     example: {
       en: 'We finished the first phase, and now we are planning the next one.',
@@ -29502,10 +29502,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'We are slightly behind schedule, but we can catch up by the end of the month.',
     vietnamese: 'Chúng ta hơi chậm tiến độ, nhưng có thể bắt kịp trước cuối tháng.',
-    structure: '{chunk:filler}, but we can {chunk:closer} by the end of the month.',
+    structure: '{chunk:filler}, but we can {catchup} by the end of the month.',
     slots: [
       { name: 'filler', role: 'filler' },
-      { name: 'closer', role: 'closer' },
+      { name: 'catchup', role: null, options: ['catch up', 'make up the time', 'get back on track'] },
     ],
     example: {
       en: 'We are slightly behind schedule, but we can catch up by the end of the month.',
@@ -29536,10 +29536,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We have a new ad, and I think people will like it.',
     vietnamese: 'Chúng ta có một quảng cáo mới và tôi nghĩ mọi người sẽ thích nó.',
-    structure: '{chunk:opener}, and I {chunk:filler} people will like it.',
+    structure: '{chunk:opener}, and I {think} people will like it.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'filler', role: 'filler' },
+      { name: 'think', role: null, options: ['think', 'believe', 'hope'] },
     ],
     example: {
       en: 'We have a new ad, and I think people will like it.',
@@ -29553,10 +29553,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'The campaign starts next week, and we need more content for social media.',
     vietnamese: 'Chiến dịch bắt đầu tuần tới và chúng ta cần thêm nội dung cho mạng xã hội.',
-    structure: '{chunk:opener} next week, and we {chunk:linker} more content for social media.',
+    structure: '{chunk:opener} next week, and we {need} more content for social media.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'need', role: null, options: ['need', 'want', 'require'] },
     ],
     example: {
       en: 'The campaign starts next week, and we need more content for social media.',
@@ -29570,10 +29570,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'The engagement is rising steadily, and our new channels are performing well.',
     vietnamese: 'Mức độ tương tác đang tăng đều và các kênh mới của chúng ta hoạt động tốt.',
-    structure: '{chunk:opener} steadily, and our new {chunk:linker} are performing well.',
+    structure: '{chunk:opener} steadily, and our new {channels} are performing well.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'channels', role: null, options: ['channels', 'campaigns', 'initiatives'] },
     ],
     example: {
       en: 'The engagement is rising steadily, and our new channels are performing well.',
@@ -29604,10 +29604,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We have a new customer, and I will call them tomorrow.',
     vietnamese: 'Chúng ta có khách hàng mới và tôi sẽ gọi cho họ vào ngày mai.',
-    structure: '{chunk:opener}, and I will {chunk:closer} tomorrow.',
+    structure: '{chunk:opener}, and I will {call} tomorrow.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'call', role: null, options: ['call them', 'follow up with them', 'reach out to them'] },
     ],
     example: {
       en: 'We have a new customer, and I will call them tomorrow.',
@@ -29621,10 +29621,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'The client liked our offer, and we are waiting for their final answer.',
     vietnamese: 'Khách hàng đã thích đề xuất của chúng ta và chúng ta đang chờ câu trả lời cuối cùng của họ.',
-    structure: '{chunk:opener}, and we are {chunk:linker} for their final answer.',
+    structure: '{chunk:opener}, and we are {waiting} for their final answer.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'waiting', role: null, options: ['waiting', 'hoping', 'holding out'] },
     ],
     example: {
       en: 'The client liked our offer, and we are waiting for their final answer.',
@@ -29638,10 +29638,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'The deal is close to closing, and we just need to finalize the terms.',
     vietnamese: 'Thương vụ sắp chốt và chúng ta chỉ cần hoàn tất các điều khoản.',
-    structure: '{chunk:opener} to closing, and we just need to {chunk:closer} the terms.',
+    structure: '{chunk:opener} to closing, and we just need to {finalize} the terms.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'finalize', role: null, options: ['finalize', 'nail down', 'lock in'] },
     ],
     example: {
       en: 'The deal is close to closing, and we just need to finalize the terms.',
@@ -29672,10 +29672,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We have a new candidate, and I will meet them today.',
     vietnamese: 'Chúng ta có một ứng viên mới và tôi sẽ gặp họ hôm nay.',
-    structure: '{chunk:opener}, and I will {chunk:closer} them today.',
+    structure: '{chunk:opener}, and I will {meet} them today.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'meet', role: null, options: ['meet', 'interview', 'talk to'] },
     ],
     example: {
       en: 'We have a new candidate, and I will meet them today.',
@@ -29689,10 +29689,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'The interview went well, and we should talk about the next round.',
     vietnamese: 'Buổi phỏng vấn diễn ra tốt đẹp và chúng ta nên bàn về vòng tiếp theo.',
-    structure: '{chunk:opener}, and we should {chunk:linker} about the next round.',
+    structure: '{chunk:opener}, and we should {talk} about the next round.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'talk', role: null, options: ['talk', 'discuss', 'plan'] },
     ],
     example: {
       en: 'The interview went well, and we should talk about the next round.',
@@ -29706,10 +29706,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'The candidate has strong skills, and we are checking their references now.',
     vietnamese: 'Ứng viên có kỹ năng mạnh và chúng tôi đang kiểm tra thư giới thiệu của họ.',
-    structure: '{chunk:opener}, and we are {chunk:linker} their references now.',
+    structure: '{chunk:opener}, and we are {checking} their references now.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'checking', role: null, options: ['checking', 'reviewing', 'verifying'] },
     ],
     example: {
       en: 'The candidate has strong skills, and we are checking their references now.',
@@ -29723,10 +29723,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'We are impressed by the profile, and we look forward to aligning on the offer.',
     vietnamese: 'Chúng tôi ấn tượng với hồ sơ và mong muốn thống nhất về đề xuất lương.',
-    structure: '{chunk:opener}, and we {chunk:closer} on the offer.',
+    structure: '{chunk:opener}, and we {align} on the offer.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'align', role: null, options: ['look forward to aligning', 'are ready to align', 'hope to finalize'] },
     ],
     example: {
       en: 'We are impressed by the profile, and we look forward to aligning on the offer.',
@@ -29740,10 +29740,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We are at home, and my mother is cooking dinner.',
     vietnamese: 'Chúng tôi đang ở nhà và mẹ tôi đang nấu bữa tối.',
-    structure: '{chunk:opener}, and my {chunk:linker} is cooking dinner.',
+    structure: '{chunk:opener}, and my {family} is cooking dinner.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'family', role: null, options: ['mother', 'father', 'sister'] },
     ],
     example: {
       en: 'We are at home, and my mother is cooking dinner.',
@@ -29757,10 +29757,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'We usually have lunch together, and we talk about the day.',
     vietnamese: 'Chúng tôi thường ăn trưa cùng nhau và nói chuyện về một ngày.',
-    structure: '{chunk:opener}, and we {chunk:linker} about the day.',
+    structure: '{chunk:opener}, and we {talk} about the day.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'talk', role: null, options: ['talk', 'chat', 'catch up'] },
     ],
     example: {
       en: 'We usually have lunch together, and we talk about the day.',
@@ -29774,10 +29774,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'My sister is visiting this weekend, and we plan to go on a trip together.',
     vietnamese: 'Chị gái tôi sẽ ghé thăm cuối tuần này và chúng tôi dự định đi chơi cùng nhau.',
-    structure: '{chunk:opener} this weekend, and we {chunk:linker} to go on a trip together.',
+    structure: '{chunk:opener} this weekend, and we {plan} to go on a trip together.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'plan', role: null, options: ['plan', 'hope', 'want'] },
     ],
     example: {
       en: 'My sister is visiting this weekend, and we plan to go on a trip together.',
@@ -29791,10 +29791,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'The whole family gathers for the holiday, and we cherish every moment together.',
     vietnamese: 'Cả gia đình tụ họp vào dịp lễ và chúng tôi trân trọng từng khoảnh khắc bên nhau.',
-    structure: '{chunk:opener}, and we {chunk:closer} every moment together.',
+    structure: '{chunk:opener}, and we {cherish} every moment together.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'cherish', role: null, options: ['cherish', 'treasure', 'savor'] },
     ],
     example: {
       en: 'The whole family gathers for the holiday, and we cherish every moment together.',
@@ -29808,10 +29808,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'We are at the airport, and our flight is at three.',
     vietnamese: 'Chúng tôi đang ở sân bay và chuyến bay của chúng tôi lúc ba giờ.',
-    structure: '{chunk:opener}, and our {chunk:linker} is at three.',
+    structure: '{chunk:opener}, and our {flight} is at three.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'flight', role: null, options: ['flight', 'train', 'bus'] },
     ],
     example: {
       en: 'We are at the airport, and our flight is at three.',
@@ -29825,10 +29825,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'The hotel is nice, and we can see the sea from our room.',
     vietnamese: 'Khách sạn rất đẹp và chúng tôi có thể nhìn thấy biển từ phòng.',
-    structure: '{chunk:opener}, and we can {chunk:linker} the sea from our room.',
+    structure: '{chunk:opener}, and we can {see} the sea from our room.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'see', role: null, options: ['see', 'enjoy', 'admire'] },
     ],
     example: {
       en: 'The hotel is nice, and we can see the sea from our room.',
@@ -29842,10 +29842,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'We booked the tickets in advance, and the trip went without any issues.',
     vietnamese: 'Chúng tôi đã đặt vé trước và chuyến đi diễn ra không gặp trở ngại nào.',
-    structure: '{chunk:opener}, and the trip went without any {chunk:closer}.',
+    structure: '{chunk:opener}, and the trip went without any {issues}.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'closer', role: 'closer' },
+      { name: 'issues', role: null, options: ['issues', 'problems', 'hitches'] },
     ],
     example: {
       en: 'We booked the tickets in advance, and the trip went without any issues.',
@@ -29859,10 +29859,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'The itinerary is well balanced, and we have enough time to explore the city.',
     vietnamese: 'Lịch trình cân bằng hợp lý và chúng ta có đủ thời gian khám phá thành phố.',
-    structure: '{chunk:opener}, and we have {chunk:linker} time to explore the city.',
+    structure: '{chunk:opener}, and we have {enough} time to explore the city.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'enough', role: null, options: ['enough', 'plenty of', 'ample'] },
     ],
     example: {
       en: 'The itinerary is well balanced, and we have enough time to explore the city.',
@@ -29876,10 +29876,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'A2',
     english: 'The store is big, and I want to buy a new shirt.',
     vietnamese: 'Cửa hàng rất lớn và tôi muốn mua một chiếc áo mới.',
-    structure: '{chunk:opener}, and I {chunk:linker} to buy a new shirt.',
+    structure: '{chunk:opener}, and I {want} to buy a new shirt.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'want', role: null, options: ['want', 'need', 'plan'] },
     ],
     example: {
       en: 'The store is big, and I want to buy a new shirt.',
@@ -29910,10 +29910,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'I compared the options, and this one fits my budget perfectly.',
     vietnamese: 'Tôi đã so sánh các lựa chọn và cái này phù hợp hoàn hảo với ngân sách của tôi.',
-    structure: '{chunk:opener}, and this one {chunk:filler} my budget perfectly.',
+    structure: '{chunk:opener}, and this one {fits} my budget perfectly.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'filler', role: 'filler' },
+      { name: 'fits', role: null, options: ['fits', 'matches', 'suits'] },
     ],
     example: {
       en: 'I compared the options, and this one fits my budget perfectly.',
