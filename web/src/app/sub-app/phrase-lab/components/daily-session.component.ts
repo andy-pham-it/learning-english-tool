@@ -134,7 +134,11 @@ export class DailySessionComponent {
     if (!c) return;
     this.started = true;
     this.ratedLabel.set(RATING_LABELS[rating]);
-    await this.progress.reviewChunk(c.id, rating);
+    try {
+      await this.progress.reviewChunk(c.id, rating);
+    } catch {
+      this.ratedLabel.set('⚠️ Chưa lưu được (mất kết nối)');
+    }
     this.rated.set(this.rated() + 1);
     if (this.index() + 1 < this.sessionQueue().length) {
       this.index.set(this.index() + 1);

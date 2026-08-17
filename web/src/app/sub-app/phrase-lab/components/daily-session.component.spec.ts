@@ -194,4 +194,18 @@ describe('DailySessionComponent', () => {
 
     expect(comp.sessionQueue().length).toBe(5);
   });
+
+  it('rate() vẫn advance UI khi reviewChunk reject', async () => {
+    progressStub.reviewChunk.and.rejectWith(new Error('offline'));
+    chunks.set([chunk('a1')]);
+    progressStub.getDueChunks.and.returnValue(['a1']);
+    progressStub.getCoverage.and.returnValue({ meeting: { learned: 0, total: 1 } });
+    progressStub.progress.set(emptyProgress());
+    await rebuild();
+
+    await comp.rate('good');
+
+    expect(comp.rated()).toBe(1);
+    expect(comp.ratedLabel()).toBe('⚠️ Chưa lưu được (mất kết nối)');
+  });
 });
