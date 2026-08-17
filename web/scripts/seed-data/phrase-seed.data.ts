@@ -27448,7 +27448,7 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
       { name: 'subject', role: null, options: ['we', 'you', 'the team'] },
       { name: 'modal', role: null, options: ['could', 'would'] },
       { name: 'linker', role: 'linker' },
-      { name: 'noun', role: null, options: ['system load', 'performance', 'the requirements'] },
+      { name: 'noun', role: null, options: ['system load', 'performance', 'requirements'] },
       { name: 'verb', role: null, options: ['move on', 'proceed'] },
     ],
     example: {
@@ -27467,7 +27467,7 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'linker', role: 'linker' },
-      { name: 'noun', role: null, options: ['the requirements', 'the deadline', 'the system load'] },
+      { name: 'noun', role: null, options: ['requirements', 'deadline', 'system load'] },
       { name: 'verb', role: null, options: ['proceed', 'make a decision'] },
     ],
     example: {
@@ -27616,7 +27616,7 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B2',
     english: 'To touch base on the proposal — let me know at your earliest convenience.',
     vietnamese: 'Để trao đổi nhanh về đề xuất — cho tôi biết khi nào bạn tiện.',
-    structure: '{chunk:opener} the {noun} {chunk:closer}.',
+    structure: '{chunk:opener} on {noun} {chunk:closer}.',
     slots: [
       { name: 'opener', role: 'opener' },
       { name: 'noun', role: null, options: ['the proposal', 'the contract', 'the timeline'] },
