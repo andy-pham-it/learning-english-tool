@@ -18,7 +18,7 @@ export class PhraseEngineService {
     }
     sentence = sentence.replace(/\{[^}]+\}/g, '___');
     sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1);
-    if (!sentence.endsWith('?') && !sentence.endsWith('.')) {
+    if (!sentence.endsWith('?') && !sentence.endsWith('.') && !sentence.endsWith('!')) {
       sentence += '.';
     }
     return sentence;
@@ -56,6 +56,11 @@ export class PhraseEngineService {
     return { sentence: this.buildSentence(template, fills), errors };
   }
 
+  /**
+   * Builds the expected chunk sequence for a template. NOTE: uses `chunks.find`
+   * per role slot, so two slots with the same role can resolve to the same chunk.
+   * Contract intentionally unchanged — the order-arrange tab depends on it.
+   */
   expectedSequence(template: PhraseTemplate, chunks: PhraseChunk[]): string[] {
     const fills = new Map<string, string>();
     for (const slot of template.slots) {

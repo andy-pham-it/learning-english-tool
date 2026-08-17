@@ -83,6 +83,19 @@ describe('PhraseEngineService', () => {
     expect(parts.some((p) => p.text === '[subject]' && p.role === null)).toBeTrue();
   });
 
+  it('buildSentence keeps an exclamation ending', () => {
+    const tpl = {
+      id: 't', domain: 'd', context: 'c', level: 'B2',
+      english: 'e', vietnamese: 'v',
+      structure: 'Let\'s go {slot}!',
+      slots: [{ name: 'slot', role: null, options: ['now'] }],
+      example: { en: 'e', vi: 'v' },
+    } as any;
+    const out = engine.buildSentence(tpl, [{ name: 'slot', value: 'now' }]);
+    expect(out.endsWith('!')).toBeTrue();
+    expect(out.endsWith('.')).toBeFalse();
+  });
+
   it('scoreSpeech scores 100 on exact match and lists missing words otherwise', () => {
     const target = 'It would be better if we could proceed.';
     expect(engine.scoreSpeech(target, 'it would be better if we could proceed').score).toBe(100);
