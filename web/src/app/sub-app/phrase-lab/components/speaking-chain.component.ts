@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, OnDestroy, signal } from '@angular/core';
 import { PhraseChunk, Role } from '../models/phrase.model';
 import { PhraseContentService } from '../services/phrase-content.service';
 import { SpeechService } from '../../../core/services/speech.service';
@@ -116,7 +116,7 @@ const CHAIN_ROLES: Role[] = ['opener', 'linker', 'linker', 'filler', 'closer'];
     </div>
   `,
 })
-export class SpeakingChainComponent {
+export class SpeakingChainComponent implements OnDestroy {
   private readonly content = inject(PhraseContentService);
   private readonly speech = inject(SpeechService);
 
@@ -181,6 +181,13 @@ export class SpeakingChainComponent {
     this.isRunning.set(false);
   }
 
+  ngOnDestroy(): void {
+    if (this.timerHandle) {
+      clearInterval(this.timerHandle);
+      this.timerHandle = null;
+    }
+  }
+
   async startSpeaking(): Promise<void> {
     if (!this.supported) {
       return;
@@ -188,7 +195,7 @@ export class SpeakingChainComponent {
     this.isListening.set(true);
     try {
       const transcript = await this.speech.startListening('en-US');
-      const durationSec = 30 - this.timer();
+      const durationSec = Math.max(1, 30 - this.timer());
       this.feedback.set(computeFeedback(this.chunks(), transcript, durationSec));
     } finally {
       this.isListening.set(false);

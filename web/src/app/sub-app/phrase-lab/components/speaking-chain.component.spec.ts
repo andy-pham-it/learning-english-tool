@@ -81,4 +81,22 @@ describe('SpeakingChainComponent', () => {
     c.playModel();
     expect(speech.speak).toHaveBeenCalledWith(c.modelPassage(), 'en-US');
   });
+
+  it('startSpeaking never computes a zero duration (wpm floor)', async () => {
+    const c = fixture.componentInstance;
+    c.selectContext('meeting');
+    c.generate();
+    c.timer.set(30); // no timer started -> 30 - 30 = 0
+    await c.startSpeaking();
+    expect(c.feedback()!.wpm).toBeGreaterThan(0);
+  });
+
+  it('ngOnDestroy clears the running timer', fakeAsync(() => {
+    const c = fixture.componentInstance;
+    c.startTimer();
+    expect(c.isRunning()).toBeTrue();
+    c.ngOnDestroy();
+    tick(31000);
+    expect(c.isRunning()).toBeTrue(); // interval cleared, so never auto-stops
+  }));
 });
