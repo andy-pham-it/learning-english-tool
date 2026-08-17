@@ -58,11 +58,11 @@ describe('PhraseProgressService', () => {
     hubAuth.requestUserInfo.and.returnValue(Promise.resolve({ id: 'u1', email: null, name: null, image: null }));
     await service.init();
     expect(service.authed()).toBeTrue();
-    await service.markChunkLearned('c1', 90);
+    await service.markChunkLearned('c1');
     expect(setDocSpy).toHaveBeenCalled();
     const args = setDocSpy.calls.mostRecent().args;
     expect(args[1].uid).toBe('u1');
-    expect(args[1].masteredChunks.c1.speakScore).toBe(90);
+    expect(args[1].masteredChunks.c1.speakScore).toBe(0);
   });
 
   it('recordSpeakResult: score >= 80 marks template and adds 10 points', async () => {
@@ -119,7 +119,7 @@ describe('PhraseProgressService', () => {
     expect(p.reviews['c1'].reps).toBe(1);
     expect(p.reviews['c1'].lapses).toBe(0);
     expect(p.totalPoints).toBe(5);
-    expect(p.masteredChunks['c1'].status).toBe('mastered');
+    expect(p.masteredChunks['c1'].status).toBe('learning');
   });
 
   it('reviewChunk: again resets interval, increments lapses, un-masters, awards 0 points', async () => {
@@ -195,5 +195,54 @@ describe('PhraseProgressService', () => {
     expect(p.totalPoints).toBe(100); // MAX, not sum
     expect(localStorage.getItem('phrase_lab_progress')).toBeNull();
     expect(setDocSpy).toHaveBeenCalledWith(jasmine.anything(), jasmine.objectContaining({ totalPoints: 100 }));
+  });
+
+  it('markChunkLearned seeds a review so the chunk enters the SRS queue', async () => {
+    await service.init();
+    await service.markChunkLearned('c1');
+    const p = service.progress()!;
+    expect(p.reviews['c1']).toBeDefined();
+    expect(p.reviews['c1'].due).toBeLessThanOrEqual(Date.now());
+  });
+
+  it('recordSpeakResult with score >= 80 seeds a good review for each chunk', async () => {
+    await service.init();
+    await service.recordSpeakResult('t1', ['c1'], 85);
+    const p = service.progress()!;
+    expect(p.reviews['c1']).toBeDefined();
+    expect(p.reviews['c1'].reps).toBe(1);
+    expect(p.reviews['c1'].due).toBeGreaterThan(startOfDay(Date.now()));
+  });
+
+  it('reviewChunk: hard/good/easy on a NEW chunk sets status learning (not mastered)', async () => {
+    await service.init();
+    await service.reviewChunk('c1', 'good');
+    const p = service.progress()!;
+    expect(p.masteredChunks['c1'].status).toBe('learning');
+    expect(p.reviews['c1'].interval).toBe(1);
+  });
+
+  it('mergeLocal: local earlier due review wins over cloud later due', async () => {
+    const cloud = {
+      uid: 'u1',
+      masteredChunks: {},
+      masteredTemplates: {},
+      reviews: { c1: { ease: 2.5, interval: 5, reps: 2, lapses: 0, due: 5000 } },
+      streak: { current: 0, lastDay: '' },
+      totalPoints: 0,
+    };
+    const local = {
+      uid: 'local',
+      masteredChunks: {},
+      masteredTemplates: {},
+      reviews: { c1: { ease: 2.5, interval: 1, reps: 1, lapses: 0, due: 1000 } },
+      streak: { current: 0, lastDay: '' },
+      totalPoints: 0,
+    };
+    localStorage.setItem('phrase_lab_progress', JSON.stringify(local));
+    hubAuth.requestUserInfo.and.returnValue(Promise.resolve({ id: 'u1', email: null, name: null, image: null }));
+    getDocSpy.and.returnValue(Promise.resolve({ exists: () => true, data: () => cloud } as any));
+    await service.init();
+    expect(service.progress()!.reviews['c1'].due).toBe(1000); // earlier due wins
   });
 });

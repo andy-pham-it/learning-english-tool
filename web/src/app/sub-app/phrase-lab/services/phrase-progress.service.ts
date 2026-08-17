@@ -119,7 +119,7 @@ export class PhraseProgressService {
     }
     for (const [id, lr] of Object.entries(local.reviews)) {
       const cr = merged.reviews[id];
-      if (!cr || lr.due > cr.due) merged.reviews[id] = lr;
+      if (!cr || lr.due < cr.due) merged.reviews[id] = lr;
     }
     for (const [id, lt] of Object.entries(local.masteredTemplates)) {
       const ct = merged.masteredTemplates[id];
@@ -136,14 +136,17 @@ export class PhraseProgressService {
     return merged;
   }
 
-  async markChunkLearned(chunkId: string, speakScore = 0): Promise<void> {
+  async markChunkLearned(chunkId: string): Promise<void> {
     const p = this.progress() ?? this.emptyProgress();
     const existing = p.masteredChunks[chunkId];
     p.masteredChunks[chunkId] = {
       status: 'learning',
-      speakScore: Math.max(existing?.speakScore ?? 0, speakScore),
+      speakScore: existing?.speakScore ?? 0,
       lastPracticed: Date.now(),
     };
+    if (!p.reviews[chunkId]) {
+      p.reviews[chunkId] = initialReview();
+    }
     this.progress.set({ ...p });
     await this.write(p);
   }
@@ -166,6 +169,9 @@ export class PhraseProgressService {
       p.totalPoints += 10;
       this.awardXp(10);
       this.userProfile?.recordActivity('speaking');
+      for (const cid of chunkIds) {
+        p.reviews[cid] = nextState(p.reviews[cid] ?? initialReview(), 'good');
+      }
     }
     this.progress.set({ ...p });
     await this.write(p);
@@ -192,7 +198,7 @@ export class PhraseProgressService {
       this.awardXp(pts);
     }
     p.masteredChunks[chunkId] = {
-      status: rating === 'again' ? 'learning' : (chunk?.status ?? 'mastered'),
+      status: rating === 'again' ? 'learning' : (chunk?.status ?? 'learning'),
       speakScore: chunk?.speakScore ?? 0,
       lastPracticed: Date.now(),
     };
