@@ -122,4 +122,13 @@ describe('ConversationBuilderComponent', () => {
     component.listen(c);
     expect(speechStub.speak).toHaveBeenCalledWith(c.english, 'en-US');
   });
+
+  it('rate() swallows reviewChunk rejection', async () => {
+    chunks.set(meetingChunks());
+    component.selectContext('meeting');
+    progressStub.reviewChunk.and.rejectWith(new Error('offline'));
+    const c = { id: 'c1' } as unknown as PhraseChunk;
+    await component.rate(c, 'good');
+    expect(component.ratedLabel()).toBe('Good');
+  });
 });

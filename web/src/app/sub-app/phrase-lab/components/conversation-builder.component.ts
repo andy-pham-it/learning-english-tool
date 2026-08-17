@@ -177,7 +177,7 @@ export class ConversationBuilderComponent {
 
   rate(c: PhraseChunk, rating: ReviewRating): void {
     this.ratedLabel.set(RATING_LABELS[rating]);
-    void this.progress.reviewChunk(c.id, rating);
+    void this.progress.reviewChunk(c.id, rating).catch(() => undefined);
   }
 
   toggleVi(): void {
