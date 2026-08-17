@@ -19,7 +19,10 @@ describe('SpeakPracticeComponent', () => {
         {
           provide: PhraseContentService,
           useValue: {
-            chunks: signal([{ id: 'it-meet-b2-01', domain: 'it', context: 'meeting', level: 'B2', english: 'take into consideration', vietnamese: 'v', phonetic: '/p/', role: 'linker', examples: [] }]),
+            chunks: signal([
+              { id: 'it-meet-b2-01', domain: 'it', context: 'meeting', level: 'B2', english: 'take into consideration', vietnamese: 'v', phonetic: '/p/', role: 'linker', examples: [] },
+              { id: 'bet-chunk', domain: 'it', context: 'meeting', level: 'B2', english: 'bet', vietnamese: 'v', phonetic: '/p/', role: 'linker', examples: [] },
+            ]),
           } as any,
         },
       ],
@@ -124,6 +127,21 @@ describe('SpeakPracticeComponent', () => {
     await c.toggleRecording();
     expect(c.recording()).toBeFalse();
     expect(c.recordingUrl()).toBeNull();
+  });
+
+  it('markMastered emits once and sets masteredDone', () => {
+    const c = fixture.componentInstance;
+    const emitSpy = spyOn(c.mastered, 'emit');
+    c.markMastered();
+    c.markMastered();
+    expect(emitSpy).toHaveBeenCalledTimes(1);
+    expect(c.masteredDone()).toBeTrue();
+  });
+
+  it('chunkIds matches whole phrase, not substring', () => {
+    const c = fixture.componentInstance;
+    // 'bet' is a substring of 'better' in the target — must NOT match as a whole word.
+    expect(c.chunkIds()).not.toContain('bet-chunk');
   });
 });
 

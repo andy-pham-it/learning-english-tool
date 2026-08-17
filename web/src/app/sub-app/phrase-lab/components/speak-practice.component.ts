@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, output, signal } from '@angular/core';
 import { PhraseTemplate, ReviewRating } from '../models/phrase.model';
 import { PhraseEngineService } from '../services/phrase-engine.service';
 import { PhraseContentService } from '../services/phrase-content.service';
@@ -122,7 +122,7 @@ import { SpeechService } from '../../../core/services/speech.service';
           @if (ratedLabel()) {
             <p class="text-xs text-slate-500">Đã chấm: {{ ratedLabel() }}</p>
           }
-          <button (click)="markMastered()" class="rounded-xl bg-emerald-600 px-4 py-2 text-sm text-white">Tôi đã nói chuẩn ✓</button>
+          <button (click)="markMastered()" [disabled]="masteredDone()" class="rounded-xl bg-emerald-600 px-4 py-2 text-sm text-white disabled:opacity-40">Tôi đã nói chuẩn ✓</button>
         </div>
       }
     </div>
@@ -135,6 +135,16 @@ export class SpeakPracticeComponent {
   private readonly engine = inject(PhraseEngineService);
   private readonly content = inject(PhraseContentService);
   private readonly speech = inject(SpeechService);
+
+  constructor() {
+    effect(
+      () => {
+        this.template();
+        this.masteredDone.set(false);
+      },
+      { allowSignalWrites: true }
+    );
+  }
 
   readonly isListening = signal(false);
   readonly feedback = signal<{ score: number; wrongWords: string[] } | null>(null);
@@ -152,6 +162,7 @@ export class SpeakPracticeComponent {
   readonly recording = signal(false);
   readonly recordingUrl = signal<string | null>(null);
   readonly ratedLabel = signal<string | null>(null);
+  readonly masteredDone = signal(false);
   readonly supported = this.speech.isRecognitionSupported();
   readonly rated = output<{ templateId: string; chunkIds: string[]; rating: ReviewRating }>();
 
@@ -175,12 +186,13 @@ export class SpeakPracticeComponent {
 
   readonly target = computed(() => this.engine.buildSentence(this.template(), this.baseFills()));
 
-  readonly chunkIds = computed(() =>
-    this.content
+  readonly chunkIds = computed(() => {
+    const target = this.target();
+    return this.content
       .chunks()
-      .filter((c) => this.target().includes(c.english))
-      .map((c) => c.id)
-  );
+      .filter((c) => new RegExp(`\\b${escapeRegex(c.english)}\\b`, 'i').test(target))
+      .map((c) => c.id);
+  });
 
   listenSlow(): void {
     this.speech.speak(this.target(), 'en-US');
@@ -285,7 +297,13 @@ export class SpeakPracticeComponent {
   }
 
   markMastered(): void {
+    if (this.masteredDone()) return;
+    this.masteredDone.set(true);
     this.mastered.emit({ templateId: this.template().id, chunkIds: this.chunkIds(), score: 100 });
     this.feedback.set({ score: 100, wrongWords: [] });
   }
+}
+
+function escapeRegex(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
