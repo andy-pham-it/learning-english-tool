@@ -28207,12 +28207,12 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'We need to raise the alarm — the team is drilling down into the root cause as we speak. I can assure you on the fix.',
     vietnamese: 'Chúng ta cần gióng lên hồi chuông cảnh báo — đội ngũ đang đào sâu vào nguyên nhân gốc ngay lúc này. Tôi đảm bảo với bạn về bản sửa.',
-    structure: '{chunk:opener} — the team is {chunk:linker} the {noun} {chunk:filler}. I can {chunk:closer} on the fix.',
+    structure: '{chunk:opener} — the team is {action} the {noun} {timing}. I can {chunk:closer} on the fix.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'action', role: null, options: ['drilling down into', 'digging into', 'investigating'] },
       { name: 'noun', role: null, options: ['root cause', 'failure', 'issue'] },
-      { name: 'filler', role: 'filler' },
+      { name: 'timing', role: null, options: ['as we speak', 'right now', 'at this very moment'] },
       { name: 'closer', role: 'closer' },
     ],
     example: {
@@ -29519,10 +29519,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'We have allocated the resources, and the milestones align with the overall strategy.',
     vietnamese: 'Chúng tôi đã phân bổ nguồn lực và các mốc quan trọng khớp với chiến lược tổng thể.',
-    structure: '{chunk:opener}, and the {chunk:linker} align with the overall strategy.',
+    structure: '{chunk:opener}, and the {milestone} align with the overall strategy.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'milestone', role: null, options: ['milestones', 'deliverables', 'key results'] },
     ],
     example: {
       en: 'We have allocated the resources, and the milestones align with the overall strategy.',
@@ -29587,10 +29587,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'The brand perception has shifted favorably, and the metrics confirm the trend.',
     vietnamese: 'Nhận thức về thương hiệu đã chuyển biến tích cực và các chỉ số xác nhận xu hướng này.',
-    structure: '{chunk:opener} favorably, and the {chunk:filler} confirm the trend.',
+    structure: '{chunk:opener} favorably, and the {metric} confirm the trend.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'filler', role: 'filler' },
+      { name: 'metric', role: null, options: ['metrics', 'numbers', 'KPIs'] },
     ],
     example: {
       en: 'The brand perception has shifted favorably, and the metrics confirm the trend.',
@@ -29655,10 +29655,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'We have sustained the momentum, and the pipeline looks exceptionally strong this quarter.',
     vietnamese: 'Chúng tôi đã duy trì được đà tăng trưởng và kênh bán hàng quý này trông cực kỳ mạnh mẽ.',
-    structure: '{chunk:opener}, and the {chunk:linker} looks exceptionally strong this quarter.',
+    structure: '{chunk:opener}, and the {metric} looks exceptionally strong this quarter.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'metric', role: null, options: ['pipeline', 'sales funnel', 'outlook'] },
     ],
     example: {
       en: 'We have sustained the momentum, and the pipeline looks exceptionally strong this quarter.',
@@ -29893,10 +29893,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'B1',
     english: 'The price is a bit high, but the quality is very good.',
     vietnamese: 'Giá hơi cao nhưng chất lượng rất tốt.',
-    structure: '{chunk:opener} a bit high, but the {chunk:linker} is very good.',
+    structure: '{chunk:opener} a bit high, but the {aspect} is very good.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'aspect', role: null, options: ['quality', 'design', 'material'] },
     ],
     example: {
       en: 'The price is a bit high, but the quality is very good.',
@@ -29927,10 +29927,10 @@ export const SEED_TEMPLATES: PhraseTemplate[] = [
     level: 'C1',
     english: 'The quality justifies the price, and the warranty covers any future issues.',
     vietnamese: 'Chất lượng xứng đáng với giá và chế độ bảo hành bao phủ mọi vấn đề phát sinh.',
-    structure: '{chunk:opener}, and the {chunk:linker} covers any future issues.',
+    structure: '{chunk:opener}, and the {warranty} covers any future issues.',
     slots: [
       { name: 'opener', role: 'opener' },
-      { name: 'linker', role: 'linker' },
+      { name: 'warranty', role: null, options: ['warranty', 'guarantee', 'return policy'] },
     ],
     example: {
       en: 'The quality justifies the price, and the warranty covers any future issues.',
