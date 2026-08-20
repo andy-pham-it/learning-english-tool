@@ -1,3 +1,4 @@
+import { By } from '@angular/platform-browser';
 import { signal } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DailySessionComponent } from './daily-session.component';
@@ -207,5 +208,51 @@ describe('DailySessionComponent', () => {
 
     expect(comp.rated()).toBe(1);
     expect(comp.ratedLabel()).toBe('⚠️ Chưa lưu được (mất kết nối)');
+  });
+
+  describe('nav', () => {
+    it('moves to next chunk and clamps at the end', async () => {
+      chunks.set([chunk('a'), chunk('b'), chunk('c')]);
+      await rebuild();
+      expect(comp.index()).toBe(0);
+      comp.next();
+      expect(comp.index()).toBe(1);
+      comp.next(); comp.next(); comp.next();
+      expect(comp.index()).toBe(2);
+    });
+
+    it('moves to previous chunk and clamps at the start', async () => {
+      chunks.set([chunk('a'), chunk('b')]);
+      await rebuild();
+      comp.next();
+      expect(comp.index()).toBe(1);
+      comp.prev(); comp.prev();
+      expect(comp.index()).toBe(0);
+    });
+
+    it('does not navigate when queue is empty', async () => {
+      await rebuild();
+      comp.next(); comp.prev();
+      expect(comp.index()).toBe(0);
+    });
+
+    it('responds to ArrowRight / ArrowLeft keydown', async () => {
+      chunks.set([chunk('a'), chunk('b')]);
+      await rebuild();
+      window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowRight' }));
+      expect(comp.index()).toBe(1);
+      window.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowLeft' }));
+      expect(comp.index()).toBe(0);
+    });
+
+    it('renders a prev button disabled on the first item', async () => {
+      chunks.set([chunk('a'), chunk('b')]);
+      await rebuild();
+      const prev = fixture.debugElement.query(By.css('[data-test="session-prev"]'));
+      expect(prev.nativeElement.disabled).toBeTrue();
+      comp.next();
+      fixture.detectChanges();
+      expect(prev.nativeElement.disabled).toBeFalse();
+    });
   });
 });

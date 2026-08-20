@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, HostListener, inject, signal } from '@angular/core';
 import { PhraseChunk, ReviewRating } from '../models/phrase.model';
 import { PhraseContentService } from '../services/phrase-content.service';
 import { PhraseProgressService } from '../services/phrase-progress.service';
@@ -46,6 +46,13 @@ const RATING_LABELS: Record<ReviewRating, string> = {
           <button (click)="rate('hard')" class="rounded-xl bg-amber-100 text-amber-700 py-2 text-sm font-medium">Hard</button>
           <button (click)="rate('good')" class="rounded-xl bg-emerald-100 text-emerald-700 py-2 text-sm font-medium">Good</button>
           <button (click)="rate('easy')" class="rounded-xl bg-sky-100 text-sky-700 py-2 text-sm font-medium">Easy</button>
+        </div>
+        <div class="mt-4 flex items-center justify-between border-t border-slate-200 pt-3">
+          <button data-test="session-prev" (click)="prev()" [disabled]="index() === 0"
+            class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40">← Trước</button>
+          <span class="text-sm font-medium text-slate-500">{{ index() + 1 }} / {{ sessionQueue().length }}</span>
+          <button data-test="session-next" (click)="next()" [disabled]="index() >= sessionQueue().length - 1"
+            class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40">Tiếp →</button>
         </div>
         @if (ratedLabel()) {
           <p class="text-xs text-emerald-600">{{ ratedLabel() }}</p>
@@ -157,5 +164,25 @@ export class DailySessionComponent {
     this.showVi.set(false);
     const chunks = this.content.chunks();
     if (chunks.length) this.buildQueue(chunks);
+  }
+
+  @HostListener('window:keydown', ['$event']) onKeydown(e: KeyboardEvent): void {
+    if (this.done() || !this.current()) return;
+    if (e.key === 'ArrowRight') this.next();
+    else if (e.key === 'ArrowLeft') this.prev();
+  }
+
+  prev(): void {
+    if (this.index() > 0) {
+      this.index.update((i) => i - 1);
+      this.showVi.set(false);
+    }
+  }
+
+  next(): void {
+    if (this.index() < this.sessionQueue().length - 1) {
+      this.index.update((i) => i + 1);
+      this.showVi.set(false);
+    }
   }
 }
