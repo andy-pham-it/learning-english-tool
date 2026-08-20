@@ -21,7 +21,7 @@ describe('ChunkCardComponent', () => {
       imports: [ChunkCardComponent],
       providers: [
         { provide: PhraseProgressService, useValue: progress },
-        { provide: SpeechService, useValue: { speak: jasmine.createSpy('speak'), isRecognitionSupported: () => false } },
+        { provide: SpeechService, useValue: { speak: jasmine.createSpy('speak'), startListening: jasmine.createSpy('startListening'), isRecognitionSupported: () => false } },
       ],
     }).compileComponents();
     fixture = TestBed.createComponent(ChunkCardComponent);

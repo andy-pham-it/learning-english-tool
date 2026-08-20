@@ -48,20 +48,18 @@ const LEVEL_COLOR: Record<string, string> = {
       <p class="mt-1 text-sm text-slate-700">{{ chunk().vietnamese }}</p>
       @if (chunk().usage) {
         <div class="mt-2 rounded-xl bg-amber-50 border border-amber-200 px-3 py-2">
-          <p class="text-xs font-medium text-amber-700">Khi nào dùng?</p>
+          <p class="text-xs font-semibold text-amber-700">Khi nào dùng?</p>
           <p class="text-sm text-amber-900">{{ chunk().usage }}</p>
         </div>
       }
-      @if (chunk().examples.length) {
-        <ul class="mt-2 space-y-1">
-          @for (ex of chunk().examples; track $index) {
-            <li>
-              <p class="italic text-slate-500">{{ ex.en }}</p>
-              <p class="text-xs text-slate-400">{{ ex.vi }}</p>
-            </li>
-          }
-        </ul>
-      }
+      <div class="mt-2 space-y-1">
+        @for (ex of chunk().examples; track $index) {
+          <div>
+            <p class="text-sm text-slate-500 italic">{{ ex.en }}</p>
+            <p class="text-xs text-slate-400">{{ ex.vi }}</p>
+          </div>
+        }
+      </div>
       <div class="mt-3 flex items-center gap-2">
         <button
           type="button"
