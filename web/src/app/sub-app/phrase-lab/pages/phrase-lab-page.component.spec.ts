@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 import { PhraseLabPageComponent } from './phrase-lab-page.component';
 import { PhraseContentService } from '../services/phrase-content.service';
 import { PhraseProgressService } from '../services/phrase-progress.service';
@@ -157,5 +158,24 @@ describe('PhraseLabPageComponent', () => {
     c.onRated({ templateId: 't', chunkIds: ['a', 'b'], rating: 'again' });
     expect(progress.reviewChunk).toHaveBeenCalledWith('a', 'again');
     expect(progress.reviewChunk).toHaveBeenCalledWith('b', 'again');
+  });
+
+  it('renders all 10 tab buttons', () => {
+    const buttons = fixture.nativeElement.querySelectorAll('[data-test="tab-button"]');
+    expect(buttons.length).toBe(10);
+  });
+
+  it('defaults activeTab to today', () => {
+    expect(fixture.componentInstance.activeTab()).toBe('today');
+  });
+
+  it('moves the underline span to the clicked tab', () => {
+    const c = fixture.componentInstance;
+    const buttons = fixture.nativeElement.querySelectorAll('[data-test="tab-button"]');
+    buttons[3].click(); // 'analysis'
+    fixture.detectChanges();
+    const underline = fixture.debugElement.query(By.css('[data-test="tab-underline"]'));
+    expect(underline).toBeTruthy();
+    expect(c.activeTab()).toBe('analysis');
   });
 });

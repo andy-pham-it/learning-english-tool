@@ -41,13 +41,17 @@ import { SpeakingChainComponent } from '../components/speaking-chain.component';
         <div class="mb-3 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-700">Mất kết nối — đang dùng dữ liệu đã lưu.</div>
       }
 
-      <div class="mb-4 flex flex-wrap gap-2 text-sm">
+      <div class="mb-4 flex gap-2 overflow-x-auto pb-1 text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-wrap sm:overflow-visible">
         @for (tab of tabs; track tab.id) {
-          <button (click)="setTab(tab.id)"
-            class="rounded-xl px-3 py-1.5 font-medium transition"
+          <button data-test="tab-button" (click)="setTab(tab.id)"
+            class="relative whitespace-nowrap rounded-xl px-3 py-1.5 font-medium transition"
             [class.bg-slate-800]="activeTab() === tab.id" [class.text-white]="activeTab() === tab.id"
             [class.bg-white]="activeTab() !== tab.id" [class.text-slate-600]="activeTab() !== tab.id">
             {{ tab.label }}
+            <span data-test="tab-underline" aria-hidden="true"
+              class="absolute inset-x-2 -bottom-px h-0.5 origin-left rounded-full bg-emerald-500 transition-transform duration-300"
+              [class.scale-x-100]="activeTab() === tab.id"
+              [class.scale-x-0]="activeTab() !== tab.id"></span>
           </button>
         }
       </div>
