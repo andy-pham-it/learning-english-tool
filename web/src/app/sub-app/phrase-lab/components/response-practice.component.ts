@@ -26,6 +26,15 @@ interface TurnResult {
         <p class="mt-1 text-sm text-slate-500">
           Nghe câu thoại, ghép chunk để trả lời. Chunk dùng sai sẽ về vòng ôn.
         </p>
+        @if (scenariosSvc.scenarios().length === 0 && !scenariosSvc.loading() && !scenariosSvc.offline()) {
+          <div class="mt-3 rounded-2xl border border-dashed border-slate-200 bg-white/60 p-6 text-center">
+            <p class="text-slate-600">Chưa có kịch bản nào để luyện tập phản xạ.</p>
+            <p class="mt-1 text-sm text-slate-400">Hãy ghé tab Khám phá để học thêm cụm từ — kịch bản sẽ xuất hiện ở đây sau khi có nội dung.</p>
+          </div>
+        }
+        @if (scenariosSvc.loading()) {
+          <p class="mt-3 text-sm text-slate-400">Đang tải kịch bản…</p>
+        }
         <div class="mt-3 flex flex-wrap gap-2">
           @for (lv of levelOptions; track lv) {
             <button

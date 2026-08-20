@@ -12,6 +12,8 @@ describe('ResponsePracticeComponent', () => {
   let fixture: ComponentFixture<ResponsePracticeComponent>;
   let progressStub: jasmine.SpyObj<PhraseProgressService>;
   let speechStub: { speak: jasmine.Spy };
+  let scenarios: ReturnType<typeof signal<any[]>>;
+  let loading: ReturnType<typeof signal<boolean>>;
 
   const chunk = (id: string): PhraseChunk => ({
     id,
@@ -50,6 +52,8 @@ describe('ResponsePracticeComponent', () => {
     progressStub = jasmine.createSpyObj('PhraseProgressService', ['reviewChunk']);
     (progressStub as unknown as { progress: unknown }).progress = signal(null);
     speechStub = { speak: jasmine.createSpy('speak') };
+    scenarios = signal([scenario()]);
+    loading = signal(false);
     TestBed.configureTestingModule({
       imports: [ResponsePracticeComponent],
       providers: [
@@ -66,8 +70,8 @@ describe('ResponsePracticeComponent', () => {
         {
           provide: ScenarioService,
           useValue: {
-            scenarios: signal([scenario()]),
-            loading: signal(false),
+            scenarios,
+            loading,
             offline: signal(false),
             loadScenarios: jasmine.createSpy().and.resolveTo([scenario()]),
           },
@@ -198,5 +202,22 @@ describe('ResponsePracticeComponent', () => {
     fixture.componentInstance.check();
     fixture.componentInstance.revealAnswer();
     expect(fixture.componentInstance.revealed()).toBeTrue();
+  });
+
+  it('shows the empty state when no scenarios exist', () => {
+    scenarios.set([]);
+    fixture.detectChanges();
+    expect(fixture.nativeElement.textContent).toContain('Chưa có kịch bản');
+  });
+
+  it('hides the empty state when scenarios exist', () => {
+    expect(fixture.nativeElement.textContent).not.toContain('Chưa có kịch bản');
+  });
+
+  it('hides the empty state while loading', () => {
+    scenarios.set([]);
+    loading.set(true);
+    fixture.detectChanges();
+    expect(fixture.nativeElement.textContent).not.toContain('Chưa có kịch bản');
   });
 });
